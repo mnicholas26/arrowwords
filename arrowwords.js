@@ -2,8 +2,10 @@ window.onload = function()
 {
     console.log("skeleton setup");
 
+
+
     //words file parsing and creation
-    var words = text.split('\n');
+    /*var words = text.split('\n');
     var newwords = [];
     for(let i = 0; i < words.length; i++)
     {
@@ -18,12 +20,13 @@ window.onload = function()
             clue = clue + " " + parts[j];
         }
         clue = clue.trim();
-        word.clue = clue;
+        var newclue = clue.split(',');
+        word.clues = newclue;
         newwords.push(word);
     }
 
     var output = document.getElementById('output');
-    output.width = "800px";
-    output.value = JSON.stringify(newwords);
+    output.style.width = "800px";
+    output.value = JSON.stringify(newwords, null, ' ');*/
 
 }
