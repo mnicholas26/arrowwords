@@ -1,0 +1,23 @@
+Notes:
+
+To do - * indicates a note:
+Import word list to project
+Create grid in static html
+Create a new json file from word list with all the fluff removed
+Decide on my objects and data structures
+Implement the json words into this structure
+Decide on the algorithm which will populate the grid
+* At this point the grid should populate and be filled in automatically
+Create method to hide the completed in aspect of the grid - method will be reused later
+Dynamically create the grid using js to create dom elements
+Add in user input functionality
+Link method created above for removing completed with the changes made by adding user functionality
+Make when the grid is created and populated behind the scenes but with nothing filled in for the user
+Create splash screen in static html
+From splash screen the 'play' button should call the function to dynamically create the grid
+Create the methods for validating the user input and decide how the validation is displayed - see notes
+Create the buttons which will hook to previously created methods of new grid/validation/clearing board
+Have the buttons be created automatically like the grid when play is pressed on the splash screen
+
+
+Completed:
