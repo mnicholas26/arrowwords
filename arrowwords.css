@@ -3,3 +3,14 @@ body{
     width: 100%;
     overflow: hidden;
 }
+
+.grid{
+    height: 600px;
+    width: 400px;
+    /*border: 1px solid black; */
+    border-collapse: collapse;
+}
+
+.grid td{
+    border: 1px solid black;
+}

@@ -1,8 +1,6 @@
 Notes:
 
 To do - * indicates a note:
-Import word list to project
-Create grid in static html
 Create a new json file from word list with all the fluff removed
 Decide on my objects and data structures
 Implement the json words into this structure
@@ -21,3 +19,5 @@ Have the buttons be created automatically like the grid when play is pressed on 
 
 
 Completed:
+Import word list to project
+Create grid in static html
