@@ -4,7 +4,9 @@ To do - * indicates a note:
 Decide on my objects and data structures
 Implement the json words into this structure
 Refactor words.js clues bit to subdivide the clues into a more semantic list where necessary
-Decide on the algorithm which will populate the grid
+Decide on the algorithm which will populate the grid backend
+Make method to populate grid frontend
+refactor code
 * At this point the grid should populate and be filled in automatically
 Create method to hide the completed in aspect of the grid - method will be reused later
 Dynamically create the grid using js to create dom elements
