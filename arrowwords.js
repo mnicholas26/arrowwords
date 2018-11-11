@@ -38,14 +38,14 @@ window.onload = function()
     x x x x 1 x x x x 1 x x x
     0 x 1 x x x x 1 x x x x x`
 
-    context = `x 4 x 4 x
+    /*context = `x 4 x 4 x
     1 x x x x
     x x x x x
     1 x x x x
     x x x x x
     1 x x x x
     1 x x x x
-    1 x x x x`
+    1 x x x x`*/
 
     //this outputs a grid object
     //grid object contains clue object, location of clue, word necessary, etc
@@ -70,8 +70,8 @@ window.onload = function()
         //find word
         for(let i = 0; i < grid.length; i++)
         {
-            let width = 5;
-            let height = 8;
+            let width = 13;
+            let height = 23;
             let wordcords = [];
             if(grid[i].type == 0)
             {
@@ -186,7 +186,7 @@ window.onload = function()
 
     function recursiveFill(grid, index)
     {
-        console.log(index);
+        //console.log(index);
         if(index >= grid.length) return -1;
         let words = grid[index].possiblewords;
         let intersections = grid[index].intersections;
@@ -206,16 +206,24 @@ window.onload = function()
             intersections.sort((e, f) => {
                 return f.elem.id - e.elem.id;
             });
-            //console.log(index);
-            //console.log(intersections);
-            return intersections[0].elem.id;
+            for(let i = 0; i < intersections.length; i++)
+            {
+                if(intersections[i].elem.id < index) return intersections[i].elem.id;
+            }
         }
         let instruction;
-        for(let i = 0; i < words.length; i++)
+        for(let i = 0; i < words.length/50; i++)
         {
             grid[index].word = words[i];
             instruction = recursiveFill(grid, index+1);
-            if(instruction == index) continue;
+            //console.log(index + ": " + instruction);
+            if(instruction > index) 
+            {
+                //just for bug testing
+                console.log("fucked up")
+                return -1;
+                //continue;
+            }
             else if(instruction == -1 && index == 0) break;
             else if(instruction < index)
             {
@@ -227,8 +235,14 @@ window.onload = function()
         else if(index == 0) console.log("cannot make puzzle");
         else
         {
-            //grid[index].word = undefined;
-            return index-1;
+            console.log("test");
+            intersections.sort((e, f) => {
+                return f.elem.id - e.elem.id;
+            });
+            for(let i = 0; i < intersections.length; i++)
+            {
+                if(intersections[i].elem.id < index) return intersections[i].elem.id;
+            }
         }
     }
 }
