@@ -200,12 +200,17 @@ window.onload = function()
             grid[i].id = i;
             grid[i].possiblewords.shuffle();
         }
+        for(let i = 0; i < grid.length; i++)
+        {
+            grid[i].intersections.sort((e, f) => {
+                return f.elem.id - e.elem.id;
+            });
+        }
         recursiveFill(grid, 0);
     }
 
     function recursiveFill(grid, index)
     {
-        //console.log(index);
         if(index >= grid.length) return -1;
         let words = grid[index].possiblewords;
         let intersections = grid[index].intersections;
@@ -220,48 +225,18 @@ window.onload = function()
             }
         }
         //check if return
-        if(words.length == 0)
-        {
-            intersections.sort((e, f) => {
-                return f.elem.id - e.elem.id;
-            });
-            for(let i = 0; i < intersections.length; i++)
-            {
-                if(intersections[i].elem.id < index) return intersections[i].elem.id;
-            }
-        }
+        if(words.length == 0) return index-1;
         let instruction;
         for(let i = 0; i < words.length; i++)
         {
             grid[index].word = words[i];
             instruction = recursiveFill(grid, index+1);
-            //console.log(index + ": " + instruction);
-            if(instruction > index) 
-            {
-                //just for bug testing
-                console.log("fucked up")
-                return -1;
-                //continue;
-            }
+            if(instruction == index) continue;
             else if(instruction == -1 && index == 0) break;
-            else if(instruction < index)
-            {
-                //grid[index].word = undefined;
-                return instruction;
-            }
+            else if(instruction < index) return instruction;
         }
         if(index == 0 && instruction == -1) console.log("FINISHED");
         else if(index == 0) console.log("cannot make puzzle");
-        else
-        {
-            console.log("test");
-            intersections.sort((e, f) => {
-                return f.elem.id - e.elem.id;
-            });
-            for(let i = 0; i < intersections.length; i++)
-            {
-                if(intersections[i].elem.id < index) return intersections[i].elem.id;
-            }
-        }
+        else return index-1;
     }
 }
