@@ -38,6 +38,15 @@ window.onload = function()
     x x x x 1 x x x x 1 x x x
     0 x 1 x x x x 1 x x x x x`
 
+    context = `x 4 x 4 x
+    1 x x x x
+    x x x x x
+    1 x x x x
+    x x x x x
+    1 x x x x
+    1 x x x x
+    1 x x x x`
+
     //this outputs a grid object
     //grid object contains clue object, location of clue, word necessary, etc
     function createGridObject(context)
@@ -61,8 +70,8 @@ window.onload = function()
         //find word
         for(let i = 0; i < grid.length; i++)
         {
-            let width = 13;
-            let height = 23;
+            let width = 5;
+            let height = 8;
             let wordcords = [];
             if(grid[i].type == 0)
             {
@@ -120,8 +129,6 @@ window.onload = function()
             }
             grid[i].wordcords = wordcords;
             grid[i].possiblewords = words.filter((e) => {return e.word.length == wordcords.length});
-            grid[i].id = i;
-            grid[i].constraints = [];
 
         }
 
@@ -149,144 +156,79 @@ window.onload = function()
         return grid;
     }
 
-    Array.prototype.pick = function() {return this[Math.floor(Math.random() * this.length)]};
-    /*Array.prototype.removeDuplicates = function(check){
-        let output = [];
-        for(let i = 0; i < this.length; i++)
-        {
-            if(output.filter((e)=>{
-                return e[check] == this[i][check]
-            }).length == 0) output.push(this[i]);
+    Array.prototype.shuffle = function() {
+        var input = this;
+        for (let i = input.length-1; i >=0; i--) {
+            var randomIndex = Math.floor(Math.random()*(i+1)); 
+            var itemAtIndex = input[randomIndex]; 
+            input[randomIndex] = input[i]; 
+            input[i] = itemAtIndex;
         }
-        return output;
-    };*/
+        return input;
+    }
+
     grid = createGridObject(context);
     populateGrid(grid);
-    //console.log(grid);
+    console.log(grid);
 
-    function contextualiseGrid(grid)
-    {
-
-    }
-
-    function removeDuplicates(array)
-    {
-        let output = [];
-        for(let i = 0; i < array.length; i++)
-        {
-            if(output.filter((e)=>{return e.elem.id == array[i].elem.id}).length == 0) output.push(array[i]);
-        }
-        return output;
-    }
-    
     function populateGrid(grid)
     {
-        let potentialwords = [];
-        //let firstword = intersectionSort(grid)[0];
-        //firstword.word = firstword.possiblewords.pick();
-        /*let intersections = firstword.intersections.sort((e,f) => {
-            return f.elem.intersections.length - e.elem.intersections.length
-        });*/
-        let intersections = [];//intersectionSort(grid);
-        let temp = grid.map(e => e.intersections);
-        for(let i = 0; i < temp.length; i++)
+        grid.sort((e, f) => {
+            return f.intersections.length - e.intersections.length;
+        });
+        for(let i = 0; i < grid.length; i++)
         {
-            intersections = intersections.concat(temp[i])
+            grid[i].id = i;
+            grid[i].possiblewords.shuffle();
         }
-        intersections = intersectionSort(removeDuplicates(intersections));
-        console.log(intersections);
-        //while(potentialwords.length < 1)
-        //{
-            for(let i = 0; i < intersections.length; i++)
-            {
-                if(intersections[i].elem.word == undefined)
-                {
-                    let possiblewords = intersections[i].elem.possiblewords;
-                    for(let j = 0; j < intersections[i].elem.constraints.length; j++)
-                    {
-                        let constraint = intersections[i].elem.constraints[j];
-                        possiblewords = possiblewords.filter(e => {
-                            return e.word.charAt(constraint.pos) == constraint.letter
-                        });
-                    }
-                    if(possiblewords.length > 0)
-                    {
-                        intersections[i].elem.word = possiblewords.pick();
-                        potentialwords.push(intersections[i].elem);
-                        //for()
-                        let newword = intersections[i].elem.intersections;
-                        //intersections = intersectionSort(removeDuplicates(intersections));
-                        for(let i = 0; i < newword.length; i++)
-                        {
-                            newword[i].elem.constraints.push({
-                                letter: firstword.word.word.charAt(intersections[i].thispos),
-                                pos: intersections[i].otherpos
-                            });
-                            newword[i].elem.constraints.removeDuplicates('thispos')
-                        }
-
-                    }
-                    //else console.log("shit")
-                    break;
-                }
-            //}
-        }
-        console.log(potentialwords);
-        
-        
-
-
-        /*for(let i = 0; i < newgrid.length; i++)
-        {
-            let filteredwords = newgrid[i].possiblewords;
-            filteredwords = constraintFilter(newgrid[i].intersections, filteredwords);
-            if(filteredwords.length > 0)
-            {
-                let randword = filteredwords[Math.floor(Math.random() * filteredwords.length)];
-                newgrid[i].word = randword;
-            }
-            else
-            {
-                if(!backtrack(newgrid[i])) i-=2;
-            }
-            
-        }*/
+        recursiveFill(grid, 0);
     }
 
-    function pickWord(gridelem)
+    function recursiveFill(grid, index)
     {
-
-    }
-
-    function backtrack(elem)
-    {
-        let backtrackarray = elem.intersections.map(e => e.elem);
-        backtrackarray = backtrackarray.filter((e) => { return e.word != undefined});
-        backtrackarray = intersectionSort(backtrackarray);
-        console.log(backtrackarray);
-    }
-
-    function intersectionSort(array)
-    {
-        return array.sort((e,f) => {return f.elem.intersections.length - e.elem.intersections.length});
-    }
-
-    function constraintFilter(intersections, words)
-    {
+        console.log(index);
+        if(index >= grid.length) return -1;
+        let words = grid[index].possiblewords;
+        let intersections = grid[index].intersections;
+        //constrain array
         for(let i = 0; i < intersections.length; i++)
         {
-            let intersection = intersections[i];
-            let intword = intersection.elem.word;
-            if(intword == undefined) continue;
-            words = words.filter((e) => {
-                return e.word.charAt(intersection.thispos) == intword.word.charAt(intersection.otherpos);
-            });
+            if(intersections[i].elem.id < index)
+            {
+                words = words.filter(e => {
+                    return e.word.charAt(intersections[i].thispos) == intersections[i].elem.word.word.charAt(intersections[i].otherpos);
+                });
+            }
         }
-        return words;
+        //check if return
+        if(words.length == 0)
+        {
+            intersections.sort((e, f) => {
+                return f.elem.id - e.elem.id;
+            });
+            //console.log(index);
+            //console.log(intersections);
+            return intersections[0].elem.id;
+        }
+        let instruction;
+        for(let i = 0; i < words.length; i++)
+        {
+            grid[index].word = words[i];
+            instruction = recursiveFill(grid, index+1);
+            if(instruction == index) continue;
+            else if(instruction == -1 && index == 0) break;
+            else if(instruction < index)
+            {
+                //grid[index].word = undefined;
+                return instruction;
+            }
+        }
+        if(index == 0 && instruction == -1) console.log("FINISHED");
+        else if(index == 0) console.log("cannot make puzzle");
+        else
+        {
+            //grid[index].word = undefined;
+            return index-1;
+        }
     }
-
-    /*function queryGrid(coord, grid)
-    {
-        let output = grid.filter((e) => {return e.wordcords.includes(coord)}
-    }*/
 }
