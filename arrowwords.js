@@ -14,7 +14,10 @@ window.onload = function()
     //leftdown = 3
     //down = 4
     //rightdown = 5
-    var context = `5 x 4 4 x 3 4 x 3 5 x 5 x
+    var templatechoice = 2;
+    var templates = [];
+    var template1 = {width: 13, height: 23};
+    template1.context = `5 x 4 4 x 3 4 x 3 5 x 5 x
     1 x x x x x x x 4 4 x 4 x
     1 x x x x 1 x x x x x x x
     1 x x x x 1 x x x x x x x
@@ -37,23 +40,39 @@ window.onload = function()
     0 x 1 x x x x 1 x x x x x
     x x x x 1 x x x x 1 x x x
     0 x 1 x x x x 1 x x x x x`
+    templates.push(template1);
+    
+    var template2 = {width: 5, height: 8};
+    template2.context = `x 4 x 4 x
+    1 x x x x
+    x x x x x
+    1 x x x x
+    x x x x x
+    1 x x x x
+    1 x x x x
+    1 x x x x`
+    templates.push(template2);
 
-    /*context = `x 4 x 4 x
-    1 x x x x
-    x x x x x
-    1 x x x x
-    x x x x x
-    1 x x x x
-    1 x x x x
-    1 x x x x`*/
+    var template3 = {width: 16, height: 10};
+    template3.context = `- - - - 5 x 4 4 x 3 x 3 4 4 x 3
+    - - - - 1 x x x x 1 x x x x x 4
+    5 x 5 x 1 x x x x x x 1 x x x x
+    x x x x 1 x x x x 1 x x x x x x
+    0 x 1 x x x x 4 x 4 x 4 4 x 4 x
+    x x x x 4 4 1 x x x x x x x x x
+    0 x 1 x x x x x 1 x x x x x x 4
+    x x x x x x 1 x x x 1 x x x x x
+    0 x 1 x x x x x 1 x x x 1 x x x
+    1 x x x x x 1 x x x 1 x x x x x`;
+    templates.push(template3)
 
     //this outputs a grid object
     //grid object contains clue object, location of clue, word necessary, etc
-    function createGridObject(context)
+    function createGridObject(template)
     {
         var grid = [];
         var refgrid = [];
-        var rows = context.split('\n');
+        var rows = template.context.split('\n');
         for(let i = 0; i < rows.length; i++)
         {
             var elems = rows[i].trim().split(' ');
@@ -70,8 +89,8 @@ window.onload = function()
         //find word
         for(let i = 0; i < grid.length; i++)
         {
-            let width = 13;
-            let height = 23;
+            let width = template.width;
+            let height = template.height;
             let wordcords = [];
             if(grid[i].type == 0)
             {
@@ -167,7 +186,7 @@ window.onload = function()
         return input;
     }
 
-    grid = createGridObject(context);
+    grid = createGridObject(templates[templatechoice]);
     populateGrid(grid);
     console.log(grid);
 
@@ -212,7 +231,7 @@ window.onload = function()
             }
         }
         let instruction;
-        for(let i = 0; i < words.length/50; i++)
+        for(let i = 0; i < words.length; i++)
         {
             grid[index].word = words[i];
             instruction = recursiveFill(grid, index+1);

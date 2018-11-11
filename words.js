@@ -1,4 +1,45 @@
 const words = [
+    {word: "lemon"},
+    {word: "teaser"},
+    {word: "chalice"},
+    {word: "fled"},
+    {word: "epee"},
+    {word: "hazel"},
+    {word: "minotaur"},
+    {word: "sentinel"},
+    {word: "malaga"},
+    {word: "oxen"},
+    {word: "wise"},
+    {word: "oiks"},
+    {word: "ladida"},
+    {word: "nunn"},
+    {word: "nape"},
+    {word: "pain"},
+    {word: "elk"},
+    {word: "zod"},
+    {word: "existence"},
+    {word: "jolt"},
+    {word: "brochette"},
+    {word: "imrie"},
+    {word: "beaker"},
+    {word: "mire"},
+    {word: "rand"},
+    {word: "bewes"},
+    {word: "obese"},
+    {word: "hades"},
+    {word: "eke"},
+    {word: "tripe"},
+    {word: "narnia"},
+    {word: "wye"},
+    {word: "denim"},
+    {word: "ernie"},
+    {word: "sue"},
+    {word: "cpu"},
+    {word: "ruled"},
+    {word: "she"},
+    {word: "speed"},
+    {word: "mud"}
+];/*[
     {
      "word": "able",
      "clues": [
@@ -29698,4 +29739,4 @@ const words = [
       "write music"
      ]
     }
-   ];
+   ];*/
