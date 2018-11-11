@@ -150,6 +150,16 @@ window.onload = function()
     }
 
     Array.prototype.pick = function() {return this[Math.floor(Math.random() * this.length)]};
+    /*Array.prototype.removeDuplicates = function(check){
+        let output = [];
+        for(let i = 0; i < this.length; i++)
+        {
+            if(output.filter((e)=>{
+                return e[check] == this[i][check]
+            }).length == 0) output.push(this[i]);
+        }
+        return output;
+    };*/
     grid = createGridObject(context);
     populateGrid(grid);
     //console.log(grid);
@@ -164,7 +174,7 @@ window.onload = function()
         let output = [];
         for(let i = 0; i < array.length; i++)
         {
-            if(output.filter((e)=>{return e.id == array[i].id}).length == 0) output.push(array[i]);
+            if(output.filter((e)=>{return e.elem.id == array[i].elem.id}).length == 0) output.push(array[i]);
         }
         return output;
     }
@@ -172,41 +182,54 @@ window.onload = function()
     function populateGrid(grid)
     {
         let potentialwords = [];
-        let firstword = intersectionSort(grid)[0];
-        firstword.word = firstword.possiblewords.pick();
-        let intersections = firstword.intersections.sort((e,f) => {
+        //let firstword = intersectionSort(grid)[0];
+        //firstword.word = firstword.possiblewords.pick();
+        /*let intersections = firstword.intersections.sort((e,f) => {
             return f.elem.intersections.length - e.elem.intersections.length
-        });
-        for(let i = 0; i < intersections.length; i++)
+        });*/
+        let intersections = [];//intersectionSort(grid);
+        let temp = grid.map(e => e.intersections);
+        for(let i = 0; i < temp.length; i++)
         {
-            intersections[i].elem.constraints.push({
-                letter: firstword.word.word.charAt(intersections[i].thispos),
-                pos: intersections[i].otherpos
-            });
+            intersections = intersections.concat(temp[i])
         }
-        potentialwords.push(firstword);
-        removeDuplicates(intersections)
-        for(let i = 0; i < intersections.length; i++)
-        {
-            if(intersections[i].elem.word == undefined)
+        intersections = intersectionSort(removeDuplicates(intersections));
+        console.log(intersections);
+        //while(potentialwords.length < 1)
+        //{
+            for(let i = 0; i < intersections.length; i++)
             {
-                console.log("test");
-                let possiblewords = intersections[i].elem.possiblewords;
-                for(let j = 0; j < intersections[i].elem.constraints.length; j++)
+                if(intersections[i].elem.word == undefined)
                 {
-                    let constraint = intersections[i].elem.constraints[j];
-                    possiblewords = possiblewords.filter(e => {
-                        return e.word.charAt(constraint.pos) == constraint.letter
-                    });
+                    let possiblewords = intersections[i].elem.possiblewords;
+                    for(let j = 0; j < intersections[i].elem.constraints.length; j++)
+                    {
+                        let constraint = intersections[i].elem.constraints[j];
+                        possiblewords = possiblewords.filter(e => {
+                            return e.word.charAt(constraint.pos) == constraint.letter
+                        });
+                    }
+                    if(possiblewords.length > 0)
+                    {
+                        intersections[i].elem.word = possiblewords.pick();
+                        potentialwords.push(intersections[i].elem);
+                        //for()
+                        let newword = intersections[i].elem.intersections;
+                        //intersections = intersectionSort(removeDuplicates(intersections));
+                        for(let i = 0; i < newword.length; i++)
+                        {
+                            newword[i].elem.constraints.push({
+                                letter: firstword.word.word.charAt(intersections[i].thispos),
+                                pos: intersections[i].otherpos
+                            });
+                            newword[i].elem.constraints.removeDuplicates('thispos')
+                        }
+
+                    }
+                    //else console.log("shit")
+                    break;
                 }
-                if(possiblewords.length > 0)
-                {
-                    intersections[i].elem.word = possiblewords.pick();
-                    potentialwords.push(intersections[i].elem);
-                }
-                //else console.log("shit")
-                break;
-            }
+            //}
         }
         console.log(potentialwords);
         
@@ -245,7 +268,7 @@ window.onload = function()
 
     function intersectionSort(array)
     {
-        return array.sort((e,f) => {return f.intersections.length - e.intersections.length});
+        return array.sort((e,f) => {return f.elem.intersections.length - e.elem.intersections.length});
     }
 
     function constraintFilter(intersections, words)
