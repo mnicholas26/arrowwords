@@ -119,6 +119,7 @@ window.onload = function()
                 }
             }
             grid[i].wordcords = wordcords;
+            grid[i].possiblewords = words.filter((e) => {return e.word.length == wordcords.length});
 
         }
 
@@ -157,31 +158,49 @@ window.onload = function()
     
     function populateGrid(grid)
     {
-        //currently permenently change grid for this step
-        grid = grid.sort((e, f)=>{return f.intersections.length - e.intersections.length});
-        let backtrack = false;
-        let prevword;
-        for(let i = 0; i < grid.length; i++)
+        let newgrid = intersectionSort(grid);
+        for(let i = 0; i < newgrid.length; i++)
         {
-            let length = grid[i].wordcords.length;
-            let filteredwords = words.filter((e) => {return e.word.length == grid[i].wordcords.length});
-            for(let j = 0; j < grid[i].intersections.length; j++)
-            {
-                let intersection = grid[i].intersections[j];
-                let intword = intersection.elem.word;
-                if(intword == undefined) continue;
-                filteredwords = filteredwords.filter((e) => {
-                    return e.word.charAt(intersection.thispos) == intword.word.charAt(intersection.otherpos);
-                });
-            }
+            let filteredwords = newgrid[i].possiblewords;
+            filteredwords = constraintFilter(newgrid[i].intersections, filteredwords);
             if(filteredwords.length > 0)
             {
                 let randword = filteredwords[Math.floor(Math.random() * filteredwords.length)];
-                grid[i].word = randword;
+                newgrid[i].word = randword;
             }
-            else console.log("shit");
+            else
+            {
+                if(!backtrack(newgrid[i])) i-=2;
+            }
             
         }
+    }
+
+    function backtrack(elem)
+    {
+        let backtrackarray = elem.intersections.map(e => e.elem);
+        backtrackarray = backtrackarray.filter((e) => { return e.word != undefined});
+        backtrackarray = intersectionSort(backtrackarray);
+        console.log(backtrackarray);
+    }
+
+    function intersectionSort(array)
+    {
+        return array.sort((e,f) => {return f.intersections.length - e.intersections.length});
+    }
+
+    function constraintFilter(intersections, words)
+    {
+        for(let i = 0; i < intersections.length; i++)
+        {
+            let intersection = intersections[i];
+            let intword = intersection.elem.word;
+            if(intword == undefined) continue;
+            words = words.filter((e) => {
+                return e.word.charAt(intersection.thispos) == intword.word.charAt(intersection.otherpos);
+            });
+        }
+        return words;
     }
 
     /*function queryGrid(coord, grid)
