@@ -1,11 +1,30 @@
 window.onload = function()
 {
-    //filter template for clues
-    //let words5 = words.filter((e) => {return e.word.length == 5});
-
     //gridtemplate merely describes the dom element grid and tells us num rows and cols
     var gridtemplate = document.getElementById('grid');
     var grid;
+
+    /*words.sort((e, f) => {return (e.word.toLowerCase() > f.word.toLowerCase()) ? 1 : -1});
+    let output = [];
+    let tempwords = [];
+    for(let i = 0; i < words.length; i++)
+    {
+        let index = tempwords.indexOf(words[i].word);
+        if(index >= 0)
+        {
+            output[index].clues = output[index].clues.concat(words[i].clues);
+        }
+        else
+        {
+            output.push(words[i]);
+            tempwords.push(words[i].word);
+        }
+    }
+    console.log(words);
+    console.log(output);
+    let out = document.createElement('textarea');
+    document.body.appendChild(out);
+    out.value = JSON.stringify(output,null,2)*/
 
     //context v1
     //arrow upright = 0
@@ -14,7 +33,7 @@ window.onload = function()
     //leftdown = 3
     //down = 4
     //rightdown = 5
-    var templatechoice = 2;
+    var templatechoice = 3;
     var templates = [];
     var template1 = {width: 13, height: 23};
     template1.context = `5 x 4 4 x 3 4 x 3 5 x 5 x
@@ -65,6 +84,17 @@ window.onload = function()
     0 x 1 x x x x x 1 x x x 1 x x x
     1 x x x x x 1 x x x 1 x x x x x`;
     templates.push(template3)
+
+    var template4 = {width: 10, height: 8};
+    template4.context = `5 x 5 x 5 x 4 4 5 x
+    1 x x x x x x x x x
+    2 x 4 x 1 x x x 4 x
+    x x x x 1 x x x x x
+    1 x x x x x x 4 x 4
+    1 x x x 1 x x x x x
+    x x x x 1 x x x x x
+    0 x 1 x x x x x x x`
+    templates.push(template4);
 
     //this outputs a grid object
     //grid object contains clue object, location of clue, word necessary, etc
@@ -147,14 +177,14 @@ window.onload = function()
                 }
             }
             grid[i].wordcords = wordcords;
-            grid[i].possiblewords = words.filter((e) => {return e.word.length == wordcords.length});
-
+            //grid[i].possiblewords = words.filter((e) => {return e.word.length == wordcords.length});
         }
 
         //find intersections
         for(let i = 0; i < grid.length; i++)
         {
             grid[i].intersections = [];
+            let intpos = []
             for(let j = 0; j < grid[i].wordcords.length; j++)
             {
                 let x = grid[i].wordcords[j].x;
@@ -167,8 +197,40 @@ window.onload = function()
                         if(coord.x == x && coord.y == y && k != i)
                         {
                             grid[i].intersections.push({elem: grid[k], thispos: j, otherpos: l});
+                            //grid[i].possiblewords = words.filter((e) => {return e.word.length == grid[i].wordcords.length});
+                            intpos.push(j);
                         }
                     }
+                }
+            }
+            
+            //word analysis
+            let possiblewords = words.filter((e) => {return e.word.length == grid[i].wordcords.length});
+            let patterns = [];
+            grid[i].possiblewords = [];
+            if(intpos.length == grid[i].wordcords.length)
+            {
+                grid[i].possiblewords = possiblewords;
+            }
+            else
+            {
+                for(let j = 0; j < possiblewords.length; j++)
+                {
+                    let word = possiblewords[j];
+                    let regex = '';
+                    for(let k = 0; k < word.word.length; k++)
+                    {
+                        if(intpos.includes(k)) regex += word.word.charAt(k);
+                        else regex += '[a-z]';
+                    }
+                    if(!patterns.includes(regex))
+                    {
+                        patterns.push(regex);
+                    }
+                }
+                for(let j = 0; j < patterns.length; j++)
+                {
+                    grid[i].possiblewords.push([possiblewords.filter((e) => {return e.word.match(patterns[j])})]);
                 }
             }
         }
@@ -187,7 +249,7 @@ window.onload = function()
     }
 
     grid = createGridObject(templates[templatechoice]);
-    populateGrid(grid);
+    //populateGrid(grid);
     console.log(grid);
 
     function populateGrid(grid)
@@ -211,6 +273,7 @@ window.onload = function()
 
     function recursiveFill(grid, index)
     {
+        //if(index > 14) console.log("16 deep");
         if(index >= grid.length) return -1;
         let words = grid[index].possiblewords;
         let intersections = grid[index].intersections;

@@ -1,4 +1,4 @@
-const words = [
+/*const words = [
     {word: "lemon"},
     {word: "teaser"},
     {word: "chalice"},
@@ -39,29704 +39,23516 @@ const words = [
     {word: "she"},
     {word: "speed"},
     {word: "mud"}
-];/*[
+];*/
+const words = 
+[
     {
-     "word": "able",
-     "clues": [
-      "capable"
-     ]
+      "word": "abandon",
+      "clues": [
+        "forsake",
+        " desert"
+      ]
     },
     {
-     "word": "absolute",
-     "clues": [
-      "perfect or complete"
-     ]
+      "word": "abbey",
+      "clues": [
+        "monastery"
+      ]
     },
     {
-     "word": "abstract",
-     "clues": [
-      "existing only in the mind"
-     ]
+      "word": "able",
+      "clues": [
+        "capable"
+      ]
     },
     {
-     "word": "abundant",
-     "clues": [
-      "plentiful"
-     ]
+      "word": "abolish",
+      "clues": [
+        "get rid of"
+      ]
     },
     {
-     "word": "active",
-     "clues": [
-      "vigorous"
-     ]
+      "word": "abortion",
+      "clues": [
+        "termination pregnancy"
+      ]
     },
     {
-     "word": "addicted",
-     "clues": [
-      "hooked"
-     ]
+      "word": "abridge",
+      "clues": [
+        "shorten",
+        " cut"
+      ]
     },
     {
-     "word": "agile",
-     "clues": [
-      "nimble",
-      " spry",
-      " quick"
-     ]
+      "word": "absence",
+      "clues": [
+        "failure to be present"
+      ]
     },
     {
-     "word": "alive",
-     "clues": [
-      "live"
-     ]
+      "word": "absolute",
+      "clues": [
+        "perfect or complete"
+      ]
     },
     {
-     "word": "aloof",
-     "clues": [
-      "distant"
-     ]
+      "word": "absorb",
+      "clues": [
+        "take in",
+        " suck up"
+      ]
     },
     {
-     "word": "amber",
-     "clues": [
-      "yellowish"
-     ]
+      "word": "absorption",
+      "clues": [
+        "social assimilation",
+        "soaking up",
+        "preoccupation",
+        " engrossment"
+      ]
     },
     {
-     "word": "ambiguous",
-     "clues": [
-      "equivocal"
-     ]
+      "word": "abstract",
+      "clues": [
+        "existing only in the mind"
+      ]
     },
     {
-     "word": "ample",
-     "clues": [
-      "sizable",
-      " capacious"
-     ]
+      "word": "abundant",
+      "clues": [
+        "plentiful"
+      ]
     },
     {
-     "word": "annual",
-     "clues": [
-      "yearly"
-     ]
+      "word": "abuse",
+      "clues": [
+        "maltreatment",
+        " ill-treatment",
+        "insult",
+        "shout at",
+        " abuse verbally"
+      ]
     },
     {
-     "word": "applied",
-     "clues": [
-      "concerned with concrete problems or data"
-     ]
+      "word": "academy",
+      "clues": [
+        "learned establishment"
+      ]
     },
     {
-     "word": "arrogant",
-     "clues": [
-      "self-important"
-     ]
+      "word": "accent",
+      "clues": [
+        "speech pattern"
+      ]
     },
     {
-     "word": "artificial",
-     "clues": [
-      "unreal",
-      " unnatural"
-     ]
+      "word": "accept",
+      "clues": [
+        "live with",
+        " put up with"
+      ]
     },
     {
-     "word": "assertive",
-     "clues": [
-      "self-assured"
-     ]
+      "word": "acceptance",
+      "clues": [
+        "adoption",
+        " espousal",
+        " favorable reception"
+      ]
     },
     {
-     "word": "astonishing",
-     "clues": [
-      "astounding",
-      " staggering"
-     ]
+      "word": "access",
+      "clues": [
+        "right to obtain or make use of",
+        "entree",
+        " accession",
+        " admittance"
+      ]
     },
     {
-     "word": "attractive",
-     "clues": [
-      "pleasing to the eye or mind"
-     ]
+      "word": "accident",
+      "clues": [
+        "fortuity",
+        " chance event",
+        "mishap"
+      ]
     },
     {
-     "word": "automatic",
-     "clues": [
-      "operating with minimal human intervention"
-     ]
+      "word": "accompany",
+      "clues": [
+        "go or come with"
+      ]
     },
     {
-     "word": "available",
-     "clues": [
-      "obtainable"
-     ]
+      "word": "account",
+      "clues": [
+        "accounting",
+        " account statement",
+        "explanation"
+      ]
     },
     {
-     "word": "aware",
-     "clues": [
-      "mindful"
-     ]
+      "word": "accountant",
+      "clues": [
+        "comptroller",
+        " controller"
+      ]
     },
     {
-     "word": "awful",
-     "clues": [
-      "dreadful",
-      " terrible"
-     ]
+      "word": "accumulation",
+      "clues": [
+        "accretion"
+      ]
     },
     {
-     "word": "bad",
-     "clues": [
-      "immoral",
-      " evil"
-     ]
+      "word": "achieve",
+      "clues": [
+        "accomplish",
+        " attain",
+        " gain with effort"
+      ]
     },
     {
-     "word": "bad",
-     "clues": [
-      "below average in quality or performance",
-      " defective"
-     ]
+      "word": "achievement",
+      "clues": [
+        "accomplishment"
+      ]
     },
     {
-     "word": "bad",
-     "clues": [
-      "spoiled",
-      " spoilt",
-      " capable of harming"
-     ]
+      "word": "acid",
+      "clues": [
+        "water-soluble compound with sour taste"
+      ]
     },
     {
-     "word": "bald",
-     "clues": [
-      "lacking hair"
-     ]
+      "word": "acquaintance",
+      "clues": [
+        "familiar person",
+        "familiarity",
+        " personal knowledge"
+      ]
     },
     {
-     "word": "bare",
-     "clues": [
-      "lacking its natural or customary covering"
-     ]
+      "word": "acquisition",
+      "clues": [
+        "possession"
+      ]
     },
     {
-     "word": "basic",
-     "clues": [
-      "pertaining to a base or basis"
-     ]
+      "word": "acquit",
+      "clues": [
+        "clear",
+        " pronounce not guilty"
+      ]
     },
     {
-     "word": "beautiful",
-     "clues": [
-      "possessing beauty"
-     ]
+      "word": "act",
+      "clues": [
+        "subdivision of a play or opera or ballet",
+        "human action",
+        " human activity"
+      ]
     },
     {
-     "word": "bitter",
-     "clues": [
-      "acrimonious",
-      " resentful"
-     ]
+      "word": "action",
+      "clues": [
+        "series of events that form a plot",
+        "legal action",
+        "military action"
+      ]
     },
     {
-     "word": "bitter",
-     "clues": [
-      "bitter-tasting"
-     ]
+      "word": "activate",
+      "clues": [
+        "make active"
+      ]
     },
     {
-     "word": "black",
-     "clues": [
-      "achromatic"
-     ]
+      "word": "active",
+      "clues": [
+        "vigorous"
+      ]
     },
     {
-     "word": "black",
-     "clues": [
-      "without cream or sugar"
-     ]
+      "word": "activity",
+      "clues": [
+        "activeness",
+        " trait of being active"
+      ]
     },
     {
-     "word": "bland",
-     "clues": [
-      "tasteless",
-      " insipid",
-      " flavorless"
-     ]
+      "word": "add",
+      "clues": [
+        "total"
+      ]
     },
     {
-     "word": "blank",
-     "clues": [
-      "empty",
-      " not filled in"
-     ]
+      "word": "addicted",
+      "clues": [
+        "hooked"
+      ]
     },
     {
-     "word": "blind",
-     "clues": [
-      "unsighted"
-     ]
+      "word": "addition",
+      "clues": [
+        "summation",
+        " plus",
+        "add-on",
+        " improver"
+      ]
     },
     {
-     "word": "blonde",
-     "clues": [
-      "light-haired"
-     ]
+      "word": "address",
+      "clues": [
+        "place where a person or organization can be found"
+      ]
     },
     {
-     "word": "bloody",
-     "clues": [
-      "covered with blood"
-     ]
+      "word": "adjust",
+      "clues": [
+        "conform",
+        " adapt"
+      ]
     },
     {
-     "word": "bold",
-     "clues": [
-      "fearless and daring"
-     ]
+      "word": "administration",
+      "clues": [
+        "presidency"
+      ]
     },
     {
-     "word": "brave",
-     "clues": [
-      "courageous",
-      " fearless"
-     ]
+      "word": "admiration",
+      "clues": [
+        "esteem"
+      ]
     },
     {
-     "word": "broken",
-     "clues": [
-      "physically separated into pieces"
-     ]
+      "word": "admire",
+      "clues": [
+        "look up to"
+      ]
     },
     {
-     "word": "brown",
-     "clues": [
-      "having a brown color"
-     ]
+      "word": "admission",
+      "clues": [
+        "acknowledgment",
+        "entrance fee"
+      ]
     },
     {
-     "word": "central",
-     "clues": [
-      "in or near a center"
-     ]
+      "word": "admit",
+      "clues": [
+        "acknowledge",
+        "allow in",
+        " let in",
+        " allow to enter"
+      ]
     },
     {
-     "word": "certain",
-     "clues": [
-      "sure"
-     ]
+      "word": "adopt",
+      "clues": [
+        "take in as a child",
+        "borrow",
+        " take over",
+        " take up"
+      ]
     },
     {
-     "word": "charismatic",
-     "clues": [
-      "possessing a magnetic personality"
-     ]
+      "word": "adoption",
+      "clues": [
+        "child adoption"
+      ]
     },
     {
-     "word": "cheap",
-     "clues": [
-      "inexpensive"
-     ]
+      "word": "adult",
+      "clues": [
+        "grownup"
+      ]
     },
     {
-     "word": "childish",
-     "clues": [
-      "infantile"
-     ]
+      "word": "advance",
+      "clues": [
+        "progress",
+        " pass on",
+        " move on",
+        " march on",
+        " go on",
+        "cash advance"
+      ]
     },
     {
-     "word": "clean",
-     "clues": [
-      "free from dirt"
-     ]
+      "word": "advantage",
+      "clues": [
+        "benefit"
+      ]
     },
     {
-     "word": "clear",
-     "clues": [
-      "free from clouds or mist or haze"
-     ]
+      "word": "adventure",
+      "clues": [
+        "escapade",
+        " risky venture"
+      ]
     },
     {
-     "word": "clear",
-     "clues": [
-      "well-defined"
-     ]
+      "word": "advertise",
+      "clues": [
+        "push",
+        " promote"
+      ]
     },
     {
-     "word": "close",
-     "clues": [
-      "close in relevance or relationship"
-     ]
+      "word": "advertising",
+      "clues": [
+        "ad",
+        " advertisement"
+      ]
     },
     {
-     "word": "close",
-     "clues": [
-      "near"
-     ]
+      "word": "advice",
+      "clues": [
+        "proposal for an appropriate course of action"
+      ]
     },
     {
-     "word": "closed",
-     "clues": [
-      "shut",
-      " unopen"
-     ]
+      "word": "adviser",
+      "clues": [
+        "advisor",
+        " consultant"
+      ]
     },
     {
-     "word": "cold",
-     "clues": [
-      "physically cold"
-     ]
+      "word": "advocate",
+      "clues": [
+        "proponent"
+      ]
     },
     {
-     "word": "cold",
-     "clues": [
-      "without human warmth or emotion"
-     ]
+      "word": "affair",
+      "clues": [
+        "affaire",
+        " intimacy",
+        " liaison",
+        " involvement"
+      ]
     },
     {
-     "word": "color-blind",
-     "clues": [
-      "unable to distinguish colors"
-     ]
+      "word": "affect",
+      "clues": [
+        "impact",
+        " bear upon"
+      ]
     },
     {
-     "word": "colorful",
-     "clues": [
-      "vivid in color"
-     ]
+      "word": "affinity",
+      "clues": [
+        "natural attraction",
+        "kinship"
+      ]
     },
     {
-     "word": "comfortable",
-     "clues": [
-      "comfy"
-     ]
+      "word": "afford",
+      "clues": [
+        "have the financial means"
+      ]
     },
     {
-     "word": "common",
-     "clues": [
-      "average or ordinary or usual"
-     ]
+      "word": "age",
+      "clues": [
+        "historic period",
+        "how long something has existed",
+        "get older"
+      ]
     },
     {
-     "word": "common",
-     "clues": [
-      "belonging to a community"
-     ]
+      "word": "agency",
+      "clues": [
+        "business that serves other businesses"
+      ]
     },
     {
-     "word": "common",
-     "clues": [
-      "mutual"
-     ]
+      "word": "agenda",
+      "clues": [
+        "order of business"
+      ]
     },
     {
-     "word": "complete",
-     "clues": [
-      "having every necessary part"
-     ]
+      "word": "agent",
+      "clues": [
+        "representative who acts on behalf of others",
+        "federal agent"
+      ]
     },
     {
-     "word": "complex",
-     "clues": [
-      "complicated"
-     ]
+      "word": "agile",
+      "clues": [
+        "nimble",
+        " spry",
+        " quick"
+      ]
     },
     {
-     "word": "comprehensive",
-     "clues": [
-      "all-including"
-     ]
+      "word": "agony",
+      "clues": [
+        "torment"
+      ]
     },
     {
-     "word": "concrete",
-     "clues": [
-      "material"
-     ]
+      "word": "agree",
+      "clues": [
+        "consent",
+        " assent"
+      ]
     },
     {
-     "word": "conscious",
-     "clues": [
-      "aware"
-     ]
+      "word": "agreement",
+      "clues": [
+        "accord"
+      ]
     },
     {
-     "word": "conservative",
-     "clues": [
-      "resistant to change"
-     ]
+      "word": "agriculture",
+      "clues": [
+        "farming",
+        " husbandry"
+      ]
     },
     {
-     "word": "constant",
-     "clues": [
-      "steadfast",
-      " unwavering"
-     ]
+      "word": "aid",
+      "clues": [
+        "economic aid"
+      ]
     },
     {
-     "word": "constant",
-     "clues": [
-      "unending",
-      " incessant"
-     ]
+      "word": "AIDS",
+      "clues": [
+        "acquired immune deficiency syndrome"
+      ]
     },
     {
-     "word": "constitutional",
-     "clues": [
-      "relating to a/the constitution"
-     ]
+      "word": "air",
+      "clues": [
+        "mixture of gases"
+      ]
     },
     {
-     "word": "content",
-     "clues": [
-      "contented"
-     ]
+      "word": "aisle",
+      "clues": [
+        "passage between seats or supermarket shelves"
+      ]
     },
     {
-     "word": "continental",
-     "clues": [
-      "relating to a continent"
-     ]
+      "word": "alarm",
+      "clues": [
+        "alarm clock",
+        "warning device",
+        " alarm system",
+        "dismay",
+        " consternation",
+        " fear"
+      ]
     },
     {
-     "word": "continuous",
-     "clues": [
-      "uninterrupted"
-     ]
+      "word": "album",
+      "clues": [
+        "book of blank pages",
+        "record album"
+      ]
     },
     {
-     "word": "conventional",
-     "clues": [
-      "following accepted customs"
-     ]
+      "word": "alcohol",
+      "clues": [
+        "alcoholic beverage",
+        " intoxicant",
+        " inebriant"
+      ]
     },
     {
-     "word": "cool",
-     "clues": [
-      "neither warm or very cold in temperature"
-     ]
+      "word": "alive",
+      "clues": [
+        "live"
+      ]
     },
     {
-     "word": "cool",
-     "clues": [
-      "unenthusiastic",
-      " unfriendly",
-      " unresponsive"
-     ]
+      "word": "allocation",
+      "clues": [
+        "allotment",
+        " share"
+      ]
     },
     {
-     "word": "cooperative",
-     "clues": [
-      "co-operative"
-     ]
+      "word": "allow",
+      "clues": [
+        "permit",
+        " let"
+      ]
     },
     {
-     "word": "critical",
-     "clues": [
-      "tending to find errors and flaws"
-     ]
+      "word": "allowance",
+      "clues": [
+        "money allowed or granted"
+      ]
     },
     {
-     "word": "critical",
-     "clues": [
-      "being in a state of crisis or emergency"
-     ]
+      "word": "ally",
+      "clues": [
+        "friend",
+        "friendly nation"
+      ]
     },
     {
-     "word": "critical",
-     "clues": [
-      "vital urgently needed"
-     ]
+      "word": "aloof",
+      "clues": [
+        "distant"
+      ]
     },
     {
-     "word": "crude",
-     "clues": [
-      "unrefined",
-      " unprocessed"
-     ]
+      "word": "aluminium",
+      "clues": [
+        "aluminum",
+        " Al",
+        " silvery metal"
+      ]
     },
     {
-     "word": "crude",
-     "clues": [
-      "primitive"
-     ]
+      "word": "amber",
+      "clues": [
+        "yellowish"
+      ]
     },
     {
-     "word": "cruel",
-     "clues": [
-      "brutal",
-      " barbarous"
-     ]
+      "word": "ambiguity",
+      "clues": [
+        "equivocalness"
+      ]
     },
     {
-     "word": "cultural",
-     "clues": [
-      "relating to arts"
-     ]
+      "word": "ambiguous",
+      "clues": [
+        "equivocal"
+      ]
     },
     {
-     "word": "cute",
-     "clues": [
-      "attractive"
-     ]
+      "word": "ambition",
+      "clues": [
+        "ambitiousness"
+      ]
     },
     {
-     "word": "dangerous",
-     "clues": [
-      "unsafe"
-     ]
+      "word": "ample",
+      "clues": [
+        "sizable",
+        " capacious"
+      ]
     },
     {
-     "word": "dark",
-     "clues": [
-      "devoid of light"
-     ]
+      "word": "amputate",
+      "clues": [
+        "cut off",
+        " remove surgically"
+      ]
     },
     {
-     "word": "dead",
-     "clues": [
-      "inanimate"
-     ]
+      "word": "amuse",
+      "clues": [
+        "make laugh"
+      ]
     },
     {
-     "word": "deadly",
-     "clues": [
-      "lethal"
-     ]
+      "word": "analysis",
+      "clues": [
+        "psychoanalysis"
+      ]
     },
     {
-     "word": "decisive",
-     "clues": [
-      "determining"
-     ]
+      "word": "analyst",
+      "clues": [
+        "psychoanalyst"
+      ]
     },
     {
-     "word": "decorative",
-     "clues": [
-      "cosmetic",
-      " ornamental"
-     ]
+      "word": "ancestor",
+      "clues": [
+        "ancestor"
+      ]
     },
     {
-     "word": "deep",
-     "clues": [
-      "having great spatial extension downward"
-     ]
+      "word": "angel",
+      "clues": [
+        "spiritual being"
+      ]
     },
     {
-     "word": "definite",
-     "clues": [
-      "precise",
-      " explicit"
-     ]
+      "word": "anger",
+      "clues": [
+        "ire"
+      ]
     },
     {
-     "word": "delicate",
-     "clues": [
-      "exquisitely fine and subtle"
-     ]
+      "word": "angle",
+      "clues": [
+        "slant",
+        " bias",
+        "space between two lines"
+      ]
     },
     {
-     "word": "delicate",
-     "clues": [
-      "fragile",
-      " frail",
-      " easily broken",
-      " sensitive"
-     ]
+      "word": "animal",
+      "clues": [
+        "animate being",
+        " beast",
+        " brute",
+        " creature",
+        " fauna"
+      ]
     },
     {
-     "word": "democratic",
-     "clues": [
-      "based upon the principles of democracy"
-     ]
+      "word": "ankle",
+      "clues": [
+        "ankle joint"
+      ]
     },
     {
-     "word": "different",
-     "clues": [
-      "unlike",
-      " dissimilar"
-     ]
+      "word": "anniversary",
+      "clues": [
+        "day of remembrance"
+      ]
     },
     {
-     "word": "difficult",
-     "clues": [
-      "hard"
-     ]
+      "word": "announcement",
+      "clues": [
+        "proclamation",
+        " declaration"
+      ]
     },
     {
-     "word": "digital",
-     "clues": [
-      "discrete"
-     ]
+      "word": "annual",
+      "clues": [
+        "yearly"
+      ]
     },
     {
-     "word": "diplomatic",
-     "clues": [
-      "diplomatical",
-      " suave"
-     ]
+      "word": "answer",
+      "clues": [
+        "reply",
+        " respond"
+      ]
     },
     {
-     "word": "direct",
-     "clues": [
-      "without deviation or interruption"
-     ]
+      "word": "ant",
+      "clues": [
+        "social insect"
+      ]
     },
     {
-     "word": "dirty",
-     "clues": [
-      "soiled",
-      " unclean"
-     ]
+      "word": "anticipation",
+      "clues": [
+        "expectancy"
+      ]
     },
     {
-     "word": "dirty",
-     "clues": [
-      "obscene",
-      " indecent"
-     ]
+      "word": "anxiety",
+      "clues": [
+        "anxiousness"
+      ]
     },
     {
-     "word": "discreet",
-     "clues": [
-      "keeping private",
-      " prudent",
-      " restrained"
-     ]
+      "word": "apathy",
+      "clues": [
+        "absence of emotion or enthusiasm"
+      ]
     },
     {
-     "word": "distant",
-     "clues": [
-      "separated in space or time"
-     ]
+      "word": "apology",
+      "clues": [
+        "expression of regret"
+      ]
     },
     {
-     "word": "distinct",
-     "clues": [
-      "easy to perceive"
-     ]
+      "word": "apparatus",
+      "clues": [
+        "setup",
+        " equipment"
+      ]
     },
     {
-     "word": "domestic",
-     "clues": [
-      "concerning the internal affairs of a nation"
-     ]
+      "word": "appeal",
+      "clues": [
+        "solicitation",
+        "challenge a decision",
+        "appealingness",
+        " charm"
+      ]
     },
     {
-     "word": "domestic",
-     "clues": [
-      "relating to the home"
-     ]
+      "word": "appear",
+      "clues": [
+        "come into view"
+      ]
     },
     {
-     "word": "dominant",
-     "clues": [
-      "exercising influence or control"
-     ]
+      "word": "appearance",
+      "clues": [
+        "visual aspect"
+      ]
     },
     {
-     "word": "dramatic",
-     "clues": [
-      "pertaining to theater"
-     ]
+      "word": "appendix",
+      "clues": [
+        "body part",
+        "supplementary material"
+      ]
     },
     {
-     "word": "dry",
-     "clues": [
-      "free from liquid or moisture"
-     ]
+      "word": "appetite",
+      "clues": [
+        "craving"
+      ]
     },
     {
-     "word": "due",
-     "clues": [
-      "owed"
-     ]
+      "word": "applaud",
+      "clues": [
+        "clap one's hands"
+      ]
     },
     {
-     "word": "dull",
-     "clues": [
-      "not having a sharp edge or point"
-     ]
+      "word": "apple",
+      "clues": [
+        "fruit with red",
+        " yellow or green skin"
+      ]
     },
     {
-     "word": "dull",
-     "clues": [
-      "boring",
-      " lacking in liveliness or animation"
-     ]
+      "word": "application",
+      "clues": [
+        "practical application",
+        "verbal or written request for assistance or employment or admission"
+      ]
     },
     {
-     "word": "dynamic",
-     "clues": [
-      "dynamical",
-      " characterized by action"
-     ]
+      "word": "applied",
+      "clues": [
+        "concerned with concrete problems or data"
+      ]
     },
     {
-     "word": "easy",
-     "clues": [
-      "posing no difficulty"
-     ]
+      "word": "appoint",
+      "clues": [
+        "name",
+        " nominate"
+      ]
     },
     {
-     "word": "economic",
-     "clues": [
-      "relating to economics"
-     ]
+      "word": "appointment",
+      "clues": [
+        "job",
+        " post"
+      ]
     },
     {
-     "word": "effective",
-     "clues": [
-      "effectual",
-      " efficacious"
-     ]
+      "word": "appreciate",
+      "clues": [
+        "recognize with gratitude"
+      ]
     },
     {
-     "word": "elegant",
-     "clues": [
-      "refined",
-      " tasteful"
-     ]
+      "word": "approach",
+      "clues": [
+        "near",
+        " draw near",
+        " draw close",
+        " come near"
+      ]
     },
     {
-     "word": "articulate",
-     "clues": [
-      "eloquent",
-      " well-spoken"
-     ]
+      "word": "approval",
+      "clues": [
+        "blessing"
+      ]
     },
     {
-     "word": "empirical",
-     "clues": [
-      "empiric",
-      " derived from experiment and observation"
-     ]
+      "word": "approve",
+      "clues": [
+        "O.K.",
+        " okay",
+        " sanction"
+      ]
     },
     {
-     "word": "environmental",
-     "clues": [
-      "relating to the external surroundings"
-     ]
+      "word": "aquarium",
+      "clues": [
+        "fish tank",
+        " marine museum"
+      ]
     },
     {
-     "word": "equal",
-     "clues": [
-      "like",
-      " equivalent",
-      " same"
-     ]
+      "word": "arch",
+      "clues": [
+        "archway"
+      ]
     },
     {
-     "word": "essential",
-     "clues": [
-      "basic and fundamental"
-     ]
+      "word": "architect",
+      "clues": [
+        "designer of buildings"
+      ]
     },
     {
-     "word": "established",
-     "clues": [
-      "set up or accepted"
-     ]
+      "word": "architecture",
+      "clues": [
+        "building design"
+      ]
     },
     {
-     "word": "eternal",
-     "clues": [
-      "everlasting",
-      " perpetual",
-      " unending"
-     ]
+      "word": "archive",
+      "clues": [
+        "archives"
+      ]
     },
     {
-     "word": "ethnic",
-     "clues": [
-      "cultural"
-     ]
+      "word": "area",
+      "clues": [
+        "expanse",
+        " surface area"
+      ]
     },
     {
-     "word": "even",
-     "clues": [
-      "level",
-      " flush"
-     ]
+      "word": "arena",
+      "clues": [
+        "place for spectacles"
+      ]
     },
     {
-     "word": "even",
-     "clues": [
-      "divisible by two"
-     ]
+      "word": "argument",
+      "clues": [
+        "argumentation",
+        " debate"
+      ]
     },
     {
-     "word": "exact",
-     "clues": [
-      "precise"
-     ]
+      "word": "arise",
+      "clues": [
+        "get up",
+        " get out of bed",
+        "originate",
+        " develop",
+        " come into existence"
+      ]
     },
     {
-     "word": "exclusive",
-     "clues": [
-      "excluding much or all"
-     ]
+      "word": "arm",
+      "clues": [
+        "human limb"
+      ]
     },
     {
-     "word": "exotic",
-     "clues": [
-      "foreign",
-      " alien"
-     ]
+      "word": "army",
+      "clues": [
+        "ground forces"
+      ]
     },
     {
-     "word": "exotic",
-     "clues": [
-      "unusual",
-      " strikingly strange"
-     ]
+      "word": "arrange",
+      "clues": [
+        "set up",
+        " order",
+        "set up",
+        " put in systematic order"
+      ]
     },
     {
-     "word": "experienced",
-     "clues": [
-      "knowledgeable"
-     ]
+      "word": "arrangement",
+      "clues": [
+        "placement"
+      ]
     },
     {
-     "word": "explicit",
-     "clues": [
-      "expressed"
-     ]
+      "word": "arrest",
+      "clues": [
+        "apprehend",
+        " pick up",
+        " take into custody"
+      ]
     },
     {
-     "word": "express",
-     "clues": [
-      "without unnecessary stops"
-     ]
+      "word": "arrogant",
+      "clues": [
+        "self-important"
+      ]
     },
     {
-     "word": "extinct",
-     "clues": [
-      "non-existent",
-      " not surviving"
-     ]
+      "word": "arrow",
+      "clues": [
+        "pointer",
+        " indicator",
+        "projectile"
+      ]
     },
     {
-     "word": "fair",
-     "clues": [
-      "impartial"
-     ]
+      "word": "art",
+      "clues": [
+        "artistic creation",
+        " artistic production"
+      ]
     },
     {
-     "word": "faithful",
-     "clues": [
-      "sexually trustworthy"
-     ]
+      "word": "article",
+      "clues": [
+        "nonfictional prose forming an independent part of a publication"
+      ]
     },
     {
-     "word": "false",
-     "clues": [
-      "not in accordance with fact or reality"
-     ]
+      "word": "articulate",
+      "clues": [
+        "enunciate",
+        "eloquent",
+        " well-spoken"
+      ]
     },
     {
-     "word": "familiar",
-     "clues": [
-      "well known"
-     ]
+      "word": "artificial",
+      "clues": [
+        "unreal",
+        " unnatural"
+      ]
     },
     {
-     "word": "far",
-     "clues": [
-      "at a long distance"
-     ]
+      "word": "artist",
+      "clues": [
+        "creative person"
+      ]
     },
     {
-     "word": "fashionable",
-     "clues": [
-      "stylish"
-     ]
+      "word": "ash",
+      "clues": [
+        "residue from a fire"
+      ]
     },
     {
-     "word": "fast",
-     "clues": [
-      "at a rapid tempo"
-     ]
+      "word": "ask",
+      "clues": [
+        "inquire"
+      ]
     },
     {
-     "word": "fastidious",
-     "clues": [
-      "finicky"
-     ]
+      "word": "aspect",
+      "clues": [
+        "facet"
+      ]
     },
     {
-     "word": "fat",
-     "clues": [
-      "having much flesh",
-      " especially fat"
-     ]
+      "word": "assault",
+      "clues": [
+        "physical attack"
+      ]
     },
     {
-     "word": "favorable",
-     "clues": [
-      "encouraging",
-      " approving"
-     ]
+      "word": "assembly",
+      "clues": [
+        "fabrication",
+        " construction",
+        "assemblage",
+        " gathering of people"
+      ]
     },
     {
-     "word": "feminine",
-     "clues": [
-      "womanly"
-     ]
+      "word": "assertive",
+      "clues": [
+        "self-assured"
+      ]
     },
     {
-     "word": "financial",
-     "clues": [
-      "fiscal"
-     ]
+      "word": "assessment",
+      "clues": [
+        "appraisal",
+        "judgment",
+        " judgement"
+      ]
     },
     {
-     "word": "fine",
-     "clues": [
-      "small-grained or smooth"
-     ]
+      "word": "asset",
+      "clues": [
+        "plus",
+        " valuable quality"
+      ]
     },
     {
-     "word": "finished",
-     "clues": [
-      "ruined"
-     ]
+      "word": "assignment",
+      "clues": [
+        "task"
+      ]
     },
     {
-     "word": "first",
-     "clues": [
-      "initial"
-     ]
+      "word": "association",
+      "clues": [
+        "formal organization of people",
+        "affiliation",
+        "mental connection"
+      ]
     },
     {
-     "word": "first-hand",
-     "clues": [
-      "direct"
-     ]
+      "word": "assume",
+      "clues": [
+        "presume",
+        " take for granted",
+        " take to be the case"
+      ]
     },
     {
-     "word": "flat",
-     "clues": [
-      "horizontally level"
-     ]
+      "word": "assumption",
+      "clues": [
+        "premise",
+        " premiss"
+      ]
     },
     {
-     "word": "flawed",
-     "clues": [
-      "imperfect",
-      " blemished",
-      " faulty"
-     ]
+      "word": "astonishing",
+      "clues": [
+        "astounding",
+        " staggering"
+      ]
     },
     {
-     "word": "flexible",
-     "clues": [
-      "bendable"
-     ]
+      "word": "asylum",
+      "clues": [
+        "refuge",
+        " sanctuary",
+        " shelter"
+      ]
     },
     {
-     "word": "formal",
-     "clues": [
-      "adhering to traditional standards"
-     ]
+      "word": "athlete",
+      "clues": [
+        "jock",
+        " sportive person"
+      ]
     },
     {
-     "word": "forward",
-     "clues": [
-      "at",
-      " near or directed toward the front"
-     ]
+      "word": "atmosphere",
+      "clues": [
+        "ambiance",
+        " ambience",
+        "envelope of gases"
+      ]
     },
     {
-     "word": "fragrant",
-     "clues": [
-      "pleasant-smelling"
-     ]
+      "word": "attachment",
+      "clues": [
+        "supplementary part",
+        "affection",
+        " fondness"
+      ]
     },
     {
-     "word": "frank",
-     "clues": [
-      "candid",
-      " blunt",
-      " forthright"
-     ]
+      "word": "attack",
+      "clues": [
+        "strong criticism",
+        "onslaught",
+        " physical attack",
+        "assail",
+        " assault",
+        " attack physically or emotionally"
+      ]
     },
     {
-     "word": "free",
-     "clues": [
-      "able to act at will"
-     ]
+      "word": "attention",
+      "clues": [
+        "faculty or power of mental concentration"
+      ]
     },
     {
-     "word": "free",
-     "clues": [
-      "complimentary",
-      " costless",
-      " gratis"
-     ]
+      "word": "attic",
+      "clues": [
+        "loft",
+        " garret"
+      ]
     },
     {
-     "word": "free",
-     "clues": [
-      "not occupied"
-     ]
+      "word": "attitude",
+      "clues": [
+        "mental attitude"
+      ]
     },
     {
-     "word": "fresh",
-     "clues": [
-      "recently made",
-      " produced",
-      " or harvested"
-     ]
+      "word": "attract",
+      "clues": [
+        "appeal",
+        " be attractive to"
+      ]
     },
     {
-     "word": "fresh",
-     "clues": [
-      "insolent",
-      " impertinent",
-      " impudent",
-      " sassy"
-     ]
+      "word": "attraction",
+      "clues": [
+        "attractiveness",
+        "physical force",
+        "entertainment offered to the public"
+      ]
     },
     {
-     "word": "friendly",
-     "clues": [
-      "befitting a friend"
-     ]
+      "word": "attractive",
+      "clues": [
+        "pleasing to the eye or mind"
+      ]
     },
     {
-     "word": "frozen",
-     "clues": [
-      "unthawed"
-     ]
+      "word": "auction",
+      "clues": [
+        "auction sale"
+      ]
     },
     {
-     "word": "full",
-     "clues": [
-      "containing as much as is possible"
-     ]
+      "word": "audience",
+      "clues": [
+        "spectators",
+        " listeners"
+      ]
     },
     {
-     "word": "full",
-     "clues": [
-      "replete",
-      " filled to satisfaction with food"
-     ]
+      "word": "auditor",
+      "clues": [
+        "student"
+      ]
     },
     {
-     "word": "functional",
-     "clues": [
-      "designed for or capable of a particular function"
-     ]
+      "word": "aunt",
+      "clues": [
+        "auntie",
+        " relative"
+      ]
     },
     {
-     "word": "funny",
-     "clues": [
-      "amusing",
-      " laughable"
-     ]
+      "word": "authorise",
+      "clues": [
+        "empower"
+      ]
     },
     {
-     "word": "general",
-     "clues": [
-      "applying to most members of a category"
-     ]
+      "word": "authority",
+      "clues": [
+        "expert whose views are taken as definitive",
+        "persons who exercise administrative control"
+      ]
     },
     {
-     "word": "genetic",
-     "clues": [
-      "genetical"
-     ]
+      "word": "automatic",
+      "clues": [
+        "operating with minimal human intervention"
+      ]
     },
     {
-     "word": "genuine",
-     "clues": [
-      "not fake or counterfeit"
-     ]
+      "word": "autonomy",
+      "clues": [
+        "self-sufficiency",
+        " personal independence"
+      ]
     },
     {
-     "word": "good",
-     "clues": [
-      "beneficial",
-      " salutary"
-     ]
+      "word": "available",
+      "clues": [
+        "obtainable"
+      ]
     },
     {
-     "word": "good",
-     "clues": [
-      "just",
-      " upright",
-      " virtuous"
-     ]
+      "word": "avant-garde",
+      "clues": [
+        "vanguard",
+        " new wave"
+      ]
     },
     {
-     "word": "gradual",
-     "clues": [
-      "proceeding in small stages"
-     ]
+      "word": "avenue",
+      "clues": [
+        "boulevard"
+      ]
     },
     {
-     "word": "grand",
-     "clues": [
-      "luxurious",
-      " opulent",
-      " sumptuous"
-     ]
+      "word": "average",
+      "clues": [
+        "norm"
+      ]
     },
     {
-     "word": "graphic",
-     "clues": [
-      "explicit",
-      " descriptive"
-     ]
+      "word": "aviation",
+      "clues": [
+        "operation of aircraft"
+      ]
     },
     {
-     "word": "graphic",
-     "clues": [
-      "pictorial",
-      " lifelike",
-      " vivid"
-     ]
+      "word": "award",
+      "clues": [
+        "prize"
+      ]
     },
     {
-     "word": "grateful",
-     "clues": [
-      "thankful"
-     ]
+      "word": "aware",
+      "clues": [
+        "mindful"
+      ]
     },
     {
-     "word": "great",
-     "clues": [
-      "outstanding",
-      " very valuable"
-     ]
+      "word": "awful",
+      "clues": [
+        "dreadful",
+        " terrible"
+      ]
     },
     {
-     "word": "great",
-     "clues": [
-      "large in size",
-      " number or extent"
-     ]
+      "word": "axis",
+      "clues": [
+        "axis of rotation"
+      ]
     },
     {
-     "word": "green",
-     "clues": [
-      "unripe",
-      " unripened"
-     ]
+      "word": "baby",
+      "clues": [
+        "babe",
+        " infant"
+      ]
     },
     {
-     "word": "gregarious",
-     "clues": [
-      "sociable"
-     ]
+      "word": "back",
+      "clues": [
+        "rear",
+        " side that goes last or is not normally seen",
+        "spinal column",
+        " vertebral column",
+        " spine",
+        " backbone"
+      ]
     },
     {
-     "word": "handy",
-     "clues": [
-      "easy to use"
-     ]
+      "word": "background",
+      "clues": [
+        "setting context",
+        "ground",
+        " part of a scene behind objects",
+        "social heritage"
+      ]
     },
     {
-     "word": "hard",
-     "clues": [
-      "not yielding to pressure"
-     ]
+      "word": "bacon",
+      "clues": [
+        "pork"
+      ]
     },
     {
-     "word": "harmful",
-     "clues": [
-      "noxious"
-     ]
+      "word": "bad",
+      "clues": [
+        "spoiled",
+        " spoilt",
+        " capable of harming",
+        "below average in quality or performance",
+        " defective",
+        "immoral",
+        " evil"
+      ]
     },
     {
-     "word": "harsh",
-     "clues": [
-      "coarse",
-      " large-grained or rough to the touch"
-     ]
+      "word": "bag",
+      "clues": [
+        "supple container"
+      ]
     },
     {
-     "word": "healthy",
-     "clues": [
-      "fit"
-     ]
+      "word": "bait",
+      "clues": [
+        "come-on",
+        " lure",
+        " sweetener",
+        " hook"
+      ]
     },
     {
-     "word": "heavy",
-     "clues": [
-      "of great physical weight"
-     ]
+      "word": "bake",
+      "clues": [
+        "prepare with dry heat"
+      ]
     },
     {
-     "word": "helpless",
-     "clues": [
-      "incapacitated"
-     ]
+      "word": "balance",
+      "clues": [
+        "equilibrate",
+        " bring into balance or equilibrium",
+        "equality between credit and debit",
+        "state of equilibrium",
+        "proportion",
+        " proportionality"
+      ]
     },
     {
-     "word": "high",
-     "clues": [
-      "greater than normal in degree or intensity or amount"
-     ]
+      "word": "bald",
+      "clues": [
+        "lacking hair"
+      ]
     },
     {
-     "word": "hilarious",
-     "clues": [
-      "uproarious"
-     ]
+      "word": "ball",
+      "clues": [
+        "globe",
+        " orb",
+        " object with a spherical shape",
+        "formal dance",
+        "object that is hit or thrown or kicked in games"
+      ]
     },
     {
-     "word": "homosexual",
-     "clues": [
-      "gay"
-     ]
+      "word": "ballet",
+      "clues": [
+        "dance"
+      ]
     },
     {
-     "word": "honest",
-     "clues": [
-      "sincere"
-     ]
+      "word": "ballot",
+      "clues": [
+        "voting document"
+      ]
     },
     {
-     "word": "hostile",
-     "clues": [
-      "characterized by enmity or ill will"
-     ]
+      "word": "ban",
+      "clues": [
+        "prohibition",
+        " proscription"
+      ]
     },
     {
-     "word": "hot",
-     "clues": [
-      "being of high temperature"
-     ]
+      "word": "banana",
+      "clues": [
+        "elongated crescent-shaped yellow fruit"
+      ]
     },
     {
-     "word": "hot",
-     "clues": [
-      "marked by intensity",
-      " vehemence",
-      " passion"
-     ]
+      "word": "band",
+      "clues": [
+        "banding",
+        " stripe",
+        "ring",
+        " jewelry",
+        "range of frequencies between two limits",
+        "instrumentalists"
+      ]
     },
     {
-     "word": "huge",
-     "clues": [
-      "immense",
-      " vast"
-     ]
+      "word": "bang",
+      "clues": [
+        "clap",
+        " eruption",
+        " blast",
+        " bam"
+      ]
     },
     {
-     "word": "ignorant",
-     "clues": [
-      "lacking basic knowledge",
-      " naive",
-      " unsophisticated"
-     ]
+      "word": "banish",
+      "clues": [
+        "bar",
+        " relegate",
+        " expel"
+      ]
     },
     {
-     "word": "immune",
-     "clues": [
-      "resistant"
-     ]
+      "word": "bank",
+      "clues": [
+        "sloping land",
+        "depository financial institution"
+      ]
     },
     {
-     "word": "imperial",
-     "clues": [
-      "relating to an empire"
-     ]
+      "word": "banner",
+      "clues": [
+        "streamer"
+      ]
     },
     {
-     "word": "implicit",
-     "clues": [
-      "inexplicit"
-     ]
+      "word": "banquet",
+      "clues": [
+        "feast"
+      ]
     },
     {
-     "word": "important",
-     "clues": [
-      "significant"
-     ]
+      "word": "bar",
+      "clues": [
+        "rigid piece of metal or wood",
+        "barroom",
+        " saloon",
+        "horizontal rod that serves as a support for gymnasts",
+        "legal profession",
+        "tavern",
+        " pub"
+      ]
     },
     {
-     "word": "inappropriate",
-     "clues": [
-      "not suitable"
-     ]
+      "word": "bare",
+      "clues": [
+        "lacking its natural or customary covering"
+      ]
     },
     {
-     "word": "incapable",
-     "clues": [
-      "incompetent"
-     ]
+      "word": "bargain",
+      "clues": [
+        "negotiate",
+        " dicker"
+      ]
     },
     {
-     "word": "incongruous",
-     "clues": [
-      "discrepant"
-     ]
+      "word": "bark",
+      "clues": [
+        "make barking sounds",
+        "tree covering"
+      ]
     },
     {
-     "word": "incredible",
-     "clues": [
-      "unbelievable"
-     ]
+      "word": "barrel",
+      "clues": [
+        "gun barrel",
+        "cask"
+      ]
     },
     {
-     "word": "indirect",
-     "clues": [
-      "not direct in manner or language"
-     ]
+      "word": "barrier",
+      "clues": [
+        "separator obstructing vision or access"
+      ]
     },
     {
-     "word": "indoor",
-     "clues": [
-      "inside"
-     ]
+      "word": "base",
+      "clues": [
+        "pedestal",
+        " stand",
+        "bottom side of a geometric figure",
+        "flat bottom on which something sits"
+      ]
     },
     {
-     "word": "infinite",
-     "clues": [
-      "having no limits or boundaries in time or space"
-     ]
+      "word": "baseball",
+      "clues": [
+        "baseball game"
+      ]
     },
     {
-     "word": "innocent",
-     "clues": [
-      "guiltless",
-      " clean-handed"
-     ]
+      "word": "basic",
+      "clues": [
+        "pertaining to a base or basis"
+      ]
     },
     {
-     "word": "integrated",
-     "clues": [
-      "not segregated"
-     ]
+      "word": "basin",
+      "clues": [
+        "washbasin",
+        " washbowl",
+        " washstand",
+        " lavatory"
+      ]
     },
     {
-     "word": "interactive",
-     "clues": [
-      "synergistic"
-     ]
+      "word": "basis",
+      "clues": [
+        "base",
+        " foundation",
+        " fundament"
+      ]
     },
     {
-     "word": "intermediate",
-     "clues": [
-      "lying between two extremes"
-     ]
+      "word": "basket",
+      "clues": [
+        "handbasket"
+      ]
     },
     {
-     "word": "invisible",
-     "clues": [
-      "unseeable"
-     ]
+      "word": "basketball",
+      "clues": [
+        "hoops",
+        " basketball game"
+      ]
     },
     {
-     "word": "jealous",
-     "clues": [
-      "covetous",
-      " envious"
-     ]
+      "word": "bat",
+      "clues": [
+        "nocturnal mouselike mammal"
+      ]
     },
     {
-     "word": "joint",
-     "clues": [
-      "united or combined"
-     ]
+      "word": "bathroom",
+      "clues": [
+        "bath",
+        " toilet",
+        " lavatory"
+      ]
     },
     {
-     "word": "judicial",
-     "clues": [
-      "juridical",
-      " juridic"
-     ]
+      "word": "bathtub",
+      "clues": [
+        "bath",
+        " bathing tub",
+        " tub"
+      ]
     },
     {
-     "word": "junior",
-     "clues": [
-      "younger or lower in rank"
-     ]
+      "word": "battery",
+      "clues": [
+        "electric battery",
+        "assault"
+      ]
     },
     {
-     "word": "just",
-     "clues": [
-      "equitable"
-     ]
+      "word": "battle",
+      "clues": [
+        "conflict",
+        " fight",
+        " engagement"
+      ]
     },
     {
-     "word": "large",
-     "clues": [
-      "big"
-     ]
+      "word": "battlefield",
+      "clues": [
+        "battleground",
+        " field of battle",
+        " field"
+      ]
     },
     {
-     "word": "last",
-     "clues": [
-      "concluding",
-      " final",
-      " terminal"
-     ]
+      "word": "bay",
+      "clues": [
+        "indentation of a shoreline"
+      ]
     },
     {
-     "word": "late",
-     "clues": [
-      "belated",
-      " tardy"
-     ]
+      "word": "beach",
+      "clues": [
+        "shore"
+      ]
     },
     {
-     "word": "latest",
-     "clues": [
-      "newest",
-      " up-to-date"
-     ]
+      "word": "beam",
+      "clues": [
+        "long thick piece of wood",
+        " metal or concrete",
+        "light beam",
+        " ray"
+      ]
     },
     {
-     "word": "lazy",
-     "clues": [
-      "indolent",
-      " otiose",
-      " slothful",
-      " work-shy"
-     ]
+      "word": "bean",
+      "clues": [
+        "edible bean"
+      ]
     },
     {
-     "word": "left",
-     "clues": [
-      "belonging to the political or intellectual left"
-     ]
+      "word": "bear",
+      "clues": [
+        "omnivorous mammal"
+      ]
     },
     {
-     "word": "liberal",
-     "clues": [
-      "tolerant of change"
-     ]
+      "word": "beard",
+      "clues": [
+        "facial hair"
+      ]
     },
     {
-     "word": "light",
-     "clues": [
-      "of little weight"
-     ]
+      "word": "beat",
+      "clues": [
+        "pound",
+        " thump",
+        " move rhythmically",
+        "hit repeatedly",
+        "vanquish",
+        " come out better in a competition or race",
+        "pulse",
+        " pulsation",
+        " heartbeat",
+        "be superior to"
+      ]
     },
     {
-     "word": "light",
-     "clues": [
-      "light-colored"
-     ]
+      "word": "beautiful",
+      "clues": [
+        "possessing beauty"
+      ]
     },
     {
-     "word": "light",
-     "clues": [
-      "bright",
-      " emitting light"
-     ]
+      "word": "bed",
+      "clues": [
+        "plot of ground in which plants are growing",
+        "piece of furniture"
+      ]
     },
     {
-     "word": "likely",
-     "clues": [
-      "probable",
-      " plausible"
-     ]
+      "word": "bedroom",
+      "clues": [
+        "sleeping room"
+      ]
     },
     {
-     "word": "limited",
-     "clues": [
-      "small in range or scope"
-     ]
+      "word": "bee",
+      "clues": [
+        "insect"
+      ]
     },
     {
-     "word": "linear",
-     "clues": [
-      "one-dimensional"
-     ]
+      "word": "beef",
+      "clues": [
+        "meat"
+      ]
     },
     {
-     "word": "live",
-     "clues": [
-      "unrecorded"
-     ]
+      "word": "beer",
+      "clues": [
+        "alcoholic beverage"
+      ]
     },
     {
-     "word": "lonely",
-     "clues": [
-      "alone",
-      " lone",
-      " solitary"
-     ]
+      "word": "beg",
+      "clues": [
+        "implore",
+        " entreat",
+        "ask for money or goods"
+      ]
     },
     {
-     "word": "long",
-     "clues": [
-      "of great spatial extension"
-     ]
+      "word": "begin",
+      "clues": [
+        "start",
+        " commence",
+        " cause to start"
+      ]
     },
     {
-     "word": "long",
-     "clues": [
-      "of relatively great duration"
-     ]
+      "word": "beginning",
+      "clues": [
+        "first part or section of something"
+      ]
     },
     {
-     "word": "loose",
-     "clues": [
-      "not tight",
-      " constrained or constricted"
-     ]
+      "word": "behave",
+      "clues": [
+        "comport",
+        " act in a certain manner"
+      ]
     },
     {
-     "word": "lost",
-     "clues": [
-      "no longer in your possession or control"
-     ]
+      "word": "behavior",
+      "clues": [
+        "conduct"
+      ]
     },
     {
-     "word": "lost",
-     "clues": [
-      "spiritually or physically doomed or destroyed"
-     ]
+      "word": "behead",
+      "clues": [
+        "decapitate",
+        " cut the head off"
+      ]
     },
     {
-     "word": "loud",
-     "clues": [
-      "characterized by sound of great volume"
-     ]
+      "word": "belief",
+      "clues": [
+        "cognitive content held as true"
+      ]
     },
     {
-     "word": "low",
-     "clues": [
-      "being at small elevation"
-     ]
+      "word": "bell",
+      "clues": [
+        "doorbell",
+        " buzzer"
+      ]
     },
     {
-     "word": "depressed",
-     "clues": [
-      "blue"
-     ]
+      "word": "belly",
+      "clues": [
+        "abdomen",
+        " stomach"
+      ]
     },
     {
-     "word": "magnetic",
-     "clues": [
-      "relating to magnetism"
-     ]
+      "word": "belong",
+      "clues": [
+        "be owned by"
+      ]
     },
     {
-     "word": "main",
-     "clues": [
-      "chief",
-      " primary",
-      " principal"
-     ]
+      "word": "belt",
+      "clues": [
+        "clothing accessory"
+      ]
     },
     {
-     "word": "major",
-     "clues": [
-      "greater in scope or effect"
-     ]
+      "word": "bench",
+      "clues": [
+        "long seat",
+        "workbench"
+      ]
     },
     {
-     "word": "major",
-     "clues": [
-      "of full legal age"
-     ]
+      "word": "bend",
+      "clues": [
+        "crouch",
+        " stoop",
+        " bow",
+        "flex",
+        " turn",
+        " deform",
+        " twist"
+      ]
     },
     {
-     "word": "manual",
-     "clues": [
-      "requiring human effort"
-     ]
+      "word": "beneficiary",
+      "clues": [
+        "recipient"
+      ]
     },
     {
-     "word": "marine",
-     "clues": [
-      "nautical",
-      " maritime",
-      " relating to the sea"
-     ]
+      "word": "benefit",
+      "clues": [
+        "welfare",
+        "performance to raise money for a charitable cause"
+      ]
     },
     {
-     "word": "mature",
-     "clues": [
-      "having reached full natural growth or development"
-     ]
+      "word": "berry",
+      "clues": [
+        "small edible fruit"
+      ]
     },
     {
-     "word": "mature",
-     "clues": [
-      "ripe",
-      " fully developed and ready to be eaten"
-     ]
+      "word": "bet",
+      "clues": [
+        "wager",
+        "wager",
+        " stake",
+        "wager"
+      ]
     },
     {
-     "word": "maximum",
-     "clues": [
-      "maximal"
-     ]
+      "word": "betray",
+      "clues": [
+        "sell out",
+        "deceive"
+      ]
     },
     {
-     "word": "mechanical",
-     "clues": [
-      "using a mechanism"
-     ]
+      "word": "Bible",
+      "clues": [
+        "Christian Bible",
+        " Book",
+        " Good Book",
+        " Holy Scripture"
+      ]
     },
     {
-     "word": "medieval",
-     "clues": [
-      "from the Middle Ages"
-     ]
+      "word": "bike",
+      "clues": [
+        "bicycle",
+        " bike",
+        " cycle",
+        " wheel"
+      ]
     },
     {
-     "word": "mild",
-     "clues": [
-      "moderate"
-     ]
+      "word": "bill",
+      "clues": [
+        "beak",
+        "circular",
+        " handbill",
+        " broadside",
+        " broadsheet",
+        " flier"
+      ]
     },
     {
-     "word": "minimum",
-     "clues": [
-      "minimal"
-     ]
+      "word": "bin",
+      "clues": [
+        "container"
+      ]
     },
     {
-     "word": "minor",
-     "clues": [
-      "lesser in scope or effect"
-     ]
+      "word": "bind",
+      "clues": [
+        "tie or secure with a rope or cable"
+      ]
     },
     {
-     "word": "miserable",
-     "clues": [
-      "abject",
-      " scummy",
-      " contemptible"
-     ]
+      "word": "biography",
+      "clues": [
+        "life story"
+      ]
     },
     {
-     "word": "mobile",
-     "clues": [
-      "moving or capable of moving readily"
-     ]
+      "word": "biology",
+      "clues": [
+        "plant and animal life"
+      ]
     },
     {
-     "word": "modest",
-     "clues": [
-      "not offensive to sexual mores"
-     ]
+      "word": "bird",
+      "clues": [
+        "warm-blooded egg-laying vertebrate"
+      ]
     },
     {
-     "word": "monstrous",
-     "clues": [
-      "atrocious",
-      " heinous"
-     ]
+      "word": "birthday",
+      "clues": [
+        "anniversary of the day someone is born"
+      ]
     },
     {
-     "word": "monstrous",
-     "clues": [
-      "grotesque"
-     ]
+      "word": "biscuit",
+      "clues": [
+        "cookie"
+      ]
     },
     {
-     "word": "moral",
-     "clues": [
-      "relating to principles of right and wrong"
-     ]
+      "word": "bishop",
+      "clues": [
+        "clergyman"
+      ]
     },
     {
-     "word": "moving",
-     "clues": [
-      "arousing deep emotion"
-     ]
+      "word": "bitch",
+      "clues": [
+        "unpleasant woman",
+        "female dog"
+      ]
     },
     {
-     "word": "musical",
-     "clues": [
-      "talented in or devoted to music"
-     ]
+      "word": "bite",
+      "clues": [
+        "seize with teeth",
+        "sting",
+        " insect bite"
+      ]
     },
     {
-     "word": "mutual",
-     "clues": [
-      "reciprocal"
-     ]
+      "word": "bitter",
+      "clues": [
+        "bitter-tasting",
+        "acrimonious",
+        " resentful"
+      ]
     },
     {
-     "word": "narrow",
-     "clues": [
-      "not wide spatially"
-     ]
+      "word": "black",
+      "clues": [
+        "total darkness",
+        " blackness",
+        "achromatic",
+        "without cream or sugar"
+      ]
     },
     {
-     "word": "narrow",
-     "clues": [
-      "narrow-minded"
-     ]
+      "word": "blackmail",
+      "clues": [
+        "extortion"
+      ]
     },
     {
-     "word": "national",
-     "clues": [
-      "relating to a nation or country"
-     ]
+      "word": "blade",
+      "clues": [
+        "leaf blade",
+        "part of a knife"
+      ]
     },
     {
-     "word": "native",
-     "clues": [
-      "belonging to one by birth"
-     ]
+      "word": "blame",
+      "clues": [
+        "find fault",
+        " pick on",
+        "fault put the blame on"
+      ]
     },
     {
-     "word": "negative",
-     "clues": [
-      "disconfirming"
-     ]
+      "word": "bland",
+      "clues": [
+        "tasteless",
+        " insipid",
+        " flavorless"
+      ]
     },
     {
-     "word": "negative",
-     "clues": [
-      "reckoned in a direction opposite to positive"
-     ]
+      "word": "blank",
+      "clues": [
+        "empty",
+        " not filled in"
+      ]
     },
     {
-     "word": "nervous",
-     "clues": [
-      "neural"
-     ]
+      "word": "blast",
+      "clues": [
+        "blare",
+        "explosion"
+      ]
     },
     {
-     "word": "nervous",
-     "clues": [
-      "skittish"
-     ]
+      "word": "bleed",
+      "clues": [
+        "shed blood"
+      ]
     },
     {
-     "word": "neutral",
-     "clues": [
-      "of no distinctive quality"
-     ]
+      "word": "bless",
+      "clues": [
+        "give a benediction to"
+      ]
     },
     {
-     "word": "new",
-     "clues": [
-      "recently created",
-      " unused or little used"
-     ]
+      "word": "blind",
+      "clues": [
+        "unsighted"
+      ]
     },
     {
-     "word": "new",
-     "clues": [
-      "unfamiliar"
-     ]
+      "word": "block",
+      "clues": [
+        "cube",
+        "obstruct",
+        " hinder",
+        " stymie",
+        "city block"
+      ]
     },
     {
-     "word": "noble",
-     "clues": [
-      "having elevated character"
-     ]
+      "word": "blonde",
+      "clues": [
+        "light-haired"
+      ]
     },
     {
-     "word": "noble",
-     "clues": [
-      "belonging to hereditary aristocracy"
-     ]
+      "word": "bloodshed",
+      "clues": [
+        "gore"
+      ]
     },
     {
-     "word": "normal",
-     "clues": [
-      "conforming with a norm or standard"
-     ]
+      "word": "bloody",
+      "clues": [
+        "covered with blood"
+      ]
     },
     {
-     "word": "notorious",
-     "clues": [
-      "ill-famed",
-      " infamous"
-     ]
+      "word": "blow",
+      "clues": [
+        "powerful stroke",
+        "reversal",
+        " setback"
+      ]
     },
     {
-     "word": "nuclear",
-     "clues": [
-      "atomic"
-     ]
+      "word": "blu",
+      "clues": [
+        "jean] jeans",
+        " denim pants"
+      ]
     },
     {
-     "word": "obese",
-     "clues": [
-      "overweight"
-     ]
+      "word": "blue",
+      "clues": [
+        "blueness",
+        " color"
+      ]
     },
     {
-     "word": "objective",
-     "clues": [
-      "nonsubjective"
-     ]
+      "word": "board",
+      "clues": [
+        "get on",
+        "plank",
+        " stout length of sawn timber",
+        "committee having supervisory powers",
+        "gameboard"
+      ]
     },
     {
-     "word": "obscure",
-     "clues": [
-      "unknown"
-     ]
+      "word": "boat",
+      "clues": [
+        "a small vessel for travel on water"
+      ]
     },
     {
-     "word": "offensive",
-     "clues": [
-      "unpleasant or disgusting"
-     ]
+      "word": "body",
+      "clues": [
+        "dead body",
+        "torso",
+        " trunk",
+        "organic structure",
+        " physical structure"
+      ]
     },
     {
-     "word": "offensive",
-     "clues": [
-      "for the purpose of attack"
-     ]
+      "word": "bold",
+      "clues": [
+        "fearless and daring"
+      ]
     },
     {
-     "word": "official",
-     "clues": [
-      "having official authority"
-     ]
+      "word": "bolt",
+      "clues": [
+        "thunderbolt",
+        " bolt of lightning",
+        "type of screw that screws into a nut"
+      ]
     },
     {
-     "word": "old",
-     "clues": [
-      "elderly",
-      " having lived for a relatively long time"
-     ]
+      "word": "bomb",
+      "clues": [
+        "explosive device",
+        "bombard"
+      ]
     },
     {
-     "word": "open",
-     "clues": [
-      "affording free passage"
-     ]
+      "word": "bomber",
+      "clues": [
+        "military aircraft",
+        "person who plants bombs"
+      ]
     },
     {
-     "word": "open",
-     "clues": [
-      "overt"
-     ]
+      "word": "bond",
+      "clues": [
+        "create social or emotional ties",
+        "alliance",
+        "shackle",
+        " hamper",
+        "bail"
+      ]
     },
     {
-     "word": "operational",
-     "clues": [
-      "pertaining to a process"
-     ]
+      "word": "bone",
+      "clues": [
+        "body part"
+      ]
     },
     {
-     "word": "opposed",
-     "clues": [
-      "being in opposition"
-     ]
+      "word": "book",
+      "clues": [
+        "volume",
+        "written work"
+      ]
     },
     {
-     "word": "oral",
-     "clues": [
-      "of or involving the mouth"
-     ]
+      "word": "boom",
+      "clues": [
+        "economic prosperity"
+      ]
     },
     {
-     "word": "ordinary",
-     "clues": [
-      "not exceptional"
-     ]
+      "word": "boot",
+      "clues": [
+        "footwear"
+      ]
     },
     {
-     "word": "original",
-     "clues": [
-      "fresh",
-      " unusual",
-      " first"
-     ]
+      "word": "border",
+      "clues": [
+        "boundary line",
+        " borderline",
+        " delimitation"
+      ]
     },
     {
-     "word": "orthodox",
-     "clues": [
-      "adhering to what is commonly accepted"
-     ]
+      "word": "borrow",
+      "clues": [
+        "obtain temporarily"
+      ]
     },
     {
-     "word": "other",
-     "clues": [
-      "not the same"
-     ]
+      "word": "bother",
+      "clues": [
+        "annoy",
+        " irritate"
+      ]
     },
     {
-     "word": "outer",
-     "clues": [
-      "being on the outside"
-     ]
+      "word": "bottle",
+      "clues": [
+        "vessel"
+      ]
     },
     {
-     "word": "outside",
-     "clues": [
-      "outdoor",
-      " out-of-door"
-     ]
+      "word": "bottom",
+      "clues": [
+        "underside",
+        " undersurface"
+      ]
     },
     {
-     "word": "parallel",
-     "clues": [
-      "equidistant and not intersecting"
-     ]
+      "word": "bounce",
+      "clues": [
+        "move up and down repeatedly"
+      ]
     },
     {
-     "word": "paralyzed",
-     "clues": [
-      "paralytic",
-      " unable to move"
-     ]
+      "word": "bow",
+      "clues": [
+        "arrow launcher",
+        "bend the head or the upper body in respect or greeting",
+        "interlaced ribbons"
+      ]
     },
     {
-     "word": "particular",
-     "clues": [
-      "finicky",
-      " fussy"
-     ]
+      "word": "bowel",
+      "clues": [
+        "intestine",
+        " gut"
+      ]
     },
     {
-     "word": "particular",
-     "clues": [
-      "peculiar",
-      " special"
-     ]
+      "word": "bowl",
+      "clues": [
+        "vessel"
+      ]
     },
     {
-     "word": "passive",
-     "clues": [
-      "inactive"
-     ]
+      "word": "box",
+      "clues": [
+        "container"
+      ]
     },
     {
-     "word": "past",
-     "clues": [
-      "earlier than the present time"
-     ]
+      "word": "boy",
+      "clues": [
+        "young male",
+        " male child"
+      ]
     },
     {
-     "word": "perfect",
-     "clues": [
-      "complete",
-      " without defect"
-     ]
+      "word": "bracket",
+      "clues": [
+        "punctuation mark",
+        "category"
+      ]
     },
     {
-     "word": "permanent",
-     "clues": [
-      "lasting"
-     ]
+      "word": "brag",
+      "clues": [
+        "show off",
+        " boast"
+      ]
     },
     {
-     "word": "persistent",
-     "clues": [
-      "lasting"
-     ]
+      "word": "braid",
+      "clues": [
+        "plait",
+        " tress",
+        " hairdo"
+      ]
     },
     {
-     "word": "personal",
-     "clues": [
-      "concerning a particular person"
-     ]
+      "word": "brain",
+      "clues": [
+        "genius",
+        " mastermind",
+        "encephalon",
+        " grey matter"
+      ]
     },
     {
-     "word": "petty",
-     "clues": [
-      "small-minded"
-     ]
+      "word": "brainstorm",
+      "clues": [
+        "sudden insight"
+      ]
     },
     {
-     "word": "physical",
-     "clues": [
-      "involving the body"
-     ]
+      "word": "brake",
+      "clues": [
+        "restraint used to stop a vehicle"
+      ]
     },
     {
-     "word": "plain",
-     "clues": [
-      "simple"
-     ]
+      "word": "branch",
+      "clues": [
+        "fork",
+        " divide into branches",
+        "limb"
+      ]
     },
     {
-     "word": "pleasant",
-     "clues": [
-      "delightful"
-     ]
+      "word": "brand",
+      "clues": [
+        "make"
+      ]
     },
     {
-     "word": "polite",
-     "clues": [
-      "courteous"
-     ]
+      "word": "brave",
+      "clues": [
+        "courageous",
+        " fearless"
+      ]
     },
     {
-     "word": "poor",
-     "clues": [
-      "characterized by poverty"
-     ]
+      "word": "brea",
+      "clues": [
+        "in] enter illegally",
+        "down] die",
+        " conk out"
+      ]
     },
     {
-     "word": "popular",
-     "clues": [
-      "regarded with great favor",
-      " approval",
-      " or affection"
-     ]
+      "word": "bread",
+      "clues": [
+        "breadstuff",
+        " food made from dough"
+      ]
     },
     {
-     "word": "positive",
-     "clues": [
-      "accepting",
-      " confirming"
-     ]
+      "word": "break",
+      "clues": [
+        "pause",
+        " intermission",
+        " interruption",
+        " suspension",
+        "fracture",
+        "destroy"
+      ]
     },
     {
-     "word": "possible",
-     "clues": [
-      "potential"
-     ]
+      "word": "breakdown",
+      "clues": [
+        "mental or physical crack-up",
+        "equipment failure"
+      ]
     },
     {
-     "word": "practical",
-     "clues": [
-      "concerned with actual use or practice"
-     ]
+      "word": "breakfast",
+      "clues": [
+        "morning meal"
+      ]
     },
     {
-     "word": "practical",
-     "clues": [
-      "efficient"
-     ]
+      "word": "breast",
+      "clues": [
+        "bosom",
+        " tit"
+      ]
     },
     {
-     "word": "premature",
-     "clues": [
-      "untimely"
-     ]
+      "word": "breathe",
+      "clues": [
+        "take a breath",
+        " respire"
+      ]
     },
     {
-     "word": "present",
-     "clues": [
-      "intermediate between past and future"
-     ]
+      "word": "breed",
+      "clues": [
+        "raise",
+        " cause to reproduce"
+      ]
     },
     {
-     "word": "present",
-     "clues": [
-      "being here"
-     ]
+      "word": "breeze",
+      "clues": [
+        "zephyr",
+        " gentle wind",
+        " air",
+        " gust"
+      ]
     },
     {
-     "word": "presidential",
-     "clues": [
-      "relating to a president or presidency"
-     ]
+      "word": "brick",
+      "clues": [
+        "block of baked clay"
+      ]
     },
     {
-     "word": "primary",
-     "clues": [
-      "of first rank or importance or value"
-     ]
+      "word": "bride",
+      "clues": [
+        "participant in a marriage ceremony"
+      ]
     },
     {
-     "word": "private",
-     "clues": [
-      "concerning things personal"
-     ]
+      "word": "bridge",
+      "clues": [
+        "span"
+      ]
     },
     {
-     "word": "productive",
-     "clues": [
-      "generative"
-     ]
+      "word": "brilliance",
+      "clues": [
+        "brilliance"
+      ]
     },
     {
-     "word": "profound",
-     "clues": [
-      "deep"
-     ]
+      "word": "bring",
+      "clues": [
+        "fetch",
+        " bring in",
+        " be sold for a certain price",
+        "bring along"
+      ]
     },
     {
-     "word": "progressive",
-     "clues": [
-      "favoring or promoting progress"
-     ]
+      "word": "brink",
+      "clues": [
+        "threshold",
+        " verge"
+      ]
     },
     {
-     "word": "proper",
-     "clues": [
-      "suitable"
-     ]
+      "word": "broadcast",
+      "clues": [
+        "air",
+        " send",
+        "transmitted message"
+      ]
     },
     {
-     "word": "proud",
-     "clues": [
-      "feeling self-respect"
-     ]
+      "word": "broccoli",
+      "clues": [
+        "vegetable"
+      ]
     },
     {
-     "word": "provincial",
-     "clues": [
-      "characteristic of the provinces"
-     ]
+      "word": "broken",
+      "clues": [
+        "physically separated into pieces"
+      ]
     },
     {
-     "word": "public",
-     "clues": [
-      "not private"
-     ]
+      "word": "bronze",
+      "clues": [
+        "sculpture made of bronze"
+      ]
     },
     {
-     "word": "pure",
-     "clues": [
-      "having no faults",
-      " sinless"
-     ]
+      "word": "brother",
+      "clues": [
+        "Brother",
+        " monk",
+        "comrade",
+        "sibling",
+        " brother by blood or adoption"
+      ]
     },
     {
-     "word": "pure",
-     "clues": [
-      "free of extraneous elements of any kind"
-     ]
+      "word": "brown",
+      "clues": [
+        "having a brown color"
+      ]
     },
     {
-     "word": "qualified",
-     "clues": [
-      "meeting the standards and requirements"
-     ]
+      "word": "brush",
+      "clues": [
+        "rub with a brush",
+        "implement with hairs or bristles"
+      ]
     },
     {
-     "word": "quiet",
-     "clues": [
-      "silent"
-     ]
+      "word": "bubble",
+      "clues": [
+        "hollow globule of gas"
+      ]
     },
     {
-     "word": "quiet",
-     "clues": [
-      "quiescent"
-     ]
+      "word": "bucket",
+      "clues": [
+        "pail"
+      ]
     },
     {
-     "word": "random",
-     "clues": [
-      "arbitrary"
-     ]
+      "word": "budge",
+      "clues": [
+        "shift",
+        " stir"
+      ]
     },
     {
-     "word": "rare",
-     "clues": [
-      "infrequent",
-      " uncommon"
-     ]
+      "word": "budget",
+      "clues": [
+        "sum of money allocated"
+      ]
     },
     {
-     "word": "rational",
-     "clues": [
-      "based on reasoning"
-     ]
+      "word": "buffet",
+      "clues": [
+        "meal set out on a counter"
+      ]
     },
     {
-     "word": "raw",
-     "clues": [
-      "not treated with heat"
-     ]
+      "word": "build",
+      "clues": [
+        "raise",
+        " put up",
+        " construct",
+        " raise"
+      ]
     },
     {
-     "word": "ready",
-     "clues": [
-      "prepared"
-     ]
+      "word": "building",
+      "clues": [
+        "edifice"
+      ]
     },
     {
-     "word": "real",
-     "clues": [
-      "actual",
-      " existent",
-      " being or occurring in fact or actuality"
-     ]
+      "word": "bulb",
+      "clues": [
+        "light bulb",
+        "plant bulb"
+      ]
     },
     {
-     "word": "real",
-     "clues": [
-      "actual",
-      " genuine"
-     ]
+      "word": "bullet",
+      "clues": [
+        "slug",
+        " projectile"
+      ]
     },
     {
-     "word": "reasonable",
-     "clues": [
-      "sensible"
-     ]
+      "word": "bulletin",
+      "clues": [
+        "brief report"
+      ]
     },
     {
-     "word": "reckless",
-     "clues": [
-      "foolhardy"
-     ]
+      "word": "bundle",
+      "clues": [
+        "sheaf"
+      ]
     },
     {
-     "word": "regular",
-     "clues": [
-      "in accordance with fixed order or procedure"
-     ]
+      "word": "burial",
+      "clues": [
+        "entombment",
+        " inhumation",
+        " interment"
+      ]
     },
     {
-     "word": "related",
-     "clues": [
-      "connected by kinship"
-     ]
+      "word": "burn",
+      "clues": [
+        "combust",
+        " cause to burn",
+        "bite",
+        " sting",
+        " cause a sharp or stinging pain",
+        "injury"
+      ]
     },
     {
-     "word": "related",
-     "clues": [
-      "connected logically or causally"
-     ]
+      "word": "burst",
+      "clues": [
+        "bust",
+        " break open"
+      ]
     },
     {
-     "word": "relative",
-     "clues": [
-      "not absolute"
-     ]
+      "word": "bury",
+      "clues": [
+        "place in the ground as for hiding"
+      ]
     },
     {
-     "word": "reliable",
-     "clues": [
-      "dependable"
-     ]
+      "word": "bus",
+      "clues": [
+        "autobus",
+        " coach"
+      ]
     },
     {
-     "word": "representative",
-     "clues": [
-      "standing for something else"
-     ]
+      "word": "bush",
+      "clues": [
+        "shrub",
+        " woody plant"
+      ]
     },
     {
-     "word": "resident",
-     "clues": [
-      "living in a particular place"
-     ]
+      "word": "business",
+      "clues": [
+        "commercial enterprise",
+        " business enterprise",
+        "occupation",
+        " job",
+        " line of work",
+        " line"
+      ]
     },
     {
-     "word": "respectable",
-     "clues": [
-      "worthy of respect"
-     ]
+      "word": "butterfly",
+      "clues": [
+        "diurnal insect"
+      ]
     },
     {
-     "word": "responsible",
-     "clues": [
-      "held accountable",
-      " worthy of trust"
-     ]
+      "word": "buttocks",
+      "clues": [
+        "butt",
+        " bum",
+        " tush"
+      ]
     },
     {
-     "word": "restless",
-     "clues": [
-      "antsy",
-      " itchy",
-      " fidgety"
-     ]
+      "word": "button",
+      "clues": [
+        "round fastener for clothes",
+        "push button"
+      ]
     },
     {
-     "word": "retired",
-     "clues": [
-      "no longer active in your work"
-     ]
+      "word": "buy",
+      "clues": [
+        "purchase",
+        " acquire"
+      ]
     },
     {
-     "word": "revolutionary",
-     "clues": [
-      "advocating or engaged in revolution"
-     ]
+      "word": "cabin",
+      "clues": [
+        "small wooden house",
+        "aircraft cabin"
+      ]
     },
     {
-     "word": "rich",
-     "clues": [
-      "possessing material wealth"
-     ]
+      "word": "cabinet",
+      "clues": [
+        "cupboard-like repository",
+        "persons appointed by a head of state"
+      ]
     },
     {
-     "word": "right",
-     "clues": [
-      "correct"
-     ]
+      "word": "cable",
+      "clues": [
+        "strong thick rope"
+      ]
     },
     {
-     "word": "romantic",
-     "clues": [
-      "amatory",
-      " amorous"
-     ]
+      "word": "cafe",
+      "clues": [
+        "coffee shop",
+        " coffee bar"
+      ]
     },
     {
-     "word": "rotten",
-     "clues": [
-      "decayed",
-      " rotted"
-     ]
+      "word": "cage",
+      "clues": [
+        "coop"
+      ]
     },
     {
-     "word": "rotten",
-     "clues": [
-      "crappy",
-      " lousy",
-      " shitty",
-      " stinking",
-      " stinky"
-     ]
+      "word": "cake",
+      "clues": [
+        "mixture of flour and sugar and eggs"
+      ]
     },
     {
-     "word": "rough",
-     "clues": [
-      "unsmooth"
-     ]
+      "word": "calculation",
+      "clues": [
+        "computation",
+        " figuring",
+        " reckoning",
+        "deliberation",
+        " planning"
+      ]
     },
     {
-     "word": "round",
-     "clues": [
-      "circular"
-     ]
+      "word": "calendar",
+      "clues": [
+        "system of timekeeping"
+      ]
     },
     {
-     "word": "sacred",
-     "clues": [
-      "concerned with religion or religious purposes"
-     ]
+      "word": "calf",
+      "clues": [
+        "young cattle"
+      ]
     },
     {
-     "word": "safe",
-     "clues": [
-      "free from danger"
-     ]
+      "word": "call",
+      "clues": [
+        "birdcall",
+        " birdsong",
+        " song",
+        "shout",
+        " shout out",
+        " cry",
+        " yell",
+        " holler",
+        "cry",
+        " outcry",
+        " yell",
+        " shout",
+        " vociferation",
+        "phone call",
+        " telephone call",
+        "name",
+        "brief social visit",
+        "telephone",
+        " call up",
+        " phone",
+        " ring",
+        "send for"
+      ]
     },
     {
-     "word": "satisfied",
-     "clues": [
-      "quenched",
-      " slaked"
-     ]
+      "word": "calm",
+      "clues": [
+        "calm down",
+        " quiet",
+        " tranquilize",
+        " quieten"
+      ]
     },
     {
-     "word": "seasonal",
-     "clues": [
-      "occurring at a particular season"
-     ]
+      "word": "calorie",
+      "clues": [
+        "kilocalorie",
+        " nutritionist's calorie"
+      ]
     },
     {
-     "word": "seasonal",
-     "clues": [
-      "occurring at or dependent on a particular season"
-     ]
+      "word": "camera",
+      "clues": [
+        "photographic camera"
+      ]
     },
     {
-     "word": "secular",
-     "clues": [
-      "laic",
-      " lay"
-     ]
+      "word": "camp",
+      "clues": [
+        "forced labor prison",
+        "summer camp",
+        "refugee camp"
+      ]
     },
     {
-     "word": "secure",
-     "clues": [
-      "protected"
-     ]
+      "word": "campaign",
+      "clues": [
+        "political campaign",
+        "military campaign"
+      ]
     },
     {
-     "word": "senior",
-     "clues": [
-      "older or higher in rank"
-     ]
+      "word": "can",
+      "clues": [
+        "tin can"
+      ]
     },
     {
-     "word": "sensitive",
-     "clues": [
-      "having acute mental or emotional sensibility"
-     ]
+      "word": "cancel",
+      "clues": [
+        "call off"
+      ]
     },
     {
-     "word": "separate",
-     "clues": [
-      "independent"
-     ]
+      "word": "cancer",
+      "clues": [
+        "malignant disease"
+      ]
     },
     {
-     "word": "serious",
-     "clues": [
-      "sober"
-     ]
+      "word": "candidate",
+      "clues": [
+        "campaigner",
+        " nominee"
+      ]
     },
     {
-     "word": "shallow",
-     "clues": [
-      "lacking physical depth"
-     ]
+      "word": "candle",
+      "clues": [
+        "taper",
+        " wax light"
+      ]
     },
     {
-     "word": "shallow",
-     "clues": [
-      "lacking depth of intellect or knowledge or feeling"
-     ]
+      "word": "cane",
+      "clues": [
+        "walking stick"
+      ]
     },
     {
-     "word": "sharp",
-     "clues": [
-      "having a thin edge or sharp point"
-     ]
+      "word": "canvas",
+      "clues": [
+        "canvass",
+        " fabric"
+      ]
     },
     {
-     "word": "short",
-     "clues": [
-      "having little length"
-     ]
+      "word": "cap",
+      "clues": [
+        "bottle top",
+        "headdress"
+      ]
     },
     {
-     "word": "short",
-     "clues": [
-      "of limited duration"
-     ]
+      "word": "capital",
+      "clues": [
+        "seat of government",
+        "wealth in the form of money or property",
+        "capital letter",
+        " upper case"
+      ]
     },
     {
-     "word": "shy",
-     "clues": [
-      "timid",
-      " diffident"
-     ]
+      "word": "captain",
+      "clues": [
+        "skipper",
+        " naval officer"
+      ]
     },
     {
-     "word": "sick",
-     "clues": [
-      "ill"
-     ]
+      "word": "captivate",
+      "clues": [
+        "beguile",
+        " charm",
+        " bewitch",
+        " entrance",
+        " enchant"
+      ]
     },
     {
-     "word": "similar",
-     "clues": [
-      "alike",
-      " like"
-     ]
+      "word": "capture",
+      "clues": [
+        "catch",
+        "take possession of by force",
+        " seize",
+        " conquer"
+      ]
     },
     {
-     "word": "single",
-     "clues": [
-      "unmarried"
-     ]
+      "word": "car",
+      "clues": [
+        "auto",
+        " automobile",
+        " motorcar"
+      ]
     },
     {
-     "word": "single",
-     "clues": [
-      "individual",
-      " separate"
-     ]
+      "word": "carbon",
+      "clues": [
+        "C",
+        " atomic number 6"
+      ]
     },
     {
-     "word": "skilled",
-     "clues": [
-      "skillful"
-     ]
+      "word": "card",
+      "clues": [
+        "menu",
+        " bill of fare",
+        " carte du jour",
+        " carte",
+        "postcard",
+        "identity card",
+        "calling card",
+        " visiting card",
+        "playing card"
+      ]
     },
     {
-     "word": "slippery",
-     "clues": [
-      "slippy"
-     ]
+      "word": "care",
+      "clues": [
+        "feel concern or interest",
+        "maintenance",
+        " upkeep",
+        "attention",
+        " aid",
+        " tending",
+        "caution",
+        " precaution",
+        " forethought",
+        " judiciousness"
+      ]
     },
     {
-     "word": "slow",
-     "clues": [
-      "not moving quickly"
-     ]
+      "word": "career",
+      "clues": [
+        "calling",
+        " vocation"
+      ]
     },
     {
-     "word": "small",
-     "clues": [
-      "little"
-     ]
+      "word": "carpet",
+      "clues": [
+        "rug",
+        " carpeting"
+      ]
     },
     {
-     "word": "smart",
-     "clues": [
-      "clever",
-      " bright"
-     ]
+      "word": "carriage",
+      "clues": [
+        "baby carriage",
+        " perambulator",
+        " pram",
+        " stroller"
+      ]
     },
     {
-     "word": "smooth",
-     "clues": [
-      "having a surface free from roughness"
-     ]
+      "word": "carrot",
+      "clues": [
+        "deep orange edible root"
+      ]
     },
     {
-     "word": "social",
-     "clues": [
-      "living together or enjoying life in communities"
-     ]
+      "word": "carry",
+      "clues": [
+        "bear",
+        "transport"
+      ]
     },
     {
-     "word": "socialist",
-     "clues": [
-      "socialistic"
-     ]
+      "word": "cart",
+      "clues": [
+        "handcart",
+        " pushcart"
+      ]
     },
     {
-     "word": "soft",
-     "clues": [
-      "lacking in hardness"
-     ]
+      "word": "carve",
+      "clues": [
+        "cut up",
+        " cut to pieces"
+      ]
     },
     {
-     "word": "soft",
-     "clues": [
-      "relatively low in volume"
-     ]
+      "word": "case",
+      "clues": [
+        "display case",
+        " showcase",
+        " vitrine",
+        "instance",
+        " example",
+        "lawsuit",
+        " suit",
+        " cause",
+        " causa"
+      ]
     },
     {
-     "word": "soft",
-     "clues": [
-      "nonalcoholic"
-     ]
+      "word": "cash",
+      "clues": [
+        "hard cash",
+        " hard currency"
+      ]
     },
     {
-     "word": "solid",
-     "clues": [
-      "neither liquid nor gaseous"
-     ]
+      "word": "cassette",
+      "clues": [
+        "container holding magnetic tape"
+      ]
     },
     {
-     "word": "solid",
-     "clues": [
-      "entirely of one substance with no holes inside"
-     ]
+      "word": "cast",
+      "clues": [
+        "actors",
+        "plaster cast",
+        " plaster bandage",
+        "select for a play or movie"
+      ]
     },
     {
-     "word": "sound",
-     "clues": [
-      "in good condition"
-     ]
+      "word": "castle",
+      "clues": [
+        "fortified building"
+      ]
     },
     {
-     "word": "sour",
-     "clues": [
-      "having a sharp biting taste"
-     ]
+      "word": "casualty",
+      "clues": [
+        "someone injured or killed"
+      ]
     },
     {
-     "word": "spontaneous",
-     "clues": [
-      "self-generated"
-     ]
+      "word": "cat",
+      "clues": [
+        "feline"
+      ]
     },
     {
-     "word": "square",
-     "clues": [
-      "having four equal sides and four right angles"
-     ]
+      "word": "catalogue",
+      "clues": [
+        "catalog"
+      ]
     },
     {
-     "word": "stable",
-     "clues": [
-      "resistant to change"
-     ]
+      "word": "catch",
+      "clues": [
+        "grab",
+        " take hold of",
+        "hidden drawback"
+      ]
     },
     {
-     "word": "standard",
-     "clues": [
-      "conforming to a standard of measurement"
-     ]
+      "word": "category",
+      "clues": [
+        "general concept"
+      ]
     },
     {
-     "word": "steep",
-     "clues": [
-      "having a sharp inclination"
-     ]
+      "word": "cater",
+      "clues": [
+        "supply food ready to eat"
+      ]
     },
     {
-     "word": "sticky",
-     "clues": [
-      "gluey",
-      " glutinous",
-      " gummy"
-     ]
+      "word": "cathedral",
+      "clues": [
+        "large church"
+      ]
     },
     {
-     "word": "muggy",
-     "clues": [
-      "sticky",
-      " steamy"
-     ]
+      "word": "cattle",
+      "clues": [
+        "cows",
+        " bull"
+      ]
     },
     {
-     "word": "still",
-     "clues": [
-      "inactive",
-      " motionless",
-      " static"
-     ]
+      "word": "cause",
+      "clues": [
+        "causal agent"
+      ]
     },
     {
-     "word": "straight",
-     "clues": [
-      "square",
-      " honest",
-      " fair",
-      " decent"
-     ]
+      "word": "cave",
+      "clues": [
+        "underground enclosure"
+      ]
     },
     {
-     "word": "straight",
-     "clues": [
-      "free from curves or angles"
-     ]
+      "word": "ceiling",
+      "clues": [
+        "surface of a room",
+        "cap",
+        " upper limit"
+      ]
     },
     {
-     "word": "strange",
-     "clues": [
-      "unusual"
-     ]
+      "word": "cel",
+      "clues": [
+        "phone] cellular telephone"
+      ]
     },
     {
-     "word": "strategic",
-     "clues": [
-      "strategical"
-     ]
+      "word": "celebration",
+      "clues": [
+        "festivity"
+      ]
     },
     {
-     "word": "strict",
-     "clues": [
-      "severe",
-      " nonindulgent"
-     ]
+      "word": "cell",
+      "clues": [
+        "jail cell",
+        "basic structural and functional unit of all organisms",
+        "cubicle"
+      ]
     },
     {
-     "word": "strong",
-     "clues": [
-      "potent"
-     ]
+      "word": "cellar",
+      "clues": [
+        "basement"
+      ]
     },
     {
-     "word": "strong",
-     "clues": [
-      "hard",
-      " having a high alcoholic content"
-     ]
+      "word": "cemetery",
+      "clues": [
+        "graveyard",
+        " burial site",
+        " burial ground"
+      ]
     },
     {
-     "word": "strong",
-     "clues": [
-      "firm"
-     ]
+      "word": "censorship",
+      "clues": [
+        "deletion of material in art works"
+      ]
     },
     {
-     "word": "strong",
-     "clues": [
-      "secure",
-      " unattackable"
-     ]
+      "word": "census",
+      "clues": [
+        "nose count"
+      ]
     },
     {
-     "word": "stubborn",
-     "clues": [
-      "obstinate"
-     ]
+      "word": "center",
+      "clues": [
+        "middle",
+        " heart",
+        "midpoint",
+        "building dedicated to a particular activity"
+      ]
     },
     {
-     "word": "stunning",
-     "clues": [
-      "strikingly beautiful or attractive"
-     ]
+      "word": "central",
+      "clues": [
+        "in or near a center"
+      ]
     },
     {
-     "word": "superior",
-     "clues": [
-      "of high or superior quality"
-     ]
+      "word": "century",
+      "clues": [
+        "period of 100 years"
+      ]
     },
     {
-     "word": "supplementary",
-     "clues": [
-      "auxiliary",
-      " subsidiary"
-     ]
+      "word": "cereal",
+      "clues": [
+        "breakfast food"
+      ]
     },
     {
-     "word": "sweet",
-     "clues": [
-      "sweet-tasting"
-     ]
+      "word": "ceremony",
+      "clues": [
+        "ceremonial occasion"
+      ]
     },
     {
-     "word": "sympathetic",
-     "clues": [
-      "appealing",
-      " likeable"
-     ]
+      "word": "certain",
+      "clues": [
+        "sure"
+      ]
     },
     {
-     "word": "systematic",
-     "clues": [
-      "characterized by order and planning"
-     ]
+      "word": "chain",
+      "clues": [
+        "series of rings or links",
+        "number of similar establishments"
+      ]
     },
     {
-     "word": "talented",
-     "clues": [
-      "gifted"
-     ]
+      "word": "chair",
+      "clues": [
+        "seat",
+        "professorship"
+      ]
     },
     {
-     "word": "talkative",
-     "clues": [
-      "chatty",
-      " gabby",
-      " garrulous"
-     ]
+      "word": "chalk",
+      "clues": [
+        "piece of chalk"
+      ]
     },
     {
-     "word": "tasty",
-     "clues": [
-      "delicious"
-     ]
+      "word": "challenge",
+      "clues": [
+        "demanding or stimulating situation",
+        "questioning a statement",
+        "dispute",
+        " call into question"
+      ]
     },
     {
-     "word": "temporary",
-     "clues": [
-      "impermanent"
-     ]
+      "word": "champagne",
+      "clues": [
+        "bubbly wine"
+      ]
     },
     {
-     "word": "tender",
-     "clues": [
-      "easy to cut or chew"
-     ]
+      "word": "champion",
+      "clues": [
+        "champ",
+        " title-holder"
+      ]
     },
     {
-     "word": "tender",
-     "clues": [
-      "gentle",
-      " sympathetic",
-      " feeling"
-     ]
+      "word": "chance",
+      "clues": [
+        "opportunity",
+        "probability",
+        "luck",
+        " fortune",
+        " hazard"
+      ]
     },
     {
-     "word": "tense",
-     "clues": [
-      "taut",
-      " rigid",
-      " stretched tight"
-     ]
+      "word": "change",
+      "clues": [
+        "alteration",
+        " modification",
+        "money received in return",
+        "alter",
+        " make or become different"
+      ]
     },
     {
-     "word": "tense",
-     "clues": [
-      "in a state of physical or nervous tension"
-     ]
+      "word": "channel",
+      "clues": [
+        "narrow body of water",
+        " canal",
+        "TV channel"
+      ]
     },
     {
-     "word": "terminal",
-     "clues": [
-      "endmost"
-     ]
+      "word": "chaos",
+      "clues": [
+        "pandemonium",
+        " bedlam",
+        " topsy-turvyness"
+      ]
     },
     {
-     "word": "thick",
-     "clues": [
-      "of a specific thickness"
-     ]
+      "word": "chapter",
+      "clues": [
+        "subdivision of a written work"
+      ]
     },
     {
-     "word": "thick",
-     "clues": [
-      "dense in consistency"
-     ]
+      "word": "character",
+      "clues": [
+        "good repute",
+        "grapheme",
+        " graphic symbol",
+        " written symbol",
+        "fictional character"
+      ]
     },
     {
-     "word": "thin",
-     "clues": [
-      "lean"
-     ]
+      "word": "characteristic",
+      "clues": [
+        "distinguishing quality"
+      ]
     },
     {
-     "word": "thirsty",
-     "clues": [
-      "needing or desiring to drink"
-     ]
+      "word": "charge",
+      "clues": [
+        "energize a battery",
+        "demand payment",
+        "accusation",
+        "pay with a credit card",
+        "accuse",
+        "electric charge",
+        "billing"
+      ]
     },
     {
-     "word": "thoughtful",
-     "clues": [
-      "considerate",
-      " showing concern"
-     ]
+      "word": "charismatic",
+      "clues": [
+        "possessing a magnetic personality"
+      ]
     },
     {
-     "word": "tidy",
-     "clues": [
-      "neat",
-      " orderly",
-      " clean"
-     ]
+      "word": "charity",
+      "clues": [
+        "gift",
+        "institution set up to provide help for the needy"
+      ]
     },
     {
-     "word": "tight",
-     "clues": [
-      "constrained",
-      " constricted",
-      " constricting"
-     ]
+      "word": "charm",
+      "clues": [
+        "good luck charm"
+      ]
     },
     {
-     "word": "tired",
-     "clues": [
-      "fatigued"
-     ]
+      "word": "chart",
+      "clues": [
+        "map for navigation",
+        "display of information"
+      ]
     },
     {
-     "word": "tolerant",
-     "clues": [
-      "respecting others"
-     ]
+      "word": "charter",
+      "clues": [
+        "document"
+      ]
     },
     {
-     "word": "tough",
-     "clues": [
-      "tough",
-      " hard",
-      " rough"
-     ]
+      "word": "chase",
+      "clues": [
+        "chase after",
+        " give chase"
+      ]
     },
     {
-     "word": "tough",
-     "clues": [
-      "not given to gentleness or sentimentality"
-     ]
+      "word": "chauvinist",
+      "clues": [
+        "prejudiced person"
+      ]
     },
     {
-     "word": "transparent",
-     "clues": [
-      "see-through",
-      " sheer"
-     ]
+      "word": "cheap",
+      "clues": [
+        "inexpensive"
+      ]
     },
     {
-     "word": "trivial",
-     "clues": [
-      "banal",
-      " commonplace"
-     ]
+      "word": "cheat",
+      "clues": [
+        "fool",
+        " swindle"
+      ]
     },
     {
-     "word": "tropical",
-     "clues": [
-      "typical of the tropics"
-     ]
+      "word": "check",
+      "clues": [
+        "check off",
+        " mark",
+        " mark off",
+        " tick off",
+        " tick",
+        "check out",
+        " verify",
+        "chess move",
+        "check mark",
+        " tick",
+        "tab",
+        " restaurant bill",
+        "confirmation",
+        " verification"
+      ]
     },
     {
-     "word": "true",
-     "clues": [
-      "consistent with fact or reality"
-     ]
+      "word": "cheek",
+      "clues": [
+        "side of the face",
+        "impudence",
+        " impertinence",
+        "boldness",
+        " nerve",
+        " brass",
+        " face"
+      ]
     },
     {
-     "word": "unanimous",
-     "clues": [
-      "in complete agreement"
-     ]
+      "word": "cheese",
+      "clues": [
+        "food"
+      ]
     },
     {
-     "word": "unaware",
-     "clues": [
-      "unwitting"
-     ]
+      "word": "chemistry",
+      "clues": [
+        "chemical science"
+      ]
     },
     {
-     "word": "unfair",
-     "clues": [
-      "partial",
-      " biased"
-     ]
+      "word": "cheque",
+      "clues": [
+        "check",
+        " bank check"
+      ]
     },
     {
-     "word": "unfortunate",
-     "clues": [
-      "not favored by fortune"
-     ]
+      "word": "cherry",
+      "clues": [
+        "fruit"
+      ]
     },
     {
-     "word": "uniform",
-     "clues": [
-      "unvarying"
-     ]
+      "word": "chest",
+      "clues": [
+        "thorax",
+        " pectus",
+        " part of the human torso",
+        "chest of drawers",
+        " bureau",
+        " dresser"
+      ]
     },
     {
-     "word": "unique",
-     "clues": [
-      "unequaled",
-      " unparalleled"
-     ]
+      "word": "chew",
+      "clues": [
+        "masticate"
+      ]
     },
     {
-     "word": "global",
-     "clues": [
-      "universal",
-      " worldwide"
-     ]
+      "word": "chicken",
+      "clues": [
+        "wimp",
+        " crybaby",
+        "domestic fowl"
+      ]
     },
     {
-     "word": "unlawful",
-     "clues": [
-      "illegitimate",
-      " illicit"
-     ]
+      "word": "chief",
+      "clues": [
+        "foreman",
+        " boss"
+      ]
     },
     {
-     "word": "unlike",
-     "clues": [
-      "unequal"
-     ]
+      "word": "child",
+      "clues": [
+        "kid"
+      ]
     },
     {
-     "word": "unlikely",
-     "clues": [
-      "improbable"
-     ]
+      "word": "childish",
+      "clues": [
+        "infantile"
+      ]
     },
     {
-     "word": "unpleasant",
-     "clues": [
-      "disagreeable"
-     ]
+      "word": "chimney",
+      "clues": [
+        "flue"
+      ]
     },
     {
-     "word": "useful",
-     "clues": [
-      "utile"
-     ]
+      "word": "chimpanzee",
+      "clues": [
+        "primate"
+      ]
     },
     {
-     "word": "vague",
-     "clues": [
-      "undefined"
-     ]
+      "word": "chin",
+      "clues": [
+        "lower jaw"
+      ]
     },
     {
-     "word": "vain",
-     "clues": [
-      "self-conceited",
-      " swollen-headed"
-     ]
+      "word": "chip",
+      "clues": [
+        "microchip",
+        "crisp",
+        " potato chip",
+        "bit",
+        " flake",
+        " fleck",
+        " scrap",
+        " small fragment"
+      ]
     },
     {
-     "word": "valid",
-     "clues": [
-      "well grounded in logic or truth"
-     ]
+      "word": "chocolate",
+      "clues": [
+        "sweet food"
+      ]
     },
     {
-     "word": "vertical",
-     "clues": [
-      "perpendicular"
-     ]
+      "word": "choice",
+      "clues": [
+        "option",
+        " alternative"
+      ]
     },
     {
-     "word": "viable",
-     "clues": [
-      "feasible",
-      " practicable",
-      " workable"
-     ]
+      "word": "choke",
+      "clues": [
+        "gag",
+        " suffocate",
+        "strangle"
+      ]
     },
     {
-     "word": "vigorous",
-     "clues": [
-      "strong physically or mentally"
-     ]
+      "word": "choose",
+      "clues": [
+        "elect to do"
+      ]
     },
     {
-     "word": "visible",
-     "clues": [
-      "seeable"
-     ]
+      "word": "chop",
+      "clues": [
+        "chop up"
+      ]
     },
     {
-     "word": "visual",
-     "clues": [
-      "ocular",
-      " optic",
-      " optical"
-     ]
+      "word": "chord",
+      "clues": [
+        "combination of notes"
+      ]
     },
     {
-     "word": "warm",
-     "clues": [
-      "producing a comfortable degree of heat"
-     ]
+      "word": "chorus",
+      "clues": [
+        "choir",
+        " singing group"
+      ]
     },
     {
-     "word": "warm",
-     "clues": [
-      "friendly and responsive"
-     ]
+      "word": "church",
+      "clues": [
+        "church building"
+      ]
     },
     {
-     "word": "weak",
-     "clues": [
-      "having little physical or spiritual strength"
-     ]
+      "word": "cigarette",
+      "clues": [
+        "butt",
+        " fag"
+      ]
     },
     {
-     "word": "well",
-     "clues": [
-      "in good health"
-     ]
+      "word": "cinema",
+      "clues": [
+        "movie theater",
+        " theater"
+      ]
     },
     {
-     "word": "white",
-     "clues": [
-      "achromatic"
-     ]
+      "word": "circle",
+      "clues": [
+        "geometric figure"
+      ]
     },
     {
-     "word": "white",
-     "clues": [
-      "caucasian"
-     ]
+      "word": "circulate",
+      "clues": [
+        "distribute",
+        " disseminate",
+        " propagate",
+        " broadcast",
+        " diffuse",
+        " disperse",
+        " spread",
+        " cause to become widely known"
+      ]
     },
     {
-     "word": "whole",
-     "clues": [
-      "including all components"
-     ]
+      "word": "circulation",
+      "clues": [
+        "movement through a circuit"
+      ]
     },
     {
-     "word": "wild",
-     "clues": [
-      "untamed"
-     ]
+      "word": "circumstance",
+      "clues": [
+        "context"
+      ]
     },
     {
-     "word": "wild",
-     "clues": [
-      "marked by lack of restraint or control"
-     ]
+      "word": "citizen",
+      "clues": [
+        "member of a state"
+      ]
     },
     {
-     "word": "wrong",
-     "clues": [
-      "contrary to conscience or morality or law"
-     ]
+      "word": "city",
+      "clues": [
+        "metropolis",
+        " urban center"
+      ]
     },
     {
-     "word": "wrong",
-     "clues": [
-      "based on error"
-     ]
+      "word": "civilian",
+      "clues": [
+        "nonmilitary citizen"
+      ]
     },
     {
-     "word": "young",
-     "clues": [
-      "youthful"
-     ]
+      "word": "civilization",
+      "clues": [
+        "society in an advanced state"
+      ]
     },
     {
-     "word": "abbey",
-     "clues": [
-      "monastery"
-     ]
+      "word": "claim",
+      "clues": [
+        "demand",
+        "assertion",
+        "assert",
+        " affirm"
+      ]
     },
     {
-     "word": "abortion",
-     "clues": [
-      "termination pregnancy"
-     ]
+      "word": "clarify",
+      "clues": [
+        "clear up",
+        " elucidate",
+        " make comprehensible"
+      ]
     },
     {
-     "word": "absence",
-     "clues": [
-      "failure to be present"
-     ]
+      "word": "clash",
+      "clues": [
+        "friction",
+        " conflict"
+      ]
     },
     {
-     "word": "absorption",
-     "clues": [
-      "preoccupation",
-      " engrossment"
-     ]
+      "word": "class",
+      "clues": [
+        "social class",
+        " socio-economic class",
+        "form",
+        " grade"
+      ]
     },
     {
-     "word": "absorption",
-     "clues": [
-      "soaking up"
-     ]
+      "word": "classify",
+      "clues": [
+        "declare unavailable"
+      ]
     },
     {
-     "word": "absorption",
-     "clues": [
-      "social assimilation"
-     ]
+      "word": "classroom",
+      "clues": [
+        "schoolroom"
+      ]
     },
     {
-     "word": "abuse",
-     "clues": [
-      "maltreatment",
-      " ill-treatment"
-     ]
+      "word": "clay",
+      "clues": [
+        "fine-grained soil"
+      ]
     },
     {
-     "word": "abuse",
-     "clues": [
-      "insult"
-     ]
+      "word": "clean",
+      "clues": [
+        "free from dirt"
+      ]
     },
     {
-     "word": "academy",
-     "clues": [
-      "learned establishment"
-     ]
+      "word": "clear",
+      "clues": [
+        "empty",
+        " remove the occupants of",
+        "free from clouds or mist or haze",
+        "well-defined"
+      ]
     },
     {
-     "word": "accent",
-     "clues": [
-      "speech pattern"
-     ]
+      "word": "clearance",
+      "clues": [
+        "headroom"
+      ]
     },
     {
-     "word": "acceptance",
-     "clues": [
-      "adoption",
-      " espousal",
-      " favorable reception"
-     ]
+      "word": "clerk",
+      "clues": [
+        "clerical worker"
+      ]
     },
     {
-     "word": "access",
-     "clues": [
-      "entree",
-      " accession",
-      " admittance"
-     ]
+      "word": "climate",
+      "clues": [
+        "clime",
+        " weather"
+      ]
     },
     {
-     "word": "access",
-     "clues": [
-      "right to obtain or make use of"
-     ]
+      "word": "climb",
+      "clues": [
+        "climb up",
+        " mount",
+        " go up"
+      ]
     },
     {
-     "word": "accident",
-     "clues": [
-      "fortuity",
-      " chance event"
-     ]
+      "word": "clinic",
+      "clues": [
+        "medical establishment"
+      ]
     },
     {
-     "word": "accident",
-     "clues": [
-      "mishap"
-     ]
+      "word": "clique",
+      "clues": [
+        "coterie",
+        " ingroup",
+        " inner circle",
+        " pack",
+        " camp"
+      ]
     },
     {
-     "word": "account",
-     "clues": [
-      "explanation"
-     ]
+      "word": "clock",
+      "clues": [
+        "timepiece"
+      ]
     },
     {
-     "word": "account",
-     "clues": [
-      "accounting",
-      " account statement"
-     ]
+      "word": "close",
+      "clues": [
+        "shut",
+        "finish",
+        " terminate",
+        " conclude",
+        " end",
+        "near",
+        "close in relevance or relationship"
+      ]
     },
     {
-     "word": "accountant",
-     "clues": [
-      "comptroller",
-      " controller"
-     ]
+      "word": "closed",
+      "clues": [
+        "shut",
+        " unopen"
+      ]
     },
     {
-     "word": "accumulation",
-     "clues": [
-      "accretion"
-     ]
+      "word": "clothes",
+      "clues": [
+        "apparel",
+        " wearing apparel",
+        " dress"
+      ]
     },
     {
-     "word": "achievement",
-     "clues": [
-      "accomplishment"
-     ]
+      "word": "club",
+      "clues": [
+        "bat",
+        " stout stick that is larger at one end",
+        "cabaret",
+        " nightclub",
+        " nightspot",
+        "society",
+        " guild",
+        " gild",
+        " lodge",
+        " order",
+        "playing card in the minor suit of clubs"
+      ]
     },
     {
-     "word": "acid",
-     "clues": [
-      "water-soluble compound with sour taste"
-     ]
+      "word": "clue",
+      "clues": [
+        "cue",
+        " evidence",
+        " hint"
+      ]
     },
     {
-     "word": "acquaintance",
-     "clues": [
-      "familiarity",
-      " personal knowledge"
-     ]
+      "word": "cluster",
+      "clues": [
+        "bunch",
+        " clump"
+      ]
     },
     {
-     "word": "acquaintance",
-     "clues": [
-      "familiar person"
-     ]
+      "word": "coach",
+      "clues": [
+        "private instructor",
+        " tutor"
+      ]
     },
     {
-     "word": "acquisition",
-     "clues": [
-      "possession"
-     ]
+      "word": "coal",
+      "clues": [
+        "fossil fuel"
+      ]
     },
     {
-     "word": "act",
-     "clues": [
-      "human action",
-      " human activity"
-     ]
+      "word": "coalition",
+      "clues": [
+        "coalescence",
+        " conglutination"
+      ]
     },
     {
-     "word": "act",
-     "clues": [
-      "subdivision of a play or opera or ballet"
-     ]
+      "word": "coast",
+      "clues": [
+        "seashore",
+        " seacoast",
+        " sea-coast"
+      ]
     },
     {
-     "word": "action",
-     "clues": [
-      "legal action"
-     ]
+      "word": "coat",
+      "clues": [
+        "garment",
+        "coating",
+        " thin layer"
+      ]
     },
     {
-     "word": "action",
-     "clues": [
-      "military action"
-     ]
+      "word": "code",
+      "clues": [
+        "coding system for brief or secret messages",
+        "computer code"
+      ]
     },
     {
-     "word": "action",
-     "clues": [
-      "series of events that form a plot"
-     ]
+      "word": "coerce",
+      "clues": [
+        "pressure",
+        " force",
+        " compel"
+      ]
     },
     {
-     "word": "activity",
-     "clues": [
-      "activeness",
-      " trait of being active"
-     ]
+      "word": "coffee",
+      "clues": [
+        "beverage"
+      ]
     },
     {
-     "word": "addition",
-     "clues": [
-      "summation",
-      " plus"
-     ]
+      "word": "coffin",
+      "clues": [
+        "casket"
+      ]
     },
     {
-     "word": "addition",
-     "clues": [
-      "add-on",
-      " improver"
-     ]
+      "word": "coin",
+      "clues": [
+        "money"
+      ]
     },
     {
-     "word": "address",
-     "clues": [
-      "place where a person or organization can be found"
-     ]
+      "word": "coincide",
+      "clues": [
+        "concur",
+        " happen simultaneously"
+      ]
     },
     {
-     "word": "administration",
-     "clues": [
-      "presidency"
-     ]
+      "word": "coincidence",
+      "clues": [
+        "happenstance"
+      ]
     },
     {
-     "word": "admiration",
-     "clues": [
-      "esteem"
-     ]
+      "word": "cold",
+      "clues": [
+        "physically cold",
+        "without human warmth or emotion",
+        "coldness",
+        " low temperature",
+        "common cold"
+      ]
     },
     {
-     "word": "admission",
-     "clues": [
-      "acknowledgment"
-     ]
+      "word": "collapse",
+      "clues": [
+        "crumble",
+        " crumple",
+        " tumble"
+      ]
     },
     {
-     "word": "admission",
-     "clues": [
-      "entrance fee"
-     ]
+      "word": "collar",
+      "clues": [
+        "harness"
+      ]
     },
     {
-     "word": "adoption",
-     "clues": [
-      "child adoption"
-     ]
+      "word": "colleague",
+      "clues": [
+        "co-worker",
+        " fellow worker"
+      ]
     },
     {
-     "word": "adult",
-     "clues": [
-      "grownup"
-     ]
+      "word": "collect",
+      "clues": [
+        "pick up"
+      ]
     },
     {
-     "word": "advance",
-     "clues": [
-      "cash advance"
-     ]
+      "word": "collection",
+      "clues": [
+        "aggregation",
+        " accumulation",
+        " assemblage"
+      ]
     },
     {
-     "word": "advantage",
-     "clues": [
-      "benefit"
-     ]
+      "word": "college",
+      "clues": [
+        "institution of higher education"
+      ]
     },
     {
-     "word": "adventure",
-     "clues": [
-      "escapade",
-      " risky venture"
-     ]
+      "word": "colon",
+      "clues": [
+        "part of the large intestine",
+        "punctuation mark"
+      ]
     },
     {
-     "word": "advertising",
-     "clues": [
-      "ad",
-      " advertisement"
-     ]
+      "word": "colony",
+      "clues": [
+        "politically controlled country"
+      ]
     },
     {
-     "word": "advice",
-     "clues": [
-      "proposal for an appropriate course of action"
-     ]
+      "word": "color",
+      "clues": [
+        "hue"
+      ]
     },
     {
-     "word": "adviser",
-     "clues": [
-      "advisor",
-      " consultant"
-     ]
+      "word": "color-blind",
+      "clues": [
+        "unable to distinguish colors"
+      ]
     },
     {
-     "word": "advocate",
-     "clues": [
-      "proponent"
-     ]
+      "word": "colorful",
+      "clues": [
+        "vivid in color"
+      ]
     },
     {
-     "word": "affair",
-     "clues": [
-      "affaire",
-      " intimacy",
-      " liaison",
-      " involvement"
-     ]
+      "word": "column",
+      "clues": [
+        "pillar",
+        " support",
+        "linear array of numbers"
+      ]
     },
     {
-     "word": "affinity",
-     "clues": [
-      "natural attraction"
-     ]
+      "word": "coma",
+      "clues": [
+        "deep unconsciousness"
+      ]
     },
     {
-     "word": "affinity",
-     "clues": [
-      "kinship"
-     ]
+      "word": "combination",
+      "clues": [
+        "things occurring together"
+      ]
     },
     {
-     "word": "age",
-     "clues": [
-      "how long something has existed"
-     ]
+      "word": "combine",
+      "clues": [
+        "blend",
+        " mix",
+        " conflate",
+        " commingle",
+        " fuse",
+        " merge"
+      ]
     },
     {
-     "word": "ol",
-     "clues": [
-      "age] years"
-     ]
+      "word": "comedy",
+      "clues": [
+        "humorous drama"
+      ]
     },
     {
-     "word": "age",
-     "clues": [
-      "historic period"
-     ]
+      "word": "comfort",
+      "clues": [
+        "comfortableness",
+        "ease",
+        " financial freedom",
+        "soothe",
+        " console",
+        "consolation",
+        " solace"
+      ]
     },
     {
-     "word": "agency",
-     "clues": [
-      "business that serves other businesses"
-     ]
+      "word": "comfortable",
+      "clues": [
+        "comfy"
+      ]
     },
     {
-     "word": "agenda",
-     "clues": [
-      "order of business"
-     ]
+      "word": "comi",
+      "clues": [
+        "strip]"
+      ]
     },
     {
-     "word": "agent",
-     "clues": [
-      "representative who acts on behalf of others"
-     ]
+      "word": "command",
+      "clues": [
+        "compel",
+        "authoritative instruction",
+        "control",
+        " mastery",
+        "control"
+      ]
     },
     {
-     "word": "agent",
-     "clues": [
-      "federal agent"
-     ]
+      "word": "commemorate",
+      "clues": [
+        "remember"
+      ]
     },
     {
-     "word": "agony",
-     "clues": [
-      "torment"
-     ]
+      "word": "comment",
+      "clues": [
+        "remark"
+      ]
     },
     {
-     "word": "agreement",
-     "clues": [
-      "accord"
-     ]
+      "word": "commerce",
+      "clues": [
+        "commercialism",
+        " mercantilism"
+      ]
     },
     {
-     "word": "agriculture",
-     "clues": [
-      "farming",
-      " husbandry"
-     ]
+      "word": "commission",
+      "clues": [
+        "deputation",
+        " delegation",
+        "fee"
+      ]
     },
     {
-     "word": "aid",
-     "clues": [
-      "economic aid"
-     ]
+      "word": "commitment",
+      "clues": [
+        "allegiance",
+        " loyalty",
+        " dedication"
+      ]
     },
     {
-     "word": "AIDS",
-     "clues": [
-      "acquired immune deficiency syndrome"
-     ]
+      "word": "committee",
+      "clues": [
+        "commission"
+      ]
     },
     {
-     "word": "air",
-     "clues": [
-      "mixture of gases"
-     ]
+      "word": "common",
+      "clues": [
+        "belonging to a community",
+        "average or ordinary or usual",
+        "mutual"
+      ]
     },
     {
-     "word": "aisle",
-     "clues": [
-      "passage between seats or supermarket shelves"
-     ]
+      "word": "communication",
+      "clues": [
+        "something communicated between people"
+      ]
     },
     {
-     "word": "alarm",
-     "clues": [
-      "warning device",
-      " alarm system"
-     ]
+      "word": "communist",
+      "clues": [
+        "Marxist"
+      ]
     },
     {
-     "word": "alarm",
-     "clues": [
-      "alarm clock"
-     ]
+      "word": "community",
+      "clues": [
+        "residential district",
+        " residential area"
+      ]
     },
     {
-     "word": "alarm",
-     "clues": [
-      "dismay",
-      " consternation",
-      " fear"
-     ]
+      "word": "compact",
+      "clues": [
+        "compact car"
+      ]
     },
     {
-     "word": "album",
-     "clues": [
-      "book of blank pages"
-     ]
+      "word": "company",
+      "clues": [
+        "troupe",
+        "companionship",
+        " fellowship",
+        " society"
+      ]
     },
     {
-     "word": "album",
-     "clues": [
-      "record album"
-     ]
+      "word": "compartment",
+      "clues": [
+        "small space or subdivision for storage"
+      ]
     },
     {
-     "word": "alcohol",
-     "clues": [
-      "alcoholic beverage",
-      " intoxicant",
-      " inebriant"
-     ]
+      "word": "compensation",
+      "clues": [
+        "recompense",
+        " payment"
+      ]
     },
     {
-     "word": "allocation",
-     "clues": [
-      "allotment",
-      " share"
-     ]
+      "word": "compete",
+      "clues": [
+        "vie",
+        " contend"
+      ]
     },
     {
-     "word": "allowance",
-     "clues": [
-      "money allowed or granted"
-     ]
+      "word": "competence",
+      "clues": [
+        "competency"
+      ]
     },
     {
-     "word": "ally",
-     "clues": [
-      "friendly nation"
-     ]
+      "word": "competition",
+      "clues": [
+        "contest",
+        "contention",
+        " rivalry"
+      ]
     },
     {
-     "word": "ally",
-     "clues": [
-      "friend"
-     ]
+      "word": "complain",
+      "clues": [
+        "express discontent"
+      ]
     },
     {
-     "word": "aluminium",
-     "clues": [
-      "aluminum",
-      " Al",
-      " silvery metal"
-     ]
+      "word": "complete",
+      "clues": [
+        "having every necessary part"
+      ]
     },
     {
-     "word": "ambiguity",
-     "clues": [
-      "equivocalness"
-     ]
+      "word": "complex",
+      "clues": [
+        "complicated"
+      ]
     },
     {
-     "word": "ambition",
-     "clues": [
-      "ambitiousness"
-     ]
+      "word": "compliance",
+      "clues": [
+        "conformity",
+        " abidance"
+      ]
     },
     {
-     "word": "analysis",
-     "clues": [
-      "psychoanalysis"
-     ]
+      "word": "complication",
+      "clues": [
+        "complex situation"
+      ]
     },
     {
-     "word": "analyst",
-     "clues": [
-      "psychoanalyst"
-     ]
+      "word": "compose",
+      "clues": [
+        "write music"
+      ]
     },
     {
-     "word": "angel",
-     "clues": [
-      "spiritual being"
-     ]
+      "word": "composer",
+      "clues": [
+        "music composer"
+      ]
     },
     {
-     "word": "anger",
-     "clues": [
-      "ire"
-     ]
+      "word": "compound",
+      "clues": [
+        "chemical compound"
+      ]
     },
     {
-     "word": "angle",
-     "clues": [
-      "slant",
-      " bias"
-     ]
+      "word": "comprehensive",
+      "clues": [
+        "all-including"
+      ]
     },
     {
-     "word": "angle",
-     "clues": [
-      "space between two lines"
-     ]
+      "word": "compromise",
+      "clues": [
+        "make a compromise",
+        "allowance",
+        " accommodation with concessions"
+      ]
     },
     {
-     "word": "animal",
-     "clues": [
-      "animate being",
-      " beast",
-      " brute",
-      " creature",
-      " fauna"
-     ]
+      "word": "compute",
+      "clues": [
+        "virus] virus"
+      ]
     },
     {
-     "word": "ankle",
-     "clues": [
-      "ankle joint"
-     ]
+      "word": "computer",
+      "clues": [
+        "computing machine"
+      ]
     },
     {
-     "word": "anniversary",
-     "clues": [
-      "day of remembrance"
-     ]
+      "word": "computing",
+      "clues": [
+        "computer science"
+      ]
     },
     {
-     "word": "announcement",
-     "clues": [
-      "proclamation",
-      " declaration"
-     ]
+      "word": "concede",
+      "clues": [
+        "acknowledge defeat"
+      ]
     },
     {
-     "word": "ant",
-     "clues": [
-      "social insect"
-     ]
+      "word": "conceive",
+      "clues": [
+        "become pregnant"
+      ]
     },
     {
-     "word": "anticipation",
-     "clues": [
-      "expectancy"
-     ]
+      "word": "concentrate",
+      "clues": [
+        "focus",
+        " focus one's attention"
+      ]
     },
     {
-     "word": "anxiety",
-     "clues": [
-      "anxiousness"
-     ]
+      "word": "concentration",
+      "clues": [
+        "strength of solution",
+        "engrossment",
+        " absorption",
+        " immersion"
+      ]
     },
     {
-     "word": "apathy",
-     "clues": [
-      "absence of emotion or enthusiasm"
-     ]
+      "word": "concept",
+      "clues": [
+        "conception",
+        " construct"
+      ]
     },
     {
-     "word": "apology",
-     "clues": [
-      "expression of regret"
-     ]
+      "word": "conception",
+      "clues": [
+        "fertilization"
+      ]
     },
     {
-     "word": "apparatus",
-     "clues": [
-      "setup",
-      " equipment"
-     ]
+      "word": "concern",
+      "clues": [
+        "feeling of sympathy",
+        "fear",
+        " anxious feeling",
+        "interest"
+      ]
     },
     {
-     "word": "appeal",
-     "clues": [
-      "appealingness",
-      " charm"
-     ]
+      "word": "concert",
+      "clues": [
+        "musical performance"
+      ]
     },
     {
-     "word": "appeal",
-     "clues": [
-      "solicitation"
-     ]
+      "word": "concession",
+      "clues": [
+        "point conceded"
+      ]
     },
     {
-     "word": "appearance",
-     "clues": [
-      "visual aspect"
-     ]
+      "word": "conclusion",
+      "clues": [
+        "ending",
+        " finish"
+      ]
     },
     {
-     "word": "appendix",
-     "clues": [
-      "body part"
-     ]
+      "word": "concrete",
+      "clues": [
+        "strong building material",
+        "material"
+      ]
     },
     {
-     "word": "appendix",
-     "clues": [
-      "supplementary material"
-     ]
+      "word": "condition",
+      "clues": [
+        "circumstance",
+        "precondition",
+        " stipulation",
+        "status",
+        " state"
+      ]
     },
     {
-     "word": "appetite",
-     "clues": [
-      "craving"
-     ]
+      "word": "conductor",
+      "clues": [
+        "substance that readily transmits electricity or heat",
+        "person who collects fares"
+      ]
     },
     {
-     "word": "apple",
-     "clues": [
-      "fruit with red",
-      " yellow or green skin"
-     ]
+      "word": "conference",
+      "clues": [
+        "meeting"
+      ]
     },
     {
-     "word": "application",
-     "clues": [
-      "practical application"
-     ]
+      "word": "confession",
+      "clues": [
+        "admission of misdeeds"
+      ]
     },
     {
-     "word": "application",
-     "clues": [
-      "verbal or written request for assistance or employment or admission"
-     ]
+      "word": "confidence",
+      "clues": [
+        "feeling of trust"
+      ]
     },
     {
-     "word": "appointment",
-     "clues": [
-      "job",
-      " post"
-     ]
+      "word": "confine",
+      "clues": [
+        "detain"
+      ]
     },
     {
-     "word": "approval",
-     "clues": [
-      "blessing"
-     ]
+      "word": "conflict",
+      "clues": [
+        "state of opposition between persons or ideas",
+        "incompatibility of dates or events"
+      ]
     },
     {
-     "word": "aquarium",
-     "clues": [
-      "fish tank",
-      " marine museum"
-     ]
+      "word": "confront",
+      "clues": [
+        "come face to face with",
+        "face",
+        " face up to"
+      ]
     },
     {
-     "word": "arch",
-     "clues": [
-      "archway"
-     ]
+      "word": "confrontation",
+      "clues": [
+        "clash"
+      ]
     },
     {
-     "word": "architecture",
-     "clues": [
-      "building design"
-     ]
+      "word": "confuse",
+      "clues": [
+        "throw",
+        " befuddle",
+        " confound"
+      ]
     },
     {
-     "word": "archive",
-     "clues": [
-      "archives"
-     ]
+      "word": "confusion",
+      "clues": [
+        "mix-up"
+      ]
     },
     {
-     "word": "area",
-     "clues": [
-      "expanse",
-      " surface area"
-     ]
+      "word": "conglomerate",
+      "clues": [
+        "empire",
+        " group of companies"
+      ]
     },
     {
-     "word": "arena",
-     "clues": [
-      "place for spectacles"
-     ]
+      "word": "congress",
+      "clues": [
+        "national legislative assembly"
+      ]
     },
     {
-     "word": "argument",
-     "clues": [
-      "argumentation",
-      " debate"
-     ]
+      "word": "connection",
+      "clues": [
+        "shifting from one transportation to another",
+        "person who is influential",
+        "link",
+        " connectedness"
+      ]
     },
     {
-     "word": "arm",
-     "clues": [
-      "human limb"
-     ]
+      "word": "conscience",
+      "clues": [
+        "scruples",
+        " moral sense"
+      ]
     },
     {
-     "word": "army",
-     "clues": [
-      "ground forces"
-     ]
+      "word": "conscious",
+      "clues": [
+        "aware"
+      ]
     },
     {
-     "word": "arrangement",
-     "clues": [
-      "placement"
-     ]
+      "word": "consciousness",
+      "clues": [
+        "alert cognitive state"
+      ]
     },
     {
-     "word": "arrow",
-     "clues": [
-      "projectile"
-     ]
+      "word": "consensus",
+      "clues": [
+        "agreement"
+      ]
     },
     {
-     "word": "arrow",
-     "clues": [
-      "pointer",
-      " indicator"
-     ]
+      "word": "conservation",
+      "clues": [
+        "preservation",
+        " environmental management"
+      ]
     },
     {
-     "word": "art",
-     "clues": [
-      "artistic creation",
-      " artistic production"
-     ]
+      "word": "conservative",
+      "clues": [
+        "resistant to change"
+      ]
     },
     {
-     "word": "article",
-     "clues": [
-      "nonfictional prose forming an independent part of a publication"
-     ]
+      "word": "consider",
+      "clues": [
+        "debate",
+        " think about"
+      ]
     },
     {
-     "word": "artist",
-     "clues": [
-      "creative person"
-     ]
+      "word": "consideration",
+      "clues": [
+        "careful thought",
+        "thoughtfulness"
+      ]
     },
     {
-     "word": "ash",
-     "clues": [
-      "residue from a fire"
-     ]
+      "word": "consolidate",
+      "clues": [
+        "unite into one"
+      ]
     },
     {
-     "word": "aspect",
-     "clues": [
-      "facet"
-     ]
+      "word": "conspiracy",
+      "clues": [
+        "cabal",
+        " plot"
+      ]
     },
     {
-     "word": "assault",
-     "clues": [
-      "physical attack"
-     ]
+      "word": "constant",
+      "clues": [
+        "unending",
+        " incessant",
+        "steadfast",
+        " unwavering"
+      ]
     },
     {
-     "word": "rape",
-     "clues": [
-      "rape",
-      " violation",
-      " assault",
-      " ravishment"
-     ]
+      "word": "constellation",
+      "clues": [
+        "configuration of stars"
+      ]
     },
     {
-     "word": "assembly",
-     "clues": [
-      "assemblage",
-      " gathering of people"
-     ]
+      "word": "constituency",
+      "clues": [
+        "body of voters"
+      ]
     },
     {
-     "word": "assembly",
-     "clues": [
-      "fabrication",
-      " construction"
-     ]
+      "word": "constitution",
+      "clues": [
+        "composition",
+        " makeup",
+        "fundamental law"
+      ]
     },
     {
-     "word": "assessment",
-     "clues": [
-      "judgment",
-      " judgement"
-     ]
+      "word": "constitutional",
+      "clues": [
+        "relating to a/the constitution"
+      ]
     },
     {
-     "word": "assessment",
-     "clues": [
-      "appraisal"
-     ]
+      "word": "constraint",
+      "clues": [
+        "restraint",
+        " physical constraint"
+      ]
     },
     {
-     "word": "asset",
-     "clues": [
-      "plus",
-      " valuable quality"
-     ]
+      "word": "construct",
+      "clues": [
+        "manufacture",
+        " fabricate"
+      ]
     },
     {
-     "word": "assignment",
-     "clues": [
-      "task"
-     ]
+      "word": "consultation",
+      "clues": [
+        "discussion to consider a point"
+      ]
     },
     {
-     "word": "association",
-     "clues": [
-      "mental connection"
-     ]
+      "word": "consumer",
+      "clues": [
+        "person who uses goods or services"
+      ]
     },
     {
-     "word": "association",
-     "clues": [
-      "formal organization of people"
-     ]
+      "word": "consumption",
+      "clues": [
+        "ingestion"
+      ]
     },
     {
-     "word": "association",
-     "clues": [
-      "affiliation"
-     ]
+      "word": "contact",
+      "clues": [
+        "touch",
+        "middleman",
+        "close interaction"
+      ]
     },
     {
-     "word": "assumption",
-     "clues": [
-      "premise",
-      " premiss"
-     ]
+      "word": "contain",
+      "clues": [
+        "incorporate",
+        " comprise"
+      ]
     },
     {
-     "word": "asylum",
-     "clues": [
-      "refuge",
-      " sanctuary",
-      " shelter"
-     ]
+      "word": "contemporary",
+      "clues": [
+        "coeval"
+      ]
     },
     {
-     "word": "athlete",
-     "clues": [
-      "jock",
-      " sportive person"
-     ]
+      "word": "contempt",
+      "clues": [
+        "disdain",
+        " scorn",
+        " despite",
+        " lack of respect"
+      ]
     },
     {
-     "word": "atmosphere",
-     "clues": [
-      "envelope of gases"
-     ]
+      "word": "content",
+      "clues": [
+        "capacity",
+        "contented"
+      ]
     },
     {
-     "word": "atmosphere",
-     "clues": [
-      "ambiance",
-      " ambience"
-     ]
+      "word": "context",
+      "clues": [
+        "linguistic context",
+        " context of use"
+      ]
     },
     {
-     "word": "attachment",
-     "clues": [
-      "supplementary part"
-     ]
+      "word": "continental",
+      "clues": [
+        "relating to a continent"
+      ]
     },
     {
-     "word": "attachment",
-     "clues": [
-      "affection",
-      " fondness"
-     ]
+      "word": "continuation",
+      "clues": [
+        "lengthiness",
+        " prolongation",
+        " extension"
+      ]
     },
     {
-     "word": "attack",
-     "clues": [
-      "onslaught",
-      " physical attack"
-     ]
+      "word": "continuous",
+      "clues": [
+        "uninterrupted"
+      ]
     },
     {
-     "word": "attack",
-     "clues": [
-      "strong criticism"
-     ]
+      "word": "contract",
+      "clues": [
+        "binding agreement between two or more persons"
+      ]
     },
     {
-     "word": "attention",
-     "clues": [
-      "faculty or power of mental concentration"
-     ]
+      "word": "contraction",
+      "clues": [
+        "muscular contraction"
+      ]
     },
     {
-     "word": "attic",
-     "clues": [
-      "loft",
-      " garret"
-     ]
+      "word": "contradiction",
+      "clues": [
+        "contradiction in terms"
+      ]
     },
     {
-     "word": "attitude",
-     "clues": [
-      "mental attitude"
-     ]
+      "word": "contrary",
+      "clues": [
+        "exact opposition"
+      ]
     },
     {
-     "word": "attraction",
-     "clues": [
-      "attractiveness"
-     ]
+      "word": "contrast",
+      "clues": [
+        "opposition or dissimilarity"
+      ]
     },
     {
-     "word": "attraction",
-     "clues": [
-      "entertainment offered to the public"
-     ]
+      "word": "contribution",
+      "clues": [
+        "donation"
+      ]
     },
     {
-     "word": "attraction",
-     "clues": [
-      "physical force"
-     ]
+      "word": "control",
+      "clues": [
+        "restraint",
+        " discipline in personal activities",
+        "dominance",
+        "operate",
+        " handle"
+      ]
     },
     {
-     "word": "auction",
-     "clues": [
-      "auction sale"
-     ]
+      "word": "convenience",
+      "clues": [
+        "appliance",
+        " contraption",
+        " gadget",
+        " gizmo"
+      ]
     },
     {
-     "word": "audience",
-     "clues": [
-      "spectators",
-      " listeners"
-     ]
+      "word": "convention",
+      "clues": [
+        "custom",
+        "large formal assembly"
+      ]
     },
     {
-     "word": "auditor",
-     "clues": [
-      "student"
-     ]
+      "word": "conventional",
+      "clues": [
+        "following accepted customs"
+      ]
     },
     {
-     "word": "aunt",
-     "clues": [
-      "auntie",
-      " relative"
-     ]
+      "word": "conversation",
+      "clues": [
+        "talk"
+      ]
     },
     {
-     "word": "authority",
-     "clues": [
-      "expert whose views are taken as definitive"
-     ]
+      "word": "convert",
+      "clues": [
+        "change religious beliefs"
+      ]
     },
     {
-     "word": "authority",
-     "clues": [
-      "persons who exercise administrative control"
-     ]
+      "word": "convict",
+      "clues": [
+        "find guilty"
+      ]
     },
     {
-     "word": "autonomy",
-     "clues": [
-      "self-sufficiency",
-      " personal independence"
-     ]
+      "word": "conviction",
+      "clues": [
+        "strong belief"
+      ]
     },
     {
-     "word": "avenue",
-     "clues": [
-      "boulevard"
-     ]
+      "word": "convince",
+      "clues": [
+        "convert",
+        " win over"
+      ]
     },
     {
-     "word": "average",
-     "clues": [
-      "norm"
-     ]
+      "word": "convulsion",
+      "clues": [
+        "fit",
+        " paroxysm"
+      ]
     },
     {
-     "word": "aviation",
-     "clues": [
-      "operation of aircraft"
-     ]
+      "word": "cook",
+      "clues": [
+        "fix",
+        " ready",
+        " prepare"
+      ]
     },
     {
-     "word": "award",
-     "clues": [
-      "prize"
-     ]
+      "word": "cool",
+      "clues": [
+        "neither warm or very cold in temperature",
+        "unenthusiastic",
+        " unfriendly",
+        " unresponsive"
+      ]
     },
     {
-     "word": "axis",
-     "clues": [
-      "axis of rotation"
-     ]
+      "word": "cooperate",
+      "clues": [
+        "collaborate",
+        " join forces"
+      ]
     },
     {
-     "word": "baby",
-     "clues": [
-      "babe",
-      " infant"
-     ]
+      "word": "cooperation",
+      "clues": [
+        "group action",
+        " collaboration"
+      ]
     },
     {
-     "word": "back",
-     "clues": [
-      "rear",
-      " side that goes last or is not normally seen"
-     ]
+      "word": "cooperative",
+      "clues": [
+        "co-operative"
+      ]
     },
     {
-     "word": "back",
-     "clues": [
-      "spinal column",
-      " vertebral column",
-      " spine",
-      " backbone"
-     ]
+      "word": "cope",
+      "clues": [
+        "get by",
+        " make do",
+        " manage"
+      ]
     },
     {
-     "word": "background",
-     "clues": [
-      "social heritage"
-     ]
+      "word": "copper",
+      "clues": [
+        "Cu",
+        " metal"
+      ]
     },
     {
-     "word": "background",
-     "clues": [
-      "ground",
-      " part of a scene behind objects"
-     ]
+      "word": "copy",
+      "clues": [
+        "re-create",
+        " replicate",
+        "imitate",
+        " simulate",
+        "secondary representation of an original"
+      ]
     },
     {
-     "word": "background",
-     "clues": [
-      "setting context"
-     ]
+      "word": "copyright",
+      "clues": [
+        "right of publication"
+      ]
     },
     {
-     "word": "bacon",
-     "clues": [
-      "pork"
-     ]
+      "word": "cord",
+      "clues": [
+        "corduroy",
+        " fabric"
+      ]
     },
     {
-     "word": "suitcase",
-     "clues": [
-      "bag",
-      " luggage"
-     ]
+      "word": "core",
+      "clues": [
+        "center of an object"
+      ]
     },
     {
-     "word": "bag",
-     "clues": [
-      "supple container"
-     ]
+      "word": "corn",
+      "clues": [
+        "edible corn"
+      ]
     },
     {
-     "word": "balance",
-     "clues": [
-      "proportion",
-      " proportionality"
-     ]
+      "word": "corner",
+      "clues": [
+        "point where three areas or surfaces meet",
+        "recess",
+        " recession",
+        " niche"
+      ]
     },
     {
-     "word": "balance",
-     "clues": [
-      "equality between credit and debit"
-     ]
+      "word": "corpse",
+      "clues": [
+        "cadaver",
+        " remains"
+      ]
     },
     {
-     "word": "balance",
-     "clues": [
-      "state of equilibrium"
-     ]
+      "word": "correction",
+      "clues": [
+        "rectification"
+      ]
     },
     {
-     "word": "ball",
-     "clues": [
-      "object that is hit or thrown or kicked in games"
-     ]
+      "word": "correspond",
+      "clues": [
+        "exchange messages"
+      ]
     },
     {
-     "word": "ball",
-     "clues": [
-      "formal dance"
-     ]
+      "word": "correspondence",
+      "clues": [
+        "exchange of letters"
+      ]
     },
     {
-     "word": "ball",
-     "clues": [
-      "globe",
-      " orb",
-      " object with a spherical shape"
-     ]
+      "word": "corruption",
+      "clues": [
+        "bribery"
+      ]
     },
     {
-     "word": "ballet",
-     "clues": [
-      "dance"
-     ]
+      "word": "costume",
+      "clues": [
+        "attire for special occasions"
+      ]
     },
     {
-     "word": "ballot",
-     "clues": [
-      "voting document"
-     ]
+      "word": "cottage",
+      "clues": [
+        "bungalow",
+        " small house"
+      ]
     },
     {
-     "word": "ban",
-     "clues": [
-      "prohibition",
-      " proscription"
-     ]
+      "word": "cotton",
+      "clues": [
+        "cotton cloth",
+        " fabric"
+      ]
     },
     {
-     "word": "banana",
-     "clues": [
-      "elongated crescent-shaped yellow fruit"
-     ]
+      "word": "council",
+      "clues": [
+        "administrative body"
+      ]
     },
     {
-     "word": "band",
-     "clues": [
-      "banding",
-      " stripe"
-     ]
+      "word": "count",
+      "clues": [
+        "number",
+        " enumerate"
+      ]
     },
     {
-     "word": "band",
-     "clues": [
-      "ring",
-      " jewelry"
-     ]
+      "word": "counter",
+      "clues": [
+        "business table"
+      ]
     },
     {
-     "word": "band",
-     "clues": [
-      "range of frequencies between two limits"
-     ]
+      "word": "country",
+      "clues": [
+        "state",
+        " nation",
+        " land",
+        "rural area"
+      ]
     },
     {
-     "word": "band",
-     "clues": [
-      "instrumentalists"
-     ]
+      "word": "countryside",
+      "clues": [
+        "rural regions"
+      ]
     },
     {
-     "word": "bang",
-     "clues": [
-      "clap",
-      " eruption",
-      " blast",
-      " bam"
-     ]
+      "word": "coup",
+      "clues": [
+        "coup d'etat",
+        " putsch",
+        " takeover"
+      ]
     },
     {
-     "word": "bank",
-     "clues": [
-      "depository financial institution"
-     ]
+      "word": "couple",
+      "clues": [
+        "twosome",
+        " duo",
+        " duet"
+      ]
     },
     {
-     "word": "bank",
-     "clues": [
-      "sloping land"
-     ]
+      "word": "courage",
+      "clues": [
+        "bravery",
+        " braveness"
+      ]
     },
     {
-     "word": "banner",
-     "clues": [
-      "streamer"
-     ]
+      "word": "course",
+      "clues": [
+        "course of study",
+        " course of instruction",
+        " class",
+        "path",
+        " track",
+        "course of action"
+      ]
     },
     {
-     "word": "bar",
-     "clues": [
-      "rigid piece of metal or wood"
-     ]
+      "word": "court",
+      "clues": [
+        "courtyard",
+        "royal court",
+        "tribunal",
+        " judicature"
+      ]
     },
     {
-     "word": "bar",
-     "clues": [
-      "barroom",
-      " saloon"
-     ]
+      "word": "courtesy",
+      "clues": [
+        "considerate act"
+      ]
     },
     {
-     "word": "bar",
-     "clues": [
-      "horizontal rod that serves as a support for gymnasts"
-     ]
+      "word": "courtship",
+      "clues": [
+        "wooing",
+        " courting",
+        " suit"
+      ]
     },
     {
-     "word": "bar",
-     "clues": [
-      "legal profession"
-     ]
+      "word": "cousin",
+      "clues": [
+        "first cousin"
+      ]
     },
     {
-     "word": "bark",
-     "clues": [
-      "tree covering"
-     ]
+      "word": "cover",
+      "clues": [
+        "screen",
+        " concealment",
+        "blanket",
+        "provide with a covering"
+      ]
     },
     {
-     "word": "barrel",
-     "clues": [
-      "cask"
-     ]
+      "word": "coverage",
+      "clues": [
+        "insurance coverage",
+        "reporting",
+        " reportage"
+      ]
     },
     {
-     "word": "barrel",
-     "clues": [
-      "gun barrel"
-     ]
+      "word": "cow",
+      "clues": [
+        "bovine"
+      ]
     },
     {
-     "word": "barrier",
-     "clues": [
-      "separator obstructing vision or access"
-     ]
+      "word": "cower",
+      "clues": [
+        "fawn",
+        " cringe",
+        " grovel",
+        " show submission or fear"
+      ]
     },
     {
-     "word": "base",
-     "clues": [
-      "pedestal",
-      " stand"
-     ]
+      "word": "crack",
+      "clues": [
+        "cleft",
+        " crevice",
+        " fissure"
+      ]
     },
     {
-     "word": "base",
-     "clues": [
-      "flat bottom on which something sits"
-     ]
+      "word": "crackpot",
+      "clues": [
+        "crank",
+        " nut",
+        " nutcase",
+        " fruitcake"
+      ]
     },
     {
-     "word": "base",
-     "clues": [
-      "bottom side of a geometric figure"
-     ]
+      "word": "craft",
+      "clues": [
+        "craftsmanship",
+        " workmanship"
+      ]
     },
     {
-     "word": "baseball",
-     "clues": [
-      "baseball game"
-     ]
+      "word": "craftsman",
+      "clues": [
+        "artisan"
+      ]
     },
     {
-     "word": "basin",
-     "clues": [
-      "washbasin",
-      " washbowl",
-      " washstand",
-      " lavatory"
-     ]
+      "word": "crash",
+      "clues": [
+        "fall or come down violently",
+        "wreck",
+        " serious accident",
+        "cease operating abruptly",
+        "collapse",
+        " financial decline"
+      ]
     },
     {
-     "word": "basis",
-     "clues": [
-      "base",
-      " foundation",
-      " fundament"
-     ]
+      "word": "cream",
+      "clues": [
+        "ointment",
+        " emollient",
+        " balm",
+        "fat part of milk"
+      ]
     },
     {
-     "word": "basket",
-     "clues": [
-      "handbasket"
-     ]
+      "word": "create",
+      "clues": [
+        "bring into existence"
+      ]
     },
     {
-     "word": "basketball",
-     "clues": [
-      "hoops",
-      " basketball game"
-     ]
+      "word": "creation",
+      "clues": [
+        "creative activity"
+      ]
     },
     {
-     "word": "bat",
-     "clues": [
-      "nocturnal mouselike mammal"
-     ]
+      "word": "credi",
+      "clues": [
+        "card] plastic money"
+      ]
     },
     {
-     "word": "bathtub",
-     "clues": [
-      "bath",
-      " bathing tub",
-      " tub"
-     ]
+      "word": "credibility",
+      "clues": [
+        "credibleness",
+        " believability"
+      ]
     },
     {
-     "word": "bathroom",
-     "clues": [
-      "bath",
-      " toilet",
-      " lavatory"
-     ]
+      "word": "credit",
+      "clues": [
+        "course credit",
+        "recognition",
+        "deferred payment",
+        "money available for a client to borrow"
+      ]
     },
     {
-     "word": "battery",
-     "clues": [
-      "assault"
-     ]
+      "word": "creed",
+      "clues": [
+        "credo",
+        " system of principles or beliefs"
+      ]
     },
     {
-     "word": "battery",
-     "clues": [
-      "electric battery"
-     ]
+      "word": "creep",
+      "clues": [
+        "crawl"
+      ]
     },
     {
-     "word": "battle",
-     "clues": [
-      "conflict",
-      " fight",
-      " engagement"
-     ]
+      "word": "crevice",
+      "clues": [
+        "cranny",
+        " crack",
+        " fissure"
+      ]
     },
     {
-     "word": "battlefield",
-     "clues": [
-      "battleground",
-      " field of battle",
-      " field"
-     ]
+      "word": "crew",
+      "clues": [
+        "men who man a ship or aircraft"
+      ]
     },
     {
-     "word": "bay",
-     "clues": [
-      "indentation of a shoreline"
-     ]
+      "word": "cricket",
+      "clues": [
+        "insect"
+      ]
     },
     {
-     "word": "beach",
-     "clues": [
-      "shore"
-     ]
+      "word": "crime",
+      "clues": [
+        "law-breaking"
+      ]
     },
     {
-     "word": "beam",
-     "clues": [
-      "long thick piece of wood",
-      " metal or concrete"
-     ]
+      "word": "criminal",
+      "clues": [
+        "felon",
+        " crook",
+        " outlaw",
+        " malefactor"
+      ]
     },
     {
-     "word": "beam",
-     "clues": [
-      "light beam",
-      " ray"
-     ]
+      "word": "crisis",
+      "clues": [
+        "unstable situation"
+      ]
     },
     {
-     "word": "bean",
-     "clues": [
-      "edible bean"
-     ]
+      "word": "critic",
+      "clues": [
+        "one who offers opinions on art"
+      ]
     },
     {
-     "word": "bear",
-     "clues": [
-      "omnivorous mammal"
-     ]
+      "word": "critical",
+      "clues": [
+        "tending to find errors and flaws",
+        "being in a state of crisis or emergency",
+        "vital urgently needed"
+      ]
     },
     {
-     "word": "beard",
-     "clues": [
-      "facial hair"
-     ]
+      "word": "criticism",
+      "clues": [
+        "critique",
+        " unfavorable judgment"
+      ]
     },
     {
-     "word": "beat",
-     "clues": [
-      "pulse",
-      " pulsation",
-      " heartbeat"
-     ]
+      "word": "crop",
+      "clues": [
+        "cut short",
+        "harvest"
+      ]
     },
     {
-     "word": "bed",
-     "clues": [
-      "piece of furniture"
-     ]
+      "word": "cross",
+      "clues": [
+        "traverse",
+        "wooden structure",
+        "hybrid"
+      ]
     },
     {
-     "word": "bed",
-     "clues": [
-      "plot of ground in which plants are growing"
-     ]
+      "word": "crossing",
+      "clues": [
+        "intersection",
+        " crossroad"
+      ]
     },
     {
-     "word": "bedroom",
-     "clues": [
-      "sleeping room"
-     ]
+      "word": "crosswalk",
+      "clues": [
+        "crossing",
+        " crossover"
+      ]
     },
     {
-     "word": "bee",
-     "clues": [
-      "insect"
-     ]
+      "word": "crouch",
+      "clues": [
+        "squat"
+      ]
     },
     {
-     "word": "beef",
-     "clues": [
-      "meat"
-     ]
+      "word": "crowd",
+      "clues": [
+        "large number of things or people"
+      ]
     },
     {
-     "word": "beer",
-     "clues": [
-      "alcoholic beverage"
-     ]
+      "word": "crown",
+      "clues": [
+        "diadem",
+        " jewelled headdress"
+      ]
     },
     {
-     "word": "beginning",
-     "clues": [
-      "first part or section of something"
-     ]
+      "word": "crude",
+      "clues": [
+        "unrefined",
+        " unprocessed",
+        "primitive"
+      ]
     },
     {
-     "word": "behavior",
-     "clues": [
-      "conduct"
-     ]
+      "word": "cruel",
+      "clues": [
+        "brutal",
+        " barbarous"
+      ]
     },
     {
-     "word": "belief",
-     "clues": [
-      "cognitive content held as true"
-     ]
+      "word": "cruelty",
+      "clues": [
+        "mercilessness",
+        " pitilessness",
+        " ruthlessness"
+      ]
     },
     {
-     "word": "bell",
-     "clues": [
-      "doorbell",
-      " buzzer"
-     ]
+      "word": "crusade",
+      "clues": [
+        "campaign",
+        " cause"
+      ]
     },
     {
-     "word": "belly",
-     "clues": [
-      "abdomen",
-      " stomach"
-     ]
+      "word": "crutch",
+      "clues": [
+        "staff used as walking aid"
+      ]
     },
     {
-     "word": "belt",
-     "clues": [
-      "clothing accessory"
-     ]
+      "word": "cry",
+      "clues": [
+        "weep"
+      ]
     },
     {
-     "word": "bench",
-     "clues": [
-      "long seat"
-     ]
+      "word": "crystal",
+      "clues": [
+        "fancy glassware",
+        "quartz glass",
+        " quartz",
+        " vitreous silica"
+      ]
     },
     {
-     "word": "bench",
-     "clues": [
-      "workbench"
-     ]
+      "word": "cucumber",
+      "clues": [
+        "cuke",
+        " green salad vegetable"
+      ]
     },
     {
-     "word": "beneficiary",
-     "clues": [
-      "recipient"
-     ]
+      "word": "cultivate",
+      "clues": [
+        "domesticate",
+        " naturalize",
+        " naturalise",
+        " tame"
+      ]
     },
     {
-     "word": "benefit",
-     "clues": [
-      "welfare"
-     ]
+      "word": "cultural",
+      "clues": [
+        "relating to arts"
+      ]
     },
     {
-     "word": "benefit",
-     "clues": [
-      "performance to raise money for a charitable cause"
-     ]
+      "word": "culture",
+      "clues": [
+        "product of cultivating micro-organisms",
+        "attitudes and behavior",
+        "polish",
+        " refinement",
+        "civilization",
+        " civilisation"
+      ]
     },
     {
-     "word": "berry",
-     "clues": [
-      "small edible fruit"
-     ]
+      "word": "cunning",
+      "clues": [
+        "craftiness",
+        " guile",
+        " slyness",
+        " wiliness"
+      ]
     },
     {
-     "word": "bet",
-     "clues": [
-      "wager"
-     ]
+      "word": "cup",
+      "clues": [
+        "small open container used for drinking",
+        "cupful"
+      ]
     },
     {
-     "word": "Bible",
-     "clues": [
-      "Christian Bible",
-      " Book",
-      " Good Book",
-      " Holy Scripture"
-     ]
+      "word": "cupboard",
+      "clues": [
+        "closet"
+      ]
     },
     {
-     "word": "motorcycle",
-     "clues": [
-      "motorbike",
-      " bike"
-     ]
+      "word": "curl",
+      "clues": [
+        "coil",
+        " loop"
+      ]
     },
     {
-     "word": "bill",
-     "clues": [
-      "beak"
-     ]
+      "word": "currency",
+      "clues": [
+        "money"
+      ]
     },
     {
-     "word": "bill",
-     "clues": [
-      "circular",
-      " handbill",
-      " broadside",
-      " broadsheet",
-      " flier"
-     ]
+      "word": "current",
+      "clues": [
+        "electric current"
+      ]
     },
     {
-     "word": "bin",
-     "clues": [
-      "container"
-     ]
+      "word": "curriculum",
+      "clues": [
+        "course of study",
+        " academic program"
+      ]
     },
     {
-     "word": "biography",
-     "clues": [
-      "life story"
-     ]
+      "word": "curtain",
+      "clues": [
+        "drape"
+      ]
     },
     {
-     "word": "biology",
-     "clues": [
-      "plant and animal life"
-     ]
+      "word": "curve",
+      "clues": [
+        "curved shape",
+        "line on a graph",
+        "bend",
+        " curved road or river segment"
+      ]
     },
     {
-     "word": "bird",
-     "clues": [
-      "warm-blooded egg-laying vertebrate"
-     ]
+      "word": "custody",
+      "clues": [
+        "holding by the police",
+        "detention",
+        " detainment",
+        " hold"
+      ]
     },
     {
-     "word": "birthday",
-     "clues": [
-      "anniversary of the day someone is born"
-     ]
+      "word": "customer",
+      "clues": [
+        "client",
+        " patron"
+      ]
     },
     {
-     "word": "biscuit",
-     "clues": [
-      "cookie"
-     ]
+      "word": "cut",
+      "clues": [
+        "cleave",
+        "reduction of amount or number",
+        "share of the profits",
+        "gash",
+        " slash",
+        " wound"
+      ]
     },
     {
-     "word": "bishop",
-     "clues": [
-      "clergyman"
-     ]
+      "word": "cute",
+      "clues": [
+        "attractive"
+      ]
     },
     {
-     "word": "bitch",
-     "clues": [
-      "female dog"
-     ]
+      "word": "cutting",
+      "clues": [
+        "clipping",
+        " newspaper clipping"
+      ]
     },
     {
-     "word": "bitch",
-     "clues": [
-      "unpleasant woman"
-     ]
+      "word": "cycle",
+      "clues": [
+        "periodically repeated sequence"
+      ]
     },
     {
-     "word": "snack",
-     "clues": [
-      "bite",
-      " collation",
-      " light meal"
-     ]
+      "word": "cylinder",
+      "clues": [
+        "shape"
+      ]
     },
     {
-     "word": "bite",
-     "clues": [
-      "sting",
-      " insect bite"
-     ]
+      "word": "dairy",
+      "clues": [
+        "dairy farm"
+      ]
     },
     {
-     "word": "black",
-     "clues": [
-      "total darkness",
-      " blackness"
-     ]
+      "word": "damage",
+      "clues": [
+        "harm",
+        " impairment"
+      ]
     },
     {
-     "word": "blackmail",
-     "clues": [
-      "extortion"
-     ]
+      "word": "damn",
+      "clues": [
+        "curse"
+      ]
     },
     {
-     "word": "blade",
-     "clues": [
-      "part of a knife"
-     ]
+      "word": "dance",
+      "clues": [
+        "move in a pattern to music"
+      ]
     },
     {
-     "word": "blade",
-     "clues": [
-      "leaf blade"
-     ]
+      "word": "danger",
+      "clues": [
+        "condition of being susceptible to harm"
+      ]
     },
     {
-     "word": "blast",
-     "clues": [
-      "explosion"
-     ]
+      "word": "dangerous",
+      "clues": [
+        "unsafe"
+      ]
     },
     {
-     "word": "block",
-     "clues": [
-      "city block"
-     ]
+      "word": "dare",
+      "clues": [
+        "be courageous enough to try or do something"
+      ]
     },
     {
-     "word": "block",
-     "clues": [
-      "cube"
-     ]
+      "word": "dark",
+      "clues": [
+        "devoid of light",
+        "darkness"
+      ]
     },
     {
-     "word": "bloodshed",
-     "clues": [
-      "gore"
-     ]
+      "word": "dash",
+      "clues": [
+        "smash",
+        " hurl or thrust violently"
+      ]
     },
     {
-     "word": "blow",
-     "clues": [
-      "powerful stroke"
-     ]
+      "word": "date",
+      "clues": [
+        "sweet edible fruit",
+        "appointment",
+        " engagement",
+        "escort",
+        "day of the month"
+      ]
     },
     {
-     "word": "blow",
-     "clues": [
-      "reversal",
-      " setback"
-     ]
+      "word": "daughter",
+      "clues": [
+        "girl",
+        " offspring"
+      ]
     },
     {
-     "word": "blue",
-     "clues": [
-      "blueness",
-      " color"
-     ]
+      "word": "dawn",
+      "clues": [
+        "dawning",
+        " aurora",
+        " first light",
+        " daybreak"
+      ]
     },
     {
-     "word": "blu",
-     "clues": [
-      "jean] jeans",
-      " denim pants"
-     ]
+      "word": "day",
+      "clues": [
+        "twenty-four hours",
+        " solar day"
+      ]
     },
     {
-     "word": "board",
-     "clues": [
-      "gameboard"
-     ]
+      "word": "dead",
+      "clues": [
+        "inanimate"
+      ]
     },
     {
-     "word": "board",
-     "clues": [
-      "committee having supervisory powers"
-     ]
+      "word": "deadly",
+      "clues": [
+        "lethal"
+      ]
     },
     {
-     "word": "board",
-     "clues": [
-      "plank",
-      " stout length of sawn timber"
-     ]
+      "word": "deal",
+      "clues": [
+        "agreement",
+        " bargain",
+        "act of distributing playing cards"
+      ]
     },
     {
-     "word": "boat",
-     "clues": [
-      "a small vessel for travel on water"
-     ]
+      "word": "dealer",
+      "clues": [
+        "trader"
+      ]
     },
     {
-     "word": "body",
-     "clues": [
-      "organic structure",
-      " physical structure"
-     ]
+      "word": "death",
+      "clues": [
+        "decease",
+        " expiry",
+        " departure from life"
+      ]
     },
     {
-     "word": "body",
-     "clues": [
-      "torso",
-      " trunk"
-     ]
+      "word": "debate",
+      "clues": [
+        "disputation",
+        " public debate",
+        "deliberate"
+      ]
     },
     {
-     "word": "body",
-     "clues": [
-      "dead body"
-     ]
+      "word": "debt",
+      "clues": [
+        "money",
+        " goods or services owed"
+      ]
     },
     {
-     "word": "bolt",
-     "clues": [
-      "type of screw that screws into a nut"
-     ]
+      "word": "debut",
+      "clues": [
+        "appear in public for the first time"
+      ]
     },
     {
-     "word": "bolt",
-     "clues": [
-      "thunderbolt",
-      " bolt of lightning"
-     ]
+      "word": "decade",
+      "clues": [
+        "decennary",
+        " decennium",
+        " period of 10 years"
+      ]
     },
     {
-     "word": "bomb",
-     "clues": [
-      "explosive device"
-     ]
+      "word": "decay",
+      "clues": [
+        "decomposition",
+        " rotting",
+        "radioactive decay"
+      ]
     },
     {
-     "word": "bomber",
-     "clues": [
-      "military aircraft"
-     ]
+      "word": "decide",
+      "clues": [
+        "make up one's mind"
+      ]
     },
     {
-     "word": "bomber",
-     "clues": [
-      "person who plants bombs"
-     ]
+      "word": "decisive",
+      "clues": [
+        "determining"
+      ]
     },
     {
-     "word": "bond",
-     "clues": [
-      "shackle",
-      " hamper"
-     ]
+      "word": "deck",
+      "clues": [
+        "floor on a ship",
+        "pack of cards",
+        " deck of cards"
+      ]
     },
     {
-     "word": "bond",
-     "clues": [
-      "bail"
-     ]
+      "word": "declaration",
+      "clues": [
+        "statement"
+      ]
     },
     {
-     "word": "bond",
-     "clues": [
-      "alliance"
-     ]
+      "word": "decline",
+      "clues": [
+        "worsen"
+      ]
     },
     {
-     "word": "bone",
-     "clues": [
-      "body part"
-     ]
+      "word": "decoration",
+      "clues": [
+        "ornament",
+        " ornamentation"
+      ]
     },
     {
-     "word": "book",
-     "clues": [
-      "volume"
-     ]
+      "word": "decorative",
+      "clues": [
+        "cosmetic",
+        " ornamental"
+      ]
     },
     {
-     "word": "book",
-     "clues": [
-      "written work"
-     ]
+      "word": "decrease",
+      "clues": [
+        "lessening",
+        " drop-off",
+        "diminish",
+        " fall",
+        "lessen",
+        " make smaller or less"
+      ]
     },
     {
-     "word": "boom",
-     "clues": [
-      "economic prosperity"
-     ]
+      "word": "dedicate",
+      "clues": [
+        "inscribe or address by way of compliment"
+      ]
     },
     {
-     "word": "boot",
-     "clues": [
-      "footwear"
-     ]
+      "word": "deep",
+      "clues": [
+        "having great spatial extension downward"
+      ]
     },
     {
-     "word": "border",
-     "clues": [
-      "boundary line",
-      " borderline",
-      " delimitation"
-     ]
+      "word": "deer",
+      "clues": [
+        "forest animal"
+      ]
     },
     {
-     "word": "bottle",
-     "clues": [
-      "vessel"
-     ]
+      "word": "default",
+      "clues": [
+        "default option"
+      ]
     },
     {
-     "word": "freighter",
-     "clues": [
-      "merchant ship"
-     ]
+      "word": "defeat",
+      "clues": [
+        "frustration",
+        " feeling of defeat"
+      ]
     },
     {
-     "word": "bottom",
-     "clues": [
-      "underside",
-      " undersurface"
-     ]
+      "word": "defend",
+      "clues": [
+        "guard",
+        " protect",
+        "represent in a court of law"
+      ]
     },
     {
-     "word": "bow",
-     "clues": [
-      "arrow launcher"
-     ]
+      "word": "defendant",
+      "clues": [
+        "suspect"
+      ]
     },
     {
-     "word": "bow",
-     "clues": [
-      "interlaced ribbons"
-     ]
+      "word": "deficiency",
+      "clues": [
+        "insufficiency",
+        " inadequacy"
+      ]
     },
     {
-     "word": "bowel",
-     "clues": [
-      "intestine",
-      " gut"
-     ]
+      "word": "deficit",
+      "clues": [
+        "shortage",
+        " shortfall"
+      ]
     },
     {
-     "word": "bowl",
-     "clues": [
-      "vessel"
-     ]
+      "word": "define",
+      "clues": [
+        "give a definition for"
+      ]
     },
     {
-     "word": "stadium",
-     "clues": [
-      "bowl",
-      " arena",
-      " sports stadium"
-     ]
+      "word": "definite",
+      "clues": [
+        "precise",
+        " explicit"
+      ]
     },
     {
-     "word": "box",
-     "clues": [
-      "container"
-     ]
+      "word": "definition",
+      "clues": [
+        "concise explanation"
+      ]
     },
     {
-     "word": "boy",
-     "clues": [
-      "young male",
-      " male child"
-     ]
+      "word": "degree",
+      "clues": [
+        "academic degree",
+        "grade",
+        " level",
+        " position on a scale",
+        "seriousness of something",
+        "unit of temperature"
+      ]
     },
     {
-     "word": "bracket",
-     "clues": [
-      "punctuation mark"
-     ]
+      "word": "delay",
+      "clues": [
+        "detain",
+        " hold up",
+        "holdup",
+        "act later than planned"
+      ]
     },
     {
-     "word": "bracket",
-     "clues": [
-      "category"
-     ]
+      "word": "delete",
+      "clues": [
+        "erase",
+        " wipe out information"
+      ]
     },
     {
-     "word": "brain",
-     "clues": [
-      "encephalon",
-      " grey matter"
-     ]
+      "word": "delicate",
+      "clues": [
+        "exquisitely fine and subtle",
+        "fragile",
+        " frail",
+        " easily broken",
+        " sensitive"
+      ]
     },
     {
-     "word": "brain",
-     "clues": [
-      "genius",
-      " mastermind"
-     ]
+      "word": "deliver",
+      "clues": [
+        "make a delivery",
+        " bring"
+      ]
     },
     {
-     "word": "brake",
-     "clues": [
-      "restraint used to stop a vehicle"
-     ]
+      "word": "delivery",
+      "clues": [
+        "birth"
+      ]
     },
     {
-     "word": "branch",
-     "clues": [
-      "limb"
-     ]
+      "word": "demand",
+      "clues": [
+        "ability and desire to purchase goods and services",
+        "request urgently and forcefully",
+        "urgent or peremptory request"
+      ]
     },
     {
-     "word": "brand",
-     "clues": [
-      "make"
-     ]
+      "word": "democratic",
+      "clues": [
+        "based upon the principles of democracy"
+      ]
     },
     {
-     "word": "bread",
-     "clues": [
-      "breadstuff",
-      " food made from dough"
-     ]
+      "word": "demolish",
+      "clues": [
+        "destroy"
+      ]
     },
     {
-     "word": "break",
-     "clues": [
-      "fracture"
-     ]
+      "word": "demonstrate",
+      "clues": [
+        "march",
+        " march in protest"
+      ]
     },
     {
-     "word": "break",
-     "clues": [
-      "pause",
-      " intermission",
-      " interruption",
-      " suspension"
-     ]
+      "word": "demonstration",
+      "clues": [
+        "demo",
+        "public display"
+      ]
     },
     {
-     "word": "breakdown",
-     "clues": [
-      "equipment failure"
-     ]
+      "word": "demonstrator",
+      "clues": [
+        "protester"
+      ]
     },
     {
-     "word": "breakdown",
-     "clues": [
-      "mental or physical crack-up"
-     ]
+      "word": "denial",
+      "clues": [
+        "disaffirmation"
+      ]
     },
     {
-     "word": "breakfast",
-     "clues": [
-      "morning meal"
-     ]
+      "word": "density",
+      "clues": [
+        "denseness"
+      ]
     },
     {
-     "word": "breast",
-     "clues": [
-      "bosom",
-      " tit"
-     ]
+      "word": "dentist",
+      "clues": [
+        "tooth doctor"
+      ]
     },
     {
-     "word": "breeze",
-     "clues": [
-      "zephyr",
-      " gentle wind",
-      " air",
-      " gust"
-     ]
+      "word": "deny",
+      "clues": [
+        "refuse to grant",
+        "refuse to let have",
+        "contradict",
+        " declare untrue"
+      ]
     },
     {
-     "word": "brick",
-     "clues": [
-      "block of baked clay"
-     ]
+      "word": "depart",
+      "clues": [
+        "leave",
+        " start out",
+        " set forth",
+        " set off",
+        " set out",
+        " take off"
+      ]
     },
     {
-     "word": "bride",
-     "clues": [
-      "participant in a marriage ceremony"
-     ]
+      "word": "departure",
+      "clues": [
+        "going away"
+      ]
     },
     {
-     "word": "bridge",
-     "clues": [
-      "span"
-     ]
+      "word": "depend",
+      "clues": [
+        "be contingent upon"
+      ]
     },
     {
-     "word": "broadcast",
-     "clues": [
-      "transmitted message"
-     ]
+      "word": "dependence",
+      "clues": [
+        "addiction"
+      ]
     },
     {
-     "word": "broccoli",
-     "clues": [
-      "vegetable"
-     ]
+      "word": "deport",
+      "clues": [
+        "extradite",
+        " hand over to the authorities of another country"
+      ]
     },
     {
-     "word": "bronze",
-     "clues": [
-      "sculpture made of bronze"
-     ]
+      "word": "deposit",
+      "clues": [
+        "sediment",
+        "down payment",
+        "bank deposit"
+      ]
     },
     {
-     "word": "brother",
-     "clues": [
-      "sibling",
-      " brother by blood or adoption"
-     ]
+      "word": "depressed",
+      "clues": [
+        "blue"
+      ]
     },
     {
-     "word": "brother",
-     "clues": [
-      "Brother",
-      " monk"
-     ]
+      "word": "depression",
+      "clues": [
+        "low",
+        " low pressure",
+        "depressive disorder",
+        " clinical depression",
+        "slump",
+        " economic crisis",
+        "natural depression",
+        " geological formation"
+      ]
     },
     {
-     "word": "brother",
-     "clues": [
-      "comrade"
-     ]
+      "word": "deprivation",
+      "clues": [
+        "want",
+        " neediness"
+      ]
     },
     {
-     "word": "brush",
-     "clues": [
-      "implement with hairs or bristles"
-     ]
+      "word": "deprive",
+      "clues": [
+        "keep from having or obtaining"
+      ]
     },
     {
-     "word": "bubble",
-     "clues": [
-      "hollow globule of gas"
-     ]
+      "word": "deputy",
+      "clues": [
+        "surrogate"
+      ]
     },
     {
-     "word": "bucket",
-     "clues": [
-      "pail"
-     ]
+      "word": "descent",
+      "clues": [
+        "movement downward",
+        "declivity",
+        " decline",
+        " fall"
+      ]
     },
     {
-     "word": "budget",
-     "clues": [
-      "sum of money allocated"
-     ]
+      "word": "describe",
+      "clues": [
+        "depict"
+      ]
     },
     {
-     "word": "buffet",
-     "clues": [
-      "meal set out on a counter"
-     ]
+      "word": "desert",
+      "clues": [
+        "arid land",
+        "defect"
+      ]
     },
     {
-     "word": "building",
-     "clues": [
-      "edifice"
-     ]
+      "word": "deserve",
+      "clues": [
+        "merit",
+        " be worthy or deserving"
+      ]
     },
     {
-     "word": "bulb",
-     "clues": [
-      "light bulb"
-     ]
+      "word": "design",
+      "clues": [
+        "preliminary sketch",
+        " outline",
+        "invention",
+        " innovation",
+        "conceive"
+      ]
     },
     {
-     "word": "bulb",
-     "clues": [
-      "plant bulb"
-     ]
+      "word": "designer",
+      "clues": [
+        "couturier",
+        " fashion designer",
+        "interior designer",
+        " interior decorator"
+      ]
     },
     {
-     "word": "bullet",
-     "clues": [
-      "slug",
-      " projectile"
-     ]
+      "word": "desire",
+      "clues": [
+        "feeling"
+      ]
     },
     {
-     "word": "bulletin",
-     "clues": [
-      "brief report"
-     ]
+      "word": "desk",
+      "clues": [
+        "furniture"
+      ]
     },
     {
-     "word": "bundle",
-     "clues": [
-      "sheaf"
-     ]
+      "word": "despair",
+      "clues": [
+        "desperate feeling"
+      ]
     },
     {
-     "word": "burial",
-     "clues": [
-      "entombment",
-      " inhumation",
-      " interment"
-     ]
+      "word": "despise",
+      "clues": [
+        "scorn",
+        " disdain"
+      ]
     },
     {
-     "word": "burn",
-     "clues": [
-      "injury"
-     ]
+      "word": "destruction",
+      "clues": [
+        "demolition",
+        " wipeout"
+      ]
     },
     {
-     "word": "suntan",
-     "clues": [
-      "tan",
-      " sunburn"
-     ]
+      "word": "detail",
+      "clues": [
+        "particular",
+        " item"
+      ]
     },
     {
-     "word": "bus",
-     "clues": [
-      "autobus",
-      " coach"
-     ]
+      "word": "detective",
+      "clues": [
+        "investigator",
+        " police detective"
+      ]
     },
     {
-     "word": "bush",
-     "clues": [
-      "shrub",
-      " woody plant"
-     ]
+      "word": "detector",
+      "clues": [
+        "sensor"
+      ]
     },
     {
-     "word": "business",
-     "clues": [
-      "occupation",
-      " job",
-      " line of work",
-      " line"
-     ]
+      "word": "deter",
+      "clues": [
+        "dissuade"
+      ]
     },
     {
-     "word": "business",
-     "clues": [
-      "commercial enterprise",
-      " business enterprise"
-     ]
+      "word": "deteriorate",
+      "clues": [
+        "degenerate",
+        " grow worse",
+        "become worse",
+        " disintegrate"
+      ]
     },
     {
-     "word": "butterfly",
-     "clues": [
-      "diurnal insect"
-     ]
+      "word": "determine",
+      "clues": [
+        "influence"
+      ]
     },
     {
-     "word": "button",
-     "clues": [
-      "round fastener for clothes"
-     ]
+      "word": "develop",
+      "clues": [
+        "make something new",
+        " invent"
+      ]
     },
     {
-     "word": "button",
-     "clues": [
-      "push button"
-     ]
+      "word": "development",
+      "clues": [
+        "land developed for some purpose",
+        "growth",
+        " growing",
+        " maturation"
+      ]
     },
     {
-     "word": "cabin",
-     "clues": [
-      "aircraft cabin"
-     ]
+      "word": "deviation",
+      "clues": [
+        "diversion",
+        " digression",
+        " deflection"
+      ]
     },
     {
-     "word": "cabin",
-     "clues": [
-      "small wooden house"
-     ]
+      "word": "devote",
+      "clues": [
+        "dedicate",
+        " commit to a specific cause or function"
+      ]
     },
     {
-     "word": "cabinet",
-     "clues": [
-      "cupboard-like repository"
-     ]
+      "word": "diagram",
+      "clues": [
+        "drawing"
+      ]
     },
     {
-     "word": "cabinet",
-     "clues": [
-      "persons appointed by a head of state"
-     ]
+      "word": "dialect",
+      "clues": [
+        "idiom",
+        " special language"
+      ]
     },
     {
-     "word": "cable",
-     "clues": [
-      "strong thick rope"
-     ]
+      "word": "dialogue",
+      "clues": [
+        "lines spoken in drama or fiction",
+        "dialog",
+        " conversation"
+      ]
     },
     {
-     "word": "cafe",
-     "clues": [
-      "coffee shop",
-      " coffee bar"
-     ]
+      "word": "diameter",
+      "clues": [
+        "line through the center of a circle"
+      ]
     },
     {
-     "word": "cage",
-     "clues": [
-      "coop"
-     ]
+      "word": "diamond",
+      "clues": [
+        "gem"
+      ]
     },
     {
-     "word": "cake",
-     "clues": [
-      "mixture of flour and sugar and eggs"
-     ]
+      "word": "dictate",
+      "clues": [
+        "say out loud for the purpose of recording"
+      ]
     },
     {
-     "word": "calculation",
-     "clues": [
-      "computation",
-      " figuring",
-      " reckoning"
-     ]
+      "word": "dictionary",
+      "clues": [
+        "lexicon"
+      ]
     },
     {
-     "word": "calculation",
-     "clues": [
-      "deliberation",
-      " planning"
-     ]
+      "word": "die",
+      "clues": [
+        "perish",
+        "suffer death"
+      ]
     },
     {
-     "word": "calendar",
-     "clues": [
-      "system of timekeeping"
-     ]
+      "word": "diet",
+      "clues": [
+        "dieting"
+      ]
     },
     {
-     "word": "calf",
-     "clues": [
-      "young cattle"
-     ]
+      "word": "differ",
+      "clues": [
+        "be different"
+      ]
     },
     {
-     "word": "call",
-     "clues": [
-      "brief social visit"
-     ]
+      "word": "difference",
+      "clues": [
+        "remainder",
+        " number that remains after subtraction",
+        "dispute",
+        " difference of opinion",
+        " conflict"
+      ]
     },
     {
-     "word": "call",
-     "clues": [
-      "phone call",
-      " telephone call"
-     ]
+      "word": "different",
+      "clues": [
+        "unlike",
+        " dissimilar"
+      ]
     },
     {
-     "word": "call",
-     "clues": [
-      "cry",
-      " outcry",
-      " yell",
-      " shout",
-      " vociferation"
-     ]
+      "word": "difficult",
+      "clues": [
+        "hard"
+      ]
     },
     {
-     "word": "call",
-     "clues": [
-      "birdcall",
-      " birdsong",
-      " song"
-     ]
+      "word": "difficulty",
+      "clues": [
+        "difficultness",
+        "trouble"
+      ]
     },
     {
-     "word": "calorie",
-     "clues": [
-      "kilocalorie",
-      " nutritionist's calorie"
-     ]
+      "word": "digital",
+      "clues": [
+        "discrete"
+      ]
     },
     {
-     "word": "camera",
-     "clues": [
-      "photographic camera"
-     ]
+      "word": "dignity",
+      "clues": [
+        "self-respect",
+        " self-esteem",
+        " self-regard"
+      ]
     },
     {
-     "word": "camp",
-     "clues": [
-      "forced labor prison"
-     ]
+      "word": "digress",
+      "clues": [
+        "sidetrack",
+        "wander",
+        " stray"
+      ]
     },
     {
-     "word": "camp",
-     "clues": [
-      "summer camp"
-     ]
+      "word": "dilemma",
+      "clues": [
+        "quandary"
+      ]
     },
     {
-     "word": "camp",
-     "clues": [
-      "refugee camp"
-     ]
+      "word": "dilute",
+      "clues": [
+        "thin",
+        " reduce",
+        " cut"
+      ]
     },
     {
-     "word": "clique",
-     "clues": [
-      "coterie",
-      " ingroup",
-      " inner circle",
-      " pack",
-      " camp"
-     ]
+      "word": "dimension",
+      "clues": [
+        "magnitude"
+      ]
     },
     {
-     "word": "campaign",
-     "clues": [
-      "military campaign"
-     ]
+      "word": "dine",
+      "clues": [
+        "have supper"
+      ]
     },
     {
-     "word": "safari",
-     "clues": [
-      "hunting expedition"
-     ]
+      "word": "dinner",
+      "clues": [
+        "supper"
+      ]
     },
     {
-     "word": "campaign",
-     "clues": [
-      "political campaign"
-     ]
+      "word": "dip",
+      "clues": [
+        "slope downwards"
+      ]
     },
     {
-     "word": "cancer",
-     "clues": [
-      "malignant disease"
-     ]
+      "word": "diplomat",
+      "clues": [
+        "official engaged in international negotiations"
+      ]
     },
     {
-     "word": "candidate",
-     "clues": [
-      "campaigner",
-      " nominee"
-     ]
+      "word": "diplomatic",
+      "clues": [
+        "diplomatical",
+        " suave"
+      ]
     },
     {
-     "word": "candle",
-     "clues": [
-      "taper",
-      " wax light"
-     ]
+      "word": "direct",
+      "clues": [
+        "without deviation or interruption",
+        "point somebody into a certain direction",
+        "guide actors"
+      ]
     },
     {
-     "word": "cane",
-     "clues": [
-      "walking stick"
-     ]
+      "word": "direction",
+      "clues": [
+        "course",
+        " orientation",
+        "guidance",
+        " counsel"
+      ]
     },
     {
-     "word": "canvas",
-     "clues": [
-      "canvass",
-      " fabric"
-     ]
+      "word": "director",
+      "clues": [
+        "member of a board of directors",
+        "conductor",
+        " music director"
+      ]
     },
     {
-     "word": "cap",
-     "clues": [
-      "headdress"
-     ]
+      "word": "directory",
+      "clues": [
+        "alphabetical list of names and addresses"
+      ]
     },
     {
-     "word": "cap",
-     "clues": [
-      "bottle top"
-     ]
+      "word": "dirty",
+      "clues": [
+        "soiled",
+        " unclean",
+        "obscene",
+        " indecent"
+      ]
     },
     {
-     "word": "capital",
-     "clues": [
-      "capital letter",
-      " upper case"
-     ]
+      "word": "disability",
+      "clues": [
+        "disablement",
+        " handicap",
+        " impairment"
+      ]
     },
     {
-     "word": "capital",
-     "clues": [
-      "seat of government"
-     ]
+      "word": "disagree",
+      "clues": [
+        "differ",
+        " take issue"
+      ]
     },
     {
-     "word": "capital",
-     "clues": [
-      "wealth in the form of money or property"
-     ]
+      "word": "disagreement",
+      "clues": [
+        "dissension",
+        " dissonance",
+        " discord"
+      ]
     },
     {
-     "word": "captain",
-     "clues": [
-      "skipper",
-      " naval officer"
-     ]
+      "word": "disappear",
+      "clues": [
+        "vanish"
+      ]
     },
     {
-     "word": "car",
-     "clues": [
-      "auto",
-      " automobile",
-      " motorcar"
-     ]
+      "word": "disappoint",
+      "clues": [
+        "let down"
+      ]
     },
     {
-     "word": "carbon",
-     "clues": [
-      "C",
-      " atomic number 6"
-     ]
+      "word": "disappointment",
+      "clues": [
+        "letdown"
+      ]
     },
     {
-     "word": "card",
-     "clues": [
-      "playing card"
-     ]
+      "word": "disaster",
+      "clues": [
+        "calamity",
+        " catastrophe",
+        " tragedy"
+      ]
     },
     {
-     "word": "card",
-     "clues": [
-      "postcard"
-     ]
+      "word": "discipline",
+      "clues": [
+        "correction",
+        " punishment"
+      ]
     },
     {
-     "word": "card",
-     "clues": [
-      "identity card"
-     ]
+      "word": "disclose",
+      "clues": [
+        "bring out",
+        " reveal",
+        " expose",
+        " divulge"
+      ]
     },
     {
-     "word": "card",
-     "clues": [
-      "calling card",
-      " visiting card"
-     ]
+      "word": "disco",
+      "clues": [
+        "discotheque"
+      ]
     },
     {
-     "word": "card",
-     "clues": [
-      "menu",
-      " bill of fare",
-      " carte du jour",
-      " carte"
-     ]
+      "word": "discount",
+      "clues": [
+        "price reduction",
+        " deduction"
+      ]
     },
     {
-     "word": "care",
-     "clues": [
-      "maintenance",
-      " upkeep"
-     ]
+      "word": "discourage",
+      "clues": [
+        "deter"
+      ]
     },
     {
-     "word": "care",
-     "clues": [
-      "attention",
-      " aid",
-      " tending"
-     ]
+      "word": "discover",
+      "clues": [
+        "come upon",
+        " chance upon",
+        " come across"
+      ]
     },
     {
-     "word": "care",
-     "clues": [
-      "caution",
-      " precaution",
-      " forethought",
-      " judiciousness"
-     ]
+      "word": "discovery",
+      "clues": [
+        "breakthrough",
+        " find"
+      ]
     },
     {
-     "word": "concern",
-     "clues": [
-      "fear",
-      " anxious feeling"
-     ]
+      "word": "discreet",
+      "clues": [
+        "keeping private",
+        " prudent",
+        " restrained"
+      ]
     },
     {
-     "word": "career",
-     "clues": [
-      "calling",
-      " vocation"
-     ]
+      "word": "discriminate",
+      "clues": [
+        "separate",
+        " single out",
+        " treat differently"
+      ]
     },
     {
-     "word": "carpet",
-     "clues": [
-      "rug",
-      " carpeting"
-     ]
+      "word": "discrimination",
+      "clues": [
+        "unfair treatment"
+      ]
     },
     {
-     "word": "carriage",
-     "clues": [
-      "baby carriage",
-      " perambulator",
-      " pram",
-      " stroller"
-     ]
+      "word": "discuss",
+      "clues": [
+        "talk over"
+      ]
     },
     {
-     "word": "posture",
-     "clues": [
-      "bearing",
-      " carriage"
-     ]
+      "word": "disgrace",
+      "clues": [
+        "shame",
+        " ignominy",
+        " dishonor"
+      ]
     },
     {
-     "word": "mai",
-     "clues": [
-      "carrier] mailman",
-      " postman",
-      " letter carrier"
-     ]
+      "word": "dish",
+      "clues": [
+        "dish aerial",
+        " dish antenna",
+        "item of prepared food",
+        "container"
+      ]
     },
     {
-     "word": "carrot",
-     "clues": [
-      "deep orange edible root"
-     ]
+      "word": "disk",
+      "clues": [
+        "disc",
+        " flat circular plate"
+      ]
     },
     {
-     "word": "cart",
-     "clues": [
-      "handcart",
-      " pushcart"
-     ]
+      "word": "dismiss",
+      "clues": [
+        "fire",
+        " give notice",
+        " give the axe",
+        " sack",
+        "disregard",
+        " brush aside",
+        " brush off",
+        " discount"
+      ]
     },
     {
-     "word": "case",
-     "clues": [
-      "lawsuit",
-      " suit",
-      " cause",
-      " causa"
-     ]
+      "word": "dismissal",
+      "clues": [
+        "pink slip"
+      ]
     },
     {
-     "word": "case",
-     "clues": [
-      "display case",
-      " showcase",
-      " vitrine"
-     ]
+      "word": "disorder",
+      "clues": [
+        "disorderliness",
+        " mess"
+      ]
     },
     {
-     "word": "case",
-     "clues": [
-      "instance",
-      " example"
-     ]
+      "word": "displace",
+      "clues": [
+        "bump"
+      ]
     },
     {
-     "word": "cash",
-     "clues": [
-      "hard cash",
-      " hard currency"
-     ]
+      "word": "display",
+      "clues": [
+        "expose",
+        " exhibit",
+        "exhibit",
+        " showing"
+      ]
     },
     {
-     "word": "cassette",
-     "clues": [
-      "container holding magnetic tape"
-     ]
+      "word": "disposition",
+      "clues": [
+        "temperament"
+      ]
     },
     {
-     "word": "cast",
-     "clues": [
-      "plaster cast",
-      " plaster bandage"
-     ]
+      "word": "distance",
+      "clues": [
+        "property created by the space between two objects or points",
+        "aloofness"
+      ]
     },
     {
-     "word": "cast",
-     "clues": [
-      "actors"
-     ]
+      "word": "distant",
+      "clues": [
+        "separated in space or time"
+      ]
     },
     {
-     "word": "castle",
-     "clues": [
-      "fortified building"
-     ]
+      "word": "distinct",
+      "clues": [
+        "easy to perceive"
+      ]
     },
     {
-     "word": "casualty",
-     "clues": [
-      "someone injured or killed"
-     ]
+      "word": "distort",
+      "clues": [
+        "falsify"
+      ]
     },
     {
-     "word": "cat",
-     "clues": [
-      "feline"
-     ]
+      "word": "distortion",
+      "clues": [
+        "misrepresenting",
+        "optical aberration"
+      ]
     },
     {
-     "word": "catalogue",
-     "clues": [
-      "catalog"
-     ]
+      "word": "distribute",
+      "clues": [
+        "give out",
+        " hand out"
+      ]
     },
     {
-     "word": "catch",
-     "clues": [
-      "hidden drawback"
-     ]
+      "word": "distributor",
+      "clues": [
+        "marketing company"
+      ]
     },
     {
-     "word": "category",
-     "clues": [
-      "general concept"
-     ]
+      "word": "district",
+      "clues": [
+        "territory",
+        " territorial dominion"
+      ]
     },
     {
-     "word": "cathedral",
-     "clues": [
-      "large church"
-     ]
+      "word": "disturbance",
+      "clues": [
+        "disruption",
+        " commotion",
+        " stir"
+      ]
     },
     {
-     "word": "cattle",
-     "clues": [
-      "cows",
-      " bull"
-     ]
+      "word": "ditch",
+      "clues": [
+        "dump",
+        " unceremoniously sever all ties with"
+      ]
     },
     {
-     "word": "cause",
-     "clues": [
-      "causal agent"
-     ]
+      "word": "dive",
+      "clues": [
+        "plunge into water"
+      ]
     },
     {
-     "word": "cave",
-     "clues": [
-      "underground enclosure"
-     ]
+      "word": "divide",
+      "clues": [
+        "split",
+        " split up",
+        " separate"
+      ]
     },
     {
-     "word": "ceiling",
-     "clues": [
-      "surface of a room"
-     ]
+      "word": "dividend",
+      "clues": [
+        "bonus"
+      ]
     },
     {
-     "word": "ceiling",
-     "clues": [
-      "cap",
-      " upper limit"
-     ]
+      "word": "division",
+      "clues": [
+        "administrative unit",
+        "arithmetic operation",
+        "army unit"
+      ]
     },
     {
-     "word": "celebration",
-     "clues": [
-      "festivity"
-     ]
+      "word": "divorce",
+      "clues": [
+        "split up"
+      ]
     },
     {
-     "word": "cell",
-     "clues": [
-      "basic structural and functional unit of all organisms"
-     ]
+      "word": "doctor",
+      "clues": [
+        "Dr.",
+        " person who holds Ph.D. degree",
+        "doc",
+        " physician",
+        " MD"
+      ]
     },
     {
-     "word": "cell",
-     "clues": [
-      "jail cell"
-     ]
+      "word": "document",
+      "clues": [
+        "record in detail",
+        "written document",
+        " papers"
+      ]
     },
     {
-     "word": "cell",
-     "clues": [
-      "cubicle"
-     ]
+      "word": "dog",
+      "clues": [
+        "domestic dog"
+      ]
     },
     {
-     "word": "cel",
-     "clues": [
-      "phone] cellular telephone"
-     ]
+      "word": "doll",
+      "clues": [
+        "toy"
+      ]
     },
     {
-     "word": "cellar",
-     "clues": [
-      "basement"
-     ]
+      "word": "dollar",
+      "clues": [
+        "dollar bill",
+        " buck"
+      ]
     },
     {
-     "word": "cemetery",
-     "clues": [
-      "graveyard",
-      " burial site",
-      " burial ground"
-     ]
+      "word": "dome",
+      "clues": [
+        "hemispherical roof"
+      ]
     },
     {
-     "word": "censorship",
-     "clues": [
-      "deletion of material in art works"
-     ]
+      "word": "domestic",
+      "clues": [
+        "concerning the internal affairs of a nation",
+        "relating to the home"
+      ]
     },
     {
-     "word": "census",
-     "clues": [
-      "nose count"
-     ]
+      "word": "dominant",
+      "clues": [
+        "exercising influence or control"
+      ]
     },
     {
-     "word": "center",
-     "clues": [
-      "building dedicated to a particular activity"
-     ]
+      "word": "dominate",
+      "clues": [
+        "be in control"
+      ]
     },
     {
-     "word": "center",
-     "clues": [
-      "midpoint"
-     ]
+      "word": "domination",
+      "clues": [
+        "mastery"
+      ]
     },
     {
-     "word": "center",
-     "clues": [
-      "middle",
-      " heart"
-     ]
+      "word": "donor",
+      "clues": [
+        "organ donor"
+      ]
     },
     {
-     "word": "century",
-     "clues": [
-      "period of 100 years"
-     ]
+      "word": "door",
+      "clues": [
+        "swinging or sliding barrier"
+      ]
     },
     {
-     "word": "cereal",
-     "clues": [
-      "breakfast food"
-     ]
+      "word": "dorm",
+      "clues": [
+        "dormitory",
+        " residence hall"
+      ]
     },
     {
-     "word": "ceremony",
-     "clues": [
-      "ceremonial occasion"
-     ]
+      "word": "dose",
+      "clues": [
+        "portion of medicine"
+      ]
     },
     {
-     "word": "chain",
-     "clues": [
-      "series of rings or links"
-     ]
+      "word": "double",
+      "clues": [
+        "twice the quantity",
+        "stunt man",
+        " stand-in per person",
+        "increase twofold",
+        " duplicate"
+      ]
     },
     {
-     "word": "necklace",
-     "clues": [
-      "chain"
-     ]
+      "word": "doubt",
+      "clues": [
+        "question",
+        " dubiousness",
+        " doubtfulness",
+        "uncertainty",
+        " incertitude",
+        " dubiety",
+        " doubtfulness",
+        "consider unlikely"
+      ]
     },
     {
-     "word": "chain",
-     "clues": [
-      "number of similar establishments"
-     ]
+      "word": "dough",
+      "clues": [
+        "flour mixture"
+      ]
     },
     {
-     "word": "chair",
-     "clues": [
-      "professorship"
-     ]
+      "word": "dozen",
+      "clues": [
+        "twelve"
+      ]
     },
     {
-     "word": "chair",
-     "clues": [
-      "seat"
-     ]
+      "word": "draft",
+      "clues": [
+        "conscription",
+        " selective service",
+        "draught",
+        " air current",
+        "draft copy",
+        " preliminary version"
+      ]
     },
     {
-     "word": "chalk",
-     "clues": [
-      "piece of chalk"
-     ]
+      "word": "drag",
+      "clues": [
+        "pull against a resistance"
+      ]
     },
     {
-     "word": "challenge",
-     "clues": [
-      "questioning a statement"
-     ]
+      "word": "dragon",
+      "clues": [
+        "mythical creature"
+      ]
     },
     {
-     "word": "challenge",
-     "clues": [
-      "demanding or stimulating situation"
-     ]
+      "word": "drain",
+      "clues": [
+        "drainpipe",
+        " waste pipe",
+        "empty of liquid"
+      ]
     },
     {
-     "word": "champagne",
-     "clues": [
-      "bubbly wine"
-     ]
+      "word": "drama",
+      "clues": [
+        "dramatic event"
+      ]
     },
     {
-     "word": "champion",
-     "clues": [
-      "champ",
-      " title-holder"
-     ]
+      "word": "dramatic",
+      "clues": [
+        "pertaining to theater"
+      ]
     },
     {
-     "word": "chance",
-     "clues": [
-      "probability"
-     ]
+      "word": "draw",
+      "clues": [
+        "attract",
+        " pull",
+        " pull in",
+        " draw in",
+        "represent by making a drawing of"
+      ]
     },
     {
-     "word": "chance",
-     "clues": [
-      "luck",
-      " fortune",
-      " hazard"
-     ]
+      "word": "drawer",
+      "clues": [
+        "part of a piece of furniture"
+      ]
     },
     {
-     "word": "chance",
-     "clues": [
-      "opportunity"
-     ]
+      "word": "drawing",
+      "clues": [
+        "representation",
+        " artwork",
+        "lottery"
+      ]
     },
     {
-     "word": "change",
-     "clues": [
-      "alteration",
-      " modification"
-     ]
+      "word": "dream",
+      "clues": [
+        "ambition",
+        " aspiration",
+        "dreaming"
+      ]
     },
     {
-     "word": "change",
-     "clues": [
-      "money received in return"
-     ]
+      "word": "dress",
+      "clues": [
+        "clothe"
+      ]
     },
     {
-     "word": "channel",
-     "clues": [
-      "TV channel"
-     ]
+      "word": "dressing",
+      "clues": [
+        "medical dressing"
+      ]
     },
     {
-     "word": "channel",
-     "clues": [
-      "narrow body of water",
-      " canal"
-     ]
+      "word": "dribble",
+      "clues": [
+        "drip"
+      ]
     },
     {
-     "word": "chaos",
-     "clues": [
-      "pandemonium",
-      " bedlam",
-      " topsy-turvyness"
-     ]
+      "word": "drift",
+      "clues": [
+        "gradual departure from a course",
+        "something heaped up by wind or water"
+      ]
     },
     {
-     "word": "crevice",
-     "clues": [
-      "cranny",
-      " crack",
-      " fissure"
-     ]
+      "word": "drill",
+      "clues": [
+        "training of soldiers to march",
+        "tool with a sharp point"
+      ]
     },
     {
-     "word": "chapter",
-     "clues": [
-      "subdivision of a written work"
-     ]
+      "word": "drink",
+      "clues": [
+        "beverage",
+        " drinkable",
+        " potable",
+        "imbibe",
+        " take in liquids"
+      ]
     },
     {
-     "word": "character",
-     "clues": [
-      "grapheme",
-      " graphic symbol",
-      " written symbol"
-     ]
+      "word": "drive",
+      "clues": [
+        "travel by vehicle",
+        "high motivation",
+        "ride",
+        " journey",
+        "driveway"
+      ]
     },
     {
-     "word": "character",
-     "clues": [
-      "fictional character"
-     ]
+      "word": "driver",
+      "clues": [
+        "operator of a motor vehicle"
+      ]
     },
     {
-     "word": "character",
-     "clues": [
-      "good repute"
-     ]
+      "word": "drop",
+      "clues": [
+        "let fall",
+        "cliff",
+        " drop-off",
+        "bead",
+        " pearl"
+      ]
     },
     {
-     "word": "characteristic",
-     "clues": [
-      "distinguishing quality"
-     ]
+      "word": "drown",
+      "clues": [
+        "die in water"
+      ]
     },
     {
-     "word": "charge",
-     "clues": [
-      "billing"
-     ]
+      "word": "drug",
+      "clues": [
+        "dose",
+        " medicate",
+        "substance used as a medicine or narcotic"
+      ]
     },
     {
-     "word": "charge",
-     "clues": [
-      "accusation"
-     ]
+      "word": "drum",
+      "clues": [
+        "tympan",
+        " percussion instrument",
+        "barrel"
+      ]
     },
     {
-     "word": "charge",
-     "clues": [
-      "electric charge"
-     ]
+      "word": "dry",
+      "clues": [
+        "free from liquid or moisture"
+      ]
     },
     {
-     "word": "charity",
-     "clues": [
-      "gift"
-     ]
+      "word": "duck",
+      "clues": [
+        "bird"
+      ]
     },
     {
-     "word": "charity",
-     "clues": [
-      "institution set up to provide help for the needy"
-     ]
+      "word": "due",
+      "clues": [
+        "owed"
+      ]
     },
     {
-     "word": "charm",
-     "clues": [
-      "good luck charm"
-     ]
+      "word": "duke",
+      "clues": [
+        "nobleman"
+      ]
     },
     {
-     "word": "chart",
-     "clues": [
-      "map for navigation"
-     ]
+      "word": "dull",
+      "clues": [
+        "boring",
+        " lacking in liveliness or animation",
+        "not having a sharp edge or point"
+      ]
     },
     {
-     "word": "chart",
-     "clues": [
-      "display of information"
-     ]
+      "word": "dump",
+      "clues": [
+        "discard",
+        " dispose",
+        " toss out"
+      ]
     },
     {
-     "word": "charter",
-     "clues": [
-      "document"
-     ]
+      "word": "duty",
+      "clues": [
+        "work that you are obliged to perform",
+        "tariff"
+      ]
     },
     {
-     "word": "chauvinist",
-     "clues": [
-      "prejudiced person"
-     ]
+      "word": "dynamic",
+      "clues": [
+        "dynamical",
+        " characterized by action"
+      ]
     },
     {
-     "word": "check",
-     "clues": [
-      "chess move"
-     ]
+      "word": "eagle",
+      "clues": [
+        "emblem representing power",
+        "bird"
+      ]
     },
     {
-     "word": "check",
-     "clues": [
-      "confirmation",
-      " verification"
-     ]
+      "word": "ear",
+      "clues": [
+        "sense organ"
+      ]
     },
     {
-     "word": "check",
-     "clues": [
-      "tab",
-      " restaurant bill"
-     ]
+      "word": "earthquake",
+      "clues": [
+        "quake",
+        " seism"
+      ]
     },
     {
-     "word": "check",
-     "clues": [
-      "check mark",
-      " tick"
-     ]
+      "word": "east",
+      "clues": [
+        "due east",
+        " E",
+        "East",
+        " Orient"
+      ]
     },
     {
-     "word": "cheek",
-     "clues": [
-      "boldness",
-      " nerve",
-      " brass",
-      " face"
-     ]
+      "word": "easy",
+      "clues": [
+        "posing no difficulty"
+      ]
     },
     {
-     "word": "cheek",
-     "clues": [
-      "side of the face"
-     ]
+      "word": "eat",
+      "clues": [
+        "take in solid food"
+      ]
     },
     {
-     "word": "cheek",
-     "clues": [
-      "impudence",
-      " impertinence"
-     ]
+      "word": "eavesdrop",
+      "clues": [
+        "listen in"
+      ]
     },
     {
-     "word": "cheese",
-     "clues": [
-      "food"
-     ]
+      "word": "echo",
+      "clues": [
+        "reverberation",
+        " sound reflection"
+      ]
     },
     {
-     "word": "chemistry",
-     "clues": [
-      "chemical science"
-     ]
+      "word": "economic",
+      "clues": [
+        "relating to economics"
+      ]
     },
     {
-     "word": "cheque",
-     "clues": [
-      "check",
-      " bank check"
-     ]
+      "word": "economics",
+      "clues": [
+        "economic science"
+      ]
     },
     {
-     "word": "cherry",
-     "clues": [
-      "fruit"
-     ]
+      "word": "economist",
+      "clues": [
+        "economic expert"
+      ]
     },
     {
-     "word": "chest",
-     "clues": [
-      "chest of drawers",
-      " bureau",
-      " dresser"
-     ]
+      "word": "economy",
+      "clues": [
+        "thriftiness",
+        " frugality",
+        "economic system"
+      ]
     },
     {
-     "word": "chest",
-     "clues": [
-      "thorax",
-      " pectus",
-      " part of the human torso"
-     ]
+      "word": "ecstasy",
+      "clues": [
+        "rapture"
+      ]
     },
     {
-     "word": "chicken",
-     "clues": [
-      "domestic fowl"
-     ]
+      "word": "edge",
+      "clues": [
+        "sharp side formed by the intersection of two surfaces of an object",
+        "slight competitive advantage"
+      ]
     },
     {
-     "word": "chicken",
-     "clues": [
-      "wimp",
-      " crybaby"
-     ]
+      "word": "edition",
+      "clues": [
+        "publication"
+      ]
     },
     {
-     "word": "chief",
-     "clues": [
-      "foreman",
-      " boss"
-     ]
+      "word": "education",
+      "clues": [
+        "instruction",
+        " teaching",
+        " pedagogy",
+        "knowledge acquired by learning"
+      ]
     },
     {
-     "word": "child",
-     "clues": [
-      "kid"
-     ]
+      "word": "effect",
+      "clues": [
+        "consequence",
+        " outcome",
+        " result",
+        "impression"
+      ]
     },
     {
-     "word": "chimney",
-     "clues": [
-      "flue"
-     ]
+      "word": "effective",
+      "clues": [
+        "effectual",
+        " efficacious"
+      ]
     },
     {
-     "word": "chin",
-     "clues": [
-      "lower jaw"
-     ]
+      "word": "effort",
+      "clues": [
+        "attempt",
+        " endeavor"
+      ]
     },
     {
-     "word": "chip",
-     "clues": [
-      "microchip"
-     ]
+      "word": "eg",
+      "clues": [
+        "white] albumen"
+      ]
     },
     {
-     "word": "chip",
-     "clues": [
-      "crisp",
-      " potato chip"
-     ]
+      "word": "egg",
+      "clues": [
+        "eggs",
+        " food"
+      ]
     },
     {
-     "word": "chip",
-     "clues": [
-      "bit",
-      " flake",
-      " fleck",
-      " scrap",
-      " small fragment"
-     ]
+      "word": "ego",
+      "clues": [
+        "egotism",
+        " self-importance"
+      ]
     },
     {
-     "word": "chocolate",
-     "clues": [
-      "sweet food"
-     ]
+      "word": "eject",
+      "clues": [
+        "expel",
+        " throw out",
+        " kick out"
+      ]
     },
     {
-     "word": "choice",
-     "clues": [
-      "option",
-      " alternative"
-     ]
+      "word": "elaborate",
+      "clues": [
+        "expand",
+        " expatiate",
+        " enlarge",
+        " flesh out"
+      ]
     },
     {
-     "word": "chord",
-     "clues": [
-      "combination of notes"
-     ]
+      "word": "elapse",
+      "clues": [
+        "pass by",
+        " go by"
+      ]
     },
     {
-     "word": "chorus",
-     "clues": [
-      "choir",
-      " singing group"
-     ]
+      "word": "elbow",
+      "clues": [
+        "elbow joint"
+      ]
     },
     {
-     "word": "church",
-     "clues": [
-      "church building"
-     ]
+      "word": "elect",
+      "clues": [
+        "select by in an election"
+      ]
     },
     {
-     "word": "cigarette",
-     "clues": [
-      "butt",
-      " fag"
-     ]
+      "word": "election",
+      "clues": [
+        "vote"
+      ]
     },
     {
-     "word": "cinema",
-     "clues": [
-      "movie theater",
-      " theater"
-     ]
+      "word": "electron",
+      "clues": [
+        "elementary particle"
+      ]
     },
     {
-     "word": "circle",
-     "clues": [
-      "geometric figure"
-     ]
+      "word": "electronics",
+      "clues": [
+        "branch of physics"
+      ]
     },
     {
-     "word": "circulation",
-     "clues": [
-      "movement through a circuit"
-     ]
+      "word": "elegant",
+      "clues": [
+        "refined",
+        " tasteful"
+      ]
     },
     {
-     "word": "circumstance",
-     "clues": [
-      "context"
-     ]
+      "word": "element",
+      "clues": [
+        "component",
+        " constituent",
+        "chemical element"
+      ]
     },
     {
-     "word": "citizen",
-     "clues": [
-      "member of a state"
-     ]
+      "word": "elephant",
+      "clues": [
+        "pachyderm"
+      ]
     },
     {
-     "word": "city",
-     "clues": [
-      "metropolis",
-      " urban center"
-     ]
+      "word": "eliminate",
+      "clues": [
+        "get rid of",
+        " do away with"
+      ]
     },
     {
-     "word": "civilian",
-     "clues": [
-      "nonmilitary citizen"
-     ]
+      "word": "elite",
+      "clues": [
+        "elite group"
+      ]
     },
     {
-     "word": "civilization",
-     "clues": [
-      "society in an advanced state"
-     ]
+      "word": "embark",
+      "clues": [
+        "venture"
+      ]
     },
     {
-     "word": "claim",
-     "clues": [
-      "demand"
-     ]
+      "word": "embarrassment",
+      "clues": [
+        "shame"
+      ]
     },
     {
-     "word": "claim",
-     "clues": [
-      "assertion"
-     ]
+      "word": "embrace",
+      "clues": [
+        "hug"
+      ]
     },
     {
-     "word": "clash",
-     "clues": [
-      "friction",
-      " conflict"
-     ]
+      "word": "embryo",
+      "clues": [
+        "conceptus",
+        " fertilized egg"
+      ]
     },
     {
-     "word": "class",
-     "clues": [
-      "social class",
-      " socio-economic class"
-     ]
+      "word": "emergency",
+      "clues": [
+        "exigency",
+        " pinch",
+        " crisis"
+      ]
     },
     {
-     "word": "class",
-     "clues": [
-      "form",
-      " grade"
-     ]
+      "word": "emotion",
+      "clues": [
+        "strong feeling"
+      ]
     },
     {
-     "word": "classroom",
-     "clues": [
-      "schoolroom"
-     ]
+      "word": "emphasis",
+      "clues": [
+        "accent"
+      ]
     },
     {
-     "word": "corpse",
-     "clues": [
-      "cadaver",
-      " remains"
-     ]
+      "word": "empire",
+      "clues": [
+        "monarchy"
+      ]
     },
     {
-     "word": "clay",
-     "clues": [
-      "fine-grained soil"
-     ]
+      "word": "empirical",
+      "clues": [
+        "empiric",
+        " derived from experiment and observation"
+      ]
     },
     {
-     "word": "clearance",
-     "clues": [
-      "headroom"
-     ]
+      "word": "employ",
+      "clues": [
+        "hire",
+        " engage"
+      ]
     },
     {
-     "word": "clerk",
-     "clues": [
-      "clerical worker"
-     ]
+      "word": "employee",
+      "clues": [
+        "worker"
+      ]
     },
     {
-     "word": "salesperson",
-     "clues": [
-      "salesclerk",
-      " shop clerk"
-     ]
+      "word": "encourage",
+      "clues": [
+        "spur on"
+      ]
     },
     {
-     "word": "climate",
-     "clues": [
-      "clime",
-      " weather"
-     ]
+      "word": "end",
+      "clues": [
+        "boundary",
+        "goal",
+        "conclusion",
+        " close",
+        " closing",
+        " ending"
+      ]
     },
     {
-     "word": "clinic",
-     "clues": [
-      "medical establishment"
-     ]
+      "word": "endorse",
+      "clues": [
+        "second",
+        " back",
+        " support"
+      ]
     },
     {
-     "word": "clock",
-     "clues": [
-      "timepiece"
-     ]
+      "word": "endure",
+      "clues": [
+        "last",
+        " persist",
+        "weather",
+        " brave"
+      ]
     },
     {
-     "word": "clothes",
-     "clues": [
-      "apparel",
-      " wearing apparel",
-      " dress"
-     ]
+      "word": "enemy",
+      "clues": [
+        "hostile people"
+      ]
     },
     {
-     "word": "club",
-     "clues": [
-      "bat",
-      " stout stick that is larger at one end"
-     ]
+      "word": "energy",
+      "clues": [
+        "vigor"
+      ]
     },
     {
-     "word": "club",
-     "clues": [
-      "playing card in the minor suit of clubs"
-     ]
+      "word": "engagement",
+      "clues": [
+        "betrothal"
+      ]
     },
     {
-     "word": "club",
-     "clues": [
-      "cabaret",
-      " nightclub",
-      " nightspot"
-     ]
+      "word": "engine",
+      "clues": [
+        "locomotive",
+        "motor"
+      ]
     },
     {
-     "word": "club",
-     "clues": [
-      "society",
-      " guild",
-      " gild",
-      " lodge",
-      " order"
-     ]
+      "word": "engineer",
+      "clues": [
+        "applied scientist",
+        " technologist"
+      ]
     },
     {
-     "word": "clue",
-     "clues": [
-      "cue",
-      " evidence",
-      " hint"
-     ]
+      "word": "enhance",
+      "clues": [
+        "make better or more attractive"
+      ]
     },
     {
-     "word": "cluster",
-     "clues": [
-      "bunch",
-      " clump"
-     ]
+      "word": "enjoy",
+      "clues": [
+        "enjoy doing",
+        " love to do"
+      ]
     },
     {
-     "word": "coach",
-     "clues": [
-      "private instructor",
-      " tutor"
-     ]
+      "word": "enlarge",
+      "clues": [
+        "magnify",
+        " blow up"
+      ]
     },
     {
-     "word": "coal",
-     "clues": [
-      "fossil fuel"
-     ]
+      "word": "ensure",
+      "clues": [
+        "guarantee",
+        " insure",
+        " assure",
+        " secure"
+      ]
     },
     {
-     "word": "coalition",
-     "clues": [
-      "coalescence",
-      " conglutination"
-     ]
+      "word": "enter",
+      "clues": [
+        "come in",
+        " get into",
+        " get in",
+        " go into",
+        " go in",
+        "enroll",
+        " inscribe"
+      ]
     },
     {
-     "word": "coast",
-     "clues": [
-      "seashore",
-      " seacoast",
-      " sea-coast"
-     ]
+      "word": "entertain",
+      "clues": [
+        "provide entertainment"
+      ]
     },
     {
-     "word": "coat",
-     "clues": [
-      "garment"
-     ]
+      "word": "entertainment",
+      "clues": [
+        "amusement"
+      ]
     },
     {
-     "word": "coat",
-     "clues": [
-      "coating",
-      " thin layer"
-     ]
+      "word": "enthusiasm",
+      "clues": [
+        "lively interest"
+      ]
     },
     {
-     "word": "code",
-     "clues": [
-      "coding system for brief or secret messages"
-     ]
+      "word": "entitlement",
+      "clues": [
+        "right granted by law or contract"
+      ]
     },
     {
-     "word": "code",
-     "clues": [
-      "computer code"
-     ]
+      "word": "entry",
+      "clues": [
+        "submission",
+        "entrance",
+        " entranceway",
+        " entryway"
+      ]
     },
     {
-     "word": "coffee",
-     "clues": [
-      "beverage"
-     ]
+      "word": "environment",
+      "clues": [
+        "environs",
+        " surroundings"
+      ]
     },
     {
-     "word": "coffin",
-     "clues": [
-      "casket"
-     ]
+      "word": "environmental",
+      "clues": [
+        "relating to the external surroundings"
+      ]
     },
     {
-     "word": "coin",
-     "clues": [
-      "money"
-     ]
+      "word": "episode",
+      "clues": [
+        "installment",
+        " part of a broadcast serial"
+      ]
     },
     {
-     "word": "coincidence",
-     "clues": [
-      "happenstance"
-     ]
+      "word": "equal",
+      "clues": [
+        "like",
+        " equivalent",
+        " same"
+      ]
     },
     {
-     "word": "cold",
-     "clues": [
-      "coldness",
-      " low temperature"
-     ]
+      "word": "equation",
+      "clues": [
+        "mathematical statement"
+      ]
     },
     {
-     "word": "cold",
-     "clues": [
-      "common cold"
-     ]
+      "word": "equip",
+      "clues": [
+        "fit out",
+        " outfit"
+      ]
     },
     {
-     "word": "collar",
-     "clues": [
-      "harness"
-     ]
+      "word": "era",
+      "clues": [
+        "epoch"
+      ]
     },
     {
-     "word": "colleague",
-     "clues": [
-      "co-worker",
-      " fellow worker"
-     ]
+      "word": "error",
+      "clues": [
+        "mistake",
+        " fault",
+        "erroneous belief"
+      ]
     },
     {
-     "word": "collection",
-     "clues": [
-      "aggregation",
-      " accumulation",
-      " assemblage"
-     ]
+      "word": "escape",
+      "clues": [
+        "run",
+        " run away",
+        " flee",
+        "get away",
+        " break loose",
+        " run away from confinement"
+      ]
     },
     {
-     "word": "college",
-     "clues": [
-      "institution of higher education"
-     ]
+      "word": "essay",
+      "clues": [
+        "literary composition"
+      ]
     },
     {
-     "word": "colon",
-     "clues": [
-      "part of the large intestine"
-     ]
+      "word": "essential",
+      "clues": [
+        "basic and fundamental"
+      ]
     },
     {
-     "word": "colon",
-     "clues": [
-      "punctuation mark"
-     ]
+      "word": "establish",
+      "clues": [
+        "install",
+        " set up"
+      ]
     },
     {
-     "word": "colony",
-     "clues": [
-      "politically controlled country"
-     ]
+      "word": "established",
+      "clues": [
+        "set up or accepted"
+      ]
     },
     {
-     "word": "color",
-     "clues": [
-      "hue"
-     ]
+      "word": "estate",
+      "clues": [
+        "everything you own"
+      ]
     },
     {
-     "word": "column",
-     "clues": [
-      "pillar",
-      " support"
-     ]
+      "word": "estimate",
+      "clues": [
+        "likely cost",
+        "esteem",
+        " respect",
+        "appraisal of value",
+        "estimation",
+        " approximation"
+      ]
     },
     {
-     "word": "column",
-     "clues": [
-      "linear array of numbers"
-     ]
+      "word": "eternal",
+      "clues": [
+        "everlasting",
+        " perpetual",
+        " unending"
+      ]
     },
     {
-     "word": "coma",
-     "clues": [
-      "deep unconsciousness"
-     ]
+      "word": "ethics",
+      "clues": [
+        "moral philosophy"
+      ]
     },
     {
-     "word": "combination",
-     "clues": [
-      "things occurring together"
-     ]
+      "word": "ethnic",
+      "clues": [
+        "cultural"
+      ]
     },
     {
-     "word": "comedy",
-     "clues": [
-      "humorous drama"
-     ]
+      "word": "Europe",
+      "clues": [
+        "continent"
+      ]
     },
     {
-     "word": "comfort",
-     "clues": [
-      "consolation",
-      " solace"
-     ]
+      "word": "evaluate",
+      "clues": [
+        "valuate",
+        " assess",
+        " appraise",
+        " value"
+      ]
     },
     {
-     "word": "comfort",
-     "clues": [
-      "comfortableness"
-     ]
+      "word": "even",
+      "clues": [
+        "divisible by two",
+        "level",
+        " flush"
+      ]
     },
     {
-     "word": "comfort",
-     "clues": [
-      "ease",
-      " financial freedom"
-     ]
+      "word": "evening",
+      "clues": [
+        "eve"
+      ]
     },
     {
-     "word": "command",
-     "clues": [
-      "control",
-      " mastery"
-     ]
+      "word": "evoke",
+      "clues": [
+        "suggest"
+      ]
     },
     {
-     "word": "command",
-     "clues": [
-      "authoritative instruction"
-     ]
+      "word": "evolution",
+      "clues": [
+        "phylogeny",
+        " phylogenesis"
+      ]
     },
     {
-     "word": "comment",
-     "clues": [
-      "remark"
-     ]
+      "word": "exact",
+      "clues": [
+        "precise"
+      ]
     },
     {
-     "word": "gossip",
-     "clues": [
-      "scuttlebutt"
-     ]
+      "word": "exaggerate",
+      "clues": [
+        "overstate"
+      ]
     },
     {
-     "word": "commerce",
-     "clues": [
-      "commercialism",
-      " mercantilism"
-     ]
+      "word": "examination",
+      "clues": [
+        "test"
+      ]
     },
     {
-     "word": "commission",
-     "clues": [
-      "deputation",
-      " delegation"
-     ]
+      "word": "example",
+      "clues": [
+        "illustration",
+        " instance",
+        " representative",
+        "exemplar",
+        " model",
+        " good example"
+      ]
     },
     {
-     "word": "commission",
-     "clues": [
-      "fee"
-     ]
+      "word": "excavate",
+      "clues": [
+        "hollow",
+        " hollow out"
+      ]
     },
     {
-     "word": "commitment",
-     "clues": [
-      "allegiance",
-      " loyalty",
-      " dedication"
-     ]
+      "word": "excavation",
+      "clues": [
+        "dig",
+        " archeological site"
+      ]
     },
     {
-     "word": "committee",
-     "clues": [
-      "commission"
-     ]
+      "word": "exceed",
+      "clues": [
+        "pass",
+        " go past",
+        " top",
+        "surpass",
+        " outstrip",
+        " outmatch",
+        " outdo"
+      ]
     },
     {
-     "word": "communication",
-     "clues": [
-      "something communicated between people"
-     ]
+      "word": "exception",
+      "clues": [
+        "instance that does not conform to a rule"
+      ]
     },
     {
-     "word": "communist",
-     "clues": [
-      "Marxist"
-     ]
+      "word": "excess",
+      "clues": [
+        "surplus"
+      ]
     },
     {
-     "word": "community",
-     "clues": [
-      "residential district",
-      " residential area"
-     ]
+      "word": "exchange",
+      "clues": [
+        "mutual expression of views",
+        "act of changing one thing for another"
+      ]
     },
     {
-     "word": "compact",
-     "clues": [
-      "compact car"
-     ]
+      "word": "excitement",
+      "clues": [
+        "agitation",
+        " turmoil",
+        " upheaval",
+        " hullabaloo",
+        "excitation",
+        " fervor",
+        " mental state"
+      ]
     },
     {
-     "word": "company",
-     "clues": [
-      "troupe"
-     ]
+      "word": "exclude",
+      "clues": [
+        "except",
+        " leave out",
+        " leave off",
+        " omit"
+      ]
     },
     {
-     "word": "company",
-     "clues": [
-      "companionship",
-      " fellowship",
-      " society"
-     ]
+      "word": "exclusive",
+      "clues": [
+        "excluding much or all"
+      ]
     },
     {
-     "word": "compartment",
-     "clues": [
-      "small space or subdivision for storage"
-     ]
+      "word": "excuse",
+      "clues": [
+        "alibi",
+        " exculpation",
+        " self-justification",
+        "forgive",
+        " pardon"
+      ]
     },
     {
-     "word": "compensation",
-     "clues": [
-      "recompense",
-      " payment"
-     ]
+      "word": "execute",
+      "clues": [
+        "put to death"
+      ]
     },
     {
-     "word": "competence",
-     "clues": [
-      "competency"
-     ]
+      "word": "execution",
+      "clues": [
+        "capital punishment",
+        " death penalty"
+      ]
     },
     {
-     "word": "competition",
-     "clues": [
-      "contention",
-      " rivalry"
-     ]
+      "word": "executive",
+      "clues": [
+        "branch of government",
+        "administrator"
+      ]
     },
     {
-     "word": "competition",
-     "clues": [
-      "contest"
-     ]
+      "word": "exempt",
+      "clues": [
+        "free",
+        " grant an exemption"
+      ]
     },
     {
-     "word": "compliance",
-     "clues": [
-      "conformity",
-      " abidance"
-     ]
+      "word": "exemption",
+      "clues": [
+        "immunity"
+      ]
     },
     {
-     "word": "complication",
-     "clues": [
-      "complex situation"
-     ]
+      "word": "exercise",
+      "clues": [
+        "exercising",
+        " physical exercise"
+      ]
     },
     {
-     "word": "composer",
-     "clues": [
-      "music composer"
-     ]
+      "word": "exhibition",
+      "clues": [
+        "exposition",
+        " expo"
+      ]
     },
     {
-     "word": "compound",
-     "clues": [
-      "chemical compound"
-     ]
+      "word": "exile",
+      "clues": [
+        "deportation",
+        " expatriation",
+        " expulsion"
+      ]
     },
     {
-     "word": "compromise",
-     "clues": [
-      "allowance",
-      " accommodation with concessions"
-     ]
+      "word": "exit",
+      "clues": [
+        "issue",
+        " outlet",
+        " way out"
+      ]
     },
     {
-     "word": "computer",
-     "clues": [
-      "computing machine"
-     ]
+      "word": "exotic",
+      "clues": [
+        "foreign",
+        " alien",
+        "unusual",
+        " strikingly strange"
+      ]
     },
     {
-     "word": "computing",
-     "clues": [
-      "computer science"
-     ]
+      "word": "expand",
+      "clues": [
+        "spread out",
+        " extend in one or more directions",
+        " spread"
+      ]
     },
     {
-     "word": "concentration",
-     "clues": [
-      "strength of solution"
-     ]
+      "word": "expansion",
+      "clues": [
+        "enlargement"
+      ]
     },
     {
-     "word": "concentration",
-     "clues": [
-      "engrossment",
-      " absorption",
-      " immersion"
-     ]
+      "word": "expect",
+      "clues": [
+        "anticipate",
+        "require",
+        " ask"
+      ]
     },
     {
-     "word": "concept",
-     "clues": [
-      "conception",
-      " construct"
-     ]
+      "word": "expectation",
+      "clues": [
+        "anticipation"
+      ]
     },
     {
-     "word": "conception",
-     "clues": [
-      "fertilization"
-     ]
+      "word": "expenditure",
+      "clues": [
+        "outgo",
+        " outlay"
+      ]
     },
     {
-     "word": "concern",
-     "clues": [
-      "interest"
-     ]
+      "word": "experience",
+      "clues": [
+        "accumulation of knowledge or skill"
+      ]
     },
     {
-     "word": "concern",
-     "clues": [
-      "feeling of sympathy"
-     ]
+      "word": "experienced",
+      "clues": [
+        "knowledgeable"
+      ]
     },
     {
-     "word": "concert",
-     "clues": [
-      "musical performance"
-     ]
+      "word": "experiment",
+      "clues": [
+        "experimentation",
+        "conduct a test or investigation"
+      ]
     },
     {
-     "word": "concession",
-     "clues": [
-      "point conceded"
-     ]
+      "word": "expertise",
+      "clues": [
+        "expertness"
+      ]
     },
     {
-     "word": "conclusion",
-     "clues": [
-      "ending",
-      " finish"
-     ]
+      "word": "explain",
+      "clues": [
+        "explicate"
+      ]
     },
     {
-     "word": "concrete",
-     "clues": [
-      "strong building material"
-     ]
+      "word": "explicit",
+      "clues": [
+        "expressed"
+      ]
     },
     {
-     "word": "condition",
-     "clues": [
-      "circumstance"
-     ]
+      "word": "explode",
+      "clues": [
+        "detonate",
+        " blow up",
+        "show a violent emotional reaction"
+      ]
     },
     {
-     "word": "condition",
-     "clues": [
-      "precondition",
-      " stipulation"
-     ]
+      "word": "exploit",
+      "clues": [
+        "manipulate to one's advantage"
+      ]
     },
     {
-     "word": "terms",
-     "clues": [
-      "condition"
-     ]
+      "word": "exploration",
+      "clues": [
+        "geographic expedition"
+      ]
     },
     {
-     "word": "condition",
-     "clues": [
-      "status",
-      " state"
-     ]
+      "word": "explosion",
+      "clues": [
+        "detonation",
+        " blowup"
+      ]
     },
     {
-     "word": "conductor",
-     "clues": [
-      "person who collects fares"
-     ]
+      "word": "export",
+      "clues": [
+        "sell abroad"
+      ]
     },
     {
-     "word": "conductor",
-     "clues": [
-      "substance that readily transmits electricity or heat"
-     ]
+      "word": "expose",
+      "clues": [
+        "debunk"
+      ]
     },
     {
-     "word": "conference",
-     "clues": [
-      "meeting"
-     ]
+      "word": "exposure",
+      "clues": [
+        "vulnerability to the elements"
+      ]
     },
     {
-     "word": "confession",
-     "clues": [
-      "admission of misdeeds"
-     ]
+      "word": "express",
+      "clues": [
+        "without unnecessary stops"
+      ]
     },
     {
-     "word": "confidence",
-     "clues": [
-      "feeling of trust"
-     ]
+      "word": "expression",
+      "clues": [
+        "saying",
+        " locution"
+      ]
     },
     {
-     "word": "conflict",
-     "clues": [
-      "incompatibility of dates or events"
-     ]
+      "word": "extend",
+      "clues": [
+        "widen",
+        " broaden in scope or range or area"
+      ]
     },
     {
-     "word": "conflict",
-     "clues": [
-      "state of opposition between persons or ideas"
-     ]
+      "word": "extension",
+      "clues": [
+        "telephone extension",
+        "delay of deadline",
+        "wing",
+        " annex",
+        " addition to a building"
+      ]
     },
     {
-     "word": "confrontation",
-     "clues": [
-      "clash"
-     ]
+      "word": "extent",
+      "clues": [
+        "point or degree to which something extend"
+      ]
     },
     {
-     "word": "confusion",
-     "clues": [
-      "mix-up"
-     ]
+      "word": "extinct",
+      "clues": [
+        "non-existent",
+        " not surviving"
+      ]
     },
     {
-     "word": "conglomerate",
-     "clues": [
-      "empire",
-      " group of companies"
-     ]
+      "word": "extort",
+      "clues": [
+        "gouge"
+      ]
     },
     {
-     "word": "congress",
-     "clues": [
-      "national legislative assembly"
-     ]
+      "word": "extract",
+      "clues": [
+        "pull",
+        " pull out",
+        " pull up",
+        " take out"
+      ]
     },
     {
-     "word": "connection",
-     "clues": [
-      "shifting from one transportation to another"
-     ]
+      "word": "extraterrestrial",
+      "clues": [
+        "alien"
+      ]
     },
     {
-     "word": "connection",
-     "clues": [
-      "person who is influential"
-     ]
+      "word": "extreme",
+      "clues": [
+        "highest degree"
+      ]
     },
     {
-     "word": "connection",
-     "clues": [
-      "link",
-      " connectedness"
-     ]
+      "word": "eye",
+      "clues": [
+        "oculus",
+        " optic",
+        " organ of sight"
+      ]
     },
     {
-     "word": "conscience",
-     "clues": [
-      "scruples",
-      " moral sense"
-     ]
+      "word": "eyebrow",
+      "clues": [
+        "brow"
+      ]
     },
     {
-     "word": "consciousness",
-     "clues": [
-      "alert cognitive state"
-     ]
+      "word": "fabricate",
+      "clues": [
+        "cook up",
+        " make up",
+        " invent"
+      ]
     },
     {
-     "word": "consensus",
-     "clues": [
-      "agreement"
-     ]
+      "word": "facade",
+      "clues": [
+        "frontage",
+        " frontal"
+      ]
     },
     {
-     "word": "conservation",
-     "clues": [
-      "preservation",
-      " environmental management"
-     ]
+      "word": "face",
+      "clues": [
+        "human face"
+      ]
     },
     {
-     "word": "consideration",
-     "clues": [
-      "thoughtfulness"
-     ]
+      "word": "facility",
+      "clues": [
+        "adeptness",
+        " adroitness",
+        " deftness",
+        " quickness",
+        "installation",
+        " building or place providing a particular service"
+      ]
     },
     {
-     "word": "consideration",
-     "clues": [
-      "careful thought"
-     ]
+      "word": "factor",
+      "clues": [
+        "anything that contributes causally to a result"
+      ]
     },
     {
-     "word": "conspiracy",
-     "clues": [
-      "cabal",
-      " plot"
-     ]
+      "word": "factory",
+      "clues": [
+        "mill",
+        " manufacturing plant",
+        " manufactory"
+      ]
     },
     {
-     "word": "constellation",
-     "clues": [
-      "configuration of stars"
-     ]
+      "word": "fade",
+      "clues": [
+        "wither"
+      ]
     },
     {
-     "word": "constituency",
-     "clues": [
-      "body of voters"
-     ]
+      "word": "fail",
+      "clues": [
+        "go wrong"
+      ]
     },
     {
-     "word": "constitution",
-     "clues": [
-      "composition",
-      " makeup"
-     ]
+      "word": "failure",
+      "clues": [
+        "loser",
+        " nonstarter",
+        " unsuccessful person",
+        "lack of success",
+        "bankruptcy"
+      ]
     },
     {
-     "word": "constitution",
-     "clues": [
-      "fundamental law"
-     ]
+      "word": "faint",
+      "clues": [
+        "pass out"
+      ]
     },
     {
-     "word": "constraint",
-     "clues": [
-      "restraint",
-      " physical constraint"
-     ]
+      "word": "fair",
+      "clues": [
+        "traveling show",
+        " carnival",
+        " funfair",
+        "impartial",
+        "promotional gathering of producers"
+      ]
     },
     {
-     "word": "consultation",
-     "clues": [
-      "discussion to consider a point"
-     ]
+      "word": "fairy",
+      "clues": [
+        "faery",
+        " faerie",
+        " sprite",
+        " magical creature"
+      ]
     },
     {
-     "word": "consumer",
-     "clues": [
-      "person who uses goods or services"
-     ]
+      "word": "faith",
+      "clues": [
+        "religion",
+        " religious belief"
+      ]
     },
     {
-     "word": "consumption",
-     "clues": [
-      "ingestion"
-     ]
+      "word": "faithful",
+      "clues": [
+        "sexually trustworthy"
+      ]
     },
     {
-     "word": "contact",
-     "clues": [
-      "close interaction"
-     ]
+      "word": "fall",
+      "clues": [
+        "descend in free fall",
+        "autumn",
+        "drop",
+        " free descent"
+      ]
     },
     {
-     "word": "contact",
-     "clues": [
-      "touch"
-     ]
+      "word": "false",
+      "clues": [
+        "not in accordance with fact or reality"
+      ]
     },
     {
-     "word": "contact",
-     "clues": [
-      "middleman"
-     ]
+      "word": "falsify",
+      "clues": [
+        "manipulate",
+        " fake",
+        " fudge",
+        " cook",
+        " misrepresent"
+      ]
     },
     {
-     "word": "contemporary",
-     "clues": [
-      "coeval"
-     ]
+      "word": "fame",
+      "clues": [
+        "celebrity",
+        " renown"
+      ]
     },
     {
-     "word": "contempt",
-     "clues": [
-      "disdain",
-      " scorn",
-      " despite",
-      " lack of respect"
-     ]
+      "word": "familiar",
+      "clues": [
+        "well known"
+      ]
     },
     {
-     "word": "content",
-     "clues": [
-      "capacity"
-     ]
+      "word": "family",
+      "clues": [
+        "folk",
+        " kinfolk",
+        " kinsfolk",
+        " kin",
+        "household",
+        " home",
+        " menage"
+      ]
     },
     {
-     "word": "context",
-     "clues": [
-      "linguistic context",
-      " context of use"
-     ]
+      "word": "fan",
+      "clues": [
+        "buff",
+        " devotee",
+        " lover",
+        "agitate the air"
+      ]
     },
     {
-     "word": "continuation",
-     "clues": [
-      "lengthiness",
-      " prolongation",
-      " extension"
-     ]
+      "word": "fantasy",
+      "clues": [
+        "illusion",
+        " phantasy",
+        " fancy"
+      ]
     },
     {
-     "word": "contract",
-     "clues": [
-      "binding agreement between two or more persons"
-     ]
+      "word": "far",
+      "clues": [
+        "at a long distance"
+      ]
     },
     {
-     "word": "contraction",
-     "clues": [
-      "muscular contraction"
-     ]
+      "word": "fare",
+      "clues": [
+        "transportation fee"
+      ]
     },
     {
-     "word": "contradiction",
-     "clues": [
-      "contradiction in terms"
-     ]
+      "word": "farewell",
+      "clues": [
+        "leave",
+        " leave-taking",
+        " parting"
+      ]
     },
     {
-     "word": "contrary",
-     "clues": [
-      "exact opposition"
-     ]
+      "word": "fascinate",
+      "clues": [
+        "intrigue"
+      ]
     },
     {
-     "word": "contrast",
-     "clues": [
-      "opposition or dissimilarity"
-     ]
+      "word": "fashion",
+      "clues": [
+        "latest style",
+        " rage",
+        " fad"
+      ]
     },
     {
-     "word": "contribution",
-     "clues": [
-      "donation"
-     ]
+      "word": "fashionable",
+      "clues": [
+        "stylish"
+      ]
     },
     {
-     "word": "control",
-     "clues": [
-      "restraint",
-      " discipline in personal activities"
-     ]
+      "word": "fast",
+      "clues": [
+        "abstain from food",
+        "at a rapid tempo"
+      ]
     },
     {
-     "word": "control",
-     "clues": [
-      "dominance"
-     ]
+      "word": "fastidious",
+      "clues": [
+        "finicky"
+      ]
     },
     {
-     "word": "convenience",
-     "clues": [
-      "appliance",
-      " contraption",
-      " gadget",
-      " gizmo"
-     ]
+      "word": "fat",
+      "clues": [
+        "having much flesh",
+        " especially fat",
+        "soft greasy substance",
+        "excess bodily weight"
+      ]
     },
     {
-     "word": "convention",
-     "clues": [
-      "custom"
-     ]
+      "word": "fate",
+      "clues": [
+        "destiny",
+        " fortune",
+        " luck",
+        " lot",
+        " circumstances"
+      ]
     },
     {
-     "word": "convention",
-     "clues": [
-      "large formal assembly"
-     ]
+      "word": "father",
+      "clues": [
+        "male parent"
+      ]
     },
     {
-     "word": "conversation",
-     "clues": [
-      "talk"
-     ]
+      "word": "fault",
+      "clues": [
+        "responsibility for a bad situation",
+        "defect",
+        " flaw"
+      ]
     },
     {
-     "word": "conviction",
-     "clues": [
-      "strong belief"
-     ]
+      "word": "favor",
+      "clues": [
+        "kind act",
+        " gracious act"
+      ]
     },
     {
-     "word": "cooperation",
-     "clues": [
-      "group action",
-      " collaboration"
-     ]
+      "word": "favorable",
+      "clues": [
+        "encouraging",
+        " approving"
+      ]
     },
     {
-     "word": "copper",
-     "clues": [
-      "Cu",
-      " metal"
-     ]
+      "word": "favour",
+      "clues": [
+        "act of gracious kindness"
+      ]
     },
     {
-     "word": "copy",
-     "clues": [
-      "secondary representation of an original"
-     ]
+      "word": "favourite",
+      "clues": [
+        "darling",
+        " favorite",
+        " pet"
+      ]
     },
     {
-     "word": "copyright",
-     "clues": [
-      "right of publication"
-     ]
+      "word": "fax",
+      "clues": [
+        "facsimile"
+      ]
     },
     {
-     "word": "cord",
-     "clues": [
-      "corduroy",
-      " fabric"
-     ]
+      "word": "fear",
+      "clues": [
+        "fearfulness",
+        " fright",
+        "dread",
+        " be afraid of"
+      ]
     },
     {
-     "word": "core",
-     "clues": [
-      "center of an object"
-     ]
+      "word": "feast",
+      "clues": [
+        "banquet"
+      ]
     },
     {
-     "word": "corn",
-     "clues": [
-      "edible corn"
-     ]
+      "word": "feather",
+      "clues": [
+        "plume",
+        " plumage"
+      ]
     },
     {
-     "word": "corner",
-     "clues": [
-      "point where three areas or surfaces meet"
-     ]
+      "word": "feature",
+      "clues": [
+        "facial feature",
+        "characteristic"
+      ]
     },
     {
-     "word": "corner",
-     "clues": [
-      "recess",
-      " recession",
-      " niche"
-     ]
+      "word": "federation",
+      "clues": [
+        "confederation",
+        " confederacy",
+        " political union"
+      ]
     },
     {
-     "word": "correction",
-     "clues": [
-      "rectification"
-     ]
+      "word": "fee",
+      "clues": [
+        "fixed charge"
+      ]
     },
     {
-     "word": "correspondence",
-     "clues": [
-      "exchange of letters"
-     ]
+      "word": "feed",
+      "clues": [
+        "provide with food"
+      ]
     },
     {
-     "word": "corruption",
-     "clues": [
-      "bribery"
-     ]
+      "word": "feedback",
+      "clues": [
+        "response"
+      ]
     },
     {
-     "word": "costume",
-     "clues": [
-      "attire for special occasions"
-     ]
+      "word": "feel",
+      "clues": [
+        "experience",
+        " undergo an emotional sensation"
+      ]
     },
     {
-     "word": "cottage",
-     "clues": [
-      "bungalow",
-      " small house"
-     ]
+      "word": "feeling",
+      "clues": [
+        "touch",
+        " touch sensation",
+        "intuitive feeling"
+      ]
     },
     {
-     "word": "cotton",
-     "clues": [
-      "cotton cloth",
-      " fabric"
-     ]
+      "word": "feign",
+      "clues": [
+        "sham",
+        " pretend",
+        " dissemble",
+        " simulate"
+      ]
     },
     {
-     "word": "council",
-     "clues": [
-      "administrative body"
-     ]
+      "word": "feminine",
+      "clues": [
+        "womanly"
+      ]
     },
     {
-     "word": "counter",
-     "clues": [
-      "business table"
-     ]
+      "word": "feminist",
+      "clues": [
+        "women's rightist"
+      ]
     },
     {
-     "word": "country",
-     "clues": [
-      "state",
-      " nation",
-      " land"
-     ]
+      "word": "fence",
+      "clues": [
+        "barrier"
+      ]
     },
     {
-     "word": "country",
-     "clues": [
-      "rural area"
-     ]
+      "word": "ferry",
+      "clues": [
+        "ferryboat"
+      ]
     },
     {
-     "word": "countryside",
-     "clues": [
-      "rural regions"
-     ]
+      "word": "fever",
+      "clues": [
+        "high body temperature"
+      ]
     },
     {
-     "word": "coup",
-     "clues": [
-      "coup d'etat",
-      " putsch",
-      " takeover"
-     ]
+      "word": "few",
+      "clues": [
+        "indefinite but relatively small number"
+      ]
     },
     {
-     "word": "couple",
-     "clues": [
-      "twosome",
-      " duo",
-      " duet"
-     ]
+      "word": "fibre",
+      "clues": [
+        "fiber"
+      ]
     },
     {
-     "word": "courage",
-     "clues": [
-      "bravery",
-      " braveness"
-     ]
+      "word": "fiction",
+      "clues": [
+        "literary work"
+      ]
     },
     {
-     "word": "course",
-     "clues": [
-      "course of action"
-     ]
+      "word": "field",
+      "clues": [
+        "playing field",
+        " athletic field",
+        "piece of land"
+      ]
     },
     {
-     "word": "course",
-     "clues": [
-      "course of study",
-      " course of instruction",
-      " class"
-     ]
+      "word": "fig",
+      "clues": [
+        "fruit"
+      ]
     },
     {
-     "word": "course",
-     "clues": [
-      "path",
-      " track"
-     ]
+      "word": "fight",
+      "clues": [
+        "fighting",
+        " combat",
+        "struggle"
+      ]
     },
     {
-     "word": "court",
-     "clues": [
-      "courtyard"
-     ]
+      "word": "figure",
+      "clues": [
+        "amount of money expressed numerically",
+        "design",
+        " pattern"
+      ]
     },
     {
-     "word": "court",
-     "clues": [
-      "tribunal",
-      " judicature"
-     ]
+      "word": "file",
+      "clues": [
+        "steel hand tool",
+        "single file",
+        " Indian file",
+        "data file",
+        "file cabinet",
+        " filing cabinet"
+      ]
     },
     {
-     "word": "court",
-     "clues": [
-      "royal court"
-     ]
+      "word": "fill",
+      "clues": [
+        "fill up",
+        " make full"
+      ]
     },
     {
-     "word": "courtesy",
-     "clues": [
-      "considerate act"
-     ]
+      "word": "film",
+      "clues": [
+        "record on film",
+        "cinema",
+        "thin coating",
+        "photographic film"
+      ]
     },
     {
-     "word": "cousin",
-     "clues": [
-      "first cousin"
-     ]
+      "word": "filter",
+      "clues": [
+        "device that removes something small"
+      ]
     },
     {
-     "word": "cover",
-     "clues": [
-      "blanket"
-     ]
+      "word": "final",
+      "clues": [
+        "final examination"
+      ]
     },
     {
-     "word": "cover",
-     "clues": [
-      "screen",
-      " concealment"
-     ]
+      "word": "finance",
+      "clues": [
+        "management of money"
+      ]
     },
     {
-     "word": "coverage",
-     "clues": [
-      "reporting",
-      " reportage"
-     ]
+      "word": "financial",
+      "clues": [
+        "fiscal"
+      ]
     },
     {
-     "word": "coverage",
-     "clues": [
-      "insurance coverage"
-     ]
+      "word": "find",
+      "clues": [
+        "discover",
+        "recover",
+        " retrieve",
+        " regain"
+      ]
     },
     {
-     "word": "cow",
-     "clues": [
-      "bovine"
-     ]
+      "word": "fine",
+      "clues": [
+        "small-grained or smooth"
+      ]
     },
     {
-     "word": "wisecrack",
-     "clues": [
-      "crack",
-      " quip",
-      " witty remark"
-     ]
+      "word": "finger",
+      "clues": [
+        "terminal members of the hand"
+      ]
     },
     {
-     "word": "crack",
-     "clues": [
-      "cleft",
-      " crevice",
-      " fissure"
-     ]
+      "word": "finish",
+      "clues": [
+        "complete"
+      ]
     },
     {
-     "word": "cunning",
-     "clues": [
-      "craftiness",
-      " guile",
-      " slyness",
-      " wiliness"
-     ]
+      "word": "finished",
+      "clues": [
+        "ruined"
+      ]
     },
     {
-     "word": "craft",
-     "clues": [
-      "craftsmanship",
-      " workmanship"
-     ]
+      "word": "fire",
+      "clues": [
+        "discharge a weapon",
+        "attack",
+        " flak",
+        " flack",
+        " blast",
+        "ardor",
+        " fervor",
+        " fervency",
+        " fervidness",
+        "flame"
+      ]
     },
     {
-     "word": "craftsman",
-     "clues": [
-      "artisan"
-     ]
+      "word": "firefighter",
+      "clues": [
+        "fireman"
+      ]
     },
     {
-     "word": "crash",
-     "clues": [
-      "wreck",
-      " serious accident"
-     ]
+      "word": "fireplace",
+      "clues": [
+        "fire"
+      ]
     },
     {
-     "word": "crash",
-     "clues": [
-      "collapse",
-      " financial decline"
-     ]
+      "word": "firm",
+      "clues": [
+        "house",
+        " business firm",
+        " company"
+      ]
     },
     {
-     "word": "cream",
-     "clues": [
-      "ointment",
-      " emollient",
-      " balm"
-     ]
+      "word": "first",
+      "clues": [
+        "initial"
+      ]
     },
     {
-     "word": "cream",
-     "clues": [
-      "fat part of milk"
-     ]
+      "word": "first-hand",
+      "clues": [
+        "direct"
+      ]
     },
     {
-     "word": "creation",
-     "clues": [
-      "creative activity"
-     ]
+      "word": "fish",
+      "clues": [
+        "cold-blooded aquatic vertebrates",
+        "flesh of fish used as food"
+      ]
     },
     {
-     "word": "credibility",
-     "clues": [
-      "credibleness",
-      " believability"
-     ]
+      "word": "fisherman",
+      "clues": [
+        "fisher"
+      ]
     },
     {
-     "word": "credit",
-     "clues": [
-      "course credit"
-     ]
+      "word": "fist",
+      "clues": [
+        "clenched fist"
+      ]
     },
     {
-     "word": "credit",
-     "clues": [
-      "recognition"
-     ]
+      "word": "fit",
+      "clues": [
+        "conform to shape or size"
+      ]
     },
     {
-     "word": "credit",
-     "clues": [
-      "deferred payment"
-     ]
+      "word": "fitness",
+      "clues": [
+        "physical fitness",
+        " good shape"
+      ]
     },
     {
-     "word": "credit",
-     "clues": [
-      "money available for a client to borrow"
-     ]
+      "word": "fix",
+      "clues": [
+        "repair",
+        " mend"
+      ]
     },
     {
-     "word": "credi",
-     "clues": [
-      "card] plastic money"
-     ]
+      "word": "fixture",
+      "clues": [
+        "object firmly fixed in place"
+      ]
     },
     {
-     "word": "creed",
-     "clues": [
-      "credo",
-      " system of principles or beliefs"
-     ]
+      "word": "flag",
+      "clues": [
+        "emblem"
+      ]
     },
     {
-     "word": "crew",
-     "clues": [
-      "men who man a ship or aircraft"
-     ]
+      "word": "flash",
+      "clues": [
+        "heartbeat",
+        " instant",
+        " jiffy",
+        " split second",
+        "blink",
+        " wink",
+        " twinkle",
+        "flare",
+        " burst of light",
+        "photoflash",
+        " flashbulb"
+      ]
     },
     {
-     "word": "cricket",
-     "clues": [
-      "insect"
-     ]
+      "word": "flat",
+      "clues": [
+        "horizontally level",
+        "flat tire",
+        "apartment"
+      ]
     },
     {
-     "word": "crime",
-     "clues": [
-      "law-breaking"
-     ]
+      "word": "flatware",
+      "clues": [
+        "silverware"
+      ]
     },
     {
-     "word": "criminal",
-     "clues": [
-      "felon",
-      " crook",
-      " outlaw",
-      " malefactor"
-     ]
+      "word": "flavor",
+      "clues": [
+        "savor",
+        " smack",
+        " tang",
+        " taste experience"
+      ]
     },
     {
-     "word": "crisis",
-     "clues": [
-      "unstable situation"
-     ]
+      "word": "flawed",
+      "clues": [
+        "imperfect",
+        " blemished",
+        " faulty"
+      ]
     },
     {
-     "word": "critic",
-     "clues": [
-      "one who offers opinions on art"
-     ]
+      "word": "fleet",
+      "clues": [
+        "group of ships"
+      ]
     },
     {
-     "word": "criticism",
-     "clues": [
-      "critique",
-      " unfavorable judgment"
-     ]
+      "word": "flesh",
+      "clues": [
+        "pulp",
+        " part of a fruit",
+        "body tissue"
+      ]
     },
     {
-     "word": "crop",
-     "clues": [
-      "harvest"
-     ]
+      "word": "flex",
+      "clues": [
+        "bend"
+      ]
     },
     {
-     "word": "cross",
-     "clues": [
-      "hybrid"
-     ]
+      "word": "flexible",
+      "clues": [
+        "bendable"
+      ]
     },
     {
-     "word": "cross",
-     "clues": [
-      "wooden structure"
-     ]
+      "word": "flight",
+      "clues": [
+        "escape",
+        "flight of stairs",
+        "trip by plane"
+      ]
     },
     {
-     "word": "crosswalk",
-     "clues": [
-      "crossing",
-      " crossover"
-     ]
+      "word": "fling",
+      "clues": [
+        "throw with force or recklessness"
+      ]
     },
     {
-     "word": "crossing",
-     "clues": [
-      "intersection",
-      " crossroad"
-     ]
+      "word": "float",
+      "clues": [
+        "be afloat",
+        " fail to sink"
+      ]
     },
     {
-     "word": "crowd",
-     "clues": [
-      "large number of things or people"
-     ]
+      "word": "flock",
+      "clues": [
+        "group of animals"
+      ]
     },
     {
-     "word": "crown",
-     "clues": [
-      "diadem",
-      " jewelled headdress"
-     ]
+      "word": "flood",
+      "clues": [
+        "inundate",
+        " fill quickly beyond capacity",
+        "inundation"
+      ]
     },
     {
-     "word": "cruelty",
-     "clues": [
-      "mercilessness",
-      " pitilessness",
-      " ruthlessness"
-     ]
+      "word": "floor",
+      "clues": [
+        "flooring"
+      ]
     },
     {
-     "word": "crutch",
-     "clues": [
-      "staff used as walking aid"
-     ]
+      "word": "flour",
+      "clues": [
+        "powdery foodstuff"
+      ]
     },
     {
-     "word": "crystal",
-     "clues": [
-      "fancy glassware"
-     ]
+      "word": "flourish",
+      "clues": [
+        "thrive",
+        " prosper"
+      ]
     },
     {
-     "word": "crystal",
-     "clues": [
-      "quartz glass",
-      " quartz",
-      " vitreous silica"
-     ]
+      "word": "flow",
+      "clues": [
+        "run"
+      ]
     },
     {
-     "word": "cucumber",
-     "clues": [
-      "cuke",
-      " green salad vegetable"
-     ]
+      "word": "flower",
+      "clues": [
+        "plant cultivated for its blooms or blossoms"
+      ]
     },
     {
-     "word": "culture",
-     "clues": [
-      "product of cultivating micro-organisms"
-     ]
+      "word": "flu",
+      "clues": [
+        "influenza",
+        " viral disease"
+      ]
     },
     {
-     "word": "culture",
-     "clues": [
-      "attitudes and behavior"
-     ]
+      "word": "fluctuation",
+      "clues": [
+        "wavering",
+        " instability"
+      ]
     },
     {
-     "word": "culture",
-     "clues": [
-      "civilization",
-      " civilisation"
-     ]
+      "word": "flush",
+      "clues": [
+        "cause to flow or flood",
+        "blush",
+        " redden"
+      ]
     },
     {
-     "word": "culture",
-     "clues": [
-      "polish",
-      " refinement"
-     ]
+      "word": "fly",
+      "clues": [
+        "insect",
+        "travel through the air",
+        " be airborne"
+      ]
     },
     {
-     "word": "cup",
-     "clues": [
-      "small open container used for drinking"
-     ]
+      "word": "fog",
+      "clues": [
+        "water vapor",
+        "daze",
+        " haze",
+        " confusion"
+      ]
     },
     {
-     "word": "cup",
-     "clues": [
-      "cupful"
-     ]
+      "word": "fol",
+      "clues": [
+        "music] ethnic music"
+      ]
     },
     {
-     "word": "cupboard",
-     "clues": [
-      "closet"
-     ]
+      "word": "fold",
+      "clues": [
+        "crease",
+        " crimp",
+        "fold up",
+        " bend or lay so that one part covers the other"
+      ]
     },
     {
-     "word": "currency",
-     "clues": [
-      "money"
-     ]
+      "word": "folk",
+      "clues": [
+        "folks",
+        " common people"
+      ]
     },
     {
-     "word": "current",
-     "clues": [
-      "electric current"
-     ]
+      "word": "folklore",
+      "clues": [
+        "unwritten literature or songs"
+      ]
     },
     {
-     "word": "curriculum",
-     "clues": [
-      "course of study",
-      " academic program"
-     ]
+      "word": "follow",
+      "clues": [
+        "comply",
+        "go behind",
+        "succeed",
+        " come after"
+      ]
     },
     {
-     "word": "curtain",
-     "clues": [
-      "drape"
-     ]
+      "word": "foo",
+      "clues": [
+        "around] horse around",
+        " fool"
+      ]
     },
     {
-     "word": "curve",
-     "clues": [
-      "bend",
-      " curved road or river segment"
-     ]
+      "word": "food",
+      "clues": [
+        "nutrient"
+      ]
     },
     {
-     "word": "curve",
-     "clues": [
-      "line on a graph"
-     ]
+      "word": "fool",
+      "clues": [
+        "moron",
+        "clown",
+        " jester"
+      ]
     },
     {
-     "word": "curve",
-     "clues": [
-      "curved shape"
-     ]
+      "word": "foot",
+      "clues": [
+        "ft",
+        " linear unit of length equal to 12 inches",
+        "human foot"
+      ]
     },
     {
-     "word": "custody",
-     "clues": [
-      "holding by the police"
-     ]
+      "word": "football",
+      "clues": [
+        "football game"
+      ]
     },
     {
-     "word": "customer",
-     "clues": [
-      "client",
-      " patron"
-     ]
+      "word": "forbid",
+      "clues": [
+        "prohibit",
+        " interdict"
+      ]
     },
     {
-     "word": "snub",
-     "clues": [
-      "cold shoulder"
-     ]
+      "word": "force",
+      "clues": [
+        "forcefulness",
+        " strength",
+        " physical energy",
+        " intensity",
+        "military unit",
+        " military force",
+        " military group",
+        "violence",
+        " act of aggression",
+        "move something forcibly"
+      ]
     },
     {
-     "word": "cut",
-     "clues": [
-      "reduction of amount or number"
-     ]
+      "word": "forecast",
+      "clues": [
+        "prognosis"
+      ]
     },
     {
-     "word": "cut",
-     "clues": [
-      "share of the profits"
-     ]
+      "word": "foreigner",
+      "clues": [
+        "alien",
+        " noncitizen"
+      ]
     },
     {
-     "word": "cut",
-     "clues": [
-      "gash",
-      " slash",
-      " wound"
-     ]
+      "word": "forest",
+      "clues": [
+        "woodland",
+        " timberland",
+        " timber"
+      ]
     },
     {
-     "word": "cutting",
-     "clues": [
-      "clipping",
-      " newspaper clipping"
-     ]
+      "word": "forestry",
+      "clues": [
+        "science of planting and caring for forests"
+      ]
     },
     {
-     "word": "cycle",
-     "clues": [
-      "periodically repeated sequence"
-     ]
+      "word": "forge",
+      "clues": [
+        "fake",
+        " counterfeit"
+      ]
     },
     {
-     "word": "cylinder",
-     "clues": [
-      "shape"
-     ]
+      "word": "forget",
+      "clues": [
+        "block",
+        " blank out",
+        " draw a blank",
+        " fail to remember"
+      ]
     },
     {
-     "word": "dairy",
-     "clues": [
-      "dairy farm"
-     ]
+      "word": "fork",
+      "clues": [
+        "cutlery"
+      ]
     },
     {
-     "word": "damage",
-     "clues": [
-      "harm",
-      " impairment"
-     ]
+      "word": "form",
+      "clues": [
+        "shape",
+        " pattern",
+        "printed document with spaces in which to write",
+        "variant",
+        " strain",
+        "shape",
+        " give shape to"
+      ]
     },
     {
-     "word": "danger",
-     "clues": [
-      "condition of being susceptible to harm"
-     ]
+      "word": "formal",
+      "clues": [
+        "adhering to traditional standards"
+      ]
     },
     {
-     "word": "dark",
-     "clues": [
-      "darkness"
-     ]
+      "word": "format",
+      "clues": [
+        "formatting",
+        " data format",
+        " data formatting"
+      ]
     },
     {
-     "word": "date",
-     "clues": [
-      "sweet edible fruit"
-     ]
+      "word": "formation",
+      "clues": [
+        "spatial arrangement"
+      ]
     },
     {
-     "word": "date",
-     "clues": [
-      "appointment",
-      " engagement"
-     ]
+      "word": "formula",
+      "clues": [
+        "statement of a fundamental principle"
+      ]
     },
     {
-     "word": "date",
-     "clues": [
-      "escort"
-     ]
+      "word": "formulate",
+      "clues": [
+        "word",
+        " phrase",
+        " articulate"
+      ]
     },
     {
-     "word": "date",
-     "clues": [
-      "day of the month"
-     ]
+      "word": "fortune",
+      "clues": [
+        "luck",
+        "wealth",
+        " prosperity"
+      ]
     },
     {
-     "word": "daughter",
-     "clues": [
-      "girl",
-      " offspring"
-     ]
+      "word": "forum",
+      "clues": [
+        "public meeting"
+      ]
     },
     {
-     "word": "day",
-     "clues": [
-      "twenty-four hours",
-      " solar day"
-     ]
+      "word": "forward",
+      "clues": [
+        "at",
+        " near or directed toward the front"
+      ]
     },
     {
-     "word": "deal",
-     "clues": [
-      "act of distributing playing cards"
-     ]
+      "word": "fossil",
+      "clues": [
+        "plant or animal remains"
+      ]
     },
     {
-     "word": "deal",
-     "clues": [
-      "agreement",
-      " bargain"
-     ]
+      "word": "foster",
+      "clues": [
+        "nurture"
+      ]
     },
     {
-     "word": "dealer",
-     "clues": [
-      "trader"
-     ]
+      "word": "foundation",
+      "clues": [
+        "basis",
+        "institution supported by an endowment"
+      ]
     },
     {
-     "word": "death",
-     "clues": [
-      "decease",
-      " expiry",
-      " departure from life"
-     ]
+      "word": "fountain",
+      "clues": [
+        "water dispenser",
+        " font"
+      ]
     },
     {
-     "word": "debate",
-     "clues": [
-      "disputation",
-      " public debate"
-     ]
+      "word": "fox",
+      "clues": [
+        "animal"
+      ]
     },
     {
-     "word": "debt",
-     "clues": [
-      "money",
-      " goods or services owed"
-     ]
+      "word": "fraction",
+      "clues": [
+        "quotient"
+      ]
     },
     {
-     "word": "decade",
-     "clues": [
-      "decennary",
-      " decennium",
-      " period of 10 years"
-     ]
+      "word": "fragment",
+      "clues": [
+        "broken-off piece"
+      ]
     },
     {
-     "word": "decay",
-     "clues": [
-      "decomposition",
-      " rotting"
-     ]
+      "word": "fragrant",
+      "clues": [
+        "pleasant-smelling"
+      ]
     },
     {
-     "word": "decay",
-     "clues": [
-      "radioactive decay"
-     ]
+      "word": "frame",
+      "clues": [
+        "enclose in a frame",
+        "ensnare",
+        " entrap",
+        " set up"
+      ]
     },
     {
-     "word": "deck",
-     "clues": [
-      "floor on a ship"
-     ]
+      "word": "franchise",
+      "clues": [
+        "dealership"
+      ]
     },
     {
-     "word": "deck",
-     "clues": [
-      "pack of cards",
-      " deck of cards"
-     ]
+      "word": "frank",
+      "clues": [
+        "candid",
+        " blunt",
+        " forthright"
+      ]
     },
     {
-     "word": "declaration",
-     "clues": [
-      "statement"
-     ]
+      "word": "fraud",
+      "clues": [
+        "fraudulence",
+        " dupery",
+        " hoax"
+      ]
     },
     {
-     "word": "decoration",
-     "clues": [
-      "ornament",
-      " ornamentation"
-     ]
+      "word": "freckle",
+      "clues": [
+        "skin pigment"
+      ]
     },
     {
-     "word": "decrease",
-     "clues": [
-      "lessening",
-      " drop-off"
-     ]
+      "word": "free",
+      "clues": [
+        "able to act at will",
+        "complimentary",
+        " costless",
+        " gratis",
+        "not occupied"
+      ]
     },
     {
-     "word": "deer",
-     "clues": [
-      "forest animal"
-     ]
+      "word": "freedom",
+      "clues": [
+        "condition of being free"
+      ]
     },
     {
-     "word": "default",
-     "clues": [
-      "default option"
-     ]
+      "word": "freeze",
+      "clues": [
+        "feel or be cold",
+        "change to ice"
+      ]
     },
     {
-     "word": "nonremittal",
-     "clues": [
-      "default",
-      " nonpayment"
-     ]
+      "word": "freight",
+      "clues": [
+        "transportation"
+      ]
     },
     {
-     "word": "defeat",
-     "clues": [
-      "frustration",
-      " feeling of defeat"
-     ]
+      "word": "freighter",
+      "clues": [
+        "merchant ship"
+      ]
     },
     {
-     "word": "defendant",
-     "clues": [
-      "suspect"
-     ]
+      "word": "frequency",
+      "clues": [
+        "frequence",
+        " oftenness"
+      ]
     },
     {
-     "word": "deficiency",
-     "clues": [
-      "insufficiency",
-      " inadequacy"
-     ]
+      "word": "fresh",
+      "clues": [
+        "recently made",
+        " produced",
+        " or harvested",
+        "insolent",
+        " impertinent",
+        " impudent",
+        " sassy"
+      ]
     },
     {
-     "word": "deficit",
-     "clues": [
-      "shortage",
-      " shortfall"
-     ]
+      "word": "freshman",
+      "clues": [
+        "first year student"
+      ]
     },
     {
-     "word": "definition",
-     "clues": [
-      "concise explanation"
-     ]
+      "word": "friend",
+      "clues": [
+        "acquaintance"
+      ]
     },
     {
-     "word": "degree",
-     "clues": [
-      "grade",
-      " level",
-      " position on a scale"
-     ]
+      "word": "friendly",
+      "clues": [
+        "befitting a friend"
+      ]
     },
     {
-     "word": "degree",
-     "clues": [
-      "seriousness of something"
-     ]
+      "word": "frighten",
+      "clues": [
+        "scare",
+        " cause fear in"
+      ]
     },
     {
-     "word": "degree",
-     "clues": [
-      "academic degree"
-     ]
+      "word": "frog",
+      "clues": [
+        "toad",
+        " toad frog"
+      ]
     },
     {
-     "word": "degree",
-     "clues": [
-      "unit of temperature"
-     ]
+      "word": "front",
+      "clues": [
+        "atmospheric phenomenon at the boundary between two air masses",
+        "battlefront",
+        " front line",
+        "the side that is seen or that goes first"
+      ]
     },
     {
-     "word": "delay",
-     "clues": [
-      "holdup"
-     ]
+      "word": "frown",
+      "clues": [
+        "glower",
+        " look angry or sullen"
+      ]
     },
     {
-     "word": "delivery",
-     "clues": [
-      "birth"
-     ]
+      "word": "frozen",
+      "clues": [
+        "unthawed"
+      ]
     },
     {
-     "word": "demand",
-     "clues": [
-      "urgent or peremptory request"
-     ]
+      "word": "fruit",
+      "clues": [
+        "ripened reproductive body of a seed plant"
+      ]
     },
     {
-     "word": "demand",
-     "clues": [
-      "ability and desire to purchase goods and services"
-     ]
+      "word": "fuel",
+      "clues": [
+        "energy"
+      ]
     },
     {
-     "word": "demonstration",
-     "clues": [
-      "public display"
-     ]
+      "word": "full",
+      "clues": [
+        "replete",
+        " filled to satisfaction with food",
+        "containing as much as is possible"
+      ]
     },
     {
-     "word": "demonstration",
-     "clues": [
-      "demo"
-     ]
+      "word": "fun",
+      "clues": [
+        "merriment",
+        " playfulness"
+      ]
     },
     {
-     "word": "demonstrator",
-     "clues": [
-      "protester"
-     ]
+      "word": "function",
+      "clues": [
+        "affair",
+        " occasion",
+        " social occasion",
+        "mathematical function"
+      ]
     },
     {
-     "word": "denial",
-     "clues": [
-      "disaffirmation"
-     ]
+      "word": "functional",
+      "clues": [
+        "designed for or capable of a particular function"
+      ]
     },
     {
-     "word": "density",
-     "clues": [
-      "denseness"
-     ]
+      "word": "fund",
+      "clues": [
+        "monetary fund",
+        "finance",
+        " underwrite"
+      ]
     },
     {
-     "word": "dentist",
-     "clues": [
-      "tooth doctor"
-     ]
+      "word": "funeral",
+      "clues": [
+        "ceremony"
+      ]
     },
     {
-     "word": "departure",
-     "clues": [
-      "going away"
-     ]
+      "word": "funny",
+      "clues": [
+        "amusing",
+        " laughable"
+      ]
     },
     {
-     "word": "dependence",
-     "clues": [
-      "addiction"
-     ]
+      "word": "fur",
+      "clues": [
+        "pelt",
+        " hairy coat of a mammal"
+      ]
     },
     {
-     "word": "deposit",
-     "clues": [
-      "sediment"
-     ]
+      "word": "furniture",
+      "clues": [
+        "piece of furniture"
+      ]
     },
     {
-     "word": "deposit",
-     "clues": [
-      "down payment"
-     ]
+      "word": "fuss",
+      "clues": [
+        "bustle",
+        " hustle",
+        " flurry",
+        " ado",
+        " stir"
+      ]
     },
     {
-     "word": "deposit",
-     "clues": [
-      "bank deposit"
-     ]
+      "word": "future",
+      "clues": [
+        "hereafter",
+        " futurity",
+        " time to come"
+      ]
     },
     {
-     "word": "depression",
-     "clues": [
-      "natural depression",
-      " geological formation"
-     ]
+      "word": "ga",
+      "clues": [
+        "pedal] accelerator"
+      ]
     },
     {
-     "word": "depression",
-     "clues": [
-      "low",
-      " low pressure"
-     ]
+      "word": "gaffe",
+      "clues": [
+        "slip",
+        " faux pas"
+      ]
     },
     {
-     "word": "depression",
-     "clues": [
-      "slump",
-      " economic crisis"
-     ]
+      "word": "gain",
+      "clues": [
+        "profit",
+        " benefit"
+      ]
     },
     {
-     "word": "depression",
-     "clues": [
-      "depressive disorder",
-      " clinical depression"
-     ]
+      "word": "galaxy",
+      "clues": [
+        "extragalactic nebula"
+      ]
     },
     {
-     "word": "deprivation",
-     "clues": [
-      "want",
-      " neediness"
-     ]
+      "word": "gallery",
+      "clues": [
+        "art gallery"
+      ]
     },
     {
-     "word": "deputy",
-     "clues": [
-      "surrogate"
-     ]
+      "word": "gallon",
+      "clues": [
+        "gal",
+        " liquid unit"
+      ]
     },
     {
-     "word": "descent",
-     "clues": [
-      "movement downward"
-     ]
+      "word": "game",
+      "clues": [
+        "contest with rules to determine a winner",
+        "amusement or pastime"
+      ]
     },
     {
-     "word": "lineage",
-     "clues": [
-      "descent"
-     ]
+      "word": "gap",
+      "clues": [
+        "crack",
+        " narrow opening"
+      ]
     },
     {
-     "word": "desert",
-     "clues": [
-      "arid land"
-     ]
+      "word": "garage",
+      "clues": [
+        "car repair shop",
+        "building"
+      ]
     },
     {
-     "word": "design",
-     "clues": [
-      "preliminary sketch",
-      " outline"
-     ]
+      "word": "garbage",
+      "clues": [
+        "refuse",
+        " waste"
+      ]
     },
     {
-     "word": "design",
-     "clues": [
-      "invention",
-      " innovation"
-     ]
+      "word": "garlic",
+      "clues": [
+        "aromatic bulb used as seasoning"
+      ]
     },
     {
-     "word": "architect",
-     "clues": [
-      "designer of buildings"
-     ]
+      "word": "gas",
+      "clues": [
+        "state of matter distinguished from solid and liquid",
+        "gasoline",
+        " petrol"
+      ]
     },
     {
-     "word": "designer",
-     "clues": [
-      "couturier",
-      " fashion designer"
-     ]
+      "word": "gasp",
+      "clues": [
+        "pant",
+        " puff",
+        " heave"
+      ]
     },
     {
-     "word": "designer",
-     "clues": [
-      "interior designer",
-      " interior decorator"
-     ]
+      "word": "gate",
+      "clues": [
+        "door"
+      ]
     },
     {
-     "word": "desire",
-     "clues": [
-      "feeling"
-     ]
+      "word": "gear",
+      "clues": [
+        "gear mechanism"
+      ]
     },
     {
-     "word": "desk",
-     "clues": [
-      "furniture"
-     ]
+      "word": "gem",
+      "clues": [
+        "gemstone",
+        " stone"
+      ]
     },
     {
-     "word": "despair",
-     "clues": [
-      "desperate feeling"
-     ]
+      "word": "gene",
+      "clues": [
+        "segment of DNA"
+      ]
     },
     {
-     "word": "destruction",
-     "clues": [
-      "demolition",
-      " wipeout"
-     ]
+      "word": "general",
+      "clues": [
+        "full general",
+        " officer",
+        "applying to most members of a category"
+      ]
     },
     {
-     "word": "detail",
-     "clues": [
-      "particular",
-      " item"
-     ]
+      "word": "generate",
+      "clues": [
+        "bring forth",
+        " produce"
+      ]
     },
     {
-     "word": "detective",
-     "clues": [
-      "investigator",
-      " police detective"
-     ]
+      "word": "generation",
+      "clues": [
+        "coevals",
+        " contemporaries"
+      ]
     },
     {
-     "word": "detector",
-     "clues": [
-      "sensor"
-     ]
+      "word": "genetic",
+      "clues": [
+        "genetical"
+      ]
     },
     {
-     "word": "development",
-     "clues": [
-      "land developed for some purpose"
-     ]
+      "word": "genuine",
+      "clues": [
+        "not fake or counterfeit"
+      ]
     },
     {
-     "word": "development",
-     "clues": [
-      "growth",
-      " growing",
-      " maturation"
-     ]
+      "word": "gesture",
+      "clues": [
+        "motion of hands or body"
+      ]
     },
     {
-     "word": "deviation",
-     "clues": [
-      "diversion",
-      " digression",
-      " deflection"
-     ]
+      "word": "get",
+      "clues": [
+        "acquire"
+      ]
     },
     {
-     "word": "diagram",
-     "clues": [
-      "drawing"
-     ]
+      "word": "ghost",
+      "clues": [
+        "visible disembodied soul"
+      ]
     },
     {
-     "word": "dialect",
-     "clues": [
-      "idiom",
-      " special language"
-     ]
+      "word": "ghostwriter",
+      "clues": [
+        "ghost"
+      ]
     },
     {
-     "word": "dialogue",
-     "clues": [
-      "lines spoken in drama or fiction"
-     ]
+      "word": "giant",
+      "clues": [
+        "hulk",
+        " very large person"
+      ]
     },
     {
-     "word": "dialogue",
-     "clues": [
-      "dialog",
-      " conversation"
-     ]
+      "word": "gift",
+      "clues": [
+        "present"
+      ]
     },
     {
-     "word": "diameter",
-     "clues": [
-      "line through the center of a circle"
-     ]
+      "word": "girl",
+      "clues": [
+        "female child"
+      ]
     },
     {
-     "word": "diamond",
-     "clues": [
-      "gem"
-     ]
+      "word": "girlfriend",
+      "clues": [
+        "lady friend"
+      ]
     },
     {
-     "word": "dictionary",
-     "clues": [
-      "lexicon"
-     ]
+      "word": "give",
+      "clues": [
+        "collapse",
+        " fall in",
+        " cave in",
+        " give way",
+        "pass",
+        " hand",
+        " reach",
+        "render",
+        " yield",
+        " return",
+        " generate",
+        "yield",
+        " be flexible",
+        "present",
+        " give as a gift"
+      ]
     },
     {
-     "word": "diet",
-     "clues": [
-      "dieting"
-     ]
+      "word": "glacier",
+      "clues": [
+        "mass of ice"
+      ]
     },
     {
-     "word": "difference",
-     "clues": [
-      "dispute",
-      " difference of opinion",
-      " conflict"
-     ]
+      "word": "glance",
+      "clues": [
+        "peek",
+        "glimpse",
+        " quick look"
+      ]
     },
     {
-     "word": "difference",
-     "clues": [
-      "remainder",
-      " number that remains after subtraction"
-     ]
+      "word": "glare",
+      "clues": [
+        "glower"
+      ]
     },
     {
-     "word": "difficulty",
-     "clues": [
-      "trouble"
-     ]
+      "word": "glass",
+      "clues": [
+        "drinking glass",
+        "brittle transparent solid",
+        "looking glass",
+        " mirror"
+      ]
     },
     {
-     "word": "difficulty",
-     "clues": [
-      "difficultness"
-     ]
+      "word": "glasses",
+      "clues": [
+        "eyeglasses",
+        " spectacles"
+      ]
     },
     {
-     "word": "dignity",
-     "clues": [
-      "self-respect",
-      " self-esteem",
-      " self-regard"
-     ]
+      "word": "glide",
+      "clues": [
+        "move smoothly and effortlessly"
+      ]
     },
     {
-     "word": "dilemma",
-     "clues": [
-      "quandary"
-     ]
+      "word": "glimpse",
+      "clues": [
+        "brief view"
+      ]
     },
     {
-     "word": "dimension",
-     "clues": [
-      "magnitude"
-     ]
+      "word": "global",
+      "clues": [
+        "universal",
+        " worldwide"
+      ]
     },
     {
-     "word": "dinner",
-     "clues": [
-      "supper"
-     ]
+      "word": "gloom",
+      "clues": [
+        "gloominess",
+        " glumness",
+        " atmosphere of depression"
+      ]
     },
     {
-     "word": "diplomat",
-     "clues": [
-      "official engaged in international negotiations"
-     ]
+      "word": "glory",
+      "clues": [
+        "prestige"
+      ]
     },
     {
-     "word": "direction",
-     "clues": [
-      "course",
-      " orientation"
-     ]
+      "word": "glove",
+      "clues": [
+        "handwear"
+      ]
     },
     {
-     "word": "direction",
-     "clues": [
-      "guidance",
-      " counsel"
-     ]
+      "word": "glow",
+      "clues": [
+        "steady even light",
+        "emit light"
+      ]
     },
     {
-     "word": "director",
-     "clues": [
-      "conductor",
-      " music director"
-     ]
+      "word": "glue",
+      "clues": [
+        "adhesive"
+      ]
     },
     {
-     "word": "director",
-     "clues": [
-      "member of a board of directors"
-     ]
+      "word": "go",
+      "clues": [
+        "move"
+      ]
     },
     {
-     "word": "directory",
-     "clues": [
-      "alphabetical list of names and addresses"
-     ]
+      "word": "goal",
+      "clues": [
+        "successful attempt at scoring",
+        "sports equipment",
+        "finish",
+        " destination"
+      ]
     },
     {
-     "word": "disability",
-     "clues": [
-      "disablement",
-      " handicap",
-      " impairment"
-     ]
+      "word": "goalkeeper",
+      "clues": [
+        "goalie",
+        " goaltender"
+      ]
     },
     {
-     "word": "disagreement",
-     "clues": [
-      "dissension",
-      " dissonance",
-      " discord"
-     ]
+      "word": "goat",
+      "clues": [
+        "domestic animal"
+      ]
     },
     {
-     "word": "disappointment",
-     "clues": [
-      "letdown"
-     ]
+      "word": "god",
+      "clues": [
+        "deity",
+        " divinity"
+      ]
     },
     {
-     "word": "disaster",
-     "clues": [
-      "calamity",
-      " catastrophe",
-      " tragedy"
-     ]
+      "word": "gold",
+      "clues": [
+        "Au",
+        " atomic number 79"
+      ]
     },
     {
-     "word": "discipline",
-     "clues": [
-      "correction",
-      " punishment"
-     ]
+      "word": "golf",
+      "clues": [
+        "golf game"
+      ]
     },
     {
-     "word": "disco",
-     "clues": [
-      "discotheque"
-     ]
+      "word": "good",
+      "clues": [
+        "goodness",
+        " moral excellence",
+        "commodity",
+        " trade good",
+        "beneficial",
+        " salutary",
+        "just",
+        " upright",
+        " virtuous"
+      ]
     },
     {
-     "word": "discount",
-     "clues": [
-      "price reduction",
-      " deduction"
-     ]
+      "word": "gossip",
+      "clues": [
+        "scuttlebutt"
+      ]
     },
     {
-     "word": "sermon",
-     "clues": [
-      "preaching",
-      " discourse"
-     ]
+      "word": "government",
+      "clues": [
+        "authorities",
+        " regime"
+      ]
     },
     {
-     "word": "discovery",
-     "clues": [
-      "breakthrough",
-      " find"
-     ]
+      "word": "governor",
+      "clues": [
+        "head of a state"
+      ]
     },
     {
-     "word": "discrimination",
-     "clues": [
-      "unfair treatment"
-     ]
+      "word": "gown",
+      "clues": [
+        "robe for ceremonial occasions"
+      ]
     },
     {
-     "word": "dish",
-     "clues": [
-      "container"
-     ]
+      "word": "grace",
+      "clues": [
+        "beauty of movement",
+        "good will",
+        " kindness"
+      ]
     },
     {
-     "word": "dish",
-     "clues": [
-      "dish aerial",
-      " dish antenna"
-     ]
+      "word": "gradient",
+      "clues": [
+        "grade of a slope"
+      ]
     },
     {
-     "word": "dish",
-     "clues": [
-      "item of prepared food"
-     ]
+      "word": "gradual",
+      "clues": [
+        "proceeding in small stages"
+      ]
     },
     {
-     "word": "disk",
-     "clues": [
-      "disc",
-      " flat circular plate"
-     ]
+      "word": "graduate",
+      "clues": [
+        "alumnus",
+        " alumna",
+        " alum",
+        " grad",
+        "receive an academic degree"
+      ]
     },
     {
-     "word": "dismissal",
-     "clues": [
-      "pink slip"
-     ]
+      "word": "grain",
+      "clues": [
+        "food grain",
+        " cereal",
+        "small hard particle"
+      ]
     },
     {
-     "word": "disorder",
-     "clues": [
-      "disorderliness",
-      " mess"
-     ]
+      "word": "grand",
+      "clues": [
+        "luxurious",
+        " opulent",
+        " sumptuous"
+      ]
     },
     {
-     "word": "display",
-     "clues": [
-      "exhibit",
-      " showing"
-     ]
+      "word": "grandfather",
+      "clues": [
+        "gramps",
+        " grandad"
+      ]
     },
     {
-     "word": "disposition",
-     "clues": [
-      "temperament"
-     ]
+      "word": "grandmother",
+      "clues": [
+        "grandma"
+      ]
     },
     {
-     "word": "distance",
-     "clues": [
-      "property created by the space between two objects or points"
-     ]
+      "word": "grant",
+      "clues": [
+        "monetary aid"
+      ]
     },
     {
-     "word": "distance",
-     "clues": [
-      "aloofness"
-     ]
+      "word": "graphic",
+      "clues": [
+        "explicit",
+        " descriptive",
+        "pictorial",
+        " lifelike",
+        " vivid"
+      ]
     },
     {
-     "word": "distortion",
-     "clues": [
-      "misrepresenting"
-     ]
+      "word": "grass",
+      "clues": [
+        "lawn",
+        "pot",
+        " dope",
+        " weed",
+        " Mary Jane",
+        " marijuana"
+      ]
     },
     {
-     "word": "distortion",
-     "clues": [
-      "optical aberration"
-     ]
+      "word": "grateful",
+      "clues": [
+        "thankful"
+      ]
     },
     {
-     "word": "distributor",
-     "clues": [
-      "marketing company"
-     ]
+      "word": "grave",
+      "clues": [
+        "tomb"
+      ]
     },
     {
-     "word": "district",
-     "clues": [
-      "territory",
-      " territorial dominion"
-     ]
+      "word": "gravel",
+      "clues": [
+        "crushed rock"
+      ]
     },
     {
-     "word": "disturbance",
-     "clues": [
-      "disruption",
-      " commotion",
-      " stir"
-     ]
+      "word": "gravity",
+      "clues": [
+        "graveness",
+        " sobriety",
+        " soberness",
+        " somberness",
+        "gravitation",
+        " gravitational force"
+      ]
     },
     {
-     "word": "dividend",
-     "clues": [
-      "bonus"
-     ]
+      "word": "graze",
+      "clues": [
+        "pasture"
+      ]
     },
     {
-     "word": "division",
-     "clues": [
-      "arithmetic operation"
-     ]
+      "word": "great",
+      "clues": [
+        "large in size",
+        " number or extent",
+        "outstanding",
+        " very valuable"
+      ]
     },
     {
-     "word": "division",
-     "clues": [
-      "army unit"
-     ]
+      "word": "green",
+      "clues": [
+        "Green",
+        " environmentalist",
+        "unripe",
+        " unripened",
+        "greenness",
+        " viridity"
+      ]
     },
     {
-     "word": "division",
-     "clues": [
-      "administrative unit"
-     ]
+      "word": "greet",
+      "clues": [
+        "send greetings"
+      ]
     },
     {
-     "word": "doctor",
-     "clues": [
-      "doc",
-      " physician",
-      " MD"
-     ]
+      "word": "greeting",
+      "clues": [
+        "salutation"
+      ]
     },
     {
-     "word": "doctor",
-     "clues": [
-      "Dr.",
-      " person who holds Ph.D. degree"
-     ]
+      "word": "gregarious",
+      "clues": [
+        "sociable"
+      ]
     },
     {
-     "word": "document",
-     "clues": [
-      "written document",
-      " papers"
-     ]
+      "word": "grief",
+      "clues": [
+        "heartache",
+        " heartbreak",
+        " brokenheartedness"
+      ]
     },
     {
-     "word": "dog",
-     "clues": [
-      "domestic dog"
-     ]
+      "word": "grimace",
+      "clues": [
+        "face",
+        " contorted facial expression"
+      ]
     },
     {
-     "word": "hotdog",
-     "clues": [
-      "frankfurter"
-     ]
+      "word": "grind",
+      "clues": [
+        "mash",
+        " crunch"
+      ]
     },
     {
-     "word": "doll",
-     "clues": [
-      "toy"
-     ]
+      "word": "grip",
+      "clues": [
+        "grasp",
+        " controlling influence"
+      ]
     },
     {
-     "word": "dollar",
-     "clues": [
-      "dollar bill",
-      " buck"
-     ]
+      "word": "groan",
+      "clues": [
+        "moan"
+      ]
     },
     {
-     "word": "dome",
-     "clues": [
-      "hemispherical roof"
-     ]
+      "word": "ground",
+      "clues": [
+        "land",
+        " dry land",
+        " earth",
+        " solid ground",
+        " terra firma"
+      ]
     },
     {
-     "word": "domination",
-     "clues": [
-      "mastery"
-     ]
+      "word": "grounds",
+      "clues": [
+        "evidence",
+        " basis for belief or disbelief"
+      ]
     },
     {
-     "word": "donor",
-     "clues": [
-      "organ donor"
-     ]
+      "word": "grow",
+      "clues": [
+        "mature",
+        " maturate"
+      ]
     },
     {
-     "word": "door",
-     "clues": [
-      "swinging or sliding barrier"
-     ]
+      "word": "growth",
+      "clues": [
+        "abnormal proliferation of tissue",
+        "vegetation that has grown",
+        "increase",
+        " increment"
+      ]
     },
     {
-     "word": "dose",
-     "clues": [
-      "portion of medicine"
-     ]
+      "word": "grudge",
+      "clues": [
+        "grievance"
+      ]
     },
     {
-     "word": "double",
-     "clues": [
-      "twice the quantity"
-     ]
+      "word": "guarantee",
+      "clues": [
+        "warrant",
+        " warrantee"
+      ]
     },
     {
-     "word": "double",
-     "clues": [
-      "stunt man",
-      " stand-in per person"
-     ]
+      "word": "guard",
+      "clues": [
+        "ward",
+        " watch over",
+        " shield from danger or harm",
+        "watchman",
+        "bodyguard"
+      ]
     },
     {
-     "word": "doubt",
-     "clues": [
-      "question",
-      " dubiousness",
-      " doubtfulness"
-     ]
+      "word": "guerrilla",
+      "clues": [
+        "insurgent"
+      ]
     },
     {
-     "word": "doubt",
-     "clues": [
-      "uncertainty",
-      " incertitude",
-      " dubiety",
-      " doubtfulness"
-     ]
+      "word": "guess",
+      "clues": [
+        "make a guess"
+      ]
     },
     {
-     "word": "dough",
-     "clues": [
-      "flour mixture"
-     ]
+      "word": "guest",
+      "clues": [
+        "invitee"
+      ]
     },
     {
-     "word": "dozen",
-     "clues": [
-      "twelve"
-     ]
+      "word": "guide",
+      "clues": [
+        "someone who shows the way",
+        "guidebook"
+      ]
     },
     {
-     "word": "draft",
-     "clues": [
-      "conscription",
-      " selective service"
-     ]
+      "word": "guideline",
+      "clues": [
+        "guidepost",
+        " rule of thumb"
+      ]
     },
     {
-     "word": "draft",
-     "clues": [
-      "draft copy",
-      " preliminary version"
-     ]
+      "word": "guilt",
+      "clues": [
+        "guiltiness"
+      ]
     },
     {
-     "word": "draft",
-     "clues": [
-      "draught",
-      " air current"
-     ]
+      "word": "guitar",
+      "clues": [
+        "stringed instrument"
+      ]
     },
     {
-     "word": "dragon",
-     "clues": [
-      "mythical creature"
-     ]
+      "word": "gun",
+      "clues": [
+        "weapon"
+      ]
     },
     {
-     "word": "drain",
-     "clues": [
-      "drainpipe",
-      " waste pipe"
-     ]
+      "word": "gutter",
+      "clues": [
+        "trough",
+        " channel for collecting rainwater"
+      ]
     },
     {
-     "word": "drama",
-     "clues": [
-      "dramatic event"
-     ]
+      "word": "habit",
+      "clues": [
+        "established custom"
+      ]
     },
     {
-     "word": "drawer",
-     "clues": [
-      "part of a piece of furniture"
-     ]
+      "word": "habitat",
+      "clues": [
+        "home ground"
+      ]
     },
     {
-     "word": "drawing",
-     "clues": [
-      "lottery"
-     ]
+      "word": "hair",
+      "clues": [
+        "natural body covering"
+      ]
     },
     {
-     "word": "drawing",
-     "clues": [
-      "representation",
-      " artwork"
-     ]
+      "word": "haircut",
+      "clues": [
+        "hairstyle"
+      ]
     },
     {
-     "word": "dream",
-     "clues": [
-      "dreaming"
-     ]
+      "word": "half",
+      "clues": [
+        "one-half",
+        " one of two equal parts"
+      ]
     },
     {
-     "word": "dream",
-     "clues": [
-      "ambition",
-      " aspiration"
-     ]
+      "word": "hall",
+      "clues": [
+        "large building for meetings or entertainment",
+        "large room for gatherings or entertainment",
+        "hallway"
+      ]
     },
     {
-     "word": "dressing",
-     "clues": [
-      "medical dressing"
-     ]
+      "word": "hallway",
+      "clues": [
+        "passage",
+        " corridor"
+      ]
     },
     {
-     "word": "drift",
-     "clues": [
-      "something heaped up by wind or water"
-     ]
+      "word": "halt",
+      "clues": [
+        "freeze",
+        " interruption",
+        " temporary suspension"
+      ]
     },
     {
-     "word": "drift",
-     "clues": [
-      "gradual departure from a course"
-     ]
+      "word": "ham",
+      "clues": [
+        "meat"
+      ]
     },
     {
-     "word": "drill",
-     "clues": [
-      "training of soldiers to march"
-     ]
+      "word": "hammer",
+      "clues": [
+        "hand tool"
+      ]
     },
     {
-     "word": "drill",
-     "clues": [
-      "tool with a sharp point"
-     ]
+      "word": "hand",
+      "clues": [
+        "helping hand",
+        "deal",
+        " cards held in a game by a player",
+        "hired hand",
+        " hired man",
+        "round of applause",
+        "manus",
+        " mitt",
+        " paw"
+      ]
     },
     {
-     "word": "drink",
-     "clues": [
-      "beverage",
-      " drinkable",
-      " potable"
-     ]
+      "word": "handicap",
+      "clues": [
+        "hinder",
+        " hamper"
+      ]
     },
     {
-     "word": "drive",
-     "clues": [
-      "ride",
-      " journey"
-     ]
+      "word": "handy",
+      "clues": [
+        "easy to use"
+      ]
     },
     {
-     "word": "drive",
-     "clues": [
-      "driveway"
-     ]
+      "word": "hang",
+      "clues": [
+        "hang up",
+        " suspend"
+      ]
     },
     {
-     "word": "drive",
-     "clues": [
-      "high motivation"
-     ]
+      "word": "happen",
+      "clues": [
+        "go on",
+        " occur"
+      ]
     },
     {
-     "word": "driver",
-     "clues": [
-      "operator of a motor vehicle"
-     ]
+      "word": "harass",
+      "clues": [
+        "hassle",
+        " plague",
+        " molest"
+      ]
     },
     {
-     "word": "drop",
-     "clues": [
-      "cliff",
-      " drop-off"
-     ]
+      "word": "harbor",
+      "clues": [
+        "seaport"
+      ]
     },
     {
-     "word": "drop",
-     "clues": [
-      "bead",
-      " pearl"
-     ]
+      "word": "hard",
+      "clues": [
+        "not yielding to pressure"
+      ]
     },
     {
-     "word": "drug",
-     "clues": [
-      "substance used as a medicine or narcotic"
-     ]
+      "word": "hardship",
+      "clues": [
+        "adversity"
+      ]
     },
     {
-     "word": "drum",
-     "clues": [
-      "tympan",
-      " percussion instrument"
-     ]
+      "word": "hardware",
+      "clues": [
+        "computer hardware"
+      ]
     },
     {
-     "word": "drum",
-     "clues": [
-      "barrel"
-     ]
+      "word": "harm",
+      "clues": [
+        "do harm to"
+      ]
     },
     {
-     "word": "duck",
-     "clues": [
-      "bird"
-     ]
+      "word": "harmful",
+      "clues": [
+        "noxious"
+      ]
     },
     {
-     "word": "duke",
-     "clues": [
-      "nobleman"
-     ]
+      "word": "harmony",
+      "clues": [
+        "musical harmony",
+        "concord",
+        " harmoniousness",
+        " compatibility"
+      ]
     },
     {
-     "word": "duty",
-     "clues": [
-      "work that you are obliged to perform"
-     ]
+      "word": "harsh",
+      "clues": [
+        "coarse",
+        " large-grained or rough to the touch"
+      ]
     },
     {
-     "word": "duty",
-     "clues": [
-      "tariff"
-     ]
+      "word": "harvest",
+      "clues": [
+        "harvest time"
+      ]
     },
     {
-     "word": "eagle",
-     "clues": [
-      "bird"
-     ]
+      "word": "hat",
+      "clues": [
+        "headdress"
+      ]
     },
     {
-     "word": "eagle",
-     "clues": [
-      "emblem representing power"
-     ]
+      "word": "hate",
+      "clues": [
+        "detest",
+        " loathe"
+      ]
     },
     {
-     "word": "ear",
-     "clues": [
-      "sense organ"
-     ]
+      "word": "haul",
+      "clues": [
+        "transport"
+      ]
     },
     {
-     "word": "earthquake",
-     "clues": [
-      "quake",
-      " seism"
-     ]
+      "word": "haunt",
+      "clues": [
+        "stalk"
+      ]
     },
     {
-     "word": "east",
-     "clues": [
-      "East",
-      " Orient"
-     ]
+      "word": "have",
+      "clues": [
+        "have got"
+      ]
     },
     {
-     "word": "east",
-     "clues": [
-      "due east",
-      " E"
-     ]
+      "word": "hay",
+      "clues": [
+        "grass mowed and cured"
+      ]
     },
     {
-     "word": "echo",
-     "clues": [
-      "reverberation",
-      " sound reflection"
-     ]
+      "word": "head",
+      "clues": [
+        "chief",
+        " top dog",
+        " person who is in charge",
+        "obverse side of a tail",
+        "body part"
+      ]
     },
     {
-     "word": "economics",
-     "clues": [
-      "economic science"
-     ]
+      "word": "headline",
+      "clues": [
+        "newspaper headline"
+      ]
     },
     {
-     "word": "economist",
-     "clues": [
-      "economic expert"
-     ]
+      "word": "headquarters",
+      "clues": [
+        "central office",
+        " main office"
+      ]
     },
     {
-     "word": "economy",
-     "clues": [
-      "thriftiness",
-      " frugality"
-     ]
+      "word": "heal",
+      "clues": [
+        "cure"
+      ]
     },
     {
-     "word": "economy",
-     "clues": [
-      "economic system"
-     ]
+      "word": "health",
+      "clues": [
+        "general condition of body and mind",
+        "wellness",
+        " healthy state of wellbeing"
+      ]
     },
     {
-     "word": "edge",
-     "clues": [
-      "sharp side formed by the intersection of two surfaces of an object"
-     ]
+      "word": "healthy",
+      "clues": [
+        "fit"
+      ]
     },
     {
-     "word": "edge",
-     "clues": [
-      "slight competitive advantage"
-     ]
+      "word": "hear",
+      "clues": [
+        "perceive sound"
+      ]
     },
     {
-     "word": "edition",
-     "clues": [
-      "publication"
-     ]
+      "word": "heart",
+      "clues": [
+        "bodily organ",
+        "figure with rounded sides curving inward at the top",
+        "locus of feelings and intuitions",
+        "playing card in the major suit of hearts"
+      ]
     },
     {
-     "word": "education",
-     "clues": [
-      "instruction",
-      " teaching",
-      " pedagogy"
-     ]
+      "word": "heat",
+      "clues": [
+        "heating system",
+        "passion"
+      ]
     },
     {
-     "word": "education",
-     "clues": [
-      "knowledge acquired by learning"
-     ]
+      "word": "heaven",
+      "clues": [
+        "paradise",
+        " place of complete bliss"
+      ]
     },
     {
-     "word": "effect",
-     "clues": [
-      "impression"
-     ]
+      "word": "heavy",
+      "clues": [
+        "of great physical weight"
+      ]
     },
     {
-     "word": "effect",
-     "clues": [
-      "consequence",
-      " outcome",
-      " result"
-     ]
+      "word": "heel",
+      "clues": [
+        "back of the foot"
+      ]
     },
     {
-     "word": "effort",
-     "clues": [
-      "attempt",
-      " endeavor"
-     ]
+      "word": "height",
+      "clues": [
+        "altitude"
+      ]
     },
     {
-     "word": "egg",
-     "clues": [
-      "eggs",
-      " food"
-     ]
+      "word": "heir",
+      "clues": [
+        "inheritor",
+        " heritor"
+      ]
     },
     {
-     "word": "ego",
-     "clues": [
-      "egotism",
-      " self-importance"
-     ]
+      "word": "helicopter",
+      "clues": [
+        "chopper"
+      ]
     },
     {
-     "word": "elbow",
-     "clues": [
-      "elbow joint"
-     ]
+      "word": "hell",
+      "clues": [
+        "infernal region",
+        " netherworld"
+      ]
     },
     {
-     "word": "election",
-     "clues": [
-      "vote"
-     ]
+      "word": "helmet",
+      "clues": [
+        "headgear"
+      ]
     },
     {
-     "word": "electron",
-     "clues": [
-      "elementary particle"
-     ]
+      "word": "help",
+      "clues": [
+        "aid",
+        " assist",
+        " assistance",
+        "assistant",
+        " helper",
+        " supporter",
+        "assist",
+        " aid"
+      ]
     },
     {
-     "word": "electronics",
-     "clues": [
-      "branch of physics"
-     ]
+      "word": "helpless",
+      "clues": [
+        "incapacitated"
+      ]
     },
     {
-     "word": "element",
-     "clues": [
-      "component",
-      " constituent"
-     ]
+      "word": "hemisphere",
+      "clues": [
+        "cerebral hemisphere",
+        "half of the terrestrial globe"
+      ]
     },
     {
-     "word": "element",
-     "clues": [
-      "chemical element"
-     ]
+      "word": "hen",
+      "clues": [
+        "female chicken"
+      ]
     },
     {
-     "word": "elephant",
-     "clues": [
-      "pachyderm"
-     ]
+      "word": "herb",
+      "clues": [
+        "cooking herb"
+      ]
     },
     {
-     "word": "elite",
-     "clues": [
-      "elite group"
-     ]
+      "word": "herd",
+      "clues": [
+        "group of cattle"
+      ]
     },
     {
-     "word": "embarrassment",
-     "clues": [
-      "shame"
-     ]
+      "word": "hero",
+      "clues": [
+        "person with exceptional courage"
+      ]
     },
     {
-     "word": "embryo",
-     "clues": [
-      "conceptus",
-      " fertilized egg"
-     ]
+      "word": "heroin",
+      "clues": [
+        "drug"
+      ]
     },
     {
-     "word": "emergency",
-     "clues": [
-      "exigency",
-      " pinch",
-      " crisis"
-     ]
+      "word": "hesitate",
+      "clues": [
+        "pause or hold back in uncertainty or unwillingness"
+      ]
     },
     {
-     "word": "emotion",
-     "clues": [
-      "strong feeling"
-     ]
+      "word": "hiccup",
+      "clues": [
+        "breathe spasmodically"
+      ]
     },
     {
-     "word": "emphasis",
-     "clues": [
-      "accent"
-     ]
+      "word": "hide",
+      "clues": [
+        "conceal",
+        "hide out",
+        " be or go into hiding"
+      ]
     },
     {
-     "word": "empire",
-     "clues": [
-      "monarchy"
-     ]
+      "word": "hierarchy",
+      "clues": [
+        "power structure",
+        " pecking order"
+      ]
     },
     {
-     "word": "employee",
-     "clues": [
-      "worker"
-     ]
+      "word": "high",
+      "clues": [
+        "greater than normal in degree or intensity or amount"
+      ]
     },
     {
-     "word": "end",
-     "clues": [
-      "goal"
-     ]
+      "word": "highlight",
+      "clues": [
+        "high spot"
+      ]
     },
     {
-     "word": "end",
-     "clues": [
-      "conclusion",
-      " close",
-      " closing",
-      " ending"
-     ]
+      "word": "highway",
+      "clues": [
+        "expressway",
+        " freeway",
+        " state highway"
+      ]
     },
     {
-     "word": "end",
-     "clues": [
-      "boundary"
-     ]
+      "word": "hike",
+      "clues": [
+        "walk for pleasure",
+        " take a hike"
+      ]
     },
     {
-     "word": "enemy",
-     "clues": [
-      "hostile people"
-     ]
+      "word": "hilarious",
+      "clues": [
+        "uproarious"
+      ]
     },
     {
-     "word": "energy",
-     "clues": [
-      "vigor"
-     ]
+      "word": "hill",
+      "clues": [
+        "elevation of the land"
+      ]
     },
     {
-     "word": "engagement",
-     "clues": [
-      "betrothal"
-     ]
+      "word": "hip",
+      "clues": [
+        "either side of the body below the waist and above the thigh"
+      ]
     },
     {
-     "word": "engine",
-     "clues": [
-      "motor"
-     ]
+      "word": "history",
+      "clues": [
+        "discipline that interprets past events",
+        "account",
+        " chronicle",
+        " story",
+        "the aggregate of past events"
+      ]
     },
     {
-     "word": "engine",
-     "clues": [
-      "locomotive"
-     ]
+      "word": "hit",
+      "clues": [
+        "strike",
+        " run into",
+        " collide with",
+        "strike"
+      ]
     },
     {
-     "word": "engineer",
-     "clues": [
-      "applied scientist",
-      " technologist"
-     ]
+      "word": "hobby",
+      "clues": [
+        "pursuit",
+        " by-line",
+        " hobby",
+        " sideline",
+        " spare-time activity"
+      ]
     },
     {
-     "word": "entertainment",
-     "clues": [
-      "amusement"
-     ]
+      "word": "hold",
+      "clues": [
+        "reserve",
+        " book",
+        "bear",
+        " carry",
+        " contain"
+      ]
     },
     {
-     "word": "enthusiasm",
-     "clues": [
-      "lively interest"
-     ]
+      "word": "hole",
+      "clues": [
+        "opening into or through something"
+      ]
     },
     {
-     "word": "entitlement",
-     "clues": [
-      "right granted by law or contract"
-     ]
+      "word": "holiday",
+      "clues": [
+        "day on which work is suspended",
+        "vacation"
+      ]
     },
     {
-     "word": "entry",
-     "clues": [
-      "entrance",
-      " entranceway",
-      " entryway"
-     ]
+      "word": "home",
+      "clues": [
+        "dwelling",
+        " domicile",
+        " abode",
+        " habitation",
+        "nursing home",
+        " rest home"
+      ]
     },
     {
-     "word": "entry",
-     "clues": [
-      "submission"
-     ]
+      "word": "homosexual",
+      "clues": [
+        "gay"
+      ]
     },
     {
-     "word": "environment",
-     "clues": [
-      "environs",
-      " surroundings"
-     ]
+      "word": "honest",
+      "clues": [
+        "sincere"
+      ]
     },
     {
-     "word": "episode",
-     "clues": [
-      "installment",
-      " part of a broadcast serial"
-     ]
+      "word": "honey",
+      "clues": [
+        "sweet food"
+      ]
     },
     {
-     "word": "equation",
-     "clues": [
-      "mathematical statement"
-     ]
+      "word": "honor",
+      "clues": [
+        "honorableness",
+        "laurels"
+      ]
     },
     {
-     "word": "era",
-     "clues": [
-      "epoch"
-     ]
+      "word": "hook",
+      "clues": [
+        "bent implement",
+        "fasten with a hook"
+      ]
     },
     {
-     "word": "error",
-     "clues": [
-      "mistake",
-      " fault"
-     ]
+      "word": "hope",
+      "clues": [
+        "wish",
+        " desire and expectancy"
+      ]
     },
     {
-     "word": "error",
-     "clues": [
-      "erroneous belief"
-     ]
+      "word": "horizon",
+      "clues": [
+        "skyline"
+      ]
     },
     {
-     "word": "essay",
-     "clues": [
-      "literary composition"
-     ]
+      "word": "horn",
+      "clues": [
+        "car horn",
+        "bony outgrowths on the head"
+      ]
     },
     {
-     "word": "perfume",
-     "clues": [
-      "essence"
-     ]
+      "word": "horoscope",
+      "clues": [
+        "prediction of the future"
+      ]
     },
     {
-     "word": "estate",
-     "clues": [
-      "everything you own"
-     ]
+      "word": "horror",
+      "clues": [
+        "repugnance",
+        " repulsion",
+        " revulsion"
+      ]
     },
     {
-     "word": "estimate",
-     "clues": [
-      "estimation",
-      " approximation"
-     ]
+      "word": "horse",
+      "clues": [
+        "animal",
+        "knight",
+        " chessman"
+      ]
     },
     {
-     "word": "estimate",
-     "clues": [
-      "esteem",
-      " respect"
-     ]
+      "word": "horseshoe",
+      "clues": [
+        "shoe for horses"
+      ]
     },
     {
-     "word": "estimate",
-     "clues": [
-      "appraisal of value"
-     ]
+      "word": "hospital",
+      "clues": [
+        "infirmary"
+      ]
     },
     {
-     "word": "estimate",
-     "clues": [
-      "likely cost"
-     ]
+      "word": "hospitality",
+      "clues": [
+        "cordial reception",
+        " kindness in welcoming guests or strangers"
+      ]
     },
     {
-     "word": "ethics",
-     "clues": [
-      "moral philosophy"
-     ]
+      "word": "host",
+      "clues": [
+        "be the host",
+        "inviter",
+        "master of ceremonies",
+        " emcee"
+      ]
     },
     {
-     "word": "Europe",
-     "clues": [
-      "continent"
-     ]
+      "word": "hostage",
+      "clues": [
+        "prisoner held for ransom"
+      ]
     },
     {
-     "word": "evening",
-     "clues": [
-      "eve"
-     ]
+      "word": "hostile",
+      "clues": [
+        "characterized by enmity or ill will"
+      ]
     },
     {
-     "word": "evolution",
-     "clues": [
-      "phylogeny",
-      " phylogenesis"
-     ]
+      "word": "hostility",
+      "clues": [
+        "aggression",
+        "enmity",
+        " antagonism"
+      ]
     },
     {
-     "word": "examination",
-     "clues": [
-      "test"
-     ]
+      "word": "hot",
+      "clues": [
+        "being of high temperature",
+        "marked by intensity",
+        " vehemence",
+        " passion"
+      ]
     },
     {
-     "word": "example",
-     "clues": [
-      "illustration",
-      " instance",
-      " representative"
-     ]
+      "word": "hotdog",
+      "clues": [
+        "frankfurter"
+      ]
     },
     {
-     "word": "example",
-     "clues": [
-      "exemplar",
-      " model",
-      " good example"
-     ]
+      "word": "hour",
+      "clues": [
+        "time of day",
+        " clock time",
+        "hr",
+        " 60 minutes",
+        " period of time"
+      ]
     },
     {
-     "word": "excavation",
-     "clues": [
-      "dig",
-      " archeological site"
-     ]
+      "word": "house",
+      "clues": [
+        "legislature",
+        "dwelling"
+      ]
     },
     {
-     "word": "exception",
-     "clues": [
-      "instance that does not conform to a rule"
-     ]
+      "word": "houseplant",
+      "clues": [
+        "plant for indoor use"
+      ]
     },
     {
-     "word": "excess",
-     "clues": [
-      "surplus"
-     ]
+      "word": "housewife",
+      "clues": [
+        "homemaker"
+      ]
     },
     {
-     "word": "exchange",
-     "clues": [
-      "act of changing one thing for another"
-     ]
+      "word": "housing",
+      "clues": [
+        "lodging",
+        " living accommodations"
+      ]
     },
     {
-     "word": "exchange",
-     "clues": [
-      "mutual expression of views"
-     ]
+      "word": "hover",
+      "clues": [
+        "levitate"
+      ]
     },
     {
-     "word": "excitement",
-     "clues": [
-      "agitation",
-      " turmoil",
-      " upheaval",
-      " hullabaloo"
-     ]
+      "word": "huge",
+      "clues": [
+        "immense",
+        " vast"
+      ]
     },
     {
-     "word": "excitement",
-     "clues": [
-      "excitation",
-      " fervor",
-      " mental state"
-     ]
+      "word": "huma",
+      "clues": [
+        "body] physical body"
+      ]
     },
     {
-     "word": "excuse",
-     "clues": [
-      "alibi",
-      " exculpation",
-      " self-justification"
-     ]
+      "word": "humanity",
+      "clues": [
+        "humanness"
+      ]
     },
     {
-     "word": "execution",
-     "clues": [
-      "capital punishment",
-      " death penalty"
-     ]
+      "word": "humor",
+      "clues": [
+        "sense of humor"
+      ]
     },
     {
-     "word": "executive",
-     "clues": [
-      "branch of government"
-     ]
+      "word": "hunter",
+      "clues": [
+        "huntsman"
+      ]
     },
     {
-     "word": "executive",
-     "clues": [
-      "administrator"
-     ]
+      "word": "hunting",
+      "clues": [
+        "hunt"
+      ]
     },
     {
-     "word": "exemption",
-     "clues": [
-      "immunity"
-     ]
+      "word": "hurl",
+      "clues": [
+        "cast",
+        " hurtle",
+        " throw forcefully"
+      ]
     },
     {
-     "word": "exercise",
-     "clues": [
-      "exercising",
-      " physical exercise"
-     ]
+      "word": "hurt",
+      "clues": [
+        "ache",
+        " be the source of pain"
+      ]
     },
     {
-     "word": "exhibition",
-     "clues": [
-      "exposition",
-      " expo"
-     ]
+      "word": "husband",
+      "clues": [
+        "hubby"
+      ]
     },
     {
-     "word": "exile",
-     "clues": [
-      "deportation",
-      " expatriation",
-      " expulsion"
-     ]
+      "word": "hut",
+      "clues": [
+        "hovel",
+        " hutch",
+        " shack"
+      ]
     },
     {
-     "word": "exit",
-     "clues": [
-      "issue",
-      " outlet",
-      " way out"
-     ]
+      "word": "hypnothize",
+      "clues": [
+        "mesmerize"
+      ]
     },
     {
-     "word": "expansion",
-     "clues": [
-      "enlargement"
-     ]
+      "word": "hypothesis",
+      "clues": [
+        "guess",
+        " conjecture",
+        " surmise",
+        " speculation"
+      ]
     },
     {
-     "word": "expectation",
-     "clues": [
-      "anticipation"
-     ]
+      "word": "hypothesize",
+      "clues": [
+        "speculate",
+        " theorize",
+        " conjecture"
+      ]
     },
     {
-     "word": "expenditure",
-     "clues": [
-      "outgo",
-      " outlay"
-     ]
+      "word": "ic",
+      "clues": [
+        "cream] frozen dessert"
+      ]
     },
     {
-     "word": "experience",
-     "clues": [
-      "accumulation of knowledge or skill"
-     ]
+      "word": "ice",
+      "clues": [
+        "frozen water"
+      ]
     },
     {
-     "word": "experiment",
-     "clues": [
-      "experimentation"
-     ]
+      "word": "idea",
+      "clues": [
+        "thought"
+      ]
     },
     {
-     "word": "expertise",
-     "clues": [
-      "expertness"
-     ]
+      "word": "ideal",
+      "clues": [
+        "paragon",
+        " model of excellence or perfection"
+      ]
     },
     {
-     "word": "exploration",
-     "clues": [
-      "geographic expedition"
-     ]
+      "word": "identification",
+      "clues": [
+        "identity papers"
+      ]
     },
     {
-     "word": "explosion",
-     "clues": [
-      "detonation",
-      " blowup"
-     ]
+      "word": "identify",
+      "clues": [
+        "name"
+      ]
     },
     {
-     "word": "exposure",
-     "clues": [
-      "vulnerability to the elements"
-     ]
+      "word": "identity",
+      "clues": [
+        "identicalness",
+        " indistinguishability",
+        "personal identity",
+        " individuality"
+      ]
     },
     {
-     "word": "expression",
-     "clues": [
-      "saying",
-      " locution"
-     ]
+      "word": "ideology",
+      "clues": [
+        "political theory"
+      ]
     },
     {
-     "word": "extension",
-     "clues": [
-      "wing",
-      " annex",
-      " addition to a building"
-     ]
+      "word": "ignite",
+      "clues": [
+        "light",
+        " light up"
+      ]
     },
     {
-     "word": "extension",
-     "clues": [
-      "telephone extension"
-     ]
+      "word": "ignorance",
+      "clues": [
+        "lack of knowledge"
+      ]
     },
     {
-     "word": "extension",
-     "clues": [
-      "delay of deadline"
-     ]
+      "word": "ignorant",
+      "clues": [
+        "lacking basic knowledge",
+        " naive",
+        " unsophisticated"
+      ]
     },
     {
-     "word": "extent",
-     "clues": [
-      "point or degree to which something extend"
-     ]
+      "word": "ignore",
+      "clues": [
+        "neglect",
+        " disregard"
+      ]
     },
     {
-     "word": "extraterrestrial",
-     "clues": [
-      "alien"
-     ]
+      "word": "illness",
+      "clues": [
+        "unwellness",
+        " malady",
+        " sickness"
+      ]
     },
     {
-     "word": "extreme",
-     "clues": [
-      "highest degree"
-     ]
+      "word": "illusion",
+      "clues": [
+        "false mental representation"
+      ]
     },
     {
-     "word": "eye",
-     "clues": [
-      "oculus",
-      " optic",
-      " organ of sight"
-     ]
+      "word": "illustrate",
+      "clues": [
+        "exemplify"
+      ]
     },
     {
-     "word": "eyebrow",
-     "clues": [
-      "brow"
-     ]
+      "word": "image",
+      "clues": [
+        "double",
+        " look-alike",
+        "mental image"
+      ]
     },
     {
-     "word": "facade",
-     "clues": [
-      "frontage",
-      " frontal"
-     ]
+      "word": "imagine",
+      "clues": [
+        "conceive of",
+        " ideate",
+        " envisage"
+      ]
     },
     {
-     "word": "face",
-     "clues": [
-      "human face"
-     ]
+      "word": "immune",
+      "clues": [
+        "resistant"
+      ]
     },
     {
-     "word": "facility",
-     "clues": [
-      "installation",
-      " building or place providing a particular service"
-     ]
+      "word": "impact",
+      "clues": [
+        "forceful consequence",
+        " strong effect",
+        "striking of one body against another"
+      ]
     },
     {
-     "word": "facility",
-     "clues": [
-      "adeptness",
-      " adroitness",
-      " deftness",
-      " quickness"
-     ]
+      "word": "imperial",
+      "clues": [
+        "relating to an empire"
+      ]
     },
     {
-     "word": "factor",
-     "clues": [
-      "anything that contributes causally to a result"
-     ]
+      "word": "implication",
+      "clues": [
+        "logical implication"
+      ]
     },
     {
-     "word": "factory",
-     "clues": [
-      "mill",
-      " manufacturing plant",
-      " manufactory"
-     ]
+      "word": "implicit",
+      "clues": [
+        "inexplicit"
+      ]
     },
     {
-     "word": "failure",
-     "clues": [
-      "loser",
-      " nonstarter",
-      " unsuccessful person"
-     ]
+      "word": "import",
+      "clues": [
+        "bring in from abroad",
+        "importation"
+      ]
     },
     {
-     "word": "failure",
-     "clues": [
-      "lack of success"
-     ]
+      "word": "important",
+      "clues": [
+        "significant"
+      ]
     },
     {
-     "word": "failure",
-     "clues": [
-      "bankruptcy"
-     ]
+      "word": "imposter",
+      "clues": [
+        "pretender",
+        " fake",
+        " faker",
+        " sham",
+        " fraud"
+      ]
     },
     {
-     "word": "fair",
-     "clues": [
-      "traveling show",
-      " carnival",
-      " funfair"
-     ]
+      "word": "impound",
+      "clues": [
+        "confiscate",
+        " seize"
+      ]
     },
     {
-     "word": "fair",
-     "clues": [
-      "promotional gathering of producers"
-     ]
+      "word": "impress",
+      "clues": [
+        "make a good impression"
+      ]
     },
     {
-     "word": "fairy",
-     "clues": [
-      "faery",
-      " faerie",
-      " sprite",
-      " magical creature"
-     ]
+      "word": "improve",
+      "clues": [
+        "better",
+        " amend",
+        " ameliorate"
+      ]
     },
     {
-     "word": "faith",
-     "clues": [
-      "religion",
-      " religious belief"
-     ]
+      "word": "improvement",
+      "clues": [
+        "condition superior to an earlier one"
+      ]
     },
     {
-     "word": "fall",
-     "clues": [
-      "drop",
-      " free descent"
-     ]
+      "word": "impulse",
+      "clues": [
+        "caprice",
+        " whim"
+      ]
     },
     {
-     "word": "descent",
-     "clues": [
-      "declivity",
-      " decline",
-      " fall"
-     ]
+      "word": "inappropriate",
+      "clues": [
+        "not suitable"
+      ]
     },
     {
-     "word": "fall",
-     "clues": [
-      "autumn"
-     ]
+      "word": "incapable",
+      "clues": [
+        "incompetent"
+      ]
     },
     {
-     "word": "twilight",
-     "clues": [
-      "dusk",
-      " nightfall"
-     ]
+      "word": "incentive",
+      "clues": [
+        "inducement",
+        " motivator",
+        " carrot"
+      ]
     },
     {
-     "word": "fame",
-     "clues": [
-      "celebrity",
-      " renown"
-     ]
+      "word": "inch",
+      "clues": [
+        "in",
+        " unit of length"
+      ]
     },
     {
-     "word": "family",
-     "clues": [
-      "folk",
-      " kinfolk",
-      " kinsfolk",
-      " kin"
-     ]
+      "word": "incident",
+      "clues": [
+        "event"
+      ]
     },
     {
-     "word": "fan",
-     "clues": [
-      "buff",
-      " devotee",
-      " lover"
-     ]
+      "word": "include",
+      "clues": [
+        "admit",
+        " let in",
+        "have as a part"
+      ]
     },
     {
-     "word": "fantasy",
-     "clues": [
-      "illusion",
-      " phantasy",
-      " fancy"
-     ]
+      "word": "incongruous",
+      "clues": [
+        "discrepant"
+      ]
     },
     {
-     "word": "fare",
-     "clues": [
-      "transportation fee"
-     ]
+      "word": "increase",
+      "clues": [
+        "become bigger or greater",
+        "increment"
+      ]
     },
     {
-     "word": "fashion",
-     "clues": [
-      "latest style",
-      " rage",
-      " fad"
-     ]
+      "word": "incredible",
+      "clues": [
+        "unbelievable"
+      ]
     },
     {
-     "word": "fat",
-     "clues": [
-      "excess bodily weight"
-     ]
+      "word": "inde",
+      "clues": [
+        "finger] forefinger"
+      ]
     },
     {
-     "word": "fat",
-     "clues": [
-      "soft greasy substance"
-     ]
+      "word": "index",
+      "clues": [
+        "alphabetical listing"
+      ]
     },
     {
-     "word": "father",
-     "clues": [
-      "male parent"
-     ]
+      "word": "indication",
+      "clues": [
+        "suggestion"
+      ]
     },
     {
-     "word": "fault",
-     "clues": [
-      "responsibility for a bad situation"
-     ]
+      "word": "indirect",
+      "clues": [
+        "not direct in manner or language"
+      ]
     },
     {
-     "word": "fault",
-     "clues": [
-      "defect",
-      " flaw"
-     ]
+      "word": "indoor",
+      "clues": [
+        "inside"
+      ]
     },
     {
-     "word": "favor",
-     "clues": [
-      "kind act",
-      " gracious act"
-     ]
+      "word": "indulge",
+      "clues": [
+        "enjoy to excess"
+      ]
     },
     {
-     "word": "favour",
-     "clues": [
-      "act of gracious kindness"
-     ]
+      "word": "industry",
+      "clues": [
+        "manufacture",
+        "diligence",
+        " industriousness"
+      ]
     },
     {
-     "word": "favourite",
-     "clues": [
-      "darling",
-      " favorite",
-      " pet"
-     ]
+      "word": "infect",
+      "clues": [
+        "communicate a disease"
+      ]
     },
     {
-     "word": "fax",
-     "clues": [
-      "facsimile"
-     ]
+      "word": "infection",
+      "clues": [
+        "contagion",
+        " transmission"
+      ]
     },
     {
-     "word": "fear",
-     "clues": [
-      "fearfulness",
-      " fright"
-     ]
+      "word": "infinite",
+      "clues": [
+        "having no limits or boundaries in time or space"
+      ]
     },
     {
-     "word": "feast",
-     "clues": [
-      "banquet"
-     ]
+      "word": "inflate",
+      "clues": [
+        "blow up",
+        " fill with air"
+      ]
     },
     {
-     "word": "feather",
-     "clues": [
-      "plume",
-      " plumage"
-     ]
+      "word": "inflation",
+      "clues": [
+        "rising prices"
+      ]
     },
     {
-     "word": "feature",
-     "clues": [
-      "facial feature"
-     ]
+      "word": "influence",
+      "clues": [
+        "power to affect persons or events",
+        "effect of one thing or person"
+      ]
     },
     {
-     "word": "feature",
-     "clues": [
-      "characteristic"
-     ]
+      "word": "information",
+      "clues": [
+        "info"
+      ]
     },
     {
-     "word": "federation",
-     "clues": [
-      "confederation",
-      " confederacy",
-      " political union"
-     ]
+      "word": "infrastructure",
+      "clues": [
+        "basic features of a system"
+      ]
     },
     {
-     "word": "fee",
-     "clues": [
-      "fixed charge"
-     ]
+      "word": "inhabitant",
+      "clues": [
+        "habitant",
+        " dweller",
+        " denizen"
+      ]
     },
     {
-     "word": "feedback",
-     "clues": [
-      "response"
-     ]
+      "word": "inhibition",
+      "clues": [
+        "suppression",
+        " conscious exclusion of unacceptable thoughts or desires"
+      ]
     },
     {
-     "word": "feeling",
-     "clues": [
-      "intuitive feeling"
-     ]
+      "word": "initial",
+      "clues": [
+        "first letter of a word"
+      ]
     },
     {
-     "word": "feeling",
-     "clues": [
-      "touch",
-      " touch sensation"
-     ]
+      "word": "initiative",
+      "clues": [
+        "first step"
+      ]
     },
     {
-     "word": "feminist",
-     "clues": [
-      "women's rightist"
-     ]
+      "word": "inject",
+      "clues": [
+        "take by injection"
+      ]
     },
     {
-     "word": "fence",
-     "clues": [
-      "barrier"
-     ]
+      "word": "injection",
+      "clues": [
+        "shot"
+      ]
     },
     {
-     "word": "ferry",
-     "clues": [
-      "ferryboat"
-     ]
+      "word": "injure",
+      "clues": [
+        "wound",
+        " hurt"
+      ]
     },
     {
-     "word": "fever",
-     "clues": [
-      "high body temperature"
-     ]
+      "word": "injury",
+      "clues": [
+        "hurt",
+        " harm",
+        " trauma"
+      ]
     },
     {
-     "word": "few",
-     "clues": [
-      "indefinite but relatively small number"
-     ]
+      "word": "inn",
+      "clues": [
+        "hostel",
+        " hostelry",
+        " lodge"
+      ]
     },
     {
-     "word": "fibre",
-     "clues": [
-      "fiber"
-     ]
+      "word": "innocent",
+      "clues": [
+        "guiltless",
+        " clean-handed"
+      ]
     },
     {
-     "word": "fiction",
-     "clues": [
-      "literary work"
-     ]
+      "word": "innovation",
+      "clues": [
+        "invention"
+      ]
     },
     {
-     "word": "field",
-     "clues": [
-      "piece of land"
-     ]
+      "word": "inquiry",
+      "clues": [
+        "inquest"
+      ]
     },
     {
-     "word": "field",
-     "clues": [
-      "playing field",
-      " athletic field"
-     ]
+      "word": "insert",
+      "clues": [
+        "place inside"
+      ]
     },
     {
-     "word": "fig",
-     "clues": [
-      "fruit"
-     ]
+      "word": "inside",
+      "clues": [
+        "interior"
+      ]
     },
     {
-     "word": "fight",
-     "clues": [
-      "fighting",
-      " combat"
-     ]
+      "word": "insight",
+      "clues": [
+        "perceptiveness",
+        " understanding"
+      ]
     },
     {
-     "word": "figure",
-     "clues": [
-      "design",
-      " pattern"
-     ]
+      "word": "insist",
+      "clues": [
+        "take a firm stand"
+      ]
     },
     {
-     "word": "figure",
-     "clues": [
-      "amount of money expressed numerically"
-     ]
+      "word": "insistence",
+      "clues": [
+        "insistency",
+        " act of insisting"
+      ]
     },
     {
-     "word": "file",
-     "clues": [
-      "steel hand tool"
-     ]
+      "word": "inspector",
+      "clues": [
+        "examiner"
+      ]
     },
     {
-     "word": "file",
-     "clues": [
-      "file cabinet",
-      " filing cabinet"
-     ]
+      "word": "inspiration",
+      "clues": [
+        "sudden intuition"
+      ]
     },
     {
-     "word": "file",
-     "clues": [
-      "data file"
-     ]
+      "word": "inspire",
+      "clues": [
+        "supply the inspiration for"
+      ]
     },
     {
-     "word": "file",
-     "clues": [
-      "single file",
-      " Indian file"
-     ]
+      "word": "instal",
+      "clues": [
+        "put in",
+        " set up for use"
+      ]
     },
     {
-     "word": "film",
-     "clues": [
-      "thin coating"
-     ]
+      "word": "install",
+      "clues": [
+        "put into an office or a position"
+      ]
     },
     {
-     "word": "film",
-     "clues": [
-      "photographic film"
-     ]
+      "word": "instinct",
+      "clues": [
+        "inherent aptitude"
+      ]
     },
     {
-     "word": "film",
-     "clues": [
-      "cinema"
-     ]
+      "word": "institution",
+      "clues": [
+        "mental hospital",
+        "establishment"
+      ]
     },
     {
-     "word": "filter",
-     "clues": [
-      "device that removes something small"
-     ]
+      "word": "instruction",
+      "clues": [
+        "teaching",
+        " pedagogy"
+      ]
     },
     {
-     "word": "final",
-     "clues": [
-      "final examination"
-     ]
+      "word": "instrument",
+      "clues": [
+        "musical instrument",
+        "device"
+      ]
     },
     {
-     "word": "finance",
-     "clues": [
-      "management of money"
-     ]
+      "word": "insurance",
+      "clues": [
+        "indemnity",
+        " protection"
+      ]
     },
     {
-     "word": "finger",
-     "clues": [
-      "terminal members of the hand"
-     ]
+      "word": "insure",
+      "clues": [
+        "take out insurance"
+      ]
     },
     {
-     "word": "fireplace",
-     "clues": [
-      "fire"
-     ]
+      "word": "integrated",
+      "clues": [
+        "not segregated"
+      ]
     },
     {
-     "word": "fire",
-     "clues": [
-      "attack",
-      " flak",
-      " flack",
-      " blast"
-     ]
+      "word": "integration",
+      "clues": [
+        "desegregation"
+      ]
     },
     {
-     "word": "fire",
-     "clues": [
-      "ardor",
-      " fervor",
-      " fervency",
-      " fervidness"
-     ]
+      "word": "integrity",
+      "clues": [
+        "moral soundness"
+      ]
     },
     {
-     "word": "fire",
-     "clues": [
-      "flame"
-     ]
+      "word": "intelligence",
+      "clues": [
+        "ability to comprehend",
+        "intelligence service",
+        " intelligence agency"
+      ]
     },
     {
-     "word": "firefighter",
-     "clues": [
-      "fireman"
-     ]
+      "word": "intensify",
+      "clues": [
+        "escalate",
+        " step up"
+      ]
     },
     {
-     "word": "firm",
-     "clues": [
-      "house",
-      " business firm",
-      " company"
-     ]
+      "word": "intention",
+      "clues": [
+        "volition"
+      ]
     },
     {
-     "word": "fish",
-     "clues": [
-      "cold-blooded aquatic vertebrates"
-     ]
+      "word": "interactive",
+      "clues": [
+        "synergistic"
+      ]
     },
     {
-     "word": "fish",
-     "clues": [
-      "flesh of fish used as food"
-     ]
+      "word": "interest",
+      "clues": [
+        "fixed charge for borrowing money",
+        "pastime",
+        " pursuit"
+      ]
     },
     {
-     "word": "fisherman",
-     "clues": [
-      "fisher"
-     ]
+      "word": "interface",
+      "clues": [
+        "user interface"
+      ]
     },
     {
-     "word": "fist",
-     "clues": [
-      "clenched fist"
-     ]
+      "word": "interference",
+      "clues": [
+        "hindrance",
+        " hitch",
+        " preventive",
+        " encumbrance"
+      ]
     },
     {
-     "word": "convulsion",
-     "clues": [
-      "fit",
-      " paroxysm"
-     ]
+      "word": "intermediate",
+      "clues": [
+        "lying between two extremes"
+      ]
     },
     {
-     "word": "fitness",
-     "clues": [
-      "physical fitness",
-      " good shape"
-     ]
+      "word": "interrupt",
+      "clues": [
+        "disrupt"
+      ]
     },
     {
-     "word": "fixture",
-     "clues": [
-      "object firmly fixed in place"
-     ]
+      "word": "intervention",
+      "clues": [
+        "interference"
+      ]
     },
     {
-     "word": "flag",
-     "clues": [
-      "emblem"
-     ]
+      "word": "introduce",
+      "clues": [
+        "inaugurate",
+        " usher in",
+        "present",
+        " acquaint",
+        "bring in"
+      ]
     },
     {
-     "word": "flash",
-     "clues": [
-      "photoflash",
-      " flashbulb"
-     ]
+      "word": "introduction",
+      "clues": [
+        "presentation",
+        " intro",
+        "basic instructional text",
+        "first section of a communication"
+      ]
     },
     {
-     "word": "flash",
-     "clues": [
-      "flare",
-      " burst of light"
-     ]
+      "word": "invasion",
+      "clues": [
+        "encroachment",
+        " intrusion"
+      ]
     },
     {
-     "word": "flash",
-     "clues": [
-      "heartbeat",
-      " instant",
-      " jiffy",
-      " split second"
-     ]
+      "word": "investigation",
+      "clues": [
+        "probe"
+      ]
     },
     {
-     "word": "flat",
-     "clues": [
-      "apartment"
-     ]
+      "word": "investment",
+      "clues": [
+        "investment funds"
+      ]
     },
     {
-     "word": "flat",
-     "clues": [
-      "flat tire"
-     ]
+      "word": "invisible",
+      "clues": [
+        "unseeable"
+      ]
     },
     {
-     "word": "flavor",
-     "clues": [
-      "savor",
-      " smack",
-      " tang",
-      " taste experience"
-     ]
+      "word": "invite",
+      "clues": [
+        "ask over",
+        " invite to one's house"
+      ]
     },
     {
-     "word": "fleet",
-     "clues": [
-      "group of ships"
-     ]
+      "word": "iron",
+      "clues": [
+        "ferrous metal"
+      ]
     },
     {
-     "word": "flesh",
-     "clues": [
-      "body tissue"
-     ]
+      "word": "irony",
+      "clues": [
+        "sarcasm",
+        " satire"
+      ]
     },
     {
-     "word": "flesh",
-     "clues": [
-      "pulp",
-      " part of a fruit"
-     ]
+      "word": "island",
+      "clues": [
+        "land mass surrounded by water"
+      ]
     },
     {
-     "word": "flight",
-     "clues": [
-      "escape"
-     ]
+      "word": "isolation",
+      "clues": [
+        "state of separation"
+      ]
     },
     {
-     "word": "flight",
-     "clues": [
-      "trip by plane"
-     ]
+      "word": "issue",
+      "clues": [
+        "important question"
+      ]
     },
     {
-     "word": "flight",
-     "clues": [
-      "flight of stairs"
-     ]
+      "word": "item",
+      "clues": [
+        "token",
+        " individual instance"
+      ]
     },
     {
-     "word": "flock",
-     "clues": [
-      "group of animals"
-     ]
+      "word": "ivory",
+      "clues": [
+        "tusk"
+      ]
     },
     {
-     "word": "flood",
-     "clues": [
-      "inundation"
-     ]
+      "word": "jacket",
+      "clues": [
+        "short coat"
+      ]
     },
     {
-     "word": "floor",
-     "clues": [
-      "flooring"
-     ]
+      "word": "jail",
+      "clues": [
+        "imprison",
+        " incarcerate"
+      ]
     },
     {
-     "word": "flour",
-     "clues": [
-      "powdery foodstuff"
-     ]
+      "word": "jam",
+      "clues": [
+        "preserve"
+      ]
     },
     {
-     "word": "flower",
-     "clues": [
-      "plant cultivated for its blooms or blossoms"
-     ]
+      "word": "jar",
+      "clues": [
+        "vessel"
+      ]
     },
     {
-     "word": "flu",
-     "clues": [
-      "influenza",
-      " viral disease"
-     ]
+      "word": "jaw",
+      "clues": [
+        "part of the skull"
+      ]
     },
     {
-     "word": "fluctuation",
-     "clues": [
-      "wavering",
-      " instability"
-     ]
+      "word": "jealous",
+      "clues": [
+        "covetous",
+        " envious"
+      ]
     },
     {
-     "word": "fly",
-     "clues": [
-      "insect"
-     ]
+      "word": "jelly",
+      "clues": [
+        "gelatinous substance"
+      ]
     },
     {
-     "word": "fog",
-     "clues": [
-      "daze",
-      " haze",
-      " confusion"
-     ]
+      "word": "jest",
+      "clues": [
+        "act or speak playfully"
+      ]
     },
     {
-     "word": "fog",
-     "clues": [
-      "water vapor"
-     ]
+      "word": "jet",
+      "clues": [
+        "squirt",
+        " spurt",
+        " spirt"
+      ]
     },
     {
-     "word": "fold",
-     "clues": [
-      "crease",
-      " crimp"
-     ]
+      "word": "jewel",
+      "clues": [
+        "gem",
+        " precious stone"
+      ]
     },
     {
-     "word": "fol",
-     "clues": [
-      "music] ethnic music"
-     ]
+      "word": "job",
+      "clues": [
+        "workplace",
+        "task",
+        " chore"
+      ]
     },
     {
-     "word": "folk",
-     "clues": [
-      "folks",
-      " common people"
-     ]
+      "word": "jockey",
+      "clues": [
+        "rider"
+      ]
     },
     {
-     "word": "folklore",
-     "clues": [
-      "unwritten literature or songs"
-     ]
+      "word": "joint",
+      "clues": [
+        "body part",
+        "united or combined",
+        "disreputable place of entertainment"
+      ]
     },
     {
-     "word": "food",
-     "clues": [
-      "nutrient"
-     ]
+      "word": "joke",
+      "clues": [
+        "gag",
+        " laugh",
+        " jest"
+      ]
     },
     {
-     "word": "fool",
-     "clues": [
-      "moron"
-     ]
+      "word": "journal",
+      "clues": [
+        "periodical",
+        "diary"
+      ]
     },
     {
-     "word": "fool",
-     "clues": [
-      "clown",
-      " jester"
-     ]
+      "word": "joy",
+      "clues": [
+        "joyousness",
+        " joyfulness"
+      ]
     },
     {
-     "word": "foot",
-     "clues": [
-      "human foot"
-     ]
+      "word": "joystick",
+      "clues": [
+        "control stick"
+      ]
     },
     {
-     "word": "foot",
-     "clues": [
-      "ft",
-      " linear unit of length equal to 12 inches"
-     ]
+      "word": "judge",
+      "clues": [
+        "justice",
+        " jurist",
+        " magistrate"
+      ]
     },
     {
-     "word": "football",
-     "clues": [
-      "football game"
-     ]
+      "word": "judgment",
+      "clues": [
+        "judicial decision",
+        "cognitive process"
+      ]
     },
     {
-     "word": "force",
-     "clues": [
-      "violence",
-      " act of aggression"
-     ]
+      "word": "judicial",
+      "clues": [
+        "juridical",
+        " juridic"
+      ]
     },
     {
-     "word": "force",
-     "clues": [
-      "forcefulness",
-      " strength",
-      " physical energy",
-      " intensity"
-     ]
+      "word": "jump",
+      "clues": [
+        "leap",
+        " bound",
+        "leap",
+        " sudden increase"
+      ]
     },
     {
-     "word": "force",
-     "clues": [
-      "military unit",
-      " military force",
-      " military group"
-     ]
+      "word": "jungle",
+      "clues": [
+        "impenetrable forest"
+      ]
     },
     {
-     "word": "forecast",
-     "clues": [
-      "prognosis"
-     ]
+      "word": "junior",
+      "clues": [
+        "younger or lower in rank"
+      ]
     },
     {
-     "word": "foreigner",
-     "clues": [
-      "alien",
-      " noncitizen"
-     ]
+      "word": "jurisdiction",
+      "clues": [
+        "legal power"
+      ]
     },
     {
-     "word": "forest",
-     "clues": [
-      "woodland",
-      " timberland",
-      " timber"
-     ]
+      "word": "jury",
+      "clues": [
+        "trial jury"
+      ]
     },
     {
-     "word": "forestry",
-     "clues": [
-      "science of planting and caring for forests"
-     ]
+      "word": "just",
+      "clues": [
+        "equitable"
+      ]
     },
     {
-     "word": "fork",
-     "clues": [
-      "cutlery"
-     ]
+      "word": "justice",
+      "clues": [
+        "justness"
+      ]
     },
     {
-     "word": "form",
-     "clues": [
-      "shape",
-      " pattern"
-     ]
+      "word": "justify",
+      "clues": [
+        "excuse",
+        " rationalize"
+      ]
     },
     {
-     "word": "form",
-     "clues": [
-      "printed document with spaces in which to write"
-     ]
+      "word": "keep",
+      "clues": [
+        "observe",
+        " celebrate holidays or rites",
+        "hold on",
+        " retain possession of",
+        "maintain",
+        "preserve"
+      ]
     },
     {
-     "word": "form",
-     "clues": [
-      "variant",
-      " strain"
-     ]
+      "word": "kettle",
+      "clues": [
+        "boiler",
+        " metal pot"
+      ]
     },
     {
-     "word": "format",
-     "clues": [
-      "formatting",
-      " data format",
-      " data formatting"
-     ]
+      "word": "key",
+      "clues": [
+        "opening device",
+        "tonality",
+        "legend",
+        " list of words that explain symbols"
+      ]
     },
     {
-     "word": "formation",
-     "clues": [
-      "spatial arrangement"
-     ]
+      "word": "kick",
+      "clues": [
+        "sudden stimulation",
+        "strike with the foot"
+      ]
     },
     {
-     "word": "formula",
-     "clues": [
-      "statement of a fundamental principle"
-     ]
+      "word": "kid",
+      "clues": [
+        "young goat"
+      ]
     },
     {
-     "word": "fortune",
-     "clues": [
-      "luck"
-     ]
+      "word": "kidnap",
+      "clues": [
+        "snatch",
+        " abduct"
+      ]
     },
     {
-     "word": "fortune",
-     "clues": [
-      "wealth",
-      " prosperity"
-     ]
+      "word": "kidney",
+      "clues": [
+        "bean-shaped excretory organ"
+      ]
     },
     {
-     "word": "fate",
-     "clues": [
-      "destiny",
-      " fortune",
-      " luck",
-      " lot",
-      " circumstances"
-     ]
+      "word": "kill",
+      "clues": [
+        "cause to die",
+        " put to death"
+      ]
     },
     {
-     "word": "forum",
-     "clues": [
-      "public meeting"
-     ]
+      "word": "killer",
+      "clues": [
+        "slayer"
+      ]
     },
     {
-     "word": "fossil",
-     "clues": [
-      "plant or animal remains"
-     ]
+      "word": "king",
+      "clues": [
+        "chess piece",
+        "playing card",
+        "male monarch"
+      ]
     },
     {
-     "word": "foundation",
-     "clues": [
-      "institution supported by an endowment"
-     ]
+      "word": "kingdom",
+      "clues": [
+        "monarchy"
+      ]
     },
     {
-     "word": "foundation",
-     "clues": [
-      "basis"
-     ]
+      "word": "kinship",
+      "clues": [
+        "family relationship"
+      ]
     },
     {
-     "word": "fountain",
-     "clues": [
-      "water dispenser",
-      " font"
-     ]
+      "word": "kit",
+      "clues": [
+        "outfit",
+        " gear"
+      ]
     },
     {
-     "word": "fox",
-     "clues": [
-      "animal"
-     ]
+      "word": "kitchen",
+      "clues": [
+        "room equipped for preparing meals"
+      ]
     },
     {
-     "word": "fraction",
-     "clues": [
-      "quotient"
-     ]
+      "word": "kite",
+      "clues": [
+        "toy"
+      ]
     },
     {
-     "word": "fragment",
-     "clues": [
-      "broken-off piece"
-     ]
+      "word": "knee",
+      "clues": [
+        "knee joint"
+      ]
     },
     {
-     "word": "skeleton",
-     "clues": [
-      "frame",
-      " bones and cartilages"
-     ]
+      "word": "kneel",
+      "clues": [
+        "rest one's weight on one's knees"
+      ]
     },
     {
-     "word": "franchise",
-     "clues": [
-      "dealership"
-     ]
+      "word": "knife",
+      "clues": [
+        "tool"
+      ]
     },
     {
-     "word": "fraud",
-     "clues": [
-      "fraudulence",
-      " dupery",
-      " hoax"
-     ]
+      "word": "knit",
+      "clues": [
+        "make textiles by knitting"
+      ]
     },
     {
-     "word": "imposter",
-     "clues": [
-      "pretender",
-      " fake",
-      " faker",
-      " sham",
-      " fraud"
-     ]
+      "word": "knock",
+      "clues": [
+        "rap",
+        " strike with the knuckles"
+      ]
     },
     {
-     "word": "freckle",
-     "clues": [
-      "skin pigment"
-     ]
+      "word": "knot",
+      "clues": [
+        "fastening formed by looping and tying"
+      ]
     },
     {
-     "word": "freedom",
-     "clues": [
-      "condition of being free"
-     ]
+      "word": "know",
+      "clues": [
+        "be aware of the truth of something",
+        "be familiar or acquainted with a person or an object",
+        "know how to do or perform something"
+      ]
     },
     {
-     "word": "freight",
-     "clues": [
-      "transportation"
-     ]
+      "word": "knowledge",
+      "clues": [
+        "cognition",
+        " result of perception",
+        " learning",
+        " or reasoning"
+      ]
     },
     {
-     "word": "frequency",
-     "clues": [
-      "frequence",
-      " oftenness"
-     ]
+      "word": "Koran",
+      "clues": [
+        "Quran",
+        " al-Qur'an",
+        " Islam Holy Book"
+      ]
     },
     {
-     "word": "freshman",
-     "clues": [
-      "first year student"
-     ]
+      "word": "laboratory",
+      "clues": [
+        "lab",
+        " research lab"
+      ]
     },
     {
-     "word": "refrigerator",
-     "clues": [
-      "fridge"
-     ]
+      "word": "laborer",
+      "clues": [
+        "manual laborer"
+      ]
     },
     {
-     "word": "friend",
-     "clues": [
-      "acquaintance"
-     ]
+      "word": "labour",
+      "clues": [
+        "toil",
+        "working class",
+        " proletariat"
+      ]
     },
     {
-     "word": "frog",
-     "clues": [
-      "toad",
-      " toad frog"
-     ]
+      "word": "lace",
+      "clues": [
+        "delicate fabric"
+      ]
     },
     {
-     "word": "front",
-     "clues": [
-      "the side that is seen or that goes first"
-     ]
+      "word": "lack",
+      "clues": [
+        "be without",
+        "deficiency",
+        " want"
+      ]
     },
     {
-     "word": "front",
-     "clues": [
-      "battlefront",
-      " front line"
-     ]
+      "word": "ladder",
+      "clues": [
+        "steps"
+      ]
     },
     {
-     "word": "front",
-     "clues": [
-      "atmospheric phenomenon at the boundary between two air masses"
-     ]
+      "word": "lake",
+      "clues": [
+        "body of water"
+      ]
     },
     {
-     "word": "fruit",
-     "clues": [
-      "ripened reproductive body of a seed plant"
-     ]
+      "word": "lamb",
+      "clues": [
+        "young sheep"
+      ]
     },
     {
-     "word": "fuel",
-     "clues": [
-      "energy"
-     ]
+      "word": "lamp",
+      "clues": [
+        "furniture holding lightbulbs"
+      ]
     },
     {
-     "word": "fun",
-     "clues": [
-      "merriment",
-      " playfulness"
-     ]
+      "word": "land",
+      "clues": [
+        "estate",
+        " landed estate",
+        "come down on the ground",
+        "kingdom",
+        " realm"
+      ]
     },
     {
-     "word": "function",
-     "clues": [
-      "affair",
-      " occasion",
-      " social occasion"
-     ]
+      "word": "landowner",
+      "clues": [
+        "landholder",
+        " property owner"
+      ]
     },
     {
-     "word": "function",
-     "clues": [
-      "mathematical function"
-     ]
+      "word": "landscape",
+      "clues": [
+        "scenery"
+      ]
     },
     {
-     "word": "fund",
-     "clues": [
-      "monetary fund"
-     ]
+      "word": "lane",
+      "clues": [
+        "narrow road"
+      ]
     },
     {
-     "word": "funeral",
-     "clues": [
-      "ceremony"
-     ]
+      "word": "language",
+      "clues": [
+        "linguistic communication",
+        "terminology",
+        " nomenclature"
+      ]
     },
     {
-     "word": "fur",
-     "clues": [
-      "pelt",
-      " hairy coat of a mammal"
-     ]
+      "word": "lap",
+      "clues": [
+        "body part"
+      ]
     },
     {
-     "word": "furniture",
-     "clues": [
-      "piece of furniture"
-     ]
+      "word": "large",
+      "clues": [
+        "big"
+      ]
     },
     {
-     "word": "fuss",
-     "clues": [
-      "bustle",
-      " hustle",
-      " flurry",
-      " ado",
-      " stir"
-     ]
+      "word": "laser",
+      "clues": [
+        "coherent light"
+      ]
     },
     {
-     "word": "future",
-     "clues": [
-      "hereafter",
-      " futurity",
-      " time to come"
-     ]
+      "word": "last",
+      "clues": [
+        "concluding",
+        " final",
+        " terminal"
+      ]
     },
     {
-     "word": "galaxy",
-     "clues": [
-      "extragalactic nebula"
-     ]
+      "word": "late",
+      "clues": [
+        "belated",
+        " tardy"
+      ]
     },
     {
-     "word": "gallery",
-     "clues": [
-      "art gallery"
-     ]
+      "word": "latest",
+      "clues": [
+        "newest",
+        " up-to-date"
+      ]
     },
     {
-     "word": "gallon",
-     "clues": [
-      "gal",
-      " liquid unit"
-     ]
+      "word": "launch",
+      "clues": [
+        "propel with force",
+        " set in motion"
+      ]
     },
     {
-     "word": "game",
-     "clues": [
-      "contest with rules to determine a winner"
-     ]
+      "word": "laundry",
+      "clues": [
+        "wash",
+        " washables"
+      ]
     },
     {
-     "word": "game",
-     "clues": [
-      "amusement or pastime"
-     ]
+      "word": "law",
+      "clues": [
+        "natural scientific law",
+        "jurisprudence",
+        "police",
+        " police force"
+      ]
     },
     {
-     "word": "gap",
-     "clues": [
-      "crack",
-      " narrow opening"
-     ]
+      "word": "lawyer",
+      "clues": [
+        "attorney"
+      ]
     },
     {
-     "word": "garage",
-     "clues": [
-      "building"
-     ]
+      "word": "lay",
+      "clues": [
+        "put down",
+        " lay down"
+      ]
     },
     {
-     "word": "garage",
-     "clues": [
-      "car repair shop"
-     ]
+      "word": "layer",
+      "clues": [
+        "thin sheet"
+      ]
     },
     {
-     "word": "garbage",
-     "clues": [
-      "refuse",
-      " waste"
-     ]
+      "word": "layout",
+      "clues": [
+        "plan",
+        " design"
+      ]
     },
     {
-     "word": "garlic",
-     "clues": [
-      "aromatic bulb used as seasoning"
-     ]
+      "word": "lazy",
+      "clues": [
+        "indolent",
+        " otiose",
+        " slothful",
+        " work-shy"
+      ]
     },
     {
-     "word": "ga",
-     "clues": [
-      "pedal] accelerator"
-     ]
+      "word": "lead",
+      "clues": [
+        "position of leadership",
+        "Pb",
+        " atomic number 82",
+        " soft heavy toxic metal",
+        "advantage held by a competitor",
+        "be in charge",
+        "head",
+        " travel in front of"
+      ]
     },
     {
-     "word": "gas",
-     "clues": [
-      "state of matter distinguished from solid and liquid"
-     ]
+      "word": "leader",
+      "clues": [
+        "commander",
+        " person who rules or guides or inspires others"
+      ]
     },
     {
-     "word": "gas",
-     "clues": [
-      "gasoline",
-      " petrol"
-     ]
+      "word": "leadership",
+      "clues": [
+        "leading"
+      ]
     },
     {
-     "word": "gate",
-     "clues": [
-      "door"
-     ]
+      "word": "leaf",
+      "clues": [
+        "leafage",
+        " foliage"
+      ]
     },
     {
-     "word": "gear",
-     "clues": [
-      "gear mechanism"
-     ]
+      "word": "leaflet",
+      "clues": [
+        "brochure",
+        " folder",
+        " pamphlet"
+      ]
     },
     {
-     "word": "gene",
-     "clues": [
-      "segment of DNA"
-     ]
+      "word": "leak",
+      "clues": [
+        "escape through an opening"
+      ]
     },
     {
-     "word": "general",
-     "clues": [
-      "full general",
-      " officer"
-     ]
+      "word": "lean",
+      "clues": [
+        "tilt",
+        " tip",
+        " slant",
+        " angle",
+        " incline",
+        " bend"
+      ]
     },
     {
-     "word": "generation",
-     "clues": [
-      "coevals",
-      " contemporaries"
-     ]
+      "word": "learn",
+      "clues": [
+        "memorize"
+      ]
     },
     {
-     "word": "brilliance",
-     "clues": [
-      "brilliance"
-     ]
+      "word": "lease",
+      "clues": [
+        "rental lease",
+        "rent",
+        " let"
+      ]
     },
     {
-     "word": "gesture",
-     "clues": [
-      "motion of hands or body"
-     ]
+      "word": "leash",
+      "clues": [
+        "tether"
+      ]
     },
     {
-     "word": "ghost",
-     "clues": [
-      "visible disembodied soul"
-     ]
+      "word": "leave",
+      "clues": [
+        "bequeath",
+        " will",
+        " pass on",
+        "exit",
+        " go out",
+        " get out",
+        "leave of absence",
+        "leave behind"
+      ]
     },
     {
-     "word": "ghostwriter",
-     "clues": [
-      "ghost"
-     ]
+      "word": "lecture",
+      "clues": [
+        "instruction",
+        " teaching"
+      ]
     },
     {
-     "word": "giant",
-     "clues": [
-      "hulk",
-      " very large person"
-     ]
+      "word": "left",
+      "clues": [
+        "left side",
+        " left hand side",
+        "belonging to the political or intellectual left"
+      ]
     },
     {
-     "word": "gift",
-     "clues": [
-      "present"
-     ]
+      "word": "leftovers",
+      "clues": [
+        "leftover food"
+      ]
     },
     {
-     "word": "girlfriend",
-     "clues": [
-      "lady friend"
-     ]
+      "word": "leg",
+      "clues": [
+        "limb",
+        "one of the supports for a piece of furniture"
+      ]
     },
     {
-     "word": "girl",
-     "clues": [
-      "female child"
-     ]
+      "word": "legend",
+      "clues": [
+        "fable",
+        " story",
+        "caption"
+      ]
     },
     {
-     "word": "glacier",
-     "clues": [
-      "mass of ice"
-     ]
+      "word": "legislation",
+      "clues": [
+        "legislating",
+        " lawmaking"
+      ]
     },
     {
-     "word": "glance",
-     "clues": [
-      "glimpse",
-      " quick look"
-     ]
+      "word": "legislature",
+      "clues": [
+        "legislative assembly"
+      ]
     },
     {
-     "word": "glass",
-     "clues": [
-      "drinking glass"
-     ]
+      "word": "lemon",
+      "clues": [
+        "fruit",
+        "defective artifact"
+      ]
     },
     {
-     "word": "glass",
-     "clues": [
-      "looking glass",
-      " mirror"
-     ]
+      "word": "lend",
+      "clues": [
+        "loan"
+      ]
     },
     {
-     "word": "glass",
-     "clues": [
-      "brittle transparent solid"
-     ]
+      "word": "length",
+      "clues": [
+        "extent of something from beginning to end",
+        "duration",
+        " continuance in time"
+      ]
     },
     {
-     "word": "glasses",
-     "clues": [
-      "eyeglasses",
-      " spectacles"
-     ]
+      "word": "lesson",
+      "clues": [
+        "unit of instruction"
+      ]
     },
     {
-     "word": "glimpse",
-     "clues": [
-      "brief view"
-     ]
+      "word": "letter",
+      "clues": [
+        "letter of the alphabet",
+        "missive",
+        " written message addressed"
+      ]
     },
     {
-     "word": "gloom",
-     "clues": [
-      "gloominess",
-      " glumness",
-      " atmosphere of depression"
-     ]
+      "word": "level",
+      "clues": [
+        "raze",
+        " rase",
+        " dismantle",
+        " tear down",
+        "floor",
+        " storey",
+        " story",
+        "grade",
+        " tier",
+        "layer",
+        " stratum"
+      ]
     },
     {
-     "word": "glory",
-     "clues": [
-      "prestige"
-     ]
+      "word": "liability",
+      "clues": [
+        "legal obligation and responsibility"
+      ]
     },
     {
-     "word": "glove",
-     "clues": [
-      "handwear"
-     ]
+      "word": "liberal",
+      "clues": [
+        "tolerant of change"
+      ]
     },
     {
-     "word": "glow",
-     "clues": [
-      "steady even light"
-     ]
+      "word": "liberty",
+      "clues": [
+        "freedom"
+      ]
     },
     {
-     "word": "glue",
-     "clues": [
-      "adhesive"
-     ]
+      "word": "licence",
+      "clues": [
+        "license",
+        " permit"
+      ]
     },
     {
-     "word": "goal",
-     "clues": [
-      "successful attempt at scoring"
-     ]
+      "word": "license",
+      "clues": [
+        "certify"
+      ]
     },
     {
-     "word": "goal",
-     "clues": [
-      "sports equipment"
-     ]
+      "word": "lick",
+      "clues": [
+        "lap",
+        " pass the tongue over"
+      ]
     },
     {
-     "word": "goal",
-     "clues": [
-      "finish",
-      " destination"
-     ]
+      "word": "lid",
+      "clues": [
+        "movable top",
+        "eyelid"
+      ]
     },
     {
-     "word": "goalkeeper",
-     "clues": [
-      "goalie",
-      " goaltender"
-     ]
+      "word": "lie",
+      "clues": [
+        "lie down",
+        "prevarication",
+        "tell an untruth"
+      ]
     },
     {
-     "word": "goat",
-     "clues": [
-      "domestic animal"
-     ]
+      "word": "lifestyle",
+      "clues": [
+        "way of living"
+      ]
     },
     {
-     "word": "god",
-     "clues": [
-      "deity",
-      " divinity"
-     ]
+      "word": "lift",
+      "clues": [
+        "ride in a car",
+        "raise",
+        " elevate",
+        " move up",
+        "elevator",
+        "ski tow",
+        " ski lift"
+      ]
     },
     {
-     "word": "gold",
-     "clues": [
-      "Au",
-      " atomic number 79"
-     ]
+      "word": "light",
+      "clues": [
+        "of little weight",
+        "light up",
+        " illuminate",
+        " make light",
+        "light source",
+        " source of illumination",
+        "light-colored",
+        "bright",
+        " emitting light",
+        "luminosity",
+        " brightness",
+        " luminance"
+      ]
     },
     {
-     "word": "golf",
-     "clues": [
-      "golf game"
-     ]
+      "word": "lighter",
+      "clues": [
+        "igniter",
+        " device for lighting or igniting"
+      ]
     },
     {
-     "word": "good",
-     "clues": [
-      "commodity",
-      " trade good"
-     ]
+      "word": "like",
+      "clues": [
+        "be fond of"
+      ]
     },
     {
-     "word": "good",
-     "clues": [
-      "goodness",
-      " moral excellence"
-     ]
+      "word": "likely",
+      "clues": [
+        "probable",
+        " plausible"
+      ]
     },
     {
-     "word": "government",
-     "clues": [
-      "authorities",
-      " regime"
-     ]
+      "word": "lily",
+      "clues": [
+        "flower"
+      ]
     },
     {
-     "word": "governor",
-     "clues": [
-      "head of a state"
-     ]
+      "word": "limb",
+      "clues": [
+        "body part"
+      ]
     },
     {
-     "word": "gown",
-     "clues": [
-      "robe for ceremonial occasions"
-     ]
+      "word": "limit",
+      "clues": [
+        "demarcation",
+        " demarcation line",
+        "limitation"
+      ]
     },
     {
-     "word": "grace",
-     "clues": [
-      "beauty of movement"
-     ]
+      "word": "limited",
+      "clues": [
+        "small in range or scope"
+      ]
     },
     {
-     "word": "grace",
-     "clues": [
-      "good will",
-      " kindness"
-     ]
+      "word": "line",
+      "clues": [
+        "argumentation",
+        " logical argument",
+        " line of reasoning",
+        "formation of people or things one behind another",
+        "wrinkle",
+        " furrow",
+        " crease",
+        " crinkle",
+        " seam",
+        "production line",
+        " assembly line",
+        "telephone line",
+        " phone line",
+        "railway line",
+        " rail line",
+        "line of text",
+        "dividing line",
+        " demarcation"
+      ]
     },
     {
-     "word": "gradient",
-     "clues": [
-      "grade of a slope"
-     ]
+      "word": "lineage",
+      "clues": [
+        "descent"
+      ]
     },
     {
-     "word": "graduate",
-     "clues": [
-      "alumnus",
-      " alumna",
-      " alum",
-      " grad"
-     ]
+      "word": "linear",
+      "clues": [
+        "one-dimensional"
+      ]
     },
     {
-     "word": "grain",
-     "clues": [
-      "food grain",
-      " cereal"
-     ]
+      "word": "linen",
+      "clues": [
+        "white goods"
+      ]
     },
     {
-     "word": "grain",
-     "clues": [
-      "small hard particle"
-     ]
+      "word": "linger",
+      "clues": [
+        "loiter"
+      ]
     },
     {
-     "word": "grandfather",
-     "clues": [
-      "gramps",
-      " grandad"
-     ]
+      "word": "link",
+      "clues": [
+        "fastener",
+        "connect",
+        " tie",
+        " fasten together"
+      ]
     },
     {
-     "word": "grandmother",
-     "clues": [
-      "grandma"
-     ]
+      "word": "lion",
+      "clues": [
+        "king of beasts"
+      ]
     },
     {
-     "word": "grant",
-     "clues": [
-      "monetary aid"
-     ]
+      "word": "lip",
+      "clues": [
+        "brim",
+        " rim",
+        " top edge of a vessel",
+        "fleshy folds of tissue surrounding the mouth"
+      ]
     },
     {
-     "word": "grass",
-     "clues": [
-      "pot",
-      " dope",
-      " weed",
-      " Mary Jane",
-      " marijuana"
-     ]
+      "word": "list",
+      "clues": [
+        "listing",
+        "tilt",
+        " inclination",
+        "include in a list"
+      ]
     },
     {
-     "word": "grass",
-     "clues": [
-      "lawn"
-     ]
+      "word": "listen",
+      "clues": [
+        "hear"
+      ]
     },
     {
-     "word": "grave",
-     "clues": [
-      "tomb"
-     ]
+      "word": "literacy",
+      "clues": [
+        "ability to read and write"
+      ]
     },
     {
-     "word": "gravel",
-     "clues": [
-      "crushed rock"
-     ]
+      "word": "literature",
+      "clues": [
+        "creative writing"
+      ]
     },
     {
-     "word": "gravity",
-     "clues": [
-      "graveness",
-      " sobriety",
-      " soberness",
-      " somberness"
-     ]
+      "word": "litigation",
+      "clues": [
+        "judicial proceeding"
+      ]
     },
     {
-     "word": "gravity",
-     "clues": [
-      "gravitation",
-      " gravitational force"
-     ]
+      "word": "live",
+      "clues": [
+        "unrecorded"
+      ]
     },
     {
-     "word": "green",
-     "clues": [
-      "greenness",
-      " viridity"
-     ]
+      "word": "liver",
+      "clues": [
+        "organ"
+      ]
     },
     {
-     "word": "green",
-     "clues": [
-      "Green",
-      " environmentalist"
-     ]
+      "word": "load",
+      "clues": [
+        "burden",
+        " weight",
+        "place on a surface or a conveyance"
+      ]
     },
     {
-     "word": "greeting",
-     "clues": [
-      "salutation"
-     ]
+      "word": "loan",
+      "clues": [
+        "temporary provision of money"
+      ]
     },
     {
-     "word": "grief",
-     "clues": [
-      "heartache",
-      " heartbreak",
-      " brokenheartedness"
-     ]
+      "word": "lobby",
+      "clues": [
+        "pressure group",
+        "vestibule",
+        " foyer",
+        " entrance hall"
+      ]
     },
     {
-     "word": "grimace",
-     "clues": [
-      "face",
-      " contorted facial expression"
-     ]
+      "word": "locate",
+      "clues": [
+        "situate",
+        " determine the location"
+      ]
     },
     {
-     "word": "grip",
-     "clues": [
-      "grasp",
-      " controlling influence"
-     ]
+      "word": "location",
+      "clues": [
+        "point in space"
+      ]
     },
     {
-     "word": "traction",
-     "clues": [
-      "grip",
-      " adhesive friction"
-     ]
+      "word": "lock",
+      "clues": [
+        "fastener fitted to a door",
+        "fasten with a lock",
+        "curl",
+        " ringlet",
+        " whorl"
+      ]
     },
     {
-     "word": "ground",
-     "clues": [
-      "land",
-      " dry land",
-      " earth",
-      " solid ground",
-      " terra firma"
-     ]
+      "word": "lodge",
+      "clues": [
+        "stay temporarily"
+      ]
     },
     {
-     "word": "grounds",
-     "clues": [
-      "evidence",
-      " basis for belief or disbelief"
-     ]
+      "word": "log",
+      "clues": [
+        "logarithm",
+        "tree trunk"
+      ]
     },
     {
-     "word": "growth",
-     "clues": [
-      "vegetation that has grown"
-     ]
+      "word": "lonely",
+      "clues": [
+        "alone",
+        " lone",
+        " solitary"
+      ]
     },
     {
-     "word": "growth",
-     "clues": [
-      "increase",
-      " increment"
-     ]
+      "word": "long",
+      "clues": [
+        "of relatively great duration",
+        "of great spatial extension"
+      ]
     },
     {
-     "word": "growth",
-     "clues": [
-      "abnormal proliferation of tissue"
-     ]
+      "word": "look",
+      "clues": [
+        "search",
+        "physical appearance",
+        "appear",
+        " seem",
+        "spirit",
+        " tone",
+        " feel",
+        " feeling",
+        " flavor"
+      ]
     },
     {
-     "word": "guarantee",
-     "clues": [
-      "warrant",
-      " warrantee"
-     ]
+      "word": "loop",
+      "clues": [
+        "iteration",
+        "round or oval shape"
+      ]
     },
     {
-     "word": "guard",
-     "clues": [
-      "bodyguard"
-     ]
+      "word": "loose",
+      "clues": [
+        "not tight",
+        " constrained or constricted"
+      ]
     },
     {
-     "word": "guard",
-     "clues": [
-      "watchman"
-     ]
+      "word": "loot",
+      "clues": [
+        "booty",
+        " pillage",
+        " plunder",
+        " dirty money",
+        " prize"
+      ]
     },
     {
-     "word": "guerrilla",
-     "clues": [
-      "insurgent"
-     ]
+      "word": "looting",
+      "clues": [
+        "plundering"
+      ]
     },
     {
-     "word": "guest",
-     "clues": [
-      "invitee"
-     ]
+      "word": "lose",
+      "clues": [
+        "fail to win"
+      ]
     },
     {
-     "word": "guide",
-     "clues": [
-      "guidebook"
-     ]
+      "word": "loss",
+      "clues": [
+        "red ink",
+        " financial loss",
+        "something that is lost"
+      ]
     },
     {
-     "word": "guide",
-     "clues": [
-      "someone who shows the way"
-     ]
+      "word": "lost",
+      "clues": [
+        "spiritually or physically doomed or destroyed",
+        "no longer in your possession or control"
+      ]
     },
     {
-     "word": "guideline",
-     "clues": [
-      "guidepost",
-      " rule of thumb"
-     ]
+      "word": "lot",
+      "clues": [
+        "parcel of land having fixed boundaries",
+        "deal",
+        " flock",
+        " good deal",
+        " great deal",
+        " heap"
+      ]
     },
     {
-     "word": "guilt",
-     "clues": [
-      "guiltiness"
-     ]
+      "word": "loud",
+      "clues": [
+        "characterized by sound of great volume"
+      ]
     },
     {
-     "word": "guitar",
-     "clues": [
-      "stringed instrument"
-     ]
+      "word": "lounge",
+      "clues": [
+        "waiting room",
+        " waiting area"
+      ]
     },
     {
-     "word": "gun",
-     "clues": [
-      "weapon"
-     ]
+      "word": "love",
+      "clues": [
+        "passion",
+        "be in love with",
+        "beloved",
+        " dear",
+        " dearest",
+        " loved one",
+        " honey"
+      ]
     },
     {
-     "word": "gutter",
-     "clues": [
-      "trough",
-      " channel for collecting rainwater"
-     ]
+      "word": "lover",
+      "clues": [
+        "significant other"
+      ]
     },
     {
-     "word": "habit",
-     "clues": [
-      "established custom"
-     ]
+      "word": "low",
+      "clues": [
+        "being at small elevation"
+      ]
     },
     {
-     "word": "habitat",
-     "clues": [
-      "home ground"
-     ]
+      "word": "loyalty",
+      "clues": [
+        "trueness"
+      ]
     },
     {
-     "word": "hair",
-     "clues": [
-      "natural body covering"
-     ]
+      "word": "lump",
+      "clues": [
+        "chunk",
+        " gob",
+        " clod"
+      ]
     },
     {
-     "word": "haircut",
-     "clues": [
-      "hairstyle"
-     ]
+      "word": "lunch",
+      "clues": [
+        "luncheon",
+        " midday meal"
+      ]
     },
     {
-     "word": "half",
-     "clues": [
-      "one-half",
-      " one of two equal parts"
-     ]
+      "word": "lung",
+      "clues": [
+        "respiratory organ"
+      ]
     },
     {
-     "word": "hall",
-     "clues": [
-      "large building for meetings or entertainment"
-     ]
+      "word": "machinery",
+      "clues": [
+        "machines"
+      ]
     },
     {
-     "word": "hall",
-     "clues": [
-      "large room for gatherings or entertainment"
-     ]
+      "word": "magazine",
+      "clues": [
+        "periodic publication"
+      ]
     },
     {
-     "word": "hall",
-     "clues": [
-      "hallway"
-     ]
+      "word": "magnetic",
+      "clues": [
+        "relating to magnetism"
+      ]
     },
     {
-     "word": "dorm",
-     "clues": [
-      "dormitory",
-      " residence hall"
-     ]
+      "word": "magnitude",
+      "clues": [
+        "size",
+        " extent"
+      ]
     },
     {
-     "word": "hallway",
-     "clues": [
-      "passage",
-      " corridor"
-     ]
+      "word": "mai",
+      "clues": [
+        "carrier] mailman",
+        " postman",
+        " letter carrier"
+      ]
     },
     {
-     "word": "halt",
-     "clues": [
-      "freeze",
-      " interruption",
-      " temporary suspension"
-     ]
+      "word": "maid",
+      "clues": [
+        "maidservant",
+        " housemaid"
+      ]
     },
     {
-     "word": "ham",
-     "clues": [
-      "meat"
-     ]
+      "word": "mail",
+      "clues": [
+        "earth mail",
+        "send",
+        " post"
+      ]
     },
     {
-     "word": "hammer",
-     "clues": [
-      "hand tool"
-     ]
+      "word": "main",
+      "clues": [
+        "chief",
+        " primary",
+        " principal"
+      ]
     },
     {
-     "word": "hand",
-     "clues": [
-      "helping hand"
-     ]
+      "word": "mainstream",
+      "clues": [
+        "prevailing thought"
+      ]
     },
     {
-     "word": "hand",
-     "clues": [
-      "manus",
-      " mitt",
-      " paw"
-     ]
+      "word": "major",
+      "clues": [
+        "of full legal age",
+        "greater in scope or effect"
+      ]
     },
     {
-     "word": "hand",
-     "clues": [
-      "round of applause"
-     ]
+      "word": "majority",
+      "clues": [
+        "absolute majority",
+        "legal age"
+      ]
     },
     {
-     "word": "hand",
-     "clues": [
-      "deal",
-      " cards held in a game by a player"
-     ]
+      "word": "make",
+      "clues": [
+        "gain",
+        " take in",
+        " clear",
+        " earn",
+        "produce",
+        " create"
+      ]
     },
     {
-     "word": "hand",
-     "clues": [
-      "hired hand",
-      " hired man"
-     ]
+      "word": "makeup",
+      "clues": [
+        "cosmetics"
+      ]
     },
     {
-     "word": "harbor",
-     "clues": [
-      "seaport"
-     ]
+      "word": "man",
+      "clues": [
+        "adult male",
+        " male",
+        "homo",
+        " human being",
+        " human"
+      ]
     },
     {
-     "word": "hardship",
-     "clues": [
-      "adversity"
-     ]
+      "word": "manage",
+      "clues": [
+        "oversee",
+        " supervise",
+        "pull off",
+        " bring off",
+        " carry off"
+      ]
     },
     {
-     "word": "hardware",
-     "clues": [
-      "computer hardware"
-     ]
+      "word": "management",
+      "clues": [
+        "direction"
+      ]
     },
     {
-     "word": "harmony",
-     "clues": [
-      "concord",
-      " harmoniousness",
-      " compatibility"
-     ]
+      "word": "manager",
+      "clues": [
+        "director"
+      ]
     },
     {
-     "word": "harmony",
-     "clues": [
-      "musical harmony"
-     ]
+      "word": "manner",
+      "clues": [
+        "personal manner",
+        " way of acting or behaving"
+      ]
     },
     {
-     "word": "harvest",
-     "clues": [
-      "harvest time"
-     ]
+      "word": "manual",
+      "clues": [
+        "handbook",
+        "requiring human effort"
+      ]
     },
     {
-     "word": "hat",
-     "clues": [
-      "headdress"
-     ]
+      "word": "manufacture",
+      "clues": [
+        "fabrication"
+      ]
     },
     {
-     "word": "hay",
-     "clues": [
-      "grass mowed and cured"
-     ]
+      "word": "manufacturer",
+      "clues": [
+        "producer"
+      ]
     },
     {
-     "word": "head",
-     "clues": [
-      "obverse side of a tail"
-     ]
+      "word": "map",
+      "clues": [
+        "representation of the earth's surface"
+      ]
     },
     {
-     "word": "head",
-     "clues": [
-      "body part"
-     ]
+      "word": "marathon",
+      "clues": [
+        "footrace of 26 miles"
+      ]
     },
     {
-     "word": "head",
-     "clues": [
-      "chief",
-      " top dog",
-      " person who is in charge"
-     ]
+      "word": "marble",
+      "clues": [
+        "glass ball for games",
+        "rock"
+      ]
     },
     {
-     "word": "headline",
-     "clues": [
-      "newspaper headline"
-     ]
+      "word": "march",
+      "clues": [
+        "marching music",
+        "walk",
+        "March",
+        " month",
+        "procession of people"
+      ]
     },
     {
-     "word": "headquarters",
-     "clues": [
-      "central office",
-      " main office"
-     ]
+      "word": "margin",
+      "clues": [
+        "edge",
+        " blank space on a page"
+      ]
     },
     {
-     "word": "health",
-     "clues": [
-      "wellness",
-      " healthy state of wellbeing"
-     ]
+      "word": "marine",
+      "clues": [
+        "nautical",
+        " maritime",
+        " relating to the sea"
+      ]
     },
     {
-     "word": "health",
-     "clues": [
-      "general condition of body and mind"
-     ]
+      "word": "mark",
+      "clues": [
+        "grade",
+        " score",
+        "scratch",
+        " scrape",
+        " scar",
+        " indication of damage"
+      ]
     },
     {
-     "word": "heart",
-     "clues": [
-      "playing card in the major suit of hearts"
-     ]
+      "word": "market",
+      "clues": [
+        "grocery store",
+        " grocery",
+        " food market",
+        "commercialize"
+      ]
     },
     {
-     "word": "heart",
-     "clues": [
-      "bodily organ"
-     ]
+      "word": "marketing",
+      "clues": [
+        "promoting and selling"
+      ]
     },
     {
-     "word": "heart",
-     "clues": [
-      "locus of feelings and intuitions"
-     ]
+      "word": "marriage",
+      "clues": [
+        "married couple",
+        " man and wife",
+        "union",
+        " matrimony",
+        " spousal relationship",
+        " wedlock"
+      ]
     },
     {
-     "word": "heart",
-     "clues": [
-      "figure with rounded sides curving inward at the top"
-     ]
+      "word": "Mars",
+      "clues": [
+        "the red planet"
+      ]
     },
     {
-     "word": "heat",
-     "clues": [
-      "heating system"
-     ]
+      "word": "marsh",
+      "clues": [
+        "marshland",
+        " fen",
+        " fenland"
+      ]
     },
     {
-     "word": "heat",
-     "clues": [
-      "passion"
-     ]
+      "word": "mask",
+      "clues": [
+        "disguise"
+      ]
     },
     {
-     "word": "heaven",
-     "clues": [
-      "paradise",
-      " place of complete bliss"
-     ]
+      "word": "mass",
+      "clues": [
+        "body of matter"
+      ]
     },
     {
-     "word": "heel",
-     "clues": [
-      "back of the foot"
-     ]
+      "word": "master",
+      "clues": [
+        "maestro",
+        " artist of consummate skill",
+        "get the hang of"
+      ]
     },
     {
-     "word": "height",
-     "clues": [
-      "altitude"
-     ]
+      "word": "mastermind",
+      "clues": [
+        "engineer",
+        " direct",
+        " orchestrate",
+        " organize"
+      ]
     },
     {
-     "word": "heir",
-     "clues": [
-      "inheritor",
-      " heritor"
-     ]
+      "word": "match",
+      "clues": [
+        "fit",
+        " correspond",
+        " check",
+        " agree",
+        "be equal or harmonize",
+        "formal contest",
+        "peer",
+        " equal",
+        " compeer",
+        "catch",
+        " a good matrimonial prospect",
+        "lighter",
+        " friction match"
+      ]
     },
     {
-     "word": "helicopter",
-     "clues": [
-      "chopper"
-     ]
+      "word": "material",
+      "clues": [
+        "stuff",
+        "fabric",
+        " cloth",
+        " textile"
+      ]
     },
     {
-     "word": "hell",
-     "clues": [
-      "infernal region",
-      " netherworld"
-     ]
+      "word": "mathematics",
+      "clues": [
+        "math",
+        " maths"
+      ]
     },
     {
-     "word": "helmet",
-     "clues": [
-      "headgear"
-     ]
+      "word": "matrix",
+      "clues": [
+        "rectangular array"
+      ]
     },
     {
-     "word": "help",
-     "clues": [
-      "aid",
-      " assist",
-      " assistance"
-     ]
+      "word": "matter",
+      "clues": [
+        "substance",
+        "count",
+        " weigh",
+        " carry weight"
+      ]
     },
     {
-     "word": "help",
-     "clues": [
-      "assistant",
-      " helper",
-      " supporter"
-     ]
+      "word": "mature",
+      "clues": [
+        "ripe",
+        " fully developed and ready to be eaten",
+        "having reached full natural growth or development"
+      ]
     },
     {
-     "word": "hemisphere",
-     "clues": [
-      "cerebral hemisphere"
-     ]
+      "word": "maximum",
+      "clues": [
+        "maximal",
+        "upper limit"
+      ]
     },
     {
-     "word": "hemisphere",
-     "clues": [
-      "half of the terrestrial globe"
-     ]
+      "word": "mayor",
+      "clues": [
+        "city manager"
+      ]
     },
     {
-     "word": "hen",
-     "clues": [
-      "female chicken"
-     ]
+      "word": "maze",
+      "clues": [
+        "labyrinth"
+      ]
     },
     {
-     "word": "herb",
-     "clues": [
-      "cooking herb"
-     ]
+      "word": "meadow",
+      "clues": [
+        "hayfield"
+      ]
     },
     {
-     "word": "herd",
-     "clues": [
-      "group of cattle"
-     ]
+      "word": "meal",
+      "clues": [
+        "repast"
+      ]
     },
     {
-     "word": "sandwich",
-     "clues": [
-      "bomber",
-      " grinder",
-      " hero",
-      " hoagie",
-      " sub"
-     ]
+      "word": "mean",
+      "clues": [
+        "intend",
+        " signify",
+        " stand for"
+      ]
     },
     {
-     "word": "hero",
-     "clues": [
-      "person with exceptional courage"
-     ]
+      "word": "meaning",
+      "clues": [
+        "significance",
+        " signification"
+      ]
     },
     {
-     "word": "heroin",
-     "clues": [
-      "drug"
-     ]
+      "word": "means",
+      "clues": [
+        "instrumentality for accomplishing some end"
+      ]
     },
     {
-     "word": "hierarchy",
-     "clues": [
-      "power structure",
-      " pecking order"
-     ]
+      "word": "measure",
+      "clues": [
+        "quantify",
+        " express as a number or quantity",
+        "measuring stick",
+        " measuring rod"
+      ]
     },
     {
-     "word": "highlight",
-     "clues": [
-      "high spot"
-     ]
+      "word": "meat",
+      "clues": [
+        "flesh of animals"
+      ]
     },
     {
-     "word": "hill",
-     "clues": [
-      "elevation of the land"
-     ]
+      "word": "mechanical",
+      "clues": [
+        "using a mechanism"
+      ]
     },
     {
-     "word": "hip",
-     "clues": [
-      "either side of the body below the waist and above the thigh"
-     ]
+      "word": "mechanism",
+      "clues": [
+        "piece of machinery"
+      ]
     },
     {
-     "word": "history",
-     "clues": [
-      "discipline that interprets past events"
-     ]
+      "word": "medal",
+      "clues": [
+        "decoration",
+        " laurel wreath",
+        " medallion",
+        " ribbon"
+      ]
     },
     {
-     "word": "history",
-     "clues": [
-      "account",
-      " chronicle",
-      " story"
-     ]
+      "word": "medicine",
+      "clues": [
+        "medical profession",
+        "medication",
+        " medicament",
+        " medicinal drug"
+      ]
     },
     {
-     "word": "history",
-     "clues": [
-      "the aggregate of past events"
-     ]
+      "word": "medieval",
+      "clues": [
+        "from the Middle Ages"
+      ]
     },
     {
-     "word": "custody",
-     "clues": [
-      "detention",
-      " detainment",
-      " hold"
-     ]
+      "word": "medium",
+      "clues": [
+        "mass medium",
+        " mass media",
+        "intermediate state",
+        "spiritualist"
+      ]
     },
     {
-     "word": "hole",
-     "clues": [
-      "opening into or through something"
-     ]
+      "word": "meet",
+      "clues": [
+        "get to know",
+        "gather",
+        " assemble"
+      ]
     },
     {
-     "word": "mess",
-     "clues": [
-      "difficult situation",
-      " fix",
-      " jam",
-      " muddle",
-      " pickle"
-     ]
+      "word": "meeting",
+      "clues": [
+        "planned coming together",
+        "encounter",
+        " casual or unexpected convergence"
+      ]
     },
     {
-     "word": "holiday",
-     "clues": [
-      "vacation"
-     ]
+      "word": "member",
+      "clues": [
+        "part of a social group"
+      ]
     },
     {
-     "word": "holiday",
-     "clues": [
-      "day on which work is suspended"
-     ]
+      "word": "memorandum",
+      "clues": [
+        "memo"
+      ]
     },
     {
-     "word": "home",
-     "clues": [
-      "dwelling",
-      " domicile",
-      " abode",
-      " habitation"
-     ]
+      "word": "memorial",
+      "clues": [
+        "monument",
+        "commemoration",
+        " remembrance"
+      ]
     },
     {
-     "word": "home",
-     "clues": [
-      "nursing home",
-      " rest home"
-     ]
+      "word": "memory",
+      "clues": [
+        "computer memory",
+        " storage",
+        "capacity to remember",
+        "something that is remembered"
+      ]
     },
     {
-     "word": "honey",
-     "clues": [
-      "sweet food"
-     ]
+      "word": "mention",
+      "clues": [
+        "note",
+        " observe",
+        " remark"
+      ]
     },
     {
-     "word": "honor",
-     "clues": [
-      "honorableness"
-     ]
+      "word": "menu",
+      "clues": [
+        "dishes planned for a meal",
+        "computer menu"
+      ]
     },
     {
-     "word": "honor",
-     "clues": [
-      "laurels"
-     ]
+      "word": "merchant",
+      "clues": [
+        "merchandiser",
+        " businessperson"
+      ]
     },
     {
-     "word": "hook",
-     "clues": [
-      "bent implement"
-     ]
+      "word": "mercy",
+      "clues": [
+        "clemency",
+        " mercifulness",
+        " leniency"
+      ]
     },
     {
-     "word": "bait",
-     "clues": [
-      "come-on",
-      " lure",
-      " sweetener",
-      " hook"
-     ]
+      "word": "merit",
+      "clues": [
+        "deservingness",
+        " meritoriousness"
+      ]
     },
     {
-     "word": "hope",
-     "clues": [
-      "wish",
-      " desire and expectancy"
-     ]
+      "word": "mess",
+      "clues": [
+        "difficult situation",
+        " fix",
+        " jam",
+        " muddle",
+        " pickle"
+      ]
     },
     {
-     "word": "horizon",
-     "clues": [
-      "skyline"
-     ]
+      "word": "message",
+      "clues": [
+        "written",
+        " spoken",
+        " or signaled communication"
+      ]
     },
     {
-     "word": "horn",
-     "clues": [
-      "bony outgrowths on the head"
-     ]
+      "word": "metal",
+      "clues": [
+        "metallic element"
+      ]
     },
     {
-     "word": "horn",
-     "clues": [
-      "car horn"
-     ]
+      "word": "method",
+      "clues": [
+        "way of doing something"
+      ]
     },
     {
-     "word": "horoscope",
-     "clues": [
-      "prediction of the future"
-     ]
+      "word": "microphone",
+      "clues": [
+        "mike"
+      ]
     },
     {
-     "word": "horror",
-     "clues": [
-      "repugnance",
-      " repulsion",
-      " revulsion"
-     ]
+      "word": "middle",
+      "clues": [
+        "intermediate part or section"
+      ]
     },
     {
-     "word": "horse",
-     "clues": [
-      "animal"
-     ]
+      "word": "midnight",
+      "clues": [
+        "12 o'clock"
+      ]
     },
     {
-     "word": "horse",
-     "clues": [
-      "knight",
-      " chessman"
-     ]
+      "word": "migration",
+      "clues": [
+        "movement from one country to another"
+      ]
     },
     {
-     "word": "hospital",
-     "clues": [
-      "infirmary"
-     ]
+      "word": "mild",
+      "clues": [
+        "moderate"
+      ]
     },
     {
-     "word": "hospitality",
-     "clues": [
-      "cordial reception",
-      " kindness in welcoming guests or strangers"
-     ]
+      "word": "mile",
+      "clues": [
+        "distance"
+      ]
     },
     {
-     "word": "host",
-     "clues": [
-      "master of ceremonies",
-      " emcee"
-     ]
+      "word": "mill",
+      "clues": [
+        "grinder"
+      ]
     },
     {
-     "word": "host",
-     "clues": [
-      "inviter"
-     ]
+      "word": "mind",
+      "clues": [
+        "head",
+        " brain",
+        " what is responsible for one's thoughts and feelings",
+        "be offended or bothered by",
+        "intellect",
+        " knowledge and intellectual ability"
+      ]
     },
     {
-     "word": "hostage",
-     "clues": [
-      "prisoner held for ransom"
-     ]
+      "word": "mine",
+      "clues": [
+        "explosive device",
+        "excavation of ores and minerals"
+      ]
     },
     {
-     "word": "hostility",
-     "clues": [
-      "aggression"
-     ]
+      "word": "miner",
+      "clues": [
+        "mineworker"
+      ]
     },
     {
-     "word": "hostility",
-     "clues": [
-      "enmity",
-      " antagonism"
-     ]
+      "word": "minimize",
+      "clues": [
+        "understate",
+        " downplay"
+      ]
     },
     {
-     "word": "hour",
-     "clues": [
-      "hr",
-      " 60 minutes",
-      " period of time"
-     ]
+      "word": "minimum",
+      "clues": [
+        "minimal",
+        "lower limit"
+      ]
     },
     {
-     "word": "hour",
-     "clues": [
-      "time of day",
-      " clock time"
-     ]
+      "word": "minister",
+      "clues": [
+        "government minister",
+        "pastor",
+        " rector"
+      ]
     },
     {
-     "word": "house",
-     "clues": [
-      "dwelling"
-     ]
+      "word": "ministry",
+      "clues": [
+        "government department"
+      ]
     },
     {
-     "word": "house",
-     "clues": [
-      "legislature"
-     ]
+      "word": "minor",
+      "clues": [
+        "lesser in scope or effect"
+      ]
     },
     {
-     "word": "family",
-     "clues": [
-      "household",
-      " home",
-      " menage"
-     ]
+      "word": "minority",
+      "clues": [
+        "smaller in number"
+      ]
     },
     {
-     "word": "houseplant",
-     "clues": [
-      "plant for indoor use"
-     ]
+      "word": "minute",
+      "clues": [
+        "min",
+        " unit of time equal to 60 seconds"
+      ]
     },
     {
-     "word": "housewife",
-     "clues": [
-      "homemaker"
-     ]
+      "word": "miracle",
+      "clues": [
+        "supernatural event"
+      ]
     },
     {
-     "word": "housing",
-     "clues": [
-      "lodging",
-      " living accommodations"
-     ]
+      "word": "mirror",
+      "clues": [
+        "reflector"
+      ]
     },
     {
-     "word": "huma",
-     "clues": [
-      "body] physical body"
-     ]
+      "word": "miscarriage",
+      "clues": [
+        "stillbirth"
+      ]
     },
     {
-     "word": "humanity",
-     "clues": [
-      "humanness"
-     ]
+      "word": "miserable",
+      "clues": [
+        "abject",
+        " scummy",
+        " contemptible"
+      ]
     },
     {
-     "word": "humor",
-     "clues": [
-      "sense of humor"
-     ]
+      "word": "misery",
+      "clues": [
+        "wretchedness",
+        " miserableness"
+      ]
     },
     {
-     "word": "hunter",
-     "clues": [
-      "huntsman"
-     ]
+      "word": "mislead",
+      "clues": [
+        "misinform",
+        " give false information"
+      ]
     },
     {
-     "word": "hunting",
-     "clues": [
-      "hunt"
-     ]
+      "word": "misplace",
+      "clues": [
+        "lose"
+      ]
     },
     {
-     "word": "husband",
-     "clues": [
-      "hubby"
-     ]
+      "word": "miss",
+      "clues": [
+        "feel or suffer from the lack of",
+        "fail to reach or get to",
+        "fail to attend an event or activity"
+      ]
     },
     {
-     "word": "hut",
-     "clues": [
-      "hovel",
-      " hutch",
-      " shack"
-     ]
+      "word": "missile",
+      "clues": [
+        "projectile",
+        " weapon"
+      ]
     },
     {
-     "word": "hypothesis",
-     "clues": [
-      "guess",
-      " conjecture",
-      " surmise",
-      " speculation"
-     ]
+      "word": "mist",
+      "clues": [
+        "thin fog"
+      ]
     },
     {
-     "word": "ice",
-     "clues": [
-      "frozen water"
-     ]
+      "word": "mistreat",
+      "clues": [
+        "maltreat",
+        " abuse"
+      ]
     },
     {
-     "word": "ic",
-     "clues": [
-      "cream] frozen dessert"
-     ]
+      "word": "mix",
+      "clues": [
+        "shuffle",
+        " randomize"
+      ]
     },
     {
-     "word": "idea",
-     "clues": [
-      "thought"
-     ]
+      "word": "mixture",
+      "clues": [
+        "mix"
+      ]
     },
     {
-     "word": "ideal",
-     "clues": [
-      "paragon",
-      " model of excellence or perfection"
-     ]
+      "word": "mobile",
+      "clues": [
+        "moving or capable of moving readily"
+      ]
     },
     {
-     "word": "identification",
-     "clues": [
-      "identity papers"
-     ]
+      "word": "model",
+      "clues": [
+        "simulate",
+        "role model",
+        "poser for a photographer or painter or sculptor",
+        "framework",
+        "simulation",
+        "fashion model"
+      ]
     },
     {
-     "word": "identity",
-     "clues": [
-      "personal identity",
-      " individuality"
-     ]
+      "word": "modernize",
+      "clues": [
+        "develop"
+      ]
     },
     {
-     "word": "identity",
-     "clues": [
-      "identicalness",
-      " indistinguishability"
-     ]
+      "word": "modest",
+      "clues": [
+        "not offensive to sexual mores"
+      ]
     },
     {
-     "word": "ideology",
-     "clues": [
-      "political theory"
-     ]
+      "word": "module",
+      "clues": [
+        "component"
+      ]
     },
     {
-     "word": "ignorance",
-     "clues": [
-      "lack of knowledge"
-     ]
+      "word": "mold",
+      "clues": [
+        "fungus",
+        " mould"
+      ]
     },
     {
-     "word": "illness",
-     "clues": [
-      "unwellness",
-      " malady",
-      " sickness"
-     ]
+      "word": "mole",
+      "clues": [
+        "pigmented spot on the skin",
+        "counterspy",
+        "small velvety-furred burrowing mammal"
+      ]
     },
     {
-     "word": "illusion",
-     "clues": [
-      "false mental representation"
-     ]
+      "word": "moment",
+      "clues": [
+        "here and now",
+        " present moment"
+      ]
     },
     {
-     "word": "image",
-     "clues": [
-      "mental image"
-     ]
+      "word": "momentum",
+      "clues": [
+        "impulse",
+        " force"
+      ]
     },
     {
-     "word": "image",
-     "clues": [
-      "double",
-      " look-alike"
-     ]
+      "word": "monarch",
+      "clues": [
+        "sovereign",
+        " crowned head"
+      ]
     },
     {
-     "word": "impact",
-     "clues": [
-      "striking of one body against another"
-     ]
+      "word": "money",
+      "clues": [
+        "wealth",
+        "currency"
+      ]
     },
     {
-     "word": "impact",
-     "clues": [
-      "forceful consequence",
-      " strong effect"
-     ]
+      "word": "monk",
+      "clues": [
+        "inhabitant of a monastery"
+      ]
     },
     {
-     "word": "implication",
-     "clues": [
-      "logical implication"
-     ]
+      "word": "monkey",
+      "clues": [
+        "long-tailed primate"
+      ]
     },
     {
-     "word": "import",
-     "clues": [
-      "importation"
-     ]
+      "word": "monopoly",
+      "clues": [
+        "exclusive control"
+      ]
     },
     {
-     "word": "improvement",
-     "clues": [
-      "condition superior to an earlier one"
-     ]
+      "word": "monster",
+      "clues": [
+        "freak"
+      ]
     },
     {
-     "word": "momentum",
-     "clues": [
-      "impulse",
-      " force"
-     ]
+      "word": "monstrous",
+      "clues": [
+        "atrocious",
+        " heinous",
+        "grotesque"
+      ]
     },
     {
-     "word": "impulse",
-     "clues": [
-      "caprice",
-      " whim"
-     ]
+      "word": "month",
+      "clues": [
+        "calendar month"
+      ]
     },
     {
-     "word": "incentive",
-     "clues": [
-      "inducement",
-      " motivator",
-      " carrot"
-     ]
+      "word": "mood",
+      "clues": [
+        "temper",
+        " humor"
+      ]
     },
     {
-     "word": "inch",
-     "clues": [
-      "in",
-      " unit of length"
-     ]
+      "word": "moon",
+      "clues": [
+        "satellite of the Earth"
+      ]
     },
     {
-     "word": "incident",
-     "clues": [
-      "event"
-     ]
+      "word": "moral",
+      "clues": [
+        "relating to principles of right and wrong"
+      ]
     },
     {
-     "word": "increase",
-     "clues": [
-      "increment"
-     ]
+      "word": "morale",
+      "clues": [
+        "team spirit",
+        "individual psychological well-being"
+      ]
     },
     {
-     "word": "inde",
-     "clues": [
-      "finger] forefinger"
-     ]
+      "word": "morning",
+      "clues": [
+        "morn",
+        " morning time",
+        " forenoon"
+      ]
     },
     {
-     "word": "index",
-     "clues": [
-      "alphabetical listing"
-     ]
+      "word": "morsel",
+      "clues": [
+        "bit",
+        " bit"
+      ]
     },
     {
-     "word": "indication",
-     "clues": [
-      "suggestion"
-     ]
+      "word": "mosaic",
+      "clues": [
+        "colored stone or glass art"
+      ]
     },
     {
-     "word": "industry",
-     "clues": [
-      "manufacture"
-     ]
+      "word": "mosque",
+      "clues": [
+        "place of worship"
+      ]
     },
     {
-     "word": "industry",
-     "clues": [
-      "diligence",
-      " industriousness"
-     ]
+      "word": "mosquito",
+      "clues": [
+        "blood-sucking insect"
+      ]
     },
     {
-     "word": "infection",
-     "clues": [
-      "contagion",
-      " transmission"
-     ]
+      "word": "mother",
+      "clues": [
+        "female parent"
+      ]
     },
     {
-     "word": "inflation",
-     "clues": [
-      "rising prices"
-     ]
+      "word": "motif",
+      "clues": [
+        "design"
+      ]
     },
     {
-     "word": "influence",
-     "clues": [
-      "power to affect persons or events"
-     ]
+      "word": "motivation",
+      "clues": [
+        "motive",
+        " need"
+      ]
     },
     {
-     "word": "influence",
-     "clues": [
-      "effect of one thing or person"
-     ]
+      "word": "motorcycle",
+      "clues": [
+        "motorbike",
+        " bike"
+      ]
     },
     {
-     "word": "information",
-     "clues": [
-      "info"
-     ]
+      "word": "motorist",
+      "clues": [
+        "automobilist"
+      ]
     },
     {
-     "word": "infrastructure",
-     "clues": [
-      "basic features of a system"
-     ]
+      "word": "mountain",
+      "clues": [
+        "mount",
+        " land mass projecting above its surroundings"
+      ]
     },
     {
-     "word": "inhabitant",
-     "clues": [
-      "habitant",
-      " dweller",
-      " denizen"
-     ]
+      "word": "mourning",
+      "clues": [
+        "bereavement"
+      ]
     },
     {
-     "word": "inhibition",
-     "clues": [
-      "suppression",
-      " conscious exclusion of unacceptable thoughts or desires"
-     ]
+      "word": "mouse",
+      "clues": [
+        "computer mouse",
+        "rodent"
+      ]
     },
     {
-     "word": "initial",
-     "clues": [
-      "first letter of a word"
-     ]
+      "word": "mouth",
+      "clues": [
+        "oral cavity"
+      ]
     },
     {
-     "word": "initiative",
-     "clues": [
-      "first step"
-     ]
+      "word": "move",
+      "clues": [
+        "player's turn to move a piece or act",
+        "change position",
+        "relocation",
+        " changing your residence or business",
+        "arouse sympathy or compassion",
+        "change residence",
+        " affiliation",
+        " or employment",
+        "be active"
+      ]
     },
     {
-     "word": "injection",
-     "clues": [
-      "shot"
-     ]
+      "word": "movement",
+      "clues": [
+        "motion",
+        " move",
+        " change of position",
+        "social movement",
+        " front",
+        " people with a common ideology"
+      ]
     },
     {
-     "word": "injury",
-     "clues": [
-      "hurt",
-      " harm",
-      " trauma"
-     ]
+      "word": "movie",
+      "clues": [
+        "film"
+      ]
     },
     {
-     "word": "inn",
-     "clues": [
-      "hostel",
-      " hostelry",
-      " lodge"
-     ]
+      "word": "moving",
+      "clues": [
+        "arousing deep emotion"
+      ]
     },
     {
-     "word": "innovation",
-     "clues": [
-      "invention"
-     ]
+      "word": "mud",
+      "clues": [
+        "clay",
+        " soft wet earth"
+      ]
     },
     {
-     "word": "inquiry",
-     "clues": [
-      "inquest"
-     ]
+      "word": "mug",
+      "clues": [
+        "cup"
+      ]
     },
     {
-     "word": "inside",
-     "clues": [
-      "interior"
-     ]
+      "word": "muggy",
+      "clues": [
+        "sticky",
+        " steamy"
+      ]
     },
     {
-     "word": "brainstorm",
-     "clues": [
-      "sudden insight"
-     ]
+      "word": "multimedia",
+      "clues": [
+        "multimedia system"
+      ]
     },
     {
-     "word": "insight",
-     "clues": [
-      "perceptiveness",
-      " understanding"
-     ]
+      "word": "multiply",
+      "clues": [
+        "calculate"
+      ]
     },
     {
-     "word": "insistence",
-     "clues": [
-      "insistency",
-      " act of insisting"
-     ]
+      "word": "murder",
+      "clues": [
+        "slaying",
+        " execution"
+      ]
     },
     {
-     "word": "inspector",
-     "clues": [
-      "examiner"
-     ]
+      "word": "muscle",
+      "clues": [
+        "bodily tissue"
+      ]
     },
     {
-     "word": "inspiration",
-     "clues": [
-      "sudden intuition"
-     ]
+      "word": "museum",
+      "clues": [
+        "exhibition hall"
+      ]
     },
     {
-     "word": "instinct",
-     "clues": [
-      "inherent aptitude"
-     ]
+      "word": "mushroom",
+      "clues": [
+        "fungus"
+      ]
     },
     {
-     "word": "institution",
-     "clues": [
-      "mental hospital"
-     ]
+      "word": "musical",
+      "clues": [
+        "talented in or devoted to music"
+      ]
     },
     {
-     "word": "institution",
-     "clues": [
-      "establishment"
-     ]
+      "word": "mutation",
+      "clues": [
+        "genetic mutation"
+      ]
     },
     {
-     "word": "instruction",
-     "clues": [
-      "teaching",
-      " pedagogy"
-     ]
+      "word": "mutter",
+      "clues": [
+        "mumble",
+        " murmur"
+      ]
     },
     {
-     "word": "instrument",
-     "clues": [
-      "device"
-     ]
+      "word": "mutual",
+      "clues": [
+        "reciprocal"
+      ]
     },
     {
-     "word": "instrument",
-     "clues": [
-      "musical instrument"
-     ]
+      "word": "mystery",
+      "clues": [
+        "secret",
+        " enigma",
+        " closed book"
+      ]
     },
     {
-     "word": "insurance",
-     "clues": [
-      "indemnity",
-      " protection"
-     ]
+      "word": "myth",
+      "clues": [
+        "traditional story"
+      ]
     },
     {
-     "word": "integration",
-     "clues": [
-      "desegregation"
-     ]
+      "word": "nail",
+      "clues": [
+        "thin pointed piece of metal",
+        "body part"
+      ]
     },
     {
-     "word": "integrity",
-     "clues": [
-      "moral soundness"
-     ]
+      "word": "name",
+      "clues": [
+        "language unit by which a person or thing is known",
+        "person's reputation"
+      ]
     },
     {
-     "word": "intelligence",
-     "clues": [
-      "ability to comprehend"
-     ]
+      "word": "nap",
+      "clues": [
+        "catnap",
+        " take a nap"
+      ]
     },
     {
-     "word": "intelligence",
-     "clues": [
-      "intelligence service",
-      " intelligence agency"
-     ]
+      "word": "narrow",
+      "clues": [
+        "narrow-minded",
+        "not wide spatially"
+      ]
     },
     {
-     "word": "intention",
-     "clues": [
-      "volition"
-     ]
+      "word": "national",
+      "clues": [
+        "relating to a nation or country"
+      ]
     },
     {
-     "word": "interest",
-     "clues": [
-      "pastime",
-      " pursuit"
-     ]
+      "word": "nationalism",
+      "clues": [
+        "patriotism",
+        " love of country"
+      ]
     },
     {
-     "word": "interest",
-     "clues": [
-      "fixed charge for borrowing money"
-     ]
+      "word": "nationalist",
+      "clues": [
+        "patriot"
+      ]
     },
     {
-     "word": "interface",
-     "clues": [
-      "user interface"
-     ]
+      "word": "native",
+      "clues": [
+        "belonging to one by birth"
+      ]
     },
     {
-     "word": "interference",
-     "clues": [
-      "hindrance",
-      " hitch",
-      " preventive",
-      " encumbrance"
-     ]
+      "word": "nature",
+      "clues": [
+        "essential qualities or characteristics",
+        "causal agent creating and controlling the universe",
+        "natural physical world including plants and animals"
+      ]
     },
     {
-     "word": "intervention",
-     "clues": [
-      "interference"
-     ]
+      "word": "navy",
+      "clues": [
+        "naval forces",
+        "dark blue",
+        " navy blue"
+      ]
     },
     {
-     "word": "introduction",
-     "clues": [
-      "first section of a communication"
-     ]
+      "word": "neck",
+      "clues": [
+        "cervix",
+        " connection from head to the rest of the body"
+      ]
     },
     {
-     "word": "introduction",
-     "clues": [
-      "presentation",
-      " intro"
-     ]
+      "word": "necklace",
+      "clues": [
+        "chain"
+      ]
     },
     {
-     "word": "introduction",
-     "clues": [
-      "basic instructional text"
-     ]
+      "word": "need",
+      "clues": [
+        "indigence",
+        " penury",
+        " extreme poverty",
+        "demand",
+        "require"
+      ]
     },
     {
-     "word": "invasion",
-     "clues": [
-      "encroachment",
-      " intrusion"
-     ]
+      "word": "needle",
+      "clues": [
+        "indicator for readings",
+        "sharp pointed implement"
+      ]
     },
     {
-     "word": "investigation",
-     "clues": [
-      "probe"
-     ]
+      "word": "negative",
+      "clues": [
+        "reckoned in a direction opposite to positive",
+        "disconfirming"
+      ]
     },
     {
-     "word": "investment",
-     "clues": [
-      "investment funds"
-     ]
+      "word": "neglect",
+      "clues": [
+        "disregard"
+      ]
     },
     {
-     "word": "iron",
-     "clues": [
-      "ferrous metal"
-     ]
+      "word": "negligence",
+      "clues": [
+        "neglect"
+      ]
     },
     {
-     "word": "irony",
-     "clues": [
-      "sarcasm",
-      " satire"
-     ]
+      "word": "negotiation",
+      "clues": [
+        "dialogue",
+        " talks"
+      ]
     },
     {
-     "word": "island",
-     "clues": [
-      "land mass surrounded by water"
-     ]
+      "word": "neighborhood",
+      "clues": [
+        "vicinity",
+        " neck of the woods"
+      ]
     },
     {
-     "word": "isolation",
-     "clues": [
-      "state of separation"
-     ]
+      "word": "neighbour",
+      "clues": [
+        "neighbor",
+        " person living nearby"
+      ]
     },
     {
-     "word": "issue",
-     "clues": [
-      "important question"
-     ]
+      "word": "nerve",
+      "clues": [
+        "bundle of nerve fibers"
+      ]
     },
     {
-     "word": "offspring",
-     "clues": [
-      "progeny",
-      " issue"
-     ]
+      "word": "nervous",
+      "clues": [
+        "neural",
+        "skittish"
+      ]
     },
     {
-     "word": "item",
-     "clues": [
-      "token",
-      " individual instance"
-     ]
+      "word": "nest",
+      "clues": [
+        "structure in which animals lay eggs"
+      ]
     },
     {
-     "word": "ivory",
-     "clues": [
-      "tusk"
-     ]
+      "word": "net",
+      "clues": [
+        "game equipment",
+        "Internet",
+        " Net",
+        " cyberspace"
+      ]
     },
     {
-     "word": "jacket",
-     "clues": [
-      "short coat"
-     ]
+      "word": "network",
+      "clues": [
+        "communication system with a group of broadcasting stations",
+        "web",
+        " interconnected system"
+      ]
     },
     {
-     "word": "jam",
-     "clues": [
-      "preserve"
-     ]
+      "word": "neutral",
+      "clues": [
+        "of no distinctive quality"
+      ]
     },
     {
-     "word": "jar",
-     "clues": [
-      "vessel"
-     ]
+      "word": "new",
+      "clues": [
+        "recently created",
+        " unused or little used",
+        "unfamiliar"
+      ]
     },
     {
-     "word": "jaw",
-     "clues": [
-      "part of the skull"
-     ]
+      "word": "news",
+      "clues": [
+        "intelligence",
+        " tidings",
+        " word",
+        "news program",
+        " news show",
+        "new information"
+      ]
     },
     {
-     "word": "jelly",
-     "clues": [
-      "gelatinous substance"
-     ]
+      "word": "night",
+      "clues": [
+        "nighttime",
+        " dark"
+      ]
     },
     {
-     "word": "jet",
-     "clues": [
-      "squirt",
-      " spurt",
-      " spirt"
-     ]
+      "word": "nightmare",
+      "clues": [
+        "upsetting dream"
+      ]
     },
     {
-     "word": "jewel",
-     "clues": [
-      "gem",
-      " precious stone"
-     ]
+      "word": "noble",
+      "clues": [
+        "having elevated character",
+        "belonging to hereditary aristocracy"
+      ]
     },
     {
-     "word": "job",
-     "clues": [
-      "task",
-      " chore"
-     ]
+      "word": "node",
+      "clues": [
+        "connecting point"
+      ]
     },
     {
-     "word": "job",
-     "clues": [
-      "workplace"
-     ]
+      "word": "noise",
+      "clues": [
+        "sound",
+        "randomness",
+        " haphazardness"
+      ]
     },
     {
-     "word": "jockey",
-     "clues": [
-      "rider"
-     ]
+      "word": "nominate",
+      "clues": [
+        "put up",
+        " put forward",
+        " propose"
+      ]
     },
     {
-     "word": "joint",
-     "clues": [
-      "disreputable place of entertainment"
-     ]
+      "word": "nomination",
+      "clues": [
+        "naming a candidate"
+      ]
     },
     {
-     "word": "joint",
-     "clues": [
-      "body part"
-     ]
+      "word": "nonremittal",
+      "clues": [
+        "default",
+        " nonpayment"
+      ]
     },
     {
-     "word": "joke",
-     "clues": [
-      "gag",
-      " laugh",
-      " jest"
-     ]
+      "word": "nonsense",
+      "clues": [
+        "bunk",
+        " hokum"
+      ]
     },
     {
-     "word": "journal",
-     "clues": [
-      "periodical"
-     ]
+      "word": "norm",
+      "clues": [
+        "standard"
+      ]
     },
     {
-     "word": "journal",
-     "clues": [
-      "diary"
-     ]
+      "word": "normal",
+      "clues": [
+        "conforming with a norm or standard"
+      ]
     },
     {
-     "word": "joy",
-     "clues": [
-      "joyousness",
-      " joyfulness"
-     ]
+      "word": "north",
+      "clues": [
+        "due north",
+        " N",
+        " direction"
+      ]
     },
     {
-     "word": "judge",
-     "clues": [
-      "justice",
-      " jurist",
-      " magistrate"
-     ]
+      "word": "nose",
+      "clues": [
+        "olfactory organ"
+      ]
     },
     {
-     "word": "judgment",
-     "clues": [
-      "judicial decision"
-     ]
+      "word": "note",
+      "clues": [
+        "annotation",
+        "bill",
+        " banknote",
+        "musical note",
+        " tone",
+        "short letter",
+        " line",
+        " billet"
+      ]
     },
     {
-     "word": "judgment",
-     "clues": [
-      "cognitive process"
-     ]
+      "word": "notebook",
+      "clues": [
+        "book with blank pages",
+        "notebook computer"
+      ]
     },
     {
-     "word": "jump",
-     "clues": [
-      "leap",
-      " sudden increase"
-     ]
+      "word": "notice",
+      "clues": [
+        "announcement",
+        "note",
+        " perceive",
+        "advance notification"
+      ]
     },
     {
-     "word": "jungle",
-     "clues": [
-      "impenetrable forest"
-     ]
+      "word": "notion",
+      "clues": [
+        "concept"
+      ]
     },
     {
-     "word": "jurisdiction",
-     "clues": [
-      "legal power"
-     ]
+      "word": "notorious",
+      "clues": [
+        "ill-famed",
+        " infamous"
+      ]
     },
     {
-     "word": "jury",
-     "clues": [
-      "trial jury"
-     ]
+      "word": "novel",
+      "clues": [
+        "fictional work"
+      ]
     },
     {
-     "word": "justice",
-     "clues": [
-      "justness"
-     ]
+      "word": "nuance",
+      "clues": [
+        "shade",
+        " nicety",
+        " subtlety",
+        " refinement"
+      ]
     },
     {
-     "word": "kettle",
-     "clues": [
-      "boiler",
-      " metal pot"
-     ]
+      "word": "nuclear",
+      "clues": [
+        "atomic"
+      ]
     },
     {
-     "word": "key",
-     "clues": [
-      "opening device"
-     ]
+      "word": "number",
+      "clues": [
+        "quantity",
+        "numeral",
+        "phone number",
+        " telephone number"
+      ]
     },
     {
-     "word": "key",
-     "clues": [
-      "tonality"
-     ]
+      "word": "nun",
+      "clues": [
+        "sister",
+        " religious woman"
+      ]
     },
     {
-     "word": "key",
-     "clues": [
-      "legend",
-      " list of words that explain symbols"
-     ]
+      "word": "nursery",
+      "clues": [
+        "plant nursery",
+        " greenhouse",
+        " glasshouse",
+        "baby's room"
+      ]
     },
     {
-     "word": "kick",
-     "clues": [
-      "sudden stimulation"
-     ]
+      "word": "nut",
+      "clues": [
+        "hard-shelled seed"
+      ]
     },
     {
-     "word": "kid",
-     "clues": [
-      "young goat"
-     ]
+      "word": "oak",
+      "clues": [
+        "oak tree"
+      ]
     },
     {
-     "word": "kidney",
-     "clues": [
-      "bean-shaped excretory organ"
-     ]
+      "word": "obese",
+      "clues": [
+        "overweight"
+      ]
     },
     {
-     "word": "killer",
-     "clues": [
-      "slayer"
-     ]
+      "word": "object",
+      "clues": [
+        "aim",
+        " objective",
+        " target",
+        "raise an objection",
+        "physical object",
+        " tangible and visible entity"
+      ]
     },
     {
-     "word": "king",
-     "clues": [
-      "chess piece"
-     ]
+      "word": "objective",
+      "clues": [
+        "nonsubjective"
+      ]
     },
     {
-     "word": "king",
-     "clues": [
-      "playing card"
-     ]
+      "word": "obligation",
+      "clues": [
+        "duty",
+        " responsibility"
+      ]
     },
     {
-     "word": "king",
-     "clues": [
-      "male monarch"
-     ]
+      "word": "obscure",
+      "clues": [
+        "make less visible",
+        "unknown"
+      ]
     },
     {
-     "word": "kingdom",
-     "clues": [
-      "monarchy"
-     ]
+      "word": "observation",
+      "clues": [
+        "facts learned by observing"
+      ]
     },
     {
-     "word": "kinship",
-     "clues": [
-      "family relationship"
-     ]
+      "word": "observer",
+      "clues": [
+        "perceiver",
+        " beholder"
+      ]
     },
     {
-     "word": "kit",
-     "clues": [
-      "outfit",
-      " gear"
-     ]
+      "word": "obstacle",
+      "clues": [
+        "block"
+      ]
     },
     {
-     "word": "kitchen",
-     "clues": [
-      "room equipped for preparing meals"
-     ]
+      "word": "occasion",
+      "clues": [
+        "time of a particular event"
+      ]
     },
     {
-     "word": "kite",
-     "clues": [
-      "toy"
-     ]
+      "word": "occupation",
+      "clues": [
+        "military control"
+      ]
     },
     {
-     "word": "knee",
-     "clues": [
-      "knee joint"
-     ]
+      "word": "occupy",
+      "clues": [
+        "fill",
+        " occupy the whole space of"
+      ]
     },
     {
-     "word": "knife",
-     "clues": [
-      "tool"
-     ]
+      "word": "offend",
+      "clues": [
+        "wound",
+        " hurt",
+        "cause to feel resentment"
+      ]
     },
     {
-     "word": "knot",
-     "clues": [
-      "fastening formed by looping and tying"
-     ]
+      "word": "offender",
+      "clues": [
+        "wrongdoer"
+      ]
     },
     {
-     "word": "knowledge",
-     "clues": [
-      "cognition",
-      " result of perception",
-      " learning",
-      " or reasoning"
-     ]
+      "word": "offense",
+      "clues": [
+        "discourtesy",
+        " offence",
+        "misdemeanor",
+        " infraction",
+        " violation",
+        "offensive",
+        " attack"
+      ]
     },
     {
-     "word": "Koran",
-     "clues": [
-      "Quran",
-      " al-Qur'an",
-      " Islam Holy Book"
-     ]
+      "word": "offensive",
+      "clues": [
+        "for the purpose of attack",
+        "unpleasant or disgusting"
+      ]
     },
     {
-     "word": "laboratory",
-     "clues": [
-      "lab",
-      " research lab"
-     ]
+      "word": "offer",
+      "clues": [
+        "volunteer to do",
+        "bid",
+        " propose to pay",
+        "offering",
+        " verbal act of offering"
+      ]
     },
     {
-     "word": "labour",
-     "clues": [
-      "toil"
-     ]
+      "word": "office",
+      "clues": [
+        "business office",
+        " workplace"
+      ]
     },
     {
-     "word": "labour",
-     "clues": [
-      "working class",
-      " proletariat"
-     ]
+      "word": "officer",
+      "clues": [
+        "policeman",
+        " police officer"
+      ]
     },
     {
-     "word": "laborer",
-     "clues": [
-      "manual laborer"
-     ]
+      "word": "official",
+      "clues": [
+        "functionary",
+        "having official authority"
+      ]
     },
     {
-     "word": "lace",
-     "clues": [
-      "delicate fabric"
-     ]
+      "word": "offset",
+      "clues": [
+        "countervail",
+        " compensate",
+        " counterbalance",
+        " make up for"
+      ]
     },
     {
-     "word": "lack",
-     "clues": [
-      "deficiency",
-      " want"
-     ]
+      "word": "offspring",
+      "clues": [
+        "progeny",
+        " issue",
+        "young"
+      ]
     },
     {
-     "word": "ladder",
-     "clues": [
-      "steps"
-     ]
+      "word": "oil",
+      "clues": [
+        "viscous liquid",
+        "cooking oil",
+        " vegetable oil"
+      ]
     },
     {
-     "word": "lake",
-     "clues": [
-      "body of water"
-     ]
+      "word": "ol",
+      "clues": [
+        "age] years"
+      ]
     },
     {
-     "word": "lamb",
-     "clues": [
-      "young sheep"
-     ]
+      "word": "old",
+      "clues": [
+        "elderly",
+        " having lived for a relatively long time"
+      ]
     },
     {
-     "word": "lamp",
-     "clues": [
-      "furniture holding lightbulbs"
-     ]
+      "word": "omission",
+      "clues": [
+        "skip",
+        " mistake resulting from neglect"
+      ]
     },
     {
-     "word": "land",
-     "clues": [
-      "estate",
-      " landed estate"
-     ]
+      "word": "onion",
+      "clues": [
+        "edible bulb"
+      ]
     },
     {
-     "word": "land",
-     "clues": [
-      "kingdom",
-      " realm"
-     ]
+      "word": "open",
+      "clues": [
+        "affording free passage",
+        "open up",
+        "overt"
+      ]
     },
     {
-     "word": "landowner",
-     "clues": [
-      "landholder",
-      " property owner"
-     ]
+      "word": "opera",
+      "clues": [
+        "drama set to music"
+      ]
     },
     {
-     "word": "landscape",
-     "clues": [
-      "scenery"
-     ]
+      "word": "operation",
+      "clues": [
+        "functioning",
+        " performance",
+        "surgery",
+        "military operation",
+        "business especially one run on a large scale"
+      ]
     },
     {
-     "word": "lane",
-     "clues": [
-      "narrow road"
-     ]
+      "word": "operational",
+      "clues": [
+        "pertaining to a process"
+      ]
     },
     {
-     "word": "language",
-     "clues": [
-      "linguistic communication"
-     ]
+      "word": "opinion",
+      "clues": [
+        "public opinion",
+        " popular opinion",
+        "legal opinion",
+        " judgment",
+        " judgement"
+      ]
     },
     {
-     "word": "language",
-     "clues": [
-      "terminology",
-      " nomenclature"
-     ]
+      "word": "opponent",
+      "clues": [
+        "adversary",
+        " antagonist"
+      ]
     },
     {
-     "word": "lap",
-     "clues": [
-      "body part"
-     ]
+      "word": "oppose",
+      "clues": [
+        "be against"
+      ]
     },
     {
-     "word": "laser",
-     "clues": [
-      "coherent light"
-     ]
+      "word": "opposed",
+      "clues": [
+        "being in opposition"
+      ]
     },
     {
-     "word": "laundry",
-     "clues": [
-      "wash",
-      " washables"
-     ]
+      "word": "opposite",
+      "clues": [
+        "reverse",
+        " contrary"
+      ]
     },
     {
-     "word": "law",
-     "clues": [
-      "natural scientific law"
-     ]
+      "word": "opposition",
+      "clues": [
+        "resistance",
+        "political party opposed",
+        "enemy",
+        " foe"
+      ]
     },
     {
-     "word": "law",
-     "clues": [
-      "jurisprudence"
-     ]
+      "word": "option",
+      "clues": [
+        "right to buy or sell property"
+      ]
     },
     {
-     "word": "law",
-     "clues": [
-      "police",
-      " police force"
-     ]
+      "word": "oral",
+      "clues": [
+        "of or involving the mouth"
+      ]
     },
     {
-     "word": "lawyer",
-     "clues": [
-      "attorney"
-     ]
+      "word": "orange",
+      "clues": [
+        "orangeness",
+        " color between red and yellow",
+        "citrus fruit"
+      ]
     },
     {
-     "word": "layer",
-     "clues": [
-      "thin sheet"
-     ]
+      "word": "orbit",
+      "clues": [
+        "celestial orbit"
+      ]
     },
     {
-     "word": "layout",
-     "clues": [
-      "plan",
-      " design"
-     ]
+      "word": "orchestra",
+      "clues": [
+        "musical group"
+      ]
     },
     {
-     "word": "lead",
-     "clues": [
-      "position of leadership"
-     ]
+      "word": "order",
+      "clues": [
+        "orderliness",
+        "decree",
+        " edict",
+        "request for food or refreshment"
+      ]
     },
     {
-     "word": "leash",
-     "clues": [
-      "tether"
-     ]
+      "word": "ordinary",
+      "clues": [
+        "not exceptional"
+      ]
     },
     {
-     "word": "lead",
-     "clues": [
-      "advantage held by a competitor"
-     ]
+      "word": "organ",
+      "clues": [
+        "pipe organ",
+        "body part"
+      ]
     },
     {
-     "word": "lead",
-     "clues": [
-      "Pb",
-      " atomic number 82",
-      " soft heavy toxic metal"
-     ]
+      "word": "organisation",
+      "clues": [
+        "group of people who work together"
+      ]
     },
     {
-     "word": "leader",
-     "clues": [
-      "commander",
-      " person who rules or guides or inspires others"
-     ]
+      "word": "organize",
+      "clues": [
+        "form",
+        "bring order and organization to"
+      ]
     },
     {
-     "word": "leadership",
-     "clues": [
-      "leading"
-     ]
+      "word": "orgy",
+      "clues": [
+        "orgy",
+        " debauchery",
+        " saturnalia",
+        " bacchanal",
+        " riot"
+      ]
     },
     {
-     "word": "leaf",
-     "clues": [
-      "leafage",
-      " foliage"
-     ]
+      "word": "orientation",
+      "clues": [
+        "position",
+        " alignment"
+      ]
     },
     {
-     "word": "leaflet",
-     "clues": [
-      "brochure",
-      " folder",
-      " pamphlet"
-     ]
+      "word": "origin",
+      "clues": [
+        "descent",
+        " extraction",
+        " background",
+        " provenance"
+      ]
     },
     {
-     "word": "lease",
-     "clues": [
-      "rental lease"
-     ]
+      "word": "original",
+      "clues": [
+        "fresh",
+        " unusual",
+        " first"
+      ]
     },
     {
-     "word": "farewell",
-     "clues": [
-      "leave",
-      " leave-taking",
-      " parting"
-     ]
+      "word": "orthodox",
+      "clues": [
+        "adhering to what is commonly accepted"
+      ]
     },
     {
-     "word": "leave",
-     "clues": [
-      "leave of absence"
-     ]
+      "word": "ostracize",
+      "clues": [
+        "shun",
+        " blackball",
+        " expel from a community"
+      ]
     },
     {
-     "word": "lecture",
-     "clues": [
-      "instruction",
-      " teaching"
-     ]
+      "word": "other",
+      "clues": [
+        "not the same"
+      ]
     },
     {
-     "word": "left",
-     "clues": [
-      "left side",
-      " left hand side"
-     ]
+      "word": "outer",
+      "clues": [
+        "being on the outside"
+      ]
     },
     {
-     "word": "leftovers",
-     "clues": [
-      "leftover food"
-     ]
+      "word": "outfit",
+      "clues": [
+        "getup",
+        " clothing"
+      ]
     },
     {
-     "word": "leg",
-     "clues": [
-      "one of the supports for a piece of furniture"
-     ]
+      "word": "outlet",
+      "clues": [
+        "wall socket",
+        " wall plug",
+        " electric outlet",
+        "retail store",
+        " sales outlet",
+        "wall socket",
+        " electric outlet"
+      ]
     },
     {
-     "word": "leg",
-     "clues": [
-      "limb"
-     ]
+      "word": "outline",
+      "clues": [
+        "abstract",
+        " precis",
+        "lineation",
+        " linear boundary"
+      ]
     },
     {
-     "word": "legend",
-     "clues": [
-      "caption"
-     ]
+      "word": "outlook",
+      "clues": [
+        "mentality",
+        " mindset"
+      ]
     },
     {
-     "word": "legend",
-     "clues": [
-      "fable",
-      " story"
-     ]
+      "word": "output",
+      "clues": [
+        "end product"
+      ]
     },
     {
-     "word": "legislation",
-     "clues": [
-      "legislating",
-      " lawmaking"
-     ]
+      "word": "outside",
+      "clues": [
+        "outdoor",
+        " out-of-door",
+        "exterior",
+        " outer side or surface"
+      ]
     },
     {
-     "word": "legislature",
-     "clues": [
-      "legislative assembly"
-     ]
+      "word": "oven",
+      "clues": [
+        "kitchen appliance"
+      ]
     },
     {
-     "word": "lemon",
-     "clues": [
-      "defective artifact"
-     ]
+      "word": "overall",
+      "clues": [
+        "clothing"
+      ]
     },
     {
-     "word": "lemon",
-     "clues": [
-      "fruit"
-     ]
+      "word": "overcharge",
+      "clues": [
+        "surcharge",
+        " fleece",
+        " rip off"
+      ]
     },
     {
-     "word": "length",
-     "clues": [
-      "duration",
-      " continuance in time"
-     ]
+      "word": "overeat",
+      "clues": [
+        "gorge"
+      ]
     },
     {
-     "word": "length",
-     "clues": [
-      "extent of something from beginning to end"
-     ]
+      "word": "overlook",
+      "clues": [
+        "fail to notice"
+      ]
     },
     {
-     "word": "lesson",
-     "clues": [
-      "unit of instruction"
-     ]
+      "word": "overview",
+      "clues": [
+        "summary"
+      ]
     },
     {
-     "word": "letter",
-     "clues": [
-      "missive",
-      " written message addressed"
-     ]
+      "word": "overwhelm",
+      "clues": [
+        "overpower"
+      ]
     },
     {
-     "word": "letter",
-     "clues": [
-      "letter of the alphabet"
-     ]
+      "word": "owe",
+      "clues": [
+        "be obliged to pay"
+      ]
     },
     {
-     "word": "level",
-     "clues": [
-      "floor",
-      " storey",
-      " story"
-     ]
+      "word": "owl",
+      "clues": [
+        "nocturnal bird"
+      ]
     },
     {
-     "word": "level",
-     "clues": [
-      "layer",
-      " stratum"
-     ]
+      "word": "owner",
+      "clues": [
+        "proprietor someone who owns a business"
+      ]
     },
     {
-     "word": "level",
-     "clues": [
-      "grade",
-      " tier"
-     ]
+      "word": "pace",
+      "clues": [
+        "tempo",
+        " rate"
+      ]
     },
     {
-     "word": "liability",
-     "clues": [
-      "legal obligation and responsibility"
-     ]
+      "word": "pack",
+      "clues": [
+        "group of hunting animals",
+        "bundle carried on the back",
+        "arrange in a container"
+      ]
     },
     {
-     "word": "liberty",
-     "clues": [
-      "freedom"
-     ]
+      "word": "package",
+      "clues": [
+        "bundle",
+        " packet",
+        " parcel"
+      ]
     },
     {
-     "word": "licence",
-     "clues": [
-      "license",
-      " permit"
-     ]
+      "word": "packet",
+      "clues": [
+        "small package",
+        " bundle"
+      ]
     },
     {
-     "word": "lid",
-     "clues": [
-      "movable top"
-     ]
+      "word": "page",
+      "clues": [
+        "one side of one leaf"
+      ]
     },
     {
-     "word": "lid",
-     "clues": [
-      "eyelid"
-     ]
+      "word": "pain",
+      "clues": [
+        "pain in the neck",
+        " nuisance",
+        "emotional distress",
+        " painfulness",
+        "physical pain"
+      ]
     },
     {
-     "word": "lie",
-     "clues": [
-      "prevarication"
-     ]
+      "word": "paint",
+      "clues": [
+        "apply paint to",
+        " coat with paint",
+        "substance used to protect or decorate",
+        "make a painting"
+      ]
     },
     {
-     "word": "lifestyle",
-     "clues": [
-      "way of living"
-     ]
+      "word": "painter",
+      "clues": [
+        "artist"
+      ]
     },
     {
-     "word": "lift",
-     "clues": [
-      "ride in a car"
-     ]
+      "word": "pair",
+      "clues": [
+        "two people considered as a unit"
+      ]
     },
     {
-     "word": "lift",
-     "clues": [
-      "elevator"
-     ]
+      "word": "palace",
+      "clues": [
+        "residence of a sovereign"
+      ]
     },
     {
-     "word": "lift",
-     "clues": [
-      "ski tow",
-      " ski lift"
-     ]
+      "word": "palm",
+      "clues": [
+        "palm tree"
+      ]
     },
     {
-     "word": "light",
-     "clues": [
-      "light source",
-      " source of illumination"
-     ]
+      "word": "pan",
+      "clues": [
+        "cooking pan"
+      ]
     },
     {
-     "word": "lighter",
-     "clues": [
-      "igniter",
-      " device for lighting or igniting"
-     ]
+      "word": "panel",
+      "clues": [
+        "team of experts",
+        "plate or sheet that is a component of something"
+      ]
     },
     {
-     "word": "light",
-     "clues": [
-      "luminosity",
-      " brightness",
-      " luminance"
-     ]
+      "word": "panic",
+      "clues": [
+        "terror",
+        " overwhelming fear"
+      ]
     },
     {
-     "word": "lily",
-     "clues": [
-      "flower"
-     ]
+      "word": "paper",
+      "clues": [
+        "scholarly article",
+        "composition",
+        " report",
+        "material made of cellulose pulp",
+        "newspaper",
+        "cellulose",
+        " material for writing or printing on"
+      ]
     },
     {
-     "word": "limb",
-     "clues": [
-      "body part"
-     ]
+      "word": "parachute",
+      "clues": [
+        "jump from an airplane"
+      ]
     },
     {
-     "word": "limit",
-     "clues": [
-      "demarcation",
-      " demarcation line"
-     ]
+      "word": "parade",
+      "clues": [
+        "ceremonial procession"
+      ]
     },
     {
-     "word": "limit",
-     "clues": [
-      "limitation"
-     ]
+      "word": "paradox",
+      "clues": [
+        "self-contradiction"
+      ]
     },
     {
-     "word": "line",
-     "clues": [
-      "railway line",
-      " rail line"
-     ]
+      "word": "paragraph",
+      "clues": [
+        "subdivisions of a text"
+      ]
     },
     {
-     "word": "line",
-     "clues": [
-      "telephone line",
-      " phone line"
-     ]
+      "word": "parallel",
+      "clues": [
+        "analogue",
+        " analog",
+        "equidistant and not intersecting"
+      ]
     },
     {
-     "word": "line",
-     "clues": [
-      "production line",
-      " assembly line"
-     ]
+      "word": "paralyzed",
+      "clues": [
+        "paralytic",
+        " unable to move"
+      ]
     },
     {
-     "word": "line",
-     "clues": [
-      "dividing line",
-      " demarcation"
-     ]
+      "word": "parameter",
+      "clues": [
+        "factor"
+      ]
     },
     {
-     "word": "line",
-     "clues": [
-      "argumentation",
-      " logical argument",
-      " line of reasoning"
-     ]
+      "word": "pardon",
+      "clues": [
+        "amnesty"
+      ]
     },
     {
-     "word": "line",
-     "clues": [
-      "line of text"
-     ]
+      "word": "park",
+      "clues": [
+        "maneuver a vehicle into a parking space",
+        "commons",
+        " common",
+        " green"
+      ]
     },
     {
-     "word": "line",
-     "clues": [
-      "formation of people or things one behind another"
-     ]
+      "word": "parking",
+      "clues": [
+        "parking space"
+      ]
     },
     {
-     "word": "line",
-     "clues": [
-      "wrinkle",
-      " furrow",
-      " crease",
-      " crinkle",
-      " seam"
-     ]
+      "word": "part",
+      "clues": [
+        "portion",
+        " component part",
+        " component"
+      ]
     },
     {
-     "word": "linen",
-     "clues": [
-      "white goods"
-     ]
+      "word": "participate",
+      "clues": [
+        "take part"
+      ]
     },
     {
-     "word": "link",
-     "clues": [
-      "fastener"
-     ]
+      "word": "particle",
+      "clues": [
+        "small body of mass"
+      ]
     },
     {
-     "word": "lion",
-     "clues": [
-      "king of beasts"
-     ]
+      "word": "particular",
+      "clues": [
+        "peculiar",
+        " special",
+        "finicky",
+        " fussy"
+      ]
     },
     {
-     "word": "lip",
-     "clues": [
-      "brim",
-      " rim",
-      " top edge of a vessel"
-     ]
+      "word": "partner",
+      "clues": [
+        "member of a partnership",
+        "spouse",
+        " married person",
+        " mate",
+        " better half"
+      ]
     },
     {
-     "word": "lip",
-     "clues": [
-      "fleshy folds of tissue surrounding the mouth"
-     ]
+      "word": "partnership",
+      "clues": [
+        "cooperation among people"
+      ]
     },
     {
-     "word": "list",
-     "clues": [
-      "tilt",
-      " inclination"
-     ]
+      "word": "party",
+      "clues": [
+        "festivity",
+        "political party"
+      ]
     },
     {
-     "word": "list",
-     "clues": [
-      "listing"
-     ]
+      "word": "pass",
+      "clues": [
+        "go through",
+        " go across",
+        "passing",
+        " qualifying grade",
+        "overtake",
+        " travel past",
+        "make it",
+        " be successful",
+        "permission to enter or do something"
+      ]
     },
     {
-     "word": "literacy",
-     "clues": [
-      "ability to read and write"
-     ]
+      "word": "passage",
+      "clues": [
+        "passageway",
+        "section of text"
+      ]
     },
     {
-     "word": "literature",
-     "clues": [
-      "creative writing"
-     ]
+      "word": "passenger",
+      "clues": [
+        "rider"
+      ]
     },
     {
-     "word": "litigation",
-     "clues": [
-      "judicial proceeding"
-     ]
+      "word": "passion",
+      "clues": [
+        "passionateness",
+        " strong emotion"
+      ]
     },
     {
-     "word": "liver",
-     "clues": [
-      "organ"
-     ]
+      "word": "passive",
+      "clues": [
+        "inactive"
+      ]
     },
     {
-     "word": "load",
-     "clues": [
-      "burden",
-      " weight"
-     ]
+      "word": "password",
+      "clues": [
+        "watchword",
+        " word"
+      ]
     },
     {
-     "word": "loan",
-     "clues": [
-      "temporary provision of money"
-     ]
+      "word": "past",
+      "clues": [
+        "past times",
+        " yesteryear",
+        "earlier than the present time"
+      ]
     },
     {
-     "word": "lobby",
-     "clues": [
-      "vestibule",
-      " foyer",
-      " entrance hall"
-     ]
+      "word": "pastel",
+      "clues": [
+        "light pale color"
+      ]
     },
     {
-     "word": "lobby",
-     "clues": [
-      "pressure group"
-     ]
+      "word": "pasture",
+      "clues": [
+        "pastureland",
+        " grazing land"
+      ]
     },
     {
-     "word": "location",
-     "clues": [
-      "point in space"
-     ]
+      "word": "pat",
+      "clues": [
+        "dab",
+        " hit lightly"
+      ]
     },
     {
-     "word": "lock",
-     "clues": [
-      "fastener fitted to a door"
-     ]
+      "word": "patch",
+      "clues": [
+        "piece of cloth",
+        "bandage",
+        " cover for injury",
+        "plot",
+        " small area"
+      ]
     },
     {
-     "word": "lock",
-     "clues": [
-      "curl",
-      " ringlet",
-      " whorl"
-     ]
+      "word": "patent",
+      "clues": [
+        "patent of invention"
+      ]
     },
     {
-     "word": "log",
-     "clues": [
-      "logarithm"
-     ]
+      "word": "path",
+      "clues": [
+        "route",
+        " itinerary"
+      ]
     },
     {
-     "word": "log",
-     "clues": [
-      "tree trunk"
-     ]
+      "word": "patience",
+      "clues": [
+        "forbearance"
+      ]
     },
     {
-     "word": "look",
-     "clues": [
-      "physical appearance"
-     ]
+      "word": "patient",
+      "clues": [
+        "person who requires medical care"
+      ]
     },
     {
-     "word": "look",
-     "clues": [
-      "spirit",
-      " tone",
-      " feel",
-      " feeling",
-      " flavor"
-     ]
+      "word": "patrol",
+      "clues": [
+        "security detachment"
+      ]
     },
     {
-     "word": "loop",
-     "clues": [
-      "iteration"
-     ]
+      "word": "pattern",
+      "clues": [
+        "model",
+        " design"
+      ]
     },
     {
-     "word": "loop",
-     "clues": [
-      "round or oval shape"
-     ]
+      "word": "pause",
+      "clues": [
+        "temporary inactivity",
+        "pause",
+        " take a break"
+      ]
     },
     {
-     "word": "loss",
-     "clues": [
-      "red ink",
-      " financial loss"
-     ]
+      "word": "pavement",
+      "clues": [
+        "sidewalk"
+      ]
     },
     {
-     "word": "loss",
-     "clues": [
-      "something that is lost"
-     ]
+      "word": "pawn",
+      "clues": [
+        "hock"
+      ]
     },
     {
-     "word": "lot",
-     "clues": [
-      "parcel of land having fixed boundaries"
-     ]
+      "word": "pay",
+      "clues": [
+        "give money in exchange for goods or services"
+      ]
     },
     {
-     "word": "lot",
-     "clues": [
-      "deal",
-      " flock",
-      " good deal",
-      " great deal",
-      " heap"
-     ]
+      "word": "payment",
+      "clues": [
+        "defrayal"
+      ]
     },
     {
-     "word": "lounge",
-     "clues": [
-      "waiting room",
-      " waiting area"
-     ]
+      "word": "peace",
+      "clues": [
+        "peacefulness",
+        " peace of mind",
+        " repose",
+        " serenity",
+        "state prevailing during the absence of war"
+      ]
     },
     {
-     "word": "sofa",
-     "clues": [
-      "couch"
-     ]
+      "word": "peak",
+      "clues": [
+        "vertex",
+        " apex",
+        " acme",
+        " highest point"
+      ]
     },
     {
-     "word": "love",
-     "clues": [
-      "passion"
-     ]
+      "word": "peanut",
+      "clues": [
+        "goober"
+      ]
     },
     {
-     "word": "love",
-     "clues": [
-      "beloved",
-      " dear",
-      " dearest",
-      " loved one",
-      " honey"
-     ]
+      "word": "peasant",
+      "clues": [
+        "agricultural laborer"
+      ]
     },
     {
-     "word": "lover",
-     "clues": [
-      "significant other"
-     ]
+      "word": "pedestrian",
+      "clues": [
+        "walker"
+      ]
     },
     {
-     "word": "loyalty",
-     "clues": [
-      "trueness"
-     ]
+      "word": "peel",
+      "clues": [
+        "skin",
+        " rind of a fruit or vegetable"
+      ]
     },
     {
-     "word": "lump",
-     "clues": [
-      "chunk",
-      " gob",
-      " clod"
-     ]
+      "word": "pen",
+      "clues": [
+        "playpen",
+        "writing implement"
+      ]
     },
     {
-     "word": "lunch",
-     "clues": [
-      "luncheon",
-      " midday meal"
-     ]
+      "word": "penalty",
+      "clues": [
+        "punishment"
+      ]
     },
     {
-     "word": "lung",
-     "clues": [
-      "respiratory organ"
-     ]
+      "word": "pencil",
+      "clues": [
+        "writing implement"
+      ]
     },
     {
-     "word": "machinery",
-     "clues": [
-      "machines"
-     ]
+      "word": "penetrate",
+      "clues": [
+        "enter into"
+      ]
     },
     {
-     "word": "magazine",
-     "clues": [
-      "periodic publication"
-     ]
+      "word": "penny",
+      "clues": [
+        "cent"
+      ]
     },
     {
-     "word": "magnitude",
-     "clues": [
-      "size",
-      " extent"
-     ]
+      "word": "pension",
+      "clues": [
+        "payment during retirement"
+      ]
     },
     {
-     "word": "maid",
-     "clues": [
-      "maidservant",
-      " housemaid"
-     ]
+      "word": "pepper",
+      "clues": [
+        "spice"
+      ]
     },
     {
-     "word": "mail",
-     "clues": [
-      "earth mail"
-     ]
+      "word": "perceive",
+      "clues": [
+        "sense"
+      ]
     },
     {
-     "word": "mainstream",
-     "clues": [
-      "prevailing thought"
-     ]
+      "word": "percent",
+      "clues": [
+        "percentage"
+      ]
     },
     {
-     "word": "majority",
-     "clues": [
-      "absolute majority"
-     ]
+      "word": "perception",
+      "clues": [
+        "process of perceiving"
+      ]
     },
     {
-     "word": "majority",
-     "clues": [
-      "legal age"
-     ]
+      "word": "perfect",
+      "clues": [
+        "complete",
+        " without defect"
+      ]
     },
     {
-     "word": "makeup",
-     "clues": [
-      "cosmetics"
-     ]
+      "word": "perforate",
+      "clues": [
+        "pass in or through"
+      ]
     },
     {
-     "word": "man",
-     "clues": [
-      "homo",
-      " human being",
-      " human"
-     ]
+      "word": "perform",
+      "clues": [
+        "give a performance"
+      ]
     },
     {
-     "word": "man",
-     "clues": [
-      "adult male",
-      " male"
-     ]
+      "word": "performance",
+      "clues": [
+        "execution",
+        " carrying out",
+        "act of presenting a play or a piece"
+      ]
     },
     {
-     "word": "management",
-     "clues": [
-      "direction"
-     ]
+      "word": "performer",
+      "clues": [
+        "performing artist"
+      ]
     },
     {
-     "word": "manager",
-     "clues": [
-      "director"
-     ]
+      "word": "perfume",
+      "clues": [
+        "essence"
+      ]
     },
     {
-     "word": "manner",
-     "clues": [
-      "personal manner",
-      " way of acting or behaving"
-     ]
+      "word": "period",
+      "clues": [
+        "time period",
+        "interval taken to complete one cycle",
+        "historic period",
+        "point",
+        " full stop",
+        " stop",
+        " full point"
+      ]
     },
     {
-     "word": "manual",
-     "clues": [
-      "handbook"
-     ]
+      "word": "permanent",
+      "clues": [
+        "lasting"
+      ]
     },
     {
-     "word": "manufacture",
-     "clues": [
-      "fabrication"
-     ]
+      "word": "permission",
+      "clues": [
+        "approval to do something"
+      ]
     },
     {
-     "word": "manufacturer",
-     "clues": [
-      "producer"
-     ]
+      "word": "persist",
+      "clues": [
+        "persevere"
+      ]
     },
     {
-     "word": "map",
-     "clues": [
-      "representation of the earth's surface"
-     ]
+      "word": "persistent",
+      "clues": [
+        "lasting"
+      ]
     },
     {
-     "word": "marathon",
-     "clues": [
-      "footrace of 26 miles"
-     ]
+      "word": "person",
+      "clues": [
+        "individual"
+      ]
     },
     {
-     "word": "marble",
-     "clues": [
-      "glass ball for games"
-     ]
+      "word": "personal",
+      "clues": [
+        "concerning a particular person"
+      ]
     },
     {
-     "word": "marble",
-     "clues": [
-      "rock"
-     ]
+      "word": "personality",
+      "clues": [
+        "personal attributes"
+      ]
     },
     {
-     "word": "march",
-     "clues": [
-      "marching music"
-     ]
+      "word": "pest",
+      "clues": [
+        "blighter",
+        " cuss",
+        " pesterer",
+        " gadfly",
+        " persistently annoying person"
+      ]
     },
     {
-     "word": "march",
-     "clues": [
-      "procession of people"
-     ]
+      "word": "pet",
+      "clues": [
+        "animal"
+      ]
     },
     {
-     "word": "march",
-     "clues": [
-      "March",
-      " month"
-     ]
+      "word": "petty",
+      "clues": [
+        "small-minded"
+      ]
     },
     {
-     "word": "margin",
-     "clues": [
-      "edge",
-      " blank space on a page"
-     ]
+      "word": "philosophy",
+      "clues": [
+        "investigation of existence",
+        " knowledge",
+        " ethics",
+        "doctrine",
+        " school of thought",
+        " set of beliefs"
+      ]
     },
     {
-     "word": "mark",
-     "clues": [
-      "scratch",
-      " scrape",
-      " scar",
-      " indication of damage"
-     ]
+      "word": "photocopy",
+      "clues": [
+        "xerox",
+        " run off"
+      ]
     },
     {
-     "word": "mark",
-     "clues": [
-      "grade",
-      " score"
-     ]
+      "word": "photograph",
+      "clues": [
+        "photo"
+      ]
     },
     {
-     "word": "market",
-     "clues": [
-      "grocery store",
-      " grocery",
-      " food market"
-     ]
+      "word": "photography",
+      "clues": [
+        "picture taking"
+      ]
     },
     {
-     "word": "marketing",
-     "clues": [
-      "promoting and selling"
-     ]
+      "word": "physical",
+      "clues": [
+        "involving the body"
+      ]
     },
     {
-     "word": "wedding",
-     "clues": [
-      "marriage",
-      " marriage ceremony"
-     ]
+      "word": "physics",
+      "clues": [
+        "physical science"
+      ]
     },
     {
-     "word": "marriage",
-     "clues": [
-      "married couple",
-      " man and wife"
-     ]
+      "word": "piano",
+      "clues": [
+        "keyboard instrument"
+      ]
     },
     {
-     "word": "Mars",
-     "clues": [
-      "the red planet"
-     ]
+      "word": "pick",
+      "clues": [
+        "select carefully"
+      ]
     },
     {
-     "word": "marsh",
-     "clues": [
-      "marshland",
-      " fen",
-      " fenland"
-     ]
+      "word": "picture",
+      "clues": [
+        "image",
+        " icon",
+        " visual representation",
+        "painting",
+        " graphic art"
+      ]
     },
     {
-     "word": "mask",
-     "clues": [
-      "disguise"
-     ]
+      "word": "pie",
+      "clues": [
+        "dish"
+      ]
     },
     {
-     "word": "mass",
-     "clues": [
-      "body of matter"
-     ]
+      "word": "piece",
+      "clues": [
+        "separate part of a whole",
+        "musical composition",
+        " opus",
+        " composition",
+        " piece of music"
+      ]
     },
     {
-     "word": "master",
-     "clues": [
-      "maestro",
-      " artist of consummate skill"
-     ]
+      "word": "pier",
+      "clues": [
+        "support for two adjacent bridge spans"
+      ]
     },
     {
-     "word": "match",
-     "clues": [
-      "lighter",
-      " friction match"
-     ]
+      "word": "pierce",
+      "clues": [
+        "stick",
+        " puncture"
+      ]
     },
     {
-     "word": "match",
-     "clues": [
-      "formal contest"
-     ]
+      "word": "pig",
+      "clues": [
+        "hog",
+        " swine",
+        "slob",
+        " sloven",
+        " slovenly person",
+        "hog",
+        " greedy person"
+      ]
     },
     {
-     "word": "match",
-     "clues": [
-      "peer",
-      " equal",
-      " compeer"
-     ]
+      "word": "pigeon",
+      "clues": [
+        "wild and domesticated bird"
+      ]
     },
     {
-     "word": "match",
-     "clues": [
-      "catch",
-      " a good matrimonial prospect"
-     ]
+      "word": "pile",
+      "clues": [
+        "stack",
+        " heap",
+        "heap",
+        " mound"
+      ]
     },
     {
-     "word": "material",
-     "clues": [
-      "fabric",
-      " cloth",
-      " textile"
-     ]
+      "word": "pill",
+      "clues": [
+        "birth control pill"
+      ]
     },
     {
-     "word": "material",
-     "clues": [
-      "stuff"
-     ]
+      "word": "pillow",
+      "clues": [
+        "cushion"
+      ]
     },
     {
-     "word": "mathematics",
-     "clues": [
-      "math",
-      " maths"
-     ]
+      "word": "pilot",
+      "clues": [
+        "airplane pilot"
+      ]
     },
     {
-     "word": "matrix",
-     "clues": [
-      "rectangular array"
-     ]
+      "word": "pin",
+      "clues": [
+        "personal identification number",
+        " PIN",
+        " PIN number"
+      ]
     },
     {
-     "word": "matter",
-     "clues": [
-      "substance"
-     ]
+      "word": "pioneer",
+      "clues": [
+        "innovator",
+        " trailblazer",
+        " groundbreaker"
+      ]
     },
     {
-     "word": "maximum",
-     "clues": [
-      "upper limit"
-     ]
+      "word": "pipe",
+      "clues": [
+        "tube"
+      ]
     },
     {
-     "word": "mayor",
-     "clues": [
-      "city manager"
-     ]
+      "word": "pit",
+      "clues": [
+        "cavity",
+        " hole in the ground",
+        "pitfall",
+        " trap",
+        "stone",
+        " hard inner core of some fruits"
+      ]
     },
     {
-     "word": "maze",
-     "clues": [
-      "labyrinth"
-     ]
+      "word": "pitch",
+      "clues": [
+        "sales pitch",
+        "property of sound"
+      ]
     },
     {
-     "word": "meadow",
-     "clues": [
-      "hayfield"
-     ]
+      "word": "pity",
+      "clues": [
+        "compassion"
+      ]
     },
     {
-     "word": "meal",
-     "clues": [
-      "repast"
-     ]
+      "word": "place",
+      "clues": [
+        "seat",
+        "topographic point",
+        " spot"
+      ]
     },
     {
-     "word": "meaning",
-     "clues": [
-      "significance",
-      " signification"
-     ]
+      "word": "plagiarize",
+      "clues": [
+        "steal intellectual property"
+      ]
     },
     {
-     "word": "means",
-     "clues": [
-      "instrumentality for accomplishing some end"
-     ]
+      "word": "plain",
+      "clues": [
+        "simple"
+      ]
     },
     {
-     "word": "measure",
-     "clues": [
-      "measuring stick",
-      " measuring rod"
-     ]
+      "word": "plaintiff",
+      "clues": [
+        "complainant"
+      ]
     },
     {
-     "word": "meat",
-     "clues": [
-      "flesh of animals"
-     ]
+      "word": "plan",
+      "clues": [
+        "design",
+        " arrangement",
+        " scheme",
+        "make plans"
+      ]
     },
     {
-     "word": "mechanism",
-     "clues": [
-      "piece of machinery"
-     ]
+      "word": "plane",
+      "clues": [
+        "airplane",
+        " aeroplane"
+      ]
     },
     {
-     "word": "medal",
-     "clues": [
-      "decoration",
-      " laurel wreath",
-      " medallion",
-      " ribbon"
-     ]
+      "word": "planet",
+      "clues": [
+        "celestial body"
+      ]
     },
     {
-     "word": "medicine",
-     "clues": [
-      "medical profession"
-     ]
+      "word": "plant",
+      "clues": [
+        "industrial plant",
+        " factory",
+        "put or set into the ground",
+        "flora",
+        " plant life"
+      ]
     },
     {
-     "word": "medicine",
-     "clues": [
-      "medication",
-      " medicament",
-      " medicinal drug"
-     ]
+      "word": "plaster",
+      "clues": [
+        "adhesive plaster"
+      ]
     },
     {
-     "word": "medium",
-     "clues": [
-      "mass medium",
-      " mass media"
-     ]
+      "word": "plastic",
+      "clues": [
+        "materials"
+      ]
     },
     {
-     "word": "medium",
-     "clues": [
-      "spiritualist"
-     ]
+      "word": "plate",
+      "clues": [
+        "dish"
+      ]
     },
     {
-     "word": "medium",
-     "clues": [
-      "intermediate state"
-     ]
+      "word": "platform",
+      "clues": [
+        "horizontal surface"
+      ]
     },
     {
-     "word": "meeting",
-     "clues": [
-      "planned coming together"
-     ]
+      "word": "play",
+      "clues": [
+        "act",
+        " roleplay",
+        " playact",
+        "child's play",
+        "drama",
+        " dramatic play",
+        "play on an instrument",
+        "engage in playful activity",
+        "participate in games or sport"
+      ]
     },
     {
-     "word": "meeting",
-     "clues": [
-      "encounter",
-      " casual or unexpected convergence"
-     ]
+      "word": "player",
+      "clues": [
+        "participant",
+        "actor",
+        " role player"
+      ]
     },
     {
-     "word": "member",
-     "clues": [
-      "part of a social group"
-     ]
+      "word": "plead",
+      "clues": [
+        "enter a plea in courts of law"
+      ]
     },
     {
-     "word": "memorandum",
-     "clues": [
-      "memo"
-     ]
+      "word": "pleasant",
+      "clues": [
+        "delightful"
+      ]
     },
     {
-     "word": "memorial",
-     "clues": [
-      "monument"
-     ]
+      "word": "please",
+      "clues": [
+        "delight",
+        " give pleasure"
+      ]
     },
     {
-     "word": "memorial",
-     "clues": [
-      "commemoration",
-      " remembrance"
-     ]
+      "word": "pleasure",
+      "clues": [
+        "delight"
+      ]
     },
     {
-     "word": "memory",
-     "clues": [
-      "computer memory",
-      " storage"
-     ]
+      "word": "pledge",
+      "clues": [
+        "promise solemnly"
+      ]
     },
     {
-     "word": "memory",
-     "clues": [
-      "capacity to remember"
-     ]
+      "word": "plot",
+      "clues": [
+        "secret plan",
+        " game",
+        " secret scheme",
+        "story",
+        "chart",
+        "plan secretly",
+        "diagram"
+      ]
     },
     {
-     "word": "memory",
-     "clues": [
-      "something that is remembered"
-     ]
+      "word": "pluck",
+      "clues": [
+        "pick",
+        " cull"
+      ]
     },
     {
-     "word": "menu",
-     "clues": [
-      "computer menu"
-     ]
+      "word": "plug",
+      "clues": [
+        "stop up"
+      ]
     },
     {
-     "word": "menu",
-     "clues": [
-      "dishes planned for a meal"
-     ]
+      "word": "pneumonia",
+      "clues": [
+        "respiratory disease"
+      ]
     },
     {
-     "word": "merchant",
-     "clues": [
-      "merchandiser",
-      " businessperson"
-     ]
+      "word": "pocket",
+      "clues": [
+        "pouch inside a garment"
+      ]
     },
     {
-     "word": "mercy",
-     "clues": [
-      "clemency",
-      " mercifulness",
-      " leniency"
-     ]
+      "word": "poem",
+      "clues": [
+        "verse form"
+      ]
     },
     {
-     "word": "merit",
-     "clues": [
-      "deservingness",
-      " meritoriousness"
-     ]
+      "word": "poetry",
+      "clues": [
+        "poesy",
+        " verse"
+      ]
     },
     {
-     "word": "message",
-     "clues": [
-      "written",
-      " spoken",
-      " or signaled communication"
-     ]
+      "word": "point",
+      "clues": [
+        "detail",
+        " item",
+        "dot",
+        "tip",
+        " peak",
+        " V-shape"
+      ]
     },
     {
-     "word": "metal",
-     "clues": [
-      "metallic element"
-     ]
+      "word": "poison",
+      "clues": [
+        "administer poison to",
+        "poisonous substance"
+      ]
     },
     {
-     "word": "method",
-     "clues": [
-      "way of doing something"
-     ]
+      "word": "pole",
+      "clues": [
+        "long rod",
+        "Earth's antipodal point"
+      ]
     },
     {
-     "word": "microphone",
-     "clues": [
-      "mike"
-     ]
+      "word": "policeman",
+      "clues": [
+        "cop"
+      ]
     },
     {
-     "word": "middle",
-     "clues": [
-      "intermediate part or section"
-     ]
+      "word": "policy",
+      "clues": [
+        "insurance policy"
+      ]
     },
     {
-     "word": "midnight",
-     "clues": [
-      "12 o'clock"
-     ]
+      "word": "polish",
+      "clues": [
+        "refine",
+        "shine"
+      ]
     },
     {
-     "word": "migration",
-     "clues": [
-      "movement from one country to another"
-     ]
+      "word": "polite",
+      "clues": [
+        "courteous"
+      ]
     },
     {
-     "word": "mile",
-     "clues": [
-      "distance"
-     ]
+      "word": "poll",
+      "clues": [
+        "opinion poll",
+        "counting of votes"
+      ]
     },
     {
-     "word": "mill",
-     "clues": [
-      "grinder"
-     ]
+      "word": "pollution",
+      "clues": [
+        "contamination"
+      ]
     },
     {
-     "word": "mind",
-     "clues": [
-      "head",
-      " brain",
-      " what is responsible for one's thoughts and feelings"
-     ]
+      "word": "pony",
+      "clues": [
+        "small horse"
+      ]
     },
     {
-     "word": "mind",
-     "clues": [
-      "intellect",
-      " knowledge and intellectual ability"
-     ]
+      "word": "pool",
+      "clues": [
+        "puddle"
+      ]
     },
     {
-     "word": "mine",
-     "clues": [
-      "explosive device"
-     ]
+      "word": "poor",
+      "clues": [
+        "characterized by poverty"
+      ]
     },
     {
-     "word": "mine",
-     "clues": [
-      "excavation of ores and minerals"
-     ]
+      "word": "pop",
+      "clues": [
+        "pop music",
+        "soda",
+        " soda pop",
+        "dad",
+        " dada",
+        " daddy",
+        " pa",
+        " papa",
+        "burst open with a sharp",
+        " explosive sound"
+      ]
     },
     {
-     "word": "miner",
-     "clues": [
-      "mineworker"
-     ]
+      "word": "popular",
+      "clues": [
+        "regarded with great favor",
+        " approval",
+        " or affection"
+      ]
     },
     {
-     "word": "minimum",
-     "clues": [
-      "lower limit"
-     ]
+      "word": "population",
+      "clues": [
+        "people who inhabit a territory"
+      ]
     },
     {
-     "word": "minister",
-     "clues": [
-      "pastor",
-      " rector"
-     ]
+      "word": "porter",
+      "clues": [
+        "person employed to carry luggage and supplies"
+      ]
     },
     {
-     "word": "minister",
-     "clues": [
-      "government minister"
-     ]
+      "word": "portion",
+      "clues": [
+        "helping",
+        " serving"
+      ]
     },
     {
-     "word": "ministry",
-     "clues": [
-      "government department"
-     ]
+      "word": "portrait",
+      "clues": [
+        "portrayal",
+        " likeness"
+      ]
     },
     {
-     "word": "minority",
-     "clues": [
-      "smaller in number"
-     ]
+      "word": "position",
+      "clues": [
+        "placement",
+        " location",
+        "stance",
+        " posture",
+        "status"
+      ]
     },
     {
-     "word": "minute",
-     "clues": [
-      "min",
-      " unit of time equal to 60 seconds"
-     ]
+      "word": "positive",
+      "clues": [
+        "accepting",
+        " confirming"
+      ]
     },
     {
-     "word": "miracle",
-     "clues": [
-      "supernatural event"
-     ]
+      "word": "possession",
+      "clues": [
+        "ownership"
+      ]
     },
     {
-     "word": "mirror",
-     "clues": [
-      "reflector"
-     ]
+      "word": "possibility",
+      "clues": [
+        "possible action"
+      ]
     },
     {
-     "word": "miscarriage",
-     "clues": [
-      "stillbirth"
-     ]
+      "word": "possible",
+      "clues": [
+        "potential"
+      ]
     },
     {
-     "word": "misery",
-     "clues": [
-      "wretchedness",
-      " miserableness"
-     ]
+      "word": "post",
+      "clues": [
+        "publicize with",
+        " or as if with",
+        " a poster",
+        "mail",
+        " mail service",
+        " postal service",
+        "stake"
+      ]
     },
     {
-     "word": "missile",
-     "clues": [
-      "projectile",
-      " weapon"
-     ]
+      "word": "posture",
+      "clues": [
+        "bearing",
+        " carriage"
+      ]
     },
     {
-     "word": "mist",
-     "clues": [
-      "thin fog"
-     ]
+      "word": "pot",
+      "clues": [
+        "cooking vessel",
+        "flowerpot"
+      ]
     },
     {
-     "word": "mixture",
-     "clues": [
-      "mix"
-     ]
+      "word": "potential",
+      "clues": [
+        "potentiality"
+      ]
     },
     {
-     "word": "model",
-     "clues": [
-      "simulation"
-     ]
+      "word": "pottery",
+      "clues": [
+        "clayware"
+      ]
     },
     {
-     "word": "model",
-     "clues": [
-      "framework"
-     ]
+      "word": "pound",
+      "clues": [
+        "dog pound",
+        "lb",
+        " 16 ounces"
+      ]
     },
     {
-     "word": "model",
-     "clues": [
-      "poser for a photographer or painter or sculptor"
-     ]
+      "word": "pour",
+      "clues": [
+        "cause to flow"
+      ]
     },
     {
-     "word": "model",
-     "clues": [
-      "role model"
-     ]
+      "word": "powder",
+      "clues": [
+        "fine-grained substance"
+      ]
     },
     {
-     "word": "model",
-     "clues": [
-      "fashion model"
-     ]
+      "word": "power",
+      "clues": [
+        "world power",
+        " major power",
+        " great power",
+        " superpower",
+        "force",
+        " might"
+      ]
     },
     {
-     "word": "module",
-     "clues": [
-      "component"
-     ]
+      "word": "practical",
+      "clues": [
+        "concerned with actual use or practice",
+        "efficient"
+      ]
     },
     {
-     "word": "mole",
-     "clues": [
-      "small velvety-furred burrowing mammal"
-     ]
+      "word": "practice",
+      "clues": [
+        "pattern",
+        " customary way of operation or behavior",
+        "exercise",
+        " drill",
+        " practice session",
+        " recitation"
+      ]
     },
     {
-     "word": "mole",
-     "clues": [
-      "pigmented spot on the skin"
-     ]
+      "word": "praise",
+      "clues": [
+        "congratulations",
+        " kudos"
+      ]
     },
     {
-     "word": "mole",
-     "clues": [
-      "counterspy"
-     ]
+      "word": "pray",
+      "clues": [
+        "say a prayer"
+      ]
     },
     {
-     "word": "moment",
-     "clues": [
-      "here and now",
-      " present moment"
-     ]
+      "word": "prayer",
+      "clues": [
+        "supplication"
+      ]
     },
     {
-     "word": "monarch",
-     "clues": [
-      "sovereign",
-      " crowned head"
-     ]
+      "word": "preach",
+      "clues": [
+        "deliver a sermon"
+      ]
     },
     {
-     "word": "money",
-     "clues": [
-      "currency"
-     ]
+      "word": "precede",
+      "clues": [
+        "predate",
+        " antecede",
+        " antedate"
+      ]
     },
     {
-     "word": "money",
-     "clues": [
-      "wealth"
-     ]
+      "word": "precedent",
+      "clues": [
+        "case in point"
+      ]
     },
     {
-     "word": "monk",
-     "clues": [
-      "inhabitant of a monastery"
-     ]
+      "word": "precision",
+      "clues": [
+        "preciseness"
+      ]
     },
     {
-     "word": "monkey",
-     "clues": [
-      "long-tailed primate"
-     ]
+      "word": "predator",
+      "clues": [
+        "predatory animal"
+      ]
     },
     {
-     "word": "monopoly",
-     "clues": [
-      "exclusive control"
-     ]
+      "word": "predict",
+      "clues": [
+        "call",
+        " foretell",
+        " prognosticate",
+        " forebode"
+      ]
     },
     {
-     "word": "monster",
-     "clues": [
-      "freak"
-     ]
+      "word": "prediction",
+      "clues": [
+        "projection"
+      ]
     },
     {
-     "word": "month",
-     "clues": [
-      "calendar month"
-     ]
+      "word": "prefer",
+      "clues": [
+        "favor"
+      ]
     },
     {
-     "word": "mood",
-     "clues": [
-      "temper",
-      " humor"
-     ]
+      "word": "preference",
+      "clues": [
+        "predilection",
+        " predisposition"
+      ]
     },
     {
-     "word": "moon",
-     "clues": [
-      "satellite of the Earth"
-     ]
+      "word": "prejudice",
+      "clues": [
+        "bias",
+        " preconception"
+      ]
     },
     {
-     "word": "morale",
-     "clues": [
-      "team spirit"
-     ]
+      "word": "premature",
+      "clues": [
+        "untimely"
+      ]
     },
     {
-     "word": "morale",
-     "clues": [
-      "individual psychological well-being"
-     ]
+      "word": "premium",
+      "clues": [
+        "insurance premium"
+      ]
     },
     {
-     "word": "morning",
-     "clues": [
-      "morn",
-      " morning time",
-      " forenoon"
-     ]
+      "word": "preoccupation",
+      "clues": [
+        "idea that preoccupies the mind"
+      ]
     },
     {
-     "word": "dawn",
-     "clues": [
-      "dawning",
-      " aurora",
-      " first light",
-      " daybreak"
-     ]
+      "word": "preparation",
+      "clues": [
+        "readiness",
+        " preparedness"
+      ]
     },
     {
-     "word": "morsel",
-     "clues": [
-      "bit",
-      " bit"
-     ]
+      "word": "prescription",
+      "clues": [
+        "prescription drug",
+        "physician's instructions"
+      ]
     },
     {
-     "word": "mosaic",
-     "clues": [
-      "colored stone or glass art"
-     ]
+      "word": "presence",
+      "clues": [
+        "bearing",
+        " comportment",
+        "state of being present"
+      ]
     },
     {
-     "word": "mosque",
-     "clues": [
-      "place of worship"
-     ]
+      "word": "present",
+      "clues": [
+        "intermediate between past and future",
+        "submit",
+        " hand over formally",
+        "being here",
+        "nowadays",
+        "gift"
+      ]
     },
     {
-     "word": "mosquito",
-     "clues": [
-      "blood-sucking insect"
-     ]
+      "word": "presentation",
+      "clues": [
+        "making publicly available or known"
+      ]
     },
     {
-     "word": "mother",
-     "clues": [
-      "female parent"
-     ]
+      "word": "presidency",
+      "clues": [
+        "presidentship"
+      ]
     },
     {
-     "word": "motif",
-     "clues": [
-      "design"
-     ]
+      "word": "president",
+      "clues": [
+        "chairman",
+        " chairwoman",
+        " chair",
+        "chief executive of a republic"
+      ]
     },
     {
-     "word": "motivation",
-     "clues": [
-      "motive",
-      " need"
-     ]
+      "word": "presidential",
+      "clues": [
+        "relating to a president or presidency"
+      ]
     },
     {
-     "word": "motorist",
-     "clues": [
-      "automobilist"
-     ]
+      "word": "press",
+      "clues": [
+        "printing press",
+        "newspaper writers",
+        "exert pressure or force on"
+      ]
     },
     {
-     "word": "highway",
-     "clues": [
-      "expressway",
-      " freeway",
-      " state highway"
-     ]
+      "word": "pressure",
+      "clues": [
+        "pressure level",
+        " force per unit area",
+        "imperativeness",
+        " insistence",
+        " insistency",
+        "pressure sensation"
+      ]
     },
     {
-     "word": "mold",
-     "clues": [
-      "fungus",
-      " mould"
-     ]
+      "word": "prestige",
+      "clues": [
+        "prestigiousness"
+      ]
     },
     {
-     "word": "mountain",
-     "clues": [
-      "mount",
-      " land mass projecting above its surroundings"
-     ]
+      "word": "prevalence",
+      "clues": [
+        "preponderance",
+        " superiority in number"
+      ]
     },
     {
-     "word": "mourning",
-     "clues": [
-      "bereavement"
-     ]
+      "word": "prevent",
+      "clues": [
+        "forestall",
+        " keep from happening"
+      ]
     },
     {
-     "word": "mouse",
-     "clues": [
-      "rodent"
-     ]
+      "word": "prey",
+      "clues": [
+        "quarry hunted animal"
+      ]
     },
     {
-     "word": "mouse",
-     "clues": [
-      "computer mouse"
-     ]
+      "word": "price",
+      "clues": [
+        "monetary value",
+        " cost",
+        "cost",
+        " toll"
+      ]
     },
     {
-     "word": "mouth",
-     "clues": [
-      "oral cavity"
-     ]
+      "word": "pride",
+      "clues": [
+        "proud feeling"
+      ]
     },
     {
-     "word": "move",
-     "clues": [
-      "relocation",
-      " changing your residence or business"
-     ]
+      "word": "primary",
+      "clues": [
+        "primary election",
+        "of first rank or importance or value"
+      ]
     },
     {
-     "word": "move",
-     "clues": [
-      "player's turn to move a piece or act"
-     ]
+      "word": "prince",
+      "clues": [
+        "son of a sovereign"
+      ]
     },
     {
-     "word": "movement",
-     "clues": [
-      "motion",
-      " move",
-      " change of position"
-     ]
+      "word": "principle",
+      "clues": [
+        "basic truth or law or assumption"
+      ]
     },
     {
-     "word": "crusade",
-     "clues": [
-      "campaign",
-      " cause"
-     ]
+      "word": "print",
+      "clues": [
+        "picture",
+        " design",
+        "reproduce by printing"
+      ]
     },
     {
-     "word": "movement",
-     "clues": [
-      "social movement",
-      " front",
-      " people with a common ideology"
-     ]
+      "word": "printer",
+      "clues": [
+        "output device that prints data"
+      ]
     },
     {
-     "word": "mud",
-     "clues": [
-      "clay",
-      " soft wet earth"
-     ]
+      "word": "priority",
+      "clues": [
+        "precedence"
+      ]
     },
     {
-     "word": "mug",
-     "clues": [
-      "cup"
-     ]
+      "word": "prison",
+      "clues": [
+        "prison house",
+        " correctional institution"
+      ]
     },
     {
-     "word": "multimedia",
-     "clues": [
-      "multimedia system"
-     ]
+      "word": "prisoner",
+      "clues": [
+        "captive"
+      ]
     },
     {
-     "word": "murder",
-     "clues": [
-      "slaying",
-      " execution"
-     ]
+      "word": "privacy",
+      "clues": [
+        "privateness",
+        " seclusion"
+      ]
     },
     {
-     "word": "muscle",
-     "clues": [
-      "bodily tissue"
-     ]
+      "word": "private",
+      "clues": [
+        "concerning things personal"
+      ]
     },
     {
-     "word": "museum",
-     "clues": [
-      "exhibition hall"
-     ]
+      "word": "privilege",
+      "clues": [
+        "special advantage"
+      ]
     },
     {
-     "word": "mushroom",
-     "clues": [
-      "fungus"
-     ]
+      "word": "prize",
+      "clues": [
+        "trophy"
+      ]
     },
     {
-     "word": "mutation",
-     "clues": [
-      "genetic mutation"
-     ]
+      "word": "problem",
+      "clues": [
+        "question",
+        "trouble"
+      ]
     },
     {
-     "word": "myth",
-     "clues": [
-      "traditional story"
-     ]
+      "word": "process",
+      "clues": [
+        "procedure"
+      ]
     },
     {
-     "word": "nail",
-     "clues": [
-      "thin pointed piece of metal"
-     ]
+      "word": "proclaim",
+      "clues": [
+        "exclaim",
+        " promulgate",
+        " state",
+        " announce"
+      ]
     },
     {
-     "word": "nail",
-     "clues": [
-      "body part"
-     ]
+      "word": "produce",
+      "clues": [
+        "green goods",
+        " green groceries",
+        "grow",
+        " raise",
+        " farm",
+        " cultivate"
+      ]
     },
     {
-     "word": "name",
-     "clues": [
-      "language unit by which a person or thing is known"
-     ]
+      "word": "producer",
+      "clues": [
+        "film or play producer"
+      ]
     },
     {
-     "word": "name",
-     "clues": [
-      "person's reputation"
-     ]
+      "word": "product",
+      "clues": [
+        "consequence of someone's efforts",
+        "merchandise",
+        " ware",
+        "mathematical product obtained by multiplication"
+      ]
     },
     {
-     "word": "nationalism",
-     "clues": [
-      "patriotism",
-      " love of country"
-     ]
+      "word": "production",
+      "clues": [
+        "presentation for the stage or screen or radio or TV",
+        "output",
+        " yield",
+        "act or process of producing something"
+      ]
     },
     {
-     "word": "nationalist",
-     "clues": [
-      "patriot"
-     ]
+      "word": "productive",
+      "clues": [
+        "generative"
+      ]
     },
     {
-     "word": "nature",
-     "clues": [
-      "essential qualities or characteristics"
-     ]
+      "word": "profession",
+      "clues": [
+        "occupation"
+      ]
     },
     {
-     "word": "nature",
-     "clues": [
-      "natural physical world including plants and animals"
-     ]
+      "word": "professional",
+      "clues": [
+        "professional person"
+      ]
     },
     {
-     "word": "nature",
-     "clues": [
-      "causal agent creating and controlling the universe"
-     ]
+      "word": "professor",
+      "clues": [
+        "prof"
+      ]
     },
     {
-     "word": "navy",
-     "clues": [
-      "dark blue",
-      " navy blue"
-     ]
+      "word": "profile",
+      "clues": [
+        "side view"
+      ]
     },
     {
-     "word": "navy",
-     "clues": [
-      "naval forces"
-     ]
+      "word": "profit",
+      "clues": [
+        "turn a profit",
+        "gain"
+      ]
     },
     {
-     "word": "neck",
-     "clues": [
-      "cervix",
-      " connection from head to the rest of the body"
-     ]
+      "word": "profound",
+      "clues": [
+        "deep"
+      ]
     },
     {
-     "word": "need",
-     "clues": [
-      "demand"
-     ]
+      "word": "program",
+      "clues": [
+        "computer program",
+        "broadcast",
+        "plan",
+        " series of steps to be carried",
+        "announcement of a theatrical event"
+      ]
     },
     {
-     "word": "need",
-     "clues": [
-      "indigence",
-      " penury",
-      " extreme poverty"
-     ]
+      "word": "progress",
+      "clues": [
+        "advancement",
+        " gain"
+      ]
     },
     {
-     "word": "needle",
-     "clues": [
-      "sharp pointed implement"
-     ]
+      "word": "progressive",
+      "clues": [
+        "favoring or promoting progress"
+      ]
     },
     {
-     "word": "needle",
-     "clues": [
-      "indicator for readings"
-     ]
+      "word": "project",
+      "clues": [
+        "undertaking",
+        " task",
+        " enterprise"
+      ]
     },
     {
-     "word": "neglect",
-     "clues": [
-      "disregard"
-     ]
+      "word": "projection",
+      "clues": [
+        "image projection"
+      ]
     },
     {
-     "word": "negligence",
-     "clues": [
-      "neglect"
-     ]
+      "word": "promise",
+      "clues": [
+        "verbal commitment"
+      ]
     },
     {
-     "word": "negotiation",
-     "clues": [
-      "dialogue",
-      " talks"
-     ]
+      "word": "promote",
+      "clues": [
+        "upgrade",
+        " advance",
+        " kick upstairs"
+      ]
     },
     {
-     "word": "neighbour",
-     "clues": [
-      "neighbor",
-      " person living nearby"
-     ]
+      "word": "promotion",
+      "clues": [
+        "publicity",
+        "rising in rank"
+      ]
     },
     {
-     "word": "neighborhood",
-     "clues": [
-      "vicinity",
-      " neck of the woods"
-     ]
+      "word": "proof",
+      "clues": [
+        "mathematical proofs",
+        "cogent evidence"
+      ]
     },
     {
-     "word": "nerve",
-     "clues": [
-      "bundle of nerve fibers"
-     ]
+      "word": "proper",
+      "clues": [
+        "suitable"
+      ]
     },
     {
-     "word": "nest",
-     "clues": [
-      "structure in which animals lay eggs"
-     ]
+      "word": "property",
+      "clues": [
+        "attribute",
+        " dimension",
+        "belongings",
+        " holding",
+        " material possession"
+      ]
     },
     {
-     "word": "net",
-     "clues": [
-      "Internet",
-      " Net",
-      " cyberspace"
-     ]
+      "word": "proportion",
+      "clues": [
+        "dimension",
+        "quotient of magnitude of a part and magnitude of the whole"
+      ]
     },
     {
-     "word": "net",
-     "clues": [
-      "game equipment"
-     ]
+      "word": "proposal",
+      "clues": [
+        "proposition",
+        "marriage proposal"
+      ]
     },
     {
-     "word": "network",
-     "clues": [
-      "communication system with a group of broadcasting stations"
-     ]
+      "word": "proposition",
+      "clues": [
+        "statement"
+      ]
     },
     {
-     "word": "network",
-     "clues": [
-      "web",
-      " interconnected system"
-     ]
+      "word": "prosecute",
+      "clues": [
+        "bring a criminal action against"
+      ]
     },
     {
-     "word": "news",
-     "clues": [
-      "intelligence",
-      " tidings",
-      " word"
-     ]
+      "word": "prosecution",
+      "clues": [
+        "criminal prosecution"
+      ]
     },
     {
-     "word": "news",
-     "clues": [
-      "news program",
-      " news show"
-     ]
+      "word": "prospect",
+      "clues": [
+        "expectation",
+        " outlook"
+      ]
     },
     {
-     "word": "news",
-     "clues": [
-      "new information"
-     ]
+      "word": "prosper",
+      "clues": [
+        "boom",
+        " thrive",
+        " flourish"
+      ]
     },
     {
-     "word": "night",
-     "clues": [
-      "nighttime",
-      " dark"
-     ]
+      "word": "prosperity",
+      "clues": [
+        "economic prosperity"
+      ]
     },
     {
-     "word": "nightmare",
-     "clues": [
-      "upsetting dream"
-     ]
+      "word": "protect",
+      "clues": [
+        "shield from danger"
+      ]
     },
     {
-     "word": "node",
-     "clues": [
-      "connecting point"
-     ]
+      "word": "protection",
+      "clues": [
+        "protecting someone or something"
+      ]
     },
     {
-     "word": "noise",
-     "clues": [
-      "randomness",
-      " haphazardness"
-     ]
+      "word": "protest",
+      "clues": [
+        "objection",
+        " dissent"
+      ]
     },
     {
-     "word": "noise",
-     "clues": [
-      "sound"
-     ]
+      "word": "proud",
+      "clues": [
+        "feeling self-respect"
+      ]
     },
     {
-     "word": "nomination",
-     "clues": [
-      "naming a candidate"
-     ]
+      "word": "prove",
+      "clues": [
+        "show",
+        " demonstrate",
+        " establish"
+      ]
     },
     {
-     "word": "nonsense",
-     "clues": [
-      "bunk",
-      " hokum"
-     ]
+      "word": "provide",
+      "clues": [
+        "supply",
+        " render",
+        " furnish"
+      ]
     },
     {
-     "word": "norm",
-     "clues": [
-      "standard"
-     ]
+      "word": "provincial",
+      "clues": [
+        "characteristic of the provinces"
+      ]
     },
     {
-     "word": "north",
-     "clues": [
-      "due north",
-      " N",
-      " direction"
-     ]
+      "word": "provision",
+      "clues": [
+        "supply",
+        " supplying"
+      ]
     },
     {
-     "word": "nose",
-     "clues": [
-      "olfactory organ"
-     ]
+      "word": "provoke",
+      "clues": [
+        "arouse",
+        " evoke an emotion or response"
+      ]
     },
     {
-     "word": "note",
-     "clues": [
-      "annotation"
-     ]
+      "word": "psychology",
+      "clues": [
+        "psychological science"
+      ]
     },
     {
-     "word": "note",
-     "clues": [
-      "short letter",
-      " line",
-      " billet"
-     ]
+      "word": "public",
+      "clues": [
+        "not private"
+      ]
     },
     {
-     "word": "note",
-     "clues": [
-      "musical note",
-      " tone"
-     ]
+      "word": "publication",
+      "clues": [
+        "issue",
+        "printed work"
+      ]
     },
     {
-     "word": "note",
-     "clues": [
-      "bill",
-      " banknote"
-     ]
+      "word": "publicity",
+      "clues": [
+        "public scrutiny"
+      ]
     },
     {
-     "word": "notebook",
-     "clues": [
-      "notebook computer"
-     ]
+      "word": "publish",
+      "clues": [
+        "bring out",
+        " put out",
+        " issue",
+        " release"
+      ]
     },
     {
-     "word": "notebook",
-     "clues": [
-      "book with blank pages"
-     ]
+      "word": "publisher",
+      "clues": [
+        "publishing house",
+        " publishing firm"
+      ]
     },
     {
-     "word": "notice",
-     "clues": [
-      "announcement"
-     ]
+      "word": "pudding",
+      "clues": [
+        "soft sweet dessert"
+      ]
     },
     {
-     "word": "notice",
-     "clues": [
-      "advance notification"
-     ]
+      "word": "pull",
+      "clues": [
+        "draw"
+      ]
     },
     {
-     "word": "notion",
-     "clues": [
-      "concept"
-     ]
+      "word": "pump",
+      "clues": [
+        "raise fluid with a pump",
+        "mechanical device"
+      ]
     },
     {
-     "word": "novel",
-     "clues": [
-      "fictional work"
-     ]
+      "word": "pumpkin",
+      "clues": [
+        "large yellow fruit"
+      ]
     },
     {
-     "word": "number",
-     "clues": [
-      "quantity"
-     ]
+      "word": "punch",
+      "clues": [
+        "blow",
+        " lick",
+        " biff",
+        "make a hole in",
+        "mixed drink",
+        "hit with the fist"
+      ]
     },
     {
-     "word": "number",
-     "clues": [
-      "numeral"
-     ]
+      "word": "punish",
+      "clues": [
+        "penalize"
+      ]
     },
     {
-     "word": "number",
-     "clues": [
-      "phone number",
-      " telephone number"
-     ]
+      "word": "pupil",
+      "clues": [
+        "contractile aperture in the iris of the eye",
+        "schoolchild",
+        " school-age child"
+      ]
     },
     {
-     "word": "nun",
-     "clues": [
-      "sister",
-      " religious woman"
-     ]
+      "word": "pure",
+      "clues": [
+        "having no faults",
+        " sinless",
+        "free of extraneous elements of any kind"
+      ]
     },
     {
-     "word": "nursery",
-     "clues": [
-      "plant nursery",
-      " greenhouse",
-      " glasshouse"
-     ]
+      "word": "purpose",
+      "clues": [
+        "intent",
+        " intention",
+        " aim",
+        " design"
+      ]
     },
     {
-     "word": "nursery",
-     "clues": [
-      "baby's room"
-     ]
+      "word": "pursuit",
+      "clues": [
+        "quest",
+        " search"
+      ]
     },
     {
-     "word": "crackpot",
-     "clues": [
-      "crank",
-      " nut",
-      " nutcase",
-      " fruitcake"
-     ]
+      "word": "push",
+      "clues": [
+        "press"
+      ]
     },
     {
-     "word": "nut",
-     "clues": [
-      "hard-shelled seed"
-     ]
+      "word": "put",
+      "clues": [
+        "place",
+        " set",
+        " pose",
+        " lay",
+        " position"
+      ]
     },
     {
-     "word": "oak",
-     "clues": [
-      "oak tree"
-     ]
+      "word": "puzzle",
+      "clues": [
+        "toy"
+      ]
     },
     {
-     "word": "object",
-     "clues": [
-      "physical object",
-      " tangible and visible entity"
-     ]
+      "word": "pyramid",
+      "clues": [
+        "polyhedron"
+      ]
     },
     {
-     "word": "object",
-     "clues": [
-      "aim",
-      " objective",
-      " target"
-     ]
+      "word": "qualification",
+      "clues": [
+        "reservation",
+        " limitation"
+      ]
     },
     {
-     "word": "obligation",
-     "clues": [
-      "duty",
-      " responsibility"
-     ]
+      "word": "qualified",
+      "clues": [
+        "meeting the standards and requirements"
+      ]
     },
     {
-     "word": "observation",
-     "clues": [
-      "facts learned by observing"
-     ]
+      "word": "qualify",
+      "clues": [
+        "measure up",
+        " prove capable",
+        " meet requirements",
+        "modify"
+      ]
     },
     {
-     "word": "observer",
-     "clues": [
-      "perceiver",
-      " beholder"
-     ]
+      "word": "quality",
+      "clues": [
+        "degree or grade of excellence"
+      ]
     },
     {
-     "word": "obstacle",
-     "clues": [
-      "block"
-     ]
+      "word": "quantity",
+      "clues": [
+        "amount"
+      ]
     },
     {
-     "word": "occasion",
-     "clues": [
-      "time of a particular event"
-     ]
+      "word": "quarrel",
+      "clues": [
+        "row",
+        " wrangle",
+        " words",
+        " run-in",
+        " dustup",
+        "dispute",
+        " argue"
+      ]
     },
     {
-     "word": "occupation",
-     "clues": [
-      "military control"
-     ]
+      "word": "quarter",
+      "clues": [
+        "United States coin worth 25 cents",
+        "fourth part of a year",
+        " three months",
+        "one-fourth",
+        "district of a city"
+      ]
     },
     {
-     "word": "offense",
-     "clues": [
-      "offensive",
-      " attack"
-     ]
+      "word": "queen",
+      "clues": [
+        "female monarch"
+      ]
     },
     {
-     "word": "offense",
-     "clues": [
-      "misdemeanor",
-      " infraction",
-      " violation"
-     ]
+      "word": "quest",
+      "clues": [
+        "seeking"
+      ]
     },
     {
-     "word": "offense",
-     "clues": [
-      "discourtesy",
-      " offence"
-     ]
+      "word": "question",
+      "clues": [
+        "inquiry",
+        " query",
+        " interrogation",
+        "interrogate"
+      ]
     },
     {
-     "word": "offender",
-     "clues": [
-      "wrongdoer"
-     ]
+      "word": "queue",
+      "clues": [
+        "waiting line"
+      ]
     },
     {
-     "word": "offer",
-     "clues": [
-      "offering",
-      " verbal act of offering"
-     ]
+      "word": "quiet",
+      "clues": [
+        "silent",
+        "quiescent"
+      ]
     },
     {
-     "word": "office",
-     "clues": [
-      "business office",
-      " workplace"
-     ]
+      "word": "quit",
+      "clues": [
+        "drop out",
+        " give up",
+        " throw in the towel"
+      ]
     },
     {
-     "word": "officer",
-     "clues": [
-      "policeman",
-      " police officer"
-     ]
+      "word": "quota",
+      "clues": [
+        "proportional share"
+      ]
     },
     {
-     "word": "official",
-     "clues": [
-      "functionary"
-     ]
+      "word": "quotation",
+      "clues": [
+        "quote",
+        " citation",
+        " words",
+        "price quotation"
+      ]
     },
     {
-     "word": "offspring",
-     "clues": [
-      "young"
-     ]
+      "word": "quote",
+      "clues": [
+        "cite"
+      ]
     },
     {
-     "word": "oil",
-     "clues": [
-      "cooking oil",
-      " vegetable oil"
-     ]
+      "word": "rabbit",
+      "clues": [
+        "burrowing animal"
+      ]
     },
     {
-     "word": "oil",
-     "clues": [
-      "viscous liquid"
-     ]
+      "word": "race",
+      "clues": [
+        "people belonging to the same genetic stock",
+        "rush",
+        " hasten",
+        " speed",
+        " hurry",
+        "contest of speed"
+      ]
     },
     {
-     "word": "omission",
-     "clues": [
-      "skip",
-      " mistake resulting from neglect"
-     ]
+      "word": "racism",
+      "clues": [
+        "prejudice"
+      ]
     },
     {
-     "word": "onion",
-     "clues": [
-      "edible bulb"
-     ]
+      "word": "rack",
+      "clues": [
+        "framework for holding objects"
+      ]
     },
     {
-     "word": "opera",
-     "clues": [
-      "drama set to music"
-     ]
+      "word": "radiatio",
+      "clues": [
+        "sickness] radiation syndrome"
+      ]
     },
     {
-     "word": "operation",
-     "clues": [
-      "surgery"
-     ]
+      "word": "radiation",
+      "clues": [
+        "radioactivity"
+      ]
     },
     {
-     "word": "operation",
-     "clues": [
-      "military operation"
-     ]
+      "word": "radical",
+      "clues": [
+        "person with radical ideas"
+      ]
     },
     {
-     "word": "operation",
-     "clues": [
-      "business especially one run on a large scale"
-     ]
+      "word": "radio",
+      "clues": [
+        "radio receiver",
+        " receiving set",
+        " radio set",
+        "radiocommunication",
+        " wireless",
+        " medium"
+      ]
     },
     {
-     "word": "operation",
-     "clues": [
-      "functioning",
-      " performance"
-     ]
+      "word": "rage",
+      "clues": [
+        "fury",
+        " madness",
+        " intense anger"
+      ]
     },
     {
-     "word": "opinion",
-     "clues": [
-      "public opinion",
-      " popular opinion"
-     ]
+      "word": "raid",
+      "clues": [
+        "foray",
+        " sudden attack"
+      ]
     },
     {
-     "word": "opinion",
-     "clues": [
-      "legal opinion",
-      " judgment",
-      " judgement"
-     ]
+      "word": "railcar",
+      "clues": [
+        "railroad car",
+        " wagon"
+      ]
     },
     {
-     "word": "opponent",
-     "clues": [
-      "adversary",
-      " antagonist"
-     ]
+      "word": "railroad",
+      "clues": [
+        "railroad line",
+        " railway system"
+      ]
     },
     {
-     "word": "opposite",
-     "clues": [
-      "reverse",
-      " contrary"
-     ]
+      "word": "rain",
+      "clues": [
+        "rainfall"
+      ]
     },
     {
-     "word": "opposition",
-     "clues": [
-      "resistance"
-     ]
+      "word": "rainbow",
+      "clues": [
+        "colored light in the sky"
+      ]
     },
     {
-     "word": "opposition",
-     "clues": [
-      "political party opposed"
-     ]
+      "word": "raise",
+      "clues": [
+        "collect funds",
+        "rear",
+        " bring up",
+        " nurture",
+        " parent"
+      ]
     },
     {
-     "word": "opposition",
-     "clues": [
-      "enemy",
-      " foe"
-     ]
+      "word": "rally",
+      "clues": [
+        "mass meeting"
+      ]
     },
     {
-     "word": "option",
-     "clues": [
-      "right to buy or sell property"
-     ]
+      "word": "ranch",
+      "clues": [
+        "cattle ranch",
+        " cattle farm"
+      ]
     },
     {
-     "word": "orange",
-     "clues": [
-      "orangeness",
-      " color between red and yellow"
-     ]
+      "word": "random",
+      "clues": [
+        "arbitrary"
+      ]
     },
     {
-     "word": "orange",
-     "clues": [
-      "citrus fruit"
-     ]
+      "word": "range",
+      "clues": [
+        "mountain range",
+        " range of mountains",
+        "large tract of grassy open land where livestock graze",
+        "stove",
+        " kitchen stove",
+        "scope",
+        " reach",
+        " orbit",
+        " compass"
+      ]
     },
     {
-     "word": "orbit",
-     "clues": [
-      "celestial orbit"
-     ]
+      "word": "rank",
+      "clues": [
+        "status",
+        "rate",
+        " place",
+        " range",
+        " order",
+        " grade"
+      ]
     },
     {
-     "word": "orchestra",
-     "clues": [
-      "musical group"
-     ]
+      "word": "rape",
+      "clues": [
+        "rape",
+        " violation",
+        " assault",
+        " ravishment",
+        "ravish",
+        " violate",
+        " assault"
+      ]
     },
     {
-     "word": "order",
-     "clues": [
-      "decree",
-      " edict"
-     ]
+      "word": "rare",
+      "clues": [
+        "infrequent",
+        " uncommon"
+      ]
     },
     {
-     "word": "order",
-     "clues": [
-      "request for food or refreshment"
-     ]
+      "word": "rat",
+      "clues": [
+        "rodent"
+      ]
     },
     {
-     "word": "order",
-     "clues": [
-      "orderliness"
-     ]
+      "word": "rate",
+      "clues": [
+        "pace"
+      ]
     },
     {
-     "word": "organ",
-     "clues": [
-      "pipe organ"
-     ]
+      "word": "ratio",
+      "clues": [
+        "relative magnitude"
+      ]
     },
     {
-     "word": "organ",
-     "clues": [
-      "body part"
-     ]
+      "word": "rational",
+      "clues": [
+        "based on reasoning"
+      ]
     },
     {
-     "word": "organisation",
-     "clues": [
-      "group of people who work together"
-     ]
+      "word": "raw",
+      "clues": [
+        "not treated with heat"
+      ]
     },
     {
-     "word": "orientation",
-     "clues": [
-      "position",
-      " alignment"
-     ]
+      "word": "reach",
+      "clues": [
+        "extend to",
+        " touch"
+      ]
     },
     {
-     "word": "origin",
-     "clues": [
-      "descent",
-      " extraction",
-      " background",
-      " provenance"
-     ]
+      "word": "reaction",
+      "clues": [
+        "equal and opposite force",
+        "response revealing a person's feelings or attitude",
+        "chemical reaction"
+      ]
     },
     {
-     "word": "outfit",
-     "clues": [
-      "getup",
-      " clothing"
-     ]
+      "word": "reactor",
+      "clues": [
+        "nuclear reactor"
+      ]
     },
     {
-     "word": "outlet",
-     "clues": [
-      "retail store",
-      " sales outlet"
-     ]
+      "word": "read",
+      "clues": [
+        "interpret something that is written or printed"
+      ]
     },
     {
-     "word": "outlet",
-     "clues": [
-      "wall socket",
-      " electric outlet"
-     ]
+      "word": "reader",
+      "clues": [
+        "reviewer",
+        " referee",
+        "subscriber"
+      ]
     },
     {
-     "word": "outlet",
-     "clues": [
-      "wall socket",
-      " wall plug",
-      " electric outlet"
-     ]
+      "word": "ready",
+      "clues": [
+        "prepared"
+      ]
     },
     {
-     "word": "outline",
-     "clues": [
-      "abstract",
-      " precis"
-     ]
+      "word": "real",
+      "clues": [
+        "actual",
+        " genuine",
+        "actual",
+        " existent",
+        " being or occurring in fact or actuality"
+      ]
     },
     {
-     "word": "outline",
-     "clues": [
-      "lineation",
-      " linear boundary"
-     ]
+      "word": "realism",
+      "clues": [
+        "pragmatism"
+      ]
     },
     {
-     "word": "outlook",
-     "clues": [
-      "mentality",
-      " mindset"
-     ]
+      "word": "reality",
+      "clues": [
+        "realness"
+      ]
     },
     {
-     "word": "output",
-     "clues": [
-      "end product"
-     ]
+      "word": "realize",
+      "clues": [
+        "recognize",
+        " be fully aware of"
+      ]
     },
     {
-     "word": "outside",
-     "clues": [
-      "exterior",
-      " outer side or surface"
-     ]
+      "word": "rear",
+      "clues": [
+        "rise up"
+      ]
     },
     {
-     "word": "oven",
-     "clues": [
-      "kitchen appliance"
-     ]
+      "word": "reason",
+      "clues": [
+        "rationality",
+        "explanation of the cause"
+      ]
     },
     {
-     "word": "overall",
-     "clues": [
-      "clothing"
-     ]
+      "word": "reasonable",
+      "clues": [
+        "sensible"
+      ]
     },
     {
-     "word": "overview",
-     "clues": [
-      "summary"
-     ]
+      "word": "rebel",
+      "clues": [
+        "insurgent",
+        " insurrectionist",
+        " freedom fighter"
+      ]
     },
     {
-     "word": "owl",
-     "clues": [
-      "nocturnal bird"
-     ]
+      "word": "rebellion",
+      "clues": [
+        "insurrection",
+        " revolt",
+        " rising",
+        " uprising"
+      ]
     },
     {
-     "word": "owner",
-     "clues": [
-      "proprietor someone who owns a business"
-     ]
+      "word": "receipt",
+      "clues": [
+        "acknowledgment of payment"
+      ]
     },
     {
-     "word": "pace",
-     "clues": [
-      "tempo",
-      " rate"
-     ]
+      "word": "reception",
+      "clues": [
+        "broadcast reception",
+        "formal party"
+      ]
     },
     {
-     "word": "pack",
-     "clues": [
-      "bundle carried on the back"
-     ]
+      "word": "recession",
+      "clues": [
+        "declining economy"
+      ]
     },
     {
-     "word": "pack",
-     "clues": [
-      "group of hunting animals"
-     ]
+      "word": "reckless",
+      "clues": [
+        "foolhardy"
+      ]
     },
     {
-     "word": "package",
-     "clues": [
-      "bundle",
-      " packet",
-      " parcel"
-     ]
+      "word": "recognition",
+      "clues": [
+        "acknowledgment"
+      ]
     },
     {
-     "word": "packet",
-     "clues": [
-      "small package",
-      " bundle"
-     ]
+      "word": "recognize",
+      "clues": [
+        "accredit",
+        " grant credentials",
+        "perceive to be the same"
+      ]
     },
     {
-     "word": "page",
-     "clues": [
-      "one side of one leaf"
-     ]
+      "word": "recommend",
+      "clues": [
+        "commend"
+      ]
     },
     {
-     "word": "pain",
-     "clues": [
-      "physical pain"
-     ]
+      "word": "recommendation",
+      "clues": [
+        "testimonial",
+        " good word"
+      ]
     },
     {
-     "word": "pain",
-     "clues": [
-      "emotional distress",
-      " painfulness"
-     ]
+      "word": "reconcile",
+      "clues": [
+        "make up"
+      ]
     },
     {
-     "word": "pain",
-     "clues": [
-      "pain in the neck",
-      " nuisance"
-     ]
+      "word": "record",
+      "clues": [
+        "criminal record",
+        "extreme attainment",
+        " the best/worst performance ever",
+        "document serving as legal evidence of a transaction",
+        "number of wins versus losses and ties",
+        "tape",
+        " register electronically"
+      ]
     },
     {
-     "word": "paint",
-     "clues": [
-      "substance used to protect or decorate"
-     ]
+      "word": "recording",
+      "clues": [
+        "information storage device"
+      ]
     },
     {
-     "word": "painter",
-     "clues": [
-      "artist"
-     ]
+      "word": "recover",
+      "clues": [
+        "recuperate",
+        " convalesce"
+      ]
     },
     {
-     "word": "pair",
-     "clues": [
-      "two people considered as a unit"
-     ]
+      "word": "recovery",
+      "clues": [
+        "convalescence",
+        " recuperation",
+        "retrieval",
+        " regaining"
+      ]
     },
     {
-     "word": "palace",
-     "clues": [
-      "residence of a sovereign"
-     ]
+      "word": "recruit",
+      "clues": [
+        "seek to employ"
+      ]
     },
     {
-     "word": "palm",
-     "clues": [
-      "palm tree"
-     ]
+      "word": "recycle",
+      "clues": [
+        "reprocess",
+        " reuse"
+      ]
     },
     {
-     "word": "chimpanzee",
-     "clues": [
-      "primate"
-     ]
+      "word": "red",
+      "clues": [
+        "redness"
+      ]
     },
     {
-     "word": "pan",
-     "clues": [
-      "cooking pan"
-     ]
+      "word": "redeem",
+      "clues": [
+        "exchange for ransom under threat"
+      ]
     },
     {
-     "word": "panel",
-     "clues": [
-      "plate or sheet that is a component of something"
-     ]
+      "word": "reduce",
+      "clues": [
+        "cut down",
+        " cut back",
+        " trim"
+      ]
     },
     {
-     "word": "panel",
-     "clues": [
-      "team of experts"
-     ]
+      "word": "reduction",
+      "clues": [
+        "decrease",
+        " diminution"
+      ]
     },
     {
-     "word": "panic",
-     "clues": [
-      "terror",
-      " overwhelming fear"
-     ]
+      "word": "redundancy",
+      "clues": [
+        "redundance",
+        " superfluousness"
+      ]
     },
     {
-     "word": "paper",
-     "clues": [
-      "composition",
-      " report"
-     ]
+      "word": "refer",
+      "clues": [
+        "mention",
+        " advert",
+        " bring up",
+        " cite",
+        " name"
+      ]
     },
     {
-     "word": "paper",
-     "clues": [
-      "scholarly article"
-     ]
+      "word": "referee",
+      "clues": [
+        "sports referee"
+      ]
     },
     {
-     "word": "paper",
-     "clues": [
-      "newspaper"
-     ]
+      "word": "reference",
+      "clues": [
+        "reference point",
+        " point of reference",
+        "citation",
+        " acknowledgment",
+        " credit",
+        " mention",
+        " quotation"
+      ]
     },
     {
-     "word": "paper",
-     "clues": [
-      "cellulose",
-      " material for writing or printing on"
-     ]
+      "word": "referral",
+      "clues": [
+        "recommendation to consult someone"
+      ]
     },
     {
-     "word": "paper",
-     "clues": [
-      "material made of cellulose pulp"
-     ]
+      "word": "reflect",
+      "clues": [
+        "shine",
+        "think over",
+        " meditate",
+        " ponder",
+        " contemplate"
+      ]
     },
     {
-     "word": "parade",
-     "clues": [
-      "ceremonial procession"
-     ]
+      "word": "reflection",
+      "clues": [
+        "reflexion",
+        " mirror image"
+      ]
     },
     {
-     "word": "paradox",
-     "clues": [
-      "self-contradiction"
-     ]
+      "word": "reform",
+      "clues": [
+        "improve by alteration or correction",
+        "change for the better"
+      ]
     },
     {
-     "word": "paragraph",
-     "clues": [
-      "subdivisions of a text"
-     ]
+      "word": "refrigerator",
+      "clues": [
+        "fridge"
+      ]
     },
     {
-     "word": "parallel",
-     "clues": [
-      "analogue",
-      " analog"
-     ]
+      "word": "refund",
+      "clues": [
+        "repay",
+        " pay back"
+      ]
     },
     {
-     "word": "parameter",
-     "clues": [
-      "factor"
-     ]
+      "word": "refuse",
+      "clues": [
+        "decline to do"
+      ]
     },
     {
-     "word": "pardon",
-     "clues": [
-      "amnesty"
-     ]
+      "word": "regard",
+      "clues": [
+        "gaze",
+        " long fixed look"
+      ]
     },
     {
-     "word": "park",
-     "clues": [
-      "commons",
-      " common",
-      " green"
-     ]
+      "word": "register",
+      "clues": [
+        "enroll to vote",
+        "registry",
+        " official written record",
+        "cash register"
+      ]
     },
     {
-     "word": "parking",
-     "clues": [
-      "parking space"
-     ]
+      "word": "registration",
+      "clues": [
+        "enrollment",
+        " enrolment"
+      ]
     },
     {
-     "word": "part",
-     "clues": [
-      "portion",
-      " component part",
-      " component"
-     ]
+      "word": "regret",
+      "clues": [
+        "repent",
+        " rue",
+        " feel remorse",
+        "sorrow",
+        " rue",
+        " ruefulness"
+      ]
     },
     {
-     "word": "particle",
-     "clues": [
-      "small body of mass"
-     ]
+      "word": "regular",
+      "clues": [
+        "in accordance with fixed order or procedure"
+      ]
     },
     {
-     "word": "partner",
-     "clues": [
-      "spouse",
-      " married person",
-      " mate",
-      " better half"
-     ]
+      "word": "regulation",
+      "clues": [
+        "authoritative rule"
+      ]
     },
     {
-     "word": "partner",
-     "clues": [
-      "member of a partnership"
-     ]
+      "word": "rehabilitation",
+      "clues": [
+        "treatment of physical disabilities",
+        "vindication of character",
+        " exoneration"
+      ]
     },
     {
-     "word": "partnership",
-     "clues": [
-      "cooperation among people"
-     ]
+      "word": "rehearsal",
+      "clues": [
+        "dry run"
+      ]
     },
     {
-     "word": "party",
-     "clues": [
-      "festivity"
-     ]
+      "word": "reign",
+      "clues": [
+        "time of rule"
+      ]
     },
     {
-     "word": "party",
-     "clues": [
-      "political party"
-     ]
+      "word": "reinforce",
+      "clues": [
+        "reward",
+        " support with rewards"
+      ]
     },
     {
-     "word": "pass",
-     "clues": [
-      "passing",
-      " qualifying grade"
-     ]
+      "word": "reject",
+      "clues": [
+        "pass up",
+        " turn down",
+        " refuse",
+        " decline",
+        "rule out",
+        " eliminate"
+      ]
     },
     {
-     "word": "pass",
-     "clues": [
-      "permission to enter or do something"
-     ]
+      "word": "relate",
+      "clues": [
+        "tie in",
+        " link",
+        " connect logically or causally"
+      ]
     },
     {
-     "word": "passage",
-     "clues": [
-      "passageway"
-     ]
+      "word": "related",
+      "clues": [
+        "connected by kinship",
+        "connected logically or causally"
+      ]
     },
     {
-     "word": "passage",
-     "clues": [
-      "section of text"
-     ]
+      "word": "relation",
+      "clues": [
+        "relative",
+        " person related by blood or marriage"
+      ]
     },
     {
-     "word": "passenger",
-     "clues": [
-      "rider"
-     ]
+      "word": "relationship",
+      "clues": [
+        "state of connectedness between people"
+      ]
     },
     {
-     "word": "passion",
-     "clues": [
-      "passionateness",
-      " strong emotion"
-     ]
+      "word": "relative",
+      "clues": [
+        "not absolute"
+      ]
     },
     {
-     "word": "password",
-     "clues": [
-      "watchword",
-      " word"
-     ]
+      "word": "relax",
+      "clues": [
+        "loosen up",
+        " unwind"
+      ]
     },
     {
-     "word": "past",
-     "clues": [
-      "past times",
-      " yesteryear"
-     ]
+      "word": "relaxation",
+      "clues": [
+        "easiness",
+        " absence of tension"
+      ]
     },
     {
-     "word": "pastel",
-     "clues": [
-      "light pale color"
-     ]
+      "word": "release",
+      "clues": [
+        "waiver",
+        " discharge",
+        "free",
+        " liberate"
+      ]
     },
     {
-     "word": "pasture",
-     "clues": [
-      "pastureland",
-      " grazing land"
-     ]
+      "word": "relevance",
+      "clues": [
+        "relevancy"
+      ]
     },
     {
-     "word": "patch",
-     "clues": [
-      "piece of cloth"
-     ]
+      "word": "reliable",
+      "clues": [
+        "dependable"
+      ]
     },
     {
-     "word": "patch",
-     "clues": [
-      "bandage",
-      " cover for injury"
-     ]
+      "word": "reliance",
+      "clues": [
+        "state of relying on something"
+      ]
     },
     {
-     "word": "patch",
-     "clues": [
-      "plot",
-      " small area"
-     ]
+      "word": "relief",
+      "clues": [
+        "ease",
+        " alleviation"
+      ]
     },
     {
-     "word": "patent",
-     "clues": [
-      "patent of invention"
-     ]
+      "word": "relieve",
+      "clues": [
+        "free from a burden or distress"
+      ]
     },
     {
-     "word": "path",
-     "clues": [
-      "route",
-      " itinerary"
-     ]
+      "word": "relinquish",
+      "clues": [
+        "renounce",
+        " give up",
+        " foreswear"
+      ]
     },
     {
-     "word": "patience",
-     "clues": [
-      "forbearance"
-     ]
+      "word": "reluctance",
+      "clues": [
+        "hesitancy",
+        " hesitation",
+        " disinclination"
+      ]
     },
     {
-     "word": "patient",
-     "clues": [
-      "person who requires medical care"
-     ]
+      "word": "remain",
+      "clues": [
+        "persist",
+        " stay behind"
+      ]
     },
     {
-     "word": "patrol",
-     "clues": [
-      "security detachment"
-     ]
+      "word": "remark",
+      "clues": [
+        "explicit notice"
+      ]
     },
     {
-     "word": "pattern",
-     "clues": [
-      "model",
-      " design"
-     ]
+      "word": "remedy",
+      "clues": [
+        "curative",
+        " cure",
+        " medicine"
+      ]
     },
     {
-     "word": "pause",
-     "clues": [
-      "temporary inactivity"
-     ]
+      "word": "remember",
+      "clues": [
+        "retrieve",
+        " recall"
+      ]
     },
     {
-     "word": "pavement",
-     "clues": [
-      "sidewalk"
-     ]
+      "word": "remind",
+      "clues": [
+        "prompt",
+        " cue"
+      ]
     },
     {
-     "word": "payment",
-     "clues": [
-      "defrayal"
-     ]
+      "word": "remunerate",
+      "clues": [
+        "compensate"
+      ]
     },
     {
-     "word": "peace",
-     "clues": [
-      "peacefulness",
-      " peace of mind",
-      " repose",
-      " serenity"
-     ]
+      "word": "rent",
+      "clues": [
+        "payment to a landlord"
+      ]
     },
     {
-     "word": "peace",
-     "clues": [
-      "state prevailing during the absence of war"
-     ]
+      "word": "repeat",
+      "clues": [
+        "duplicate",
+        " reduplicate",
+        " double",
+        " replicate"
+      ]
     },
     {
-     "word": "peak",
-     "clues": [
-      "vertex",
-      " apex",
-      " acme",
-      " highest point"
-     ]
+      "word": "repetition",
+      "clues": [
+        "repeat"
+      ]
     },
     {
-     "word": "peanut",
-     "clues": [
-      "goober"
-     ]
+      "word": "replace",
+      "clues": [
+        "substitute for a defective or inadequate one"
+      ]
     },
     {
-     "word": "peasant",
-     "clues": [
-      "agricultural laborer"
-     ]
+      "word": "replacement",
+      "clues": [
+        "surrogate",
+        " alternate",
+        " substitute"
+      ]
     },
     {
-     "word": "pedestrian",
-     "clues": [
-      "walker"
-     ]
+      "word": "report",
+      "clues": [
+        "study",
+        " written report",
+        " evaluation",
+        "news report",
+        " story",
+        " account"
+      ]
     },
     {
-     "word": "pen",
-     "clues": [
-      "writing implement"
-     ]
+      "word": "reporter",
+      "clues": [
+        "journalist",
+        " newsperson"
+      ]
     },
     {
-     "word": "pen",
-     "clues": [
-      "playpen"
-     ]
+      "word": "represent",
+      "clues": [
+        "stand for",
+        " correspond to",
+        "be a delegate or spokesperson"
+      ]
     },
     {
-     "word": "penalty",
-     "clues": [
-      "punishment"
-     ]
+      "word": "representative",
+      "clues": [
+        "standing for something else",
+        "congressman",
+        "person who represents others"
+      ]
     },
     {
-     "word": "pencil",
-     "clues": [
-      "writing implement"
-     ]
+      "word": "reproduce",
+      "clues": [
+        "make a copy"
+      ]
     },
     {
-     "word": "penny",
-     "clues": [
-      "cent"
-     ]
+      "word": "reproduction",
+      "clues": [
+        "replica",
+        " replication",
+        " copy"
+      ]
     },
     {
-     "word": "pension",
-     "clues": [
-      "payment during retirement"
-     ]
+      "word": "reptile",
+      "clues": [
+        "reptilian"
+      ]
     },
     {
-     "word": "retiree",
-     "clues": [
-      "pensioner"
-     ]
+      "word": "reputation",
+      "clues": [
+        "notoriety for some characteristic"
+      ]
     },
     {
-     "word": "pepper",
-     "clues": [
-      "spice"
-     ]
+      "word": "request",
+      "clues": [
+        "call for",
+        "petition"
+      ]
     },
     {
-     "word": "percent",
-     "clues": [
-      "percentage"
-     ]
+      "word": "requirement",
+      "clues": [
+        "necessity",
+        " essential",
+        " requisite"
+      ]
     },
     {
-     "word": "perception",
-     "clues": [
-      "process of perceiving"
-     ]
+      "word": "rescue",
+      "clues": [
+        "free from harm or evil",
+        "deliver",
+        " free from harm"
+      ]
     },
     {
-     "word": "performance",
-     "clues": [
-      "execution",
-      " carrying out"
-     ]
+      "word": "research",
+      "clues": [
+        "systematic investigation to establish facts"
+      ]
     },
     {
-     "word": "performance",
-     "clues": [
-      "act of presenting a play or a piece"
-     ]
+      "word": "researcher",
+      "clues": [
+        "research worker",
+        " investigator"
+      ]
     },
     {
-     "word": "performer",
-     "clues": [
-      "performing artist"
-     ]
+      "word": "reserve",
+      "clues": [
+        "obtain or arrange in advance",
+        "reticence",
+        " quietness"
+      ]
     },
     {
-     "word": "period",
-     "clues": [
-      "point",
-      " full stop",
-      " stop",
-      " full point"
-     ]
+      "word": "reservoir",
+      "clues": [
+        "artificial lake"
+      ]
     },
     {
-     "word": "period",
-     "clues": [
-      "time period"
-     ]
+      "word": "residence",
+      "clues": [
+        "abode"
+      ]
     },
     {
-     "word": "period",
-     "clues": [
-      "interval taken to complete one cycle"
-     ]
+      "word": "resident",
+      "clues": [
+        "living in a particular place",
+        "occupant"
+      ]
     },
     {
-     "word": "period",
-     "clues": [
-      "historic period"
-     ]
+      "word": "resign",
+      "clues": [
+        "reconcile oneself",
+        " accept as inevitable",
+        "leave office",
+        " quit",
+        " step down"
+      ]
     },
     {
-     "word": "permission",
-     "clues": [
-      "approval to do something"
-     ]
+      "word": "resignation",
+      "clues": [
+        "surrender",
+        "giving notice"
+      ]
     },
     {
-     "word": "person",
-     "clues": [
-      "individual"
-     ]
+      "word": "resist",
+      "clues": [
+        "withstand",
+        " hold up against",
+        "baulk",
+        " refuse to comply"
+      ]
     },
     {
-     "word": "personality",
-     "clues": [
-      "personal attributes"
-     ]
+      "word": "resolution",
+      "clues": [
+        "decision to do something"
+      ]
     },
     {
-     "word": "pest",
-     "clues": [
-      "blighter",
-      " cuss",
-      " pesterer",
-      " gadfly",
-      " persistently annoying person"
-     ]
+      "word": "resort",
+      "clues": [
+        "holiday resort"
+      ]
     },
     {
-     "word": "pet",
-     "clues": [
-      "animal"
-     ]
+      "word": "resource",
+      "clues": [
+        "source of aid or support"
+      ]
     },
     {
-     "word": "philosophy",
-     "clues": [
-      "investigation of existence",
-      " knowledge",
-      " ethics"
-     ]
+      "word": "respect",
+      "clues": [
+        "esteem",
+        " value"
+      ]
     },
     {
-     "word": "philosophy",
-     "clues": [
-      "doctrine",
-      " school of thought",
-      " set of beliefs"
-     ]
+      "word": "respectable",
+      "clues": [
+        "worthy of respect"
+      ]
     },
     {
-     "word": "photograph",
-     "clues": [
-      "photo"
-     ]
+      "word": "response",
+      "clues": [
+        "answer",
+        " reply",
+        "reaction"
+      ]
     },
     {
-     "word": "photography",
-     "clues": [
-      "picture taking"
-     ]
+      "word": "responsibility",
+      "clues": [
+        "duty",
+        " obligation"
+      ]
     },
     {
-     "word": "physics",
-     "clues": [
-      "physical science"
-     ]
+      "word": "responsible",
+      "clues": [
+        "held accountable",
+        " worthy of trust"
+      ]
     },
     {
-     "word": "piano",
-     "clues": [
-      "keyboard instrument"
-     ]
+      "word": "rest",
+      "clues": [
+        "remainder",
+        " balance",
+        " residual",
+        " residue",
+        "breathe",
+        " catch one's breath",
+        " take a breather",
+        "support on which things can be put",
+        "respite",
+        " relief",
+        " rest period"
+      ]
     },
     {
-     "word": "picture",
-     "clues": [
-      "image",
-      " icon",
-      " visual representation"
-     ]
+      "word": "restaurant",
+      "clues": [
+        "eating place"
+      ]
     },
     {
-     "word": "picture",
-     "clues": [
-      "painting",
-      " graphic art"
-     ]
+      "word": "restless",
+      "clues": [
+        "antsy",
+        " itchy",
+        " fidgety"
+      ]
     },
     {
-     "word": "movie",
-     "clues": [
-      "film"
-     ]
+      "word": "restoration",
+      "clues": [
+        "renovation",
+        " refurbishment"
+      ]
     },
     {
-     "word": "pie",
-     "clues": [
-      "dish"
-     ]
+      "word": "restrain",
+      "clues": [
+        "encumber",
+        " constrain",
+        " hold back"
+      ]
     },
     {
-     "word": "piece",
-     "clues": [
-      "separate part of a whole"
-     ]
+      "word": "restraint",
+      "clues": [
+        "limitation"
+      ]
     },
     {
-     "word": "piece",
-     "clues": [
-      "musical composition",
-      " opus",
-      " composition",
-      " piece of music"
-     ]
+      "word": "restrict",
+      "clues": [
+        "limit",
+        " restrain"
+      ]
     },
     {
-     "word": "pier",
-     "clues": [
-      "support for two adjacent bridge spans"
-     ]
+      "word": "restriction",
+      "clues": [
+        "limitation"
+      ]
     },
     {
-     "word": "pig",
-     "clues": [
-      "hog",
-      " swine"
-     ]
+      "word": "result",
+      "clues": [
+        "resultant",
+        " final result",
+        " outcome",
+        " consequence"
+      ]
     },
     {
-     "word": "pig",
-     "clues": [
-      "hog",
-      " greedy person"
-     ]
+      "word": "retailer",
+      "clues": [
+        "retail merchant"
+      ]
     },
     {
-     "word": "policeman",
-     "clues": [
-      "cop"
-     ]
+      "word": "retain",
+      "clues": [
+        "remember",
+        " keep in one's mind"
+      ]
     },
     {
-     "word": "pig",
-     "clues": [
-      "slob",
-      " sloven",
-      " slovenly person"
-     ]
+      "word": "retire",
+      "clues": [
+        "go into retirement",
+        "go to bed",
+        " turn in"
+      ]
     },
     {
-     "word": "pigeon",
-     "clues": [
-      "wild and domesticated bird"
-     ]
+      "word": "retired",
+      "clues": [
+        "no longer active in your work"
+      ]
     },
     {
-     "word": "pile",
-     "clues": [
-      "heap",
-      " mound"
-     ]
+      "word": "retiree",
+      "clues": [
+        "pensioner"
+      ]
     },
     {
-     "word": "pill",
-     "clues": [
-      "birth control pill"
-     ]
+      "word": "retirement",
+      "clues": [
+        "withdrawal from a position"
+      ]
     },
     {
-     "word": "pillow",
-     "clues": [
-      "cushion"
-     ]
+      "word": "retreat",
+      "clues": [
+        "hideaway",
+        "move away"
+      ]
     },
     {
-     "word": "pilot",
-     "clues": [
-      "airplane pilot"
-     ]
+      "word": "return",
+      "clues": [
+        "go back",
+        "act of returning to a prior location",
+        "homecoming",
+        "restitution",
+        " restoration",
+        " regaining",
+        "tax return",
+        " income tax return",
+        "bring back",
+        " take back"
+      ]
     },
     {
-     "word": "pin",
-     "clues": [
-      "personal identification number",
-      " PIN",
-      " PIN number"
-     ]
+      "word": "reveal",
+      "clues": [
+        "uncover",
+        " bring out",
+        " make visible"
+      ]
     },
     {
-     "word": "pioneer",
-     "clues": [
-      "innovator",
-      " trailblazer",
-      " groundbreaker"
-     ]
+      "word": "revenge",
+      "clues": [
+        "retaliation"
+      ]
     },
     {
-     "word": "pipe",
-     "clues": [
-      "tube"
-     ]
+      "word": "reverse",
+      "clues": [
+        "invert",
+        " turn inside out or upside down",
+        "reversion",
+        " reversal",
+        " turnabout",
+        " turnaround"
+      ]
     },
     {
-     "word": "pit",
-     "clues": [
-      "pitfall",
-      " trap"
-     ]
+      "word": "review",
+      "clues": [
+        "recapitulation",
+        " recap",
+        " summary",
+        "critique",
+        " critical review",
+        " review article",
+        "brushup",
+        "periodical",
+        "look back",
+        " retrospect"
+      ]
     },
     {
-     "word": "pit",
-     "clues": [
-      "cavity",
-      " hole in the ground"
-     ]
+      "word": "revise",
+      "clues": [
+        "make revisions to"
+      ]
     },
     {
-     "word": "pitch",
-     "clues": [
-      "property of sound"
-     ]
+      "word": "revival",
+      "clues": [
+        "resurgence",
+        " revitalization"
+      ]
     },
     {
-     "word": "slant",
-     "clues": [
-      "pitch",
-      " deviation from the horizontal"
-     ]
+      "word": "revive",
+      "clues": [
+        "resuscitate"
+      ]
     },
     {
-     "word": "pitch",
-     "clues": [
-      "sales pitch"
-     ]
+      "word": "revoke",
+      "clues": [
+        "lift",
+        " annul",
+        " reverse",
+        " repeal",
+        " overturn",
+        " rescind"
+      ]
     },
     {
-     "word": "pity",
-     "clues": [
-      "compassion"
-     ]
+      "word": "revolution",
+      "clues": [
+        "overthrow of government",
+        "rotation",
+        " gyration"
+      ]
     },
     {
-     "word": "place",
-     "clues": [
-      "topographic point",
-      " spot"
-     ]
+      "word": "revolutionary",
+      "clues": [
+        "advocating or engaged in revolution"
+      ]
     },
     {
-     "word": "place",
-     "clues": [
-      "seat"
-     ]
+      "word": "reward",
+      "clues": [
+        "bounty",
+        " money for helping to find criminals",
+        "repay",
+        " pay back"
+      ]
     },
     {
-     "word": "plaintiff",
-     "clues": [
-      "complainant"
-     ]
+      "word": "rhetoric",
+      "clues": [
+        "technique for speaking"
+      ]
     },
     {
-     "word": "plan",
-     "clues": [
-      "design",
-      " arrangement",
-      " scheme"
-     ]
+      "word": "rhythm",
+      "clues": [
+        "beat",
+        " musical rhythm"
+      ]
     },
     {
-     "word": "plane",
-     "clues": [
-      "airplane",
-      " aeroplane"
-     ]
+      "word": "rib",
+      "clues": [
+        "bone"
+      ]
     },
     {
-     "word": "planet",
-     "clues": [
-      "celestial body"
-     ]
+      "word": "ribbon",
+      "clues": [
+        "strip of material"
+      ]
     },
     {
-     "word": "plant",
-     "clues": [
-      "flora",
-      " plant life"
-     ]
+      "word": "rice",
+      "clues": [
+        "grains used as food"
+      ]
     },
     {
-     "word": "plant",
-     "clues": [
-      "industrial plant",
-      " factory"
-     ]
+      "word": "rich",
+      "clues": [
+        "possessing material wealth"
+      ]
     },
     {
-     "word": "plaster",
-     "clues": [
-      "adhesive plaster"
-     ]
+      "word": "ride",
+      "clues": [
+        "be carried or travel in or on a vehicle"
+      ]
     },
     {
-     "word": "plastic",
-     "clues": [
-      "materials"
-     ]
+      "word": "rider",
+      "clues": [
+        "person riding an animal"
+      ]
     },
     {
-     "word": "plate",
-     "clues": [
-      "dish"
-     ]
+      "word": "ridge",
+      "clues": [
+        "long narrow range of hills"
+      ]
     },
     {
-     "word": "platform",
-     "clues": [
-      "horizontal surface"
-     ]
+      "word": "rifle",
+      "clues": [
+        "firearm"
+      ]
     },
     {
-     "word": "play",
-     "clues": [
-      "child's play"
-     ]
+      "word": "righ",
+      "clues": [
+        "wing] right"
+      ]
     },
     {
-     "word": "play",
-     "clues": [
-      "drama",
-      " dramatic play"
-     ]
+      "word": "right",
+      "clues": [
+        "right hand side",
+        "rightfulness",
+        "correct"
+      ]
     },
     {
-     "word": "player",
-     "clues": [
-      "actor",
-      " role player"
-     ]
+      "word": "ring",
+      "clues": [
+        "hoop",
+        "peal",
+        "boxing ring",
+        "characteristic sound"
+      ]
     },
     {
-     "word": "player",
-     "clues": [
-      "participant"
-     ]
+      "word": "riot",
+      "clues": [
+        "public violence"
+      ]
     },
     {
-     "word": "pleasure",
-     "clues": [
-      "delight"
-     ]
+      "word": "rise",
+      "clues": [
+        "come up",
+        " ascend in the sky",
+        "increase",
+        " go up",
+        " climb",
+        " increase in value or level",
+        "upgrade",
+        " rising slope",
+        "raise",
+        " wage hike",
+        " hike",
+        " wage increase",
+        "move upward",
+        "arise",
+        " get up",
+        " stand up",
+        " rise to one's feet"
+      ]
     },
     {
-     "word": "plot",
-     "clues": [
-      "secret plan",
-      " game",
-      " secret scheme"
-     ]
+      "word": "risk",
+      "clues": [
+        "peril",
+        "gamble",
+        " chance",
+        " hazard",
+        " take chances"
+      ]
     },
     {
-     "word": "plot",
-     "clues": [
-      "story"
-     ]
+      "word": "ritual",
+      "clues": [
+        "rite"
+      ]
     },
     {
-     "word": "plot",
-     "clues": [
-      "chart"
-     ]
+      "word": "river",
+      "clues": [
+        "large natural stream of water"
+      ]
     },
     {
-     "word": "pneumonia",
-     "clues": [
-      "respiratory disease"
-     ]
+      "word": "road",
+      "clues": [
+        "route",
+        " open way for travel or transportation"
+      ]
     },
     {
-     "word": "pocket",
-     "clues": [
-      "pouch inside a garment"
-     ]
+      "word": "roar",
+      "clues": [
+        "bellow",
+        " make a loud noise"
+      ]
     },
     {
-     "word": "poem",
-     "clues": [
-      "verse form"
-     ]
+      "word": "rob",
+      "clues": [
+        "deprive somebody of something"
+      ]
     },
     {
-     "word": "poetry",
-     "clues": [
-      "poesy",
-      " verse"
-     ]
+      "word": "robot",
+      "clues": [
+        "automaton"
+      ]
     },
     {
-     "word": "point",
-     "clues": [
-      "detail",
-      " item"
-     ]
+      "word": "rock",
+      "clues": [
+        "sway",
+        "sway",
+        " move back and forth",
+        "rock 'n' roll"
+      ]
     },
     {
-     "word": "point",
-     "clues": [
-      "tip",
-      " peak",
-      " V-shape"
-     ]
+      "word": "rocket",
+      "clues": [
+        "vehicle propelled by a rocket engine"
+      ]
     },
     {
-     "word": "point",
-     "clues": [
-      "dot"
-     ]
+      "word": "role",
+      "clues": [
+        "normal or customary activity of a person",
+        "character",
+        " theatrical role",
+        " part"
+      ]
     },
     {
-     "word": "poison",
-     "clues": [
-      "poisonous substance"
-     ]
+      "word": "roll",
+      "clues": [
+        "cylindrical form",
+        "drum roll",
+        " sound of a drum",
+        "bun",
+        " bread",
+        "turn over",
+        " turn over or rotate",
+        "roster",
+        " list of names"
+      ]
     },
     {
-     "word": "pole",
-     "clues": [
-      "long rod"
-     ]
+      "word": "romantic",
+      "clues": [
+        "amatory",
+        " amorous"
+      ]
     },
     {
-     "word": "pole",
-     "clues": [
-      "Earth's antipodal point"
-     ]
+      "word": "roof",
+      "clues": [
+        "top of a building"
+      ]
     },
     {
-     "word": "policy",
-     "clues": [
-      "insurance policy"
-     ]
+      "word": "room",
+      "clues": [
+        "area within a building"
+      ]
     },
     {
-     "word": "poll",
-     "clues": [
-      "counting of votes"
-     ]
+      "word": "root",
+      "clues": [
+        "part of plant"
+      ]
     },
     {
-     "word": "poll",
-     "clues": [
-      "opinion poll"
-     ]
+      "word": "rose",
+      "clues": [
+        "flower"
+      ]
     },
     {
-     "word": "pollution",
-     "clues": [
-      "contamination"
-     ]
+      "word": "rotate",
+      "clues": [
+        "turn"
+      ]
     },
     {
-     "word": "pony",
-     "clues": [
-      "small horse"
-     ]
+      "word": "rotation",
+      "clues": [
+        "rotary motion"
+      ]
     },
     {
-     "word": "pool",
-     "clues": [
-      "puddle"
-     ]
+      "word": "rotten",
+      "clues": [
+        "crappy",
+        " lousy",
+        " shitty",
+        " stinking",
+        " stinky",
+        "decayed",
+        " rotted"
+      ]
     },
     {
-     "word": "pop",
-     "clues": [
-      "pop music"
-     ]
+      "word": "rough",
+      "clues": [
+        "unsmooth"
+      ]
     },
     {
-     "word": "pop",
-     "clues": [
-      "soda",
-      " soda pop"
-     ]
+      "word": "round",
+      "clues": [
+        "circular"
+      ]
     },
     {
-     "word": "pop",
-     "clues": [
-      "dad",
-      " dada",
-      " daddy",
-      " pa",
-      " papa"
-     ]
+      "word": "route",
+      "clues": [
+        "path",
+        " itinerary"
+      ]
     },
     {
-     "word": "population",
-     "clues": [
-      "people who inhabit a territory"
-     ]
+      "word": "routine",
+      "clues": [
+        "modus operandi"
+      ]
     },
     {
-     "word": "porter",
-     "clues": [
-      "person employed to carry luggage and supplies"
-     ]
+      "word": "row",
+      "clues": [
+        "propel with oars",
+        "arrangement of objects or people side by side in a line"
+      ]
     },
     {
-     "word": "portion",
-     "clues": [
-      "helping",
-      " serving"
-     ]
+      "word": "royalty",
+      "clues": [
+        "payment for a patent or copyright",
+        "royal family",
+        " royal line",
+        " royal house"
+      ]
     },
     {
-     "word": "portrait",
-     "clues": [
-      "portrayal",
-      " likeness"
-     ]
+      "word": "rub",
+      "clues": [
+        "apply friction"
+      ]
     },
     {
-     "word": "position",
-     "clues": [
-      "placement",
-      " location"
-     ]
+      "word": "rubbish",
+      "clues": [
+        "trash",
+        " scrap",
+        " worthless material"
+      ]
     },
     {
-     "word": "position",
-     "clues": [
-      "stance",
-      " posture"
-     ]
+      "word": "rugby",
+      "clues": [
+        "rugby football"
+      ]
     },
     {
-     "word": "position",
-     "clues": [
-      "status"
-     ]
+      "word": "ruin",
+      "clues": [
+        "downfall",
+        " ruination",
+        "ruined building"
+      ]
     },
     {
-     "word": "possession",
-     "clues": [
-      "ownership"
-     ]
+      "word": "rule",
+      "clues": [
+        "regulation",
+        "convention",
+        " norm of behavior",
+        " pattern",
+        "principle",
+        " law concerning a natural phenomenon",
+        "formula standard procedure for solving a mathematical problem",
+        "directions defining a game or sport",
+        "ruler",
+        " measuring stick",
+        "dominion",
+        " dominance or power through legal authority",
+        "duration of a monarch's or government's power",
+        "govern"
+      ]
     },
     {
-     "word": "possibility",
-     "clues": [
-      "possible action"
-     ]
+      "word": "rumor",
+      "clues": [
+        "hearsay"
+      ]
     },
     {
-     "word": "post",
-     "clues": [
-      "mail",
-      " mail service",
-      " postal service"
-     ]
+      "word": "run",
+      "clues": [
+        "move fast on one's feet",
+        "campaign for office",
+        "be operating or functioning"
+      ]
     },
     {
-     "word": "post",
-     "clues": [
-      "stake"
-     ]
+      "word": "rung",
+      "clues": [
+        "stave",
+        " round",
+        " crosspiece between chair legs"
+      ]
     },
     {
-     "word": "pot",
-     "clues": [
-      "cooking vessel"
-     ]
+      "word": "runner",
+      "clues": [
+        "athlete"
+      ]
     },
     {
-     "word": "pot",
-     "clues": [
-      "flowerpot"
-     ]
+      "word": "rush",
+      "clues": [
+        "haste",
+        " hurry",
+        " rushing"
+      ]
     },
     {
-     "word": "potential",
-     "clues": [
-      "potentiality"
-     ]
+      "word": "sacred",
+      "clues": [
+        "concerned with religion or religious purposes"
+      ]
     },
     {
-     "word": "pottery",
-     "clues": [
-      "clayware"
-     ]
+      "word": "sacrifice",
+      "clues": [
+        "ritual killing",
+        "loss"
+      ]
     },
     {
-     "word": "pound",
-     "clues": [
-      "dog pound"
-     ]
+      "word": "safari",
+      "clues": [
+        "hunting expedition"
+      ]
     },
     {
-     "word": "pound",
-     "clues": [
-      "lb",
-      " 16 ounces"
-     ]
+      "word": "safe",
+      "clues": [
+        "free from danger"
+      ]
     },
     {
-     "word": "powder",
-     "clues": [
-      "fine-grained substance"
-     ]
+      "word": "safety",
+      "clues": [
+        "state of being certain that adverse effects will not be caused"
+      ]
     },
     {
-     "word": "power",
-     "clues": [
-      "world power",
-      " major power",
-      " great power",
-      " superpower"
-     ]
+      "word": "sail",
+      "clues": [
+        "canvas"
+      ]
     },
     {
-     "word": "power",
-     "clues": [
-      "force",
-      " might"
-     ]
+      "word": "sailor",
+      "clues": [
+        "crewman"
+      ]
     },
     {
-     "word": "practice",
-     "clues": [
-      "pattern",
-      " customary way of operation or behavior"
-     ]
+      "word": "salad",
+      "clues": [
+        "food mixture"
+      ]
     },
     {
-     "word": "practice",
-     "clues": [
-      "exercise",
-      " drill",
-      " practice session",
-      " recitation"
-     ]
+      "word": "sale",
+      "clues": [
+        "cut-rate sale",
+        " sales event",
+        "general activity of selling"
+      ]
     },
     {
-     "word": "praise",
-     "clues": [
-      "congratulations",
-      " kudos"
-     ]
+      "word": "salesperson",
+      "clues": [
+        "salesclerk",
+        " shop clerk"
+      ]
     },
     {
-     "word": "prayer",
-     "clues": [
-      "supplication"
-     ]
+      "word": "salmon",
+      "clues": [
+        "fish"
+      ]
     },
     {
-     "word": "precedent",
-     "clues": [
-      "case in point"
-     ]
+      "word": "salon",
+      "clues": [
+        "beauty salon",
+        " beauty parlor"
+      ]
     },
     {
-     "word": "precision",
-     "clues": [
-      "preciseness"
-     ]
+      "word": "salt",
+      "clues": [
+        "table salt",
+        " common salt"
+      ]
     },
     {
-     "word": "predator",
-     "clues": [
-      "predatory animal"
-     ]
+      "word": "salvation",
+      "clues": [
+        "being saved from harm"
+      ]
     },
     {
-     "word": "preference",
-     "clues": [
-      "predilection",
-      " predisposition"
-     ]
+      "word": "sample",
+      "clues": [
+        "small part representative of the whole"
+      ]
     },
     {
-     "word": "prejudice",
-     "clues": [
-      "bias",
-      " preconception"
-     ]
+      "word": "sanctuary",
+      "clues": [
+        "consecrated place"
+      ]
     },
     {
-     "word": "premium",
-     "clues": [
-      "insurance premium"
-     ]
+      "word": "sand",
+      "clues": [
+        "finely ground particles"
+      ]
     },
     {
-     "word": "preoccupation",
-     "clues": [
-      "idea that preoccupies the mind"
-     ]
+      "word": "sandal",
+      "clues": [
+        "footwear"
+      ]
     },
     {
-     "word": "preparation",
-     "clues": [
-      "readiness",
-      " preparedness"
-     ]
+      "word": "sandwich",
+      "clues": [
+        "bomber",
+        " grinder",
+        " hero",
+        " hoagie",
+        " sub"
+      ]
     },
     {
-     "word": "prescription",
-     "clues": [
-      "prescription drug"
-     ]
+      "word": "satellite",
+      "clues": [
+        "orbiter"
+      ]
     },
     {
-     "word": "prescription",
-     "clues": [
-      "physician's instructions"
-     ]
+      "word": "satisfaction",
+      "clues": [
+        "contentment"
+      ]
     },
     {
-     "word": "presence",
-     "clues": [
-      "bearing",
-      " comportment"
-     ]
+      "word": "satisfied",
+      "clues": [
+        "quenched",
+        " slaked"
+      ]
     },
     {
-     "word": "presence",
-     "clues": [
-      "state of being present"
-     ]
+      "word": "sausage",
+      "clues": [
+        "wurst",
+        " meat"
+      ]
     },
     {
-     "word": "present",
-     "clues": [
-      "gift"
-     ]
+      "word": "save",
+      "clues": [
+        "lay aside",
+        " save up",
+        "spare"
+      ]
     },
     {
-     "word": "present",
-     "clues": [
-      "nowadays"
-     ]
+      "word": "say",
+      "clues": [
+        "state",
+        " tell"
+      ]
     },
     {
-     "word": "presentation",
-     "clues": [
-      "making publicly available or known"
-     ]
+      "word": "scale",
+      "clues": [
+        "body covering of many animals",
+        "weighing machine",
+        "scale of measurement",
+        " graduated table"
+      ]
     },
     {
-     "word": "presidency",
-     "clues": [
-      "presidentship"
-     ]
+      "word": "scan",
+      "clues": [
+        "skim",
+        " examine hastily"
+      ]
     },
     {
-     "word": "president",
-     "clues": [
-      "chief executive of a republic"
-     ]
+      "word": "scandal",
+      "clues": [
+        "outrage"
+      ]
     },
     {
-     "word": "president",
-     "clues": [
-      "chairman",
-      " chairwoman",
-      " chair"
-     ]
+      "word": "scatter",
+      "clues": [
+        "sprinkle",
+        " dot",
+        " dust",
+        " disperse"
+      ]
     },
     {
-     "word": "press",
-     "clues": [
-      "printing press"
-     ]
+      "word": "scenario",
+      "clues": [
+        "sequence of possible events"
+      ]
     },
     {
-     "word": "press",
-     "clues": [
-      "newspaper writers"
-     ]
+      "word": "scene",
+      "clues": [
+        "subdivision of an act of a play",
+        "setting",
+        "fit",
+        " tantrum",
+        " conniption",
+        "shot",
+        " unit of action in a film"
+      ]
     },
     {
-     "word": "pressure",
-     "clues": [
-      "pressure sensation"
-     ]
+      "word": "scheme",
+      "clues": [
+        "schema organization of concepts"
+      ]
     },
     {
-     "word": "pressure",
-     "clues": [
-      "pressure level",
-      " force per unit area"
-     ]
+      "word": "scholar",
+      "clues": [
+        "scholarly person",
+        " student",
+        " learned person"
+      ]
     },
     {
-     "word": "pressure",
-     "clues": [
-      "imperativeness",
-      " insistence",
-      " insistency"
-     ]
+      "word": "school",
+      "clues": [
+        "schoolhouse",
+        "educational institution"
+      ]
     },
     {
-     "word": "prestige",
-     "clues": [
-      "prestigiousness"
-     ]
+      "word": "science",
+      "clues": [
+        "scientific discipline"
+      ]
     },
     {
-     "word": "prevalence",
-     "clues": [
-      "preponderance",
-      " superiority in number"
-     ]
+      "word": "score",
+      "clues": [
+        "game score"
+      ]
     },
     {
-     "word": "prey",
-     "clues": [
-      "quarry hunted animal"
-     ]
+      "word": "scramble",
+      "clues": [
+        "jumble",
+        "beat",
+        " stir vigorously"
+      ]
     },
     {
-     "word": "price",
-     "clues": [
-      "monetary value",
-      " cost"
-     ]
+      "word": "scrap",
+      "clues": [
+        "small piece"
+      ]
     },
     {
-     "word": "price",
-     "clues": [
-      "cost",
-      " toll"
-     ]
+      "word": "scrape",
+      "clues": [
+        "grate",
+        " scratch"
+      ]
     },
     {
-     "word": "pride",
-     "clues": [
-      "proud feeling"
-     ]
+      "word": "scratch",
+      "clues": [
+        "scrape",
+        "scrape or rub to relieve itching"
+      ]
     },
     {
-     "word": "primary",
-     "clues": [
-      "primary election"
-     ]
+      "word": "scream",
+      "clues": [
+        "yell",
+        " shriek"
+      ]
     },
     {
-     "word": "prince",
-     "clues": [
-      "son of a sovereign"
-     ]
+      "word": "screen",
+      "clues": [
+        "movie screen",
+        " projection screen",
+        "screen out",
+        " sieve out",
+        "examine methodically",
+        "protective covering"
+      ]
     },
     {
-     "word": "principle",
-     "clues": [
-      "basic truth or law or assumption"
-     ]
+      "word": "screw",
+      "clues": [
+        "tighten",
+        " fasten",
+        "fastener with a tapered threaded shank"
+      ]
     },
     {
-     "word": "print",
-     "clues": [
-      "picture",
-      " design"
-     ]
+      "word": "script",
+      "clues": [
+        "writing system"
+      ]
     },
     {
-     "word": "printer",
-     "clues": [
-      "output device that prints data"
-     ]
+      "word": "sculpture",
+      "clues": [
+        "plastic art"
+      ]
     },
     {
-     "word": "priority",
-     "clues": [
-      "precedence"
-     ]
+      "word": "sea",
+      "clues": [
+        "ocean"
+      ]
     },
     {
-     "word": "prison",
-     "clues": [
-      "prison house",
-      " correctional institution"
-     ]
+      "word": "seal",
+      "clues": [
+        "marine mammal",
+        "stamp on a document",
+        "seal off",
+        " make tight",
+        " secure against leakage"
+      ]
     },
     {
-     "word": "prisoner",
-     "clues": [
-      "captive"
-     ]
+      "word": "season",
+      "clues": [
+        "time of year"
+      ]
     },
     {
-     "word": "privacy",
-     "clues": [
-      "privateness",
-      " seclusion"
-     ]
+      "word": "seasonal",
+      "clues": [
+        "occurring at a particular season",
+        "occurring at or dependent on a particular season"
+      ]
     },
     {
-     "word": "privilege",
-     "clues": [
-      "special advantage"
-     ]
+      "word": "seat",
+      "clues": [
+        "furniture designed for sitting on"
+      ]
     },
     {
-     "word": "prize",
-     "clues": [
-      "trophy"
-     ]
+      "word": "second",
+      "clues": [
+        "sec",
+        " 1/60 of a minute",
+        "following the first"
+      ]
     },
     {
-     "word": "loot",
-     "clues": [
-      "booty",
-      " pillage",
-      " plunder",
-      " dirty money",
-      " prize"
-     ]
+      "word": "secretary",
+      "clues": [
+        "secretarial assistant"
+      ]
     },
     {
-     "word": "problem",
-     "clues": [
-      "trouble"
-     ]
+      "word": "secretion",
+      "clues": [
+        "glandular substance"
+      ]
     },
     {
-     "word": "problem",
-     "clues": [
-      "question"
-     ]
+      "word": "section",
+      "clues": [
+        "segment",
+        " one of several parts"
+      ]
     },
     {
-     "word": "process",
-     "clues": [
-      "procedure"
-     ]
+      "word": "sector",
+      "clues": [
+        "sphere",
+        " particular aspect of life or activity"
+      ]
     },
     {
-     "word": "produce",
-     "clues": [
-      "green goods",
-      " green groceries"
-     ]
+      "word": "secular",
+      "clues": [
+        "laic",
+        " lay"
+      ]
     },
     {
-     "word": "producer",
-     "clues": [
-      "film or play producer"
-     ]
+      "word": "secure",
+      "clues": [
+        "protected",
+        "fasten",
+        " fix",
+        " cause to be firmly attached"
+      ]
     },
     {
-     "word": "product",
-     "clues": [
-      "merchandise",
-      " ware"
-     ]
+      "word": "security",
+      "clues": [
+        "security system",
+        " security measure"
+      ]
     },
     {
-     "word": "product",
-     "clues": [
-      "mathematical product obtained by multiplication"
-     ]
+      "word": "see",
+      "clues": [
+        "perceive by sight",
+        "meet",
+        " ran into",
+        " encounter",
+        " run across",
+        " come across",
+        "understand",
+        " realize"
+      ]
     },
     {
-     "word": "product",
-     "clues": [
-      "consequence of someone's efforts"
-     ]
+      "word": "seed",
+      "clues": [
+        "seeded player",
+        "small hard fruit"
+      ]
     },
     {
-     "word": "production",
-     "clues": [
-      "act or process of producing something"
-     ]
+      "word": "seek",
+      "clues": [
+        "search",
+        " look for"
+      ]
     },
     {
-     "word": "production",
-     "clues": [
-      "presentation for the stage or screen or radio or TV"
-     ]
+      "word": "seem",
+      "clues": [
+        "appear"
+      ]
     },
     {
-     "word": "production",
-     "clues": [
-      "output",
-      " yield"
-     ]
+      "word": "seize",
+      "clues": [
+        "clutch",
+        " take hold of",
+        " grab",
+        " grasp"
+      ]
     },
     {
-     "word": "profession",
-     "clues": [
-      "occupation"
-     ]
+      "word": "selection",
+      "clues": [
+        "survival",
+        " survival of the fittest",
+        " natural selection",
+        "assortment of things from which to choose",
+        "excerpt",
+        " excerption",
+        " extract"
+      ]
     },
     {
-     "word": "professional",
-     "clues": [
-      "professional person"
-     ]
+      "word": "self",
+      "clues": [
+        "ego"
+      ]
     },
     {
-     "word": "professor",
-     "clues": [
-      "prof"
-     ]
+      "word": "sell",
+      "clues": [
+        "exchange for money"
+      ]
     },
     {
-     "word": "profile",
-     "clues": [
-      "side view"
-     ]
+      "word": "seller",
+      "clues": [
+        "marketer",
+        " vender",
+        " vendor"
+      ]
     },
     {
-     "word": "profit",
-     "clues": [
-      "gain"
-     ]
+      "word": "seminar",
+      "clues": [
+        "course"
+      ]
     },
     {
-     "word": "program",
-     "clues": [
-      "plan",
-      " series of steps to be carried"
-     ]
+      "word": "senior",
+      "clues": [
+        "older or higher in rank",
+        "student"
+      ]
     },
     {
-     "word": "program",
-     "clues": [
-      "announcement of a theatrical event"
-     ]
+      "word": "sensation",
+      "clues": [
+        "public excitement"
+      ]
     },
     {
-     "word": "program",
-     "clues": [
-      "broadcast"
-     ]
+      "word": "sense",
+      "clues": [
+        "sensation",
+        " sentience",
+        " sentiency",
+        " sensory faculty",
+        "common sense",
+        " good sense",
+        "signified",
+        " the meaning of a word or expression"
+      ]
     },
     {
-     "word": "program",
-     "clues": [
-      "computer program"
-     ]
+      "word": "sensitive",
+      "clues": [
+        "having acute mental or emotional sensibility"
+      ]
     },
     {
-     "word": "progress",
-     "clues": [
-      "advancement",
-      " gain"
-     ]
+      "word": "sensitivity",
+      "clues": [
+        "sensitiveness"
+      ]
     },
     {
-     "word": "project",
-     "clues": [
-      "undertaking",
-      " task",
-      " enterprise"
-     ]
+      "word": "sentence",
+      "clues": [
+        "conviction",
+        "string of words"
+      ]
     },
     {
-     "word": "prediction",
-     "clues": [
-      "projection"
-     ]
+      "word": "sentiment",
+      "clues": [
+        "emotion"
+      ]
     },
     {
-     "word": "projection",
-     "clues": [
-      "image projection"
-     ]
+      "word": "separate",
+      "clues": [
+        "split up",
+        " split",
+        " part company",
+        "independent"
+      ]
     },
     {
-     "word": "promise",
-     "clues": [
-      "verbal commitment"
-     ]
+      "word": "separation",
+      "clues": [
+        "disassociation",
+        " division"
+      ]
     },
     {
-     "word": "promotion",
-     "clues": [
-      "rising in rank"
-     ]
+      "word": "sequence",
+      "clues": [
+        "serial arrangement"
+      ]
     },
     {
-     "word": "promotion",
-     "clues": [
-      "publicity"
-     ]
+      "word": "series",
+      "clues": [
+        "serial",
+        " serialized set of programs",
+        "serial",
+        " serial publication"
+      ]
     },
     {
-     "word": "proof",
-     "clues": [
-      "cogent evidence"
-     ]
+      "word": "serious",
+      "clues": [
+        "sober"
+      ]
     },
     {
-     "word": "proof",
-     "clues": [
-      "mathematical proofs"
-     ]
+      "word": "sermon",
+      "clues": [
+        "preaching",
+        " discourse"
+      ]
     },
     {
-     "word": "property",
-     "clues": [
-      "attribute",
-      " dimension"
-     ]
+      "word": "serve",
+      "clues": [
+        "attend to",
+        " wait on",
+        " attend",
+        " assist",
+        "serve up",
+        " dish out"
+      ]
     },
     {
-     "word": "property",
-     "clues": [
-      "belongings",
-      " holding",
-      " material possession"
-     ]
+      "word": "service",
+      "clues": [
+        "help",
+        " assistance",
+        "overhaul",
+        " inspection and repair",
+        "military service",
+        " armed service",
+        "religious service",
+        " divine service"
+      ]
     },
     {
-     "word": "proportion",
-     "clues": [
-      "dimension"
-     ]
+      "word": "session",
+      "clues": [
+        "meeting",
+        "school term",
+        " academic term"
+      ]
     },
     {
-     "word": "proportion",
-     "clues": [
-      "quotient of magnitude of a part and magnitude of the whole"
-     ]
+      "word": "set",
+      "clues": [
+        "stage set",
+        "group of things of the same kind that belong together",
+        "adjust",
+        " correct",
+        " regulate",
+        "go down",
+        " go below the horizon"
+      ]
     },
     {
-     "word": "proposal",
-     "clues": [
-      "proposition"
-     ]
+      "word": "settle",
+      "clues": [
+        "establish a residence",
+        "end a legal dispute"
+      ]
     },
     {
-     "word": "proposal",
-     "clues": [
-      "marriage proposal"
-     ]
+      "word": "settlement",
+      "clues": [
+        "colony",
+        "resolution",
+        " outcome"
+      ]
     },
     {
-     "word": "proposition",
-     "clues": [
-      "statement"
-     ]
+      "word": "sex",
+      "clues": [
+        "gender",
+        " sexuality"
+      ]
     },
     {
-     "word": "prosecution",
-     "clues": [
-      "criminal prosecution"
-     ]
+      "word": "shadow",
+      "clues": [
+        "shade"
+      ]
     },
     {
-     "word": "prospect",
-     "clues": [
-      "expectation",
-      " outlook"
-     ]
+      "word": "shaft",
+      "clues": [
+        "vertical passage into a mine",
+        "long rod or pole"
+      ]
     },
     {
-     "word": "prosperity",
-     "clues": [
-      "economic prosperity"
-     ]
+      "word": "shake",
+      "clues": [
+        "agitate",
+        " move back and forth"
+      ]
     },
     {
-     "word": "protection",
-     "clues": [
-      "protecting someone or something"
-     ]
+      "word": "shallow",
+      "clues": [
+        "lacking depth of intellect or knowledge or feeling",
+        "lacking physical depth"
+      ]
     },
     {
-     "word": "shelter",
-     "clues": [
-      "physical protection"
-     ]
+      "word": "shame",
+      "clues": [
+        "pity",
+        " unfortunate event",
+        "painful emotion"
+      ]
     },
     {
-     "word": "protest",
-     "clues": [
-      "objection",
-      " dissent"
-     ]
+      "word": "shape",
+      "clues": [
+        "form",
+        " work",
+        " mold",
+        " forge"
+      ]
     },
     {
-     "word": "provision",
-     "clues": [
-      "supply",
-      " supplying"
-     ]
+      "word": "share",
+      "clues": [
+        "any of the equal portions into which the capital stock of a corporation is divided",
+        "use jointly or in common",
+        "parcel",
+        " portion",
+        " result of parcelling out or sharing"
+      ]
     },
     {
-     "word": "psychology",
-     "clues": [
-      "psychological science"
-     ]
+      "word": "shareholder",
+      "clues": [
+        "stockholder"
+      ]
     },
     {
-     "word": "bar",
-     "clues": [
-      "tavern",
-      " pub"
-     ]
+      "word": "shark",
+      "clues": [
+        "carnivorous fish"
+      ]
     },
     {
-     "word": "publication",
-     "clues": [
-      "issue"
-     ]
+      "word": "sharp",
+      "clues": [
+        "having a thin edge or sharp point"
+      ]
     },
     {
-     "word": "publication",
-     "clues": [
-      "printed work"
-     ]
+      "word": "shatter",
+      "clues": [
+        "break"
+      ]
     },
     {
-     "word": "publicity",
-     "clues": [
-      "public scrutiny"
-     ]
+      "word": "shave",
+      "clues": [
+        "remove body hair"
+      ]
     },
     {
-     "word": "publisher",
-     "clues": [
-      "publishing house",
-      " publishing firm"
-     ]
+      "word": "shed",
+      "clues": [
+        "spill",
+        " disgorge"
+      ]
     },
     {
-     "word": "pudding",
-     "clues": [
-      "soft sweet dessert"
-     ]
+      "word": "sheep",
+      "clues": [
+        "woolly mammal"
+      ]
     },
     {
-     "word": "pump",
-     "clues": [
-      "mechanical device"
-     ]
+      "word": "sheet",
+      "clues": [
+        "piece of paper",
+        "bed sheet"
+      ]
     },
     {
-     "word": "pumpkin",
-     "clues": [
-      "large yellow fruit"
-     ]
+      "word": "shelf",
+      "clues": [
+        "support for holding objects"
+      ]
     },
     {
-     "word": "punch",
-     "clues": [
-      "blow",
-      " lick",
-      " biff"
-     ]
+      "word": "shell",
+      "clues": [
+        "ammunition",
+        "outer layer of nuts or fruits",
+        "eggshell",
+        "covering of a mollusc"
+      ]
     },
     {
-     "word": "punch",
-     "clues": [
-      "mixed drink"
-     ]
+      "word": "shelter",
+      "clues": [
+        "temporary housing for homeless",
+        "physical protection"
+      ]
     },
     {
-     "word": "pupil",
-     "clues": [
-      "contractile aperture in the iris of the eye"
-     ]
+      "word": "shield",
+      "clues": [
+        "protective covering"
+      ]
     },
     {
-     "word": "pupil",
-     "clues": [
-      "schoolchild",
-      " school-age child"
-     ]
+      "word": "shift",
+      "clues": [
+        "work shift",
+        "switch"
+      ]
     },
     {
-     "word": "purpose",
-     "clues": [
-      "intent",
-      " intention",
-      " aim",
-      " design"
-     ]
+      "word": "shine",
+      "clues": [
+        "glitter",
+        " glisten",
+        " glint",
+        " gleam"
+      ]
     },
     {
-     "word": "hobby",
-     "clues": [
-      "pursuit",
-      " by-line",
-      " hobby",
-      " sideline",
-      " spare-time activity"
-     ]
+      "word": "shirt",
+      "clues": [
+        "garment"
+      ]
     },
     {
-     "word": "pursuit",
-     "clues": [
-      "quest",
-      " search"
-     ]
+      "word": "shiver",
+      "clues": [
+        "shudder"
+      ]
     },
     {
-     "word": "puzzle",
-     "clues": [
-      "toy"
-     ]
+      "word": "shock",
+      "clues": [
+        "offend",
+        " scandalize",
+        " outrage",
+        "electric shock",
+        "daze",
+        " stupor",
+        " feeling of distress and disbelief"
+      ]
     },
     {
-     "word": "pyramid",
-     "clues": [
-      "polyhedron"
-     ]
+      "word": "shoe",
+      "clues": [
+        "footwear"
+      ]
     },
     {
-     "word": "qualification",
-     "clues": [
-      "reservation",
-      " limitation"
-     ]
+      "word": "shoot",
+      "clues": [
+        "fire a shot",
+        "spud",
+        " germinate",
+        " sprout"
+      ]
     },
     {
-     "word": "quality",
-     "clues": [
-      "degree or grade of excellence"
-     ]
+      "word": "shop",
+      "clues": [
+        "workshop",
+        "store"
+      ]
     },
     {
-     "word": "quantity",
-     "clues": [
-      "amount"
-     ]
+      "word": "shor",
+      "clues": [
+        "circuit] short"
+      ]
     },
     {
-     "word": "quarter",
-     "clues": [
-      "district of a city"
-     ]
+      "word": "short",
+      "clues": [
+        "of limited duration",
+        "having little length"
+      ]
     },
     {
-     "word": "quarter",
-     "clues": [
-      "United States coin worth 25 cents"
-     ]
+      "word": "shortage",
+      "clues": [
+        "dearth",
+        " famine"
+      ]
     },
     {
-     "word": "quarter",
-     "clues": [
-      "one-fourth"
-     ]
+      "word": "shorts",
+      "clues": [
+        "short pants"
+      ]
     },
     {
-     "word": "quarter",
-     "clues": [
-      "fourth part of a year",
-      " three months"
-     ]
+      "word": "shot",
+      "clues": [
+        "injection",
+        "shooting",
+        " act of firing a projectile"
+      ]
     },
     {
-     "word": "queen",
-     "clues": [
-      "female monarch"
-     ]
+      "word": "shoulder",
+      "clues": [
+        "berm",
+        " edge of a road",
+        "part of the body"
+      ]
     },
     {
-     "word": "quest",
-     "clues": [
-      "seeking"
-     ]
+      "word": "shout",
+      "clues": [
+        "speak loudly"
+      ]
     },
     {
-     "word": "question",
-     "clues": [
-      "inquiry",
-      " query",
-      " interrogation"
-     ]
+      "word": "show",
+      "clues": [
+        "public exhibition or entertainment",
+        "exhibit",
+        " present",
+        " demonstrate",
+        "reveal",
+        " display",
+        "indicate",
+        " point"
+      ]
     },
     {
-     "word": "queue",
-     "clues": [
-      "waiting line"
-     ]
+      "word": "shower",
+      "clues": [
+        "plumbing fixture",
+        "rain shower"
+      ]
     },
     {
-     "word": "quota",
-     "clues": [
-      "proportional share"
-     ]
+      "word": "shrink",
+      "clues": [
+        "shrivel"
+      ]
     },
     {
-     "word": "quotation",
-     "clues": [
-      "quote",
-      " citation",
-      " words"
-     ]
+      "word": "shy",
+      "clues": [
+        "timid",
+        " diffident"
+      ]
     },
     {
-     "word": "quotation",
-     "clues": [
-      "price quotation"
-     ]
+      "word": "sick",
+      "clues": [
+        "ill"
+      ]
     },
     {
-     "word": "rabbit",
-     "clues": [
-      "burrowing animal"
-     ]
+      "word": "sickness",
+      "clues": [
+        "nausea"
+      ]
     },
     {
-     "word": "race",
-     "clues": [
-      "contest of speed"
-     ]
+      "word": "side",
+      "clues": [
+        "face",
+        "position",
+        "slope",
+        " incline"
+      ]
     },
     {
-     "word": "race",
-     "clues": [
-      "people belonging to the same genetic stock"
-     ]
+      "word": "siege",
+      "clues": [
+        "besieging",
+        " beleaguering",
+        " military blockade"
+      ]
     },
     {
-     "word": "racism",
-     "clues": [
-      "prejudice"
-     ]
+      "word": "sigh",
+      "clues": [
+        "utter a sigh"
+      ]
     },
     {
-     "word": "rack",
-     "clues": [
-      "framework for holding objects"
-     ]
+      "word": "sight",
+      "clues": [
+        "vision",
+        " visual sense"
+      ]
     },
     {
-     "word": "radiation",
-     "clues": [
-      "radioactivity"
-     ]
+      "word": "sign",
+      "clues": [
+        "augury",
+        " foretoken",
+        " preindication",
+        "signal",
+        "gesture that is part of a sign language",
+        "signboard",
+        "mark with one's signature",
+        "sign of the zodiac",
+        " house",
+        "mark"
+      ]
     },
     {
-     "word": "radiatio",
-     "clues": [
-      "sickness] radiation syndrome"
-     ]
+      "word": "silence",
+      "clues": [
+        "secrecy",
+        " secretiveness",
+        "quiet"
+      ]
     },
     {
-     "word": "radical",
-     "clues": [
-      "person with radical ideas"
-     ]
+      "word": "silk",
+      "clues": [
+        "fabric"
+      ]
     },
     {
-     "word": "radio",
-     "clues": [
-      "radiocommunication",
-      " wireless",
-      " medium"
-     ]
+      "word": "silver",
+      "clues": [
+        "ash gray",
+        " ash grey",
+        " silver gray",
+        "metal"
+      ]
     },
     {
-     "word": "radio",
-     "clues": [
-      "radio receiver",
-      " receiving set",
-      " radio set"
-     ]
+      "word": "similar",
+      "clues": [
+        "alike",
+        " like"
+      ]
     },
     {
-     "word": "rage",
-     "clues": [
-      "fury",
-      " madness",
-      " intense anger"
-     ]
+      "word": "simplicity",
+      "clues": [
+        "simpleness",
+        " uncomplicatedness"
+      ]
     },
     {
-     "word": "raid",
-     "clues": [
-      "foray",
-      " sudden attack"
-     ]
+      "word": "sin",
+      "clues": [
+        "sinning",
+        " transgression"
+      ]
     },
     {
-     "word": "railcar",
-     "clues": [
-      "railroad car",
-      " wagon"
-     ]
+      "word": "singer",
+      "clues": [
+        "vocalist"
+      ]
     },
     {
-     "word": "railroad",
-     "clues": [
-      "railroad line",
-      " railway system"
-     ]
+      "word": "single",
+      "clues": [
+        "unmarried",
+        "individual",
+        " separate"
+      ]
     },
     {
-     "word": "track",
-     "clues": [
-      "railroad track",
-      " line of track"
-     ]
+      "word": "sink",
+      "clues": [
+        "go down",
+        " go under",
+        "plumbing fixture"
+      ]
     },
     {
-     "word": "rain",
-     "clues": [
-      "rainfall"
-     ]
+      "word": "sip",
+      "clues": [
+        "drink"
+      ]
     },
     {
-     "word": "rainbow",
-     "clues": [
-      "colored light in the sky"
-     ]
+      "word": "sister",
+      "clues": [
+        "sis",
+        " female sibling"
+      ]
     },
     {
-     "word": "rally",
-     "clues": [
-      "mass meeting"
-     ]
+      "word": "sit",
+      "clues": [
+        "sit down",
+        " be seated"
+      ]
     },
     {
-     "word": "range",
-     "clues": [
-      "stove",
-      " kitchen stove"
-     ]
+      "word": "site",
+      "clues": [
+        "web site",
+        " website",
+        " internet site",
+        "land site"
+      ]
     },
     {
-     "word": "range",
-     "clues": [
-      "scope",
-      " reach",
-      " orbit",
-      " compass"
-     ]
+      "word": "situation",
+      "clues": [
+        "state of affairs"
+      ]
     },
     {
-     "word": "range",
-     "clues": [
-      "large tract of grassy open land where livestock graze"
-     ]
+      "word": "size",
+      "clues": [
+        "physical magnitude"
+      ]
     },
     {
-     "word": "range",
-     "clues": [
-      "mountain range",
-      " range of mountains"
-     ]
+      "word": "skate",
+      "clues": [
+        "move on skates"
+      ]
     },
     {
-     "word": "rank",
-     "clues": [
-      "status"
-     ]
+      "word": "skeleton",
+      "clues": [
+        "frame",
+        " bones and cartilages"
+      ]
     },
     {
-     "word": "rat",
-     "clues": [
-      "rodent"
-     ]
+      "word": "sketch",
+      "clues": [
+        "cartoon",
+        " humorous drawing"
+      ]
     },
     {
-     "word": "strikebreaker",
-     "clues": [
-      "scab"
-     ]
+      "word": "skilled",
+      "clues": [
+        "skillful"
+      ]
     },
     {
-     "word": "rate",
-     "clues": [
-      "pace"
-     ]
+      "word": "skin",
+      "clues": [
+        "cutis",
+        " person's body covering",
+        "hide",
+        " pelt",
+        " body covering of a living animal"
+      ]
     },
     {
-     "word": "ratio",
-     "clues": [
-      "relative magnitude"
-     ]
+      "word": "skip",
+      "clues": [
+        "pass over",
+        " skip over"
+      ]
     },
     {
-     "word": "reaction",
-     "clues": [
-      "equal and opposite force"
-     ]
+      "word": "skirt",
+      "clues": [
+        "garment"
+      ]
     },
     {
-     "word": "reaction",
-     "clues": [
-      "response revealing a person's feelings or attitude"
-     ]
+      "word": "slab",
+      "clues": [
+        "block",
+        " thick piece"
+      ]
     },
     {
-     "word": "reaction",
-     "clues": [
-      "chemical reaction"
-     ]
+      "word": "slam",
+      "clues": [
+        "bang",
+        " close violently"
+      ]
     },
     {
-     "word": "reactor",
-     "clues": [
-      "nuclear reactor"
-     ]
+      "word": "slant",
+      "clues": [
+        "pitch",
+        " deviation from the horizontal"
+      ]
     },
     {
-     "word": "reader",
-     "clues": [
-      "subscriber"
-     ]
+      "word": "slap",
+      "clues": [
+        "hit with a flat surface"
+      ]
     },
     {
-     "word": "reader",
-     "clues": [
-      "reviewer",
-      " referee"
-     ]
+      "word": "slave",
+      "clues": [
+        "person who is owned"
+      ]
     },
     {
-     "word": "realism",
-     "clues": [
-      "pragmatism"
-     ]
+      "word": "sleep",
+      "clues": [
+        "slumber"
+      ]
     },
     {
-     "word": "reality",
-     "clues": [
-      "realness"
-     ]
+      "word": "sleeve",
+      "clues": [
+        "arm",
+        " part of a garment that is attached at armhole"
+      ]
     },
     {
-     "word": "reason",
-     "clues": [
-      "explanation of the cause"
-     ]
+      "word": "slice",
+      "clues": [
+        "thin flat piece"
+      ]
     },
     {
-     "word": "reason",
-     "clues": [
-      "rationality"
-     ]
+      "word": "slide",
+      "clues": [
+        "slither",
+        " pass or move unobtrusively or smoothly",
+        "plaything",
+        "chute",
+        " sloping trough"
+      ]
     },
     {
-     "word": "rebel",
-     "clues": [
-      "insurgent",
-      " insurrectionist",
-      " freedom fighter"
-     ]
+      "word": "slime",
+      "clues": [
+        "sludge",
+        " goo",
+        " gunk",
+        " muck"
+      ]
     },
     {
-     "word": "rebellion",
-     "clues": [
-      "insurrection",
-      " revolt",
-      " rising",
-      " uprising"
-     ]
+      "word": "slip",
+      "clues": [
+        "skid",
+        " slide"
+      ]
     },
     {
-     "word": "receipt",
-     "clues": [
-      "acknowledgment of payment"
-     ]
+      "word": "slippery",
+      "clues": [
+        "slippy"
+      ]
     },
     {
-     "word": "reception",
-     "clues": [
-      "broadcast reception"
-     ]
+      "word": "slogan",
+      "clues": [
+        "motto",
+        " catchword"
+      ]
     },
     {
-     "word": "reception",
-     "clues": [
-      "formal party"
-     ]
+      "word": "slot",
+      "clues": [
+        "time slot",
+        "small slit"
+      ]
     },
     {
-     "word": "recession",
-     "clues": [
-      "declining economy"
-     ]
+      "word": "slow",
+      "clues": [
+        "not moving quickly"
+      ]
     },
     {
-     "word": "recognition",
-     "clues": [
-      "acknowledgment"
-     ]
+      "word": "slump",
+      "clues": [
+        "slouch"
+      ]
     },
     {
-     "word": "recommendation",
-     "clues": [
-      "testimonial",
-      " good word"
-     ]
+      "word": "small",
+      "clues": [
+        "little"
+      ]
     },
     {
-     "word": "record",
-     "clues": [
-      "extreme attainment",
-      " the best/worst performance ever"
-     ]
+      "word": "smart",
+      "clues": [
+        "clever",
+        " bright"
+      ]
     },
     {
-     "word": "record",
-     "clues": [
-      "criminal record"
-     ]
+      "word": "smash",
+      "clues": [
+        "break apart",
+        "break into pieces"
+      ]
     },
     {
-     "word": "record",
-     "clues": [
-      "document serving as legal evidence of a transaction"
-     ]
+      "word": "smell",
+      "clues": [
+        "perceive by the olfactory sense",
+        "aroma",
+        " odor",
+        " odour",
+        " scent",
+        "sense of smell",
+        " olfaction",
+        "emit an odor"
+      ]
     },
     {
-     "word": "record",
-     "clues": [
-      "number of wins versus losses and ties"
-     ]
+      "word": "smile",
+      "clues": [
+        "smiling",
+        " grin",
+        " grinning",
+        " facial expression"
+      ]
     },
     {
-     "word": "recording",
-     "clues": [
-      "information storage device"
-     ]
+      "word": "smoke",
+      "clues": [
+        "fumes",
+        "inhale a plant derivative"
+      ]
     },
     {
-     "word": "recovery",
-     "clues": [
-      "retrieval",
-      " regaining"
-     ]
+      "word": "smooth",
+      "clues": [
+        "having a surface free from roughness"
+      ]
     },
     {
-     "word": "recovery",
-     "clues": [
-      "convalescence",
-      " recuperation"
-     ]
+      "word": "snack",
+      "clues": [
+        "bite",
+        " collation",
+        " light meal"
+      ]
     },
     {
-     "word": "red",
-     "clues": [
-      "redness"
-     ]
+      "word": "snail",
+      "clues": [
+        "slug"
+      ]
     },
     {
-     "word": "reduction",
-     "clues": [
-      "decrease",
-      " diminution"
-     ]
+      "word": "snake",
+      "clues": [
+        "serpent"
+      ]
     },
     {
-     "word": "redundancy",
-     "clues": [
-      "redundance",
-      " superfluousness"
-     ]
+      "word": "snap",
+      "clues": [
+        "click",
+        " flick",
+        " make a snapping sound",
+        "crack",
+        " break suddenly",
+        " rupture"
+      ]
     },
     {
-     "word": "referee",
-     "clues": [
-      "sports referee"
-     ]
+      "word": "snarl",
+      "clues": [
+        "speak sharply",
+        " snap"
+      ]
     },
     {
-     "word": "reference",
-     "clues": [
-      "citation",
-      " acknowledgment",
-      " credit",
-      " mention",
-      " quotation"
-     ]
+      "word": "snatch",
+      "clues": [
+        "snatch up",
+        " snap up"
+      ]
     },
     {
-     "word": "reference",
-     "clues": [
-      "reference point",
-      " point of reference"
-     ]
+      "word": "sniff",
+      "clues": [
+        "whiff",
+        " inhale"
+      ]
     },
     {
-     "word": "referral",
-     "clues": [
-      "recommendation to consult someone"
-     ]
+      "word": "snow",
+      "clues": [
+        "snowfall"
+      ]
     },
     {
-     "word": "reflection",
-     "clues": [
-      "reflexion",
-      " mirror image"
-     ]
+      "word": "snub",
+      "clues": [
+        "cold shoulder"
+      ]
     },
     {
-     "word": "reform",
-     "clues": [
-      "change for the better"
-     ]
+      "word": "snuggle",
+      "clues": [
+        "cuddle",
+        " nestle",
+        " draw close"
+      ]
     },
     {
-     "word": "regard",
-     "clues": [
-      "gaze",
-      " long fixed look"
-     ]
+      "word": "soak",
+      "clues": [
+        "submerge in liquid"
+      ]
     },
     {
-     "word": "register",
-     "clues": [
-      "cash register"
-     ]
+      "word": "soap",
+      "clues": [
+        "cleansing agent"
+      ]
     },
     {
-     "word": "register",
-     "clues": [
-      "registry",
-      " official written record"
-     ]
+      "word": "soar",
+      "clues": [
+        "fly upwards"
+      ]
     },
     {
-     "word": "registration",
-     "clues": [
-      "enrollment",
-      " enrolment"
-     ]
+      "word": "social",
+      "clues": [
+        "living together or enjoying life in communities"
+      ]
     },
     {
-     "word": "regret",
-     "clues": [
-      "sorrow",
-      " rue",
-      " ruefulness"
-     ]
+      "word": "socialist",
+      "clues": [
+        "socialistic"
+      ]
     },
     {
-     "word": "regulation",
-     "clues": [
-      "authoritative rule"
-     ]
+      "word": "society",
+      "clues": [
+        "extended social group"
+      ]
     },
     {
-     "word": "rehabilitation",
-     "clues": [
-      "treatment of physical disabilities"
-     ]
+      "word": "sock",
+      "clues": [
+        "stocking",
+        " hosiery"
+      ]
     },
     {
-     "word": "rehabilitation",
-     "clues": [
-      "vindication of character",
-      " exoneration"
-     ]
+      "word": "sodium",
+      "clues": [
+        "Na"
+      ]
     },
     {
-     "word": "rehearsal",
-     "clues": [
-      "dry run"
-     ]
+      "word": "sofa",
+      "clues": [
+        "couch"
+      ]
     },
     {
-     "word": "reign",
-     "clues": [
-      "time of rule"
-     ]
+      "word": "soft",
+      "clues": [
+        "nonalcoholic",
+        "relatively low in volume",
+        "lacking in hardness"
+      ]
     },
     {
-     "word": "relation",
-     "clues": [
-      "relative",
-      " person related by blood or marriage"
-     ]
+      "word": "software",
+      "clues": [
+        "computer software"
+      ]
     },
     {
-     "word": "relationship",
-     "clues": [
-      "state of connectedness between people"
-     ]
+      "word": "soil",
+      "clues": [
+        "territory",
+        "dirt",
+        " earth's surface"
+      ]
     },
     {
-     "word": "relaxation",
-     "clues": [
-      "easiness",
-      " absence of tension"
-     ]
+      "word": "soldier",
+      "clues": [
+        "enlisted man or woman"
+      ]
     },
     {
-     "word": "release",
-     "clues": [
-      "waiver",
-      " discharge"
-     ]
+      "word": "solid",
+      "clues": [
+        "neither liquid nor gaseous",
+        "entirely of one substance with no holes inside"
+      ]
     },
     {
-     "word": "relevance",
-     "clues": [
-      "relevancy"
-     ]
+      "word": "solo",
+      "clues": [
+        "activity performed alone"
+      ]
     },
     {
-     "word": "reliance",
-     "clues": [
-      "state of relying on something"
-     ]
+      "word": "solution",
+      "clues": [
+        "successful action of solving a problem",
+        "mixture of two or more substances"
+      ]
     },
     {
-     "word": "relief",
-     "clues": [
-      "ease",
-      " alleviation"
-     ]
+      "word": "solve",
+      "clues": [
+        "work out",
+        " figure out",
+        " puzzle out"
+      ]
     },
     {
-     "word": "reluctance",
-     "clues": [
-      "hesitancy",
-      " hesitation",
-      " disinclination"
-     ]
+      "word": "soprano",
+      "clues": [
+        "voice range"
+      ]
     },
     {
-     "word": "remark",
-     "clues": [
-      "explicit notice"
-     ]
+      "word": "soul",
+      "clues": [
+        "psyche"
+      ]
     },
     {
-     "word": "remedy",
-     "clues": [
-      "curative",
-      " cure",
-      " medicine"
-     ]
+      "word": "sound",
+      "clues": [
+        "auditory event",
+        "in good condition"
+      ]
     },
     {
-     "word": "rent",
-     "clues": [
-      "payment to a landlord"
-     ]
+      "word": "soup",
+      "clues": [
+        "liquid food"
+      ]
     },
     {
-     "word": "repetition",
-     "clues": [
-      "repeat"
-     ]
+      "word": "sour",
+      "clues": [
+        "having a sharp biting taste"
+      ]
     },
     {
-     "word": "replacement",
-     "clues": [
-      "surrogate",
-      " alternate",
-      " substitute"
-     ]
+      "word": "source",
+      "clues": [
+        "documentary reference",
+        "beginning",
+        " origin",
+        " root",
+        "informant",
+        " person who supplies information"
+      ]
     },
     {
-     "word": "report",
-     "clues": [
-      "news report",
-      " story",
-      " account"
-     ]
+      "word": "south",
+      "clues": [
+        "Confederacy",
+        " Confederate States",
+        "due south",
+        " S"
+      ]
     },
     {
-     "word": "report",
-     "clues": [
-      "study",
-      " written report",
-      " evaluation"
-     ]
+      "word": "sow",
+      "clues": [
+        "place seeds into the ground"
+      ]
     },
     {
-     "word": "reporter",
-     "clues": [
-      "journalist",
-      " newsperson"
-     ]
+      "word": "space",
+      "clues": [
+        "empty area",
+        "blank"
+      ]
     },
     {
-     "word": "representative",
-     "clues": [
-      "person who represents others"
-     ]
+      "word": "spare",
+      "clues": [
+        "save from an unpleasant experience",
+        "give up",
+        " part with"
+      ]
     },
     {
-     "word": "representative",
-     "clues": [
-      "congressman"
-     ]
+      "word": "speaker",
+      "clues": [
+        "talker",
+        " utterer",
+        "loudspeaker",
+        " speaker unit"
+      ]
     },
     {
-     "word": "reproduction",
-     "clues": [
-      "replica",
-      " replication",
-      " copy"
-     ]
+      "word": "species",
+      "clues": [
+        "taxonomic group"
+      ]
     },
     {
-     "word": "reptile",
-     "clues": [
-      "reptilian"
-     ]
+      "word": "specimen",
+      "clues": [
+        "medical specimen"
+      ]
     },
     {
-     "word": "reputation",
-     "clues": [
-      "notoriety for some characteristic"
-     ]
+      "word": "spectrum",
+      "clues": [
+        "broad range of related values"
+      ]
     },
     {
-     "word": "request",
-     "clues": [
-      "petition"
-     ]
+      "word": "speculate",
+      "clues": [
+        "invest at a risk"
+      ]
     },
     {
-     "word": "requirement",
-     "clues": [
-      "necessity",
-      " essential",
-      " requisite"
-     ]
+      "word": "speech",
+      "clues": [
+        "exchange of spoken words",
+        " verbal discourse",
+        "address",
+        "manner of speaking"
+      ]
     },
     {
-     "word": "research",
-     "clues": [
-      "systematic investigation to establish facts"
-     ]
+      "word": "speed",
+      "clues": [
+        "amphetamine",
+        " pep pill",
+        " upper",
+        "velocity",
+        "travel at an excessive or illegal velocity"
+      ]
     },
     {
-     "word": "researcher",
-     "clues": [
-      "research worker",
-      " investigator"
-     ]
+      "word": "spell",
+      "clues": [
+        "write",
+        "magic spell",
+        " charm"
+      ]
     },
     {
-     "word": "reserve",
-     "clues": [
-      "reticence",
-      " quietness"
-     ]
+      "word": "spend",
+      "clues": [
+        "expend"
+      ]
     },
     {
-     "word": "supply",
-     "clues": [
-      "backlog",
-      " stockpile",
-      " reserve",
-      " reservoir"
-     ]
+      "word": "sphere",
+      "clues": [
+        "ball",
+        "sphere of influence"
+      ]
     },
     {
-     "word": "reservoir",
-     "clues": [
-      "artificial lake"
-     ]
+      "word": "spider",
+      "clues": [
+        "arachnid"
+      ]
     },
     {
-     "word": "residence",
-     "clues": [
-      "abode"
-     ]
+      "word": "spill",
+      "clues": [
+        "flow out"
+      ]
     },
     {
-     "word": "resident",
-     "clues": [
-      "occupant"
-     ]
+      "word": "spin",
+      "clues": [
+        "twist and turn so as to give an intended interpretation",
+        "spin around",
+        " whirl",
+        " reel",
+        " gyrate",
+        " revolve",
+        "form a web"
+      ]
     },
     {
-     "word": "resignation",
-     "clues": [
-      "giving notice"
-     ]
+      "word": "spinach",
+      "clues": [
+        "vegetable"
+      ]
     },
     {
-     "word": "resignation",
-     "clues": [
-      "surrender"
-     ]
+      "word": "spine",
+      "clues": [
+        "thorn",
+        " prickle"
+      ]
     },
     {
-     "word": "resolution",
-     "clues": [
-      "decision to do something"
-     ]
+      "word": "spirit",
+      "clues": [
+        "intent",
+        " purport",
+        " intended meaning",
+        "emotional state",
+        "disembodied spirit"
+      ]
     },
     {
-     "word": "resort",
-     "clues": [
-      "holiday resort"
-     ]
+      "word": "spit",
+      "clues": [
+        "spew"
+      ]
     },
     {
-     "word": "resource",
-     "clues": [
-      "source of aid or support"
-     ]
+      "word": "spite",
+      "clues": [
+        "malice",
+        " maliciousness",
+        " spitefulness",
+        " venom"
+      ]
     },
     {
-     "word": "response",
-     "clues": [
-      "answer",
-      " reply"
-     ]
+      "word": "split",
+      "clues": [
+        "schism",
+        " division into opposing factions",
+        "lengthwise crack",
+        "burst",
+        " break open"
+      ]
     },
     {
-     "word": "response",
-     "clues": [
-      "reaction"
-     ]
+      "word": "splurge",
+      "clues": [
+        "indulge oneself"
+      ]
     },
     {
-     "word": "responsibility",
-     "clues": [
-      "duty",
-      " obligation"
-     ]
+      "word": "spoil",
+      "clues": [
+        "rot",
+        " go bad",
+        " become unfit for consumption",
+        "pamper",
+        " coddle",
+        " mollycoddle",
+        " indulge",
+        "impair",
+        " make imperfect"
+      ]
     },
     {
-     "word": "rest",
-     "clues": [
-      "support on which things can be put"
-     ]
+      "word": "spokesperson",
+      "clues": [
+        "interpreter",
+        " representative"
+      ]
     },
     {
-     "word": "rest",
-     "clues": [
-      "remainder",
-      " balance",
-      " residual",
-      " residue"
-     ]
+      "word": "spontaneous",
+      "clues": [
+        "self-generated"
+      ]
     },
     {
-     "word": "rest",
-     "clues": [
-      "respite",
-      " relief",
-      " rest period"
-     ]
+      "word": "spoon",
+      "clues": [
+        "cutlery"
+      ]
     },
     {
-     "word": "restaurant",
-     "clues": [
-      "eating place"
-     ]
+      "word": "sport",
+      "clues": [
+        "athletics"
+      ]
     },
     {
-     "word": "restoration",
-     "clues": [
-      "renovation",
-      " refurbishment"
-     ]
+      "word": "spot",
+      "clues": [
+        "smudge",
+        " blot",
+        " daub",
+        " smear"
+      ]
     },
     {
-     "word": "restraint",
-     "clues": [
-      "limitation"
-     ]
+      "word": "spray",
+      "clues": [
+        "scatter",
+        "water in small drops"
+      ]
     },
     {
-     "word": "restriction",
-     "clues": [
-      "limitation"
-     ]
+      "word": "spread",
+      "clues": [
+        "paste",
+        " food mixture",
+        "distribute over a surface"
+      ]
     },
     {
-     "word": "result",
-     "clues": [
-      "resultant",
-      " final result",
-      " outcome",
-      " consequence"
-     ]
+      "word": "spring",
+      "clues": [
+        "metal elastic device",
+        "springtime",
+        "fountain"
+      ]
     },
     {
-     "word": "retailer",
-     "clues": [
-      "retail merchant"
-     ]
+      "word": "spy",
+      "clues": [
+        "undercover agent"
+      ]
     },
     {
-     "word": "retirement",
-     "clues": [
-      "withdrawal from a position"
-     ]
+      "word": "squad",
+      "clues": [
+        "army unit"
+      ]
     },
     {
-     "word": "retreat",
-     "clues": [
-      "hideaway"
-     ]
+      "word": "square",
+      "clues": [
+        "public square",
+        " plaza",
+        " place",
+        "raise to the second power",
+        "having four equal sides and four right angles",
+        "rectangle with four equal sides"
+      ]
     },
     {
-     "word": "return",
-     "clues": [
-      "act of returning to a prior location"
-     ]
+      "word": "squash",
+      "clues": [
+        "crush",
+        " mash"
+      ]
     },
     {
-     "word": "return",
-     "clues": [
-      "homecoming"
-     ]
+      "word": "squeeze",
+      "clues": [
+        "pinch",
+        "compress",
+        " constrict",
+        " press",
+        " compact"
+      ]
     },
     {
-     "word": "return",
-     "clues": [
-      "restitution",
-      " restoration",
-      " regaining"
-     ]
+      "word": "stab",
+      "clues": [
+        "knife"
+      ]
     },
     {
-     "word": "return",
-     "clues": [
-      "tax return",
-      " income tax return"
-     ]
+      "word": "stable",
+      "clues": [
+        "resistant to change",
+        "stalls",
+        " horse barn"
+      ]
     },
     {
-     "word": "revenge",
-     "clues": [
-      "retaliation"
-     ]
+      "word": "stadium",
+      "clues": [
+        "bowl",
+        " arena",
+        " sports stadium"
+      ]
     },
     {
-     "word": "reverse",
-     "clues": [
-      "reversion",
-      " reversal",
-      " turnabout",
-      " turnaround"
-     ]
+      "word": "staff",
+      "clues": [
+        "personnel",
+        "rod"
+      ]
     },
     {
-     "word": "review",
-     "clues": [
-      "brushup"
-     ]
+      "word": "stage",
+      "clues": [
+        "phase",
+        " distinct time period in a sequence of events",
+        "large platform on which people are seen by an audience"
+      ]
     },
     {
-     "word": "review",
-     "clues": [
-      "recapitulation",
-      " recap",
-      " summary"
-     ]
+      "word": "stain",
+      "clues": [
+        "spot",
+        " produce stains"
+      ]
     },
     {
-     "word": "review",
-     "clues": [
-      "critique",
-      " critical review",
-      " review article"
-     ]
+      "word": "staircase",
+      "clues": [
+        "stairway"
+      ]
     },
     {
-     "word": "review",
-     "clues": [
-      "periodical"
-     ]
+      "word": "stake",
+      "clues": [
+        "stakes",
+        " bet",
+        " wager"
+      ]
     },
     {
-     "word": "revival",
-     "clues": [
-      "resurgence",
-      " revitalization"
-     ]
+      "word": "stall",
+      "clues": [
+        "booth",
+        " cubicle"
+      ]
     },
     {
-     "word": "revolution",
-     "clues": [
-      "overthrow of government"
-     ]
+      "word": "stamp",
+      "clues": [
+        "stomp",
+        " walk heavily",
+        "postage stamp"
+      ]
     },
     {
-     "word": "revolution",
-     "clues": [
-      "rotation",
-      " gyration"
-     ]
+      "word": "stand",
+      "clues": [
+        "stand up",
+        "stall",
+        " sales booth",
+        "viewpoint",
+        " standpoint",
+        "bear",
+        " endure",
+        " stomach",
+        " bear",
+        " put up with"
+      ]
     },
     {
-     "word": "reward",
-     "clues": [
-      "bounty",
-      " money for helping to find criminals"
-     ]
+      "word": "standard",
+      "clues": [
+        "criterion",
+        " measure",
+        " touchstone",
+        "conforming to a standard of measurement"
+      ]
     },
     {
-     "word": "rhetoric",
-     "clues": [
-      "technique for speaking"
-     ]
+      "word": "star",
+      "clues": [
+        "ace",
+        " champion",
+        " virtuoso",
+        " hotshot",
+        " superstar",
+        "plane figure with 5 or more points",
+        "asterisk",
+        "celestial body"
+      ]
     },
     {
-     "word": "rhythm",
-     "clues": [
-      "beat",
-      " musical rhythm"
-     ]
+      "word": "start",
+      "clues": [
+        "beginning",
+        " commencement",
+        " first",
+        " outset",
+        " get-go"
+      ]
     },
     {
-     "word": "rib",
-     "clues": [
-      "bone"
-     ]
+      "word": "state",
+      "clues": [
+        "province",
+        "state of matter"
+      ]
     },
     {
-     "word": "ribbon",
-     "clues": [
-      "strip of material"
-     ]
+      "word": "statement",
+      "clues": [
+        "financial statement",
+        "affirmation",
+        " assertion"
+      ]
     },
     {
-     "word": "rice",
-     "clues": [
-      "grains used as food"
-     ]
+      "word": "station",
+      "clues": [
+        "post"
+      ]
     },
     {
-     "word": "rider",
-     "clues": [
-      "person riding an animal"
-     ]
+      "word": "stay",
+      "clues": [
+        "stick around",
+        " stay put"
+      ]
     },
     {
-     "word": "ridge",
-     "clues": [
-      "long narrow range of hills"
-     ]
+      "word": "steak",
+      "clues": [
+        "slice of meat"
+      ]
     },
     {
-     "word": "rifle",
-     "clues": [
-      "firearm"
-     ]
+      "word": "steam",
+      "clues": [
+        "boiling water"
+      ]
     },
     {
-     "word": "right",
-     "clues": [
-      "rightfulness"
-     ]
+      "word": "steel",
+      "clues": [
+        "metal alloy"
+      ]
     },
     {
-     "word": "right",
-     "clues": [
-      "right hand side"
-     ]
+      "word": "steep",
+      "clues": [
+        "having a sharp inclination"
+      ]
     },
     {
-     "word": "righ",
-     "clues": [
-      "wing] right"
-     ]
+      "word": "stem",
+      "clues": [
+        "stalk",
+        " part of a plant"
+      ]
     },
     {
-     "word": "ring",
-     "clues": [
-      "hoop"
-     ]
+      "word": "step",
+      "clues": [
+        "tread",
+        "gradation",
+        "footstep",
+        " pace",
+        " stride",
+        "stair",
+        "measure",
+        " maneuver made as part of progress toward a goal"
+      ]
     },
     {
-     "word": "ring",
-     "clues": [
-      "boxing ring"
-     ]
+      "word": "stereotype",
+      "clues": [
+        "pigeonhole"
+      ]
     },
     {
-     "word": "ring",
-     "clues": [
-      "characteristic sound"
-     ]
+      "word": "steward",
+      "clues": [
+        "flight attendant"
+      ]
     },
     {
-     "word": "riot",
-     "clues": [
-      "public violence"
-     ]
+      "word": "stick",
+      "clues": [
+        "piece of wood",
+        "adhere",
+        " hold fast",
+        " bond",
+        " bind",
+        " stick to"
+      ]
     },
     {
-     "word": "orgy",
-     "clues": [
-      "orgy",
-      " debauchery",
-      " saturnalia",
-      " bacchanal",
-      " riot"
-     ]
+      "word": "sticky",
+      "clues": [
+        "gluey",
+        " glutinous",
+        " gummy"
+      ]
     },
     {
-     "word": "rise",
-     "clues": [
-      "upgrade",
-      " rising slope"
-     ]
+      "word": "still",
+      "clues": [
+        "inactive",
+        " motionless",
+        " static"
+      ]
     },
     {
-     "word": "rise",
-     "clues": [
-      "raise",
-      " wage hike",
-      " hike",
-      " wage increase"
-     ]
+      "word": "stimulation",
+      "clues": [
+        "act of arousing an organism to action"
+      ]
     },
     {
-     "word": "risk",
-     "clues": [
-      "peril"
-     ]
+      "word": "sting",
+      "clues": [
+        "bite",
+        " deliver an animal sting"
+      ]
     },
     {
-     "word": "ritual",
-     "clues": [
-      "rite"
-     ]
+      "word": "stir",
+      "clues": [
+        "move an implement with a circular motion"
+      ]
     },
     {
-     "word": "river",
-     "clues": [
-      "large natural stream of water"
-     ]
+      "word": "stitch",
+      "clues": [
+        "sewing"
+      ]
     },
     {
-     "word": "road",
-     "clues": [
-      "route",
-      " open way for travel or transportation"
-     ]
+      "word": "stock",
+      "clues": [
+        "shares",
+        "livestock",
+        " farm animal",
+        "inventory"
+      ]
     },
     {
-     "word": "looting",
-     "clues": [
-      "plundering"
-     ]
+      "word": "stomach",
+      "clues": [
+        "tummy",
+        " tum"
+      ]
     },
     {
-     "word": "robot",
-     "clues": [
-      "automaton"
-     ]
+      "word": "stone",
+      "clues": [
+        "rock"
+      ]
     },
     {
-     "word": "rock",
-     "clues": [
-      "rock 'n' roll"
-     ]
+      "word": "stool",
+      "clues": [
+        "simple seat"
+      ]
     },
     {
-     "word": "rocket",
-     "clues": [
-      "vehicle propelled by a rocket engine"
-     ]
+      "word": "stop",
+      "clues": [
+        "halt",
+        " come to a halt",
+        " stop moving",
+        "stopover",
+        " layover",
+        "discontinue",
+        " cease doing"
+      ]
     },
     {
-     "word": "role",
-     "clues": [
-      "normal or customary activity of a person"
-     ]
+      "word": "storage",
+      "clues": [
+        "repositing",
+        " warehousing"
+      ]
     },
     {
-     "word": "role",
-     "clues": [
-      "character",
-      " theatrical role",
-      " part"
-     ]
+      "word": "store",
+      "clues": [
+        "lay in",
+        " put in",
+        " salt away",
+        " stack away",
+        " stash away"
+      ]
     },
     {
-     "word": "roll",
-     "clues": [
-      "cylindrical form"
-     ]
+      "word": "storm",
+      "clues": [
+        "weather condition",
+        "rain",
+        " hail",
+        " or snow hard"
+      ]
     },
     {
-     "word": "roll",
-     "clues": [
-      "roster",
-      " list of names"
-     ]
+      "word": "story",
+      "clues": [
+        "narrative",
+        " narration",
+        "fib",
+        " trivial lie"
+      ]
     },
     {
-     "word": "roll",
-     "clues": [
-      "drum roll",
-      " sound of a drum"
-     ]
+      "word": "straight",
+      "clues": [
+        "square",
+        " honest",
+        " fair",
+        " decent",
+        "free from curves or angles"
+      ]
     },
     {
-     "word": "roll",
-     "clues": [
-      "bun",
-      " bread"
-     ]
+      "word": "straighten",
+      "clues": [
+        "straighten out",
+        " make straight"
+      ]
     },
     {
-     "word": "roof",
-     "clues": [
-      "top of a building"
-     ]
+      "word": "strain",
+      "clues": [
+        "tense",
+        " tense up"
+      ]
     },
     {
-     "word": "room",
-     "clues": [
-      "area within a building"
-     ]
+      "word": "strange",
+      "clues": [
+        "unusual"
+      ]
     },
     {
-     "word": "ancestor",
-     "clues": [
-      "ancestor"
-     ]
+      "word": "strap",
+      "clues": [
+        "shoulder strap"
+      ]
     },
     {
-     "word": "root",
-     "clues": [
-      "part of plant"
-     ]
+      "word": "strategic",
+      "clues": [
+        "strategical"
+      ]
     },
     {
-     "word": "rose",
-     "clues": [
-      "flower"
-     ]
+      "word": "straw",
+      "clues": [
+        "drinking straw",
+        "chaff",
+        " husk",
+        " shuck",
+        " stalk"
+      ]
     },
     {
-     "word": "rotation",
-     "clues": [
-      "rotary motion"
-     ]
+      "word": "strawberry",
+      "clues": [
+        "fruit"
+      ]
     },
     {
-     "word": "rung",
-     "clues": [
-      "stave",
-      " round",
-      " crosspiece between chair legs"
-     ]
+      "word": "stream",
+      "clues": [
+        "watercourse"
+      ]
     },
     {
-     "word": "route",
-     "clues": [
-      "path",
-      " itinerary"
-     ]
+      "word": "strength",
+      "clues": [
+        "forte",
+        " strong suit",
+        " specialty",
+        " strong point",
+        "property of being physically or mentally strong"
+      ]
     },
     {
-     "word": "routine",
-     "clues": [
-      "modus operandi"
-     ]
+      "word": "stress",
+      "clues": [
+        "tension",
+        " tenseness",
+        "emphasize",
+        " underline"
+      ]
     },
     {
-     "word": "quarrel",
-     "clues": [
-      "row",
-      " wrangle",
-      " words",
-      " run-in",
-      " dustup"
-     ]
+      "word": "stretch",
+      "clues": [
+        "stretch out",
+        " extend one's limbs"
+      ]
     },
     {
-     "word": "row",
-     "clues": [
-      "arrangement of objects or people side by side in a line"
-     ]
+      "word": "strict",
+      "clues": [
+        "severe",
+        " nonindulgent"
+      ]
     },
     {
-     "word": "royalty",
-     "clues": [
-      "royal family",
-      " royal line",
-      " royal house"
-     ]
+      "word": "stride",
+      "clues": [
+        "walk with long steps"
+      ]
     },
     {
-     "word": "royalty",
-     "clues": [
-      "payment for a patent or copyright"
-     ]
+      "word": "strike",
+      "clues": [
+        "walk out",
+        " walk off a job",
+        "work stoppage",
+        "scratch",
+        " expunge",
+        " excise",
+        " remove by erasing",
+        "rap",
+        " tap",
+        " gentle blow",
+        "attack"
+      ]
     },
     {
-     "word": "rubbish",
-     "clues": [
-      "trash",
-      " scrap",
-      " worthless material"
-     ]
+      "word": "strikebreaker",
+      "clues": [
+        "scab"
+      ]
     },
     {
-     "word": "rugby",
-     "clues": [
-      "rugby football"
-     ]
+      "word": "string",
+      "clues": [
+        "twine",
+        " lightweight cord"
+      ]
     },
     {
-     "word": "ruin",
-     "clues": [
-      "ruined building"
-     ]
+      "word": "strip",
+      "clues": [
+        "long narrow piece"
+      ]
     },
     {
-     "word": "ruin",
-     "clues": [
-      "downfall",
-      " ruination"
-     ]
+      "word": "stroke",
+      "clues": [
+        "apoplexy",
+        " cerebrovascular accident",
+        "fondle",
+        " caress"
+      ]
     },
     {
-     "word": "rule",
-     "clues": [
-      "ruler",
-      " measuring stick"
-     ]
+      "word": "stroll",
+      "clues": [
+        "saunter"
+      ]
     },
     {
-     "word": "rule",
-     "clues": [
-      "regulation"
-     ]
+      "word": "strong",
+      "clues": [
+        "potent",
+        "secure",
+        " unattackable",
+        "firm",
+        "hard",
+        " having a high alcoholic content"
+      ]
     },
     {
-     "word": "rule",
-     "clues": [
-      "convention",
-      " norm of behavior",
-      " pattern"
-     ]
+      "word": "structure",
+      "clues": [
+        "construction"
+      ]
     },
     {
-     "word": "rule",
-     "clues": [
-      "principle",
-      " law concerning a natural phenomenon"
-     ]
+      "word": "struggle",
+      "clues": [
+        "strenuous effort"
+      ]
     },
     {
-     "word": "rule",
-     "clues": [
-      "formula standard procedure for solving a mathematical problem"
-     ]
+      "word": "stubborn",
+      "clues": [
+        "obstinate"
+      ]
     },
     {
-     "word": "rule",
-     "clues": [
-      "directions defining a game or sport"
-     ]
+      "word": "student",
+      "clues": [
+        "pupil",
+        " learner"
+      ]
     },
     {
-     "word": "rule",
-     "clues": [
-      "dominion",
-      " dominance or power through legal authority"
-     ]
+      "word": "studio",
+      "clues": [
+        "workplace for teaching or practice of an art"
+      ]
     },
     {
-     "word": "rule",
-     "clues": [
-      "duration of a monarch's or government's power"
-     ]
+      "word": "study",
+      "clues": [
+        "report",
+        " written report",
+        "hit the books",
+        "discipline",
+        " subject",
+        " subject area",
+        "room used for reading and writing and studying"
+      ]
     },
     {
-     "word": "rumor",
-     "clues": [
-      "hearsay"
-     ]
+      "word": "stuff",
+      "clues": [
+        "fill tightly"
+      ]
     },
     {
-     "word": "runner",
-     "clues": [
-      "athlete"
-     ]
+      "word": "stumble",
+      "clues": [
+        "slip up",
+        " trip up",
+        " make an error"
+      ]
     },
     {
-     "word": "rush",
-     "clues": [
-      "haste",
-      " hurry",
-      " rushing"
-     ]
+      "word": "stun",
+      "clues": [
+        "floor",
+        " surprise greatly"
+      ]
     },
     {
-     "word": "sacrifice",
-     "clues": [
-      "ritual killing"
-     ]
+      "word": "stunning",
+      "clues": [
+        "strikingly beautiful or attractive"
+      ]
     },
     {
-     "word": "sacrifice",
-     "clues": [
-      "loss"
-     ]
+      "word": "style",
+      "clues": [
+        "dash",
+        " elan",
+        " flair",
+        " panache",
+        "editorial directions"
+      ]
     },
     {
-     "word": "safety",
-     "clues": [
-      "state of being certain that adverse effects will not be caused"
-     ]
+      "word": "subject",
+      "clues": [
+        "guinea pig",
+        "depicted object",
+        "topic",
+        " theme"
+      ]
     },
     {
-     "word": "sailor",
-     "clues": [
-      "crewman"
-     ]
+      "word": "substance",
+      "clues": [
+        "stuff"
+      ]
     },
     {
-     "word": "salad",
-     "clues": [
-      "food mixture"
-     ]
+      "word": "substitute",
+      "clues": [
+        "replace",
+        " put in the place of another"
+      ]
     },
     {
-     "word": "sale",
-     "clues": [
-      "cut-rate sale",
-      " sales event"
-     ]
+      "word": "suburb",
+      "clues": [
+        "suburbia",
+        " suburban area"
+      ]
     },
     {
-     "word": "sale",
-     "clues": [
-      "general activity of selling"
-     ]
+      "word": "subway",
+      "clues": [
+        "metro",
+        " underground",
+        " tube"
+      ]
     },
     {
-     "word": "salmon",
-     "clues": [
-      "fish"
-     ]
+      "word": "suffer",
+      "clues": [
+        "hurt",
+        " ache"
+      ]
     },
     {
-     "word": "salon",
-     "clues": [
-      "beauty salon",
-      " beauty parlor"
-     ]
+      "word": "suffering",
+      "clues": [
+        "hurt",
+        " mental or physical pain"
+      ]
     },
     {
-     "word": "salt",
-     "clues": [
-      "table salt",
-      " common salt"
-     ]
+      "word": "sugar",
+      "clues": [
+        "refined sugar"
+      ]
     },
     {
-     "word": "salvation",
-     "clues": [
-      "being saved from harm"
-     ]
+      "word": "suggest",
+      "clues": [
+        "propose",
+        " advise"
+      ]
     },
     {
-     "word": "sample",
-     "clues": [
-      "small part representative of the whole"
-     ]
+      "word": "suggestion",
+      "clues": [
+        "proposition"
+      ]
     },
     {
-     "word": "sanctuary",
-     "clues": [
-      "consecrated place"
-     ]
+      "word": "suit",
+      "clues": [
+        "be agreeable or acceptable",
+        "suit of clothes"
+      ]
     },
     {
-     "word": "sand",
-     "clues": [
-      "finely ground particles"
-     ]
+      "word": "suitcase",
+      "clues": [
+        "bag",
+        " luggage"
+      ]
     },
     {
-     "word": "sandal",
-     "clues": [
-      "footwear"
-     ]
+      "word": "suite",
+      "clues": [
+        "rooms"
+      ]
     },
     {
-     "word": "satellite",
-     "clues": [
-      "orbiter"
-     ]
+      "word": "sulphur",
+      "clues": [
+        "sulfur",
+        " S"
+      ]
     },
     {
-     "word": "satisfaction",
-     "clues": [
-      "contentment"
-     ]
+      "word": "sum",
+      "clues": [
+        "sum total"
+      ]
     },
     {
-     "word": "sausage",
-     "clues": [
-      "wurst",
-      " meat"
-     ]
+      "word": "summary",
+      "clues": [
+        "brief statement"
+      ]
     },
     {
-     "word": "scale",
-     "clues": [
-      "body covering of many animals"
-     ]
+      "word": "summer",
+      "clues": [
+        "summertime"
+      ]
     },
     {
-     "word": "scale",
-     "clues": [
-      "weighing machine"
-     ]
+      "word": "summit",
+      "clues": [
+        "summit meeting"
+      ]
     },
     {
-     "word": "scale",
-     "clues": [
-      "scale of measurement",
-      " graduated table"
-     ]
+      "word": "sun",
+      "clues": [
+        "star that is the source of light and heat",
+        "sunlight",
+        " sunshine"
+      ]
     },
     {
-     "word": "scandal",
-     "clues": [
-      "outrage"
-     ]
+      "word": "Sunday",
+      "clues": [
+        "Lord's Day"
+      ]
     },
     {
-     "word": "scenario",
-     "clues": [
-      "sequence of possible events"
-     ]
+      "word": "sunrise",
+      "clues": [
+        "daily morning event"
+      ]
     },
     {
-     "word": "scene",
-     "clues": [
-      "subdivision of an act of a play"
-     ]
+      "word": "sunshine",
+      "clues": [
+        "fair weather"
+      ]
     },
     {
-     "word": "scene",
-     "clues": [
-      "shot",
-      " unit of action in a film"
-     ]
+      "word": "suntan",
+      "clues": [
+        "tan",
+        " sunburn"
+      ]
     },
     {
-     "word": "scene",
-     "clues": [
-      "setting"
-     ]
+      "word": "superintendent",
+      "clues": [
+        "super"
+      ]
     },
     {
-     "word": "scene",
-     "clues": [
-      "fit",
-      " tantrum",
-      " conniption"
-     ]
+      "word": "superior",
+      "clues": [
+        "of high or superior quality"
+      ]
     },
     {
-     "word": "scheme",
-     "clues": [
-      "schema organization of concepts"
-     ]
+      "word": "supplementary",
+      "clues": [
+        "auxiliary",
+        " subsidiary"
+      ]
     },
     {
-     "word": "scholar",
-     "clues": [
-      "scholarly person",
-      " student",
-      " learned person"
-     ]
+      "word": "supply",
+      "clues": [
+        "amount of something available for use",
+        "backlog",
+        " stockpile",
+        " reserve",
+        " reservoir"
+      ]
     },
     {
-     "word": "school",
-     "clues": [
-      "schoolhouse"
-     ]
+      "word": "support",
+      "clues": [
+        "documentation",
+        " documentary validation",
+        "device that bears the weight of another thing",
+        "confirm",
+        " corroborate",
+        " substantiate",
+        "aiding the cause or policy or interests of",
+        "hold",
+        " sustain",
+        " hold up",
+        "keep",
+        " livelihood",
+        " living",
+        " bread and butter",
+        " sustenance"
+      ]
     },
     {
-     "word": "school",
-     "clues": [
-      "educational institution"
-     ]
+      "word": "suppress",
+      "clues": [
+        "curb",
+        " inhibit"
+      ]
     },
     {
-     "word": "science",
-     "clues": [
-      "scientific discipline"
-     ]
+      "word": "surface",
+      "clues": [
+        "extended two-dimensional outer boundary"
+      ]
     },
     {
-     "word": "grudge",
-     "clues": [
-      "grievance"
-     ]
+      "word": "surgeon",
+      "clues": [
+        "operating surgeon"
+      ]
     },
     {
-     "word": "score",
-     "clues": [
-      "game score"
-     ]
+      "word": "surprise",
+      "clues": [
+        "unexpected event"
+      ]
     },
     {
-     "word": "scrap",
-     "clues": [
-      "small piece"
-     ]
+      "word": "surround",
+      "clues": [
+        "encircle",
+        " circle",
+        " round"
+      ]
     },
     {
-     "word": "screen",
-     "clues": [
-      "protective covering"
-     ]
+      "word": "survey",
+      "clues": [
+        "sketch",
+        " resume"
+      ]
     },
     {
-     "word": "screen",
-     "clues": [
-      "movie screen",
-      " projection screen"
-     ]
+      "word": "survival",
+      "clues": [
+        "endurance"
+      ]
     },
     {
-     "word": "screw",
-     "clues": [
-      "fastener with a tapered threaded shank"
-     ]
+      "word": "survivor",
+      "clues": [
+        "survivor of a disaster",
+        "one who outlives another"
+      ]
     },
     {
-     "word": "script",
-     "clues": [
-      "writing system"
-     ]
+      "word": "suspect",
+      "clues": [
+        "someone under suspicion"
+      ]
     },
     {
-     "word": "sculpture",
-     "clues": [
-      "plastic art"
-     ]
+      "word": "suspicion",
+      "clues": [
+        "intuition",
+        " hunch",
+        "misgiving",
+        " mistrust",
+        " distrust"
+      ]
     },
     {
-     "word": "sea",
-     "clues": [
-      "ocean"
-     ]
+      "word": "sustain",
+      "clues": [
+        "prolong",
+        " keep up"
+      ]
     },
     {
-     "word": "seal",
-     "clues": [
-      "marine mammal"
-     ]
+      "word": "swallow",
+      "clues": [
+        "believe or accept without questioning",
+        "pass through the esophagus"
+      ]
     },
     {
-     "word": "seal",
-     "clues": [
-      "stamp on a document"
-     ]
+      "word": "swarm",
+      "clues": [
+        "pour",
+        " teem",
+        " move in large numbers"
+      ]
     },
     {
-     "word": "season",
-     "clues": [
-      "time of year"
-     ]
+      "word": "swear",
+      "clues": [
+        "curse",
+        " cuss",
+        " blaspheme",
+        "declare under oath"
+      ]
     },
     {
-     "word": "seat",
-     "clues": [
-      "furniture designed for sitting on"
-     ]
+      "word": "sweat",
+      "clues": [
+        "perspiration"
+      ]
     },
     {
-     "word": "buttocks",
-     "clues": [
-      "butt",
-      " bum",
-      " tush"
-     ]
+      "word": "sweater",
+      "clues": [
+        "knitted garment"
+      ]
     },
     {
-     "word": "second",
-     "clues": [
-      "following the first"
-     ]
+      "word": "sweep",
+      "clues": [
+        "use a broom"
+      ]
     },
     {
-     "word": "second",
-     "clues": [
-      "sec",
-      " 1/60 of a minute"
-     ]
+      "word": "sweet",
+      "clues": [
+        "dessert",
+        "sweet-tasting"
+      ]
     },
     {
-     "word": "mystery",
-     "clues": [
-      "secret",
-      " enigma",
-      " closed book"
-     ]
+      "word": "swell",
+      "clues": [
+        "swell up"
+      ]
     },
     {
-     "word": "secretary",
-     "clues": [
-      "secretarial assistant"
-     ]
+      "word": "swim",
+      "clues": [
+        "travel through water"
+      ]
     },
     {
-     "word": "secretion",
-     "clues": [
-      "glandular substance"
-     ]
+      "word": "swing",
+      "clues": [
+        "move with a swaying motion",
+        "rapid fluctuation",
+        " vacillation",
+        "plaything"
+      ]
     },
     {
-     "word": "section",
-     "clues": [
-      "segment",
-      " one of several parts"
-     ]
+      "word": "swipe",
+      "clues": [
+        "move something with a swiping motion"
+      ]
     },
     {
-     "word": "sector",
-     "clues": [
-      "sphere",
-      " particular aspect of life or activity"
-     ]
+      "word": "switch",
+      "clues": [
+        "electric switch",
+        "change",
+        " shift",
+        " change one thing for another"
+      ]
     },
     {
-     "word": "security",
-     "clues": [
-      "security system",
-      " security measure"
-     ]
+      "word": "swop",
+      "clues": [
+        "switch",
+        " trade",
+        " swap",
+        " exchange"
+      ]
     },
     {
-     "word": "seed",
-     "clues": [
-      "seeded player"
-     ]
+      "word": "sword",
+      "clues": [
+        "blade",
+        " weapon"
+      ]
     },
     {
-     "word": "seed",
-     "clues": [
-      "small hard fruit"
-     ]
+      "word": "symbol",
+      "clues": [
+        "sign"
+      ]
     },
     {
-     "word": "selection",
-     "clues": [
-      "excerpt",
-      " excerption",
-      " extract"
-     ]
+      "word": "sympathetic",
+      "clues": [
+        "appealing",
+        " likeable"
+      ]
     },
     {
-     "word": "selection",
-     "clues": [
-      "assortment of things from which to choose"
-     ]
+      "word": "symptom",
+      "clues": [
+        "medical symptom"
+      ]
     },
     {
-     "word": "selection",
-     "clues": [
-      "survival",
-      " survival of the fittest",
-      " natural selection"
-     ]
+      "word": "syndrome",
+      "clues": [
+        "pattern of symptoms"
+      ]
     },
     {
-     "word": "self",
-     "clues": [
-      "ego"
-     ]
+      "word": "system",
+      "clues": [
+        "scheme"
+      ]
     },
     {
-     "word": "seller",
-     "clues": [
-      "marketer",
-      " vender",
-      " vendor"
-     ]
+      "word": "systematic",
+      "clues": [
+        "characterized by order and planning"
+      ]
     },
     {
-     "word": "seminar",
-     "clues": [
-      "course"
-     ]
+      "word": "table",
+      "clues": [
+        "tabular array",
+        " data arranged in rows and columns",
+        "piece of furniture"
+      ]
     },
     {
-     "word": "senior",
-     "clues": [
-      "student"
-     ]
+      "word": "tablet",
+      "clues": [
+        "pill",
+        " lozenge",
+        " medicine"
+      ]
     },
     {
-     "word": "sensation",
-     "clues": [
-      "public excitement"
-     ]
+      "word": "tactic",
+      "clues": [
+        "tactics",
+        " maneuver"
+      ]
     },
     {
-     "word": "sense",
-     "clues": [
-      "sensation",
-      " sentience",
-      " sentiency",
-      " sensory faculty"
-     ]
+      "word": "tail",
+      "clues": [
+        "posterior part of the body of a vertebrate",
+        "side of a coin"
+      ]
     },
     {
-     "word": "sense",
-     "clues": [
-      "common sense",
-      " good sense"
-     ]
+      "word": "take",
+      "clues": [
+        "choose",
+        " select",
+        " pick out",
+        "bring",
+        " convey"
+      ]
     },
     {
-     "word": "sense",
-     "clues": [
-      "signified",
-      " the meaning of a word or expression"
-     ]
+      "word": "talented",
+      "clues": [
+        "gifted"
+      ]
     },
     {
-     "word": "sensitivity",
-     "clues": [
-      "sensitiveness"
-     ]
+      "word": "talk",
+      "clues": [
+        "talking",
+        "speak",
+        " use language",
+        "lecture",
+        " public lecture"
+      ]
     },
     {
-     "word": "sentence",
-     "clues": [
-      "conviction"
-     ]
+      "word": "talkative",
+      "clues": [
+        "chatty",
+        " gabby",
+        " garrulous"
+      ]
     },
     {
-     "word": "sentence",
-     "clues": [
-      "string of words"
-     ]
+      "word": "tank",
+      "clues": [
+        "army tank",
+        " armored combat vehicle"
+      ]
     },
     {
-     "word": "sentiment",
-     "clues": [
-      "emotion"
-     ]
+      "word": "tap",
+      "clues": [
+        "draw from",
+        "water faucet",
+        " spigot",
+        "wiretap",
+        " telephone tap",
+        "strike lightly"
+      ]
     },
     {
-     "word": "separation",
-     "clues": [
-      "disassociation",
-      " division"
-     ]
+      "word": "tape",
+      "clues": [
+        "tape measure",
+        "tape recording",
+        "adhesive tape"
+      ]
     },
     {
-     "word": "sequence",
-     "clues": [
-      "serial arrangement"
-     ]
+      "word": "target",
+      "clues": [
+        "mark"
+      ]
     },
     {
-     "word": "series",
-     "clues": [
-      "serial",
-      " serial publication"
-     ]
+      "word": "taste",
+      "clues": [
+        "gustation",
+        " sense of taste",
+        "preference",
+        " penchant",
+        " predilection",
+        "perceive by the sense of taste"
+      ]
     },
     {
-     "word": "series",
-     "clues": [
-      "serial",
-      " serialized set of programs"
-     ]
+      "word": "tasty",
+      "clues": [
+        "delicious"
+      ]
     },
     {
-     "word": "waiter",
-     "clues": [
-      "server"
-     ]
+      "word": "tax",
+      "clues": [
+        "taxation",
+        " revenue enhancement"
+      ]
     },
     {
-     "word": "service",
-     "clues": [
-      "help",
-      " assistance"
-     ]
+      "word": "taxi",
+      "clues": [
+        "cab",
+        " hack",
+        " taxicab"
+      ]
     },
     {
-     "word": "service",
-     "clues": [
-      "religious service",
-      " divine service"
-     ]
+      "word": "tea",
+      "clues": [
+        "beverage"
+      ]
     },
     {
-     "word": "service",
-     "clues": [
-      "overhaul",
-      " inspection and repair"
-     ]
+      "word": "teach",
+      "clues": [
+        "instruct"
+      ]
     },
     {
-     "word": "service",
-     "clues": [
-      "military service",
-      " armed service"
-     ]
+      "word": "teacher",
+      "clues": [
+        "instructor"
+      ]
     },
     {
-     "word": "session",
-     "clues": [
-      "meeting"
-     ]
+      "word": "team",
+      "clues": [
+        "squad",
+        " cooperative unit"
+      ]
     },
     {
-     "word": "session",
-     "clues": [
-      "school term",
-      " academic term"
-     ]
+      "word": "tear",
+      "clues": [
+        "teardrop"
+      ]
     },
     {
-     "word": "set",
-     "clues": [
-      "stage set"
-     ]
+      "word": "tease",
+      "clues": [
+        "rag",
+        " taunt",
+        "mock",
+        " make fun of",
+        "arouse hope or desire without satisfying them"
+      ]
     },
     {
-     "word": "set",
-     "clues": [
-      "group of things of the same kind that belong together"
-     ]
+      "word": "technique",
+      "clues": [
+        "proficiency"
+      ]
     },
     {
-     "word": "settlement",
-     "clues": [
-      "resolution",
-      " outcome"
-     ]
+      "word": "technology",
+      "clues": [
+        "engineering"
+      ]
     },
     {
-     "word": "settlement",
-     "clues": [
-      "colony"
-     ]
+      "word": "teenager",
+      "clues": [
+        "adolescent"
+      ]
     },
     {
-     "word": "sex",
-     "clues": [
-      "gender",
-      " sexuality"
-     ]
+      "word": "telephone",
+      "clues": [
+        "phone",
+        " telephone set"
+      ]
     },
     {
-     "word": "nuance",
-     "clues": [
-      "shade",
-      " nicety",
-      " subtlety",
-      " refinement"
-     ]
+      "word": "television",
+      "clues": [
+        "television system",
+        " telecommunication system",
+        "television receiver",
+        " T.V. set"
+      ]
     },
     {
-     "word": "shadow",
-     "clues": [
-      "shade"
-     ]
+      "word": "tell",
+      "clues": [
+        "narrate",
+        " recount",
+        " recite"
+      ]
     },
     {
-     "word": "shaft",
-     "clues": [
-      "long rod or pole"
-     ]
+      "word": "temperature",
+      "clues": [
+        "degree of hotness or coldness"
+      ]
     },
     {
-     "word": "shaft",
-     "clues": [
-      "vertical passage into a mine"
-     ]
+      "word": "temple",
+      "clues": [
+        "place of worship",
+        "side of the forehead"
+      ]
     },
     {
-     "word": "shame",
-     "clues": [
-      "pity",
-      " unfortunate event"
-     ]
+      "word": "temporary",
+      "clues": [
+        "impermanent"
+      ]
     },
     {
-     "word": "shame",
-     "clues": [
-      "painful emotion"
-     ]
+      "word": "tempt",
+      "clues": [
+        "entice",
+        " lure"
+      ]
     },
     {
-     "word": "disgrace",
-     "clues": [
-      "shame",
-      " ignominy",
-      " dishonor"
-     ]
+      "word": "temptation",
+      "clues": [
+        "enticement"
+      ]
     },
     {
-     "word": "share",
-     "clues": [
-      "parcel",
-      " portion",
-      " result of parcelling out or sharing"
-     ]
+      "word": "tenant",
+      "clues": [
+        "renter"
+      ]
     },
     {
-     "word": "share",
-     "clues": [
-      "any of the equal portions into which the capital stock of a corporation is divided"
-     ]
+      "word": "tendency",
+      "clues": [
+        "inclination",
+        " disposition"
+      ]
     },
     {
-     "word": "shareholder",
-     "clues": [
-      "stockholder"
-     ]
+      "word": "tender",
+      "clues": [
+        "easy to cut or chew",
+        "gentle",
+        " sympathetic",
+        " feeling"
+      ]
     },
     {
-     "word": "shark",
-     "clues": [
-      "carnivorous fish"
-     ]
+      "word": "tense",
+      "clues": [
+        "in a state of physical or nervous tension",
+        "taut",
+        " rigid",
+        " stretched tight"
+      ]
     },
     {
-     "word": "sheep",
-     "clues": [
-      "woolly mammal"
-     ]
+      "word": "tension",
+      "clues": [
+        "latent hostility",
+        "tautness"
+      ]
     },
     {
-     "word": "sheet",
-     "clues": [
-      "bed sheet"
-     ]
+      "word": "tent",
+      "clues": [
+        "collapsible shelter"
+      ]
     },
     {
-     "word": "sail",
-     "clues": [
-      "canvas"
-     ]
+      "word": "term",
+      "clues": [
+        "word or expression"
+      ]
     },
     {
-     "word": "sheet",
-     "clues": [
-      "piece of paper"
-     ]
+      "word": "terminal",
+      "clues": [
+        "keyboard and monitor",
+        "endmost"
+      ]
     },
     {
-     "word": "shelf",
-     "clues": [
-      "support for holding objects"
-     ]
+      "word": "terms",
+      "clues": [
+        "condition"
+      ]
     },
     {
-     "word": "shell",
-     "clues": [
-      "covering of a mollusc"
-     ]
+      "word": "terrace",
+      "clues": [
+        "patio"
+      ]
     },
     {
-     "word": "shell",
-     "clues": [
-      "ammunition"
-     ]
+      "word": "terrify",
+      "clues": [
+        "frighten greatly"
+      ]
     },
     {
-     "word": "shell",
-     "clues": [
-      "eggshell"
-     ]
+      "word": "test",
+      "clues": [
+        "examination",
+        " exam",
+        "trial",
+        " trial run",
+        " tryout"
+      ]
     },
     {
-     "word": "shell",
-     "clues": [
-      "outer layer of nuts or fruits"
-     ]
+      "word": "testify",
+      "clues": [
+        "bear witness"
+      ]
     },
     {
-     "word": "shelter",
-     "clues": [
-      "temporary housing for homeless"
-     ]
+      "word": "text",
+      "clues": [
+        "textbook",
+        " text edition",
+        " schoolbook",
+        "textual matter"
+      ]
     },
     {
-     "word": "shield",
-     "clues": [
-      "protective covering"
-     ]
+      "word": "texture",
+      "clues": [
+        "appearance of a surface or fabric"
+      ]
     },
     {
-     "word": "shift",
-     "clues": [
-      "switch"
-     ]
+      "word": "thank",
+      "clues": [
+        "give thanks"
+      ]
     },
     {
-     "word": "shift",
-     "clues": [
-      "work shift"
-     ]
+      "word": "thanks",
+      "clues": [
+        "acknowledgment of appreciation"
+      ]
     },
     {
-     "word": "shirt",
-     "clues": [
-      "garment"
-     ]
+      "word": "thaw",
+      "clues": [
+        "unfreeze",
+        " unthaw",
+        " dethaw",
+        " melt"
+      ]
     },
     {
-     "word": "shock",
-     "clues": [
-      "electric shock"
-     ]
+      "word": "theater",
+      "clues": [
+        "dramaturgy",
+        " dramatic art",
+        " dramatics",
+        " theatre"
+      ]
     },
     {
-     "word": "shock",
-     "clues": [
-      "daze",
-      " stupor",
-      " feeling of distress and disbelief"
-     ]
+      "word": "theft",
+      "clues": [
+        "larceny",
+        " thievery",
+        " stealing"
+      ]
     },
     {
-     "word": "shoe",
-     "clues": [
-      "footwear"
-     ]
+      "word": "theme",
+      "clues": [
+        "melodic theme",
+        " musical theme",
+        "motif"
+      ]
     },
     {
-     "word": "horseshoe",
-     "clues": [
-      "shoe for horses"
-     ]
+      "word": "theorist",
+      "clues": [
+        "theoretician",
+        " theorizer"
+      ]
     },
     {
-     "word": "shop",
-     "clues": [
-      "store"
-     ]
+      "word": "theory",
+      "clues": [
+        "hypothesis"
+      ]
     },
     {
-     "word": "shop",
-     "clues": [
-      "workshop"
-     ]
+      "word": "therapist",
+      "clues": [
+        "healer"
+      ]
     },
     {
-     "word": "shor",
-     "clues": [
-      "circuit] short"
-     ]
+      "word": "thesis",
+      "clues": [
+        "dissertation"
+      ]
     },
     {
-     "word": "shortage",
-     "clues": [
-      "dearth",
-      " famine"
-     ]
+      "word": "thick",
+      "clues": [
+        "of a specific thickness",
+        "dense in consistency"
+      ]
     },
     {
-     "word": "shorts",
-     "clues": [
-      "short pants"
-     ]
+      "word": "thigh",
+      "clues": [
+        "part of the leg"
+      ]
     },
     {
-     "word": "shot",
-     "clues": [
-      "shooting",
-      " act of firing a projectile"
-     ]
+      "word": "thin",
+      "clues": [
+        "lean"
+      ]
     },
     {
-     "word": "shot",
-     "clues": [
-      "injection"
-     ]
+      "word": "think",
+      "clues": [
+        "cogitate",
+        " cerebrate",
+        "believe",
+        " accept as true"
+      ]
     },
     {
-     "word": "shoulder",
-     "clues": [
-      "berm",
-      " edge of a road"
-     ]
+      "word": "thinker",
+      "clues": [
+        "creative thinker",
+        " mind",
+        " important intellectual"
+      ]
     },
     {
-     "word": "shoulder",
-     "clues": [
-      "part of the body"
-     ]
+      "word": "thirsty",
+      "clues": [
+        "needing or desiring to drink"
+      ]
     },
     {
-     "word": "show",
-     "clues": [
-      "public exhibition or entertainment"
-     ]
+      "word": "thought",
+      "clues": [
+        "thinking",
+        " cerebration"
+      ]
     },
     {
-     "word": "shower",
-     "clues": [
-      "plumbing fixture"
-     ]
+      "word": "thoughtful",
+      "clues": [
+        "considerate",
+        " showing concern"
+      ]
     },
     {
-     "word": "shower",
-     "clues": [
-      "rain shower"
-     ]
+      "word": "thread",
+      "clues": [
+        "thin yarn",
+        " fine cord of twisted fibers"
+      ]
     },
     {
-     "word": "sickness",
-     "clues": [
-      "nausea"
-     ]
+      "word": "threat",
+      "clues": [
+        "menace",
+        " source of danger"
+      ]
     },
     {
-     "word": "side",
-     "clues": [
-      "position"
-     ]
+      "word": "threaten",
+      "clues": [
+        "utter intentions of injury or punishment"
+      ]
     },
     {
-     "word": "side",
-     "clues": [
-      "face"
-     ]
+      "word": "threshold",
+      "clues": [
+        "doorsill",
+        " doorstep"
+      ]
     },
     {
-     "word": "side",
-     "clues": [
-      "slope",
-      " incline"
-     ]
+      "word": "throat",
+      "clues": [
+        "pharynx",
+        " passage to the stomach and lungs"
+      ]
     },
     {
-     "word": "siege",
-     "clues": [
-      "besieging",
-      " beleaguering",
-      " military blockade"
-     ]
+      "word": "throne",
+      "clues": [
+        "chair of a monarch"
+      ]
     },
     {
-     "word": "sight",
-     "clues": [
-      "vision",
-      " visual sense"
-     ]
+      "word": "throw",
+      "clues": [
+        "project through the air"
+      ]
     },
     {
-     "word": "sign",
-     "clues": [
-      "signboard"
-     ]
+      "word": "thrust",
+      "clues": [
+        "lunge",
+        " hurl",
+        " hurtle"
+      ]
     },
     {
-     "word": "sign",
-     "clues": [
-      "gesture that is part of a sign language"
-     ]
+      "word": "thumb",
+      "clues": [
+        "finger"
+      ]
     },
     {
-     "word": "sign",
-     "clues": [
-      "signal"
-     ]
+      "word": "tick",
+      "clues": [
+        "click"
+      ]
     },
     {
-     "word": "sign",
-     "clues": [
-      "mark"
-     ]
+      "word": "ticket",
+      "clues": [
+        "entry or access ticket",
+        "traffic ticket",
+        " summons"
+      ]
     },
     {
-     "word": "sign",
-     "clues": [
-      "augury",
-      " foretoken",
-      " preindication"
-     ]
+      "word": "tidy",
+      "clues": [
+        "neat",
+        " orderly",
+        " clean"
+      ]
     },
     {
-     "word": "sign",
-     "clues": [
-      "sign of the zodiac",
-      " house"
-     ]
+      "word": "tie",
+      "clues": [
+        "tie",
+        " finish a game with an equal number of points",
+        "necktie",
+        "draw",
+        " standoff",
+        "form a knot or bow in"
+      ]
     },
     {
-     "word": "silence",
-     "clues": [
-      "quiet"
-     ]
+      "word": "tiger",
+      "clues": [
+        "large feline"
+      ]
     },
     {
-     "word": "silence",
-     "clues": [
-      "secrecy",
-      " secretiveness"
-     ]
+      "word": "tight",
+      "clues": [
+        "constrained",
+        " constricted",
+        " constricting"
+      ]
     },
     {
-     "word": "silk",
-     "clues": [
-      "fabric"
-     ]
+      "word": "tile",
+      "clues": [
+        "flat thin slab"
+      ]
     },
     {
-     "word": "flatware",
-     "clues": [
-      "silverware"
-     ]
+      "word": "timber",
+      "clues": [
+        "lumber"
+      ]
     },
     {
-     "word": "silver",
-     "clues": [
-      "ash gray",
-      " ash grey",
-      " silver gray"
-     ]
+      "word": "time",
+      "clues": [
+        "clock time",
+        "clock",
+        " measure the time or duration of an event"
+      ]
     },
     {
-     "word": "silver",
-     "clues": [
-      "metal"
-     ]
+      "word": "timetable",
+      "clues": [
+        "arrival and departure schedule"
+      ]
     },
     {
-     "word": "simplicity",
-     "clues": [
-      "simpleness",
-      " uncomplicatedness"
-     ]
+      "word": "tin",
+      "clues": [
+        "atomic number 50",
+        " silvery metal"
+      ]
     },
     {
-     "word": "sin",
-     "clues": [
-      "sinning",
-      " transgression"
-     ]
+      "word": "tip",
+      "clues": [
+        "lead",
+        " confidential information",
+        "point",
+        " extreme end",
+        "gratuity"
+      ]
     },
     {
-     "word": "singer",
-     "clues": [
-      "vocalist"
-     ]
+      "word": "tiptoe",
+      "clues": [
+        "tippytoe"
+      ]
     },
     {
-     "word": "sink",
-     "clues": [
-      "plumbing fixture"
-     ]
+      "word": "tire",
+      "clues": [
+        "hoop covering a wheel"
+      ]
     },
     {
-     "word": "sister",
-     "clues": [
-      "sis",
-      " female sibling"
-     ]
+      "word": "tired",
+      "clues": [
+        "fatigued"
+      ]
     },
     {
-     "word": "site",
-     "clues": [
-      "web site",
-      " website",
-      " internet site"
-     ]
+      "word": "tissue",
+      "clues": [
+        "tissue paper",
+        "aggregate of cells"
+      ]
     },
     {
-     "word": "site",
-     "clues": [
-      "land site"
-     ]
+      "word": "title",
+      "clues": [
+        "championship",
+        "claim",
+        "heading",
+        "title of respect",
+        "deed",
+        " deed of conveyance",
+        " legal document"
+      ]
     },
     {
-     "word": "situation",
-     "clues": [
-      "state of affairs"
-     ]
+      "word": "toast",
+      "clues": [
+        "bread"
+      ]
     },
     {
-     "word": "size",
-     "clues": [
-      "physical magnitude"
-     ]
+      "word": "tolerant",
+      "clues": [
+        "respecting others"
+      ]
     },
     {
-     "word": "sketch",
-     "clues": [
-      "cartoon",
-      " humorous drawing"
-     ]
+      "word": "tolerate",
+      "clues": [
+        "recognize",
+        " respect others' rights"
+      ]
     },
     {
-     "word": "skin",
-     "clues": [
-      "hide",
-      " pelt",
-      " body covering of a living animal"
-     ]
+      "word": "toll",
+      "clues": [
+        "fee for the use of roads or bridges"
+      ]
     },
     {
-     "word": "skin",
-     "clues": [
-      "cutis",
-      " person's body covering"
-     ]
+      "word": "ton",
+      "clues": [
+        "unit of weight"
+      ]
     },
     {
-     "word": "peel",
-     "clues": [
-      "skin",
-      " rind of a fruit or vegetable"
-     ]
+      "word": "tone",
+      "clues": [
+        "tone of voice"
+      ]
     },
     {
-     "word": "skirt",
-     "clues": [
-      "garment"
-     ]
+      "word": "tongue",
+      "clues": [
+        "body part",
+        "natural language"
+      ]
     },
     {
-     "word": "slab",
-     "clues": [
-      "block",
-      " thick piece"
-     ]
+      "word": "tool",
+      "clues": [
+        "implement"
+      ]
     },
     {
-     "word": "slave",
-     "clues": [
-      "person who is owned"
-     ]
+      "word": "tooth",
+      "clues": [
+        "bonelike structure in the jaws",
+        "projection on a gear"
+      ]
     },
     {
-     "word": "sleep",
-     "clues": [
-      "slumber"
-     ]
+      "word": "top",
+      "clues": [
+        "garment that extends from the shoulders to the waist or hips",
+        "spinning top",
+        "top side",
+        " upper side",
+        " upside",
+        "peak",
+        " crown",
+        " crest",
+        " tip",
+        " summit"
+      ]
     },
     {
-     "word": "sleeve",
-     "clues": [
-      "arm",
-      " part of a garment that is attached at armhole"
-     ]
+      "word": "topple",
+      "clues": [
+        "tip",
+        " cause to fall over"
+      ]
     },
     {
-     "word": "slice",
-     "clues": [
-      "thin flat piece"
-     ]
+      "word": "torch",
+      "clues": [
+        "lit stick carried in one's hand"
+      ]
     },
     {
-     "word": "slide",
-     "clues": [
-      "chute",
-      " sloping trough"
-     ]
+      "word": "torture",
+      "clues": [
+        "torturing"
+      ]
     },
     {
-     "word": "slide",
-     "clues": [
-      "plaything"
-     ]
+      "word": "toss",
+      "clues": [
+        "flip",
+        " pitch",
+        " throw"
+      ]
     },
     {
-     "word": "slime",
-     "clues": [
-      "sludge",
-      " goo",
-      " gunk",
-      " muck"
-     ]
+      "word": "total",
+      "clues": [
+        "damage beyond the point of repair"
+      ]
     },
     {
-     "word": "gaffe",
-     "clues": [
-      "slip",
-      " faux pas"
-     ]
+      "word": "touch",
+      "clues": [
+        "sense of touch",
+        "make physical contact with"
+      ]
     },
     {
-     "word": "slogan",
-     "clues": [
-      "motto",
-      " catchword"
-     ]
+      "word": "tough",
+      "clues": [
+        "not given to gentleness or sentimentality",
+        "tough",
+        " hard",
+        " rough"
+      ]
     },
     {
-     "word": "slot",
-     "clues": [
-      "small slit"
-     ]
+      "word": "tourist",
+      "clues": [
+        "visitor on holiday"
+      ]
     },
     {
-     "word": "slot",
-     "clues": [
-      "time slot"
-     ]
+      "word": "tournament",
+      "clues": [
+        "tourney",
+        " sporting competition"
+      ]
     },
     {
-     "word": "smell",
-     "clues": [
-      "aroma",
-      " odor",
-      " odour",
-      " scent"
-     ]
+      "word": "tower",
+      "clues": [
+        "structure"
+      ]
     },
     {
-     "word": "smell",
-     "clues": [
-      "sense of smell",
-      " olfaction"
-     ]
+      "word": "toy",
+      "clues": [
+        "plaything"
+      ]
     },
     {
-     "word": "smile",
-     "clues": [
-      "smiling",
-      " grin",
-      " grinning",
-      " facial expression"
-     ]
+      "word": "trace",
+      "clues": [
+        "footprint"
+      ]
     },
     {
-     "word": "smoke",
-     "clues": [
-      "fumes"
-     ]
+      "word": "track",
+      "clues": [
+        "racetrack",
+        " racecourse",
+        " raceway",
+        "lead",
+        " trail",
+        " evidence",
+        "railroad track",
+        " line of track",
+        "data track",
+        " circular magnetic path on a disk"
+      ]
     },
     {
-     "word": "snail",
-     "clues": [
-      "slug"
-     ]
+      "word": "tract",
+      "clues": [
+        "pamphlet"
+      ]
     },
     {
-     "word": "snake",
-     "clues": [
-      "serpent"
-     ]
+      "word": "traction",
+      "clues": [
+        "grip",
+        " adhesive friction"
+      ]
     },
     {
-     "word": "snow",
-     "clues": [
-      "snowfall"
-     ]
+      "word": "trade",
+      "clues": [
+        "barter",
+        " swap",
+        " swop",
+        "deal",
+        " business deal",
+        " instance of buying or selling",
+        "craft",
+        " skilled practice of a practical occupation"
+      ]
     },
     {
-     "word": "soap",
-     "clues": [
-      "cleansing agent"
-     ]
+      "word": "tradition",
+      "clues": [
+        "custom",
+        " practice of long standing"
+      ]
     },
     {
-     "word": "society",
-     "clues": [
-      "extended social group"
-     ]
+      "word": "traffic",
+      "clues": [
+        "pedestrians or vehicles",
+        "buying and selling"
+      ]
     },
     {
-     "word": "sock",
-     "clues": [
-      "stocking",
-      " hosiery"
-     ]
+      "word": "tragedy",
+      "clues": [
+        "theatrical drama"
+      ]
     },
     {
-     "word": "sodium",
-     "clues": [
-      "Na"
-     ]
+      "word": "trail",
+      "clues": [
+        "be behind",
+        " hang back",
+        " drop behind"
+      ]
     },
     {
-     "word": "software",
-     "clues": [
-      "computer software"
-     ]
+      "word": "train",
+      "clues": [
+        "coach",
+        "prepare",
+        " educate",
+        "railroad train"
+      ]
     },
     {
-     "word": "soil",
-     "clues": [
-      "territory"
-     ]
+      "word": "trainer",
+      "clues": [
+        "one who trains persons or animals"
+      ]
     },
     {
-     "word": "soil",
-     "clues": [
-      "dirt",
-      " earth's surface"
-     ]
+      "word": "training",
+      "clues": [
+        "preparation",
+        " grooming"
+      ]
     },
     {
-     "word": "soldier",
-     "clues": [
-      "enlisted man or woman"
-     ]
+      "word": "trait",
+      "clues": [
+        "distinguishing feature of your personal nature"
+      ]
     },
     {
-     "word": "solo",
-     "clues": [
-      "activity performed alone"
-     ]
+      "word": "trance",
+      "clues": [
+        "spell"
+      ]
     },
     {
-     "word": "solution",
-     "clues": [
-      "successful action of solving a problem"
-     ]
+      "word": "transaction",
+      "clues": [
+        "commercial dealing"
+      ]
     },
     {
-     "word": "solution",
-     "clues": [
-      "mixture of two or more substances"
-     ]
+      "word": "transfer",
+      "clues": [
+        "transmit",
+        " transport",
+        " channel",
+        "transportation",
+        " transferral",
+        " conveyance"
+      ]
     },
     {
-     "word": "soprano",
-     "clues": [
-      "voice range"
-     ]
+      "word": "transform",
+      "clues": [
+        "transmute",
+        " metamorphose"
+      ]
     },
     {
-     "word": "soul",
-     "clues": [
-      "psyche"
-     ]
+      "word": "transition",
+      "clues": [
+        "conversion",
+        " changeover"
+      ]
     },
     {
-     "word": "sound",
-     "clues": [
-      "auditory event"
-     ]
+      "word": "translate",
+      "clues": [
+        "interpret in another language"
+      ]
     },
     {
-     "word": "soup",
-     "clues": [
-      "liquid food"
-     ]
+      "word": "transmission",
+      "clues": [
+        "automobile transmission"
+      ]
     },
     {
-     "word": "source",
-     "clues": [
-      "documentary reference"
-     ]
+      "word": "transparent",
+      "clues": [
+        "see-through",
+        " sheer"
+      ]
     },
     {
-     "word": "source",
-     "clues": [
-      "beginning",
-      " origin",
-      " root"
-     ]
+      "word": "transport",
+      "clues": [
+        "transportation",
+        " shipping"
+      ]
     },
     {
-     "word": "source",
-     "clues": [
-      "informant",
-      " person who supplies information"
-     ]
+      "word": "trap",
+      "clues": [
+        "snare",
+        " device for catching"
+      ]
     },
     {
-     "word": "south",
-     "clues": [
-      "Confederacy",
-      " Confederate States"
-     ]
+      "word": "tray",
+      "clues": [
+        "open receptacle"
+      ]
     },
     {
-     "word": "south",
-     "clues": [
-      "due south",
-      " S"
-     ]
+      "word": "tread",
+      "clues": [
+        "trample"
+      ]
     },
     {
-     "word": "space",
-     "clues": [
-      "blank"
-     ]
+      "word": "treasurer",
+      "clues": [
+        "financial officer"
+      ]
     },
     {
-     "word": "space",
-     "clues": [
-      "empty area"
-     ]
+      "word": "treat",
+      "clues": [
+        "care for",
+        " provide treatment for",
+        " treat medically",
+        "special pleasurable occurrence",
+        "handle",
+        " deal with",
+        " address",
+        " cover",
+        "handle"
+      ]
     },
     {
-     "word": "speaker",
-     "clues": [
-      "loudspeaker",
-      " speaker unit"
-     ]
+      "word": "treatment",
+      "clues": [
+        "handling",
+        "discussion",
+        " discourse"
+      ]
     },
     {
-     "word": "speaker",
-     "clues": [
-      "talker",
-      " utterer"
-     ]
+      "word": "treaty",
+      "clues": [
+        "pact",
+        " accord"
+      ]
     },
     {
-     "word": "species",
-     "clues": [
-      "taxonomic group"
-     ]
+      "word": "tree",
+      "clues": [
+        "tall perennial woody plant"
+      ]
     },
     {
-     "word": "specimen",
-     "clues": [
-      "medical specimen"
-     ]
+      "word": "trench",
+      "clues": [
+        "ditch"
+      ]
     },
     {
-     "word": "spectrum",
-     "clues": [
-      "broad range of related values"
-     ]
+      "word": "trend",
+      "clues": [
+        "tendency"
+      ]
     },
     {
-     "word": "speech",
-     "clues": [
-      "address"
-     ]
+      "word": "trial",
+      "clues": [
+        "tribulation",
+        "legal proceedings"
+      ]
     },
     {
-     "word": "speech",
-     "clues": [
-      "exchange of spoken words",
-      " verbal discourse"
-     ]
+      "word": "triangle",
+      "clues": [
+        "trilateral"
+      ]
     },
     {
-     "word": "speech",
-     "clues": [
-      "manner of speaking"
-     ]
+      "word": "tribe",
+      "clues": [
+        "clan"
+      ]
     },
     {
-     "word": "speed",
-     "clues": [
-      "amphetamine",
-      " pep pill",
-      " upper"
-     ]
+      "word": "tribute",
+      "clues": [
+        "testimonial",
+        " expression of esteem"
+      ]
     },
     {
-     "word": "speed",
-     "clues": [
-      "velocity"
-     ]
+      "word": "trick",
+      "clues": [
+        "magic trick",
+        "fast one"
+      ]
     },
     {
-     "word": "spell",
-     "clues": [
-      "magic spell",
-      " charm"
-     ]
+      "word": "trip",
+      "clues": [
+        "stumble"
+      ]
     },
     {
-     "word": "trance",
-     "clues": [
-      "spell"
-     ]
+      "word": "trivial",
+      "clues": [
+        "banal",
+        " commonplace"
+      ]
     },
     {
-     "word": "sphere",
-     "clues": [
-      "sphere of influence"
-     ]
+      "word": "trolley",
+      "clues": [
+        "streetcar",
+        " tram"
+      ]
     },
     {
-     "word": "sphere",
-     "clues": [
-      "ball"
-     ]
+      "word": "troop",
+      "clues": [
+        "group of soldiers"
+      ]
     },
     {
-     "word": "spider",
-     "clues": [
-      "arachnid"
-     ]
+      "word": "tropical",
+      "clues": [
+        "typical of the tropics"
+      ]
     },
     {
-     "word": "spinach",
-     "clues": [
-      "vegetable"
-     ]
+      "word": "trouble",
+      "clues": [
+        "perturb",
+        " distract",
+        " make uneasy",
+        "event causing distress or pain",
+        "worry"
+      ]
     },
     {
-     "word": "spine",
-     "clues": [
-      "thorn",
-      " prickle"
-     ]
+      "word": "trouser",
+      "clues": [
+        "pants"
+      ]
     },
     {
-     "word": "spirit",
-     "clues": [
-      "intent",
-      " purport",
-      " intended meaning"
-     ]
+      "word": "truck",
+      "clues": [
+        "motortruck",
+        " lorry"
+      ]
     },
     {
-     "word": "spirit",
-     "clues": [
-      "disembodied spirit"
-     ]
+      "word": "true",
+      "clues": [
+        "consistent with fact or reality"
+      ]
     },
     {
-     "word": "spirit",
-     "clues": [
-      "emotional state"
-     ]
+      "word": "trunk",
+      "clues": [
+        "luggage compartment",
+        " automobile trunk"
+      ]
     },
     {
-     "word": "spite",
-     "clues": [
-      "malice",
-      " maliciousness",
-      " spitefulness",
-      " venom"
-     ]
+      "word": "trust",
+      "clues": [
+        "confidence",
+        " trustful relationship",
+        "rely on",
+        " have confidence in",
+        "corporate trust",
+        " combine",
+        " cartel"
+      ]
     },
     {
-     "word": "split",
-     "clues": [
-      "schism",
-      " division into opposing factions"
-     ]
+      "word": "trustee",
+      "clues": [
+        "legal guardian"
+      ]
     },
     {
-     "word": "split",
-     "clues": [
-      "lengthwise crack"
-     ]
+      "word": "truth",
+      "clues": [
+        "true statement",
+        "verity",
+        " trueness",
+        " conformity to reality"
+      ]
     },
     {
-     "word": "spoon",
-     "clues": [
-      "cutlery"
-     ]
+      "word": "try",
+      "clues": [
+        "seek",
+        " attempt",
+        " essay",
+        "judge",
+        " adjudicate",
+        "sample",
+        " try out",
+        " taste"
+      ]
     },
     {
-     "word": "sport",
-     "clues": [
-      "athletics"
-     ]
+      "word": "tube",
+      "clues": [
+        "hollow cylinder"
+      ]
     },
     {
-     "word": "spot",
-     "clues": [
-      "smudge",
-      " blot",
-      " daub",
-      " smear"
-     ]
+      "word": "tumble",
+      "clues": [
+        "topple",
+        " fall down"
+      ]
     },
     {
-     "word": "spray",
-     "clues": [
-      "water in small drops"
-     ]
+      "word": "tumour",
+      "clues": [
+        "tumor",
+        " neoplasm"
+      ]
     },
     {
-     "word": "ranch",
-     "clues": [
-      "cattle ranch",
-      " cattle farm"
-     ]
+      "word": "tune",
+      "clues": [
+        "melody",
+        " air",
+        " strain",
+        " melodic line",
+        "tune up",
+        " adjust for (better) functioning"
+      ]
     },
     {
-     "word": "spread",
-     "clues": [
-      "paste",
-      " food mixture"
-     ]
+      "word": "tunnel",
+      "clues": [
+        "passageway"
+      ]
     },
     {
-     "word": "banquet",
-     "clues": [
-      "feast"
-     ]
+      "word": "turkey",
+      "clues": [
+        "bird domesticated for food"
+      ]
     },
     {
-     "word": "spring",
-     "clues": [
-      "metal elastic device"
-     ]
+      "word": "turn",
+      "clues": [
+        "bend",
+        " crook",
+        " circular segment of a curve",
+        "turn around",
+        " change orientation"
+      ]
     },
     {
-     "word": "spring",
-     "clues": [
-      "fountain"
-     ]
+      "word": "twilight",
+      "clues": [
+        "dusk",
+        " nightfall"
+      ]
     },
     {
-     "word": "spring",
-     "clues": [
-      "springtime"
-     ]
+      "word": "twin",
+      "clues": [
+        "offspring born at the same time"
+      ]
     },
     {
-     "word": "spy",
-     "clues": [
-      "undercover agent"
-     ]
+      "word": "twist",
+      "clues": [
+        "wrench",
+        " jerky pulling movement",
+        "entwine",
+        " form into a spiral"
+      ]
     },
     {
-     "word": "squad",
-     "clues": [
-      "army unit"
-     ]
+      "word": "twitch",
+      "clues": [
+        "jerk"
+      ]
     },
     {
-     "word": "square",
-     "clues": [
-      "public square",
-      " plaza",
-      " place"
-     ]
+      "word": "tycoon",
+      "clues": [
+        "baron",
+        " big businessman",
+        " business leader",
+        " king",
+        " magnate",
+        " mogul"
+      ]
     },
     {
-     "word": "square",
-     "clues": [
-      "rectangle with four equal sides"
-     ]
+      "word": "umbrella",
+      "clues": [
+        "handheld collapsible canopy"
+      ]
     },
     {
-     "word": "stable",
-     "clues": [
-      "stalls",
-      " horse barn"
-     ]
+      "word": "unanimous",
+      "clues": [
+        "in complete agreement"
+      ]
     },
     {
-     "word": "staff",
-     "clues": [
-      "rod"
-     ]
+      "word": "unaware",
+      "clues": [
+        "unwitting"
+      ]
     },
     {
-     "word": "staff",
-     "clues": [
-      "personnel"
-     ]
+      "word": "uncertainty",
+      "clues": [
+        "uncertainness",
+        " precariousness"
+      ]
     },
     {
-     "word": "stage",
-     "clues": [
-      "large platform on which people are seen by an audience"
-     ]
+      "word": "uncle",
+      "clues": [
+        "parent's brother"
+      ]
     },
     {
-     "word": "stage",
-     "clues": [
-      "phase",
-      " distinct time period in a sequence of events"
-     ]
+      "word": "underline",
+      "clues": [
+        "underscore",
+        " draw a line"
+      ]
     },
     {
-     "word": "staircase",
-     "clues": [
-      "stairway"
-     ]
+      "word": "undermine",
+      "clues": [
+        "sabotage",
+        " countermine",
+        " counteract"
+      ]
     },
     {
-     "word": "stake",
-     "clues": [
-      "stakes",
-      " bet",
-      " wager"
-     ]
+      "word": "understand",
+      "clues": [
+        "comprehend",
+        "sympathize",
+        " empathize"
+      ]
     },
     {
-     "word": "stall",
-     "clues": [
-      "booth",
-      " cubicle"
-     ]
+      "word": "understanding",
+      "clues": [
+        "sympathy",
+        " compassion"
+      ]
     },
     {
-     "word": "stamp",
-     "clues": [
-      "postage stamp"
-     ]
+      "word": "undertake",
+      "clues": [
+        "tackle",
+        " take on"
+      ]
     },
     {
-     "word": "stand",
-     "clues": [
-      "stall",
-      " sales booth"
-     ]
+      "word": "undress",
+      "clues": [
+        "disrobe"
+      ]
     },
     {
-     "word": "stand",
-     "clues": [
-      "viewpoint",
-      " standpoint"
-     ]
+      "word": "unfair",
+      "clues": [
+        "partial",
+        " biased"
+      ]
     },
     {
-     "word": "standard",
-     "clues": [
-      "criterion",
-      " measure",
-      " touchstone"
-     ]
+      "word": "unfortunate",
+      "clues": [
+        "not favored by fortune"
+      ]
     },
     {
-     "word": "star",
-     "clues": [
-      "asterisk"
-     ]
+      "word": "uniform",
+      "clues": [
+        "professional clothing",
+        "unvarying"
+      ]
     },
     {
-     "word": "star",
-     "clues": [
-      "celestial body"
-     ]
+      "word": "union",
+      "clues": [
+        "labor union",
+        " trade union"
+      ]
     },
     {
-     "word": "star",
-     "clues": [
-      "ace",
-      " champion",
-      " virtuoso",
-      " hotshot",
-      " superstar"
-     ]
+      "word": "unique",
+      "clues": [
+        "unequaled",
+        " unparalleled"
+      ]
     },
     {
-     "word": "star",
-     "clues": [
-      "plane figure with 5 or more points"
-     ]
+      "word": "unit",
+      "clues": [
+        "single undivided whole"
+      ]
     },
     {
-     "word": "start",
-     "clues": [
-      "beginning",
-      " commencement",
-      " first",
-      " outset",
-      " get-go"
-     ]
+      "word": "unity",
+      "clues": [
+        "integrity",
+        " wholeness"
+      ]
     },
     {
-     "word": "state",
-     "clues": [
-      "province"
-     ]
+      "word": "unlawful",
+      "clues": [
+        "illegitimate",
+        " illicit"
+      ]
     },
     {
-     "word": "state",
-     "clues": [
-      "state of matter"
-     ]
+      "word": "unlike",
+      "clues": [
+        "unequal"
+      ]
     },
     {
-     "word": "statement",
-     "clues": [
-      "financial statement"
-     ]
+      "word": "unlikely",
+      "clues": [
+        "improbable"
+      ]
     },
     {
-     "word": "statement",
-     "clues": [
-      "affirmation",
-      " assertion"
-     ]
+      "word": "unpleasant",
+      "clues": [
+        "disagreeable"
+      ]
     },
     {
-     "word": "station",
-     "clues": [
-      "post"
-     ]
+      "word": "unrest",
+      "clues": [
+        "feeling of agitation"
+      ]
     },
     {
-     "word": "steak",
-     "clues": [
-      "slice of meat"
-     ]
+      "word": "update",
+      "clues": [
+        "bring up to date"
+      ]
     },
     {
-     "word": "steam",
-     "clues": [
-      "boiling water"
-     ]
+      "word": "upset",
+      "clues": [
+        "disturb",
+        " trouble",
+        " move deeply",
+        "overturn",
+        " tip over",
+        " turn over",
+        " knock over"
+      ]
     },
     {
-     "word": "steel",
-     "clues": [
-      "metal alloy"
-     ]
+      "word": "urge",
+      "clues": [
+        "urge on",
+        "strong restless desire",
+        "cheer",
+        " inspire",
+        " urge on"
+      ]
     },
     {
-     "word": "stem",
-     "clues": [
-      "stalk",
-      " part of a plant"
-     ]
+      "word": "urgency",
+      "clues": [
+        "urgent situation calling for prompt action"
+      ]
     },
     {
-     "word": "step",
-     "clues": [
-      "measure",
-      " maneuver made as part of progress toward a goal"
-     ]
+      "word": "urine",
+      "clues": [
+        "piss",
+        " pee",
+        " piddle",
+        " weewee",
+        " water"
+      ]
     },
     {
-     "word": "step",
-     "clues": [
-      "stair"
-     ]
+      "word": "use",
+      "clues": [
+        "consumption",
+        "function",
+        " purpose",
+        " role",
+        "habit",
+        " usage",
+        "practice",
+        " apply"
+      ]
     },
     {
-     "word": "step",
-     "clues": [
-      "footstep",
-      " pace",
-      " stride"
-     ]
+      "word": "useful",
+      "clues": [
+        "utile"
+      ]
     },
     {
-     "word": "step",
-     "clues": [
-      "gradation"
-     ]
+      "word": "user",
+      "clues": [
+        "drug user",
+        " substance abuser"
+      ]
     },
     {
-     "word": "steward",
-     "clues": [
-      "flight attendant"
-     ]
+      "word": "utter",
+      "clues": [
+        "emit"
+      ]
     },
     {
-     "word": "stick",
-     "clues": [
-      "piece of wood"
-     ]
+      "word": "vacuum",
+      "clues": [
+        "void",
+        " vacancy",
+        " emptiness",
+        "vacuum cleaner"
+      ]
     },
     {
-     "word": "joystick",
-     "clues": [
-      "control stick"
-     ]
+      "word": "vague",
+      "clues": [
+        "undefined"
+      ]
     },
     {
-     "word": "stimulation",
-     "clues": [
-      "act of arousing an organism to action"
-     ]
+      "word": "vain",
+      "clues": [
+        "self-conceited",
+        " swollen-headed"
+      ]
     },
     {
-     "word": "stitch",
-     "clues": [
-      "sewing"
-     ]
+      "word": "valid",
+      "clues": [
+        "well grounded in logic or truth"
+      ]
     },
     {
-     "word": "stock",
-     "clues": [
-      "livestock",
-      " farm animal"
-     ]
+      "word": "valley",
+      "clues": [
+        "vale"
+      ]
     },
     {
-     "word": "stock",
-     "clues": [
-      "inventory"
-     ]
+      "word": "value",
+      "clues": [
+        "numerical quantity measured or assigned or computed",
+        "economic value",
+        " amount of money or goods or services",
+        "ideal accepted by some individual or group"
+      ]
     },
     {
-     "word": "stock",
-     "clues": [
-      "shares"
-     ]
+      "word": "van",
+      "clues": [
+        "vehicle"
+      ]
     },
     {
-     "word": "stomach",
-     "clues": [
-      "tummy",
-      " tum"
-     ]
+      "word": "variable",
+      "clues": [
+        "variable quantity"
+      ]
     },
     {
-     "word": "stone",
-     "clues": [
-      "rock"
-     ]
+      "word": "variant",
+      "clues": [
+        "variation",
+        " something a little different"
+      ]
     },
     {
-     "word": "pit",
-     "clues": [
-      "stone",
-      " hard inner core of some fruits"
-     ]
+      "word": "variation",
+      "clues": [
+        "fluctuation"
+      ]
     },
     {
-     "word": "gem",
-     "clues": [
-      "gemstone",
-      " stone"
-     ]
+      "word": "variety",
+      "clues": [
+        "diverseness",
+        " diversity"
+      ]
     },
     {
-     "word": "stool",
-     "clues": [
-      "simple seat"
-     ]
+      "word": "vat",
+      "clues": [
+        "tub"
+      ]
     },
     {
-     "word": "stop",
-     "clues": [
-      "stopover",
-      " layover"
-     ]
+      "word": "vegetable",
+      "clues": [
+        "veggie",
+        " greens"
+      ]
     },
     {
-     "word": "storage",
-     "clues": [
-      "repositing",
-      " warehousing"
-     ]
+      "word": "vegetarian",
+      "clues": [
+        "person who eats no meat"
+      ]
     },
     {
-     "word": "storm",
-     "clues": [
-      "weather condition"
-     ]
+      "word": "vegetation",
+      "clues": [
+        "flora",
+        " botany"
+      ]
     },
     {
-     "word": "story",
-     "clues": [
-      "fib",
-      " trivial lie"
-     ]
+      "word": "vehicle",
+      "clues": [
+        "conveyance"
+      ]
     },
     {
-     "word": "story",
-     "clues": [
-      "narrative",
-      " narration"
-     ]
+      "word": "veil",
+      "clues": [
+        "head covering"
+      ]
     },
     {
-     "word": "strap",
-     "clues": [
-      "shoulder strap"
-     ]
+      "word": "vein",
+      "clues": [
+        "blood vessel"
+      ]
     },
     {
-     "word": "straw",
-     "clues": [
-      "drinking straw"
-     ]
+      "word": "velvet",
+      "clues": [
+        "silky densely piled fabric"
+      ]
     },
     {
-     "word": "straw",
-     "clues": [
-      "chaff",
-      " husk",
-      " shuck",
-      " stalk"
-     ]
+      "word": "venture",
+      "clues": [
+        "risky commercial undertaking"
+      ]
     },
     {
-     "word": "strawberry",
-     "clues": [
-      "fruit"
-     ]
+      "word": "Venus",
+      "clues": [
+        "planet evening star morning star"
+      ]
     },
     {
-     "word": "stream",
-     "clues": [
-      "watercourse"
-     ]
+      "word": "verdict",
+      "clues": [
+        "legal verdict"
+      ]
     },
     {
-     "word": "strength",
-     "clues": [
-      "property of being physically or mentally strong"
-     ]
+      "word": "version",
+      "clues": [
+        "interpretation from a certain viewpoint",
+        "adaptation"
+      ]
     },
     {
-     "word": "strength",
-     "clues": [
-      "forte",
-      " strong suit",
-      " specialty",
-      " strong point"
-     ]
+      "word": "vertical",
+      "clues": [
+        "perpendicular"
+      ]
     },
     {
-     "word": "stress",
-     "clues": [
-      "tension",
-      " tenseness"
-     ]
+      "word": "vessel",
+      "clues": [
+        "container",
+        "watercraft"
+      ]
     },
     {
-     "word": "strike",
-     "clues": [
-      "work stoppage"
-     ]
+      "word": "veteran",
+      "clues": [
+        "veteran soldier"
+      ]
     },
     {
-     "word": "strike",
-     "clues": [
-      "attack"
-     ]
+      "word": "viable",
+      "clues": [
+        "feasible",
+        " practicable",
+        " workable"
+      ]
     },
     {
-     "word": "strike",
-     "clues": [
-      "rap",
-      " tap",
-      " gentle blow"
-     ]
+      "word": "victory",
+      "clues": [
+        "triumph"
+      ]
     },
     {
-     "word": "string",
-     "clues": [
-      "twine",
-      " lightweight cord"
-     ]
+      "word": "video",
+      "clues": [
+        "video recording"
+      ]
     },
     {
-     "word": "comi",
-     "clues": [
-      "strip]"
-     ]
+      "word": "view",
+      "clues": [
+        "aspect",
+        " prospect",
+        " scene",
+        " vista",
+        " panorama",
+        "position",
+        " perspective",
+        "opinion"
+      ]
     },
     {
-     "word": "strip",
-     "clues": [
-      "long narrow piece"
-     ]
+      "word": "vigorous",
+      "clues": [
+        "strong physically or mentally"
+      ]
     },
     {
-     "word": "stroke",
-     "clues": [
-      "apoplexy",
-      " cerebrovascular accident"
-     ]
+      "word": "village",
+      "clues": [
+        "small town",
+        " settlement"
+      ]
     },
     {
-     "word": "structure",
-     "clues": [
-      "construction"
-     ]
+      "word": "violation",
+      "clues": [
+        "infringement"
+      ]
     },
     {
-     "word": "struggle",
-     "clues": [
-      "strenuous effort"
-     ]
+      "word": "virgin",
+      "clues": [
+        "person who has never had sex"
+      ]
     },
     {
-     "word": "student",
-     "clues": [
-      "pupil",
-      " learner"
-     ]
+      "word": "virtue",
+      "clues": [
+        "moral excellence"
+      ]
     },
     {
-     "word": "studio",
-     "clues": [
-      "workplace for teaching or practice of an art"
-     ]
+      "word": "virus",
+      "clues": [
+        "infectious agent"
+      ]
     },
     {
-     "word": "study",
-     "clues": [
-      "room used for reading and writing and studying"
-     ]
+      "word": "visible",
+      "clues": [
+        "seeable"
+      ]
     },
     {
-     "word": "study",
-     "clues": [
-      "discipline",
-      " subject",
-      " subject area"
-     ]
+      "word": "vision",
+      "clues": [
+        "vivid mental image"
+      ]
     },
     {
-     "word": "study",
-     "clues": [
-      "report",
-      " written report"
-     ]
+      "word": "visit",
+      "clues": [
+        "travel to"
+      ]
     },
     {
-     "word": "style",
-     "clues": [
-      "dash",
-      " elan",
-      " flair",
-      " panache"
-     ]
+      "word": "visual",
+      "clues": [
+        "ocular",
+        " optic",
+        " optical"
+      ]
     },
     {
-     "word": "style",
-     "clues": [
-      "editorial directions"
-     ]
+      "word": "voice",
+      "clues": [
+        "ability to speak"
+      ]
     },
     {
-     "word": "subject",
-     "clues": [
-      "depicted object"
-     ]
+      "word": "volcano",
+      "clues": [
+        "mountain"
+      ]
     },
     {
-     "word": "subject",
-     "clues": [
-      "topic",
-      " theme"
-     ]
+      "word": "volume",
+      "clues": [
+        "loudness",
+        " intensity",
+        "publication",
+        "3-dimensional space"
+      ]
     },
     {
-     "word": "subject",
-     "clues": [
-      "guinea pig"
-     ]
+      "word": "volunteer",
+      "clues": [
+        "unpaid worker"
+      ]
     },
     {
-     "word": "substance",
-     "clues": [
-      "stuff"
-     ]
+      "word": "vote",
+      "clues": [
+        "cast a vote in an election",
+        "ballot",
+        " voting",
+        " balloting",
+        "right to vote",
+        " suffrage"
+      ]
     },
     {
-     "word": "suburb",
-     "clues": [
-      "suburbia",
-      " suburban area"
-     ]
+      "word": "voter",
+      "clues": [
+        "elector"
+      ]
     },
     {
-     "word": "suffering",
-     "clues": [
-      "hurt",
-      " mental or physical pain"
-     ]
+      "word": "voucher",
+      "clues": [
+        "coupon"
+      ]
     },
     {
-     "word": "sugar",
-     "clues": [
-      "refined sugar"
-     ]
+      "word": "voyage",
+      "clues": [
+        "journey to some distant place"
+      ]
     },
     {
-     "word": "suggestion",
-     "clues": [
-      "proposition"
-     ]
+      "word": "wage",
+      "clues": [
+        "pay",
+        " earnings",
+        " remuneration",
+        " salary"
+      ]
     },
     {
-     "word": "suit",
-     "clues": [
-      "suit of clothes"
-     ]
+      "word": "wagon",
+      "clues": [
+        "wheeled vehicle"
+      ]
     },
     {
-     "word": "courtship",
-     "clues": [
-      "wooing",
-      " courting",
-      " suit"
-     ]
+      "word": "waist",
+      "clues": [
+        "waistline"
+      ]
     },
     {
-     "word": "suite",
-     "clues": [
-      "rooms"
-     ]
+      "word": "wait",
+      "clues": [
+        "stay in one place and anticipate something"
+      ]
     },
     {
-     "word": "sulphur",
-     "clues": [
-      "sulfur",
-      " S"
-     ]
+      "word": "waiter",
+      "clues": [
+        "server"
+      ]
     },
     {
-     "word": "sum",
-     "clues": [
-      "sum total"
-     ]
+      "word": "wake",
+      "clues": [
+        "wake up",
+        " stop sleeping",
+        "viewing",
+        " vigil over a corpse"
+      ]
     },
     {
-     "word": "summary",
-     "clues": [
-      "brief statement"
-     ]
+      "word": "walk",
+      "clues": [
+        "use one's feet to advance"
+      ]
     },
     {
-     "word": "summer",
-     "clues": [
-      "summertime"
-     ]
+      "word": "wall",
+      "clues": [
+        "architectural partition"
+      ]
     },
     {
-     "word": "summit",
-     "clues": [
-      "summit meeting"
-     ]
+      "word": "wander",
+      "clues": [
+        "stray",
+        " tramp",
+        " roam",
+        " ramble",
+        " rove",
+        " range",
+        " drift"
+      ]
     },
     {
-     "word": "sun",
-     "clues": [
-      "star that is the source of light and heat"
-     ]
+      "word": "want",
+      "clues": [
+        "desire"
+      ]
     },
     {
-     "word": "sun",
-     "clues": [
-      "sunlight",
-      " sunshine"
-     ]
+      "word": "war",
+      "clues": [
+        "warfare",
+        " armed conflict"
+      ]
     },
     {
-     "word": "Sunday",
-     "clues": [
-      "Lord's Day"
-     ]
+      "word": "ward",
+      "clues": [
+        "hospital ward",
+        "person under protection or custody",
+        "town district"
+      ]
     },
     {
-     "word": "sunrise",
-     "clues": [
-      "daily morning event"
-     ]
+      "word": "wardrobe",
+      "clues": [
+        "collection of clothing"
+      ]
     },
     {
-     "word": "sunshine",
-     "clues": [
-      "fair weather"
-     ]
+      "word": "warm",
+      "clues": [
+        "friendly and responsive",
+        "producing a comfortable degree of heat"
+      ]
     },
     {
-     "word": "superintendent",
-     "clues": [
-      "super"
-     ]
+      "word": "warn",
+      "clues": [
+        "notify of danger",
+        " potential harm",
+        " or risk"
+      ]
     },
     {
-     "word": "supply",
-     "clues": [
-      "amount of something available for use"
-     ]
+      "word": "warning",
+      "clues": [
+        "admonition",
+        " cautionary advice"
+      ]
     },
     {
-     "word": "support",
-     "clues": [
-      "aiding the cause or policy or interests of"
-     ]
+      "word": "warrant",
+      "clues": [
+        "court warrant"
+      ]
     },
     {
-     "word": "support",
-     "clues": [
-      "documentation",
-      " documentary validation"
-     ]
+      "word": "wash",
+      "clues": [
+        "bathe",
+        " cleanse one's body",
+        "launder"
+      ]
     },
     {
-     "word": "support",
-     "clues": [
-      "device that bears the weight of another thing"
-     ]
+      "word": "waste",
+      "clues": [
+        "squander",
+        " spend extravagantly",
+        "squander",
+        " blow",
+        " throw away",
+        " spend thoughtlessly",
+        "thriftlessness",
+        " wastefulness",
+        "waste material",
+        " waste matter",
+        " waste product"
+      ]
     },
     {
-     "word": "support",
-     "clues": [
-      "keep",
-      " livelihood",
-      " living",
-      " bread and butter",
-      " sustenance"
-     ]
+      "word": "watch",
+      "clues": [
+        "chronograph",
+        " timepiece",
+        "lookout",
+        " sentinel",
+        " sentry",
+        "look on",
+        " observe"
+      ]
     },
     {
-     "word": "surface",
-     "clues": [
-      "extended two-dimensional outer boundary"
-     ]
+      "word": "water",
+      "clues": [
+        "H2O"
+      ]
     },
     {
-     "word": "surgeon",
-     "clues": [
-      "operating surgeon"
-     ]
+      "word": "waterfall",
+      "clues": [
+        "cascade"
+      ]
     },
     {
-     "word": "surprise",
-     "clues": [
-      "unexpected event"
-     ]
+      "word": "wave",
+      "clues": [
+        "ridge moving across the surface of a liquid",
+        "beckon",
+        " signal with the hands"
+      ]
     },
     {
-     "word": "survey",
-     "clues": [
-      "sketch",
-      " resume"
-     ]
+      "word": "way",
+      "clues": [
+        "means",
+        " agency",
+        "path",
+        " way of life",
+        " course of conduct"
+      ]
     },
     {
-     "word": "survival",
-     "clues": [
-      "endurance"
-     ]
+      "word": "wea",
+      "clues": [
+        "out] bust",
+        " fall apart",
+        " break"
+      ]
     },
     {
-     "word": "survivor",
-     "clues": [
-      "one who outlives another"
-     ]
+      "word": "weak",
+      "clues": [
+        "having little physical or spiritual strength"
+      ]
     },
     {
-     "word": "survivor",
-     "clues": [
-      "survivor of a disaster"
-     ]
+      "word": "weakness",
+      "clues": [
+        "lack of strength",
+        "failing",
+        " flaw",
+        " weak point"
+      ]
     },
     {
-     "word": "suspect",
-     "clues": [
-      "someone under suspicion"
-     ]
+      "word": "wealth",
+      "clues": [
+        "riches"
+      ]
     },
     {
-     "word": "suspicion",
-     "clues": [
-      "misgiving",
-      " mistrust",
-      " distrust"
-     ]
+      "word": "weapon",
+      "clues": [
+        "arm"
+      ]
     },
     {
-     "word": "suspicion",
-     "clues": [
-      "intuition",
-      " hunch"
-     ]
+      "word": "wear",
+      "clues": [
+        "have on clothes"
+      ]
     },
     {
-     "word": "sweat",
-     "clues": [
-      "perspiration"
-     ]
+      "word": "weather",
+      "clues": [
+        "weather condition"
+      ]
     },
     {
-     "word": "sweater",
-     "clues": [
-      "knitted garment"
-     ]
+      "word": "weave",
+      "clues": [
+        "make cloth"
+      ]
     },
     {
-     "word": "sweet",
-     "clues": [
-      "dessert"
-     ]
+      "word": "wedding",
+      "clues": [
+        "marriage",
+        " marriage ceremony",
+        "wedding ceremony",
+        " nuptials"
+      ]
     },
     {
-     "word": "swing",
-     "clues": [
-      "rapid fluctuation",
-      " vacillation"
-     ]
+      "word": "weed",
+      "clues": [
+        "plant that crowds out cultivated plants"
+      ]
     },
     {
-     "word": "swing",
-     "clues": [
-      "plaything"
-     ]
+      "word": "week",
+      "clues": [
+        "calendar week"
+      ]
     },
     {
-     "word": "switch",
-     "clues": [
-      "electric switch"
-     ]
+      "word": "weigh",
+      "clues": [
+        "determine the weight of",
+        "have a certain weight"
+      ]
     },
     {
-     "word": "sword",
-     "clues": [
-      "blade",
-      " weapon"
-     ]
+      "word": "weight",
+      "clues": [
+        "free weight",
+        " exercising weight",
+        " barbell",
+        "vertical force exerted by a mass",
+        "weight unit",
+        " unit used to measure weight"
+      ]
     },
     {
-     "word": "symbol",
-     "clues": [
-      "sign"
-     ]
+      "word": "welcome",
+      "clues": [
+        "greeting",
+        " reception"
+      ]
     },
     {
-     "word": "symptom",
-     "clues": [
-      "medical symptom"
-     ]
+      "word": "welfare",
+      "clues": [
+        "social welfare",
+        " government-sponsored program",
+        "wellbeing"
+      ]
     },
     {
-     "word": "syndrome",
-     "clues": [
-      "pattern of symptoms"
-     ]
+      "word": "well",
+      "clues": [
+        "in good health",
+        "deep hole with water",
+        " oil",
+        " or gas"
+      ]
     },
     {
-     "word": "system",
-     "clues": [
-      "scheme"
-     ]
+      "word": "west",
+      "clues": [
+        "West",
+        " Occident",
+        "due west",
+        " W"
+      ]
     },
     {
-     "word": "table",
-     "clues": [
-      "piece of furniture"
-     ]
+      "word": "whale",
+      "clues": [
+        "marine mammal"
+      ]
     },
     {
-     "word": "table",
-     "clues": [
-      "tabular array",
-      " data arranged in rows and columns"
-     ]
+      "word": "wheat",
+      "clues": [
+        "cereal"
+      ]
     },
     {
-     "word": "tablet",
-     "clues": [
-      "pill",
-      " lozenge",
-      " medicine"
-     ]
+      "word": "wheel",
+      "clues": [
+        "frame with spokes"
+      ]
     },
     {
-     "word": "tactic",
-     "clues": [
-      "tactics",
-      " maneuver"
-     ]
+      "word": "whip",
+      "clues": [
+        "lash",
+        "lash used for whipping"
+      ]
     },
     {
-     "word": "tail",
-     "clues": [
-      "posterior part of the body of a vertebrate"
-     ]
+      "word": "whisper",
+      "clues": [
+        "speak softly"
+      ]
     },
     {
-     "word": "tail",
-     "clues": [
-      "side of a coin"
-     ]
+      "word": "white",
+      "clues": [
+        "caucasian",
+        "achromatic"
+      ]
     },
     {
-     "word": "talk",
-     "clues": [
-      "talking"
-     ]
+      "word": "whole",
+      "clues": [
+        "including all components"
+      ]
     },
     {
-     "word": "talk",
-     "clues": [
-      "lecture",
-      " public lecture"
-     ]
+      "word": "widen",
+      "clues": [
+        "make wider"
+      ]
     },
     {
-     "word": "tank",
-     "clues": [
-      "army tank",
-      " armored combat vehicle"
-     ]
+      "word": "width",
+      "clues": [
+        "breadth"
+      ]
     },
     {
-     "word": "tap",
-     "clues": [
-      "wiretap",
-      " telephone tap"
-     ]
+      "word": "wife",
+      "clues": [
+        "married woman",
+        " spouse"
+      ]
     },
     {
-     "word": "tap",
-     "clues": [
-      "water faucet",
-      " spigot"
-     ]
+      "word": "wild",
+      "clues": [
+        "marked by lack of restraint or control",
+        "untamed"
+      ]
     },
     {
-     "word": "tape",
-     "clues": [
-      "adhesive tape"
-     ]
+      "word": "wilderness",
+      "clues": [
+        "wild",
+        " uninhabited area"
+      ]
     },
     {
-     "word": "tape",
-     "clues": [
-      "tape recording"
-     ]
+      "word": "will",
+      "clues": [
+        "testament",
+        "volition"
+      ]
     },
     {
-     "word": "tape",
-     "clues": [
-      "tape measure"
-     ]
+      "word": "willpower",
+      "clues": [
+        "self-control"
+      ]
     },
     {
-     "word": "target",
-     "clues": [
-      "mark"
-     ]
+      "word": "win",
+      "clues": [
+        "winnings",
+        " profits",
+        "be victorious"
+      ]
     },
     {
-     "word": "taste",
-     "clues": [
-      "gustation",
-      " sense of taste"
-     ]
+      "word": "wind",
+      "clues": [
+        "air current",
+        " current of air",
+        "wind up",
+        " coil the spring of a mechanism"
+      ]
     },
     {
-     "word": "taste",
-     "clues": [
-      "preference",
-      " penchant",
-      " predilection"
-     ]
+      "word": "window",
+      "clues": [
+        "opening in the wall of a building"
+      ]
     },
     {
-     "word": "tax",
-     "clues": [
-      "taxation",
-      " revenue enhancement"
-     ]
+      "word": "wine",
+      "clues": [
+        "beverage made from fermented grapes"
+      ]
     },
     {
-     "word": "taxi",
-     "clues": [
-      "cab",
-      " hack",
-      " taxicab"
-     ]
+      "word": "wing",
+      "clues": [
+        "biological organ for flying",
+        "airplane wing"
+      ]
     },
     {
-     "word": "tea",
-     "clues": [
-      "beverage"
-     ]
+      "word": "winner",
+      "clues": [
+        "victor"
+      ]
     },
     {
-     "word": "teacher",
-     "clues": [
-      "instructor"
-     ]
+      "word": "winter",
+      "clues": [
+        "wintertime"
+      ]
     },
     {
-     "word": "team",
-     "clues": [
-      "squad",
-      " cooperative unit"
-     ]
+      "word": "wire",
+      "clues": [
+        "metal ligament"
+      ]
     },
     {
-     "word": "tear",
-     "clues": [
-      "teardrop"
-     ]
+      "word": "wisecrack",
+      "clues": [
+        "crack",
+        " quip",
+        " witty remark"
+      ]
     },
     {
-     "word": "technique",
-     "clues": [
-      "proficiency"
-     ]
+      "word": "witch",
+      "clues": [
+        "enchantress",
+        " sorceress"
+      ]
     },
     {
-     "word": "technology",
-     "clues": [
-      "engineering"
-     ]
+      "word": "withdraw",
+      "clues": [
+        "retreat",
+        " pull out",
+        "take out",
+        " draw off"
+      ]
     },
     {
-     "word": "teenager",
-     "clues": [
-      "adolescent"
-     ]
+      "word": "withdrawal",
+      "clues": [
+        "detachment",
+        " avoidance of emotional involvement",
+        "backdown",
+        " retraction"
+      ]
     },
     {
-     "word": "telephone",
-     "clues": [
-      "phone",
-      " telephone set"
-     ]
+      "word": "witness",
+      "clues": [
+        "spectator",
+        " viewer",
+        " watcher",
+        " looker",
+        "person who testifies in court"
+      ]
     },
     {
-     "word": "television",
-     "clues": [
-      "television system",
-      " telecommunication system"
-     ]
+      "word": "wolf",
+      "clues": [
+        "canine mammal"
+      ]
     },
     {
-     "word": "television",
-     "clues": [
-      "television receiver",
-      " T.V. set"
-     ]
+      "word": "woman",
+      "clues": [
+        "adult female"
+      ]
     },
     {
-     "word": "temperature",
-     "clues": [
-      "degree of hotness or coldness"
-     ]
+      "word": "wonder",
+      "clues": [
+        "question",
+        " want to know",
+        "marvel"
+      ]
     },
     {
-     "word": "temple",
-     "clues": [
-      "place of worship"
-     ]
+      "word": "wood",
+      "clues": [
+        "hard substance under the bark of trees"
+      ]
     },
     {
-     "word": "temple",
-     "clues": [
-      "side of the forehead"
-     ]
+      "word": "wool",
+      "clues": [
+        "fabric"
+      ]
     },
     {
-     "word": "temptation",
-     "clues": [
-      "enticement"
-     ]
+      "word": "wor",
+      "clues": [
+        "out] exercise"
+      ]
     },
     {
-     "word": "tenant",
-     "clues": [
-      "renter"
-     ]
+      "word": "word",
+      "clues": [
+        "parole",
+        " word of honor",
+        "unit of language"
+      ]
     },
     {
-     "word": "tendency",
-     "clues": [
-      "inclination",
-      " disposition"
-     ]
+      "word": "wording",
+      "clues": [
+        "phrasing",
+        " choice of words"
+      ]
     },
     {
-     "word": "tension",
-     "clues": [
-      "latent hostility"
-     ]
+      "word": "work",
+      "clues": [
+        "employment",
+        "workplace",
+        "do work",
+        "oeuvre",
+        " body of work"
+      ]
     },
     {
-     "word": "tension",
-     "clues": [
-      "tautness"
-     ]
+      "word": "worker",
+      "clues": [
+        "person who works at a specific occupation"
+      ]
     },
     {
-     "word": "tent",
-     "clues": [
-      "collapsible shelter"
-     ]
+      "word": "workshop",
+      "clues": [
+        "brief intensive course"
+      ]
     },
     {
-     "word": "term",
-     "clues": [
-      "word or expression"
-     ]
+      "word": "world",
+      "clues": [
+        "universe",
+        " existence",
+        " cosmos",
+        " macrocosm",
+        "Earth",
+        " globe",
+        "reality",
+        "populace",
+        " public"
+      ]
     },
     {
-     "word": "terminal",
-     "clues": [
-      "keyboard and monitor"
-     ]
+      "word": "worm",
+      "clues": [
+        "animal",
+        "software program"
+      ]
     },
     {
-     "word": "terrace",
-     "clues": [
-      "patio"
-     ]
+      "word": "worry",
+      "clues": [
+        "be worried"
+      ]
     },
     {
-     "word": "test",
-     "clues": [
-      "trial",
-      " trial run",
-      " tryout"
-     ]
+      "word": "worth",
+      "clues": [
+        "value"
+      ]
     },
     {
-     "word": "test",
-     "clues": [
-      "examination",
-      " exam"
-     ]
+      "word": "wound",
+      "clues": [
+        "lesion"
+      ]
     },
     {
-     "word": "text",
-     "clues": [
-      "textual matter"
-     ]
+      "word": "wrap",
+      "clues": [
+        "enfold in a tissue"
+      ]
     },
     {
-     "word": "text",
-     "clues": [
-      "textbook",
-      " text edition",
-      " schoolbook"
-     ]
+      "word": "wreck",
+      "clues": [
+        "something dilapidated"
+      ]
     },
     {
-     "word": "texture",
-     "clues": [
-      "appearance of a surface or fabric"
-     ]
+      "word": "wrestle",
+      "clues": [
+        "engage in a wrestling match"
+      ]
     },
     {
-     "word": "thanks",
-     "clues": [
-      "acknowledgment of appreciation"
-     ]
+      "word": "wriggle",
+      "clues": [
+        "writhe",
+        " worm",
+        " squirm"
+      ]
     },
     {
-     "word": "theater",
-     "clues": [
-      "dramaturgy",
-      " dramatic art",
-      " dramatics",
-      " theatre"
-     ]
+      "word": "wrist",
+      "clues": [
+        "carpus",
+        " wrist joint"
+      ]
     },
     {
-     "word": "theft",
-     "clues": [
-      "larceny",
-      " thievery",
-      " stealing"
-     ]
+      "word": "write",
+      "clues": [
+        "communicate or express by writing",
+        "publish"
+      ]
     },
     {
-     "word": "theme",
-     "clues": [
-      "motif"
-     ]
+      "word": "writer",
+      "clues": [
+        "author"
+      ]
     },
     {
-     "word": "theme",
-     "clues": [
-      "melodic theme",
-      " musical theme"
-     ]
+      "word": "wrong",
+      "clues": [
+        "contrary to conscience or morality or law",
+        "based on error"
+      ]
     },
     {
-     "word": "theorist",
-     "clues": [
-      "theoretician",
-      " theorizer"
-     ]
+      "word": "X-ray",
+      "clues": [
+        "radiogram",
+        " X-ray picture"
+      ]
     },
     {
-     "word": "theory",
-     "clues": [
-      "hypothesis"
-     ]
+      "word": "yard",
+      "clues": [
+        "3 feet",
+        "grounds"
+      ]
     },
     {
-     "word": "therapist",
-     "clues": [
-      "healer"
-     ]
+      "word": "year",
+      "clues": [
+        "twelvemonth",
+        " yr"
+      ]
     },
     {
-     "word": "thesis",
-     "clues": [
-      "dissertation"
-     ]
+      "word": "yearn",
+      "clues": [
+        "hanker",
+        " long"
+      ]
     },
     {
-     "word": "thigh",
-     "clues": [
-      "part of the leg"
-     ]
+      "word": "young",
+      "clues": [
+        "youthful"
+      ]
     },
     {
-     "word": "thinker",
-     "clues": [
-      "creative thinker",
-      " mind",
-      " important intellectual"
-     ]
+      "word": "youth",
+      "clues": [
+        "young people",
+        "time of life between childhood and maturity"
+      ]
     },
     {
-     "word": "thought",
-     "clues": [
-      "thinking",
-      " cerebration"
-     ]
+      "word": "zero",
+      "clues": [
+        "0",
+        " naught"
+      ]
     },
     {
-     "word": "thread",
-     "clues": [
-      "thin yarn",
-      " fine cord of twisted fibers"
-     ]
-    },
-    {
-     "word": "threat",
-     "clues": [
-      "menace",
-      " source of danger"
-     ]
-    },
-    {
-     "word": "threshold",
-     "clues": [
-      "doorsill",
-      " doorstep"
-     ]
-    },
-    {
-     "word": "brink",
-     "clues": [
-      "threshold",
-      " verge"
-     ]
-    },
-    {
-     "word": "throat",
-     "clues": [
-      "pharynx",
-      " passage to the stomach and lungs"
-     ]
-    },
-    {
-     "word": "throne",
-     "clues": [
-      "chair of a monarch"
-     ]
-    },
-    {
-     "word": "thumb",
-     "clues": [
-      "finger"
-     ]
-    },
-    {
-     "word": "ticket",
-     "clues": [
-      "traffic ticket",
-      " summons"
-     ]
-    },
-    {
-     "word": "ticket",
-     "clues": [
-      "entry or access ticket"
-     ]
-    },
-    {
-     "word": "tie",
-     "clues": [
-      "necktie"
-     ]
-    },
-    {
-     "word": "tie",
-     "clues": [
-      "draw",
-      " standoff"
-     ]
-    },
-    {
-     "word": "tiger",
-     "clues": [
-      "large feline"
-     ]
-    },
-    {
-     "word": "tile",
-     "clues": [
-      "flat thin slab"
-     ]
-    },
-    {
-     "word": "timber",
-     "clues": [
-      "lumber"
-     ]
-    },
-    {
-     "word": "time",
-     "clues": [
-      "clock time"
-     ]
-    },
-    {
-     "word": "timetable",
-     "clues": [
-      "arrival and departure schedule"
-     ]
-    },
-    {
-     "word": "can",
-     "clues": [
-      "tin can"
-     ]
-    },
-    {
-     "word": "tin",
-     "clues": [
-      "atomic number 50",
-      " silvery metal"
-     ]
-    },
-    {
-     "word": "tip",
-     "clues": [
-      "lead",
-      " confidential information"
-     ]
-    },
-    {
-     "word": "tip",
-     "clues": [
-      "point",
-      " extreme end"
-     ]
-    },
-    {
-     "word": "tip",
-     "clues": [
-      "gratuity"
-     ]
-    },
-    {
-     "word": "tissue",
-     "clues": [
-      "aggregate of cells"
-     ]
-    },
-    {
-     "word": "tissue",
-     "clues": [
-      "tissue paper"
-     ]
-    },
-    {
-     "word": "title",
-     "clues": [
-      "claim"
-     ]
-    },
-    {
-     "word": "title",
-     "clues": [
-      "heading"
-     ]
-    },
-    {
-     "word": "title",
-     "clues": [
-      "title of respect"
-     ]
-    },
-    {
-     "word": "title",
-     "clues": [
-      "deed",
-      " deed of conveyance",
-      " legal document"
-     ]
-    },
-    {
-     "word": "title",
-     "clues": [
-      "championship"
-     ]
-    },
-    {
-     "word": "toast",
-     "clues": [
-      "bread"
-     ]
-    },
-    {
-     "word": "toll",
-     "clues": [
-      "fee for the use of roads or bridges"
-     ]
-    },
-    {
-     "word": "ton",
-     "clues": [
-      "unit of weight"
-     ]
-    },
-    {
-     "word": "tone",
-     "clues": [
-      "tone of voice"
-     ]
-    },
-    {
-     "word": "tongue",
-     "clues": [
-      "body part"
-     ]
-    },
-    {
-     "word": "tongue",
-     "clues": [
-      "natural language"
-     ]
-    },
-    {
-     "word": "tool",
-     "clues": [
-      "implement"
-     ]
-    },
-    {
-     "word": "tooth",
-     "clues": [
-      "projection on a gear"
-     ]
-    },
-    {
-     "word": "tooth",
-     "clues": [
-      "bonelike structure in the jaws"
-     ]
-    },
-    {
-     "word": "top",
-     "clues": [
-      "garment that extends from the shoulders to the waist or hips"
-     ]
-    },
-    {
-     "word": "top",
-     "clues": [
-      "spinning top"
-     ]
-    },
-    {
-     "word": "top",
-     "clues": [
-      "top side",
-      " upper side",
-      " upside"
-     ]
-    },
-    {
-     "word": "top",
-     "clues": [
-      "peak",
-      " crown",
-      " crest",
-      " tip",
-      " summit"
-     ]
-    },
-    {
-     "word": "torch",
-     "clues": [
-      "lit stick carried in one's hand"
-     ]
-    },
-    {
-     "word": "torture",
-     "clues": [
-      "torturing"
-     ]
-    },
-    {
-     "word": "touch",
-     "clues": [
-      "sense of touch"
-     ]
-    },
-    {
-     "word": "tourist",
-     "clues": [
-      "visitor on holiday"
-     ]
-    },
-    {
-     "word": "tournament",
-     "clues": [
-      "tourney",
-      " sporting competition"
-     ]
-    },
-    {
-     "word": "tower",
-     "clues": [
-      "structure"
-     ]
-    },
-    {
-     "word": "toy",
-     "clues": [
-      "plaything"
-     ]
-    },
-    {
-     "word": "trace",
-     "clues": [
-      "footprint"
-     ]
-    },
-    {
-     "word": "track",
-     "clues": [
-      "data track",
-      " circular magnetic path on a disk"
-     ]
-    },
-    {
-     "word": "track",
-     "clues": [
-      "racetrack",
-      " racecourse",
-      " raceway"
-     ]
-    },
-    {
-     "word": "track",
-     "clues": [
-      "lead",
-      " trail",
-      " evidence"
-     ]
-    },
-    {
-     "word": "tract",
-     "clues": [
-      "pamphlet"
-     ]
-    },
-    {
-     "word": "trade",
-     "clues": [
-      "craft",
-      " skilled practice of a practical occupation"
-     ]
-    },
-    {
-     "word": "trade",
-     "clues": [
-      "deal",
-      " business deal",
-      " instance of buying or selling"
-     ]
-    },
-    {
-     "word": "trade",
-     "clues": [
-      "barter",
-      " swap",
-      " swop"
-     ]
-    },
-    {
-     "word": "tradition",
-     "clues": [
-      "custom",
-      " practice of long standing"
-     ]
-    },
-    {
-     "word": "traffic",
-     "clues": [
-      "buying and selling"
-     ]
-    },
-    {
-     "word": "traffic",
-     "clues": [
-      "pedestrians or vehicles"
-     ]
-    },
-    {
-     "word": "tragedy",
-     "clues": [
-      "theatrical drama"
-     ]
-    },
-    {
-     "word": "train",
-     "clues": [
-      "railroad train"
-     ]
-    },
-    {
-     "word": "trainer",
-     "clues": [
-      "one who trains persons or animals"
-     ]
-    },
-    {
-     "word": "training",
-     "clues": [
-      "preparation",
-      " grooming"
-     ]
-    },
-    {
-     "word": "trait",
-     "clues": [
-      "distinguishing feature of your personal nature"
-     ]
-    },
-    {
-     "word": "transaction",
-     "clues": [
-      "commercial dealing"
-     ]
-    },
-    {
-     "word": "transfer",
-     "clues": [
-      "transportation",
-      " transferral",
-      " conveyance"
-     ]
-    },
-    {
-     "word": "transition",
-     "clues": [
-      "conversion",
-      " changeover"
-     ]
-    },
-    {
-     "word": "transmission",
-     "clues": [
-      "automobile transmission"
-     ]
-    },
-    {
-     "word": "transport",
-     "clues": [
-      "transportation",
-      " shipping"
-     ]
-    },
-    {
-     "word": "ecstasy",
-     "clues": [
-      "rapture"
-     ]
-    },
-    {
-     "word": "trap",
-     "clues": [
-      "snare",
-      " device for catching"
-     ]
-    },
-    {
-     "word": "tray",
-     "clues": [
-      "open receptacle"
-     ]
-    },
-    {
-     "word": "treasurer",
-     "clues": [
-      "financial officer"
-     ]
-    },
-    {
-     "word": "treat",
-     "clues": [
-      "special pleasurable occurrence"
-     ]
-    },
-    {
-     "word": "treatment",
-     "clues": [
-      "handling"
-     ]
-    },
-    {
-     "word": "treatment",
-     "clues": [
-      "discussion",
-      " discourse"
-     ]
-    },
-    {
-     "word": "treaty",
-     "clues": [
-      "pact",
-      " accord"
-     ]
-    },
-    {
-     "word": "tree",
-     "clues": [
-      "tall perennial woody plant"
-     ]
-    },
-    {
-     "word": "trench",
-     "clues": [
-      "ditch"
-     ]
-    },
-    {
-     "word": "trend",
-     "clues": [
-      "tendency"
-     ]
-    },
-    {
-     "word": "trial",
-     "clues": [
-      "legal proceedings"
-     ]
-    },
-    {
-     "word": "trial",
-     "clues": [
-      "tribulation"
-     ]
-    },
-    {
-     "word": "triangle",
-     "clues": [
-      "trilateral"
-     ]
-    },
-    {
-     "word": "tribe",
-     "clues": [
-      "clan"
-     ]
-    },
-    {
-     "word": "tribute",
-     "clues": [
-      "testimonial",
-      " expression of esteem"
-     ]
-    },
-    {
-     "word": "trick",
-     "clues": [
-      "magic trick"
-     ]
-    },
-    {
-     "word": "trick",
-     "clues": [
-      "fast one"
-     ]
-    },
-    {
-     "word": "trolley",
-     "clues": [
-      "streetcar",
-      " tram"
-     ]
-    },
-    {
-     "word": "troop",
-     "clues": [
-      "group of soldiers"
-     ]
-    },
-    {
-     "word": "trouble",
-     "clues": [
-      "event causing distress or pain"
-     ]
-    },
-    {
-     "word": "trouble",
-     "clues": [
-      "worry"
-     ]
-    },
-    {
-     "word": "trouser",
-     "clues": [
-      "pants"
-     ]
-    },
-    {
-     "word": "truck",
-     "clues": [
-      "motortruck",
-      " lorry"
-     ]
-    },
-    {
-     "word": "trunk",
-     "clues": [
-      "luggage compartment",
-      " automobile trunk"
-     ]
-    },
-    {
-     "word": "trust",
-     "clues": [
-      "corporate trust",
-      " combine",
-      " cartel"
-     ]
-    },
-    {
-     "word": "trust",
-     "clues": [
-      "confidence",
-      " trustful relationship"
-     ]
-    },
-    {
-     "word": "trustee",
-     "clues": [
-      "legal guardian"
-     ]
-    },
-    {
-     "word": "truth",
-     "clues": [
-      "true statement"
-     ]
-    },
-    {
-     "word": "truth",
-     "clues": [
-      "verity",
-      " trueness",
-      " conformity to reality"
-     ]
-    },
-    {
-     "word": "subway",
-     "clues": [
-      "metro",
-      " underground",
-      " tube"
-     ]
-    },
-    {
-     "word": "tube",
-     "clues": [
-      "hollow cylinder"
-     ]
-    },
-    {
-     "word": "tumour",
-     "clues": [
-      "tumor",
-      " neoplasm"
-     ]
-    },
-    {
-     "word": "tune",
-     "clues": [
-      "melody",
-      " air",
-      " strain",
-      " melodic line"
-     ]
-    },
-    {
-     "word": "tunnel",
-     "clues": [
-      "passageway"
-     ]
-    },
-    {
-     "word": "turkey",
-     "clues": [
-      "bird domesticated for food"
-     ]
-    },
-    {
-     "word": "turn",
-     "clues": [
-      "bend",
-      " crook",
-      " circular segment of a curve"
-     ]
-    },
-    {
-     "word": "twin",
-     "clues": [
-      "offspring born at the same time"
-     ]
-    },
-    {
-     "word": "braid",
-     "clues": [
-      "plait",
-      " tress",
-      " hairdo"
-     ]
-    },
-    {
-     "word": "twist",
-     "clues": [
-      "wrench",
-      " jerky pulling movement"
-     ]
-    },
-    {
-     "word": "tycoon",
-     "clues": [
-      "baron",
-      " big businessman",
-      " business leader",
-      " king",
-      " magnate",
-      " mogul"
-     ]
-    },
-    {
-     "word": "tire",
-     "clues": [
-      "hoop covering a wheel"
-     ]
-    },
-    {
-     "word": "umbrella",
-     "clues": [
-      "handheld collapsible canopy"
-     ]
-    },
-    {
-     "word": "uncertainty",
-     "clues": [
-      "uncertainness",
-      " precariousness"
-     ]
-    },
-    {
-     "word": "uncle",
-     "clues": [
-      "parent's brother"
-     ]
-    },
-    {
-     "word": "understanding",
-     "clues": [
-      "sympathy",
-      " compassion"
-     ]
-    },
-    {
-     "word": "uniform",
-     "clues": [
-      "professional clothing"
-     ]
-    },
-    {
-     "word": "union",
-     "clues": [
-      "labor union",
-      " trade union"
-     ]
-    },
-    {
-     "word": "marriage",
-     "clues": [
-      "union",
-      " matrimony",
-      " spousal relationship",
-      " wedlock"
-     ]
-    },
-    {
-     "word": "unit",
-     "clues": [
-      "single undivided whole"
-     ]
-    },
-    {
-     "word": "unity",
-     "clues": [
-      "integrity",
-      " wholeness"
-     ]
-    },
-    {
-     "word": "unrest",
-     "clues": [
-      "feeling of agitation"
-     ]
-    },
-    {
-     "word": "urge",
-     "clues": [
-      "strong restless desire"
-     ]
-    },
-    {
-     "word": "urgency",
-     "clues": [
-      "urgent situation calling for prompt action"
-     ]
-    },
-    {
-     "word": "urine",
-     "clues": [
-      "piss",
-      " pee",
-      " piddle",
-      " weewee",
-      " water"
-     ]
-    },
-    {
-     "word": "use",
-     "clues": [
-      "habit",
-      " usage"
-     ]
-    },
-    {
-     "word": "use",
-     "clues": [
-      "function",
-      " purpose",
-      " role"
-     ]
-    },
-    {
-     "word": "use",
-     "clues": [
-      "consumption"
-     ]
-    },
-    {
-     "word": "user",
-     "clues": [
-      "drug user",
-      " substance abuser"
-     ]
-    },
-    {
-     "word": "vacuum",
-     "clues": [
-      "vacuum cleaner"
-     ]
-    },
-    {
-     "word": "vacuum",
-     "clues": [
-      "void",
-      " vacancy",
-      " emptiness"
-     ]
-    },
-    {
-     "word": "valley",
-     "clues": [
-      "vale"
-     ]
-    },
-    {
-     "word": "value",
-     "clues": [
-      "numerical quantity measured or assigned or computed"
-     ]
-    },
-    {
-     "word": "value",
-     "clues": [
-      "ideal accepted by some individual or group"
-     ]
-    },
-    {
-     "word": "value",
-     "clues": [
-      "economic value",
-      " amount of money or goods or services"
-     ]
-    },
-    {
-     "word": "van",
-     "clues": [
-      "vehicle"
-     ]
-    },
-    {
-     "word": "avant-garde",
-     "clues": [
-      "vanguard",
-      " new wave"
-     ]
-    },
-    {
-     "word": "variable",
-     "clues": [
-      "variable quantity"
-     ]
-    },
-    {
-     "word": "variant",
-     "clues": [
-      "variation",
-      " something a little different"
-     ]
-    },
-    {
-     "word": "variation",
-     "clues": [
-      "fluctuation"
-     ]
-    },
-    {
-     "word": "variety",
-     "clues": [
-      "diverseness",
-      " diversity"
-     ]
-    },
-    {
-     "word": "vat",
-     "clues": [
-      "tub"
-     ]
-    },
-    {
-     "word": "vegetable",
-     "clues": [
-      "veggie",
-      " greens"
-     ]
-    },
-    {
-     "word": "vegetarian",
-     "clues": [
-      "person who eats no meat"
-     ]
-    },
-    {
-     "word": "vegetation",
-     "clues": [
-      "flora",
-      " botany"
-     ]
-    },
-    {
-     "word": "vehicle",
-     "clues": [
-      "conveyance"
-     ]
-    },
-    {
-     "word": "veil",
-     "clues": [
-      "head covering"
-     ]
-    },
-    {
-     "word": "vein",
-     "clues": [
-      "blood vessel"
-     ]
-    },
-    {
-     "word": "velvet",
-     "clues": [
-      "silky densely piled fabric"
-     ]
-    },
-    {
-     "word": "venture",
-     "clues": [
-      "risky commercial undertaking"
-     ]
-    },
-    {
-     "word": "Venus",
-     "clues": [
-      "planet evening star morning star"
-     ]
-    },
-    {
-     "word": "verdict",
-     "clues": [
-      "legal verdict"
-     ]
-    },
-    {
-     "word": "version",
-     "clues": [
-      "interpretation from a certain viewpoint"
-     ]
-    },
-    {
-     "word": "version",
-     "clues": [
-      "adaptation"
-     ]
-    },
-    {
-     "word": "vessel",
-     "clues": [
-      "watercraft"
-     ]
-    },
-    {
-     "word": "vessel",
-     "clues": [
-      "container"
-     ]
-    },
-    {
-     "word": "veteran",
-     "clues": [
-      "veteran soldier"
-     ]
-    },
-    {
-     "word": "victory",
-     "clues": [
-      "triumph"
-     ]
-    },
-    {
-     "word": "video",
-     "clues": [
-      "video recording"
-     ]
-    },
-    {
-     "word": "view",
-     "clues": [
-      "aspect",
-      " prospect",
-      " scene",
-      " vista",
-      " panorama"
-     ]
-    },
-    {
-     "word": "view",
-     "clues": [
-      "position",
-      " perspective"
-     ]
-    },
-    {
-     "word": "view",
-     "clues": [
-      "opinion"
-     ]
-    },
-    {
-     "word": "village",
-     "clues": [
-      "small town",
-      " settlement"
-     ]
-    },
-    {
-     "word": "violation",
-     "clues": [
-      "infringement"
-     ]
-    },
-    {
-     "word": "virgin",
-     "clues": [
-      "person who has never had sex"
-     ]
-    },
-    {
-     "word": "virtue",
-     "clues": [
-      "moral excellence"
-     ]
-    },
-    {
-     "word": "virus",
-     "clues": [
-      "infectious agent"
-     ]
-    },
-    {
-     "word": "compute",
-     "clues": [
-      "virus] virus"
-     ]
-    },
-    {
-     "word": "vision",
-     "clues": [
-      "vivid mental image"
-     ]
-    },
-    {
-     "word": "voice",
-     "clues": [
-      "ability to speak"
-     ]
-    },
-    {
-     "word": "spokesperson",
-     "clues": [
-      "interpreter",
-      " representative"
-     ]
-    },
-    {
-     "word": "volcano",
-     "clues": [
-      "mountain"
-     ]
-    },
-    {
-     "word": "volume",
-     "clues": [
-      "loudness",
-      " intensity"
-     ]
-    },
-    {
-     "word": "volume",
-     "clues": [
-      "publication"
-     ]
-    },
-    {
-     "word": "volume",
-     "clues": [
-      "3-dimensional space"
-     ]
-    },
-    {
-     "word": "volunteer",
-     "clues": [
-      "unpaid worker"
-     ]
-    },
-    {
-     "word": "vote",
-     "clues": [
-      "ballot",
-      " voting",
-      " balloting"
-     ]
-    },
-    {
-     "word": "vote",
-     "clues": [
-      "right to vote",
-      " suffrage"
-     ]
-    },
-    {
-     "word": "voter",
-     "clues": [
-      "elector"
-     ]
-    },
-    {
-     "word": "voucher",
-     "clues": [
-      "coupon"
-     ]
-    },
-    {
-     "word": "voyage",
-     "clues": [
-      "journey to some distant place"
-     ]
-    },
-    {
-     "word": "wage",
-     "clues": [
-      "pay",
-      " earnings",
-      " remuneration",
-      " salary"
-     ]
-    },
-    {
-     "word": "wagon",
-     "clues": [
-      "wheeled vehicle"
-     ]
-    },
-    {
-     "word": "waist",
-     "clues": [
-      "waistline"
-     ]
-    },
-    {
-     "word": "wake",
-     "clues": [
-      "viewing",
-      " vigil over a corpse"
-     ]
-    },
-    {
-     "word": "wall",
-     "clues": [
-      "architectural partition"
-     ]
-    },
-    {
-     "word": "war",
-     "clues": [
-      "warfare",
-      " armed conflict"
-     ]
-    },
-    {
-     "word": "ward",
-     "clues": [
-      "hospital ward"
-     ]
-    },
-    {
-     "word": "ward",
-     "clues": [
-      "town district"
-     ]
-    },
-    {
-     "word": "ward",
-     "clues": [
-      "person under protection or custody"
-     ]
-    },
-    {
-     "word": "wardrobe",
-     "clues": [
-      "collection of clothing"
-     ]
-    },
-    {
-     "word": "warning",
-     "clues": [
-      "admonition",
-      " cautionary advice"
-     ]
-    },
-    {
-     "word": "warrant",
-     "clues": [
-      "court warrant"
-     ]
-    },
-    {
-     "word": "waste",
-     "clues": [
-      "thriftlessness",
-      " wastefulness"
-     ]
-    },
-    {
-     "word": "waste",
-     "clues": [
-      "waste material",
-      " waste matter",
-      " waste product"
-     ]
-    },
-    {
-     "word": "watch",
-     "clues": [
-      "chronograph",
-      " timepiece"
-     ]
-    },
-    {
-     "word": "watch",
-     "clues": [
-      "lookout",
-      " sentinel",
-      " sentry"
-     ]
-    },
-    {
-     "word": "water",
-     "clues": [
-      "H2O"
-     ]
-    },
-    {
-     "word": "waterfall",
-     "clues": [
-      "cascade"
-     ]
-    },
-    {
-     "word": "wave",
-     "clues": [
-      "ridge moving across the surface of a liquid"
-     ]
-    },
-    {
-     "word": "way",
-     "clues": [
-      "path",
-      " way of life",
-      " course of conduct"
-     ]
-    },
-    {
-     "word": "way",
-     "clues": [
-      "means",
-      " agency"
-     ]
-    },
-    {
-     "word": "weakness",
-     "clues": [
-      "lack of strength"
-     ]
-    },
-    {
-     "word": "weakness",
-     "clues": [
-      "failing",
-      " flaw",
-      " weak point"
-     ]
-    },
-    {
-     "word": "wealth",
-     "clues": [
-      "riches"
-     ]
-    },
-    {
-     "word": "weapon",
-     "clues": [
-      "arm"
-     ]
-    },
-    {
-     "word": "weather",
-     "clues": [
-      "weather condition"
-     ]
-    },
-    {
-     "word": "wedding",
-     "clues": [
-      "wedding ceremony",
-      " nuptials"
-     ]
-    },
-    {
-     "word": "weed",
-     "clues": [
-      "plant that crowds out cultivated plants"
-     ]
-    },
-    {
-     "word": "week",
-     "clues": [
-      "calendar week"
-     ]
-    },
-    {
-     "word": "weight",
-     "clues": [
-      "free weight",
-      " exercising weight",
-      " barbell"
-     ]
-    },
-    {
-     "word": "weight",
-     "clues": [
-      "vertical force exerted by a mass"
-     ]
-    },
-    {
-     "word": "weight",
-     "clues": [
-      "weight unit",
-      " unit used to measure weight"
-     ]
-    },
-    {
-     "word": "welcome",
-     "clues": [
-      "greeting",
-      " reception"
-     ]
-    },
-    {
-     "word": "welfare",
-     "clues": [
-      "social welfare",
-      " government-sponsored program"
-     ]
-    },
-    {
-     "word": "welfare",
-     "clues": [
-      "wellbeing"
-     ]
-    },
-    {
-     "word": "well",
-     "clues": [
-      "deep hole with water",
-      " oil",
-      " or gas"
-     ]
-    },
-    {
-     "word": "west",
-     "clues": [
-      "West",
-      " Occident"
-     ]
-    },
-    {
-     "word": "west",
-     "clues": [
-      "due west",
-      " W"
-     ]
-    },
-    {
-     "word": "whale",
-     "clues": [
-      "marine mammal"
-     ]
-    },
-    {
-     "word": "wheat",
-     "clues": [
-      "cereal"
-     ]
-    },
-    {
-     "word": "wheel",
-     "clues": [
-      "frame with spokes"
-     ]
-    },
-    {
-     "word": "bike",
-     "clues": [
-      "bicycle",
-      " bike",
-      " cycle",
-      " wheel"
-     ]
-    },
-    {
-     "word": "whip",
-     "clues": [
-      "lash used for whipping"
-     ]
-    },
-    {
-     "word": "eg",
-     "clues": [
-      "white] albumen"
-     ]
-    },
-    {
-     "word": "width",
-     "clues": [
-      "breadth"
-     ]
-    },
-    {
-     "word": "wife",
-     "clues": [
-      "married woman",
-      " spouse"
-     ]
-    },
-    {
-     "word": "wilderness",
-     "clues": [
-      "wild",
-      " uninhabited area"
-     ]
-    },
-    {
-     "word": "will",
-     "clues": [
-      "volition"
-     ]
-    },
-    {
-     "word": "will",
-     "clues": [
-      "testament"
-     ]
-    },
-    {
-     "word": "willpower",
-     "clues": [
-      "self-control"
-     ]
-    },
-    {
-     "word": "win",
-     "clues": [
-      "winnings",
-      " profits"
-     ]
-    },
-    {
-     "word": "wind",
-     "clues": [
-      "air current",
-      " current of air"
-     ]
-    },
-    {
-     "word": "window",
-     "clues": [
-      "opening in the wall of a building"
-     ]
-    },
-    {
-     "word": "wine",
-     "clues": [
-      "beverage made from fermented grapes"
-     ]
-    },
-    {
-     "word": "wing",
-     "clues": [
-      "biological organ for flying"
-     ]
-    },
-    {
-     "word": "wing",
-     "clues": [
-      "airplane wing"
-     ]
-    },
-    {
-     "word": "winner",
-     "clues": [
-      "victor"
-     ]
-    },
-    {
-     "word": "winter",
-     "clues": [
-      "wintertime"
-     ]
-    },
-    {
-     "word": "wire",
-     "clues": [
-      "metal ligament"
-     ]
-    },
-    {
-     "word": "witch",
-     "clues": [
-      "enchantress",
-      " sorceress"
-     ]
-    },
-    {
-     "word": "withdrawal",
-     "clues": [
-      "backdown",
-      " retraction"
-     ]
-    },
-    {
-     "word": "withdrawal",
-     "clues": [
-      "detachment",
-      " avoidance of emotional involvement"
-     ]
-    },
-    {
-     "word": "witness",
-     "clues": [
-      "spectator",
-      " viewer",
-      " watcher",
-      " looker"
-     ]
-    },
-    {
-     "word": "witness",
-     "clues": [
-      "person who testifies in court"
-     ]
-    },
-    {
-     "word": "wolf",
-     "clues": [
-      "canine mammal"
-     ]
-    },
-    {
-     "word": "woman",
-     "clues": [
-      "adult female"
-     ]
-    },
-    {
-     "word": "wonder",
-     "clues": [
-      "marvel"
-     ]
-    },
-    {
-     "word": "wood",
-     "clues": [
-      "hard substance under the bark of trees"
-     ]
-    },
-    {
-     "word": "wool",
-     "clues": [
-      "fabric"
-     ]
-    },
-    {
-     "word": "word",
-     "clues": [
-      "unit of language"
-     ]
-    },
-    {
-     "word": "word",
-     "clues": [
-      "parole",
-      " word of honor"
-     ]
-    },
-    {
-     "word": "wording",
-     "clues": [
-      "phrasing",
-      " choice of words"
-     ]
-    },
-    {
-     "word": "work",
-     "clues": [
-      "employment"
-     ]
-    },
-    {
-     "word": "work",
-     "clues": [
-      "workplace"
-     ]
-    },
-    {
-     "word": "work",
-     "clues": [
-      "oeuvre",
-      " body of work"
-     ]
-    },
-    {
-     "word": "worker",
-     "clues": [
-      "person who works at a specific occupation"
-     ]
-    },
-    {
-     "word": "workshop",
-     "clues": [
-      "brief intensive course"
-     ]
-    },
-    {
-     "word": "world",
-     "clues": [
-      "reality"
-     ]
-    },
-    {
-     "word": "world",
-     "clues": [
-      "populace",
-      " public"
-     ]
-    },
-    {
-     "word": "world",
-     "clues": [
-      "Earth",
-      " globe"
-     ]
-    },
-    {
-     "word": "world",
-     "clues": [
-      "universe",
-      " existence",
-      " cosmos",
-      " macrocosm"
-     ]
-    },
-    {
-     "word": "worm",
-     "clues": [
-      "animal"
-     ]
-    },
-    {
-     "word": "worm",
-     "clues": [
-      "software program"
-     ]
-    },
-    {
-     "word": "worth",
-     "clues": [
-      "value"
-     ]
-    },
-    {
-     "word": "wound",
-     "clues": [
-      "lesion"
-     ]
-    },
-    {
-     "word": "wreck",
-     "clues": [
-      "something dilapidated"
-     ]
-    },
-    {
-     "word": "wrist",
-     "clues": [
-      "carpus",
-      " wrist joint"
-     ]
-    },
-    {
-     "word": "writer",
-     "clues": [
-      "author"
-     ]
-    },
-    {
-     "word": "X-ray",
-     "clues": [
-      "radiogram",
-      " X-ray picture"
-     ]
-    },
-    {
-     "word": "yard",
-     "clues": [
-      "grounds"
-     ]
-    },
-    {
-     "word": "yard",
-     "clues": [
-      "3 feet"
-     ]
-    },
-    {
-     "word": "year",
-     "clues": [
-      "twelvemonth",
-      " yr"
-     ]
-    },
-    {
-     "word": "youth",
-     "clues": [
-      "young people"
-     ]
-    },
-    {
-     "word": "youth",
-     "clues": [
-      "time of life between childhood and maturity"
-     ]
-    },
-    {
-     "word": "zero",
-     "clues": [
-      "0",
-      " naught"
-     ]
-    },
-    {
-     "word": "zone",
-     "clues": [
-      "geographical region"
-     ]
-    },
-    {
-     "word": "abandon",
-     "clues": [
-      "forsake",
-      " desert"
-     ]
-    },
-    {
-     "word": "abolish",
-     "clues": [
-      "get rid of"
-     ]
-    },
-    {
-     "word": "abridge",
-     "clues": [
-      "shorten",
-      " cut"
-     ]
-    },
-    {
-     "word": "absorb",
-     "clues": [
-      "take in",
-      " suck up"
-     ]
-    },
-    {
-     "word": "accept",
-     "clues": [
-      "live with",
-      " put up with"
-     ]
-    },
-    {
-     "word": "accompany",
-     "clues": [
-      "go or come with"
-     ]
-    },
-    {
-     "word": "activate",
-     "clues": [
-      "make active"
-     ]
-    },
-    {
-     "word": "add",
-     "clues": [
-      "total"
-     ]
-    },
-    {
-     "word": "adjust",
-     "clues": [
-      "conform",
-      " adapt"
-     ]
-    },
-    {
-     "word": "admire",
-     "clues": [
-      "look up to"
-     ]
-    },
-    {
-     "word": "admit",
-     "clues": [
-      "acknowledge"
-     ]
-    },
-    {
-     "word": "admit",
-     "clues": [
-      "allow in",
-      " let in",
-      " allow to enter"
-     ]
-    },
-    {
-     "word": "adopt",
-     "clues": [
-      "take in as a child"
-     ]
-    },
-    {
-     "word": "adopt",
-     "clues": [
-      "borrow",
-      " take over",
-      " take up"
-     ]
-    },
-    {
-     "word": "advance",
-     "clues": [
-      "progress",
-      " pass on",
-      " move on",
-      " march on",
-      " go on"
-     ]
-    },
-    {
-     "word": "affect",
-     "clues": [
-      "impact",
-      " bear upon"
-     ]
-    },
-    {
-     "word": "feign",
-     "clues": [
-      "sham",
-      " pretend",
-      " dissemble",
-      " simulate"
-     ]
-    },
-    {
-     "word": "afford",
-     "clues": [
-      "have the financial means"
-     ]
-    },
-    {
-     "word": "age",
-     "clues": [
-      "get older"
-     ]
-    },
-    {
-     "word": "agree",
-     "clues": [
-      "consent",
-      " assent"
-     ]
-    },
-    {
-     "word": "match",
-     "clues": [
-      "fit",
-      " correspond",
-      " check",
-      " agree"
-     ]
-    },
-    {
-     "word": "allow",
-     "clues": [
-      "permit",
-      " let"
-     ]
-    },
-    {
-     "word": "amputate",
-     "clues": [
-      "cut off",
-      " remove surgically"
-     ]
-    },
-    {
-     "word": "amuse",
-     "clues": [
-      "make laugh"
-     ]
-    },
-    {
-     "word": "answer",
-     "clues": [
-      "reply",
-      " respond"
-     ]
-    },
-    {
-     "word": "appeal",
-     "clues": [
-      "challenge a decision"
-     ]
-    },
-    {
-     "word": "appear",
-     "clues": [
-      "come into view"
-     ]
-    },
-    {
-     "word": "applaud",
-     "clues": [
-      "clap one's hands"
-     ]
-    },
-    {
-     "word": "appoint",
-     "clues": [
-      "name",
-      " nominate"
-     ]
-    },
-    {
-     "word": "appreciate",
-     "clues": [
-      "recognize with gratitude"
-     ]
-    },
-    {
-     "word": "approach",
-     "clues": [
-      "near",
-      " draw near",
-      " draw close",
-      " come near"
-     ]
-    },
-    {
-     "word": "approve",
-     "clues": [
-      "O.K.",
-      " okay",
-      " sanction"
-     ]
-    },
-    {
-     "word": "arrange",
-     "clues": [
-      "set up",
-      " order"
-     ]
-    },
-    {
-     "word": "arrange",
-     "clues": [
-      "set up",
-      " put in systematic order"
-     ]
-    },
-    {
-     "word": "arrest",
-     "clues": [
-      "apprehend",
-      " pick up",
-      " take into custody"
-     ]
-    },
-    {
-     "word": "articulate",
-     "clues": [
-      "enunciate"
-     ]
-    },
-    {
-     "word": "ask",
-     "clues": [
-      "inquire"
-     ]
-    },
-    {
-     "word": "expect",
-     "clues": [
-      "require",
-      " ask"
-     ]
-    },
-    {
-     "word": "assume",
-     "clues": [
-      "presume",
-      " take for granted",
-      " take to be the case"
-     ]
-    },
-    {
-     "word": "impound",
-     "clues": [
-      "confiscate",
-      " seize"
-     ]
-    },
-    {
-     "word": "attack",
-     "clues": [
-      "assail",
-      " assault",
-      " attack physically or emotionally"
-     ]
-    },
-    {
-     "word": "attract",
-     "clues": [
-      "appeal",
-      " be attractive to"
-     ]
-    },
-    {
-     "word": "authorise",
-     "clues": [
-      "empower"
-     ]
-    },
-    {
-     "word": "endorse",
-     "clues": [
-      "second",
-      " back",
-      " support"
-     ]
-    },
-    {
-     "word": "bake",
-     "clues": [
-      "prepare with dry heat"
-     ]
-    },
-    {
-     "word": "balance",
-     "clues": [
-      "equilibrate",
-      " bring into balance or equilibrium"
-     ]
-    },
-    {
-     "word": "ostracize",
-     "clues": [
-      "shun",
-      " blackball",
-      " expel from a community"
-     ]
-    },
-    {
-     "word": "banish",
-     "clues": [
-      "bar",
-      " relegate",
-      " expel"
-     ]
-    },
-    {
-     "word": "bargain",
-     "clues": [
-      "negotiate",
-      " dicker"
-     ]
-    },
-    {
-     "word": "bark",
-     "clues": [
-      "make barking sounds"
-     ]
-    },
-    {
-     "word": "carry",
-     "clues": [
-      "bear"
-     ]
-    },
-    {
-     "word": "beat",
-     "clues": [
-      "vanquish",
-      " come out better in a competition or race"
-     ]
-    },
-    {
-     "word": "beat",
-     "clues": [
-      "hit repeatedly"
-     ]
-    },
-    {
-     "word": "scramble",
-     "clues": [
-      "beat",
-      " stir vigorously"
-     ]
-    },
-    {
-     "word": "beat",
-     "clues": [
-      "pound",
-      " thump",
-      " move rhythmically"
-     ]
-    },
-    {
-     "word": "beat",
-     "clues": [
-      "be superior to"
-     ]
-    },
-    {
-     "word": "beg",
-     "clues": [
-      "ask for money or goods"
-     ]
-    },
-    {
-     "word": "begin",
-     "clues": [
-      "start",
-      " commence",
-      " cause to start"
-     ]
-    },
-    {
-     "word": "behave",
-     "clues": [
-      "comport",
-      " act in a certain manner"
-     ]
-    },
-    {
-     "word": "behead",
-     "clues": [
-      "decapitate",
-      " cut the head off"
-     ]
-    },
-    {
-     "word": "belong",
-     "clues": [
-      "be owned by"
-     ]
-    },
-    {
-     "word": "flex",
-     "clues": [
-      "bend"
-     ]
-    },
-    {
-     "word": "bend",
-     "clues": [
-      "crouch",
-      " stoop",
-      " bow"
-     ]
-    },
-    {
-     "word": "bet",
-     "clues": [
-      "wager"
-     ]
-    },
-    {
-     "word": "betray",
-     "clues": [
-      "deceive"
-     ]
-    },
-    {
-     "word": "bind",
-     "clues": [
-      "tie or secure with a rope or cable"
-     ]
-    },
-    {
-     "word": "bond",
-     "clues": [
-      "create social or emotional ties"
-     ]
-    },
-    {
-     "word": "bite",
-     "clues": [
-      "seize with teeth"
-     ]
-    },
-    {
-     "word": "blame",
-     "clues": [
-      "fault put the blame on"
-     ]
-    },
-    {
-     "word": "blame",
-     "clues": [
-      "find fault",
-      " pick on"
-     ]
-    },
-    {
-     "word": "blast",
-     "clues": [
-      "blare"
-     ]
-    },
-    {
-     "word": "bleed",
-     "clues": [
-      "shed blood"
-     ]
-    },
-    {
-     "word": "bless",
-     "clues": [
-      "give a benediction to"
-     ]
-    },
-    {
-     "word": "block",
-     "clues": [
-      "obstruct",
-      " hinder",
-      " stymie"
-     ]
-    },
-    {
-     "word": "waste",
-     "clues": [
-      "squander",
-      " blow",
-      " throw away",
-      " spend thoughtlessly"
-     ]
-    },
-    {
-     "word": "board",
-     "clues": [
-      "get on"
-     ]
-    },
-    {
-     "word": "bomb",
-     "clues": [
-      "bombard"
-     ]
-    },
-    {
-     "word": "borrow",
-     "clues": [
-      "obtain temporarily"
-     ]
-    },
-    {
-     "word": "bother",
-     "clues": [
-      "annoy",
-      " irritate"
-     ]
-    },
-    {
-     "word": "bounce",
-     "clues": [
-      "move up and down repeatedly"
-     ]
-    },
-    {
-     "word": "bow",
-     "clues": [
-      "bend the head or the upper body in respect or greeting"
-     ]
-    },
-    {
-     "word": "brag",
-     "clues": [
-      "show off",
-      " boast"
-     ]
-    },
-    {
-     "word": "break",
-     "clues": [
-      "destroy"
-     ]
-    },
-    {
-     "word": "disclose",
-     "clues": [
-      "bring out",
-      " reveal",
-      " expose",
-      " divulge"
-     ]
-    },
-    {
-     "word": "pause",
-     "clues": [
-      "pause",
-      " take a break"
-     ]
-    },
-    {
-     "word": "wea",
-     "clues": [
-      "out] bust",
-      " fall apart",
-      " break"
-     ]
-    },
-    {
-     "word": "brea",
-     "clues": [
-      "in] enter illegally"
-     ]
-    },
-    {
-     "word": "breathe",
-     "clues": [
-      "take a breath",
-      " respire"
-     ]
-    },
-    {
-     "word": "breed",
-     "clues": [
-      "raise",
-      " cause to reproduce"
-     ]
-    },
-    {
-     "word": "bring",
-     "clues": [
-      "bring along"
-     ]
-    },
-    {
-     "word": "bring",
-     "clues": [
-      "fetch",
-      " bring in",
-      " be sold for a certain price"
-     ]
-    },
-    {
-     "word": "brush",
-     "clues": [
-      "rub with a brush"
-     ]
-    },
-    {
-     "word": "displace",
-     "clues": [
-      "bump"
-     ]
-    },
-    {
-     "word": "burn",
-     "clues": [
-      "bite",
-      " sting",
-      " cause a sharp or stinging pain"
-     ]
-    },
-    {
-     "word": "burn",
-     "clues": [
-      "combust",
-      " cause to burn"
-     ]
-    },
-    {
-     "word": "burst",
-     "clues": [
-      "bust",
-      " break open"
-     ]
-    },
-    {
-     "word": "bury",
-     "clues": [
-      "place in the ground as for hiding"
-     ]
-    },
-    {
-     "word": "buy",
-     "clues": [
-      "purchase",
-      " acquire"
-     ]
-    },
-    {
-     "word": "call",
-     "clues": [
-      "telephone",
-      " call up",
-      " phone",
-      " ring"
-     ]
-    },
-    {
-     "word": "call",
-     "clues": [
-      "name"
-     ]
-    },
-    {
-     "word": "call",
-     "clues": [
-      "send for"
-     ]
-    },
-    {
-     "word": "call",
-     "clues": [
-      "shout",
-      " shout out",
-      " cry",
-      " yell",
-      " holler"
-     ]
-    },
-    {
-     "word": "predict",
-     "clues": [
-      "call",
-      " foretell",
-      " prognosticate",
-      " forebode"
-     ]
-    },
-    {
-     "word": "calm",
-     "clues": [
-      "calm down",
-      " quiet",
-      " tranquilize",
-      " quieten"
-     ]
-    },
-    {
-     "word": "cancel",
-     "clues": [
-      "call off"
-     ]
-    },
-    {
-     "word": "captivate",
-     "clues": [
-      "beguile",
-      " charm",
-      " bewitch",
-      " entrance",
-      " enchant"
-     ]
-    },
-    {
-     "word": "capture",
-     "clues": [
-      "take possession of by force",
-      " seize",
-      " conquer"
-     ]
-    },
-    {
-     "word": "care",
-     "clues": [
-      "feel concern or interest"
-     ]
-    },
-    {
-     "word": "carry",
-     "clues": [
-      "transport"
-     ]
-    },
-    {
-     "word": "carve",
-     "clues": [
-      "cut up",
-      " cut to pieces"
-     ]
-    },
-    {
-     "word": "hurl",
-     "clues": [
-      "cast",
-      " hurtle",
-      " throw forcefully"
-     ]
-    },
-    {
-     "word": "cast",
-     "clues": [
-      "select for a play or movie"
-     ]
-    },
-    {
-     "word": "catch",
-     "clues": [
-      "grab",
-      " take hold of"
-     ]
-    },
-    {
-     "word": "capture",
-     "clues": [
-      "catch"
-     ]
-    },
-    {
-     "word": "cater",
-     "clues": [
-      "supply food ready to eat"
-     ]
-    },
-    {
-     "word": "challenge",
-     "clues": [
-      "dispute",
-      " call into question"
-     ]
-    },
-    {
-     "word": "change",
-     "clues": [
-      "alter",
-      " make or become different"
-     ]
-    },
-    {
-     "word": "switch",
-     "clues": [
-      "change",
-      " shift",
-      " change one thing for another"
-     ]
-    },
-    {
-     "word": "charge",
-     "clues": [
-      "energize a battery"
-     ]
-    },
-    {
-     "word": "charge",
-     "clues": [
-      "accuse"
-     ]
-    },
-    {
-     "word": "charge",
-     "clues": [
-      "pay with a credit card"
-     ]
-    },
-    {
-     "word": "charge",
-     "clues": [
-      "demand payment"
-     ]
-    },
-    {
-     "word": "chase",
-     "clues": [
-      "chase after",
-      " give chase"
-     ]
-    },
-    {
-     "word": "check",
-     "clues": [
-      "check off",
-      " mark",
-      " mark off",
-      " tick off",
-      " tick"
-     ]
-    },
-    {
-     "word": "check",
-     "clues": [
-      "check out",
-      " verify"
-     ]
-    },
-    {
-     "word": "chew",
-     "clues": [
-      "masticate"
-     ]
-    },
-    {
-     "word": "choke",
-     "clues": [
-      "gag",
-      " suffocate"
-     ]
-    },
-    {
-     "word": "choke",
-     "clues": [
-      "strangle"
-     ]
-    },
-    {
-     "word": "chop",
-     "clues": [
-      "chop up"
-     ]
-    },
-    {
-     "word": "claim",
-     "clues": [
-      "assert",
-      " affirm"
-     ]
-    },
-    {
-     "word": "clarify",
-     "clues": [
-      "clear up",
-      " elucidate",
-      " make comprehensible"
-     ]
-    },
-    {
-     "word": "classify",
-     "clues": [
-      "declare unavailable"
-     ]
-    },
-    {
-     "word": "clear",
-     "clues": [
-      "empty",
-      " remove the occupants of"
-     ]
-    },
-    {
-     "word": "acquit",
-     "clues": [
-      "clear",
-      " pronounce not guilty"
-     ]
-    },
-    {
-     "word": "climb",
-     "clues": [
-      "climb up",
-      " mount",
-      " go up"
-     ]
-    },
-    {
-     "word": "close",
-     "clues": [
-      "shut"
-     ]
-    },
-    {
-     "word": "close",
-     "clues": [
-      "finish",
-      " terminate",
-      " conclude",
-      " end"
-     ]
-    },
-    {
-     "word": "coincide",
-     "clues": [
-      "concur",
-      " happen simultaneously"
-     ]
-    },
-    {
-     "word": "collapse",
-     "clues": [
-      "crumble",
-      " crumple",
-      " tumble"
-     ]
-    },
-    {
-     "word": "collect",
-     "clues": [
-      "pick up"
-     ]
-    },
-    {
-     "word": "combine",
-     "clues": [
-      "blend",
-      " mix",
-      " conflate",
-      " commingle",
-      " fuse",
-      " merge"
-     ]
-    },
-    {
-     "word": "comfort",
-     "clues": [
-      "soothe",
-      " console"
-     ]
-    },
-    {
-     "word": "remunerate",
-     "clues": [
-      "compensate"
-     ]
-    },
-    {
-     "word": "compete",
-     "clues": [
-      "vie",
-      " contend"
-     ]
-    },
-    {
-     "word": "complain",
-     "clues": [
-      "express discontent"
-     ]
-    },
-    {
-     "word": "compromise",
-     "clues": [
-      "make a compromise"
-     ]
-    },
-    {
-     "word": "concede",
-     "clues": [
-      "acknowledge defeat"
-     ]
-    },
-    {
-     "word": "conceive",
-     "clues": [
-      "become pregnant"
-     ]
-    },
-    {
-     "word": "concentrate",
-     "clues": [
-      "focus",
-      " focus one's attention"
-     ]
-    },
-    {
-     "word": "confine",
-     "clues": [
-      "detain"
-     ]
-    },
-    {
-     "word": "confront",
-     "clues": [
-      "come face to face with"
-     ]
-    },
-    {
-     "word": "consider",
-     "clues": [
-      "debate",
-      " think about"
-     ]
-    },
-    {
-     "word": "consolidate",
-     "clues": [
-      "unite into one"
-     ]
-    },
-    {
-     "word": "construct",
-     "clues": [
-      "manufacture",
-      " fabricate"
-     ]
-    },
-    {
-     "word": "contain",
-     "clues": [
-      "incorporate",
-      " comprise"
-     ]
-    },
-    {
-     "word": "control",
-     "clues": [
-      "operate",
-      " handle"
-     ]
-    },
-    {
-     "word": "command",
-     "clues": [
-      "control"
-     ]
-    },
-    {
-     "word": "convert",
-     "clues": [
-      "change religious beliefs"
-     ]
-    },
-    {
-     "word": "convict",
-     "clues": [
-      "find guilty"
-     ]
-    },
-    {
-     "word": "convince",
-     "clues": [
-      "convert",
-      " win over"
-     ]
-    },
-    {
-     "word": "falsify",
-     "clues": [
-      "manipulate",
-      " fake",
-      " fudge",
-      " cook",
-      " misrepresent"
-     ]
-    },
-    {
-     "word": "cooperate",
-     "clues": [
-      "collaborate",
-      " join forces"
-     ]
-    },
-    {
-     "word": "cope",
-     "clues": [
-      "get by",
-      " make do",
-      " manage"
-     ]
-    },
-    {
-     "word": "copy",
-     "clues": [
-      "imitate",
-      " simulate"
-     ]
-    },
-    {
-     "word": "copy",
-     "clues": [
-      "re-create",
-      " replicate"
-     ]
-    },
-    {
-     "word": "correspond",
-     "clues": [
-      "exchange messages"
-     ]
-    },
-    {
-     "word": "count",
-     "clues": [
-      "number",
-      " enumerate"
-     ]
-    },
-    {
-     "word": "treat",
-     "clues": [
-      "handle",
-      " deal with",
-      " address",
-      " cover"
-     ]
-    },
-    {
-     "word": "cover",
-     "clues": [
-      "provide with a covering"
-     ]
-    },
-    {
-     "word": "crash",
-     "clues": [
-      "cease operating abruptly"
-     ]
-    },
-    {
-     "word": "smash",
-     "clues": [
-      "break apart"
-     ]
-    },
-    {
-     "word": "dash",
-     "clues": [
-      "smash",
-      " hurl or thrust violently"
-     ]
-    },
-    {
-     "word": "crash",
-     "clues": [
-      "fall or come down violently"
-     ]
-    },
-    {
-     "word": "create",
-     "clues": [
-      "bring into existence"
-     ]
-    },
-    {
-     "word": "creep",
-     "clues": [
-      "crawl"
-     ]
-    },
-    {
-     "word": "cower",
-     "clues": [
-      "fawn",
-      " cringe",
-      " grovel",
-      " show submission or fear"
-     ]
-    },
-    {
-     "word": "crop",
-     "clues": [
-      "cut short"
-     ]
-    },
-    {
-     "word": "graze",
-     "clues": [
-      "pasture"
-     ]
-    },
-    {
-     "word": "cross",
-     "clues": [
-      "traverse"
-     ]
-    },
-    {
-     "word": "crouch",
-     "clues": [
-      "squat"
-     ]
-    },
-    {
-     "word": "cry",
-     "clues": [
-      "weep"
-     ]
-    },
-    {
-     "word": "cultivate",
-     "clues": [
-      "domesticate",
-      " naturalize",
-      " naturalise",
-      " tame"
-     ]
-    },
-    {
-     "word": "curl",
-     "clues": [
-      "coil",
-      " loop"
-     ]
-    },
-    {
-     "word": "reduce",
-     "clues": [
-      "cut down",
-      " cut back",
-      " trim"
-     ]
-    },
-    {
-     "word": "cut",
-     "clues": [
-      "cleave"
-     ]
-    },
-    {
-     "word": "damn",
-     "clues": [
-      "curse"
-     ]
-    },
-    {
-     "word": "dance",
-     "clues": [
-      "move in a pattern to music"
-     ]
-    },
-    {
-     "word": "dare",
-     "clues": [
-      "be courageous enough to try or do something"
-     ]
-    },
-    {
-     "word": "debate",
-     "clues": [
-      "deliberate"
-     ]
-    },
-    {
-     "word": "debut",
-     "clues": [
-      "appear in public for the first time"
-     ]
-    },
-    {
-     "word": "decide",
-     "clues": [
-      "make up one's mind"
-     ]
-    },
-    {
-     "word": "determine",
-     "clues": [
-      "influence"
-     ]
-    },
-    {
-     "word": "decline",
-     "clues": [
-      "worsen"
-     ]
-    },
-    {
-     "word": "decrease",
-     "clues": [
-      "lessen",
-      " make smaller or less"
-     ]
-    },
-    {
-     "word": "dedicate",
-     "clues": [
-      "inscribe or address by way of compliment"
-     ]
-    },
-    {
-     "word": "defend",
-     "clues": [
-      "represent in a court of law"
-     ]
-    },
-    {
-     "word": "define",
-     "clues": [
-      "give a definition for"
-     ]
-    },
-    {
-     "word": "delay",
-     "clues": [
-      "detain",
-      " hold up"
-     ]
-    },
-    {
-     "word": "delay",
-     "clues": [
-      "act later than planned"
-     ]
-    },
-    {
-     "word": "delete",
-     "clues": [
-      "erase",
-      " wipe out information"
-     ]
-    },
-    {
-     "word": "deliver",
-     "clues": [
-      "make a delivery",
-      " bring"
-     ]
-    },
-    {
-     "word": "deport",
-     "clues": [
-      "extradite",
-      " hand over to the authorities of another country"
-     ]
-    },
-    {
-     "word": "rescue",
-     "clues": [
-      "deliver",
-      " free from harm"
-     ]
-    },
-    {
-     "word": "demand",
-     "clues": [
-      "request urgently and forcefully"
-     ]
-    },
-    {
-     "word": "demolish",
-     "clues": [
-      "destroy"
-     ]
-    },
-    {
-     "word": "demonstrate",
-     "clues": [
-      "march",
-      " march in protest"
-     ]
-    },
-    {
-     "word": "deny",
-     "clues": [
-      "contradict",
-      " declare untrue"
-     ]
-    },
-    {
-     "word": "deny",
-     "clues": [
-      "refuse to grant"
-     ]
-    },
-    {
-     "word": "digress",
-     "clues": [
-      "sidetrack"
-     ]
-    },
-    {
-     "word": "depend",
-     "clues": [
-      "be contingent upon"
-     ]
-    },
-    {
-     "word": "deprive",
-     "clues": [
-      "keep from having or obtaining"
-     ]
-    },
-    {
-     "word": "describe",
-     "clues": [
-      "depict"
-     ]
-    },
-    {
-     "word": "desert",
-     "clues": [
-      "defect"
-     ]
-    },
-    {
-     "word": "deserve",
-     "clues": [
-      "merit",
-      " be worthy or deserving"
-     ]
-    },
-    {
-     "word": "despise",
-     "clues": [
-      "scorn",
-      " disdain"
-     ]
-    },
-    {
-     "word": "deter",
-     "clues": [
-      "dissuade"
-     ]
-    },
-    {
-     "word": "deteriorate",
-     "clues": [
-      "become worse",
-      " disintegrate"
-     ]
-    },
-    {
-     "word": "modernize",
-     "clues": [
-      "develop"
-     ]
-    },
-    {
-     "word": "train",
-     "clues": [
-      "prepare",
-      " educate"
-     ]
-    },
-    {
-     "word": "develop",
-     "clues": [
-      "make something new",
-      " invent"
-     ]
-    },
-    {
-     "word": "arise",
-     "clues": [
-      "originate",
-      " develop",
-      " come into existence"
-     ]
-    },
-    {
-     "word": "devote",
-     "clues": [
-      "dedicate",
-      " commit to a specific cause or function"
-     ]
-    },
-    {
-     "word": "dictate",
-     "clues": [
-      "say out loud for the purpose of recording"
-     ]
-    },
-    {
-     "word": "brea",
-     "clues": [
-      "down] die",
-      " conk out"
-     ]
-    },
-    {
-     "word": "die",
-     "clues": [
-      "suffer death"
-     ]
-    },
-    {
-     "word": "disagree",
-     "clues": [
-      "differ",
-      " take issue"
-     ]
-    },
-    {
-     "word": "differ",
-     "clues": [
-      "be different"
-     ]
-    },
-    {
-     "word": "excavate",
-     "clues": [
-      "hollow",
-      " hollow out"
-     ]
-    },
-    {
-     "word": "dilute",
-     "clues": [
-      "thin",
-      " reduce",
-      " cut"
-     ]
-    },
-    {
-     "word": "dine",
-     "clues": [
-      "have supper"
-     ]
-    },
-    {
-     "word": "dip",
-     "clues": [
-      "slope downwards"
-     ]
-    },
-    {
-     "word": "direct",
-     "clues": [
-      "point somebody into a certain direction"
-     ]
-    },
-    {
-     "word": "direct",
-     "clues": [
-      "guide actors"
-     ]
-    },
-    {
-     "word": "disappear",
-     "clues": [
-      "vanish"
-     ]
-    },
-    {
-     "word": "disappoint",
-     "clues": [
-      "let down"
-     ]
-    },
-    {
-     "word": "discourage",
-     "clues": [
-      "deter"
-     ]
-    },
-    {
-     "word": "discover",
-     "clues": [
-      "come upon",
-      " chance upon",
-      " come across"
-     ]
-    },
-    {
-     "word": "discuss",
-     "clues": [
-      "talk over"
-     ]
-    },
-    {
-     "word": "dismiss",
-     "clues": [
-      "fire",
-      " give notice",
-      " give the axe",
-      " sack"
-     ]
-    },
-    {
-     "word": "display",
-     "clues": [
-      "expose",
-      " exhibit"
-     ]
-    },
-    {
-     "word": "quarrel",
-     "clues": [
-      "dispute",
-      " argue"
-     ]
-    },
-    {
-     "word": "thaw",
-     "clues": [
-      "unfreeze",
-      " unthaw",
-      " dethaw",
-      " melt"
-     ]
-    },
-    {
-     "word": "distort",
-     "clues": [
-      "falsify"
-     ]
-    },
-    {
-     "word": "distribute",
-     "clues": [
-      "give out",
-      " hand out"
-     ]
-    },
-    {
-     "word": "dive",
-     "clues": [
-      "plunge into water"
-     ]
-    },
-    {
-     "word": "divide",
-     "clues": [
-      "split",
-      " split up",
-      " separate"
-     ]
-    },
-    {
-     "word": "divorce",
-     "clues": [
-      "split up"
-     ]
-    },
-    {
-     "word": "document",
-     "clues": [
-      "record in detail"
-     ]
-    },
-    {
-     "word": "dominate",
-     "clues": [
-      "be in control"
-     ]
-    },
-    {
-     "word": "double",
-     "clues": [
-      "increase twofold",
-      " duplicate"
-     ]
-    },
-    {
-     "word": "doubt",
-     "clues": [
-      "consider unlikely"
-     ]
-    },
-    {
-     "word": "drag",
-     "clues": [
-      "pull against a resistance"
-     ]
-    },
-    {
-     "word": "trail",
-     "clues": [
-      "be behind",
-      " hang back",
-      " drop behind"
-     ]
-    },
-    {
-     "word": "drain",
-     "clues": [
-      "empty of liquid"
-     ]
-    },
-    {
-     "word": "tie",
-     "clues": [
-      "tie",
-      " finish a game with an equal number of points"
-     ]
-    },
-    {
-     "word": "pull",
-     "clues": [
-      "draw"
-     ]
-    },
-    {
-     "word": "draw",
-     "clues": [
-      "attract",
-      " pull",
-      " pull in",
-      " draw in"
-     ]
-    },
-    {
-     "word": "draw",
-     "clues": [
-      "represent by making a drawing of"
-     ]
-    },
-    {
-     "word": "withdraw",
-     "clues": [
-      "take out",
-      " draw off"
-     ]
-    },
-    {
-     "word": "dress",
-     "clues": [
-      "clothe"
-     ]
-    },
-    {
-     "word": "drink",
-     "clues": [
-      "imbibe",
-      " take in liquids"
-     ]
-    },
-    {
-     "word": "drive",
-     "clues": [
-      "travel by vehicle"
-     ]
-    },
-    {
-     "word": "deteriorate",
-     "clues": [
-      "degenerate",
-      " grow worse"
-     ]
-    },
-    {
-     "word": "dribble",
-     "clues": [
-      "drip"
-     ]
-    },
-    {
-     "word": "drop",
-     "clues": [
-      "let fall"
-     ]
-    },
-    {
-     "word": "drown",
-     "clues": [
-      "die in water"
-     ]
-    },
-    {
-     "word": "drug",
-     "clues": [
-      "dose",
-      " medicate"
-     ]
-    },
-    {
-     "word": "dump",
-     "clues": [
-      "discard",
-      " dispose",
-      " toss out"
-     ]
-    },
-    {
-     "word": "ditch",
-     "clues": [
-      "dump",
-      " unceremoniously sever all ties with"
-     ]
-    },
-    {
-     "word": "eat",
-     "clues": [
-      "take in solid food"
-     ]
-    },
-    {
-     "word": "eavesdrop",
-     "clues": [
-      "listen in"
-     ]
-    },
-    {
-     "word": "choose",
-     "clues": [
-      "elect to do"
-     ]
-    },
-    {
-     "word": "elect",
-     "clues": [
-      "select by in an election"
-     ]
-    },
-    {
-     "word": "eliminate",
-     "clues": [
-      "get rid of",
-      " do away with"
-     ]
-    },
-    {
-     "word": "embark",
-     "clues": [
-      "venture"
-     ]
-    },
-    {
-     "word": "employ",
-     "clues": [
-      "hire",
-      " engage"
-     ]
-    },
-    {
-     "word": "encourage",
-     "clues": [
-      "spur on"
-     ]
-    },
-    {
-     "word": "endure",
-     "clues": [
-      "weather",
-      " brave"
-     ]
-    },
-    {
-     "word": "enhance",
-     "clues": [
-      "make better or more attractive"
-     ]
-    },
-    {
-     "word": "enlarge",
-     "clues": [
-      "magnify",
-      " blow up"
-     ]
-    },
-    {
-     "word": "ensure",
-     "clues": [
-      "guarantee",
-      " insure",
-      " assure",
-      " secure"
-     ]
-    },
-    {
-     "word": "enter",
-     "clues": [
-      "come in",
-      " get into",
-      " get in",
-      " go into",
-      " go in"
-     ]
-    },
-    {
-     "word": "enter",
-     "clues": [
-      "enroll",
-      " inscribe"
-     ]
-    },
-    {
-     "word": "entertain",
-     "clues": [
-      "provide entertainment"
-     ]
-    },
-    {
-     "word": "escape",
-     "clues": [
-      "get away",
-      " break loose",
-      " run away from confinement"
-     ]
-    },
-    {
-     "word": "establish",
-     "clues": [
-      "install",
-      " set up"
-     ]
-    },
-    {
-     "word": "exaggerate",
-     "clues": [
-      "overstate"
-     ]
-    },
-    {
-     "word": "exceed",
-     "clues": [
-      "surpass",
-      " outstrip",
-      " outmatch",
-      " outdo"
-     ]
-    },
-    {
-     "word": "exclude",
-     "clues": [
-      "except",
-      " leave out",
-      " leave off",
-      " omit"
-     ]
-    },
-    {
-     "word": "eject",
-     "clues": [
-      "expel",
-      " throw out",
-      " kick out"
-     ]
-    },
-    {
-     "word": "excuse",
-     "clues": [
-      "forgive",
-      " pardon"
-     ]
-    },
-    {
-     "word": "execute",
-     "clues": [
-      "put to death"
-     ]
-    },
-    {
-     "word": "prosper",
-     "clues": [
-      "boom",
-      " thrive",
-      " flourish"
-     ]
-    },
-    {
-     "word": "elaborate",
-     "clues": [
-      "expand",
-      " expatiate",
-      " enlarge",
-      " flesh out"
-     ]
-    },
-    {
-     "word": "expand",
-     "clues": [
-      "spread out",
-      " extend in one or more directions",
-      " spread"
-     ]
-    },
-    {
-     "word": "expect",
-     "clues": [
-      "anticipate"
-     ]
-    },
-    {
-     "word": "experiment",
-     "clues": [
-      "conduct a test or investigation"
-     ]
-    },
-    {
-     "word": "explain",
-     "clues": [
-      "explicate"
-     ]
-    },
-    {
-     "word": "explode",
-     "clues": [
-      "detonate",
-      " blow up"
-     ]
-    },
-    {
-     "word": "explode",
-     "clues": [
-      "show a violent emotional reaction"
-     ]
-    },
-    {
-     "word": "exploit",
-     "clues": [
-      "manipulate to one's advantage"
-     ]
-    },
-    {
-     "word": "export",
-     "clues": [
-      "sell abroad"
-     ]
-    },
-    {
-     "word": "expose",
-     "clues": [
-      "debunk"
-     ]
-    },
-    {
-     "word": "extend",
-     "clues": [
-      "widen",
-      " broaden in scope or range or area"
-     ]
-    },
-    {
-     "word": "confront",
-     "clues": [
-      "face",
-      " face up to"
-     ]
-    },
-    {
-     "word": "fade",
-     "clues": [
-      "wither"
-     ]
-    },
-    {
-     "word": "fail",
-     "clues": [
-      "go wrong"
-     ]
-    },
-    {
-     "word": "faint",
-     "clues": [
-      "pass out"
-     ]
-    },
-    {
-     "word": "decrease",
-     "clues": [
-      "diminish",
-      " fall"
-     ]
-    },
-    {
-     "word": "fall",
-     "clues": [
-      "descend in free fall"
-     ]
-    },
-    {
-     "word": "fan",
-     "clues": [
-      "agitate the air"
-     ]
-    },
-    {
-     "word": "fascinate",
-     "clues": [
-      "intrigue"
-     ]
-    },
-    {
-     "word": "fast",
-     "clues": [
-      "abstain from food"
-     ]
-    },
-    {
-     "word": "fear",
-     "clues": [
-      "dread",
-      " be afraid of"
-     ]
-    },
-    {
-     "word": "feel",
-     "clues": [
-      "experience",
-      " undergo an emotional sensation"
-     ]
-    },
-    {
-     "word": "fight",
-     "clues": [
-      "struggle"
-     ]
-    },
-    {
-     "word": "fill",
-     "clues": [
-      "fill up",
-      " make full"
-     ]
-    },
-    {
-     "word": "film",
-     "clues": [
-      "record on film"
-     ]
-    },
-    {
-     "word": "find",
-     "clues": [
-      "discover"
-     ]
-    },
-    {
-     "word": "find",
-     "clues": [
-      "recover",
-      " retrieve",
-      " regain"
-     ]
-    },
-    {
-     "word": "finish",
-     "clues": [
-      "complete"
-     ]
-    },
-    {
-     "word": "fire",
-     "clues": [
-      "discharge a weapon"
-     ]
-    },
-    {
-     "word": "equip",
-     "clues": [
-      "fit out",
-      " outfit"
-     ]
-    },
-    {
-     "word": "fit",
-     "clues": [
-      "conform to shape or size"
-     ]
-    },
-    {
-     "word": "fix",
-     "clues": [
-      "repair",
-      " mend"
-     ]
-    },
-    {
-     "word": "flash",
-     "clues": [
-      "blink",
-      " wink",
-      " twinkle"
-     ]
-    },
-    {
-     "word": "fling",
-     "clues": [
-      "throw with force or recklessness"
-     ]
-    },
-    {
-     "word": "splurge",
-     "clues": [
-      "indulge oneself"
-     ]
-    },
-    {
-     "word": "flood",
-     "clues": [
-      "inundate",
-      " fill quickly beyond capacity"
-     ]
-    },
-    {
-     "word": "flourish",
-     "clues": [
-      "thrive",
-      " prosper"
-     ]
-    },
-    {
-     "word": "flush",
-     "clues": [
-      "blush",
-      " redden"
-     ]
-    },
-    {
-     "word": "flush",
-     "clues": [
-      "cause to flow or flood"
-     ]
-    },
-    {
-     "word": "fly",
-     "clues": [
-      "travel through the air",
-      " be airborne"
-     ]
-    },
-    {
-     "word": "fold",
-     "clues": [
-      "fold up",
-      " bend or lay so that one part covers the other"
-     ]
-    },
-    {
-     "word": "follow",
-     "clues": [
-      "go behind"
-     ]
-    },
-    {
-     "word": "follow",
-     "clues": [
-      "comply"
-     ]
-    },
-    {
-     "word": "follow",
-     "clues": [
-      "succeed",
-      " come after"
-     ]
-    },
-    {
-     "word": "foo",
-     "clues": [
-      "around] horse around",
-      " fool"
-     ]
-    },
-    {
-     "word": "forbid",
-     "clues": [
-      "prohibit",
-      " interdict"
-     ]
-    },
-    {
-     "word": "force",
-     "clues": [
-      "move something forcibly"
-     ]
-    },
-    {
-     "word": "coerce",
-     "clues": [
-      "pressure",
-      " force",
-      " compel"
-     ]
-    },
-    {
-     "word": "forge",
-     "clues": [
-      "fake",
-      " counterfeit"
-     ]
-    },
-    {
-     "word": "forget",
-     "clues": [
-      "block",
-      " blank out",
-      " draw a blank",
-      " fail to remember"
-     ]
-    },
-    {
-     "word": "form",
-     "clues": [
-      "shape",
-      " give shape to"
-     ]
-    },
-    {
-     "word": "organize",
-     "clues": [
-      "form"
-     ]
-    },
-    {
-     "word": "formulate",
-     "clues": [
-      "word",
-      " phrase",
-      " articulate"
-     ]
-    },
-    {
-     "word": "foster",
-     "clues": [
-      "nurture"
-     ]
-    },
-    {
-     "word": "frame",
-     "clues": [
-      "ensnare",
-      " entrap",
-      " set up"
-     ]
-    },
-    {
-     "word": "frame",
-     "clues": [
-      "enclose in a frame"
-     ]
-    },
-    {
-     "word": "exempt",
-     "clues": [
-      "free",
-      " grant an exemption"
-     ]
-    },
-    {
-     "word": "freeze",
-     "clues": [
-      "feel or be cold"
-     ]
-    },
-    {
-     "word": "freeze",
-     "clues": [
-      "change to ice"
-     ]
-    },
-    {
-     "word": "frighten",
-     "clues": [
-      "scare",
-      " cause fear in"
-     ]
-    },
-    {
-     "word": "fund",
-     "clues": [
-      "finance",
-      " underwrite"
-     ]
-    },
-    {
-     "word": "gain",
-     "clues": [
-      "profit",
-      " benefit"
-     ]
-    },
-    {
-     "word": "gasp",
-     "clues": [
-      "pant",
-      " puff",
-      " heave"
-     ]
-    },
-    {
-     "word": "generate",
-     "clues": [
-      "bring forth",
-      " produce"
-     ]
-    },
-    {
-     "word": "get",
-     "clues": [
-      "acquire"
-     ]
-    },
-    {
-     "word": "feed",
-     "clues": [
-      "provide with food"
-     ]
-    },
-    {
-     "word": "give",
-     "clues": [
-      "yield",
-      " be flexible"
-     ]
-    },
-    {
-     "word": "give",
-     "clues": [
-      "render",
-      " yield",
-      " return",
-      " generate"
-     ]
-    },
-    {
-     "word": "give",
-     "clues": [
-      "collapse",
-      " fall in",
-      " cave in",
-      " give way"
-     ]
-    },
-    {
-     "word": "give",
-     "clues": [
-      "present",
-      " give as a gift"
-     ]
-    },
-    {
-     "word": "give",
-     "clues": [
-      "pass",
-      " hand",
-      " reach"
-     ]
-    },
-    {
-     "word": "glance",
-     "clues": [
-      "peek"
-     ]
-    },
-    {
-     "word": "glare",
-     "clues": [
-      "glower"
-     ]
-    },
-    {
-     "word": "glide",
-     "clues": [
-      "move smoothly and effortlessly"
-     ]
-    },
-    {
-     "word": "glow",
-     "clues": [
-      "emit light"
-     ]
-    },
-    {
-     "word": "die",
-     "clues": [
-      "perish"
-     ]
-    },
-    {
-     "word": "go",
-     "clues": [
-      "move"
-     ]
-    },
-    {
-     "word": "graduate",
-     "clues": [
-      "receive an academic degree"
-     ]
-    },
-    {
-     "word": "greet",
-     "clues": [
-      "send greetings"
-     ]
-    },
-    {
-     "word": "grind",
-     "clues": [
-      "mash",
-      " crunch"
-     ]
-    },
-    {
-     "word": "groan",
-     "clues": [
-      "moan"
-     ]
-    },
-    {
-     "word": "grow",
-     "clues": [
-      "mature",
-      " maturate"
-     ]
-    },
-    {
-     "word": "guard",
-     "clues": [
-      "ward",
-      " watch over",
-      " shield from danger or harm"
-     ]
-    },
-    {
-     "word": "guess",
-     "clues": [
-      "make a guess"
-     ]
-    },
-    {
-     "word": "handicap",
-     "clues": [
-      "hinder",
-      " hamper"
-     ]
-    },
-    {
-     "word": "hang",
-     "clues": [
-      "hang up",
-      " suspend"
-     ]
-    },
-    {
-     "word": "happen",
-     "clues": [
-      "go on",
-      " occur"
-     ]
-    },
-    {
-     "word": "harm",
-     "clues": [
-      "do harm to"
-     ]
-    },
-    {
-     "word": "hate",
-     "clues": [
-      "detest",
-      " loathe"
-     ]
-    },
-    {
-     "word": "haul",
-     "clues": [
-      "transport"
-     ]
-    },
-    {
-     "word": "haunt",
-     "clues": [
-      "stalk"
-     ]
-    },
-    {
-     "word": "have",
-     "clues": [
-      "have got"
-     ]
-    },
-    {
-     "word": "heal",
-     "clues": [
-      "cure"
-     ]
-    },
-    {
-     "word": "hear",
-     "clues": [
-      "perceive sound"
-     ]
-    },
-    {
-     "word": "help",
-     "clues": [
-      "assist",
-      " aid"
-     ]
-    },
-    {
-     "word": "hesitate",
-     "clues": [
-      "pause or hold back in uncertainty or unwillingness"
-     ]
-    },
-    {
-     "word": "hiccup",
-     "clues": [
-      "breathe spasmodically"
-     ]
-    },
-    {
-     "word": "hide",
-     "clues": [
-      "conceal"
-     ]
-    },
-    {
-     "word": "hide",
-     "clues": [
-      "hide out",
-      " be or go into hiding"
-     ]
-    },
-    {
-     "word": "hike",
-     "clues": [
-      "walk for pleasure",
-      " take a hike"
-     ]
-    },
-    {
-     "word": "hit",
-     "clues": [
-      "strike"
-     ]
-    },
-    {
-     "word": "hit",
-     "clues": [
-      "strike",
-      " run into",
-      " collide with"
-     ]
-    },
-    {
-     "word": "defend",
-     "clues": [
-      "guard",
-      " protect"
-     ]
-    },
-    {
-     "word": "support",
-     "clues": [
-      "hold",
-      " sustain",
-      " hold up"
-     ]
-    },
-    {
-     "word": "hold",
-     "clues": [
-      "reserve",
-      " book"
-     ]
-    },
-    {
-     "word": "hold",
-     "clues": [
-      "bear",
-      " carry",
-      " contain"
-     ]
-    },
-    {
-     "word": "hook",
-     "clues": [
-      "fasten with a hook"
-     ]
-    },
-    {
-     "word": "host",
-     "clues": [
-      "be the host"
-     ]
-    },
-    {
-     "word": "hover",
-     "clues": [
-      "levitate"
-     ]
-    },
-    {
-     "word": "offend",
-     "clues": [
-      "wound",
-      " hurt"
-     ]
-    },
-    {
-     "word": "hurt",
-     "clues": [
-      "ache",
-      " be the source of pain"
-     ]
-    },
-    {
-     "word": "hypnothize",
-     "clues": [
-      "mesmerize"
-     ]
-    },
-    {
-     "word": "identify",
-     "clues": [
-      "name"
-     ]
-    },
-    {
-     "word": "ignore",
-     "clues": [
-      "neglect",
-      " disregard"
-     ]
-    },
-    {
-     "word": "dismiss",
-     "clues": [
-      "disregard",
-      " brush aside",
-      " brush off",
-      " discount"
-     ]
-    },
-    {
-     "word": "illustrate",
-     "clues": [
-      "exemplify"
-     ]
-    },
-    {
-     "word": "imagine",
-     "clues": [
-      "conceive of",
-      " ideate",
-      " envisage"
-     ]
-    },
-    {
-     "word": "import",
-     "clues": [
-      "bring in from abroad"
-     ]
-    },
-    {
-     "word": "impress",
-     "clues": [
-      "make a good impression"
-     ]
-    },
-    {
-     "word": "improve",
-     "clues": [
-      "better",
-      " amend",
-      " ameliorate"
-     ]
-    },
-    {
-     "word": "include",
-     "clues": [
-      "admit",
-      " let in"
-     ]
-    },
-    {
-     "word": "include",
-     "clues": [
-      "have as a part"
-     ]
-    },
-    {
-     "word": "increase",
-     "clues": [
-      "become bigger or greater"
-     ]
-    },
-    {
-     "word": "indulge",
-     "clues": [
-      "enjoy to excess"
-     ]
-    },
-    {
-     "word": "infect",
-     "clues": [
-      "communicate a disease"
-     ]
-    },
-    {
-     "word": "inflate",
-     "clues": [
-      "blow up",
-      " fill with air"
-     ]
-    },
-    {
-     "word": "inject",
-     "clues": [
-      "take by injection"
-     ]
-    },
-    {
-     "word": "injure",
-     "clues": [
-      "wound",
-      " hurt"
-     ]
-    },
-    {
-     "word": "insert",
-     "clues": [
-      "place inside"
-     ]
-    },
-    {
-     "word": "insist",
-     "clues": [
-      "take a firm stand"
-     ]
-    },
-    {
-     "word": "inspire",
-     "clues": [
-      "supply the inspiration for"
-     ]
-    },
-    {
-     "word": "instal",
-     "clues": [
-      "put in",
-      " set up for use"
-     ]
-    },
-    {
-     "word": "install",
-     "clues": [
-      "put into an office or a position"
-     ]
-    },
-    {
-     "word": "insure",
-     "clues": [
-      "take out insurance"
-     ]
-    },
-    {
-     "word": "intensify",
-     "clues": [
-      "escalate",
-      " step up"
-     ]
-    },
-    {
-     "word": "translate",
-     "clues": [
-      "interpret in another language"
-     ]
-    },
-    {
-     "word": "interrupt",
-     "clues": [
-      "disrupt"
-     ]
-    },
-    {
-     "word": "introduce",
-     "clues": [
-      "inaugurate",
-      " usher in"
-     ]
-    },
-    {
-     "word": "introduce",
-     "clues": [
-      "present",
-      " acquaint"
-     ]
-    },
-    {
-     "word": "introduce",
-     "clues": [
-      "bring in"
-     ]
-    },
-    {
-     "word": "invite",
-     "clues": [
-      "ask over",
-      " invite to one's house"
-     ]
-    },
-    {
-     "word": "jail",
-     "clues": [
-      "imprison",
-      " incarcerate"
-     ]
-    },
-    {
-     "word": "twitch",
-     "clues": [
-      "jerk"
-     ]
-    },
-    {
-     "word": "jest",
-     "clues": [
-      "act or speak playfully"
-     ]
-    },
-    {
-     "word": "skip",
-     "clues": [
-      "pass over",
-      " skip over"
-     ]
-    },
-    {
-     "word": "jump",
-     "clues": [
-      "leap",
-      " bound"
-     ]
-    },
-    {
-     "word": "parachute",
-     "clues": [
-      "jump from an airplane"
-     ]
-    },
-    {
-     "word": "justify",
-     "clues": [
-      "excuse",
-      " rationalize"
-     ]
-    },
-    {
-     "word": "keep",
-     "clues": [
-      "preserve"
-     ]
-    },
-    {
-     "word": "keep",
-     "clues": [
-      "maintain"
-     ]
-    },
-    {
-     "word": "keep",
-     "clues": [
-      "hold on",
-      " retain possession of"
-     ]
-    },
-    {
-     "word": "keep",
-     "clues": [
-      "observe",
-      " celebrate holidays or rites"
-     ]
-    },
-    {
-     "word": "kick",
-     "clues": [
-      "strike with the foot"
-     ]
-    },
-    {
-     "word": "kill",
-     "clues": [
-      "cause to die",
-      " put to death"
-     ]
-    },
-    {
-     "word": "kneel",
-     "clues": [
-      "rest one's weight on one's knees"
-     ]
-    },
-    {
-     "word": "knit",
-     "clues": [
-      "make textiles by knitting"
-     ]
-    },
-    {
-     "word": "knock",
-     "clues": [
-      "rap",
-      " strike with the knuckles"
-     ]
-    },
-    {
-     "word": "know",
-     "clues": [
-      "be familiar or acquainted with a person or an object"
-     ]
-    },
-    {
-     "word": "know",
-     "clues": [
-      "be aware of the truth of something"
-     ]
-    },
-    {
-     "word": "know",
-     "clues": [
-      "know how to do or perform something"
-     ]
-    },
-    {
-     "word": "land",
-     "clues": [
-      "come down on the ground"
-     ]
-    },
-    {
-     "word": "endure",
-     "clues": [
-      "last",
-      " persist"
-     ]
-    },
-    {
-     "word": "launch",
-     "clues": [
-      "propel with force",
-      " set in motion"
-     ]
-    },
-    {
-     "word": "lay",
-     "clues": [
-      "put down",
-      " lay down"
-     ]
-    },
-    {
-     "word": "lead",
-     "clues": [
-      "head",
-      " travel in front of"
-     ]
-    },
-    {
-     "word": "lead",
-     "clues": [
-      "be in charge"
-     ]
-    },
-    {
-     "word": "leak",
-     "clues": [
-      "escape through an opening"
-     ]
-    },
-    {
-     "word": "lean",
-     "clues": [
-      "tilt",
-      " tip",
-      " slant",
-      " angle",
-      " incline",
-      " bend"
-     ]
-    },
-    {
-     "word": "learn",
-     "clues": [
-      "memorize"
-     ]
-    },
-    {
-     "word": "teach",
-     "clues": [
-      "instruct"
-     ]
-    },
-    {
-     "word": "leave",
-     "clues": [
-      "leave behind"
-     ]
-    },
-    {
-     "word": "leave",
-     "clues": [
-      "exit",
-      " go out",
-      " get out"
-     ]
-    },
-    {
-     "word": "leave",
-     "clues": [
-      "bequeath",
-      " will",
-      " pass on"
-     ]
-    },
-    {
-     "word": "lend",
-     "clues": [
-      "loan"
-     ]
-    },
-    {
-     "word": "lease",
-     "clues": [
-      "rent",
-      " let"
-     ]
-    },
-    {
-     "word": "level",
-     "clues": [
-      "raze",
-      " rase",
-      " dismantle",
-      " tear down"
-     ]
-    },
-    {
-     "word": "license",
-     "clues": [
-      "certify"
-     ]
-    },
-    {
-     "word": "lick",
-     "clues": [
-      "lap",
-      " pass the tongue over"
-     ]
-    },
-    {
-     "word": "lie",
-     "clues": [
-      "tell an untruth"
-     ]
-    },
-    {
-     "word": "lie",
-     "clues": [
-      "lie down"
-     ]
-    },
-    {
-     "word": "revoke",
-     "clues": [
-      "lift",
-      " annul",
-      " reverse",
-      " repeal",
-      " overturn",
-      " rescind"
-     ]
-    },
-    {
-     "word": "plagiarize",
-     "clues": [
-      "steal intellectual property"
-     ]
-    },
-    {
-     "word": "light",
-     "clues": [
-      "light up",
-      " illuminate",
-      " make light"
-     ]
-    },
-    {
-     "word": "ignite",
-     "clues": [
-      "light",
-      " light up"
-     ]
-    },
-    {
-     "word": "like",
-     "clues": [
-      "be fond of"
-     ]
-    },
-    {
-     "word": "restrict",
-     "clues": [
-      "limit",
-      " restrain"
-     ]
-    },
-    {
-     "word": "linger",
-     "clues": [
-      "loiter"
-     ]
-    },
-    {
-     "word": "link",
-     "clues": [
-      "connect",
-      " tie",
-      " fasten together"
-     ]
-    },
-    {
-     "word": "list",
-     "clues": [
-      "include in a list"
-     ]
-    },
-    {
-     "word": "listen",
-     "clues": [
-      "hear"
-     ]
-    },
-    {
-     "word": "load",
-     "clues": [
-      "place on a surface or a conveyance"
-     ]
-    },
-    {
-     "word": "locate",
-     "clues": [
-      "situate",
-      " determine the location"
-     ]
-    },
-    {
-     "word": "lock",
-     "clues": [
-      "fasten with a lock"
-     ]
-    },
-    {
-     "word": "lodge",
-     "clues": [
-      "stay temporarily"
-     ]
-    },
-    {
-     "word": "yearn",
-     "clues": [
-      "hanker",
-      " long"
-     ]
-    },
-    {
-     "word": "look",
-     "clues": [
-      "appear",
-      " seem"
-     ]
-    },
-    {
-     "word": "look",
-     "clues": [
-      "search"
-     ]
-    },
-    {
-     "word": "lose",
-     "clues": [
-      "fail to win"
-     ]
-    },
-    {
-     "word": "misplace",
-     "clues": [
-      "lose"
-     ]
-    },
-    {
-     "word": "love",
-     "clues": [
-      "be in love with"
-     ]
-    },
-    {
-     "word": "enjoy",
-     "clues": [
-      "enjoy doing",
-      " love to do"
-     ]
-    },
-    {
-     "word": "frown",
-     "clues": [
-      "glower",
-      " look angry or sullen"
-     ]
-    },
-    {
-     "word": "make",
-     "clues": [
-      "produce",
-      " create"
-     ]
-    },
-    {
-     "word": "cook",
-     "clues": [
-      "fix",
-      " ready",
-      " prepare"
-     ]
-    },
-    {
-     "word": "make",
-     "clues": [
-      "gain",
-      " take in",
-      " clear",
-      " earn"
-     ]
-    },
-    {
-     "word": "manage",
-     "clues": [
-      "oversee",
-      " supervise"
-     ]
-    },
-    {
-     "word": "manage",
-     "clues": [
-      "pull off",
-      " bring off",
-      " carry off"
-     ]
-    },
-    {
-     "word": "fabricate",
-     "clues": [
-      "cook up",
-      " make up",
-      " invent"
-     ]
-    },
-    {
-     "word": "march",
-     "clues": [
-      "walk"
-     ]
-    },
-    {
-     "word": "market",
-     "clues": [
-      "commercialize"
-     ]
-    },
-    {
-     "word": "master",
-     "clues": [
-      "get the hang of"
-     ]
-    },
-    {
-     "word": "match",
-     "clues": [
-      "be equal or harmonize"
-     ]
-    },
-    {
-     "word": "matter",
-     "clues": [
-      "count",
-      " weigh",
-      " carry weight"
-     ]
-    },
-    {
-     "word": "mean",
-     "clues": [
-      "intend",
-      " signify",
-      " stand for"
-     ]
-    },
-    {
-     "word": "measure",
-     "clues": [
-      "quantify",
-      " express as a number or quantity"
-     ]
-    },
-    {
-     "word": "evaluate",
-     "clues": [
-      "valuate",
-      " assess",
-      " appraise",
-      " value"
-     ]
-    },
-    {
-     "word": "meet",
-     "clues": [
-      "gather",
-      " assemble"
-     ]
-    },
-    {
-     "word": "meet",
-     "clues": [
-      "get to know"
-     ]
-    },
-    {
-     "word": "mention",
-     "clues": [
-      "note",
-      " observe",
-      " remark"
-     ]
-    },
-    {
-     "word": "mind",
-     "clues": [
-      "be offended or bothered by"
-     ]
-    },
-    {
-     "word": "minimize",
-     "clues": [
-      "understate",
-      " downplay"
-     ]
-    },
-    {
-     "word": "mislead",
-     "clues": [
-      "misinform",
-      " give false information"
-     ]
-    },
-    {
-     "word": "miss",
-     "clues": [
-      "feel or suffer from the lack of"
-     ]
-    },
-    {
-     "word": "miss",
-     "clues": [
-      "fail to reach or get to"
-     ]
-    },
-    {
-     "word": "lack",
-     "clues": [
-      "be without"
-     ]
-    },
-    {
-     "word": "miss",
-     "clues": [
-      "fail to attend an event or activity"
-     ]
-    },
-    {
-     "word": "mix",
-     "clues": [
-      "shuffle",
-      " randomize"
-     ]
-    },
-    {
-     "word": "model",
-     "clues": [
-      "simulate"
-     ]
-    },
-    {
-     "word": "move",
-     "clues": [
-      "be active"
-     ]
-    },
-    {
-     "word": "move",
-     "clues": [
-      "arouse sympathy or compassion"
-     ]
-    },
-    {
-     "word": "move",
-     "clues": [
-      "change position"
-     ]
-    },
-    {
-     "word": "move",
-     "clues": [
-      "change residence",
-      " affiliation",
-      " or employment"
-     ]
-    },
-    {
-     "word": "multiply",
-     "clues": [
-      "calculate"
-     ]
-    },
-    {
-     "word": "mutter",
-     "clues": [
-      "mumble",
-      " murmur"
-     ]
-    },
-    {
-     "word": "nap",
-     "clues": [
-      "catnap",
-      " take a nap"
-     ]
-    },
-    {
-     "word": "need",
-     "clues": [
-      "require"
-     ]
-    },
-    {
-     "word": "nominate",
-     "clues": [
-      "put up",
-      " put forward",
-      " propose"
-     ]
-    },
-    {
-     "word": "notice",
-     "clues": [
-      "note",
-      " perceive"
-     ]
-    },
-    {
-     "word": "object",
-     "clues": [
-      "raise an objection"
-     ]
-    },
-    {
-     "word": "obscure",
-     "clues": [
-      "make less visible"
-     ]
-    },
-    {
-     "word": "occupy",
-     "clues": [
-      "fill",
-      " occupy the whole space of"
-     ]
-    },
-    {
-     "word": "offend",
-     "clues": [
-      "cause to feel resentment"
-     ]
-    },
-    {
-     "word": "offer",
-     "clues": [
-      "bid",
-      " propose to pay"
-     ]
-    },
-    {
-     "word": "offer",
-     "clues": [
-      "volunteer to do"
-     ]
-    },
-    {
-     "word": "offset",
-     "clues": [
-      "countervail",
-      " compensate",
-      " counterbalance",
-      " make up for"
-     ]
-    },
-    {
-     "word": "open",
-     "clues": [
-      "open up"
-     ]
-    },
-    {
-     "word": "oppose",
-     "clues": [
-      "be against"
-     ]
-    },
-    {
-     "word": "organize",
-     "clues": [
-      "bring order and organization to"
-     ]
-    },
-    {
-     "word": "mastermind",
-     "clues": [
-      "engineer",
-      " direct",
-      " orchestrate",
-      " organize"
-     ]
-    },
-    {
-     "word": "overlook",
-     "clues": [
-      "fail to notice"
-     ]
-    },
-    {
-     "word": "overwhelm",
-     "clues": [
-      "overpower"
-     ]
-    },
-    {
-     "word": "owe",
-     "clues": [
-      "be obliged to pay"
-     ]
-    },
-    {
-     "word": "pack",
-     "clues": [
-      "arrange in a container"
-     ]
-    },
-    {
-     "word": "paint",
-     "clues": [
-      "apply paint to",
-      " coat with paint"
-     ]
-    },
-    {
-     "word": "paint",
-     "clues": [
-      "make a painting"
-     ]
-    },
-    {
-     "word": "park",
-     "clues": [
-      "maneuver a vehicle into a parking space"
-     ]
-    },
-    {
-     "word": "participate",
-     "clues": [
-      "take part"
-     ]
-    },
-    {
-     "word": "pass",
-     "clues": [
-      "go through",
-      " go across"
-     ]
-    },
-    {
-     "word": "pass",
-     "clues": [
-      "overtake",
-      " travel past"
-     ]
-    },
-    {
-     "word": "elapse",
-     "clues": [
-      "pass by",
-      " go by"
-     ]
-    },
-    {
-     "word": "pass",
-     "clues": [
-      "make it",
-      " be successful"
-     ]
-    },
-    {
-     "word": "exceed",
-     "clues": [
-      "pass",
-      " go past",
-      " top"
-     ]
-    },
-    {
-     "word": "pat",
-     "clues": [
-      "dab",
-      " hit lightly"
-     ]
-    },
-    {
-     "word": "pay",
-     "clues": [
-      "give money in exchange for goods or services"
-     ]
-    },
-    {
-     "word": "penetrate",
-     "clues": [
-      "enter into"
-     ]
-    },
-    {
-     "word": "perceive",
-     "clues": [
-      "sense"
-     ]
-    },
-    {
-     "word": "perforate",
-     "clues": [
-      "pass in or through"
-     ]
-    },
-    {
-     "word": "perform",
-     "clues": [
-      "give a performance"
-     ]
-    },
-    {
-     "word": "persist",
-     "clues": [
-      "persevere"
-     ]
-    },
-    {
-     "word": "photocopy",
-     "clues": [
-      "xerox",
-      " run off"
-     ]
-    },
-    {
-     "word": "pick",
-     "clues": [
-      "select carefully"
-     ]
-    },
-    {
-     "word": "pluck",
-     "clues": [
-      "pick",
-      " cull"
-     ]
-    },
-    {
-     "word": "pile",
-     "clues": [
-      "stack",
-      " heap"
-     ]
-    },
-    {
-     "word": "rank",
-     "clues": [
-      "rate",
-      " place",
-      " range",
-      " order",
-      " grade"
-     ]
-    },
-    {
-     "word": "plan",
-     "clues": [
-      "make plans"
-     ]
-    },
-    {
-     "word": "design",
-     "clues": [
-      "conceive"
-     ]
-    },
-    {
-     "word": "play",
-     "clues": [
-      "participate in games or sport"
-     ]
-    },
-    {
-     "word": "bet",
-     "clues": [
-      "wager",
-      " stake"
-     ]
-    },
-    {
-     "word": "play",
-     "clues": [
-      "act",
-      " roleplay",
-      " playact"
-     ]
-    },
-    {
-     "word": "play",
-     "clues": [
-      "play on an instrument"
-     ]
-    },
-    {
-     "word": "play",
-     "clues": [
-      "engage in playful activity"
-     ]
-    },
-    {
-     "word": "plead",
-     "clues": [
-      "enter a plea in courts of law"
-     ]
-    },
-    {
-     "word": "please",
-     "clues": [
-      "delight",
-      " give pleasure"
-     ]
-    },
-    {
-     "word": "pledge",
-     "clues": [
-      "promise solemnly"
-     ]
-    },
-    {
-     "word": "plot",
-     "clues": [
-      "plan secretly"
-     ]
-    },
-    {
-     "word": "plot",
-     "clues": [
-      "diagram"
-     ]
-    },
-    {
-     "word": "plug",
-     "clues": [
-      "stop up"
-     ]
-    },
-    {
-     "word": "poison",
-     "clues": [
-      "administer poison to"
-     ]
-    },
-    {
-     "word": "polish",
-     "clues": [
-      "refine"
-     ]
-    },
-    {
-     "word": "pop",
-     "clues": [
-      "burst open with a sharp",
-      " explosive sound"
-     ]
-    },
-    {
-     "word": "post",
-     "clues": [
-      "publicize with",
-      " or as if with",
-      " a poster"
-     ]
-    },
-    {
-     "word": "swarm",
-     "clues": [
-      "pour",
-      " teem",
-      " move in large numbers"
-     ]
-    },
-    {
-     "word": "pour",
-     "clues": [
-      "cause to flow"
-     ]
-    },
-    {
-     "word": "pray",
-     "clues": [
-      "say a prayer"
-     ]
-    },
-    {
-     "word": "beg",
-     "clues": [
-      "implore",
-      " entreat"
-     ]
-    },
-    {
-     "word": "preach",
-     "clues": [
-      "deliver a sermon"
-     ]
-    },
-    {
-     "word": "precede",
-     "clues": [
-      "predate",
-      " antecede",
-      " antedate"
-     ]
-    },
-    {
-     "word": "prefer",
-     "clues": [
-      "favor"
-     ]
-    },
-    {
-     "word": "present",
-     "clues": [
-      "submit",
-      " hand over formally"
-     ]
-    },
-    {
-     "word": "urge",
-     "clues": [
-      "urge on"
-     ]
-    },
-    {
-     "word": "press",
-     "clues": [
-      "exert pressure or force on"
-     ]
-    },
-    {
-     "word": "squeeze",
-     "clues": [
-      "compress",
-      " constrict",
-      " press",
-      " compact"
-     ]
-    },
-    {
-     "word": "prevent",
-     "clues": [
-      "forestall",
-      " keep from happening"
-     ]
-    },
-    {
-     "word": "print",
-     "clues": [
-      "reproduce by printing"
-     ]
-    },
-    {
-     "word": "proclaim",
-     "clues": [
-      "exclaim",
-      " promulgate",
-      " state",
-      " announce"
-     ]
-    },
-    {
-     "word": "produce",
-     "clues": [
-      "grow",
-      " raise",
-      " farm",
-      " cultivate"
-     ]
-    },
-    {
-     "word": "profit",
-     "clues": [
-      "turn a profit"
-     ]
-    },
-    {
-     "word": "prosecute",
-     "clues": [
-      "bring a criminal action against"
-     ]
-    },
-    {
-     "word": "protect",
-     "clues": [
-      "shield from danger"
-     ]
-    },
-    {
-     "word": "prove",
-     "clues": [
-      "show",
-      " demonstrate",
-      " establish"
-     ]
-    },
-    {
-     "word": "provide",
-     "clues": [
-      "supply",
-      " render",
-      " furnish"
-     ]
-    },
-    {
-     "word": "provoke",
-     "clues": [
-      "arouse",
-      " evoke an emotion or response"
-     ]
-    },
-    {
-     "word": "harass",
-     "clues": [
-      "hassle",
-      " plague",
-      " molest"
-     ]
-    },
-    {
-     "word": "publish",
-     "clues": [
-      "bring out",
-      " put out",
-      " issue",
-      " release"
-     ]
-    },
-    {
-     "word": "extract",
-     "clues": [
-      "pull",
-      " pull out",
-      " pull up",
-      " take out"
-     ]
-    },
-    {
-     "word": "pump",
-     "clues": [
-      "raise fluid with a pump"
-     ]
-    },
-    {
-     "word": "punch",
-     "clues": [
-      "hit with the fist"
-     ]
-    },
-    {
-     "word": "punch",
-     "clues": [
-      "make a hole in"
-     ]
-    },
-    {
-     "word": "punish",
-     "clues": [
-      "penalize"
-     ]
-    },
-    {
-     "word": "advertise",
-     "clues": [
-      "push",
-      " promote"
-     ]
-    },
-    {
-     "word": "push",
-     "clues": [
-      "press"
-     ]
-    },
-    {
-     "word": "put",
-     "clues": [
-      "place",
-      " set",
-      " pose",
-      " lay",
-      " position"
-     ]
-    },
-    {
-     "word": "qualify",
-     "clues": [
-      "modify"
-     ]
-    },
-    {
-     "word": "qualify",
-     "clues": [
-      "measure up",
-      " prove capable",
-      " meet requirements"
-     ]
-    },
-    {
-     "word": "question",
-     "clues": [
-      "interrogate"
-     ]
-    },
-    {
-     "word": "quit",
-     "clues": [
-      "drop out",
-      " give up",
-      " throw in the towel"
-     ]
-    },
-    {
-     "word": "quote",
-     "clues": [
-      "cite"
-     ]
-    },
-    {
-     "word": "race",
-     "clues": [
-      "rush",
-      " hasten",
-      " speed",
-      " hurry"
-     ]
-    },
-    {
-     "word": "build",
-     "clues": [
-      "raise",
-      " put up",
-      " construct",
-      " raise"
-     ]
-    },
-    {
-     "word": "lift",
-     "clues": [
-      "raise",
-      " elevate",
-      " move up"
-     ]
-    },
-    {
-     "word": "raise",
-     "clues": [
-      "collect funds"
-     ]
-    },
-    {
-     "word": "raise",
-     "clues": [
-      "rear",
-      " bring up",
-      " nurture",
-      " parent"
-     ]
-    },
-    {
-     "word": "promote",
-     "clues": [
-      "upgrade",
-      " advance",
-      " kick upstairs"
-     ]
-    },
-    {
-     "word": "rape",
-     "clues": [
-      "ravish",
-      " violate",
-      " assault"
-     ]
-    },
-    {
-     "word": "achieve",
-     "clues": [
-      "accomplish",
-      " attain",
-      " gain with effort"
-     ]
-    },
-    {
-     "word": "reach",
-     "clues": [
-      "extend to",
-      " touch"
-     ]
-    },
-    {
-     "word": "read",
-     "clues": [
-      "interpret something that is written or printed"
-     ]
-    },
-    {
-     "word": "realize",
-     "clues": [
-      "recognize",
-      " be fully aware of"
-     ]
-    },
-    {
-     "word": "rear",
-     "clues": [
-      "rise up"
-     ]
-    },
-    {
-     "word": "recognize",
-     "clues": [
-      "perceive to be the same"
-     ]
-    },
-    {
-     "word": "recognize",
-     "clues": [
-      "accredit",
-      " grant credentials"
-     ]
-    },
-    {
-     "word": "recommend",
-     "clues": [
-      "commend"
-     ]
-    },
-    {
-     "word": "record",
-     "clues": [
-      "tape",
-      " register electronically"
-     ]
-    },
-    {
-     "word": "recover",
-     "clues": [
-      "recuperate",
-      " convalesce"
-     ]
-    },
-    {
-     "word": "recruit",
-     "clues": [
-      "seek to employ"
-     ]
-    },
-    {
-     "word": "recycle",
-     "clues": [
-      "reprocess",
-      " reuse"
-     ]
-    },
-    {
-     "word": "redeem",
-     "clues": [
-      "exchange for ransom under threat"
-     ]
-    },
-    {
-     "word": "refer",
-     "clues": [
-      "mention",
-      " advert",
-      " bring up",
-      " cite",
-      " name"
-     ]
-    },
-    {
-     "word": "reflect",
-     "clues": [
-      "think over",
-      " meditate",
-      " ponder",
-      " contemplate"
-     ]
-    },
-    {
-     "word": "reflect",
-     "clues": [
-      "shine"
-     ]
-    },
-    {
-     "word": "reform",
-     "clues": [
-      "improve by alteration or correction"
-     ]
-    },
-    {
-     "word": "refuse",
-     "clues": [
-      "decline to do"
-     ]
-    },
-    {
-     "word": "reject",
-     "clues": [
-      "pass up",
-      " turn down",
-      " refuse",
-      " decline"
-     ]
-    },
-    {
-     "word": "deny",
-     "clues": [
-      "refuse to let have"
-     ]
-    },
-    {
-     "word": "register",
-     "clues": [
-      "enroll to vote"
-     ]
-    },
-    {
-     "word": "regret",
-     "clues": [
-      "repent",
-      " rue",
-      " feel remorse"
-     ]
-    },
-    {
-     "word": "reinforce",
-     "clues": [
-      "reward",
-      " support with rewards"
-     ]
-    },
-    {
-     "word": "reject",
-     "clues": [
-      "rule out",
-      " eliminate"
-     ]
-    },
-    {
-     "word": "relate",
-     "clues": [
-      "tie in",
-      " link",
-      " connect logically or causally"
-     ]
-    },
-    {
-     "word": "relax",
-     "clues": [
-      "loosen up",
-      " unwind"
-     ]
-    },
-    {
-     "word": "release",
-     "clues": [
-      "free",
-      " liberate"
-     ]
-    },
-    {
-     "word": "relieve",
-     "clues": [
-      "free from a burden or distress"
-     ]
-    },
-    {
-     "word": "relinquish",
-     "clues": [
-      "renounce",
-      " give up",
-      " foreswear"
-     ]
-    },
-    {
-     "word": "trust",
-     "clues": [
-      "rely on",
-      " have confidence in"
-     ]
-    },
-    {
-     "word": "remain",
-     "clues": [
-      "persist",
-      " stay behind"
-     ]
-    },
-    {
-     "word": "commemorate",
-     "clues": [
-      "remember"
-     ]
-    },
-    {
-     "word": "remind",
-     "clues": [
-      "prompt",
-      " cue"
-     ]
-    },
-    {
-     "word": "repeat",
-     "clues": [
-      "duplicate",
-      " reduplicate",
-      " double",
-      " replicate"
-     ]
-    },
-    {
-     "word": "replace",
-     "clues": [
-      "substitute for a defective or inadequate one"
-     ]
-    },
-    {
-     "word": "represent",
-     "clues": [
-      "be a delegate or spokesperson"
-     ]
-    },
-    {
-     "word": "represent",
-     "clues": [
-      "stand for",
-      " correspond to"
-     ]
-    },
-    {
-     "word": "reproduce",
-     "clues": [
-      "make a copy"
-     ]
-    },
-    {
-     "word": "request",
-     "clues": [
-      "call for"
-     ]
-    },
-    {
-     "word": "command",
-     "clues": [
-      "compel"
-     ]
-    },
-    {
-     "word": "rescue",
-     "clues": [
-      "free from harm or evil"
-     ]
-    },
-    {
-     "word": "reserve",
-     "clues": [
-      "obtain or arrange in advance"
-     ]
-    },
-    {
-     "word": "resign",
-     "clues": [
-      "leave office",
-      " quit",
-      " step down"
-     ]
-    },
-    {
-     "word": "resist",
-     "clues": [
-      "withstand",
-      " hold up against"
-     ]
-    },
-    {
-     "word": "resist",
-     "clues": [
-      "baulk",
-      " refuse to comply"
-     ]
-    },
-    {
-     "word": "respect",
-     "clues": [
-      "esteem",
-      " value"
-     ]
-    },
-    {
-     "word": "rest",
-     "clues": [
-      "breathe",
-      " catch one's breath",
-      " take a breather"
-     ]
-    },
-    {
-     "word": "restrain",
-     "clues": [
-      "encumber",
-      " constrain",
-      " hold back"
-     ]
-    },
-    {
-     "word": "retain",
-     "clues": [
-      "remember",
-      " keep in one's mind"
-     ]
-    },
-    {
-     "word": "retire",
-     "clues": [
-      "go to bed",
-      " turn in"
-     ]
-    },
-    {
-     "word": "retire",
-     "clues": [
-      "go into retirement"
-     ]
-    },
-    {
-     "word": "retreat",
-     "clues": [
-      "move away"
-     ]
-    },
-    {
-     "word": "return",
-     "clues": [
-      "go back"
-     ]
-    },
-    {
-     "word": "return",
-     "clues": [
-      "bring back",
-      " take back"
-     ]
-    },
-    {
-     "word": "refund",
-     "clues": [
-      "repay",
-      " pay back"
-     ]
-    },
-    {
-     "word": "reveal",
-     "clues": [
-      "uncover",
-      " bring out",
-      " make visible"
-     ]
-    },
-    {
-     "word": "reverse",
-     "clues": [
-      "invert",
-      " turn inside out or upside down"
-     ]
-    },
-    {
-     "word": "review",
-     "clues": [
-      "look back",
-      " retrospect"
-     ]
-    },
-    {
-     "word": "revise",
-     "clues": [
-      "make revisions to"
-     ]
-    },
-    {
-     "word": "revive",
-     "clues": [
-      "resuscitate"
-     ]
-    },
-    {
-     "word": "reward",
-     "clues": [
-      "repay",
-      " pay back"
-     ]
-    },
-    {
-     "word": "tease",
-     "clues": [
-      "rag",
-      " taunt"
-     ]
-    },
-    {
-     "word": "ride",
-     "clues": [
-      "be carried or travel in or on a vehicle"
-     ]
-    },
-    {
-     "word": "ring",
-     "clues": [
-      "peal"
-     ]
-    },
-    {
-     "word": "arise",
-     "clues": [
-      "get up",
-      " get out of bed"
-     ]
-    },
-    {
-     "word": "rise",
-     "clues": [
-      "increase",
-      " go up",
-      " climb",
-      " increase in value or level"
-     ]
-    },
-    {
-     "word": "rise",
-     "clues": [
-      "move upward"
-     ]
-    },
-    {
-     "word": "rise",
-     "clues": [
-      "arise",
-      " get up",
-      " stand up",
-      " rise to one's feet"
-     ]
-    },
-    {
-     "word": "rise",
-     "clues": [
-      "come up",
-      " ascend in the sky"
-     ]
-    },
-    {
-     "word": "risk",
-     "clues": [
-      "gamble",
-      " chance",
-      " hazard",
-      " take chances"
-     ]
-    },
-    {
-     "word": "roar",
-     "clues": [
-      "bellow",
-      " make a loud noise"
-     ]
-    },
-    {
-     "word": "rob",
-     "clues": [
-      "deprive somebody of something"
-     ]
-    },
-    {
-     "word": "rock",
-     "clues": [
-      "sway",
-      " move back and forth"
-     ]
-    },
-    {
-     "word": "roll",
-     "clues": [
-      "turn over",
-      " turn over or rotate"
-     ]
-    },
-    {
-     "word": "wander",
-     "clues": [
-      "stray",
-      " tramp",
-      " roam",
-      " ramble",
-      " rove",
-      " range",
-      " drift"
-     ]
-    },
-    {
-     "word": "row",
-     "clues": [
-      "propel with oars"
-     ]
-    },
-    {
-     "word": "rub",
-     "clues": [
-      "apply friction"
-     ]
-    },
-    {
-     "word": "scratch",
-     "clues": [
-      "scrape or rub to relieve itching"
-     ]
-    },
-    {
-     "word": "rule",
-     "clues": [
-      "govern"
-     ]
-    },
-    {
-     "word": "run",
-     "clues": [
-      "campaign for office"
-     ]
-    },
-    {
-     "word": "run",
-     "clues": [
-      "be operating or functioning"
-     ]
-    },
-    {
-     "word": "run",
-     "clues": [
-      "move fast on one's feet"
-     ]
-    },
-    {
-     "word": "flow",
-     "clues": [
-      "run"
-     ]
-    },
-    {
-     "word": "escape",
-     "clues": [
-      "run",
-      " run away",
-      " flee"
-     ]
-    },
-    {
-     "word": "save",
-     "clues": [
-      "lay aside",
-      " save up"
-     ]
-    },
-    {
-     "word": "save",
-     "clues": [
-      "spare"
-     ]
-    },
-    {
-     "word": "say",
-     "clues": [
-      "state",
-      " tell"
-     ]
-    },
-    {
-     "word": "scan",
-     "clues": [
-      "skim",
-      " examine hastily"
-     ]
-    },
-    {
-     "word": "scatter",
-     "clues": [
-      "sprinkle",
-      " dot",
-      " dust",
-      " disperse"
-     ]
-    },
-    {
-     "word": "scramble",
-     "clues": [
-      "jumble"
-     ]
-    },
-    {
-     "word": "scrape",
-     "clues": [
-      "grate",
-      " scratch"
-     ]
-    },
-    {
-     "word": "scratch",
-     "clues": [
-      "scrape"
-     ]
-    },
-    {
-     "word": "scream",
-     "clues": [
-      "yell",
-      " shriek"
-     ]
-    },
-    {
-     "word": "screen",
-     "clues": [
-      "examine methodically"
-     ]
-    },
-    {
-     "word": "screen",
-     "clues": [
-      "screen out",
-      " sieve out"
-     ]
-    },
-    {
-     "word": "cheat",
-     "clues": [
-      "fool",
-      " swindle"
-     ]
-    },
-    {
-     "word": "screw",
-     "clues": [
-      "tighten",
-      " fasten"
-     ]
-    },
-    {
-     "word": "seal",
-     "clues": [
-      "seal off",
-      " make tight",
-      " secure against leakage"
-     ]
-    },
-    {
-     "word": "secure",
-     "clues": [
-      "fasten",
-      " fix",
-      " cause to be firmly attached"
-     ]
-    },
-    {
-     "word": "see",
-     "clues": [
-      "understand",
-      " realize"
-     ]
-    },
-    {
-     "word": "see",
-     "clues": [
-      "meet",
-      " ran into",
-      " encounter",
-      " run across",
-      " come across"
-     ]
-    },
-    {
-     "word": "see",
-     "clues": [
-      "perceive by sight"
-     ]
-    },
-    {
-     "word": "seek",
-     "clues": [
-      "search",
-      " look for"
-     ]
-    },
-    {
-     "word": "seem",
-     "clues": [
-      "appear"
-     ]
-    },
-    {
-     "word": "seize",
-     "clues": [
-      "clutch",
-      " take hold of",
-      " grab",
-      " grasp"
-     ]
-    },
-    {
-     "word": "sell",
-     "clues": [
-      "exchange for money"
-     ]
-    },
-    {
-     "word": "betray",
-     "clues": [
-      "sell out"
-     ]
-    },
-    {
-     "word": "mail",
-     "clues": [
-      "send",
-      " post"
-     ]
-    },
-    {
-     "word": "broadcast",
-     "clues": [
-      "air",
-      " send"
-     ]
-    },
-    {
-     "word": "branch",
-     "clues": [
-      "fork",
-      " divide into branches"
-     ]
-    },
-    {
-     "word": "separate",
-     "clues": [
-      "split up",
-      " split",
-      " part company"
-     ]
-    },
-    {
-     "word": "discriminate",
-     "clues": [
-      "separate",
-      " single out",
-      " treat differently"
-     ]
-    },
-    {
-     "word": "serve",
-     "clues": [
-      "serve up",
-      " dish out"
-     ]
-    },
-    {
-     "word": "serve",
-     "clues": [
-      "attend to",
-      " wait on",
-      " attend",
-      " assist"
-     ]
-    },
-    {
-     "word": "set",
-     "clues": [
-      "adjust",
-      " correct",
-      " regulate"
-     ]
-    },
-    {
-     "word": "plant",
-     "clues": [
-      "put or set into the ground"
-     ]
-    },
-    {
-     "word": "set",
-     "clues": [
-      "go down",
-      " go below the horizon"
-     ]
-    },
-    {
-     "word": "settle",
-     "clues": [
-      "establish a residence"
-     ]
-    },
-    {
-     "word": "settle",
-     "clues": [
-      "end a legal dispute"
-     ]
-    },
-    {
-     "word": "reconcile",
-     "clues": [
-      "make up"
-     ]
-    },
-    {
-     "word": "sink",
-     "clues": [
-      "go down",
-      " go under"
-     ]
-    },
-    {
-     "word": "shake",
-     "clues": [
-      "agitate",
-      " move back and forth"
-     ]
-    },
-    {
-     "word": "rock",
-     "clues": [
-      "sway"
-     ]
-    },
-    {
-     "word": "shape",
-     "clues": [
-      "form",
-      " work",
-      " mold",
-      " forge"
-     ]
-    },
-    {
-     "word": "share",
-     "clues": [
-      "use jointly or in common"
-     ]
-    },
-    {
-     "word": "shatter",
-     "clues": [
-      "break"
-     ]
-    },
-    {
-     "word": "shave",
-     "clues": [
-      "remove body hair"
-     ]
-    },
-    {
-     "word": "shed",
-     "clues": [
-      "spill",
-      " disgorge"
-     ]
-    },
-    {
-     "word": "budge",
-     "clues": [
-      "shift",
-      " stir"
-     ]
-    },
-    {
-     "word": "polish",
-     "clues": [
-      "shine"
-     ]
-    },
-    {
-     "word": "shine",
-     "clues": [
-      "glitter",
-      " glisten",
-      " glint",
-      " gleam"
-     ]
-    },
-    {
-     "word": "shiver",
-     "clues": [
-      "shudder"
-     ]
-    },
-    {
-     "word": "stun",
-     "clues": [
-      "floor",
-      " surprise greatly"
-     ]
-    },
-    {
-     "word": "shock",
-     "clues": [
-      "offend",
-      " scandalize",
-      " outrage"
-     ]
-    },
-    {
-     "word": "shoot",
-     "clues": [
-      "spud",
-      " germinate",
-      " sprout"
-     ]
-    },
-    {
-     "word": "shoot",
-     "clues": [
-      "fire a shot"
-     ]
-    },
-    {
-     "word": "shout",
-     "clues": [
-      "speak loudly"
-     ]
-    },
-    {
-     "word": "abuse",
-     "clues": [
-      "shout at",
-      " abuse verbally"
-     ]
-    },
-    {
-     "word": "show",
-     "clues": [
-      "indicate",
-      " point"
-     ]
-    },
-    {
-     "word": "show",
-     "clues": [
-      "exhibit",
-      " present",
-      " demonstrate"
-     ]
-    },
-    {
-     "word": "show",
-     "clues": [
-      "reveal",
-      " display"
-     ]
-    },
-    {
-     "word": "shrink",
-     "clues": [
-      "shrivel"
-     ]
-    },
-    {
-     "word": "sigh",
-     "clues": [
-      "utter a sigh"
-     ]
-    },
-    {
-     "word": "sign",
-     "clues": [
-      "mark with one's signature"
-     ]
-    },
-    {
-     "word": "sip",
-     "clues": [
-      "drink"
-     ]
-    },
-    {
-     "word": "sit",
-     "clues": [
-      "sit down",
-      " be seated"
-     ]
-    },
-    {
-     "word": "skate",
-     "clues": [
-      "move on skates"
-     ]
-    },
-    {
-     "word": "slam",
-     "clues": [
-      "bang",
-      " close violently"
-     ]
-    },
-    {
-     "word": "slap",
-     "clues": [
-      "hit with a flat surface"
-     ]
-    },
-    {
-     "word": "slide",
-     "clues": [
-      "slither",
-      " pass or move unobtrusively or smoothly"
-     ]
-    },
-    {
-     "word": "slip",
-     "clues": [
-      "skid",
-      " slide"
-     ]
-    },
-    {
-     "word": "slump",
-     "clues": [
-      "slouch"
-     ]
-    },
-    {
-     "word": "smash",
-     "clues": [
-      "break into pieces"
-     ]
-    },
-    {
-     "word": "smell",
-     "clues": [
-      "emit an odor"
-     ]
-    },
-    {
-     "word": "smell",
-     "clues": [
-      "perceive by the olfactory sense"
-     ]
-    },
-    {
-     "word": "smoke",
-     "clues": [
-      "inhale a plant derivative"
-     ]
-    },
-    {
-     "word": "snap",
-     "clues": [
-      "crack",
-      " break suddenly",
-      " rupture"
-     ]
-    },
-    {
-     "word": "snarl",
-     "clues": [
-      "speak sharply",
-      " snap"
-     ]
-    },
-    {
-     "word": "snatch",
-     "clues": [
-      "snatch up",
-      " snap up"
-     ]
-    },
-    {
-     "word": "snap",
-     "clues": [
-      "click",
-      " flick",
-      " make a snapping sound"
-     ]
-    },
-    {
-     "word": "kidnap",
-     "clues": [
-      "snatch",
-      " abduct"
-     ]
-    },
-    {
-     "word": "sniff",
-     "clues": [
-      "whiff",
-      " inhale"
-     ]
-    },
-    {
-     "word": "snuggle",
-     "clues": [
-      "cuddle",
-      " nestle",
-      " draw close"
-     ]
-    },
-    {
-     "word": "soak",
-     "clues": [
-      "submerge in liquid"
-     ]
-    },
-    {
-     "word": "overcharge",
-     "clues": [
-      "surcharge",
-      " fleece",
-      " rip off"
-     ]
-    },
-    {
-     "word": "pawn",
-     "clues": [
-      "hock"
-     ]
-    },
-    {
-     "word": "soar",
-     "clues": [
-      "fly upwards"
-     ]
-    },
-    {
-     "word": "solve",
-     "clues": [
-      "work out",
-      " figure out",
-      " puzzle out"
-     ]
-    },
-    {
-     "word": "sow",
-     "clues": [
-      "place seeds into the ground"
-     ]
-    },
-    {
-     "word": "spare",
-     "clues": [
-      "give up",
-      " part with"
-     ]
-    },
-    {
-     "word": "spare",
-     "clues": [
-      "save from an unpleasant experience"
-     ]
-    },
-    {
-     "word": "speculate",
-     "clues": [
-      "invest at a risk"
-     ]
-    },
-    {
-     "word": "speed",
-     "clues": [
-      "travel at an excessive or illegal velocity"
-     ]
-    },
-    {
-     "word": "spend",
-     "clues": [
-      "expend"
-     ]
-    },
-    {
-     "word": "spill",
-     "clues": [
-      "flow out"
-     ]
-    },
-    {
-     "word": "spin",
-     "clues": [
-      "twist and turn so as to give an intended interpretation"
-     ]
-    },
-    {
-     "word": "spin",
-     "clues": [
-      "form a web"
-     ]
-    },
-    {
-     "word": "spin",
-     "clues": [
-      "spin around",
-      " whirl",
-      " reel",
-      " gyrate",
-      " revolve"
-     ]
-    },
-    {
-     "word": "spit",
-     "clues": [
-      "spew"
-     ]
-    },
-    {
-     "word": "split",
-     "clues": [
-      "burst",
-      " break open"
-     ]
-    },
-    {
-     "word": "spoil",
-     "clues": [
-      "rot",
-      " go bad",
-      " become unfit for consumption"
-     ]
-    },
-    {
-     "word": "spoil",
-     "clues": [
-      "impair",
-      " make imperfect"
-     ]
-    },
-    {
-     "word": "spoil",
-     "clues": [
-      "pamper",
-      " coddle",
-      " mollycoddle",
-      " indulge"
-     ]
-    },
-    {
-     "word": "spray",
-     "clues": [
-      "scatter"
-     ]
-    },
-    {
-     "word": "circulate",
-     "clues": [
-      "distribute",
-      " disseminate",
-      " propagate",
-      " broadcast",
-      " diffuse",
-      " disperse",
-      " spread",
-      " cause to become widely known"
-     ]
-    },
-    {
-     "word": "spread",
-     "clues": [
-      "distribute over a surface"
-     ]
-    },
-    {
-     "word": "square",
-     "clues": [
-      "raise to the second power"
-     ]
-    },
-    {
-     "word": "squeeze",
-     "clues": [
-      "pinch"
-     ]
-    },
-    {
-     "word": "embrace",
-     "clues": [
-      "hug"
-     ]
-    },
-    {
-     "word": "squash",
-     "clues": [
-      "crush",
-      " mash"
-     ]
-    },
-    {
-     "word": "extort",
-     "clues": [
-      "gouge"
-     ]
-    },
-    {
-     "word": "stab",
-     "clues": [
-      "knife"
-     ]
-    },
-    {
-     "word": "stain",
-     "clues": [
-      "spot",
-      " produce stains"
-     ]
-    },
-    {
-     "word": "stereotype",
-     "clues": [
-      "pigeonhole"
-     ]
-    },
-    {
-     "word": "stamp",
-     "clues": [
-      "stomp",
-      " walk heavily"
-     ]
-    },
-    {
-     "word": "stand",
-     "clues": [
-      "bear",
-      " endure",
-      " stomach",
-      " bear",
-      " put up with"
-     ]
-    },
-    {
-     "word": "stand",
-     "clues": [
-      "stand up"
-     ]
-    },
-    {
-     "word": "depart",
-     "clues": [
-      "leave",
-      " start out",
-      " set forth",
-      " set off",
-      " set out",
-      " take off"
-     ]
-    },
-    {
-     "word": "stay",
-     "clues": [
-      "stick around",
-      " stay put"
-     ]
-    },
-    {
-     "word": "step",
-     "clues": [
-      "tread"
-     ]
-    },
-    {
-     "word": "mistreat",
-     "clues": [
-      "maltreat",
-      " abuse"
-     ]
-    },
-    {
-     "word": "stick",
-     "clues": [
-      "adhere",
-      " hold fast",
-      " bond",
-      " bind",
-      " stick to"
-     ]
-    },
-    {
-     "word": "pierce",
-     "clues": [
-      "stick",
-      " puncture"
-     ]
-    },
-    {
-     "word": "sting",
-     "clues": [
-      "bite",
-      " deliver an animal sting"
-     ]
-    },
-    {
-     "word": "stir",
-     "clues": [
-      "move an implement with a circular motion"
-     ]
-    },
-    {
-     "word": "stop",
-     "clues": [
-      "halt",
-      " come to a halt",
-      " stop moving"
-     ]
-    },
-    {
-     "word": "stop",
-     "clues": [
-      "discontinue",
-      " cease doing"
-     ]
-    },
-    {
-     "word": "store",
-     "clues": [
-      "lay in",
-      " put in",
-      " salt away",
-      " stack away",
-      " stash away"
-     ]
-    },
-    {
-     "word": "storm",
-     "clues": [
-      "rain",
-      " hail",
-      " or snow hard"
-     ]
-    },
-    {
-     "word": "straighten",
-     "clues": [
-      "straighten out",
-      " make straight"
-     ]
-    },
-    {
-     "word": "strain",
-     "clues": [
-      "tense",
-      " tense up"
-     ]
-    },
-    {
-     "word": "stress",
-     "clues": [
-      "emphasize",
-      " underline"
-     ]
-    },
-    {
-     "word": "stretch",
-     "clues": [
-      "stretch out",
-      " extend one's limbs"
-     ]
-    },
-    {
-     "word": "stride",
-     "clues": [
-      "walk with long steps"
-     ]
-    },
-    {
-     "word": "strike",
-     "clues": [
-      "scratch",
-      " expunge",
-      " excise",
-      " remove by erasing"
-     ]
-    },
-    {
-     "word": "strike",
-     "clues": [
-      "walk out",
-      " walk off a job"
-     ]
-    },
-    {
-     "word": "undress",
-     "clues": [
-      "disrobe"
-     ]
-    },
-    {
-     "word": "stroke",
-     "clues": [
-      "fondle",
-      " caress"
-     ]
-    },
-    {
-     "word": "stroll",
-     "clues": [
-      "saunter"
-     ]
-    },
-    {
-     "word": "study",
-     "clues": [
-      "hit the books"
-     ]
-    },
-    {
-     "word": "stuff",
-     "clues": [
-      "fill tightly"
-     ]
-    },
-    {
-     "word": "overeat",
-     "clues": [
-      "gorge"
-     ]
-    },
-    {
-     "word": "stumble",
-     "clues": [
-      "slip up",
-      " trip up",
-      " make an error"
-     ]
-    },
-    {
-     "word": "resign",
-     "clues": [
-      "reconcile oneself",
-      " accept as inevitable"
-     ]
-    },
-    {
-     "word": "substitute",
-     "clues": [
-      "replace",
-      " put in the place of another"
-     ]
-    },
-    {
-     "word": "suffer",
-     "clues": [
-      "hurt",
-      " ache"
-     ]
-    },
-    {
-     "word": "suggest",
-     "clues": [
-      "propose",
-      " advise"
-     ]
-    },
-    {
-     "word": "evoke",
-     "clues": [
-      "suggest"
-     ]
-    },
-    {
-     "word": "suit",
-     "clues": [
-      "be agreeable or acceptable"
-     ]
-    },
-    {
-     "word": "support",
-     "clues": [
-      "confirm",
-      " corroborate",
-      " substantiate"
-     ]
-    },
-    {
-     "word": "hypothesize",
-     "clues": [
-      "speculate",
-      " theorize",
-      " conjecture"
-     ]
-    },
-    {
-     "word": "suppress",
-     "clues": [
-      "curb",
-      " inhibit"
-     ]
-    },
-    {
-     "word": "surround",
-     "clues": [
-      "encircle",
-      " circle",
-      " round"
-     ]
-    },
-    {
-     "word": "sustain",
-     "clues": [
-      "prolong",
-      " keep up"
-     ]
-    },
-    {
-     "word": "swallow",
-     "clues": [
-      "believe or accept without questioning"
-     ]
-    },
-    {
-     "word": "swallow",
-     "clues": [
-      "pass through the esophagus"
-     ]
-    },
-    {
-     "word": "swear",
-     "clues": [
-      "declare under oath"
-     ]
-    },
-    {
-     "word": "swear",
-     "clues": [
-      "curse",
-      " cuss",
-      " blaspheme"
-     ]
-    },
-    {
-     "word": "sweep",
-     "clues": [
-      "use a broom"
-     ]
-    },
-    {
-     "word": "swell",
-     "clues": [
-      "swell up"
-     ]
-    },
-    {
-     "word": "swim",
-     "clues": [
-      "travel through water"
-     ]
-    },
-    {
-     "word": "float",
-     "clues": [
-      "be afloat",
-      " fail to sink"
-     ]
-    },
-    {
-     "word": "swing",
-     "clues": [
-      "move with a swaying motion"
-     ]
-    },
-    {
-     "word": "swipe",
-     "clues": [
-      "move something with a swiping motion"
-     ]
-    },
-    {
-     "word": "swop",
-     "clues": [
-      "switch",
-      " trade",
-      " swap",
-      " exchange"
-     ]
-    },
-    {
-     "word": "take",
-     "clues": [
-      "choose",
-      " select",
-      " pick out"
-     ]
-    },
-    {
-     "word": "take",
-     "clues": [
-      "bring",
-      " convey"
-     ]
-    },
-    {
-     "word": "talk",
-     "clues": [
-      "speak",
-      " use language"
-     ]
-    },
-    {
-     "word": "tap",
-     "clues": [
-      "draw from"
-     ]
-    },
-    {
-     "word": "tap",
-     "clues": [
-      "strike lightly"
-     ]
-    },
-    {
-     "word": "taste",
-     "clues": [
-      "perceive by the sense of taste"
-     ]
-    },
-    {
-     "word": "tease",
-     "clues": [
-      "mock",
-      " make fun of"
-     ]
-    },
-    {
-     "word": "tease",
-     "clues": [
-      "arouse hope or desire without satisfying them"
-     ]
-    },
-    {
-     "word": "tell",
-     "clues": [
-      "narrate",
-      " recount",
-      " recite"
-     ]
-    },
-    {
-     "word": "tempt",
-     "clues": [
-      "entice",
-      " lure"
-     ]
-    },
-    {
-     "word": "terrify",
-     "clues": [
-      "frighten greatly"
-     ]
-    },
-    {
-     "word": "testify",
-     "clues": [
-      "bear witness"
-     ]
-    },
-    {
-     "word": "thank",
-     "clues": [
-      "give thanks"
-     ]
-    },
-    {
-     "word": "think",
-     "clues": [
-      "cogitate",
-      " cerebrate"
-     ]
-    },
-    {
-     "word": "think",
-     "clues": [
-      "believe",
-      " accept as true"
-     ]
-    },
-    {
-     "word": "remember",
-     "clues": [
-      "retrieve",
-      " recall"
-     ]
-    },
-    {
-     "word": "threaten",
-     "clues": [
-      "utter intentions of injury or punishment"
-     ]
-    },
-    {
-     "word": "confuse",
-     "clues": [
-      "throw",
-      " befuddle",
-      " confound"
-     ]
-    },
-    {
-     "word": "throw",
-     "clues": [
-      "project through the air"
-     ]
-    },
-    {
-     "word": "thrust",
-     "clues": [
-      "lunge",
-      " hurl",
-      " hurtle"
-     ]
-    },
-    {
-     "word": "tick",
-     "clues": [
-      "click"
-     ]
-    },
-    {
-     "word": "tie",
-     "clues": [
-      "form a knot or bow in"
-     ]
-    },
-    {
-     "word": "time",
-     "clues": [
-      "clock",
-      " measure the time or duration of an event"
-     ]
-    },
-    {
-     "word": "tiptoe",
-     "clues": [
-      "tippytoe"
-     ]
-    },
-    {
-     "word": "topple",
-     "clues": [
-      "tip",
-      " cause to fall over"
-     ]
-    },
-    {
-     "word": "tolerate",
-     "clues": [
-      "recognize",
-      " respect others' rights"
-     ]
-    },
-    {
-     "word": "toss",
-     "clues": [
-      "flip",
-      " pitch",
-      " throw"
-     ]
-    },
-    {
-     "word": "total",
-     "clues": [
-      "damage beyond the point of repair"
-     ]
-    },
-    {
-     "word": "touch",
-     "clues": [
-      "make physical contact with"
-     ]
-    },
-    {
-     "word": "train",
-     "clues": [
-      "coach"
-     ]
-    },
-    {
-     "word": "transfer",
-     "clues": [
-      "transmit",
-      " transport",
-      " channel"
-     ]
-    },
-    {
-     "word": "transform",
-     "clues": [
-      "transmute",
-      " metamorphose"
-     ]
-    },
-    {
-     "word": "tread",
-     "clues": [
-      "trample"
-     ]
-    },
-    {
-     "word": "treat",
-     "clues": [
-      "care for",
-      " provide treatment for",
-      " treat medically"
-     ]
-    },
-    {
-     "word": "treat",
-     "clues": [
-      "handle"
-     ]
-    },
-    {
-     "word": "trip",
-     "clues": [
-      "stumble"
-     ]
-    },
-    {
-     "word": "trouble",
-     "clues": [
-      "perturb",
-      " distract",
-      " make uneasy"
-     ]
-    },
-    {
-     "word": "try",
-     "clues": [
-      "sample",
-      " try out",
-      " taste"
-     ]
-    },
-    {
-     "word": "try",
-     "clues": [
-      "seek",
-      " attempt",
-      " essay"
-     ]
-    },
-    {
-     "word": "try",
-     "clues": [
-      "judge",
-      " adjudicate"
-     ]
-    },
-    {
-     "word": "tumble",
-     "clues": [
-      "topple",
-      " fall down"
-     ]
-    },
-    {
-     "word": "tune",
-     "clues": [
-      "tune up",
-      " adjust for (better) functioning"
-     ]
-    },
-    {
-     "word": "bend",
-     "clues": [
-      "flex",
-      " turn",
-      " deform",
-      " twist"
-     ]
-    },
-    {
-     "word": "turn",
-     "clues": [
-      "turn around",
-      " change orientation"
-     ]
-    },
-    {
-     "word": "rotate",
-     "clues": [
-      "turn"
-     ]
-    },
-    {
-     "word": "twist",
-     "clues": [
-      "entwine",
-      " form into a spiral"
-     ]
-    },
-    {
-     "word": "wriggle",
-     "clues": [
-      "writhe",
-      " worm",
-      " squirm"
-     ]
-    },
-    {
-     "word": "underline",
-     "clues": [
-      "underscore",
-      " draw a line"
-     ]
-    },
-    {
-     "word": "undermine",
-     "clues": [
-      "sabotage",
-      " countermine",
-      " counteract"
-     ]
-    },
-    {
-     "word": "understand",
-     "clues": [
-      "comprehend"
-     ]
-    },
-    {
-     "word": "understand",
-     "clues": [
-      "sympathize",
-      " empathize"
-     ]
-    },
-    {
-     "word": "undertake",
-     "clues": [
-      "tackle",
-      " take on"
-     ]
-    },
-    {
-     "word": "update",
-     "clues": [
-      "bring up to date"
-     ]
-    },
-    {
-     "word": "upset",
-     "clues": [
-      "disturb",
-      " trouble",
-      " move deeply"
-     ]
-    },
-    {
-     "word": "upset",
-     "clues": [
-      "overturn",
-      " tip over",
-      " turn over",
-      " knock over"
-     ]
-    },
-    {
-     "word": "urge",
-     "clues": [
-      "cheer",
-      " inspire",
-      " urge on"
-     ]
-    },
-    {
-     "word": "use",
-     "clues": [
-      "practice",
-      " apply"
-     ]
-    },
-    {
-     "word": "utter",
-     "clues": [
-      "emit"
-     ]
-    },
-    {
-     "word": "visit",
-     "clues": [
-      "travel to"
-     ]
-    },
-    {
-     "word": "vote",
-     "clues": [
-      "cast a vote in an election"
-     ]
-    },
-    {
-     "word": "wait",
-     "clues": [
-      "stay in one place and anticipate something"
-     ]
-    },
-    {
-     "word": "wake",
-     "clues": [
-      "wake up",
-      " stop sleeping"
-     ]
-    },
-    {
-     "word": "walk",
-     "clues": [
-      "use one's feet to advance"
-     ]
-    },
-    {
-     "word": "digress",
-     "clues": [
-      "wander",
-      " stray"
-     ]
-    },
-    {
-     "word": "want",
-     "clues": [
-      "desire"
-     ]
-    },
-    {
-     "word": "warn",
-     "clues": [
-      "notify of danger",
-      " potential harm",
-      " or risk"
-     ]
-    },
-    {
-     "word": "wash",
-     "clues": [
-      "bathe",
-      " cleanse one's body"
-     ]
-    },
-    {
-     "word": "wash",
-     "clues": [
-      "launder"
-     ]
-    },
-    {
-     "word": "waste",
-     "clues": [
-      "squander",
-      " spend extravagantly"
-     ]
-    },
-    {
-     "word": "watch",
-     "clues": [
-      "look on",
-      " observe"
-     ]
-    },
-    {
-     "word": "wave",
-     "clues": [
-      "beckon",
-      " signal with the hands"
-     ]
-    },
-    {
-     "word": "wear",
-     "clues": [
-      "have on clothes"
-     ]
-    },
-    {
-     "word": "weave",
-     "clues": [
-      "make cloth"
-     ]
-    },
-    {
-     "word": "weigh",
-     "clues": [
-      "determine the weight of"
-     ]
-    },
-    {
-     "word": "weigh",
-     "clues": [
-      "have a certain weight"
-     ]
-    },
-    {
-     "word": "whip",
-     "clues": [
-      "lash"
-     ]
-    },
-    {
-     "word": "whisper",
-     "clues": [
-      "speak softly"
-     ]
-    },
-    {
-     "word": "widen",
-     "clues": [
-      "make wider"
-     ]
-    },
-    {
-     "word": "win",
-     "clues": [
-      "be victorious"
-     ]
-    },
-    {
-     "word": "wind",
-     "clues": [
-      "wind up",
-      " coil the spring of a mechanism"
-     ]
-    },
-    {
-     "word": "withdraw",
-     "clues": [
-      "retreat",
-      " pull out"
-     ]
-    },
-    {
-     "word": "wonder",
-     "clues": [
-      "question",
-      " want to know"
-     ]
-    },
-    {
-     "word": "work",
-     "clues": [
-      "do work"
-     ]
-    },
-    {
-     "word": "wor",
-     "clues": [
-      "out] exercise"
-     ]
-    },
-    {
-     "word": "worry",
-     "clues": [
-      "be worried"
-     ]
-    },
-    {
-     "word": "wrap",
-     "clues": [
-      "enfold in a tissue"
-     ]
-    },
-    {
-     "word": "wrestle",
-     "clues": [
-      "engage in a wrestling match"
-     ]
-    },
-    {
-     "word": "write",
-     "clues": [
-      "communicate or express by writing"
-     ]
-    },
-    {
-     "word": "write",
-     "clues": [
-      "publish"
-     ]
-    },
-    {
-     "word": "spell",
-     "clues": [
-      "write"
-     ]
-    },
-    {
-     "word": "compose",
-     "clues": [
-      "write music"
-     ]
+      "word": "zone",
+      "clues": [
+        "geographical region"
+      ]
     }
-   ];*/
+  ]
