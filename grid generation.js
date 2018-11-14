@@ -1,5 +1,5 @@
 //this outputs a grid object
-function createGridObject(template)
+function createGridObject(template, words)
 {
     var grid = [];
     var refgrid = [];
@@ -20,7 +20,7 @@ function createGridObject(template)
         }
     }
 
-    //find word coordinates
+    //find word coordinates and add possible words
     for(let i = 0; i < grid.length; i++)
     {
         let width = template.width;
@@ -81,7 +81,7 @@ function createGridObject(template)
             }
         }
         grid[i].wordcords = wordcords;
-        //grid[i].possiblewords = words.filter((e) => {return e.word.length == wordcords.length});
+        grid[i].possiblewords = words.filter((e) => {return e.word.length == wordcords.length});
     }
 
     //find intersections
@@ -109,23 +109,67 @@ function createGridObject(template)
         }
         
     }
+
     return grid;
 }
 
-function wordAnalysis(grid, words)
+function wordAnalysis(grid)
+{
+    let allletters = ["a", "b", "c", "d", "e",
+    "f", "g", "h", "i", "j",
+    "k", "l", "m", "n", "o",
+    "p", "q", "r", "s", "t",
+    "u", "v", "w", "x", "y", "z"];
+
+    let prev = 0;
+    let now = 0;
+    for(let i = 0; i < grid.length; i++)
+    {
+        prev += grid[i].possiblewords.length;
+        for(let j = 0; j < grid[i].intersections.length; j++)
+        {
+            let int = grid[i].intersections[j];
+            let otherelem = grid[int.id];
+            let words = otherelem.possiblewords;
+            let letters = allletters.slice(0);
+            for(let k = 0; k < words.length; k++)
+            {
+                let letter = words[k].word.charAt(int.otherpos);
+                let index = letters.indexOf(letter);
+                if(index > -1) letters.splice(index, 1);
+            }
+            for(let k = 0; k < letters.length; k++)
+            {
+                let betterwords = []
+                for(let l = 0; l < grid[i].possiblewords.length; l++)
+                {
+                    if(!(grid[i].possiblewords[l].word.charAt(int.thispos) == letters[k]))
+                    {
+                        betterwords.push(grid[i].possiblewords[l])
+                    }
+                }
+                grid[i].possiblewords = betterwords;
+            }
+        }
+        now += grid[i].possiblewords.length;
+    }
+    return grid;
+}
+
+function advancedWordAnalysis(grid)
 {
     for(let i = 0; i < grid.length; i++)
     {
         let intpos = grid[i].intersections.map(e => e.thispos);
-        let possiblewords = words.filter((e) => {return e.word.length == grid[i].wordcords.length});
+        let possiblewords = grid[i].possiblewords;
         let patterns = [];
-        grid[i].possiblewords = [];
         if(intpos.length == grid[i].wordcords.length)
         {
             grid[i].possiblewords = possiblewords.map(e => [e]);
         }
         else
         {
+            grid[i].possiblewords = [];
             for(let j = 0; j < possiblewords.length; j++)
             {
                 let word = possiblewords[j];
@@ -148,6 +192,11 @@ function wordAnalysis(grid, words)
         }
     }
     return grid;
+}
+
+function combineUniquely(arr1, arr2)
+{
+    //combine uniquely and output
 }
 
 function printGrid(grid)

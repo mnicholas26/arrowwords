@@ -1,14 +1,13 @@
 window.onload = function()
 {
     //test grid gen
-    /*const templatechoice = 3;
-    var grid = createGridObject(templates[templatechoice]);
-    grid = wordAnalysis(grid, words);
-    let out = document.createElement('textarea');
+    const templatechoice = 3;
+    
+    /*let out = document.createElement('textarea');
     document.body.appendChild(out);
     out.value = printGrid(grid);*/
     
-    var grid = grid1;
+    //var grid = grid1;
 
     Array.prototype.shuffle = function() {
         var input = this;
@@ -21,10 +20,33 @@ window.onload = function()
         return input;
     }
 
-    //grid = createGridObject(templates[templatechoice]);
-    //populateGrid(grid);
+    grid = createGridObject(templates[templatechoice], words);
+    let before, after;
+    do
+    {
+        before = 0;
+        after = 0;
+        for(let i = 0; i < grid.length; i++)
+        {
+            before += grid[i].possiblewords.length;
+        }
+        grid = wordAnalysis(grid);
+        for(let i = 0; i < grid.length; i++)
+        {
+            after += grid[i].possiblewords.length;
+        }
+    } 
+    while(before != after);
+    console.log(after)
+
+    /*grid = advancedWordAnalysis(grid);
     console.log(grid);
-    //out.value = JSON.stringify(grid, null, 2);
+    let after2 = 0;
+    for(let i = 0; i < grid.length; i++)
+    {
+        after2 += grid[i].possiblewords.length;
+    }
+    console.log(after2);*/
 
     function populateGrid(grid)
     {
