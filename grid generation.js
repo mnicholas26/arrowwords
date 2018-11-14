@@ -173,30 +173,40 @@ function advancedWordAnalysis(grid)
             for(let j = 0; j < possiblewords.length; j++)
             {
                 let word = possiblewords[j];
-                let regex = '';
+                let format = '';
                 for(let k = 0; k < word.word.length; k++)
                 {
-                    if(intpos.includes(k)) regex += word.word.charAt(k);
-                    else regex += '[a-z]';
+                    if(intpos.includes(k)) format += word.word.charAt(k);
+                    else format += '*';
                 }
-                if(!patterns.includes(regex))
+                if(!patterns.includes(format))
                 {
-                    patterns.push(regex);
+                    patterns.push(format);
                 }
             }
             for(let j = 0; j < patterns.length; j++)
             {
-                let reduced = possiblewords.filter((e) => {return e.word.match(patterns[j])});
+                let reduced = [];
+                for(let k = 0; k < possiblewords.length; k++)
+                {
+                    let failed = false;
+                    patternloop:
+                    for(let l = 0; l < patterns[j].length; l++)
+                    {
+                        if(patterns[j].charAt(l) != "*" 
+                            && patterns[j].charAt(l) != possiblewords[k].word.charAt(l))
+                        {
+                            failed = true;
+                            break patternloop;
+                        }
+                    }
+                    if(!failed) reduced.push(possiblewords[k]);
+                }
                 grid[i].possiblewords.push(reduced);
             }
         }
     }
     return grid;
-}
-
-function combineUniquely(arr1, arr2)
-{
-    //combine uniquely and output
 }
 
 function printGrid(grid)

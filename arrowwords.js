@@ -20,7 +20,10 @@ window.onload = function()
         return input;
     }
 
+    var t0 = performance.now();
     grid = createGridObject(templates[templatechoice], words);
+    var t1 = performance.now();
+    console.log("Call to createGribObject took " + (t1 - t0) + " milliseconds.");
     let before, after;
     do
     {
@@ -37,11 +40,15 @@ window.onload = function()
         }
     } 
     while(before != after);
-    console.log(after)
+    var t2 = performance.now();
+    console.log("Call to wordAnalysis took " + (t2 - t1) + " milliseconds.");
+    //console.log(after);
 
-    /*grid = advancedWordAnalysis(grid);
+    grid = advancedWordAnalysis(grid);
+    var t3 = performance.now();
+    console.log("Call to advancedWordAnalysis took " + (t3 - t2) + " milliseconds.");
     console.log(grid);
-    let after2 = 0;
+    /*let after2 = 0;
     for(let i = 0; i < grid.length; i++)
     {
         after2 += grid[i].possiblewords.length;
