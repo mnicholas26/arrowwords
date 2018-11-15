@@ -81,7 +81,16 @@ function createGridObject(template, words)
             }
         }
         grid[i].wordcords = wordcords;
-        grid[i].possiblewords = words.filter((e) => {return e.word.length == wordcords.length});
+        //instanciate unreferenced person version
+        let newwords = [];
+        for(let i = 0; i < words.length; i++)
+        {
+            let out = {};
+            out.word = words[i].word;
+            out.clues = words[i].clues.slice(0);
+            newwords.push(out);
+        }
+        grid[i].possiblewords = newwords.filter((e) => {return e.word.length == wordcords.length});
     }
 
     //find intersections
@@ -165,6 +174,10 @@ function advancedWordAnalysis(grid)
         let patterns = [];
         if(intpos.length == grid[i].wordcords.length)
         {
+            for(let j = 0; j < possiblewords.length; j++)
+            {
+                possiblewords[j].scrabblemetric = scrabbleMetric(possiblewords[j].word);
+            }
             grid[i].possiblewords = possiblewords.map(e => [e]);
         }
         else
@@ -193,14 +206,19 @@ function advancedWordAnalysis(grid)
                     patternloop:
                     for(let l = 0; l < patterns[j].length; l++)
                     {
-                        if(patterns[j].charAt(l) != "*" 
-                            && patterns[j].charAt(l) != possiblewords[k].word.charAt(l))
+                        let patternletter = patterns[j].charAt(l);
+                        let wordletter = possiblewords[k].word.charAt(l);
+                        if(patternletter != "*" && patternletter != wordletter)
                         {
                             failed = true;
                             break patternloop;
                         }
                     }
-                    if(!failed) reduced.push(possiblewords[k]);
+                    if(!failed)
+                    {
+                        possiblewords[k].scrabblemetric = scrabbleMetric(patterns[j]);
+                        reduced.push(possiblewords[k]);
+                    }
                 }
                 grid[i].possiblewords.push(reduced);
             }
@@ -212,4 +230,31 @@ function advancedWordAnalysis(grid)
 function printGrid(grid)
 {
     return JSON.stringify(grid, null, 2);
+}
+
+function scrabbleMetric(word)
+{
+    let output = 0;
+    for(let i = 0; i < word.length; i++)
+    {
+        output += letterValue(word.charAt(i));
+    }
+    return output;
+}
+
+function letterValue(letter)
+{
+    letter = letter.toLowerCase();
+    if(letter == '*') return 0;
+    else if(letter == 'a' || letter == 'e' || letter == 'i'
+    || letter == 'l' || letter == 'n' || letter == 'o'
+    || letter == 'r' || letter == 's' || letter == 't' || letter == 'u') return 1;
+    else if(letter == 'd' || letter == 'g') return 2;
+    else if(letter == 'b' || letter == 'c' || letter  == 'm' || letter == 'p') return 3;
+    else if(letter == 'f' || letter == 'h' || letter == 'v'
+    || letter == 'w' || letter == 'y') return 4;
+    else if(letter ==  'k') return 5;
+    else if(letter == 'j' || letter == 'x') return 8;
+    else if(letter == 'q' || letter == 'z') return 10;
+    else return -10000;
 }
