@@ -55,7 +55,7 @@ window.onload = function()
     }
     console.log(after2);*/
 
-    populateGrid(grid);
+    grid = populateGrid(grid);
     var t4 = performance.now();
     console.log("Call to populateGrid took " + (t4 - t3) + " milliseconds.");
     console.log(grid);
@@ -72,12 +72,27 @@ window.onload = function()
         /*grid.sort((e, f) =>{
             return e.possiblewords.length - f.possiblewords.length;
         });*/
-        //shuffle possiblewords
-        /*for(let i = 0; i < grid.length; i++)
+        //this method does a breadth first search of intersections
+        /*let neworder = new Set();
+        neworder.add(grid[0]);
+        let positions = grid.map(e => e.id);
+        let start = 0;
+        while(neworder.size < grid.length)
         {
-            grid[i].possiblewords.shuffle();
-        }*/
-        //instead of shuffling possiblewords -> shuffle then sort by scrabble metric
+            let oldsize = neworder.size;
+            for(let i = start; i < oldsize; i++)
+            {
+                let arr = Array.from(neworder);
+                for(let j = 0; j < arr[i].intersections.length; j++)
+                {
+                    let id = arr[i].intersections[j].id;
+                    let index = positions.indexOf(id);
+                    neworder.add(grid[index]);
+                }
+            }
+            start = oldsize;
+        }
+        grid = Array.from(neworder);*/
         //we shuffle before sorting because we want words that tie to be in a random order
         //to preserve some sense of randomness
         for(let i = 0; i < grid.length; i++)
@@ -90,30 +105,21 @@ window.onload = function()
         let ids = grid.map(e => e.id);
         for(let i = 0; i < grid.length; i++)
         {
-            /*let fastints = [];
-            for(let j = 0; j < grid[i].intersections.length; j++)
-            {
-                if(i > ids.indexOf(grid[i].intersections[j].id))
-                {
-                    fastints.push(grid[i].intersections[j]);
-                }
-            }
-            grid[i].fastints = fastints;*/
-            //neater
             grid[i].fastints = grid[i].intersections.filter((e) =>{
                 return i > ids.indexOf(e.id);
             });
         }
         recursiveFill(grid, 0, ids);
+        return grid;
     }
 
     function recursiveFill(grid, index, ids)
     {
-        if(index == 12)
+        /*if(index == 12)
         {
             console.log(index + " deep");
             return -1;
-        }
+        }*/
         if(index >= grid.length) return -1;
         let words = grid[index].possiblewords;
         let intersections = grid[index].fastints;
@@ -130,6 +136,7 @@ window.onload = function()
         let instruction;
         for(let i = 0; i < words.length; i++)
         {
+            if(index == 0) console.log(i);
             grid[index].word = words[i][Math.floor(Math.random()*words[i].length)];
             instruction = recursiveFill(grid, index+1, ids);
             if(instruction == index) continue;
