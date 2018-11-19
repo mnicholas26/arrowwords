@@ -20,10 +20,43 @@ window.onload = function()
         return input;
     }
 
+    function average(arr)
+    {
+        let total = 0;
+        let len = arr.length;
+        for(let i = 0; i < len; i++)
+        {
+            total += arr[i];
+        }
+        return total/len;
+    }
+
+    var records = [];
+    for(let i = 0; i < 20; i++)
+    {
+        records.push(testing());
+    }
+    let gridgen = records.map(e => e.gridgen);
+    console.log("Call to createGribObject took on average " + average(gridgen) + " milliseconds.");
+    let wordanal = records.map(e => e.wordanal);
+    console.log("Call to wordAnalysis took on average " + average(wordanal) + " milliseconds.");
+    let advwordanal = records.map(e => e.advwordanal);
+    console.log("Call to advancedWordAnalysis took on average " + average(advwordanal) + " milliseconds.");
+    let popgrid = records.map(e => e.popgrid);
+    console.log("Call to populateGrid took on average " + average(popgrid) + " milliseconds.");
+    console.log()
+
+    function testing()
+    {
+
+    let record = {};
+
     var t0 = performance.now();
-    grid = createGridObject(templates[templatechoice], words);
+    var grid = createGridObject(templates[templatechoice], words);
     var t1 = performance.now();
-    console.log("Call to createGribObject took " + (t1 - t0) + " milliseconds.");
+    //console.log("Call to createGribObject took " + (t1 - t0) + " milliseconds.");
+    record.gridgen = t1 - t0;
+    t0 = performance.now();
     let before, after;
     do
     {
@@ -40,13 +73,17 @@ window.onload = function()
         }
     } 
     while(before != after);
-    var t2 = performance.now();
-    console.log("Call to wordAnalysis took " + (t2 - t1) + " milliseconds.");
+    t1 = performance.now();
+    //console.log("Call to wordAnalysis took " + (t2 - t1) + " milliseconds.");
+    record.wordanal = t1 - t0;
+    t0 = performance.now();
     //console.log(after);
 
     grid = advancedWordAnalysis(grid);
-    var t3 = performance.now();
-    console.log("Call to advancedWordAnalysis took " + (t3 - t2) + " milliseconds.");
+    t1 = performance.now();
+    //console.log("Call to advancedWordAnalysis took " + (t3 - t2) + " milliseconds.");
+    record.advwordanal = t1 - t0;
+    t0 = performance.now();
     //console.log(grid);
     /*let after2 = 0;
     for(let i = 0; i < grid.length; i++)
@@ -56,9 +93,14 @@ window.onload = function()
     console.log(after2);*/
 
     grid = populateGrid(grid);
-    var t4 = performance.now();
-    console.log("Call to populateGrid took " + (t4 - t3) + " milliseconds.");
-    console.log(grid);
+    t1 = performance.now();
+    //console.log("Call to populateGrid took " + (t4 - t3) + " milliseconds.");
+    record.popgrid = t1 - t0;
+    t0 = performance.now();
+    //console.log(grid);
+
+    return record;
+    }
 
     function populateGrid(grid)
     {
@@ -115,13 +157,13 @@ window.onload = function()
             else if(instruction == -1 && index == 0) break;
             else if(instruction < index) return instruction;
         }
-        if(instruction == -1 && index == 0) console.log("FINISHED");
-        else if(index == 0) console.log("cannot make puzzle");
-        else 
-        {
+        //if(instruction == -1 && index == 0) console.log("FINISHED");
+        //else if(index == 0) console.log("cannot make puzzle");
+        //else 
+        //{
             grid[index].word = undefined;
             return index-1;
-        }
+        //}
     }
 
     function constrainWords(grid, index, ids)
