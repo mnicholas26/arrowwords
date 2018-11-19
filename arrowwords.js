@@ -103,11 +103,24 @@ window.onload = function()
             });
         }
         let ids = grid.map(e => e.id);
-        for(let i = 0; i < grid.length; i++)
+        //old fastints
+        /*for(let i = 0; i < grid.length; i++)
         {
             grid[i].fastints = grid[i].intersections.filter((e) =>{
                 return i > ids.indexOf(e.id);
             });
+        }*/
+        //new intsbefore and intsafter
+        for(let i = 0; i < grid.length; i++)
+        {
+            grid[i].intsbefore = [];
+            grid[i].intsafter = [];
+            for(let j = 0; j < grid[i].intersections.length; j++)
+            {
+                let int = grid[i].intersections[j];
+                if(i > ids.indexOf(int.id)) grid[i].intsbefore.push(int);
+                else grid[i].intsafter.push(int);
+            }
         }
         recursiveFill(grid, 0, ids);
         return grid;
@@ -115,22 +128,8 @@ window.onload = function()
 
     function recursiveFill(grid, index, ids)
     {
-        /*if(index == 12)
-        {
-            console.log(index + " deep");
-            return -1;
-        }*/
         if(index >= grid.length) return -1;
-        let words = grid[index].possiblewords;
-        let intersections = grid[index].fastints;
-        //constrain array
-        for(let i = 0; i < intersections.length; i++)
-        {
-            idindex = ids.indexOf(intersections[i].id);
-            words = words.filter(e => {
-                return e[0].word.charAt(intersections[i].thispos) == grid[idindex].word.word.charAt(intersections[i].otherpos);
-            });
-        }
+        let words = constrainWords(grid, index, ids);
         //check if return
         if(words.length == 0) return index-1;
         let instruction;
@@ -138,6 +137,8 @@ window.onload = function()
         {
             if(index == 0) console.log(i);
             grid[index].word = words[i][Math.floor(Math.random()*words[i].length)];
+            //let skip = forwardChecking(grid, index, ids);
+            //if(skip) continue;
             instruction = recursiveFill(grid, index+1, ids);
             if(instruction == index) continue;
             else if(instruction == -1 && index == 0) break;
@@ -146,5 +147,38 @@ window.onload = function()
         if(instruction == -1 && index == 0) console.log("FINISHED");
         else if(index == 0) console.log("cannot make puzzle");
         else return index-1;
+    }
+
+    function constrainWords(grid, index, ids)
+    {
+        let words = grid[index].possiblewords;
+        let intersections = grid[index].intsbefore;
+        for(let i = 0; i < intersections.length; i++)
+        {
+            idindex = ids.indexOf(intersections[i].id);
+            let otherword = grid[idindex].word;
+            if(otherword == undefined) continue;
+            let otherletter = otherword.word.charAt(intersections[i].otherpos);
+            let thispos = intersections[i].thispos;
+            words = words.filter(e => {
+                return e[0].word.charAt(thispos) == otherletter;
+            });
+        }
+        return words;
+    }
+
+    function forwardChecking(grid, index, ids)
+    {
+        let skip = false;
+        for(let i = 0; i < grid[index].intsafter.length; i++)
+        {
+            let words = constrainWords(grid, ids.indexOf(grid[index].intsafter[i].id), ids);
+            if(words.length == 0)
+            {
+                skip == true;
+                break;
+            }
+        }
+        return skip;
     }
 }
