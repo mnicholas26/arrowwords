@@ -87,7 +87,7 @@ function createGridObject(template, words)
         {
             let out = {};
             out.word = words[i].word;
-            out.clues = words[i].clues.slice(0);
+            if(words[i].clues instanceof Array) out.clues = words[i].clues.slice(0);
             newwords.push(out);
         }
         grid[i].possiblewords = newwords.filter((e) => {return e.word.length == wordcords.length});

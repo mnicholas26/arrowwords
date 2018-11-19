@@ -68,31 +68,6 @@ window.onload = function()
         grid.sort((e, f) => {
             return f.intersections.length - e.intersections.length;
         });
-        //this method goes least word -> most words
-        /*grid.sort((e, f) =>{
-            return e.possiblewords.length - f.possiblewords.length;
-        });*/
-        //this method does a breadth first search of intersections
-        /*let neworder = new Set();
-        neworder.add(grid[0]);
-        let positions = grid.map(e => e.id);
-        let start = 0;
-        while(neworder.size < grid.length)
-        {
-            let oldsize = neworder.size;
-            for(let i = start; i < oldsize; i++)
-            {
-                let arr = Array.from(neworder);
-                for(let j = 0; j < arr[i].intersections.length; j++)
-                {
-                    let id = arr[i].intersections[j].id;
-                    let index = positions.indexOf(id);
-                    neworder.add(grid[index]);
-                }
-            }
-            start = oldsize;
-        }
-        grid = Array.from(neworder);*/
         //we shuffle before sorting because we want words that tie to be in a random order
         //to preserve some sense of randomness
         for(let i = 0; i < grid.length; i++)
@@ -103,14 +78,6 @@ window.onload = function()
             });
         }
         let ids = grid.map(e => e.id);
-        //old fastints
-        /*for(let i = 0; i < grid.length; i++)
-        {
-            grid[i].fastints = grid[i].intersections.filter((e) =>{
-                return i > ids.indexOf(e.id);
-            });
-        }*/
-        //new intsbefore and intsafter
         for(let i = 0; i < grid.length; i++)
         {
             grid[i].intsbefore = [];
@@ -131,14 +98,18 @@ window.onload = function()
         if(index >= grid.length) return -1;
         let words = constrainWords(grid, index, ids);
         //check if return
-        if(words.length == 0) return index-1;
+        if(words.length == 0)
+        {
+            grid[index].word = undefined;
+            return index-1;
+        }
         let instruction;
         for(let i = 0; i < words.length; i++)
         {
-            if(index == 0) console.log(i);
+            //if(index == 0) console.log(i);
             grid[index].word = words[i][Math.floor(Math.random()*words[i].length)];
-            //let skip = forwardChecking(grid, index, ids);
-            //if(skip) continue;
+            let skip = forwardChecking(grid, index, ids);
+            if(skip) continue;
             instruction = recursiveFill(grid, index+1, ids);
             if(instruction == index) continue;
             else if(instruction == -1 && index == 0) break;
@@ -146,7 +117,11 @@ window.onload = function()
         }
         if(instruction == -1 && index == 0) console.log("FINISHED");
         else if(index == 0) console.log("cannot make puzzle");
-        else return index-1;
+        else 
+        {
+            grid[index].word = undefined;
+            return index-1;
+        }
     }
 
     function constrainWords(grid, index, ids)
@@ -175,7 +150,7 @@ window.onload = function()
             let words = constrainWords(grid, ids.indexOf(grid[index].intsafter[i].id), ids);
             if(words.length == 0)
             {
-                skip == true;
+                skip = true;
                 break;
             }
         }
