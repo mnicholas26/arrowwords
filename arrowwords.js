@@ -129,6 +129,7 @@ window.onload = function()
                 else grid[i].intsafter.push(int);
             }
         }
+        grid.usedwords = [];
         recursiveFill(grid, 0);
         return grid;
     }
@@ -141,6 +142,7 @@ window.onload = function()
         if(words.length == 0)
         {
             grid[index].word = undefined;
+            grid.usedwords.pop();
             return index-1;
         }
         let instruction;
@@ -148,8 +150,10 @@ window.onload = function()
         {
             //if(index == 0) console.log(i);
             grid[index].word = words[i][Math.floor(Math.random()*words[i].length)];
+            if(grid.usedwords.includes(grid[index].word.word)) continue;
             let skip = forwardChecking(grid, index);
             if(skip) continue;
+            grid.usedwords.push(grid[index].word.word);
             instruction = recursiveFill(grid, index+1);
             if(instruction == index) continue;
             else if(instruction == -1 && index == 0) break;
@@ -160,6 +164,7 @@ window.onload = function()
         //else 
         //{
             grid[index].word = undefined;
+            grid.usedwords.pop();
             return index-1;
         //}
     }
