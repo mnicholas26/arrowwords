@@ -179,9 +179,16 @@ window.onload = function()
             if(otherword == undefined) continue;
             let otherletter = otherword.word.charAt(intersections[i].otherpos);
             let thispos = intersections[i].thispos;
-            words = words.filter(e => {
+            /*words = words.filter(e => {
                 return e[0].word.charAt(thispos) == otherletter;
-            });
+            });*/
+            let tempwords = [];
+            for(let i = 0; i < words.length; i++)
+            {
+                if(words[i][0].word.charAt(thispos) == otherletter) tempwords.push(words[i]);
+            }
+            words = tempwords;
+            //if(words.length == 0) return words;
         }
         return words;
     }
