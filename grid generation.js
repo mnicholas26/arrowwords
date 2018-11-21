@@ -4,7 +4,7 @@ function createGridObject(template, words)
     var grid = [];
     var refgrid = [];
     var rows = template.context.split('\n');
-    //parse context to find clue's positions, types, id and fill our reference grid
+    //parse context to find clue's positions, types and fill our reference grid
     for(let i = 0; i < rows.length; i++)
     {
         var elems = rows[i].trim().split(' ');
@@ -15,7 +15,6 @@ function createGridObject(template, words)
             if(isNaN(elems[j])) continue;
             clue.position = {x: j, y: i};
             clue.type = elems[j];
-            clue.id = grid.length;
             grid.push(clue);
         }
     }
@@ -109,7 +108,7 @@ function createGridObject(template, words)
                     let coord = grid[k].wordcords[l];
                     if(coord.x == x && coord.y == y && k != i)
                     {
-                        grid[i].intersections.push({id: grid[k].id, thispos: j, otherpos: l});
+                        grid[i].intersections.push({elem: grid[k], thispos: j, otherpos: l});
                         //grid[i].possiblewords = words.filter((e) => {return e.word.length == grid[i].wordcords.length});
                         intpos.push(j);
                     }
@@ -138,7 +137,7 @@ function wordAnalysis(grid)
         for(let j = 0; j < grid[i].intersections.length; j++)
         {
             let int = grid[i].intersections[j];
-            let otherelem = grid[int.id];
+            let otherelem = int.elem;
             let words = otherelem.possiblewords;
             let letters = allletters.slice(0);
             for(let k = 0; k < words.length; k++)
