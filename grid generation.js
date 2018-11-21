@@ -4,7 +4,7 @@ function createGridObject(template, words)
     var grid = [];
     var refgrid = [];
     var rows = template.context.split('\n');
-    //parse context to find clue's positions, types and fill our reference grid
+    //parse context to find clue's positions, types, id and fill our reference grid
     for(let i = 0; i < rows.length; i++)
     {
         var elems = rows[i].trim().split(' ');
@@ -15,6 +15,7 @@ function createGridObject(template, words)
             if(isNaN(elems[j])) continue;
             clue.position = {x: j, y: i};
             clue.type = elems[j];
+            clue.id = grid.length;
             grid.push(clue);
         }
     }

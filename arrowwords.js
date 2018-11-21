@@ -105,9 +105,71 @@ window.onload = function()
         //step 1 setup grid in most efficient way for iteration
         //this method goes most intersections to least
         //wanna try breadth first search web with intersections % as tiebreaker
-        grid.sort((e, f) => {
+        /*grid.sort((e, f) => {
             return f.intersections.length - e.intersections.length;
-        });
+        });*/
+        //sort via intersection web
+        //i.e do words which give us the largest int before array possible
+        //step 1 find word with most intersections
+        let max = 0;
+        let maxelem;
+        let newgrid = [];
+        let ids = [];
+        for(let i = 0; i < grid.length; i++)
+        {
+            if(grid[i].intersections.length > max)
+            {
+                max = grid[i].intersections.length;
+                maxelem = grid[i];
+            }
+        }
+        newgrid.push(maxelem);
+        ids.push(maxelem.id);
+        for(let i = 0; i < grid.length-1; i++)
+        {
+            max = 0;
+            let numints = 0;
+            for(let j = 0; j < grid.length; j++)
+            {
+                grid[j].counter = 0;
+            }
+            let ints = [];
+            //grab all intersections off elems in newgrid
+            for(let j = 0; j < newgrid.length; j++)
+            {
+                for(let k = 0; k < newgrid[j].intersections.length; k++)
+                {
+                    ints.push(newgrid[j].intersections[k].elem);
+                }
+            }
+            //remove ints which are in newgrid already, increment counter otherwise
+            let betterints = [];
+            for(let j = 0; j < ints.length; j++)
+            {
+                if(!ids.includes(ints[j].id))
+                {
+                    ints[j].counter++;
+                    betterints.push(ints[j]);
+                }
+            }
+            //which is the most frequently occuring id
+            //this tells us the element that intersects with the most in newgrid
+            //tiebreak based on number of intersections
+            for(let j = 0; j < betterints.length; j++)
+            {
+                if(betterints[j].counter >= max 
+                    && betterints[j].intersections.length > numints)
+                    {
+                        max = betterints[j].counter;
+                        numints = betterints[j].intersections.length;
+                        maxelem = betterints[j];
+                    }
+            }
+            //add that element to newgrid
+            newgrid.push(maxelem);
+            ids.push(maxelem.id);
+        }
+        grid = newgrid;
         //we shuffle before sorting because we want words that tie to be in a random order
         //to preserve some sense of randomness
         for(let i = 0; i < grid.length; i++)
@@ -117,6 +179,7 @@ window.onload = function()
                 return e[0].scrabblemetric - f[0].scrabblemetric;
             });
             grid[i].id = i;
+            grid[i].counter = undefined;
         }
         for(let i = 0; i < grid.length; i++)
         {
@@ -151,8 +214,7 @@ window.onload = function()
             //if(index == 0) console.log(i);
             grid[index].word = words[i][Math.floor(Math.random()*words[i].length)];
             if(grid.usedwords.includes(grid[index].word.word)) continue;
-            let skip = forwardChecking(grid, index);
-            if(skip) continue;
+            if(forwardChecking(grid, index)) continue;
             grid.usedwords.push(grid[index].word.word);
             instruction = recursiveFill(grid, index+1);
             if(instruction == index) continue;
