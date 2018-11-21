@@ -32,7 +32,7 @@ window.onload = function()
     }
 
     var records = [];
-    for(let i = 0; i < 20; i++)
+    for(let i = 0; i < 5; i++)
     {
         records.push(testing());
     }
@@ -96,7 +96,6 @@ window.onload = function()
     t1 = performance.now();
     //console.log("Call to populateGrid took " + (t4 - t3) + " milliseconds.");
     record.popgrid = t1 - t0;
-    t0 = performance.now();
     //console.log(grid);
 
     return record;
