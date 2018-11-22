@@ -138,7 +138,7 @@ window.onload = function()
     function recursiveFill(grid, index)
     {
         if(index >= grid.length) return -1;
-        let words = constrainWords(grid, index);
+        let words = constrainWords(grid[index]);
         //check if return
         if(words.length == 0)
         {
@@ -152,7 +152,7 @@ window.onload = function()
             //if(index == 0) console.log(i);
             grid[index].word = words[i][Math.floor(Math.random()*words[i].length)];
             if(grid.usedwords.includes(grid[index].word.word)) continue;
-            if(forwardChecking(grid, index)) continue;
+            if(forwardChecking(grid[index])) continue;
             grid.usedwords.push(grid[index].word.word);
             instruction = recursiveFill(grid, index+1);
             if(instruction == index) continue;
@@ -169,13 +169,13 @@ window.onload = function()
         //}
     }
 
-    function constrainWords(grid, index)
+    function constrainWords(gridelem)
     {
-        let words = grid[index].possiblewords;
-        let intersections = grid[index].intsbefore;
+        let words = gridelem.possiblewords;
+        let intersections = gridelem.intsbefore;
         for(let i = 0; i < intersections.length; i++)
         {
-            let otherword = grid[intersections[i].elem.id].word;
+            let otherword = intersections[i].elem.word;
             if(otherword == undefined) continue;
             let otherletter = otherword.word.charAt(intersections[i].otherpos);
             let thispos = intersections[i].thispos;
@@ -194,12 +194,12 @@ window.onload = function()
         return words;
     }
 
-    function forwardChecking(grid, index)
+    function forwardChecking(gridelem)
     {
         let skip = false;
-        for(let i = 0; i < grid[index].intsafter.length; i++)
+        for(let i = 0; i < gridelem.intsafter.length; i++)
         {
-            let words = constrainWords(grid, grid[index].intsafter[i].elem.id);
+            let words = constrainWords(gridelem.intsafter[i].elem);
             if(words.length == 0)
             {
                 skip = true;
