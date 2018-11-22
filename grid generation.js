@@ -2,6 +2,8 @@
 function createGridObject(template, words)
 {
     var grid = [];
+    grid.width = template.width;
+    grid.height = template.height;
     var refgrid = [];
     var rows = template.context.split('\n');
     //parse context to find clue's positions, types, id and fill our reference grid

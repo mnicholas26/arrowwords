@@ -1,9 +1,62 @@
 .grid{
-    height: 800px;
-    width: 600px;
     border-collapse: collapse;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
 }
 
 .grid td{
     border: 1px solid black;
+    height: 40px;
+    width: 40px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.clue{
+    background-color: lightgrey;
+    text-transform: capitalize;
+    font-size: 50%;
+}
+
+.letter{
+    text-transform: uppercase;
+}
+
+.arrow{
+    position: absolute;
+    z-index: 1;
+    font-size: 250%;
+}
+
+.atype0{
+    left: 37%;
+    top: -33%;
+}
+
+.atype1{
+    left: 80%;
+    top: 18%;
+}
+
+.atype2{
+    left: 42%;
+    top: 72%;
+}
+
+.atype3{
+    /*we dont know this one yet
+    placeholder values*/
+    left: 42%;
+    top: 72%;
+}
+
+.atype4{
+    left: 37%;
+    top: 70%;
+}
+
+.atype5{
+    left: 94%;
+    top: 21%;
 }

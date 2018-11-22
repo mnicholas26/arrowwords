@@ -102,6 +102,11 @@ window.onload = function()
     record.popgrid = t1 - t0;
     console.log(grid);
 
+    //front end stuff
+    let gridview = createGridView(grid);
+    document.body.appendChild(gridview);
+    printGrid(grid, gridview);
+
     return record;
     }
 
@@ -226,6 +231,8 @@ window.onload = function()
         let max = 0;
         let maxelem;
         let newgrid = [];
+        newgrid.width = grid.width;
+        newgrid.height = grid.height;
         let ids = [];
         for(let i = 0; i < grid.length; i++)
         {
