@@ -85,12 +85,16 @@ function createGridObject(template, words)
         let newwords = [];
         for(let i = 0; i < words.length; i++)
         {
-            let out = {};
-            out.word = words[i].word;
-            if(words[i].clues instanceof Array) out.clues = words[i].clues.slice(0);
-            newwords.push(out);
+            if(words[i].word.length == wordcords.length)
+            {
+                let out = {};
+                out.word = words[i].word;
+                out.scrabblemetric = scrabbleMetric(words[i].word);
+                if(words[i].clues instanceof Array) out.clues = words[i].clues.slice(0);
+                newwords.push(out);
+            }
         }
-        grid[i].possiblewords = newwords.filter((e) => {return e.word.length == wordcords.length});
+        grid[i].possiblewords = newwords;
     }
 
     //find intersections
@@ -169,59 +173,66 @@ function advancedWordAnalysis(grid)
 {
     for(let i = 0; i < grid.length; i++)
     {
-        let intpos = grid[i].intersections.map(e => e.thispos);
-        let possiblewords = grid[i].possiblewords;
-        let patterns = [];
-        if(intpos.length == grid[i].wordcords.length)
+        let ints = grid[i].intersections.slice(0);
+        /*if(ints.length == grid[i].wordcords.length)
         {
+            let mappedwords = [];
             for(let j = 0; j < possiblewords.length; j++)
             {
-                possiblewords[j].scrabblemetric = scrabbleMetric(possiblewords[j].word);
+                mappedwords.push([possiblewords[j]]);
             }
-            grid[i].possiblewords = possiblewords.map(e => [e]);
+            grid[i].possiblewords = mappedwords;
         }
-        else
+        else*/
+        if(ints.length != grid[i].wordcords.length)
         {
+            let clueformat = "";
+            for(let j = 0; j < grid[i].wordcords.length; j++)
+            {
+                if(ints.length == 0) clueformat += "*";
+                else if(ints[0].thispos != j) clueformat += "*";
+                else
+                {
+                    clueformat += "#";
+                    ints.shift();
+                }
+            }
+            let possiblewords = grid[i].possiblewords;
+            let patterns = [];
             grid[i].possiblewords = [];
             for(let j = 0; j < possiblewords.length; j++)
             {
                 let word = possiblewords[j];
-                let format = '';
-                for(let k = 0; k < word.word.length; k++)
+                let format = clueformat;
+                for(let k = 0; k < clueformat.length; k++)
                 {
-                    if(intpos.includes(k)) format += word.word.charAt(k);
-                    else format += '*';
-                }
-                if(!patterns.includes(format))
-                {
-                    patterns.push(format);
-                }
-            }
-            for(let j = 0; j < patterns.length; j++)
-            {
-                let reduced = [];
-                for(let k = 0; k < possiblewords.length; k++)
-                {
-                    let failed = false;
-                    patternloop:
-                    for(let l = 0; l < patterns[j].length; l++)
+                    if(clueformat.charAt(k) == '#')
                     {
-                        let patternletter = patterns[j].charAt(l);
-                        let wordletter = possiblewords[k].word.charAt(l);
-                        if(patternletter != "*" && patternletter != wordletter)
-                        {
-                            failed = true;
-                            break patternloop;
-                        }
-                    }
-                    if(!failed)
-                    {
-                        possiblewords[k].scrabblemetric = scrabbleMetric(patterns[j]);
-                        reduced.push(possiblewords[k]);
+                        //format.charAt(k) = word.word.charAt(k);
+                        format = format.substr(0, k) + word.word.charAt(k) + format.substr(k+1);
                     }
                 }
-                grid[i].possiblewords.push(reduced);
+                let index = -1;
+                patternuniqueness:
+                for(let k = 0; k < patterns.length; k++)
+                {
+                    if(patterns[k].format == format)
+                    {
+                        index = k;
+                        break patternuniqueness;
+                    }
+                }
+                if(index > -1) patterns[index].words.push(word);
+                else
+                {
+                    let pattern = {};
+                    pattern.format = format;
+                    pattern.scrabblemetric = scrabbleMetric(format);
+                    pattern.words = [word];
+                    patterns.push(pattern);
+                }
             }
+            grid[i].possiblewords = patterns;
         }
     }
     return grid;

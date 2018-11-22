@@ -51,7 +51,8 @@ window.onload = function()
     let record = {};
 
     let newwords = createWords(biggerwords);
-    let words = words1.concat(newwords);
+    let words = newwords;
+    //let words = words1.concat(newwords);
     //let words = words1;
 
     var t0 = performance.now();
@@ -95,7 +96,7 @@ window.onload = function()
     }
     console.log(after2);*/
 
-    grid = populateGrid(grid);
+    //grid = populateGrid(grid);
     t1 = performance.now();
     //console.log("Call to populateGrid took " + (t4 - t3) + " milliseconds.");
     record.popgrid = t1 - t0;
