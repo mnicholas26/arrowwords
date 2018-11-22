@@ -88,9 +88,9 @@ function createGridObject(template, words)
             if(words[i].word.length == wordcords.length)
             {
                 let out = {};
-                out.word = words[i].word;
-                out.scrabblemetric = scrabbleMetric(words[i].word);
-                if(words[i].clues instanceof Array) out.clues = words[i].clues.slice(0);
+                out.words = [{word: words[i].word}];
+                out.scrabblemetric = words[i].scrabblemetric;
+                //if(words[i].clues instanceof Array) out.clues = words[i].clues.slice(0);
                 newwords.push(out);
             }
         }
@@ -147,7 +147,7 @@ function wordAnalysis(grid)
             let letters = allletters.slice(0);
             for(let k = 0; k < words.length; k++)
             {
-                let letter = words[k].word.charAt(int.otherpos);
+                let letter = words[k].words[0].word.charAt(int.otherpos);
                 let index = letters.indexOf(letter);
                 if(index > -1) letters.splice(index, 1);
             }
@@ -156,7 +156,7 @@ function wordAnalysis(grid)
                 let betterwords = []
                 for(let l = 0; l < grid[i].possiblewords.length; l++)
                 {
-                    if(!(grid[i].possiblewords[l].word.charAt(int.thispos) == letters[k]))
+                    if(!(grid[i].possiblewords[l].words[0].word.charAt(int.thispos) == letters[k]))
                     {
                         betterwords.push(grid[i].possiblewords[l])
                     }
@@ -209,7 +209,7 @@ function advancedWordAnalysis(grid)
                     if(clueformat.charAt(k) == '#')
                     {
                         //format.charAt(k) = word.word.charAt(k);
-                        format = format.substr(0, k) + word.word.charAt(k) + format.substr(k+1);
+                        format = format.substr(0, k) + word.words[0].word.charAt(k) + format.substr(k+1);
                     }
                 }
                 let index = -1;
@@ -222,13 +222,13 @@ function advancedWordAnalysis(grid)
                         break patternuniqueness;
                     }
                 }
-                if(index > -1) patterns[index].words.push(word);
+                if(index > -1) patterns[index].words.push(word.words[0]);
                 else
                 {
                     let pattern = {};
                     pattern.format = format;
                     pattern.scrabblemetric = scrabbleMetric(format);
-                    pattern.words = [word];
+                    pattern.words = [word.words[0]];
                     patterns.push(pattern);
                 }
             }

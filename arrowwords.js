@@ -50,10 +50,10 @@ window.onload = function()
 
     let record = {};
 
-    let newwords = createWords(biggerwords);
-    let words = newwords;
+    //let newwords = createWords(biggerwords);
+    //let words = newwords;
     //let words = words1.concat(newwords);
-    //let words = words1;
+    let words = words1;
 
     var t0 = performance.now();
     var grid = createGridObject(templates[templatechoice], words);
@@ -96,7 +96,7 @@ window.onload = function()
     }
     console.log(after2);*/
 
-    //grid = populateGrid(grid);
+    grid = populateGrid(grid);
     t1 = performance.now();
     //console.log("Call to populateGrid took " + (t4 - t3) + " milliseconds.");
     record.popgrid = t1 - t0;
@@ -116,7 +116,7 @@ window.onload = function()
         {
             grid[i].possiblewords.shuffle();
             grid[i].possiblewords.sort((e, f) => {
-                return e[0].scrabblemetric - f[0].scrabblemetric;
+                return e.scrabblemetric - f.scrabblemetric;
             });
             grid[i].id = i;
             grid[i].counter = undefined;
@@ -155,7 +155,7 @@ window.onload = function()
         for(let i = 0; i < words.length; i++)
         {
             //if(index == 0) console.log(i);
-            grid[index].word = words[i][Math.floor(Math.random()*words[i].length)];
+            grid[index].word = words[i].words[Math.floor(Math.random()*words[i].words.length)];
             if(grid.usedwords.includes(grid[index].word.word)) continue;
             if(forwardChecking(grid[index])) continue;
             grid.usedwords.push(grid[index].word.word);
@@ -190,7 +190,7 @@ window.onload = function()
             let tempwords = [];
             for(let i = 0; i < words.length; i++)
             {
-                if(words[i][0].word.charAt(thispos) == otherletter) tempwords.push(words[i]);
+                if(words[i].words[0].word.charAt(thispos) == otherletter) tempwords.push(words[i]);
             }
             words = tempwords;
             //this line should be readded at some point because it is a theoretical speedup
