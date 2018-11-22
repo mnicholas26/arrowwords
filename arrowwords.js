@@ -32,7 +32,7 @@ window.onload = function()
     }
 
     var records = [];
-    for(let i = 0; i < 20; i++)
+    for(let i = 0; i < 1; i++)
     {
         records.push(testing());
     }
@@ -49,6 +49,10 @@ window.onload = function()
     {
 
     let record = {};
+
+    let newwords = createWords(biggerwords);
+    let words = words1.concat(newwords);
+    //let words = words1;
 
     var t0 = performance.now();
     var grid = createGridObject(templates[templatechoice], words);
@@ -95,7 +99,7 @@ window.onload = function()
     t1 = performance.now();
     //console.log("Call to populateGrid took " + (t4 - t3) + " milliseconds.");
     record.popgrid = t1 - t0;
-    //console.log(grid);
+    console.log(grid);
 
     return record;
     }
@@ -159,14 +163,14 @@ window.onload = function()
             else if(instruction == -1 && index == 0) break;
             else if(instruction < index) return instruction;
         }
-        //if(instruction == -1 && index == 0) console.log("FINISHED");
-        //else if(index == 0) console.log("cannot make puzzle");
-        //else 
-        //{
+        if(instruction == -1 && index == 0) console.log("FINISHED");
+        else if(index == 0) console.log("cannot make puzzle");
+        else 
+        {
             grid[index].word = undefined;
             grid.usedwords.pop();
             return index-1;
-        //}
+        }
     }
 
     function constrainWords(gridelem)
