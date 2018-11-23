@@ -6,7 +6,7 @@ function createWords(blob)
     {
         let word = {};
         word.word = rows[i].trim();
-        word.scrabblemetric = scrabbleMetric(word.word);
+        //word.scrabblemetric = scrabbleMetric(word.word);
         words.push(word);
     }
     return words;

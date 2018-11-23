@@ -89,9 +89,9 @@ function createGridObject(template, words)
         {
             if(words[i].word.length == wordcords.length)
             {
-                let out = {};
-                out.words = [{word: words[i].word}];
-                out.scrabblemetric = words[i].scrabblemetric;
+                let out = [{word: words[i].word}];
+                //out.word = {word: words[i].word};
+                ///out.scrabblemetric = words[i].scrabblemetric;
                 //if(words[i].clues instanceof Array) out.clues = words[i].clues.slice(0);
                 newwords.push(out);
             }
@@ -149,7 +149,7 @@ function wordAnalysis(grid)
             let letters = allletters.slice(0);
             for(let k = 0; k < words.length; k++)
             {
-                let letter = words[k].words[0].word.charAt(int.otherpos);
+                let letter = words[k][0].word.charAt(int.otherpos);
                 let index = letters.indexOf(letter);
                 if(index > -1) letters.splice(index, 1);
             }
@@ -158,7 +158,7 @@ function wordAnalysis(grid)
                 let betterwords = []
                 for(let l = 0; l < grid[i].possiblewords.length; l++)
                 {
-                    if(!(grid[i].possiblewords[l].words[0].word.charAt(int.thispos) == letters[k]))
+                    if(!(grid[i].possiblewords[l][0].word.charAt(int.thispos) == letters[k]))
                     {
                         betterwords.push(grid[i].possiblewords[l])
                     }
@@ -176,16 +176,6 @@ function advancedWordAnalysis(grid)
     for(let i = 0; i < grid.length; i++)
     {
         let ints = grid[i].intersections.slice(0);
-        /*if(ints.length == grid[i].wordcords.length)
-        {
-            let mappedwords = [];
-            for(let j = 0; j < possiblewords.length; j++)
-            {
-                mappedwords.push([possiblewords[j]]);
-            }
-            grid[i].possiblewords = mappedwords;
-        }
-        else*/
         if(ints.length != grid[i].wordcords.length)
         {
             let clueformat = "";
@@ -211,7 +201,7 @@ function advancedWordAnalysis(grid)
                     if(clueformat.charAt(k) == '#')
                     {
                         //format.charAt(k) = word.word.charAt(k);
-                        format = format.substr(0, k) + word.words[0].word.charAt(k) + format.substr(k+1);
+                        format = format.substr(0, k) + word[0].word.charAt(k) + format.substr(k+1);
                     }
                 }
                 let index = -1;
@@ -224,13 +214,15 @@ function advancedWordAnalysis(grid)
                         break patternuniqueness;
                     }
                 }
-                if(index > -1) patterns[index].words.push(word.words[0]);
+                if(index > -1) patterns[index].push(word[0]);
                 else
                 {
-                    let pattern = {};
+                    /*let pattern = {};
                     pattern.format = format;
                     pattern.scrabblemetric = scrabbleMetric(format);
-                    pattern.words = [word.words[0]];
+                    pattern.words = [word.words[0]];*/
+                    pattern = [word[0]];
+                    pattern.format = format;
                     patterns.push(pattern);
                 }
             }

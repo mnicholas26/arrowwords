@@ -1,25 +1,19 @@
+Array.prototype.shuffle = function() {
+    var input = this;
+    for (let i = input.length-1; i >=0; i--) {
+        var randomIndex = Math.floor(Math.random()*(i+1)); 
+        var itemAtIndex = input[randomIndex]; 
+        input[randomIndex] = input[i]; 
+        input[i] = itemAtIndex;
+    }
+    return input;
+}
+
 window.onload = function()
 {
     //test grid gen
     const templatechoice = 3;
     
-    /*let out = document.createElement('textarea');
-    document.body.appendChild(out);
-    out.value = printGrid(grid);*/
-    
-    //var grid = grid1;
-
-    Array.prototype.shuffle = function() {
-        var input = this;
-        for (let i = input.length-1; i >=0; i--) {
-            var randomIndex = Math.floor(Math.random()*(i+1)); 
-            var itemAtIndex = input[randomIndex]; 
-            input[randomIndex] = input[i]; 
-            input[i] = itemAtIndex;
-        }
-        return input;
-    }
-
     function average(arr)
     {
         let total = 0;
@@ -120,9 +114,9 @@ window.onload = function()
         for(let i = 0; i < grid.length; i++)
         {
             grid[i].possiblewords.shuffle();
-            grid[i].possiblewords.sort((e, f) => {
+            /*grid[i].possiblewords.sort((e, f) => {
                 return e.scrabblemetric - f.scrabblemetric;
-            });
+            });*/
             grid[i].id = i;
             grid[i].counter = undefined;
         }
@@ -160,7 +154,7 @@ window.onload = function()
         for(let i = 0; i < words.length; i++)
         {
             //if(index == 0) console.log(i);
-            grid[index].word = words[i].words[Math.floor(Math.random()*words[i].words.length)];
+            grid[index].word = words[i][Math.floor(Math.random()*words[i].length)];
             if(grid.usedwords.includes(grid[index].word.word)) continue;
             if(forwardChecking(grid[index])) continue;
             grid.usedwords.push(grid[index].word.word);
@@ -195,7 +189,7 @@ window.onload = function()
             let tempwords = [];
             for(let i = 0; i < words.length; i++)
             {
-                if(words[i].words[0].word.charAt(thispos) == otherletter) tempwords.push(words[i]);
+                if(words[i][0].word.charAt(thispos) == otherletter) tempwords.push(words[i]);
             }
             words = tempwords;
             //this line should be readded at some point because it is a theoretical speedup
