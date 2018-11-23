@@ -205,13 +205,12 @@ function advancedWordAnalysis(grid)
                     }
                 }
                 let index = -1;
-                patternuniqueness:
                 for(let k = 0; k < patterns.length; k++)
                 {
                     if(patterns[k].format == format)
                     {
                         index = k;
-                        break patternuniqueness;
+                        break;
                     }
                 }
                 if(index > -1) patterns[index].push(word[0]);

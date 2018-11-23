@@ -26,7 +26,7 @@ window.onload = function()
     }
 
     var records = [];
-    for(let i = 0; i < 1; i++)
+    for(let i = 0; i < 20; i++)
     {
         records.push(testing());
     }
@@ -97,9 +97,9 @@ window.onload = function()
     console.log(grid);
 
     //front end stuff
-    let gridview = createGridView(grid);
-    document.body.appendChild(gridview);
-    printGrid(grid, gridview);
+    //let gridview = createGridView(grid);
+    //document.body.appendChild(gridview);
+    //printGrid(grid, gridview);
 
     return record;
     }
@@ -135,8 +135,71 @@ window.onload = function()
             }
         }
         grid.usedwords = [];
-        recursiveFill(grid, 0);
+        //recursiveFill(grid, 0);
+        iterativeFill(grid);
         return grid;
+    }
+
+    function iterativeFill(grid)
+    {
+        let backtrack = false;
+        let usedwords = [];
+        mainloop:
+        for(let i = 0; i < grid.length; )
+        {
+            if(backtrack)
+            {
+                grid[i].wordindex++;
+                //console.log(i + ": " + grid[i].wordindex);
+                backtrack = false;
+            }
+            else
+            {
+                grid[i].constrainedwords = constrainWords(grid[i]);
+                grid[i].wordindex = 0;
+                if(grid[i].constrainedwords.length == 0)
+                {
+                    grid[i].word = undefined;
+                    usedwords.pop();
+                    i-=1;
+                    backtrack = true;
+                    continue;
+                }
+            }
+            let words = grid[i].constrainedwords;
+            for(let j = grid[i].wordindex; j < words.length; j++)
+            {
+                grid[i].word = words[j][Math.floor(Math.random()*words[j].length)];
+                if(usedwords.includes(grid[i].word.word)) continue;
+                if(forwardChecking(grid[i])) continue;
+                usedwords.push(grid[i].word.word);
+                if(i == grid.length-1)
+                {
+                    console.log("FINISHED");
+                    break mainloop;
+                }
+                else
+                {
+                    grid[i].wordindex = j;
+                    i++;
+                    continue mainloop;
+                }
+            }
+            if(i == 0)
+            {
+                console.log("cannot make puzzle");
+                break;
+            }
+            else
+            {
+                grid[i].word = undefined;
+                usedwords.pop();
+                grid[i].wordindex = 0;
+                i-=1;
+                backtrack = true;
+                continue;
+            }
+        }
     }
 
     function recursiveFill(grid, index)
