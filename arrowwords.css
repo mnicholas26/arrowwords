@@ -20,6 +20,7 @@
     background-color: lightgrey;
     text-transform: capitalize;
     font-size: 60%;
+    word-wrap: break-word;
 }
 
 .letter{

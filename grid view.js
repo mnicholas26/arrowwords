@@ -22,7 +22,8 @@ function createGridView(grid)
         let y = pos.y;
         let cell = table.childNodes[y].childNodes[x];
         cell.className = "clue";
-        cell.textContent = "multiple fucking words";
+        if(grid[i].word.clues != undefined) cell.textContent = grid[i].clue;
+        else cell.textContent = "lorem fucking ipsum";
         let arrow = document.createElement('img');
         arrow.classList.add("arrow");
         switch (grid[i].type)

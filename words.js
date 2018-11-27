@@ -23613,24 +23613,161 @@ const words1 =
     {word: "she"},
     {word: "speed"},
     {word: "mud"},
-    {word: "schiffer"},
-    {word: "vagabond"},
-    {word: "respects"},
-    {word: "here"},
-    {word: "ceasefire"},
-    {word: "sop"},
-    {word: "visa"},
-    {word: "prate"},
-    {word: "tells"},
-    {word: "fibbed"},
-    {word: "fro"},
-    {word: "chalk"},
-    {word: "keen"},
-    {word: "table"},
-    {word: "dismiss"},
-    {word: "sire"},
-    {word: "kes"},
-    {word: "abi"},
-    {word: "fordham"},
-    {word: "ipa"}
+    {
+      word: "schiffer",
+      clues: [
+        "claudia ___ (model)"
+      ]
+    },
+    {
+      word: "vagabond",
+      clues: [
+        "homeless wanderer",
+        "poor wayfarer",
+        "gypsy",
+        "tramp",
+        "vagrant"
+      ]
+    },
+    {
+      word: "respects",
+      clues: [
+        "feelings of admiration",
+        "esteems, regards",
+        "honours",
+        "idolises",
+        "reveres"
+      ]
+    },
+    {
+      word: "here",
+      clues: [
+        "in this place",
+        "at this position",
+        "___ and now",
+        "___ and there",
+        "statement of attendance"
+      ]
+    },
+    {
+      word: "ceasefire",
+      clues: [
+        "truce",
+        "temporary suspension of fighting",
+
+      ]
+    },
+    {
+      word: "sop",
+      clues: [
+        "dipped bread",
+        "appeasement",
+        "soak up"
+      ]
+    },
+    {
+      word: "visa",
+      clues: [
+        "credit or debit card",
+        "endorsement of travel"
+      ]
+    },
+    {
+      word: "prate",
+      clues: [
+        "talk foolishly",
+        "talk at length"
+      ]
+    },
+    {
+      word: "tells",
+      clues: [
+        "unconscious actions (poker)",
+        "notifies",
+        "informs",
+        "instucts",
+        "tattles, talks"
+      ]
+    },
+    {
+      word: "fibbed",
+      clues: [
+        "lied",
+        "invented a story",
+        "dissimulate"
+      ]
+    },
+    {
+      word: "fro",
+      clues: [
+        "to and ___",
+        "bushy hairstyle"
+
+      ]
+    },
+    {
+      word: "chalk",
+      clues: [
+        "blackboard marker",
+        "white earthy limestone"
+      ]
+    },
+    {
+      word: "keen",
+      clues: [
+        "eager",
+        "ethusiastic",
+        "sharp or penetrating"
+      ]
+    },
+    {
+      word: "table",
+      clues: [
+        "legged furniture",
+        "data format",
+        "present idea formally",
+        "eating surface"
+      ]
+    },
+    {
+      word: "dismiss",
+      clues: [
+        "allow to leave",
+        "send away",
+        "treat as unworthy",
+        "fire, let go"
+      ]
+    },
+    {
+      word: "sire",
+      clues: [
+        "dogs father"
+      ]
+    },
+    {
+      word: "kes",
+      clues: [
+        "ken loach film"
+      ]
+    },
+    {
+      word: "abi",
+      clues: [
+        "professional slag",
+        "model, ___ titmuss"
+      ]
+    },
+    {
+      word: "fordham",
+      clues: [
+        "darts player",
+        "andy ___ darts"
+      ]
+    },
+    {
+      word: "ipa",
+      clues: [
+        "type of beer"
+      ]
+    }
   ]

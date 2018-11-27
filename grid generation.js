@@ -92,7 +92,7 @@ function createGridObject(template, words)
                 let out = [{word: words[i].word}];
                 //out.word = {word: words[i].word};
                 ///out.scrabblemetric = words[i].scrabblemetric;
-                //if(words[i].clues instanceof Array) out.clues = words[i].clues.slice(0);
+                if(words[i].clues instanceof Array) out[0].clues = words[i].clues.slice(0);
                 newwords.push(out);
             }
         }

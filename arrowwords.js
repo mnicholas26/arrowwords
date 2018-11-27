@@ -96,6 +96,13 @@ window.onload = function()
     record.popgrid = t1 - t0;
     console.log(grid);
 
+    //assign clues
+    for(let i = 0; i < grid.length; i++)
+    {
+        let clues = grid[i].word.clues;
+        if(clues != undefined) grid[i].clue = clues[Math.floor(Math.random()*clues.length)];
+    }
+
     //front end stuff
     let gridview = createGridView(grid);
     document.body.appendChild(gridview);
