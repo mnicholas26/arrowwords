@@ -3,20 +3,23 @@
     font-family: sans-serif;
     font-weight: bold;
     text-align: center;
+    table-layout: fixed;
 }
 
 .grid td{
     border: 1px solid black;
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
     text-transform: uppercase;
     position: relative;
+    box-sizing: border-box;
+    font-size: 125%;
 }
 
-.clue{
+.grid .clue{
     background-color: lightgrey;
     text-transform: capitalize;
-    font-size: 50%;
+    font-size: 60%;
 }
 
 .letter{
@@ -26,35 +29,5 @@
 .arrow{
     position: absolute;
     z-index: 1;
-    font-size: 250%;
-}
-
-.atype0{
-    left: 37%;
-    top: -33%;
-}
-
-.atype1{
-    left: 80%;
-    top: 18%;
-}
-
-.atype2{
-    left: 42%;
-    top: 72%;
-}
-
-.atype3{
-    left: -25%;
-    top: 40%;
-}
-
-.atype4{
-    left: 37%;
-    top: 70%;
-}
-
-.atype5{
-    left: 94%;
-    top: 21%;
+    height: inherit;
 }

@@ -26,7 +26,7 @@ window.onload = function()
     }
 
     var records = [];
-    for(let i = 0; i < 20; i++)
+    for(let i = 0; i < 1; i++)
     {
         records.push(testing());
     }
@@ -97,9 +97,9 @@ window.onload = function()
     console.log(grid);
 
     //front end stuff
-    //let gridview = createGridView(grid);
-    //document.body.appendChild(gridview);
-    //printGrid(grid, gridview);
+    let gridview = createGridView(grid);
+    document.body.appendChild(gridview);
+    printGrid(grid, gridview);
 
     return record;
     }
@@ -150,7 +150,7 @@ window.onload = function()
             if(backtrack)
             {
                 grid[i].wordindex++;
-                //console.log(i + ": " + grid[i].wordindex);
+                //if(i == 0) console.log(grid[i].wordindex);
                 backtrack = false;
             }
             else

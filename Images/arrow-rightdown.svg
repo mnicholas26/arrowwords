@@ -1,0 +1,7 @@
+<svg width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+<g transform="rotate(90, 20, 20)">
+  <line id="line" y2="35" x2="4" y1="40" x1="4" stroke-width="1.5" stroke="#000"/>
+  <line id="line2" y2="35" x2="6.25" y1="35" x1="3.25" stroke-width="1.5" stroke="#000"/>
+  <path stroke="#000" transform="rotate(90 9.46769332885742,20) " id="triangle" d="m21.25,22.763092l2.975638,-5.526184l2.975638,5.526184l-5.951276,0z" stroke-width="1.5" fill="#000000"/>
+</g>
+</svg>

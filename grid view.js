@@ -13,6 +13,7 @@ function createGridView(grid)
         table.appendChild(row);
     }
     table.className = "grid";
+    table.style.width = 0;
     //contextualise grid
     for(let i = 0; i < grid.length; i++)
     {
@@ -21,18 +22,42 @@ function createGridView(grid)
         let y = pos.y;
         let cell = table.childNodes[y].childNodes[x];
         cell.className = "clue";
-        cell.textContent = "multiple words";
-        let arrow = document.createElement('span');
+        cell.textContent = "multiple fucking words";
+        let arrow = document.createElement('img');
         arrow.classList.add("arrow");
-        arrow.classList.add("atype" + grid[i].type);
-        let text;
-        if(grid[i].type == 0) text = "↱";
-        else if(grid[i].type == 1) text = "→";
-        else if(grid[i].type == 2) text = "↳";
-        else if(grid[i].type == 3) text = "⤥";
-        else if(grid[i].type == 4) text = "↓";
-        else text = "↴";
-        arrow.textContent = text;
+        switch (grid[i].type)
+        {
+            case "0":
+                arrow.style.left = 0;
+                arrow.style.bottom = "100%";
+                arrow.src = "images/arrow-upright.svg";
+                break;
+            case "1":
+                arrow.style.left = "100%";
+                arrow.style.bottom = 0;
+                arrow.src = "images/arrow-right.svg";
+                break;
+            case "2":
+                arrow.style.left = 0;
+                arrow.style.top = "100%";
+                arrow.src = "images/arrow-downright.svg";
+                break;
+            case "3":
+                arrow.style.left = "-100%";
+                arrow.style.top = 0;
+                arrow.src = "images/arrow-leftdown.svg";
+                break;
+            case "4":
+                arrow.style.left = 0;
+                arrow.style.top = "100%";
+                arrow.src = "images/arrow-down.svg";
+                break;
+            case "5":
+                arrow.style.left = "100%";
+                arrow.style.top = 0;
+                arrow.src= "images/arrow-rightdown.svg";
+                break;
+        }
         cell.appendChild(arrow);
     }
     return table;
