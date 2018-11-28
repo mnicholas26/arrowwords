@@ -76,40 +76,95 @@ function setupIO(grid, gameobject)
         let row = table.childNodes[i];
         for(let j = 0; j < row.childNodes.length; j++)
         {
-            let words = getWords(grid, j, i);
-            if(words.length == 0)
+            let cell = {
+                type: "",
+                x: j,
+                y: i,
+                up: undefined,
+                down: undefined,
+                left: undefined,
+                right: undefined,
+                wordindex: 0,
+                words: [],
+                domelement: row.childNodes[j]
+            }
+            let output = getWords(grid, j, i);
+            cell.type = output.type;
+            cell.words = output.words;
+            if(cell.words.length == 0)
             {
                 row.childNodes[j].className = "empty";
             }
             else 
             {
-                gameobject.cells.push(words);
-                //if(words[0].type == "clue")
-                //{
-                    row.childNodes[j].addEventListener('mousedown', (e) => {
-                        e.stopPropagation();
-                        selectClue(gameobject, words);
-                    });
-                //}
+                row.childNodes[j].addEventListener('mousedown', (e) => {
+                    e.stopPropagation();
+                    selectClue(gameobject, cell);
+                });
             }
+            gameobject.cells.push(words);
         }
+    }
+    let cells = gameobject.cells;
+    for(let i = 0; i < cells.length; i++)
+    {
+        let cell = cells[i];
+        let width = gameobject.width;
+        let height = gameobject.height;
+        if(cell.type == "letter")
+        {
+            //test up
+            let testindex = i - width;
+            if(testindex > 0 && cells[testindex].type == "letter") cell.up = cells[testindex];
+            //down
+            testindex = i + width;
+            if(testindex < (height * width) 
+                && cells[testindex].type == "letter") cell.down = cells[testindex];
+            //left
+            if(i % width != 0 && cells[i-1].type == "letter") cell.left = cells[i-1];
+            //right
+            testindex = i + 1;
+            if(testindex % width != 0 
+                && cells[testindex].type == "letter") cell.right = cells[testindex];
+            //next and prev
+            for(let j = 0; j < cell.words.length; j++)
+            {
+                let word = cell.words[j];
+                //if horizontal
+                if(word.direction == 0)
+                {
+                    if(word.index != 0) word.prev = cells[i-1];
+                    if(word.index != word.word.wordcords.length) word.next = cells[i+1];
+                }
+                //if vertical
+                else
+                {
+                    if(word.index != 0) word.prev = cells[i-width];
+                    if(word.index != word.word.wordcords.length) word.next = cells[i+width];
+                }
+            }
+
+        }
+        else continue;
     }
     document.addEventListener('keydown', (e) => {handleKey(e, gameobject)});
 }
 
 function getWords(grid, x, y)
 {
+    let output = {
+        type: "empty",
+        words: []
+    }
     let words = [];
     for(let i = 0; i < grid.length; i++)
     {
         if(x == grid[i].position.x && y == grid[i].position.y)
         {
+            output.type = "clue";
             words.push({
-                word: grid[i],
-                type: "clue",
-                wordindex: 0,
-                x: x,
-                y: y
+                word: grid[i], 
+                index: 0
             });
             break;
         }
@@ -117,19 +172,23 @@ function getWords(grid, x, y)
         {
             if(x == grid[i].wordcords[j].x && y == grid[i].wordcords[j].y)
             {
+                output.type = "letter";
+                //dir 0 = horizontal 1 = vertical
+                let direction = 0;
+                let testindex = 0;
+                if(j == 0) testindex = 1;
+                if(grid[i].wordcords[testindex].x == x) direction = 1;
                 words.push({
                     word: grid[i],
-                    wordindex: j,
-                    type: "letter",
-                    x: x,
-                    y: y
+                    index: j,
+                    direction: direction
                 });
                 break;
             }
         }
     }
-    words.index = 0;
-    return words;
+    output.words = words;
+    return output;
 }
 
 function toggleWord(gameobject, x, y)
