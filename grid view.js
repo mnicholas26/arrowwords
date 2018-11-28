@@ -68,8 +68,7 @@ function setupIO(grid, gameobject)
 {
     document.body.addEventListener('mousedown', () => {
         toggleHighlight(gameobject);
-        gameobject.currentcell = undefined;
-        gameobject.currentelem = undefined;
+        clearSelected(gameobject);
     });
     let table = gameobject.view;
     for(let i = 0; i < table.childNodes.length; i++)
@@ -95,6 +94,7 @@ function setupIO(grid, gameobject)
             }
         }
     }
+    document.addEventListener('keydown', (e) => {handleKey(e, gameobject)});
 }
 
 function getWords(grid, x, y)
@@ -165,6 +165,53 @@ function toggleHighlight(gameobject)
             if(i == cell.wordindex) viewcell.classList.toggle('selected-cell');
         }
     }
+}
+
+function handleKey(e, gameobject)
+{
+    switch(e.key)
+    {
+        case "Escape":
+            toggleHighlight(gameobject);
+            clearSelected(gameobject);
+            break;
+        //handle movement
+        case "ArrowLeft":
+            moveSelected(gameobject, "left");
+            break;
+        case "ArrowRight":
+            break;
+        case "ArrowUp":
+            break;
+        case "ArrowDown":
+            break;
+        //handle deletion and movement
+        case "Backspace":
+            break;
+        case "Delete":
+            break;
+        //handle switching direction
+        case "Space":
+            break;
+        //handle letters
+        default:
+            break;
+    }
+}
+
+moveSelected(gameobject, dir)
+{
+    switch(dir)
+    {
+        case "left":
+            break;
+    }
+}
+
+function clearSelected(gameobject)
+{
+    gameobject.currentcell = undefined;
+    gameobject.currentelem = undefined;
 }
 
 function printGrid(grid, table)

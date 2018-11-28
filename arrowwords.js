@@ -108,6 +108,7 @@ window.onload = function()
         cells: [],
         currentindex: 0,
         currentcell: undefined,
+        currentelem: undefined
     };
 
     //front end stuff
