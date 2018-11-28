@@ -64,6 +64,109 @@ function createGridView(grid)
     return table;
 }
 
+function setupIO(grid, gameobject)
+{
+    document.body.addEventListener('mousedown', () => {
+        toggleHighlight(gameobject);
+        gameobject.currentcell = undefined;
+        gameobject.currentelem = undefined;
+    });
+    let table = gameobject.view;
+    for(let i = 0; i < table.childNodes.length; i++)
+    {
+        let row = table.childNodes[i];
+        for(let j = 0; j < row.childNodes.length; j++)
+        {
+            let words = getWords(grid, j, i);
+            if(words.length == 0)
+            {
+                row.childNodes[j].className = "empty";
+            }
+            else 
+            {
+                gameobject.cells.push(words);
+                //if(words[0].type == "clue")
+                //{
+                    row.childNodes[j].addEventListener('mousedown', (e) => {
+                        e.stopPropagation();
+                        selectClue(gameobject, words);
+                    });
+                //}
+            }
+        }
+    }
+}
+
+function getWords(grid, x, y)
+{
+    let words = [];
+    for(let i = 0; i < grid.length; i++)
+    {
+        if(x == grid[i].position.x && y == grid[i].position.y)
+        {
+            words.push({
+                word: grid[i],
+                type: "clue",
+                wordindex: 0,
+                x: x,
+                y: y
+            });
+            break;
+        }
+        for(let j = 0; j < grid[i].wordcords.length; j++)
+        {
+            if(x == grid[i].wordcords[j].x && y == grid[i].wordcords[j].y)
+            {
+                words.push({
+                    word: grid[i],
+                    wordindex: j,
+                    type: "letter",
+                    x: x,
+                    y: y
+                });
+                break;
+            }
+        }
+    }
+    words.index = 0;
+    return words;
+}
+
+function toggleWord(gameobject, x, y)
+{
+    let elem = gameobject.view.childNodes[y].childNodes[x];
+    if(gameobject.currentelem == elem)
+    {
+        let cell = gameobject.currentcell;
+        cell.index = cell.length-cell.index-1;
+    }
+    else gameobject.currentelem = elem;
+}
+
+function selectClue(gameobject, cell)
+{
+    toggleHighlight(gameobject);
+    gameobject.currentcell = cell;
+    toggleWord(gameobject, cell[cell.index].x, cell[cell.index].y);
+    toggleHighlight(gameobject);
+}
+
+function toggleHighlight(gameobject)
+{
+    let cell = gameobject.currentcell;
+    if(cell != undefined)
+    {
+        cell = cell[cell.index];
+        let coords = cell.word.wordcords;
+        for(let i = 0; i < coords.length; i++)
+        {
+            let viewcell = gameobject.view.childNodes[coords[i].y].childNodes[coords[i].x];
+            viewcell.classList.toggle('selected-word');
+            if(i == cell.wordindex) viewcell.classList.toggle('selected-cell');
+        }
+    }
+}
+
 function printGrid(grid, table)
 {
     for(let i = 0; i < grid.length; i++)

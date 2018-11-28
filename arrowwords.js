@@ -103,9 +103,18 @@ window.onload = function()
         if(clues != undefined) grid[i].clue = clues[Math.floor(Math.random()*clues.length)];
     }
 
+    //setup gameobject
+    var gameobject = {
+        cells: [],
+        currentindex: 0,
+        currentcell: undefined,
+    };
+
     //front end stuff
     let gridview = createGridView(grid);
     document.body.appendChild(gridview);
+    gameobject.view = gridview;
+    setupIO(grid, gameobject);
     printGrid(grid, gridview);
 
     return record;

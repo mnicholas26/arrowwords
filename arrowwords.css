@@ -4,6 +4,7 @@
     font-weight: bold;
     text-align: center;
     table-layout: fixed;
+    user-select: none;
 }
 
 .grid td{
@@ -31,4 +32,13 @@
     position: absolute;
     z-index: 1;
     height: inherit;
+    pointer-events: none;
+}
+
+.selected-word{
+    background-color: #37fdfc;
+}
+
+.selected-cell{
+    background-color: #00cdcd;
 }
