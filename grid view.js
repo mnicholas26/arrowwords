@@ -95,22 +95,15 @@ function setupIO(grid, gameobject)
             {
                 row.childNodes[j].className = "empty";
             }
-            else 
-            {
-                row.childNodes[j].addEventListener('mousedown', (e) => {
-                    e.stopPropagation();
-                    selectClue(gameobject, cell);
-                });
-            }
-            gameobject.cells.push(words);
+            gameobject.cells.push(cell);
         }
     }
     let cells = gameobject.cells;
+    let width = grid.width;
+    let height = grid.height;
     for(let i = 0; i < cells.length; i++)
     {
         let cell = cells[i];
-        let width = gameobject.width;
-        let height = gameobject.height;
         if(cell.type == "letter")
         {
             //test up
@@ -121,10 +114,10 @@ function setupIO(grid, gameobject)
             if(testindex < (height * width) 
                 && cells[testindex].type == "letter") cell.down = cells[testindex];
             //left
-            if(i % width != 0 && cells[i-1].type == "letter") cell.left = cells[i-1];
+            if((i % width) != 0 && cells[i-1].type == "letter") cell.left = cells[i-1];
             //right
             testindex = i + 1;
-            if(testindex % width != 0 
+            if((testindex % width) != 0 
                 && cells[testindex].type == "letter") cell.right = cells[testindex];
             //next and prev
             for(let j = 0; j < cell.words.length; j++)
@@ -143,9 +136,21 @@ function setupIO(grid, gameobject)
                     if(word.index != word.word.wordcords.length) word.next = cells[i+width];
                 }
             }
+            cell.domelement.addEventListener('mousedown', (e) => {
+                e.stopPropagation();
+                selectCell(gameobject, cell);
+            });
 
         }
-        else continue;
+        else if(cell.type == "clue")
+        {
+            let coords = cell.words[0].word.wordcords;
+            cell.words[0].next = cells[(coords[0].y*width) + coords[0].x];
+            cell.domelement.addEventListener('mousedown', (e) => {
+                e.stopPropagation();
+                selectCell(gameobject, cell);
+            });
+        }
     }
     document.addEventListener('keydown', (e) => {handleKey(e, gameobject)});
 }
@@ -191,22 +196,23 @@ function getWords(grid, x, y)
     return output;
 }
 
-function toggleWord(gameobject, x, y)
+function toggleWord(gameobject, cell)
 {
-    let elem = gameobject.view.childNodes[y].childNodes[x];
-    if(gameobject.currentelem == elem)
+    if(gameobject.currentcell == cell)
     {
-        let cell = gameobject.currentcell;
-        cell.index = cell.length-cell.index-1;
+        cell.wordindex = cell.words.length-cell.wordindex-1;
     }
-    else gameobject.currentelem = elem;
 }
 
-function selectClue(gameobject, cell)
+function selectCell(gameobject, cell)
 {
     toggleHighlight(gameobject);
-    gameobject.currentcell = cell;
-    toggleWord(gameobject, cell[cell.index].x, cell[cell.index].y);
+    if(cell.type == "clue") gameobject.currentcell = cell.words[0].next;
+    else 
+    {
+        gameobject.currentcell = cell;
+        //toggleWord(gameobject, cell);
+    }
     toggleHighlight(gameobject);
 }
 
@@ -215,14 +221,16 @@ function toggleHighlight(gameobject)
     let cell = gameobject.currentcell;
     if(cell != undefined)
     {
-        cell = cell[cell.index];
-        let coords = cell.word.wordcords;
+        let word = cell.words[cell.wordindex];
+        let coords = word.word.wordcords;
         for(let i = 0; i < coords.length; i++)
         {
             let viewcell = gameobject.view.childNodes[coords[i].y].childNodes[coords[i].x];
             viewcell.classList.toggle('selected-word');
-            if(i == cell.wordindex) viewcell.classList.toggle('selected-cell');
+            if(i == word.index) viewcell.classList.toggle('selected-cell');
         }
+        //let iterator = word.
+        //while(word.)
     }
 }
 
@@ -239,31 +247,64 @@ function handleKey(e, gameobject)
             moveSelected(gameobject, "left");
             break;
         case "ArrowRight":
+            moveSelected(gameobject, "right");
             break;
         case "ArrowUp":
+            moveSelected(gameobject, "up");
             break;
         case "ArrowDown":
+            moveSelected(gameobject, "down");
             break;
         //handle deletion and movement
         case "Backspace":
+            deleteSelected(gameobject, "prev");
             break;
         case "Delete":
+            deleteSelected(gameobject, "next");
             break;
         //handle switching direction
         case "Space":
+            //toggleword
             break;
         //handle letters
         default:
+            handleLetter(gameobject, e.key);
             break;
     }
 }
 
-moveSelected(gameobject, dir)
+function moveSelected(gameobject, dir)
 {
-    switch(dir)
+    if(gameobject.currentcell == undefined) return;
+    let newcell = gameobject.currentcell[dir];
+    if(newcell != undefined) selectCell(gameobject, newcell);
+}
+
+function deleteSelected(gameobject, dir)
+{
+    if(gameobject.currentcell == undefined) return;
+    let cell = gameobject.currentcell;
+    cell.domelement.textContent = "";
+    let newcell = cell.words[cell.wordindex][dir];
+    if(newcell != undefined) selectCell(gameobject, newcell);
+}
+
+function handleLetter(gameobject, letter)
+{
+    if(gameobject.currentcell == undefined) return;
+    let cell = gameobject.currentcell;
+    letter = letter.toLowerCase();
+    if(letter == "a" || letter == "b" || letter == "c" || letter == "d"
+    || letter == "e" || letter == "f" || letter == "g" || letter == "h"
+    || letter == "i" || letter == "j" || letter == "k" || letter == "l"
+    || letter == "m" || letter == "n" || letter == "o" || letter == "p"
+    || letter == "q" || letter == "r" || letter == "s" || letter == "t"
+    || letter == "u" || letter == "v" || letter == "w" || letter == "x"
+    || letter == "y" || letter == "z") 
     {
-        case "left":
-            break;
+        cell.domelement.textContent = letter;
+        let newcell = cell.words[cell.wordindex].next;
+        if(newcell != undefined) selectCell(gameobject, newcell);
     }
 }
 
