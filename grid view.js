@@ -84,6 +84,7 @@ function setupIO(grid, gameobject)
                 down: undefined,
                 left: undefined,
                 right: undefined,
+                clue: undefined,
                 wordindex: 0,
                 words: [],
                 domelement: row.childNodes[j]
@@ -99,8 +100,8 @@ function setupIO(grid, gameobject)
         }
     }
     let cells = gameobject.cells;
-    let width = grid.width;
-    let height = grid.height;
+    let width = gameobject.width = grid.width;
+    let height = gameobject.height = grid.height;
     for(let i = 0; i < cells.length; i++)
     {
         let cell = cells[i];
@@ -127,18 +128,21 @@ function setupIO(grid, gameobject)
                 if(word.direction == 0)
                 {
                     if(word.index != 0) word.prev = cells[i-1];
-                    if(word.index != word.word.wordcords.length) word.next = cells[i+1];
+                    if(word.index != word.word.wordcords.length-1) word.next = cells[i+1];
                 }
                 //if vertical
                 else
                 {
                     if(word.index != 0) word.prev = cells[i-width];
-                    if(word.index != word.word.wordcords.length) word.next = cells[i+width];
+                    if(word.index != word.word.wordcords.length-1) word.next = cells[i+width];
                 }
+                let x = word.word.position.x;
+                let y = word.word.position.y;
+                word.clue = cells[(y*width) + x];
             }
             cell.domelement.addEventListener('mousedown', (e) => {
                 e.stopPropagation();
-                selectCell(gameobject, cell);
+                selectCell(gameobject, cell, true);
             });
 
         }
@@ -148,7 +152,7 @@ function setupIO(grid, gameobject)
             cell.words[0].next = cells[(coords[0].y*width) + coords[0].x];
             cell.domelement.addEventListener('mousedown', (e) => {
                 e.stopPropagation();
-                selectCell(gameobject, cell);
+                selectCell(gameobject, cell.words[0].next, true);
             });
         }
     }
@@ -196,23 +200,46 @@ function getWords(grid, x, y)
     return output;
 }
 
-function toggleWord(gameobject, cell)
+function toggleWord(cell)
 {
-    if(gameobject.currentcell == cell)
+    if(cell != undefined)
     {
         cell.wordindex = cell.words.length-cell.wordindex-1;
     }
 }
 
-function selectCell(gameobject, cell)
+function selectCell(gameobject, cell, clicked)
 {
     toggleHighlight(gameobject);
-    if(cell.type == "clue") gameobject.currentcell = cell.words[0].next;
-    else 
+    let oldcell = gameobject.currentcell
+    if(clicked)
     {
-        gameobject.currentcell = cell;
-        //toggleWord(gameobject, cell);
+        if(cell == oldcell) toggleWord(cell);
+        else
+        {
+            if(cell.words.length == 2)
+            {
+                if(cell.words[0].index < cell.words[1].index) cell.wordindex = 0;
+                else cell.wordindex = 1;
+            }
+        }
     }
+    else if(oldcell != undefined)
+    {
+        let word = cell.words[cell.wordindex];
+        if(cell == oldcell) toggleWord(cell);
+        else if(cell == oldcell.left || cell == oldcell.right)
+        {
+            if(word.direction != 0) toggleWord(cell);
+        }
+        else if(cell == oldcell.up || cell == oldcell.down)
+        {
+            if(word.direction != 1) toggleWord(cell);
+        }
+    }
+    gameobject.previouscell = oldcell;
+    //if(cell.type == "clue") cell = cell.words[0].next;
+    gameobject.currentcell = cell;
     toggleHighlight(gameobject);
 }
 
@@ -229,8 +256,6 @@ function toggleHighlight(gameobject)
             viewcell.classList.toggle('selected-word');
             if(i == word.index) viewcell.classList.toggle('selected-cell');
         }
-        //let iterator = word.
-        //while(word.)
     }
 }
 
@@ -263,8 +288,18 @@ function handleKey(e, gameobject)
             deleteSelected(gameobject, "next");
             break;
         //handle switching direction
-        case "Space":
-            //toggleword
+        case " ":
+            toggleHighlight(gameobject);
+            toggleWord(gameobject.currentcell);
+            toggleHighlight(gameobject);
+            break;
+        case "Tab":
+            if(gameobject.currentcell != undefined)
+            {
+                e.preventDefault();
+                if(e.shiftKey) cycleClue(gameobject, "backward");
+                else cycleClue(gameobject, "forward");
+            }
             break;
         //handle letters
         default:
@@ -287,6 +322,24 @@ function deleteSelected(gameobject, dir)
     cell.domelement.textContent = "";
     let newcell = cell.words[cell.wordindex][dir];
     if(newcell != undefined) selectCell(gameobject, newcell);
+}
+
+function cycleClue(gameobject, dir)
+{
+    if(gameobject.currentcell == undefined) return;
+    let cell = gameobject.currentcell;
+    let clue = cell.words[cell.wordindex].clue;
+    let height = gameobject.height;
+    let width = gameobject.width;
+    let index = (clue.y*width) + clue.x;
+    do
+    {
+        if(dir == "forward") index++
+        else index--;
+        index = (index+(height*width)) % (height*width);
+    }
+    while(gameobject.cells[index].type != "clue");
+    selectCell(gameobject, gameobject.cells[index].words[0].next, true);
 }
 
 function handleLetter(gameobject, letter)
