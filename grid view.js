@@ -314,6 +314,15 @@ function handleKey(e, gameobject)
         case "3":
             printLetter(gameobject.currentcell);
             break;
+        case "4":
+            printGrid(gameobject, true);
+            break;
+        case "5":
+            printClue(gameobject, gameobject.currentcell, true);
+            break;
+        case "6":
+            printLetter(gameobject.currentcell, true);
+            break;
         //handle letters
         default:
             handleLetter(gameobject, e.key);
@@ -380,48 +389,16 @@ function clearSelected(gameobject)
     gameobject.currentelem = undefined;
 }
 
-/*function printGrid(grid, table)
-{
-    for(let i = 0; i < grid.length; i++)
-    {
-        for(let j = 0; j < grid[i].wordcords.length; j++)
-        {
-            let letter = grid[i].word.word.charAt(j);
-            printLetter(letter, grid[i].wordcords[j], table);
-        }
-    }
-}
-
-function printLetter(letter, position, table)
-{
-    let x = position.x;
-    let y = position.y;
-    let cell = table.childNodes[y].childNodes[x];
-    cell.textContent = letter;
-}
-
-function printClue(gameobject, cell)
-{
-    if(cell == undefined) return;
-    let word = cell.words[cell.wordindex];
-    let coords = word.word.wordcords;
-    for(let i = 0; i < coords.length; i++)
-    {
-        let viewcell = gameobject.view.childNodes[coords[i].y].childNodes[coords[i].x];
-        viewcell.textContent = word.word.word.word.charAt(i);
-    }
-}*/
-
-function printGrid(gameobject)
+function printGrid(gameobject, clear)
 {
     for(let i = 0; i < gameobject.cells.length; i++)
     {
         let cell = gameobject.cells[i];
-        if(cell.type == "letter") printLetter(cell);
+        if(cell.type == "letter") printLetter(cell, clear);
     }
 }
 
-function printClue(gameobject, cell)
+function printClue(gameobject, cell, clear)
 {
     if(cell == undefined) return;
     let coords = cell.word.gridelem.wordcords;
@@ -429,11 +406,12 @@ function printClue(gameobject, cell)
     {
         let coord = coords[i];
         cell = gameobject.cells[(coord.y * gameobject.width) + coord.x];
-        printLetter(cell);
+        printLetter(cell, clear);
     }
 }
 
-function printLetter(cell)
+function printLetter(cell, clear)
 {
-    cell.domelement.textContent = cell.word.letter;
+    let letter = (clear) ? " " : cell.word.letter;
+    cell.domelement.textContent = letter;
 }
