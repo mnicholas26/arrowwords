@@ -86,7 +86,11 @@ function setupIO(grid, gameobject)
                 right: undefined,
                 wordindex: 0,
                 words: [],
-                domelement: row.childNodes[j]
+                domelement: row.childNodes[j],
+                get word()
+                {
+                    return this.words[this.wordindex];
+                }
             }
             let output = getWords(grid, j, i);
             cell.type = output.type;
@@ -127,16 +131,16 @@ function setupIO(grid, gameobject)
                 if(word.direction == 0)
                 {
                     if(word.index != 0) word.prev = cells[i-1];
-                    if(word.index != word.word.wordcords.length-1) word.next = cells[i+1];
+                    if(word.index != word.gridelem.wordcords.length-1) word.next = cells[i+1];
                 }
                 //if vertical
                 else
                 {
                     if(word.index != 0) word.prev = cells[i-width];
-                    if(word.index != word.word.wordcords.length-1) word.next = cells[i+width];
+                    if(word.index != word.gridelem.wordcords.length-1) word.next = cells[i+width];
                 }
-                let x = word.word.position.x;
-                let y = word.word.position.y;
+                let x = word.gridelem.position.x;
+                let y = word.gridelem.position.y;
                 word.clue = cells[(y*width) + x];
             }
             cell.domelement.addEventListener('mousedown', (e) => {
@@ -147,11 +151,11 @@ function setupIO(grid, gameobject)
         }
         else if(cell.type == "clue")
         {
-            let coords = cell.words[0].word.wordcords;
-            cell.words[0].next = cells[(coords[0].y*width) + coords[0].x];
+            let coords = cell.word.gridelem.wordcords;
+            cell.word.next = cells[(coords[0].y*width) + coords[0].x];
             cell.domelement.addEventListener('mousedown', (e) => {
                 e.stopPropagation();
-                selectCell(gameobject, cell.words[0].next, true);
+                selectCell(gameobject, cell.word.next, true);
             });
         }
     }
@@ -171,7 +175,7 @@ function getWords(grid, x, y)
         {
             output.type = "clue";
             words.push({
-                word: grid[i], 
+                gridelem: grid[i], 
                 index: 0
             });
             break;
@@ -187,9 +191,10 @@ function getWords(grid, x, y)
                 if(j == 0) testindex = 1;
                 if(grid[i].wordcords[testindex].x == x) direction = 1;
                 words.push({
-                    word: grid[i],
+                    gridelem: grid[i],
                     index: j,
-                    direction: direction
+                    direction: direction,
+                    letter: grid[i].word.word.charAt(j)
                 });
                 break;
             }
@@ -225,7 +230,7 @@ function selectCell(gameobject, cell, clicked)
     }
     else if(oldcell != undefined)
     {
-        let word = cell.words[cell.wordindex];
+        let word = cell.word;
         if(cell == oldcell) toggleWord(cell);
         else if(cell == oldcell.left || cell == oldcell.right)
         {
@@ -247,8 +252,8 @@ function toggleHighlight(gameobject)
     let cell = gameobject.currentcell;
     if(cell != undefined)
     {
-        let word = cell.words[cell.wordindex];
-        let coords = word.word.wordcords;
+        let word = cell.word;
+        let coords = word.gridelem.wordcords;
         for(let i = 0; i < coords.length; i++)
         {
             let viewcell = gameobject.view.childNodes[coords[i].y].childNodes[coords[i].x];
@@ -301,7 +306,13 @@ function handleKey(e, gameobject)
             }
             break;
         case "1":
+            printGrid(gameobject);
+            break;
+        case "2":
             printClue(gameobject, gameobject.currentcell);
+            break;
+        case "3":
+            printLetter(gameobject.currentcell);
             break;
         //handle letters
         default:
@@ -322,7 +333,7 @@ function deleteSelected(gameobject, dir)
     if(gameobject.currentcell == undefined) return;
     let cell = gameobject.currentcell;
     cell.domelement.textContent = "";
-    let newcell = cell.words[cell.wordindex][dir];
+    let newcell = cell.word[dir];
     if(newcell != undefined) selectCell(gameobject, newcell);
 }
 
@@ -330,7 +341,7 @@ function cycleClue(gameobject, dir)
 {
     if(gameobject.currentcell == undefined) return;
     let cell = gameobject.currentcell;
-    let clue = cell.words[cell.wordindex].clue;
+    let clue = cell.word.clue;
     let height = gameobject.height;
     let width = gameobject.width;
     let index = (clue.y*width) + clue.x;
@@ -341,7 +352,7 @@ function cycleClue(gameobject, dir)
         index = (index+(height*width)) % (height*width);
     }
     while(gameobject.cells[index].type != "clue");
-    selectCell(gameobject, gameobject.cells[index].words[0].next, true);
+    selectCell(gameobject, gameobject.cells[index].word.next, true);
 }
 
 function handleLetter(gameobject, letter)
@@ -358,7 +369,7 @@ function handleLetter(gameobject, letter)
     || letter == "y" || letter == "z") 
     {
         cell.domelement.textContent = letter;
-        let newcell = cell.words[cell.wordindex].next;
+        let newcell = cell.word.next;
         if(newcell != undefined) selectCell(gameobject, newcell);
     }
 }
@@ -369,7 +380,7 @@ function clearSelected(gameobject)
     gameobject.currentelem = undefined;
 }
 
-function printGrid(grid, table)
+/*function printGrid(grid, table)
 {
     for(let i = 0; i < grid.length; i++)
     {
@@ -392,14 +403,6 @@ function printLetter(letter, position, table)
 function printClue(gameobject, cell)
 {
     if(cell == undefined) return;
-    /*if(cell.type != "clue") cell = cell.words[cell.wordindex].clue;
-    let word = cell.words[0].word.word.word;
-    cell = cell.words[0].next;
-    for(let i = 0; i < word.length; i++)
-    {
-        cell.domelement.textContent = word.charAt(i);
-        cell = cell.words[cell.wordindex].next;
-    }*/
     let word = cell.words[cell.wordindex];
     let coords = word.word.wordcords;
     for(let i = 0; i < coords.length; i++)
@@ -407,5 +410,30 @@ function printClue(gameobject, cell)
         let viewcell = gameobject.view.childNodes[coords[i].y].childNodes[coords[i].x];
         viewcell.textContent = word.word.word.word.charAt(i);
     }
+}*/
 
+function printGrid(gameobject)
+{
+    for(let i = 0; i < gameobject.cells.length; i++)
+    {
+        let cell = gameobject.cells[i];
+        if(cell.type == "letter") printLetter(cell);
+    }
+}
+
+function printClue(gameobject, cell)
+{
+    if(cell == undefined) return;
+    let coords = cell.word.gridelem.wordcords;
+    for(let i = 0; i < coords.length; i++)
+    {
+        let coord = coords[i];
+        cell = gameobject.cells[(coord.y * gameobject.width) + coord.x];
+        printLetter(cell);
+    }
+}
+
+function printLetter(cell)
+{
+    cell.domelement.textContent = cell.word.letter;
 }
