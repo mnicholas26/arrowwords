@@ -306,34 +306,34 @@ function handleKey(e, gameobject)
             }
             break;
         case "1":
-            printGrid(gameobject);
+            handleGrid(gameobject, "print");
             break;
         case "2":
-            printClue(gameobject, gameobject.currentcell);
+            handleClue(gameobject, gameobject.currentcell, "print");
             break;
         case "3":
-            printLetter(gameobject.currentcell);
+            handleLetter(gameobject.currentcell, "print");
             break;
         case "4":
-            printGrid(gameobject, true);
+            handleGrid(gameobject, "clear");
             break;
         case "5":
-            printClue(gameobject, gameobject.currentcell, true);
+            handleClue(gameobject, gameobject.currentcell, "clear");
             break;
         case "6":
-            printLetter(gameobject.currentcell, true);
+            handleLetter(gameobject.currentcell, "clear");
             break;
         case "7":
-            checkGrid(gameobject);
+            handleGrid(gameobject, "check");
             break;
         case "8":
-            checkClue(gameobject, gameobject.currentcell);
+            handleClue(gameobject, gameobject.currentcell, "check");
             break;
         case "9":
-            checkLetter(gameobject.currentcell);
+            handleLetter(gameobject.currentcell, "check");
         //handle letters
         default:
-            handleLetter(gameobject, e.key);
+            inputLetter(gameobject, e.key);
             break;
     }
 }
@@ -372,7 +372,7 @@ function cycleClue(gameobject, dir)
     selectCell(gameobject, gameobject.cells[index].word.next, true);
 }
 
-function handleLetter(gameobject, letter)
+function inputLetter(gameobject, letter)
 {
     if(gameobject.currentcell == undefined) return;
     let cell = gameobject.currentcell;
@@ -397,7 +397,58 @@ function clearSelected(gameobject)
     gameobject.currentelem = undefined;
 }
 
-function printGrid(gameobject, clear)
+function handleGrid(gameobject, event, toggle)
+{
+    for(let i = 0; i < gameobject.cells.length; i++)
+    {
+        let cell = gameobject.cells[i];
+        if(cell.type == "letter") handleLetter(cell, event, toggle);
+    }
+}
+
+function handleClue(gameobject, cell, event, toggle)
+{
+    if(cell == undefined) return;
+    let coords = cell.word.gridelem.wordcords;
+    for(let i = 0; i < coords.length; i++)
+    {
+        let coord = coords[i];
+        cell = gameobject.cells[(coord.y * gameobject.width) + coord.x];
+        handleLetter(cell, event, toggle);
+    }
+}
+
+function handleLetter(cell, event, toggle)
+{
+    let dom = cell.domelement;
+    switch(event)
+    {
+        case "print":
+            dom.textContent = cell.word.letter;
+            break;
+        case "clear":
+            dom.textContent = "";
+            break;
+        case "check":
+            if(dom.textContent == cell.word.letter)
+            {
+                dom.classList.remove('checked-false');
+                dom.classList.add('checked-true');
+            }
+            else
+            {
+                dom.classList.remove('checked-true');
+                dom.classList.add('checked-false');
+            }
+            break;
+        default:
+            console.log("Event does not exist: <" + event + ">");
+            break;
+
+    }
+}
+
+/*function printGrid(gameobject, clear)
 {
     for(let i = 0; i < gameobject.cells.length; i++)
     {
@@ -450,19 +501,12 @@ function checkLetter(cell)
     let dom = cell.domelement;
     if(dom.textContent == cell.word.letter)
     {
-        //checkHighlight(cell, true);
         dom.classList.remove('checked-false');
         dom.classList.add('checked-true');
     }
     else
     {
-        //checkHighlight(cell, false);
         dom.classList.remove('checked-true');
         dom.classList.add('checked-false');
     }
-}
-
-/*function checkHighlight(cell)
-{
-    cell.domelement.classList.add()
 }*/
