@@ -42,3 +42,27 @@
 .selected-cell{
     background-color: #00cdcd;
 }
+
+.checked-true{
+    background-color: #6cfb6c;
+}
+
+.checked-true.selected-word{
+    background-color: #0ff40f;
+}
+
+.checked-true.selected-cell{
+    background-color: #228b22;
+}
+
+.checked-false{
+    background-color: #fb6262;
+}
+
+.checked-false.selected-word{
+    background-color: #f91111;
+}
+
+.checked-false.selected-cell{
+    background-color: #c51515;
+}

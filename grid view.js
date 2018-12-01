@@ -323,6 +323,14 @@ function handleKey(e, gameobject)
         case "6":
             printLetter(gameobject.currentcell, true);
             break;
+        case "7":
+            checkGrid(gameobject);
+            break;
+        case "8":
+            checkClue(gameobject, gameobject.currentcell);
+            break;
+        case "9":
+            checkLetter(gameobject.currentcell);
         //handle letters
         default:
             handleLetter(gameobject, e.key);
@@ -415,3 +423,46 @@ function printLetter(cell, clear)
     let letter = (clear) ? " " : cell.word.letter;
     cell.domelement.textContent = letter;
 }
+
+function checkGrid(gameobject)
+{
+    for(let i = 0; i < gameobject.cells.length; i++)
+    {
+        let cell = gameobject.cells[i];
+        if(cell.type == "letter") checkLetter(cell);
+    }
+}
+
+function checkClue(gameobject, cell)
+{
+    if(cell == undefined) return;
+    let coords = cell.word.gridelem.wordcords;
+    for(let i = 0; i < coords.length; i++)
+    {
+        let coord = coords[i];
+        cell = gameobject.cells[(coord.y * gameobject.width) + coord.x];
+        checkLetter(cell);
+    }   
+}
+
+function checkLetter(cell)
+{
+    let dom = cell.domelement;
+    if(dom.textContent == cell.word.letter)
+    {
+        //checkHighlight(cell, true);
+        dom.classList.remove('checked-false');
+        dom.classList.add('checked-true');
+    }
+    else
+    {
+        //checkHighlight(cell, false);
+        dom.classList.remove('checked-true');
+        dom.classList.add('checked-false');
+    }
+}
+
+/*function checkHighlight(cell)
+{
+    cell.domelement.classList.add()
+}*/
