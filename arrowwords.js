@@ -116,8 +116,8 @@ window.onload = function()
     document.body.appendChild(gridview);
     gameobject.view = gridview;
     setupIO(grid, gameobject);
-    console.log(gameobject);
-    printGrid(grid, gridview);
+    //console.log(gameobject);
+    //printGrid(grid, gridview);
 
     return record;
     }

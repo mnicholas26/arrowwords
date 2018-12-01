@@ -84,7 +84,6 @@ function setupIO(grid, gameobject)
                 down: undefined,
                 left: undefined,
                 right: undefined,
-                clue: undefined,
                 wordindex: 0,
                 words: [],
                 domelement: row.childNodes[j]
@@ -301,6 +300,9 @@ function handleKey(e, gameobject)
                 else cycleClue(gameobject, "forward");
             }
             break;
+        case "1":
+            printClue(gameobject, gameobject.currentcell);
+            break;
         //handle letters
         default:
             handleLetter(gameobject, e.key);
@@ -385,4 +387,25 @@ function printLetter(letter, position, table)
     let y = position.y;
     let cell = table.childNodes[y].childNodes[x];
     cell.textContent = letter;
+}
+
+function printClue(gameobject, cell)
+{
+    if(cell == undefined) return;
+    /*if(cell.type != "clue") cell = cell.words[cell.wordindex].clue;
+    let word = cell.words[0].word.word.word;
+    cell = cell.words[0].next;
+    for(let i = 0; i < word.length; i++)
+    {
+        cell.domelement.textContent = word.charAt(i);
+        cell = cell.words[cell.wordindex].next;
+    }*/
+    let word = cell.words[cell.wordindex];
+    let coords = word.word.wordcords;
+    for(let i = 0; i < coords.length; i++)
+    {
+        let viewcell = gameobject.view.childNodes[coords[i].y].childNodes[coords[i].x];
+        viewcell.textContent = word.word.word.word.charAt(i);
+    }
+
 }
