@@ -1,0 +1,10 @@
+<svg height="100" width="100" xmlns="http://www.w3.org/2000/svg">
+  <!--<circle cx="50" cy="80" r="47" fill="transparent" stroke="black" stroke-width="5px"/>
+  <circle cx="50" cy="110" r="47" fill="transparent" stroke="black" stroke-width="5px"/>
+  <path d="M 50 33 v-23 l 38 38 l -38 38 v-23" 
+  fill="transparent" stroke="aqua" stroke-width="5px" stroke-linejoin="round"/>-->
+  <path d="M 50 35 v-25 l 38 38 l -38 38 v-25
+  C 30 61 13 65 10 80
+  C 10 30 40 34 50 34 z" 
+  fill="black"/> <!--stroke="black" stroke-width="5px" stroke-linejoin="round"/>-->
+</svg>

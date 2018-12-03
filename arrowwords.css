@@ -66,3 +66,107 @@
 .checked-false.selected-cell{
     background-color: #c51515;
 }
+
+.locked-cell{
+    background-image: url(Images/lock-small.svg);
+    background-size: contain;
+}
+
+/*.locked-cell{
+    background: repeating-linear-gradient(
+        45deg,
+        white,
+        white 10px,
+        #ebf3f8 10px,
+        #ebf3f8 20px
+    );
+    background-attachment: fixed;
+}
+
+.locked-cell.selected-word{
+    background: repeating-linear-gradient(
+        45deg,
+        #37fdfc,
+        #37fdfc 10px,
+        #ebf3f8 10px,
+        #ebf3f8 20px
+    );
+    background-attachment: fixed;
+}
+
+.locked-cell.selected-cell{
+    background: repeating-linear-gradient(
+        45deg,
+        #00cdcd,
+        #00cdcd 10px,
+        #ebf3f8 10px,
+        #ebf3f8 20px
+    );
+    background-attachment: fixed;
+}
+
+.locked-cell.checked-true{
+    background: repeating-linear-gradient(
+        45deg,
+        #6cfb6c,
+        #6cfb6c 10px,
+        #ebf3f8 10px,
+        #ebf3f8 20px
+    );
+    background-attachment: fixed;
+}
+
+.locked-cell.checked-true.selected-word{
+    background: repeating-linear-gradient(
+        45deg,
+        #0ff40f,
+        #0ff40f 10px,
+        #ebf3f8 10px,
+        #ebf3f8 20px
+    );
+    background-attachment: fixed;
+}
+
+.locked-cell.checked-true.selected-cell{
+    background: repeating-linear-gradient(
+        45deg,
+        #228b22,
+        #228b22 10px,
+        #ebf3f8 10px,
+        #ebf3f8 20px
+    );
+    background-attachment: fixed;
+}
+
+.locked-cell.checked-false{
+    background: repeating-linear-gradient(
+        45deg,
+        #fb6262,
+        #fb6262 10px,
+        #ebf3f8 10px,
+        #ebf3f8 20px
+    );
+    background-attachment: fixed;
+}
+
+.locked-cell.checked-false.selected-word{
+    background: repeating-linear-gradient(
+        45deg,
+        #f91111,
+        #f91111 10px,
+        #ebf3f8 10px,
+        #ebf3f8 20px
+    );
+    background-attachment: fixed;
+}
+
+.locked-cell.checked-false.selected-cell{
+    background: repeating-linear-gradient(
+        45deg,
+        #c51515,
+        #c51515 10px,
+        #ebf3f8 10px,
+        #ebf3f8 20px
+    );
+    background-attachment: fixed;
+}*/

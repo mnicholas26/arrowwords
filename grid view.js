@@ -87,6 +87,7 @@ function setupIO(grid, gameobject)
                 wordindex: 0,
                 words: [],
                 domelement: row.childNodes[j],
+                locked: false,
                 get word()
                 {
                     return this.words[this.wordindex];
@@ -331,6 +332,11 @@ function handleKey(e, gameobject)
             break;
         case "9":
             handleLetter(gameobject.currentcell, "check");
+            break;
+        case "0":
+            handleLetter(gameobject.currentcell, "lock");
+        case "-":
+            handleGrid(gameobject, "check", true)
         //handle letters
         default:
             inputLetter(gameobject, e.key);
@@ -349,7 +355,7 @@ function deleteSelected(gameobject, dir)
 {
     if(gameobject.currentcell == undefined) return;
     let cell = gameobject.currentcell;
-    cell.domelement.textContent = "";
+    if(!cell.locked) cell.domelement.textContent = "";
     let newcell = cell.word[dir];
     if(newcell != undefined) selectCell(gameobject, newcell);
 }
@@ -385,7 +391,12 @@ function inputLetter(gameobject, letter)
     || letter == "u" || letter == "v" || letter == "w" || letter == "x"
     || letter == "y" || letter == "z") 
     {
-        cell.domelement.textContent = letter;
+        if(!cell.locked) 
+        {
+            cell.domelement.textContent = letter;
+            //auto locking
+            handleLetter(cell, "lock");
+        }
         let newcell = cell.word.next;
         if(newcell != undefined) selectCell(gameobject, newcell);
     }
@@ -430,16 +441,28 @@ function handleLetter(cell, event, toggle)
             dom.textContent = "";
             break;
         case "check":
-            if(dom.textContent == cell.word.letter)
+            if(toggle)
             {
                 dom.classList.remove('checked-false');
-                dom.classList.add('checked-true');
+                dom.classList.remove('checked-true');
             }
             else
             {
-                dom.classList.remove('checked-true');
-                dom.classList.add('checked-false');
+                if(dom.textContent == cell.word.letter)
+                {
+                    dom.classList.remove('checked-false');
+                    dom.classList.add('checked-true');
+                }
+                else
+                {
+                    dom.classList.remove('checked-true');
+                    dom.classList.add('checked-false');
+                }
             }
+            break;
+        case "lock":
+            cell.locked = !cell.locked;
+            dom.classList.toggle('locked-cell')
             break;
         default:
             console.log("Event does not exist: <" + event + ">");

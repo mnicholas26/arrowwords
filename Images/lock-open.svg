@@ -1,0 +1,5 @@
+<svg height="100" width="100" xmlns="http://www.w3.org/2000/svg">
+  <path d="M 35 40 L 35 31 C 35 -1 65 -1 65 31" stroke="black" stroke-width="8px" 
+  stroke-linecap="round" fill="transparent" id="loop"/>
+  <rect x="25" y="40" width="50" height="50" rx="5" ry="5" fill="black"/>
+</svg>
