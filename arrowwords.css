@@ -1,10 +1,31 @@
+body{
+    margin-top: 0px;
+    font-family: sans-serif;
+}
+
+#title{
+    text-align: center;
+    font-size: 150px;
+    margin: -8px 0px;
+}
+
+#board-container{
+    /*display: flex;
+    justify-content: space-between;*/
+    text-align: center;
+}
+
+#board-container > *{
+    display: inline-block;
+}
+
 .grid{
     border-collapse: collapse;
-    font-family: sans-serif;
     font-weight: bold;
     text-align: center;
     table-layout: fixed;
     user-select: none;
+    margin: auto;
 }
 
 .grid td{
@@ -72,101 +93,60 @@
     background-size: contain;
 }
 
-/*.locked-cell{
-    background: repeating-linear-gradient(
-        45deg,
-        white,
-        white 10px,
-        #ebf3f8 10px,
-        #ebf3f8 20px
-    );
-    background-attachment: fixed;
+#right-column, #left-column{
+    width: 100px;
+    vertical-align: top;
 }
 
-.locked-cell.selected-word{
-    background: repeating-linear-gradient(
-        45deg,
-        #37fdfc,
-        #37fdfc 10px,
-        #ebf3f8 10px,
-        #ebf3f8 20px
-    );
-    background-attachment: fixed;
+#right-column{
+    margin-left: 10px;
 }
 
-.locked-cell.selected-cell{
-    background: repeating-linear-gradient(
-        45deg,
-        #00cdcd,
-        #00cdcd 10px,
-        #ebf3f8 10px,
-        #ebf3f8 20px
-    );
-    background-attachment: fixed;
+#left-column{
+    margin-right: 10px;
 }
 
-.locked-cell.checked-true{
-    background: repeating-linear-gradient(
-        45deg,
-        #6cfb6c,
-        #6cfb6c 10px,
-        #ebf3f8 10px,
-        #ebf3f8 20px
-    );
-    background-attachment: fixed;
+#timer{
+    height: 50px;
+    font-size: 40px;
 }
 
-.locked-cell.checked-true.selected-word{
-    background: repeating-linear-gradient(
-        45deg,
-        #0ff40f,
-        #0ff40f 10px,
-        #ebf3f8 10px,
-        #ebf3f8 20px
-    );
-    background-attachment: fixed;
+#right-column button{
+    width: 80px;
+    height: 80px;
+    background-color: #ff6725;
+    border-radius: 25%;
+    border: 3px solid #e55c21;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 2px 0px;
 }
 
-.locked-cell.checked-true.selected-cell{
-    background: repeating-linear-gradient(
-        45deg,
-        #228b22,
-        #228b22 10px,
-        #ebf3f8 10px,
-        #ebf3f8 20px
-    );
-    background-attachment: fixed;
+#right-column button:focus{
+    outline: none;
+    background-color: #e55c21;
 }
 
-.locked-cell.checked-false{
-    background: repeating-linear-gradient(
-        45deg,
-        #fb6262,
-        #fb6262 10px,
-        #ebf3f8 10px,
-        #ebf3f8 20px
-    );
-    background-attachment: fixed;
+#right-column button:hover{
+    background-color: #e55c21;
 }
 
-.locked-cell.checked-false.selected-word{
-    background: repeating-linear-gradient(
-        45deg,
-        #f91111,
-        #f91111 10px,
-        #ebf3f8 10px,
-        #ebf3f8 20px
-    );
-    background-attachment: fixed;
+#checkbtn{
+    background-image: url('Images/tick.svg');
 }
 
-.locked-cell.checked-false.selected-cell{
-    background: repeating-linear-gradient(
-        45deg,
-        #c51515,
-        #c51515 10px,
-        #ebf3f8 10px,
-        #ebf3f8 20px
-    );
-    background-attachment: fixed;
-}*/
+#clearbtn{
+    background-image: url('Images/dustbin.svg');
+}
+
+#showbtn{
+    background-image: url('Images/eye.svg');
+}
+
+#autolockbtn{
+    background-image: url('Images/lock-open.svg');
+}
+
+#autolockbtn.autolock-locked{
+    background-image: url('Images/lock-closed.svg');
+}

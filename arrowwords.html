@@ -10,8 +10,31 @@
         <script src="grid generation.js"></script>
         <script src="grid view.js"></script>
         <script src="arrowwords.js"></script>
-        <title>Arrowwords</title>
+        <title>Arow</title>
     </head>
     <body>
+        <div id="title">
+            <svg height="100" width="355" xmlns="http://www.w3.org/2000/svg">
+                <path d="M 10 90 l 40 -80 h 20 l 40 80 h -20 l -30 -60 l -30 60 z" 
+                id="letter-a" fill="#ff6725" />
+                <path d="M 120 90 v -60 h 20 v 10 C 150 30 155 30 165 35 v 20 
+                C 155 50 150 50 140 60 v 30 z" id="letter-r" fill="black" />
+                <path d="M 205 30 A 30 30 0 0 1 205 90 A 30 30 0 0 1 205 30 M 205 50 A 10 10 0 0 1 205 70
+                A 10 10 0 0 1 205 50" id="letter-o" fill="black" fill-rule="evenodd" />
+                <path d="M 245 30 l 20 60 h 20 l 10 -30 l 10 30 h 20 l 20 -60
+                h -20 l -10 30 l -10 -30 h -20 l -10 30 l -10 -30 z" id="letter-w" fill="black" />
+            </svg>
+        </div>
+        <div id="board-container">
+            <div id="left-column"></div>
+            <div id="grid"></div>
+            <div id="right-column">
+                <div id="timer"></div>
+                <button id="checkbtn"></button>
+                <button id="clearbtn"></button>
+                <button id="showbtn"></button>
+                <button id="autolockbtn"></button>
+            </div>
+        </div>
     </body>
 </html>

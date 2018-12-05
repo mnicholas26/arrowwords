@@ -161,6 +161,9 @@ function setupIO(grid, gameobject)
         }
     }
     document.addEventListener('keydown', (e) => {handleKey(e, gameobject)});
+    gameobject.autolock = false;
+    setupButtons(gameobject);
+    setupTimer(gameobject);
 }
 
 function getWords(grid, x, y)
@@ -394,8 +397,7 @@ function inputLetter(gameobject, letter)
         if(!cell.locked) 
         {
             cell.domelement.textContent = letter;
-            //auto locking
-            handleLetter(cell, "lock");
+            if(gameobject.autolock == true) handleLetter(cell, "lock");
         }
         let newcell = cell.word.next;
         if(newcell != undefined) selectCell(gameobject, newcell);
@@ -467,8 +469,52 @@ function handleLetter(cell, event, toggle)
         default:
             console.log("Event does not exist: <" + event + ">");
             break;
-
     }
+}
+
+function setupButtons(gameobject)
+{
+    let checkbtn = document.getElementById('checkbtn');
+    let clearbtn = document.getElementById('clearbtn');
+    let showbtn = document.getElementById('showbtn');
+    let autolockbtn = document.getElementById('autolockbtn');
+    checkbtn.addEventListener('click', () => 
+    {
+        handleGrid(gameobject, 'check');
+    });
+    clearbtn.addEventListener('click', () => 
+    {
+        handleGrid(gameobject, 'clear');
+    });
+    showbtn.addEventListener('click', () => 
+    {
+        handleGrid(gameobject, 'print');
+    });
+    autolockbtn.addEventListener('click', () => 
+    {
+        gameobject.autolock = !gameobject.autolock;
+        autolockbtn.classList.toggle('autolock-locked');
+    });
+}
+
+function setupTimer(gameobject)
+{
+    let timerdom = document.getElementById('timer');
+    gameobject.time = 0;
+    timerdom.textContent = formatTimer(gameobject.time);
+    gameobject.timer = setInterval(() =>
+    {
+        gameobject.time++;
+        timerdom.textContent = formatTimer(gameobject.time);
+    }, 1000);
+}
+
+function formatTimer(int)
+{
+    let minutes = Math.floor(int/60);
+    let seconds = int - (minutes * 60);
+    if(seconds < 10) seconds = '0' + seconds;
+    return minutes + ":" + seconds;
 }
 
 /*function printGrid(gameobject, clear)

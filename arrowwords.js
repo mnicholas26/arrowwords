@@ -113,7 +113,8 @@ window.onload = function()
 
     //front end stuff
     let gridview = createGridView(grid);
-    document.body.appendChild(gridview);
+    let container = document.getElementById('grid');
+    container.appendChild(gridview);
     gameobject.view = gridview;
     setupIO(grid, gameobject);
     //console.log(gameobject);
