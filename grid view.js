@@ -88,6 +88,7 @@ function setupIO(grid, gameobject)
                 words: [],
                 domelement: row.childNodes[j],
                 locked: false,
+                checked: false,
                 get word()
                 {
                     return this.words[this.wordindex];
@@ -162,6 +163,7 @@ function setupIO(grid, gameobject)
     }
     document.addEventListener('keydown', (e) => {handleKey(e, gameobject)});
     gameobject.autolock = false;
+    gameobject.checked = false;
     setupButtons(gameobject);
     setupTimer(gameobject);
 }
@@ -220,6 +222,7 @@ function selectCell(gameobject, cell, clicked)
 {
     toggleHighlight(gameobject);
     let oldcell = gameobject.currentcell
+    if(oldcell == undefined) gameobject.largecluecontainer.classList.remove('hide');
     if(clicked)
     {
         if(cell == oldcell) toggleWord(cell);
@@ -249,6 +252,7 @@ function selectCell(gameobject, cell, clicked)
     //if(cell.type == "clue") cell = cell.words[0].next;
     gameobject.currentcell = cell;
     toggleHighlight(gameobject);
+    updateClueCellContainer(gameobject);
 }
 
 function toggleHighlight(gameobject)
@@ -297,9 +301,7 @@ function handleKey(e, gameobject)
             break;
         //handle switching direction
         case " ":
-            toggleHighlight(gameobject);
-            toggleWord(gameobject.currentcell);
-            toggleHighlight(gameobject);
+            selectCell(gameobject, gameobject.currentcell);
             break;
         case "Tab":
             if(gameobject.currentcell != undefined)
@@ -397,7 +399,7 @@ function inputLetter(gameobject, letter)
         if(!cell.locked) 
         {
             cell.domelement.textContent = letter;
-            if(gameobject.autolock == true) handleLetter(cell, "lock");
+            if(gameobject.autolock) handleLetter(cell, "lock");
         }
         let newcell = cell.word.next;
         if(newcell != undefined) selectCell(gameobject, newcell);
@@ -407,7 +409,7 @@ function inputLetter(gameobject, letter)
 function clearSelected(gameobject)
 {
     gameobject.currentcell = undefined;
-    gameobject.currentelem = undefined;
+    gameobject.largecluecontainer.classList.add('hide');
 }
 
 function handleGrid(gameobject, event, toggle)
@@ -463,8 +465,20 @@ function handleLetter(cell, event, toggle)
             }
             break;
         case "lock":
-            cell.locked = !cell.locked;
-            dom.classList.toggle('locked-cell')
+            if(toggle == undefined)
+            {
+                cell.locked = !cell.locked;
+                dom.classList.toggle('locked-cell');
+            }
+            else if(toggle)
+            {
+                cell.locked = true;
+                dom.classList.add('locked-cell')
+            }
+            else{
+                cell.locked = false;
+                dom.classList.remove('locked-cell');
+            }
             break;
         default:
             console.log("Event does not exist: <" + event + ">");
@@ -474,26 +488,69 @@ function handleLetter(cell, event, toggle)
 
 function setupButtons(gameobject)
 {
-    let checkbtn = document.getElementById('checkbtn');
-    let clearbtn = document.getElementById('clearbtn');
-    let showbtn = document.getElementById('showbtn');
-    let autolockbtn = document.getElementById('autolockbtn');
-    checkbtn.addEventListener('click', () => 
+    //grid
+    let gcheckbtn = document.getElementById('grid-checkbtn');
+    let gclearbtn = document.getElementById('grid-clearbtn');
+    let gshowbtn = document.getElementById('grid-showbtn');
+    let gautolockbtn = document.getElementById('grid-autolockbtn');
+    gcheckbtn.addEventListener('mousedown', (e) => 
     {
-        handleGrid(gameobject, 'check');
+        e.stopPropagation();
+        if(gameobject.checked) handleGrid(gameobject, 'check', true);
+        else handleGrid(gameobject, 'check');
+        gameobject.checked = !gameobject.checked;
     });
-    clearbtn.addEventListener('click', () => 
+    gclearbtn.addEventListener('mousedown', (e) => 
     {
+        e.stopPropagation();
         handleGrid(gameobject, 'clear');
     });
-    showbtn.addEventListener('click', () => 
+    gshowbtn.addEventListener('mousedown', (e) => 
     {
+        e.stopPropagation();
         handleGrid(gameobject, 'print');
     });
-    autolockbtn.addEventListener('click', () => 
+    gautolockbtn.addEventListener('mousedown', (e) => 
     {
+        e.stopPropagation();
         gameobject.autolock = !gameobject.autolock;
-        autolockbtn.classList.toggle('autolock-locked');
+        gautolockbtn.classList.toggle('locked');
+    });
+
+    //clue
+    let ccheckbtn = document.getElementById('clue-checkbtn');
+    let cclearbtn = document.getElementById('clue-clearbtn');
+    let cshowbtn = document.getElementById('clue-showbtn');
+    let clockbtn = document.getElementById('clue-lockbtn');
+    let largecluecontainer = document.getElementById('clue-cell-container');
+    gameobject.largecluecontainer = largecluecontainer;
+    ccheckbtn.addEventListener('mousedown', (e) => 
+    {
+        e.stopPropagation();
+        let clue = gameobject.currentcell.word.clue;
+        if(clue.checked) handleClue(gameobject, gameobject.currentcell, 'check', true);
+        else handleClue(gameobject, gameobject.currentcell, 'check');
+        clue.checked = !clue.checked;
+       
+    });
+    cclearbtn.addEventListener('mousedown', (e) => 
+    {
+        e.stopPropagation();
+        handleClue(gameobject, gameobject.currentcell, 'clear');
+    });
+    cshowbtn.addEventListener('mousedown', (e) => 
+    {
+        e.stopPropagation();
+        handleClue(gameobject, gameobject.currentcell, 'print');
+    });
+    clockbtn.addEventListener('mousedown', (e) => 
+    {
+        e.stopPropagation();
+        let clue = gameobject.currentcell.word.clue;
+        if(clue.locked) clockbtn.classList.remove('locked');
+        else clockbtn.classList.add('locked');
+        clue.locked = !clue.locked;
+        handleClue(gameobject, gameobject.currentcell, 'lock', clue.locked);
     });
 }
 
@@ -517,65 +574,13 @@ function formatTimer(int)
     return minutes + ":" + seconds;
 }
 
-/*function printGrid(gameobject, clear)
+function updateClueCellContainer(gameobject)
 {
-    for(let i = 0; i < gameobject.cells.length; i++)
-    {
-        let cell = gameobject.cells[i];
-        if(cell.type == "letter") printLetter(cell, clear);
-    }
+    let container = gameobject.largecluecontainer;
+    let cell = gameobject.currentcell;
+    let clue = cell.word.clue;
+    container.children[0].textContent = clue.domelement.textContent;
+    let lockbtn = container.children[1].children[3];
+    if(clue.locked) lockbtn.classList.add('locked');
+    else lockbtn.classList.remove('locked');
 }
-
-function printClue(gameobject, cell, clear)
-{
-    if(cell == undefined) return;
-    let coords = cell.word.gridelem.wordcords;
-    for(let i = 0; i < coords.length; i++)
-    {
-        let coord = coords[i];
-        cell = gameobject.cells[(coord.y * gameobject.width) + coord.x];
-        printLetter(cell, clear);
-    }
-}
-
-function printLetter(cell, clear)
-{
-    let letter = (clear) ? " " : cell.word.letter;
-    cell.domelement.textContent = letter;
-}
-
-function checkGrid(gameobject)
-{
-    for(let i = 0; i < gameobject.cells.length; i++)
-    {
-        let cell = gameobject.cells[i];
-        if(cell.type == "letter") checkLetter(cell);
-    }
-}
-
-function checkClue(gameobject, cell)
-{
-    if(cell == undefined) return;
-    let coords = cell.word.gridelem.wordcords;
-    for(let i = 0; i < coords.length; i++)
-    {
-        let coord = coords[i];
-        cell = gameobject.cells[(coord.y * gameobject.width) + coord.x];
-        checkLetter(cell);
-    }   
-}
-
-function checkLetter(cell)
-{
-    let dom = cell.domelement;
-    if(dom.textContent == cell.word.letter)
-    {
-        dom.classList.remove('checked-false');
-        dom.classList.add('checked-true');
-    }
-    else
-    {
-        dom.classList.remove('checked-true');
-        dom.classList.add('checked-false');
-    }
-}*/

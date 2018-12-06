@@ -26,14 +26,28 @@
             </svg>
         </div>
         <div id="board-container">
-            <div id="left-column"></div>
+            <div id="left-column">
+                <div id="minimap-container">
+                    <table id="minimap"></table>
+                    <div id="minimap-controls"></div>
+                </div>
+                <div id="clue-cell-container" class="hide">
+                    <div id="clue-cell" class="clue"></div>
+                    <div id="clue-cell-buttons">
+                        <button id="clue-checkbtn" class="checkbtn"></button>
+                        <button id="clue-clearbtn" class="clearbtn"></button>
+                        <button id="clue-showbtn" class="showbtn"></button>
+                        <button id="clue-lockbtn" class="lockbtn"></button>
+                    </div>
+                </div>
+            </div>
             <div id="grid"></div>
             <div id="right-column">
                 <div id="timer"></div>
-                <button id="checkbtn"></button>
-                <button id="clearbtn"></button>
-                <button id="showbtn"></button>
-                <button id="autolockbtn"></button>
+                <button id="grid-checkbtn" class="checkbtn"></button>
+                <button id="grid-clearbtn" class="clearbtn"></button>
+                <button id="grid-showbtn" class="showbtn"></button>
+                <button id="grid-autolockbtn" class="lockbtn"></button>
             </div>
         </div>
     </body>

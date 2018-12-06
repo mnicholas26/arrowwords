@@ -131,22 +131,78 @@ body{
     background-color: #e55c21;
 }
 
-#checkbtn{
+.checkbtn{
     background-image: url('Images/tick.svg');
 }
 
-#clearbtn{
+.clearbtn{
     background-image: url('Images/dustbin.svg');
 }
 
-#showbtn{
+.showbtn{
     background-image: url('Images/eye.svg');
 }
 
-#autolockbtn{
+.lockbtn{
     background-image: url('Images/lock-open.svg');
 }
 
-#autolockbtn.autolock-locked{
+.lockbtn.locked{
     background-image: url('Images/lock-closed.svg');
+}
+
+#minimap-container{
+    width: 100px;
+    height: 140px;
+}
+
+#minimap{
+    width: 100px;
+    height: 80px;
+    border: 1px solid black;
+}
+
+#minimap-controls{
+    width: 100px;
+    height: 60px;
+}
+
+#clue-cell-container{
+    height: 220px;
+    width: 100px;
+    display: block;
+}
+
+.hide{
+    display: none !important;
+}
+
+#clue-cell{
+    margin: 10px 0px;
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    font-weight: bold;
+    background-color: lightgrey;
+    text-transform: capitalize;
+    font-size: 125%;
+    word-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#clue-cell-buttons{
+    height: 100px;
+    width: 100px
+}
+
+#clue-cell-buttons button{
+    height: 47px;
+    width: 47px;
+    display: inline-block;
+    background-color: #ff6725;
+    border: 1px solid black;
+    background-size: contain;
+    background-repeat: no-repeat;
 }

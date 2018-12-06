@@ -107,8 +107,7 @@ window.onload = function()
     var gameobject = {
         cells: [],
         currentindex: 0,
-        currentcell: undefined,
-        currentelem: undefined
+        currentcell: undefined
     };
 
     //front end stuff
