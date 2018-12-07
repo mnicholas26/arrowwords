@@ -341,7 +341,9 @@ function handleKey(e, gameobject)
         case "0":
             handleLetter(gameobject.currentcell, "lock");
         case "-":
-            handleGrid(gameobject, "check", true)
+            handleGrid(gameobject, "check", true);
+        case "=":
+            endGame(gameobject);
         //handle letters
         default:
             inputLetter(gameobject, e.key);
