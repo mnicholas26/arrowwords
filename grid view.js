@@ -495,6 +495,7 @@ function setupButtons(gameobject)
     let gclearbtn = document.getElementById('grid-clearbtn');
     let gshowbtn = document.getElementById('grid-showbtn');
     let gautolockbtn = document.getElementById('grid-autolockbtn');
+    let gnewgamebtn = document.getElementById('grid-newgamebtn');
     gcheckbtn.addEventListener('mousedown', (e) => 
     {
         e.stopPropagation();
@@ -518,6 +519,11 @@ function setupButtons(gameobject)
         gameobject.autolock = !gameobject.autolock;
         gautolockbtn.classList.toggle('locked');
     });
+    gnewgamebtn.addEventListener('mousedown', (e) => 
+    {
+        e.stopPropagation();
+        endGame(gameobject);
+    })
 
     //clue
     let ccheckbtn = document.getElementById('clue-checkbtn');

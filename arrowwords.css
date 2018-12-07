@@ -112,8 +112,8 @@ body{
 }
 
 #right-column button{
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     background-color: #ff6725;
     border-radius: 25%;
     border: 3px solid #e55c21;
@@ -149,6 +149,10 @@ body{
 
 .lockbtn.locked{
     background-image: url('Images/lock-closed.svg');
+}
+
+.nextbtn{
+    background-image: url('Images/next.svg');
 }
 
 #minimap-container{
@@ -194,7 +198,7 @@ body{
 
 #clue-cell-buttons{
     height: 100px;
-    width: 100px
+    width: 100px;
 }
 
 #clue-cell-buttons button{
