@@ -70,5 +70,18 @@ x x x x 1 x x x x x
 1 x x x 1 x x x x x
 x x x x 1 x x x x x
 0 x 1 x x x x x x x`
+    },
+    {
+        width: 10,
+        height: 8,
+        context:
+        `5 x 4 4 x 3 x 3 x 3
+        1 x x x x x x x x x
+        1 x x x x 4 x 4 x 4
+        1 x x x x x x x x x
+        x x x x 4 x 4 x 4 x
+        0 x 1 x x x x x x x
+        x x x x x 1 x x x x
+        0 x 1 x x x x x x x`
     }
 ]

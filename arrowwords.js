@@ -10,116 +10,84 @@ Array.prototype.shuffle = function() {
 }
 
 window.onload = function()
-{
-    //test grid gen
-    const templatechoice = 3;
-    
-    function average(arr)
+{   
+    newgrid();
+    function newgrid()
     {
-        let total = 0;
-        let len = arr.length;
-        for(let i = 0; i < len; i++)
+
+        //test grid gen
+        const templateoptions = [3, 4]
+        const templatechoice = templateoptions[Math.floor(Math.random()*2)];
+        //const templatechoice = 4;
+
+        //let newwords = createWords(biggerwords);
+        //let words = newwords;
+        //let words = words1.concat(newwords);
+        let words = words1;
+
+        var t0 = performance.now();
+        var grid = createGridObject(templates[templatechoice], words);
+        var t1 = performance.now();
+        console.log("Call to createGribObject took " + (t1 - t0) + " milliseconds.");
+        t0 = performance.now();
+        let before, after;
+        do
         {
-            total += arr[i];
-        }
-        return total/len;
-    }
-
-    var records = [];
-    for(let i = 0; i < 1; i++)
-    {
-        records.push(testing());
-    }
-    let gridgen = records.map(e => e.gridgen);
-    console.log("Call to createGribObject took on average " + average(gridgen) + " milliseconds.");
-    let wordanal = records.map(e => e.wordanal);
-    console.log("Call to wordAnalysis took on average " + average(wordanal) + " milliseconds.");
-    let advwordanal = records.map(e => e.advwordanal);
-    console.log("Call to advancedWordAnalysis took on average " + average(advwordanal) + " milliseconds.");
-    let popgrid = records.map(e => e.popgrid);
-    console.log("Call to populateGrid took on average " + average(popgrid) + " milliseconds.");
-
-    function testing()
-    {
-
-    let record = {};
-
-    //let newwords = createWords(biggerwords);
-    //let words = newwords;
-    //let words = words1.concat(newwords);
-    let words = words1;
-
-    var t0 = performance.now();
-    var grid = createGridObject(templates[templatechoice], words);
-    var t1 = performance.now();
-    //console.log("Call to createGribObject took " + (t1 - t0) + " milliseconds.");
-    record.gridgen = t1 - t0;
-    t0 = performance.now();
-    let before, after;
-    do
-    {
-        before = 0;
-        after = 0;
+            before = 0;
+            after = 0;
+            for(let i = 0; i < grid.length; i++)
+            {
+                before += grid[i].possiblewords.length;
+            }
+            grid = wordAnalysis(grid);
+            for(let i = 0; i < grid.length; i++)
+            {
+                after += grid[i].possiblewords.length;
+            }
+        } 
+        while(before != after);
+        t1 = performance.now();
+        console.log("Call to wordAnalysis took " + (t1 - t0) + " milliseconds.");
+        t0 = performance.now();
+        //console.log(after);
+        grid = advancedWordAnalysis(grid);
+        t1 = performance.now();
+        console.log("Call to advancedWordAnalysis took " + (t1 - t0) + " milliseconds.");
+        t0 = performance.now();
+        /*let after2 = 0;
         for(let i = 0; i < grid.length; i++)
         {
-            before += grid[i].possiblewords.length;
+            after2 += grid[i].possiblewords.length;
         }
-        grid = wordAnalysis(grid);
+        console.log(after2);*/
+
+        grid = populateGrid(grid);
+        t1 = performance.now();
+        console.log("Call to populateGrid took " + (t1 - t0) + " milliseconds.");
+        console.log(grid);
+
+        //assign clues
         for(let i = 0; i < grid.length; i++)
         {
-            after += grid[i].possiblewords.length;
+            let clues = grid[i].word.clues;
+            if(clues != undefined) grid[i].clue = clues[Math.floor(Math.random()*clues.length)];
         }
-    } 
-    while(before != after);
-    t1 = performance.now();
-    //console.log("Call to wordAnalysis took " + (t2 - t1) + " milliseconds.");
-    record.wordanal = t1 - t0;
-    t0 = performance.now();
-    //console.log(after);
 
-    grid = advancedWordAnalysis(grid);
-    t1 = performance.now();
-    //console.log("Call to advancedWordAnalysis took " + (t3 - t2) + " milliseconds.");
-    record.advwordanal = t1 - t0;
-    t0 = performance.now();
-    //console.log(grid);
-    /*let after2 = 0;
-    for(let i = 0; i < grid.length; i++)
-    {
-        after2 += grid[i].possiblewords.length;
-    }
-    console.log(after2);*/
+        //setup gameobject
+        var gameobject = {
+            cells: [],
+            currentindex: 0,
+            currentcell: undefined
+        };
 
-    grid = populateGrid(grid);
-    t1 = performance.now();
-    //console.log("Call to populateGrid took " + (t4 - t3) + " milliseconds.");
-    record.popgrid = t1 - t0;
-    console.log(grid);
-
-    //assign clues
-    for(let i = 0; i < grid.length; i++)
-    {
-        let clues = grid[i].word.clues;
-        if(clues != undefined) grid[i].clue = clues[Math.floor(Math.random()*clues.length)];
-    }
-
-    //setup gameobject
-    var gameobject = {
-        cells: [],
-        currentindex: 0,
-        currentcell: undefined
-    };
-
-    //front end stuff
-    let gridview = createGridView(grid);
-    let container = document.getElementById('grid');
-    container.appendChild(gridview);
-    gameobject.view = gridview;
-    setupIO(grid, gameobject);
-    //console.log(gameobject);
-    //printGrid(grid, gridview);
-
-    return record;
+        //front end stuff
+        let gridview = createGridView(grid);
+        let container = document.getElementById('grid');
+        container.appendChild(gridview);
+        gameobject.view = gridview;
+        setupIO(grid, gameobject);
+        //console.log(gameobject);
+        //printGrid(grid, gridview);
     }
 
     function populateGrid(grid)

@@ -1712,12 +1712,6 @@ const words1 =
       ]
     },
     {
-      "word": "beer",
-      "clues": [
-        "alcoholic beverage"
-      ]
-    },
-    {
       "word": "beg",
       "clues": [
         "implore",
@@ -3123,12 +3117,6 @@ const words1 =
       "clues": [
         "seat",
         "professorship"
-      ]
-    },
-    {
-      "word": "chalk",
-      "clues": [
-        "piece of chalk"
       ]
     },
     {
@@ -5312,12 +5300,6 @@ const words1 =
       ]
     },
     {
-      "word": "damn",
-      "clues": [
-        "curse"
-      ]
-    },
-    {
       "word": "dance",
       "clues": [
         "move in a pattern to music"
@@ -6301,19 +6283,6 @@ const words1 =
       "clues": [
         "disc",
         " flat circular plate"
-      ]
-    },
-    {
-      "word": "dismiss",
-      "clues": [
-        "fire",
-        " give notice",
-        " give the axe",
-        " sack",
-        "disregard",
-        " brush aside",
-        " brush off",
-        " discount"
       ]
     },
     {
@@ -10394,14 +10363,6 @@ const words1 =
       ]
     },
     {
-      "word": "horse",
-      "clues": [
-        "animal",
-        "knight",
-        " chessman"
-      ]
-    },
-    {
       "word": "horseshoe",
       "clues": [
         "shoe for horses"
@@ -10858,12 +10819,6 @@ const words1 =
       "word": "incredible",
       "clues": [
         "unbelievable"
-      ]
-    },
-    {
-      "word": "inde",
-      "clues": [
-        "finger] forefinger"
       ]
     },
     {
@@ -11643,12 +11598,6 @@ const words1 =
       "clues": [
         "rap",
         " strike with the knuckles"
-      ]
-    },
-    {
-      "word": "knot",
-      "clues": [
-        "fastening formed by looping and tying"
       ]
     },
     {
@@ -13907,12 +13856,6 @@ const words1 =
       "clues": [
         "bunk",
         " hokum"
-      ]
-    },
-    {
-      "word": "norm",
-      "clues": [
-        "standard"
       ]
     },
     {
@@ -16857,12 +16800,6 @@ const words1 =
         "reviewer",
         " referee",
         "subscriber"
-      ]
-    },
-    {
-      "word": "ready",
-      "clues": [
-        "prepared"
       ]
     },
     {
@@ -21025,14 +20962,6 @@ const words1 =
       ]
     },
     {
-      "word": "table",
-      "clues": [
-        "tabular array",
-        " data arranged in rows and columns",
-        "piece of furniture"
-      ]
-    },
-    {
       "word": "tablet",
       "clues": [
         "pill",
@@ -23573,46 +23502,6 @@ const words1 =
         "geographical region"
       ]
     },
-    {word: "lemon"},
-    {word: "teaser"},
-    {word: "chalice"},
-    {word: "fled"},
-    {word: "epee"},
-    {word: "hazel"},
-    {word: "minotaur"},
-    {word: "sentinel"},
-    {word: "malaga"},
-    {word: "oxen"},
-    {word: "wise"},
-    {word: "oiks"},
-    {word: "ladida"},
-    {word: "nunn"},
-    {word: "nape"},
-    {word: "pain"},
-    {word: "elk"},
-    {word: "zod"},
-    {word: "existence"},
-    {word: "jolt"},
-    {word: "brochette"},
-    {word: "imrie"},
-    {word: "beaker"},
-    {word: "mire"},
-    {word: "rand"},
-    {word: "bewes"},
-    {word: "obese"},
-    {word: "hades"},
-    {word: "eke"},
-    {word: "tripe"},
-    {word: "narnia"},
-    {word: "wye"},
-    {word: "denim"},
-    {word: "ernie"},
-    {word: "sue"},
-    {word: "cpu"},
-    {word: "ruled"},
-    {word: "she"},
-    {word: "speed"},
-    {word: "mud"},
     {
       word: "schiffer",
       clues: [
@@ -23726,7 +23615,8 @@ const words1 =
         "legged furniture",
         "data format",
         "present idea formally",
-        "eating surface"
+        "eating surface",
+        "data arranged in rows and columns"
       ]
     },
     {
@@ -23735,7 +23625,9 @@ const words1 =
         "allow to leave",
         "send away",
         "treat as unworthy",
-        "fire, let go"
+        "fire, let go",
+        "disregard",
+        "brush off"
       ]
     },
     {
@@ -23753,7 +23645,6 @@ const words1 =
     {
       word: "abi",
       clues: [
-        "professional slag",
         "model, ___ titmuss"
       ]
     },
@@ -23768,6 +23659,440 @@ const words1 =
       word: "ipa",
       clues: [
         "type of beer"
+      ]
+    },
+    {
+      word: "subgroups",
+      clues: [
+        "subdivisions of social circle"
+      ]
+    },
+    {
+      word: "lobbies",
+      clues: [
+        "foyers, vestibules",
+        "rooms leading to many corridors",
+        "seeks to influence a legislator",
+        "campaigns for, solicits"
+      ]
+    },
+    {
+      word: "palatable",
+      clues: [
+        "pleasant to taste",
+        "reasonably tasting",
+        "acceptable, satisfactory"
+      ]
+    },
+    {
+      word: "episodic",
+      clues: [
+        "consisting of a series of seperate parts",
+        "occuring at irregular intervals",
+        "intermittent, sporadic"
+      ]
+    },
+    {
+      word: "arum",
+      clues: [
+        "eurasian poisonous plant",
+        "poisonous plant ___ lily",
+        "top rank founder bob ___"
+      ]
+    },
+    {
+      word: "unapt",
+      clues: [
+        "not appropriate",
+        "unsuitable for the circumstances",
+        "discordant, ill-advised"
+      ]
+    },
+    {
+      word: "started",
+      clues: [
+        "began",
+        "caused to happen",
+        "initiated"
+      ]
+    },
+    {
+      word: "sensuous",
+      clues: [
+        "sexually gratifying",
+        "lush, voluptuous"
+      ]
+    },
+    {
+      word: "damn",
+      clues: [
+        "condemn to hell",
+        "mild curse",
+        "doom to misfortune",
+        "criticise strongly",
+        "denounce, revile"
+      ]
+    },
+    {
+      word: "emir",
+      clues: [
+        "muslim ruler",
+        "islamic military leader"
+      ]
+    },
+    {
+      word: "inde",
+      clues: [
+        "small belgian river",
+        "river in north rhine-westphalia"
+      ]
+    },
+    {
+      word: "embalming",
+      clues: [
+        "preserving from decay",
+        "mummifying, enshrining"
+      ]
+    },
+    {
+      word: "mope",
+      clues: [
+        "feel dejected and apathetic",
+        "wander listlessly and aimlessly",
+        "a person of prolonged low spirits",
+        "brood, sulk",
+        "be despondent, languish"
+      ]
+    },
+    {
+      word: "bridals",
+      clues: [
+        "nuptials"
+      ]
+    },
+    {
+      word: "norm",
+      clues: [
+        "standard",
+        "the usual",
+        "par for the course",
+        "convention, typical",
+        "benchmark, barometer"
+      ]
+    },
+    {
+      word: "dim",
+      clues: [
+        "not shining clearly",
+        "dull, lacklustre",
+        "opposite of bright",
+        "vague, shadowy",
+        "dingy, dismal",
+        "difficult to see",
+        "stupid or slow to understand",
+        "not giving hope for optimism",
+        "bleak, unfavourable odds"
+      ]
+    },
+    {
+      word: "inner",
+      clues: [
+        "situated inside",
+        "close to the centre",
+        "interior",
+        "mental, spiritual, private"
+      ]
+    },
+    {
+      word: "ready",
+      clues: [
+        "prepared",
+        "all set",
+        "primed, equipped",
+        "easily available",
+        "brace, warm up",
+        "eager, keen"
+      ]
+    },
+    //THIS WORD SHOULD HAVE A SPACE BUT CANT CURRENTLY HANDLE SPACES
+    //MAYBE BIN THIS WORD ANYWAY BECAUSE ONLY 1 CLUE AND ITS A BIT SHIT
+    //AND ALSO MOST PEOPLE WOULD KNOW IT AS SPIN-DRYER
+    {
+      word: "spindrier",
+      clues: [
+        "machine to extract water"
+      ]
+    },
+    {
+      word: "sued",
+      clues: [
+        "instituted legal proceedings",
+        "took to court",
+        "brought a suit against",
+        "proceeded against",
+        "indicted, plead"
+      ]
+    },
+    {
+      word: "roo",
+      clues: [
+        "australian marsupial (informal)"
+      ]
+    },
+    {
+      word: "eve",
+      clues: [
+        "night before",
+        "time preceeding an event",
+        "brink, verge (time)"
+      ]
+    },
+    {
+      word: "ill",
+      clues: [
+        "feeling unwell",
+        "ailing",
+        "poorly",
+        "badly, unfavourably",
+        "harmful, damaging"
+      ]
+    },
+    {
+      word: "armenia",
+      clues: [
+        "country in the caucusus",
+        "kardashian homeland"
+      ]
+    },
+    {
+      word: "hullo",
+      clues: [
+        "greeting (informal) (british)"
+      ]
+    },
+    {
+      word: "veld",
+      clues: [
+        "field (dutch)",
+        "open grassland of south africa"
+      ]
+    },
+    {
+      word: "soberly",
+      clues: [
+        "in a serious, solumn manner",
+        "in a muted, sensible manner",
+        "with moderation or self-restraint",
+        "temperately"
+      ]
+    },
+    {
+      word: "paddings",
+      clue: [
+        "soft stuffings",
+        "protective buffers",
+        "cushions, waddings"
+      ]
+    },
+    {
+      word: "prig",
+      clue: [
+        "a person who acts morally superior",
+        "a self righteous moralist",
+        "puritan, snob"
+      ]
+    },
+    {
+      word: "subsides",
+      clues: [
+        "abates",
+        "calms down",
+        "dwindles",
+        "diminishes",
+        "recedes",
+        "ebbs",
+        "caves in, sinks",
+        "slumps, sags",
+        "becomes less intense",
+        "eases, wanes",
+        "peters out"
+      ]
+    },
+    {
+      word: "near",
+      clues: [
+        "close",
+        "a short distance away",
+        "almost",
+        "immediate vicinity",
+        "imminent",
+        "impending"
+      ]
+    },
+    {
+      word: "decades",
+      clues: [
+        "periods of ten years",
+        "the 80s and 90s"
+      ]
+    },
+    {
+      word: "jerk",
+      clues: [
+        "sharp, sudden movement",
+        "yank",
+        "foolish person (informal)",
+        "clean and ___ (weightlifting)",
+        "lurch",
+        "tweak, twitch",
+        "jolt, wrench"
+      ]
+    },
+    {
+      word: "opal",
+      clues: [
+        "prismatic gemstone",
+        "hydrated silica gemstone"
+      ]
+    },
+    {
+      word: "knot",
+      clues: [
+        "fastening",
+        "looped string or rope",
+        "tangled mess of hair",
+        "a knob or node in wood",
+        "unit of nautical speed",
+        "tie",
+        "bow",
+        "fastening formed by looping and tying"
+      ]
+    },
+    {
+      word: "underpins",
+      clues: [
+        "supports from below",
+        "forms the basis for",
+        "lays groundwork"
+      ]
+    },
+    {
+      word: "beer",
+      clues: [
+        "fermented malt and hops",
+        "ale",
+        "lager",
+        "stout",
+        "ipa",
+        "served in pints",
+        "brewery product",
+        "alcoholic beverage"
+      ]
+    },
+    {
+      word: "cue",
+      clues: [
+        "pool instrument",
+        "snooker rod",
+        "signal to act",
+        "prompt",
+        "indication",
+        "hint"
+      ]
+    },
+    {
+      word: "owlet",
+      clues: [
+        "baby nocturnal bird",
+        "juvenile bird of wisdom"
+      ]
+    },
+    {
+      //animal of warefare/work, varient of basketball -> maybe add these clues
+      word: "horse",
+      clues: [
+        "hoofed mammal",
+        "equine animal",
+        "riding animal",
+        "stallion, mare",
+        "unit of cavalry"
+      ]
+    },
+    {
+      word: "sackcloth",
+      clues: [
+        "course hemp fabric",
+        "rough flax fabric",
+        "burlap",
+        "hessian"
+      ]
+    },
+    {
+      word: "wee",
+      clues: [
+        "little",
+        "urinate",
+        "tiny",
+        "miniature"
+      ]
+    },
+    {
+      word: "let",
+      clues: [
+        "lease",
+        "allow",
+        "permit",
+        "rent"
+      ]
+    },
+    {
+      word: "ell",
+      clues: [
+        "measure of cloth"
+      ]
+    },
+    {
+      word: "lira",
+      clues: [
+        "former italian currency",
+        "turkish currency"
+      ]
+    },
+    {
+      word: "dweller",
+      clues: [
+        "a person who lives a specified place",
+        "inhabitant",
+        "urban resident, city ___",
+        "denizen"
+      ]
+    },
+    {
+      word: "tepee",
+      clues: [
+        "conical tent",
+        "native american tent",
+        "wigwam, yurt"
+      ]
+    },
+    {
+      word: "eels",
+      clues: [
+        "food, jellied ___",
+        "electric fishes",
+        "slippery, snake like fishes"
+      ]
+    },
+    {
+      word: "seattle",
+      clues: [
+        "largest city of washington state",
+        "home of the space needle",
+        "setting of grey's anatomy",
+        "birthplace of starbucks",
+        "birthplace of jimi hendrix",
+        "film, sleepless in ___",
+        "headquarters of amazon",
       ]
     }
   ]
